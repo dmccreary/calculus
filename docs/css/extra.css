@@ -7,17 +7,6 @@
     width: 50px;
 }
 
-/* Anthropic brown color for the header close match to Burnt Sienna - very close match
-RGB: 218, 120, 87 Hex: #DA7857
-*/
-
-/* Override Material theme primary color with Anthropic brown */
-:root {
-    --md-primary-fg-color: rgb(218, 120, 87);
-    --md-primary-fg-color--light: rgb(228, 140, 107);
-    --md-primary-fg-color--dark: rgb(198, 100, 67);
-}
-
 /* Container to control the iframe size and scaling */
 .iframe-container {
     width: 100%;
