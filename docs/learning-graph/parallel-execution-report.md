@@ -1,7 +1,7 @@
 # Parallel Chapter Generation Execution Report
 
 **Date:** 2026-02-03
-**Chapters Generated:** 11-15, 16-20
+**Chapters Generated:** 11-15, 16-20, 21-23
 **Method:** Task tool with background agents (5 parallel per batch)
 
 ## Executive Summary
@@ -234,9 +234,103 @@ The 5-6 second difference between file modification time and log end time is exp
 | Elapsed Time | 3m 39s | 3m 47s | 7m 26s |
 | Avg Words/Chapter | 4,187 | 5,465 | 4,826 |
 
-## Parallel Execution Benefit
+## Parallel Execution Benefit (Batches 1-2)
 
 - **Total content generated:** 48,262 words covering 161 calculus concepts
 - **Total wall-clock time:** ~7.5 minutes (two batches)
 - **Estimated sequential time:** 28+ minutes
 - **Overall speedup:** ~3.7x
+
+---
+
+# Batch 3: Chapters 21-23
+
+**Time:** 14:10:42 - 14:14:46
+**Method:** Task tool with background agents (3 parallel)
+
+## Executive Summary (Batch 3)
+
+All 3 chapters (21-23) were generated simultaneously using parallel background agents. This batch completes the final chapters of the calculus textbook.
+
+## Timestamp Analysis (Batch 3)
+
+All agents started at 14:10:42 when the Task tool launched them in parallel.
+
+### Chapter Generation Times (from filesystem metadata)
+
+| Chapter | Start Time | End Time | Duration |
+|---------|------------|----------|----------|
+| Ch 21 | 14:10:42 | 14:13:45 | 3m 03s |
+| Ch 22 | 14:10:42 | 14:14:46 | 4m 04s |
+| Ch 23 | 14:10:42 | 14:14:27 | 3m 45s |
+
+### Completion Order (Batch 3)
+
+1. **Chapter 21** - Transcendental Integrals (completed first at 14:13:45)
+2. **Chapter 23** - Integral Properties and Techniques (14:14:27)
+3. **Chapter 22** - Riemann Sums and the Fundamental Theorem (completed last at 14:14:46)
+
+## Evidence of Parallel Execution (Batch 3)
+
+### Time Window Analysis
+
+- **All agents started:** 14:10:42
+- **First completion:** 14:13:45 (Chapter 21)
+- **Last completion:** 14:14:46 (Chapter 22)
+- **Total generation window:** 4 minutes 4 seconds
+
+### Sequential vs Parallel Comparison
+
+If tasks had run sequentially (average ~3.6 minutes each to generate ~5,800 words):
+- **Estimated sequential time:** 3 chapters x 3.6 min = **10.8+ minutes**
+
+Actual parallel execution:
+- **Total elapsed time:** **4 minutes 4 seconds**
+
+**Speedup factor:** ~2.7x (all 3 agents running concurrently)
+
+## Content Statistics (Batch 3)
+
+| Chapter | Title | Word Count | Concepts |
+|---------|-------|------------|----------|
+| 21 | Transcendental Integrals | 4,603 | 14 |
+| 22 | Riemann Sums and the Fundamental Theorem | 6,516 | 24 |
+| 23 | Integral Properties and Techniques | 6,241 | 22 |
+| **Total** | | **17,360** | **60** |
+
+### Correlation: Complexity vs Completion Time
+
+- **Shortest chapter (Ch 21, 4,603 words, 14 concepts):** Completed first
+- **Most concepts (Ch 22, 6,516 words, 24 concepts):** Completed last
+- **Middle chapter (Ch 23, 6,241 words, 22 concepts):** Completed second
+
+The completion order correlates with content complexity (word count × concept count).
+
+## Timestamp Validation (Batch 3)
+
+| Chapter | Log Start | Log End | File Mod Time |
+|---------|-----------|---------|---------------|
+| Ch 21 | 14:10:42 | 14:13:50 | 14:13:45 |
+| Ch 22 | 14:10:42 | 14:14:51 | 14:14:46 |
+| Ch 23 | 14:10:42 | 14:14:32 | 14:14:27 |
+
+---
+
+# Combined Summary (All Chapters 11-23)
+
+## Overall Statistics
+
+| Metric | Batch 1 (Ch 11-15) | Batch 2 (Ch 16-20) | Batch 3 (Ch 21-23) | Total |
+|--------|-------------------|-------------------|-------------------|-------|
+| Chapters | 5 | 5 | 3 | **13** |
+| Total Words | 20,937 | 27,325 | 17,360 | **65,622** |
+| Total Concepts | 78 | 83 | 60 | **221** |
+| Elapsed Time | 3m 39s | 3m 47s | 4m 04s | **11m 30s** |
+| Avg Words/Chapter | 4,187 | 5,465 | 5,787 | 5,048 |
+
+## Parallel Execution Benefit (All Batches)
+
+- **Total content generated:** 65,622 words covering 221 calculus concepts
+- **Total wall-clock time:** ~11.5 minutes (three batches)
+- **Estimated sequential time:** ~39 minutes (at ~3 min/chapter)
+- **Overall speedup:** ~3.4x

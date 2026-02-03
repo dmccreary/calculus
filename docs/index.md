@@ -1,6 +1,6 @@
 ---
-title: Calculus
-description: An interactive intelligent Calculus textbook that is designed to maximize the odds that you will get college credits.
+title: AP Calculus
+description: An interactive intelligent AP Calculus textbook that is designed to maximize the odds that you will get college credits.
 image: /img/cover.png
 og:image: /img/cover.png
 toc:
@@ -12,4 +12,4 @@ toc:
 </style>
 ![](./img/cover.png)
 
-A fun simulation-filled interactive intelligent Calculus textbook that is designed to maximize the odds that you will get college credit.
+A fun simulation-filled interactive intelligent AP Calculus textbook that is designed to maximize the odds that you will get college credit and have a blast using the textbook.
