@@ -15,7 +15,7 @@ social:
 
 [Run the Domain and Range Visualizer Fullscreen](./main.html){ .md-button .md-button--primary }
 
-[Edit with the p5.js Editor](https://editor.p5js.org/){ .md-button }
+[Edit with the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/CvR3IjzMT){ .md-button }
 
 ## About This MicroSim
 

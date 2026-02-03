@@ -1,6 +1,7 @@
 // Domain and Range Visualizer MicroSim
 // Helps students interpret domain and range graphically
 // MicroSim template version 2026.02
+// schema: https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1
 
 // Canvas dimensions - responsive width
 let containerWidth;
