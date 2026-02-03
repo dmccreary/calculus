@@ -1,4 +1,4 @@
-# Generate the Learing Graph
+# Generate the Learning Graph
 
 !!! prompt
     run the /learning-graph-generator using as many concepts as are needed up to 400 concepts.
@@ -6,3 +6,7 @@
 
 ## Log
 [Link to the Log File on GitHub]()
+
+!!! prompt
+    run the /book-installer learning graph viewer skill                                                            
+
