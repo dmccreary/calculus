@@ -1,0 +1,2843 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Vertical and horizontal asymptotes, limits at infinity, and comparing growth rates of functions">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/calculus/chapters/05-asymptotes-and-end-behavior/">
+      
+      
+        <link rel="prev" href="../04-continuity/">
+      
+      
+        <link rel="next" href="../06-derivative-concept/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Asymptotes and End Behavior - Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#asymptotes-and-end-behavior" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Calculus" class="md-header__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Asymptotes and End Behavior
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Calculus" class="md-nav__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-foundations-of-calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Foundations of Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-understanding-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Understanding Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-evaluating-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Evaluating Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-continuity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Continuity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    5. Asymptotes and End Behavior
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    5. Asymptotes and End Behavior
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Asymptotes?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertical Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vertical Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-using-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition Using Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-sided-infinite-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-Sided Infinite Limits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="One-Sided Infinite Limits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-asymptote-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical Asymptote Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horizontal-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Horizontal Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-using-limits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition Using Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limits-at-infinity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limits at Infinity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Limits at Infinity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-limits-at-infinity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Limits at Infinity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-horizontal-asymptotes-of-rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Horizontal Asymptotes of Rational Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dominant-term-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dominant Term Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oblique-slant-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oblique (Slant) Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oblique (Slant) Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-oblique-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Oblique Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Oblique Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-all-three-asymptote-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: All Three Asymptote Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="End Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end-behavior-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior of Polynomials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-behavior-of-rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior of Rational Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="End Behavior of Rational Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-end-behavior-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: End Behavior Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-growth-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing Growth Rates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comparing Growth Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-growth-rate-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Growth Rate Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logarithmic-growth-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Growth Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polynomial-growth-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Growth Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exponential-growth-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Growth Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-growth-rates-to-evaluate-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Growth Rates to Evaluate Limits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Growth Rates to Evaluate Limits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-growth-rate-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Growth Rate Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#behavior-near-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior Near Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Behavior Near Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approaching-vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approaching Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approaching-horizontal-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approaching Horizontal Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-asymptote-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Asymptote Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary: Asymptote Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertical-asymptotes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-asymptotes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oblique-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oblique Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-behavior_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-derivative-concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. The Derivative Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-differentiability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Differentiability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-basic-derivative-rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Basic Derivative Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Product, Quotient, Transcendental
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-chain-rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. The Chain Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-implicit-differentiation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Implicit Differentiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Inverse Function Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Higher-Order Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Related Rates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. L'Hospital's Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-mean-value-theorem-and-extrema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. MVT and Extrema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Derivative Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-curve-sketching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Curve Sketching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-basic-antiderivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20. Basic Antiderivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-transcendental-integrals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21. Transcendental Integrals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-riemann-sums-and-ftc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22. Riemann Sums and FTC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23. Integral Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendix/delta/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Are Asymptotes?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertical Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vertical Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-using-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition Using Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-sided-infinite-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-Sided Infinite Limits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="One-Sided Infinite Limits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-asymptote-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical Asymptote Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#horizontal-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Horizontal Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-using-limits_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition Using Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limits-at-infinity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limits at Infinity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Limits at Infinity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-limits-at-infinity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Limits at Infinity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-horizontal-asymptotes-of-rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Horizontal Asymptotes of Rational Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-dominant-term-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Dominant Term Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oblique-slant-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oblique (Slant) Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Oblique (Slant) Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finding-oblique-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Oblique Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Oblique Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-all-three-asymptote-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: All Three Asymptote Types
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#end-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="End Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end-behavior-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior of Polynomials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-behavior-of-rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior of Rational Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="End Behavior of Rational Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-end-behavior-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: End Behavior Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparing-growth-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comparing Growth Rates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comparing Growth Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-growth-rate-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Growth Rate Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logarithmic-growth-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Growth Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polynomial-growth-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Growth Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exponential-growth-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Growth Rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-growth-rates-to-evaluate-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Growth Rates to Evaluate Limits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using Growth Rates to Evaluate Limits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-growth-rate-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Growth Rate Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#behavior-near-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Behavior Near Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Behavior Near Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#approaching-vertical-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approaching Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#approaching-horizontal-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approaching Horizontal Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-asymptote-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Asymptote Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary: Asymptote Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vertical-asymptotes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vertical Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-asymptotes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Horizontal Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#oblique-asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oblique Asymptotes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#end-behavior_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      End Behavior
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/calculus/edit/master/docs/chapters/05-asymptotes-and-end-behavior/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="asymptotes-and-end-behavior">Asymptotes and End Behavior</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter examines the behavior of functions as they approach infinity or as their values become unbounded. Students will learn to identify vertical, horizontal, and oblique asymptotes using limits. The chapter also covers end behavior analysis and compares growth rates of polynomial, exponential, and logarithmic functions. After completing this chapter, students will be able to describe the long-term behavior of functions and sketch graphs showing asymptotic behavior.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 14 concepts from the learning graph:</p>
+<ol>
+<li>Asymptote</li>
+<li>Vertical Asymptote</li>
+<li>Horizontal Asymptote</li>
+<li>Oblique Asymptote</li>
+<li>Limit at Infinity</li>
+<li>End Behavior</li>
+<li>Behavior Near Asymptote</li>
+<li>One-Sided Infinite Limit</li>
+<li>Comparing Growth Rates</li>
+<li>Dominant Term</li>
+<li>Rational End Behavior</li>
+<li>Exponential Growth Rate</li>
+<li>Logarithmic Growth Rate</li>
+<li>Polynomial Growth Rate</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-foundations-of-calculus/">Chapter 1: Foundations of Calculus</a></li>
+<li><a href="../02-understanding-limits/">Chapter 2: Understanding Limits</a></li>
+<li><a href="../03-evaluating-limits/">Chapter 3: Evaluating Limits</a></li>
+<li><a href="../04-continuity/">Chapter 4: Continuity</a></li>
+</ul>
+<hr />
+<h2 id="what-are-asymptotes">What Are Asymptotes?</h2>
+<p>An <strong>asymptote</strong> is a line that a graph approaches but never quite reaches (or only touches at certain points). Asymptotes describe the "boundary behavior" of functions—what happens at the edges, where inputs or outputs become extreme.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"An asymptote is like a force field I can get infinitely close to but never cross. The closer I get, the more the curve runs parallel to it. It's a boundary I can approach forever!"</p>
+</div>
+<p>There are three types of asymptotes we'll study:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>What It Describes</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vertical</td>
+<td>Where the function blows up</td>
+<td><span class="arithmatex">\(x = 2\)</span> for <span class="arithmatex">\(f(x) = \frac{1}{x-2}\)</span></td>
+</tr>
+<tr>
+<td>Horizontal</td>
+<td>Where the function levels off as <span class="arithmatex">\(x \to \pm\infty\)</span></td>
+<td><span class="arithmatex">\(y = 0\)</span> for <span class="arithmatex">\(f(x) = \frac{1}{x}\)</span></td>
+</tr>
+<tr>
+<td>Oblique (Slant)</td>
+<td>Where the function approaches a tilted line</td>
+<td><span class="arithmatex">\(y = x\)</span> for <span class="arithmatex">\(f(x) = \frac{x^2}{x-1}\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="vertical-asymptotes">Vertical Asymptotes</h2>
+<p>A <strong>vertical asymptote</strong> occurs where a function's values grow without bound—they shoot off toward positive or negative infinity.</p>
+<h3 id="definition-using-limits">Definition Using Limits</h3>
+<div class="admonition tip">
+<p class="admonition-title">Vertical Asymptote Definition</p>
+<p>The line <span class="arithmatex">\(x = c\)</span> is a vertical asymptote of <span class="arithmatex">\(f(x)\)</span> if at least one of the following is true:</p>
+<ul>
+<li><span class="arithmatex">\(\lim_{x \to c^-} f(x) = \pm\infty\)</span></li>
+<li><span class="arithmatex">\(\lim_{x \to c^+} f(x) = \pm\infty\)</span></li>
+</ul>
+</div>
+<p>In other words, from at least one side, the function explodes.</p>
+<h3 id="finding-vertical-asymptotes">Finding Vertical Asymptotes</h3>
+<p>For rational functions <span class="arithmatex">\(f(x) = \frac{p(x)}{q(x)}\)</span>:</p>
+<ol>
+<li><strong>Find where the denominator equals zero:</strong> Solve <span class="arithmatex">\(q(x) = 0\)</span></li>
+<li><strong>Check that the numerator isn't also zero there:</strong> If <span class="arithmatex">\(p(c) \neq 0\)</span> but <span class="arithmatex">\(q(c) = 0\)</span>, there's a vertical asymptote at <span class="arithmatex">\(x = c\)</span></li>
+<li><strong>If both are zero:</strong> You might have a hole instead—factor and check!</li>
+</ol>
+<p><strong>Example:</strong> Find the vertical asymptotes of <span class="arithmatex">\(f(x) = \frac{x+1}{x^2 - 4}\)</span></p>
+<p><strong>Step 1:</strong> Factor the denominator: <span class="arithmatex">\(x^2 - 4 = (x+2)(x-2)\)</span></p>
+<p><strong>Step 2:</strong> Set denominator equal to zero: <span class="arithmatex">\(x = 2\)</span> or <span class="arithmatex">\(x = -2\)</span></p>
+<p><strong>Step 3:</strong> Check the numerator at these points:</p>
+<ul>
+<li>At <span class="arithmatex">\(x = 2\)</span>: numerator <span class="arithmatex">\(= 2 + 1 = 3 \neq 0\)</span> → <strong>Vertical asymptote at <span class="arithmatex">\(x = 2\)</span></strong></li>
+<li>At <span class="arithmatex">\(x = -2\)</span>: numerator <span class="arithmatex">\(= -2 + 1 = -1 \neq 0\)</span> → <strong>Vertical asymptote at <span class="arithmatex">\(x = -2\)</span></strong></li>
+</ul>
+<h3 id="one-sided-infinite-limits">One-Sided Infinite Limits</h3>
+<p>Near a vertical asymptote, the function can go to <span class="arithmatex">\(+\infty\)</span> or <span class="arithmatex">\(-\infty\)</span> from each side. We need to check both one-sided limits.</p>
+<p><strong>Example:</strong> Analyze <span class="arithmatex">\(f(x) = \frac{1}{x-3}\)</span> near <span class="arithmatex">\(x = 3\)</span></p>
+<p><strong>From the right (<span class="arithmatex">\(x \to 3^+\)</span>):</strong> When <span class="arithmatex">\(x\)</span> is slightly greater than 3, <span class="arithmatex">\((x-3)\)</span> is a small positive number. So <span class="arithmatex">\(\frac{1}{x-3}\)</span> is a large positive number.
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 3^+} \frac{1}{x-3} = +\infty\)</span>\)</span></p>
+<p><strong>From the left (<span class="arithmatex">\(x \to 3^-\)</span>):</strong> When <span class="arithmatex">\(x\)</span> is slightly less than 3, <span class="arithmatex">\((x-3)\)</span> is a small negative number. So <span class="arithmatex">\(\frac{1}{x-3}\)</span> is a large negative number.
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 3^-} \frac{1}{x-3} = -\infty\)</span>\)</span></p>
+<p>The function shoots up on one side and down on the other!</p>
+<h4 id="diagram-vertical-asymptote-explorer">Diagram: Vertical Asymptote Explorer</h4>
+<iframe src="../../sims/vertical-asymptote/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Vertical Asymptote Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will explain how one-sided limits determine the behavior of a function near its vertical asymptotes.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with function graph</li>
+<li>Vertical dashed line at asymptote location</li>
+<li>Two animated points approaching the asymptote from left and right</li>
+<li>Arrows showing the direction of escape (up or down)</li>
+<li>Y-value readout showing values approaching infinity</li>
+<li>One-sided limit notation displayed for each side</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function selector with several rational functions:</li>
+<li><span class="arithmatex">\(f(x) = \frac{1}{x}\)</span> (asymptote at 0, different signs)</li>
+<li><span class="arithmatex">\(f(x) = \frac{1}{x^2}\)</span> (asymptote at 0, same sign)</li>
+<li><span class="arithmatex">\(f(x) = \frac{x}{(x-2)(x+1)}\)</span> (two asymptotes)</li>
+<li>Custom function input</li>
+<li>Slider: Approach distance (how close to asymptote)</li>
+<li>Toggle: "Show from left" / "Show from right" / "Show both"</li>
+<li>Button: "Animate approach"</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Points trace along the curve as they approach asymptote</li>
+<li>Y-values update showing growth toward infinity</li>
+<li>Direction arrows indicate +∞ or -∞</li>
+<li>Different colors for left (blue) and right (orange) approaches</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show initial positions on curve</li>
+<li>Stage 2: Show intermediate approach with y-values</li>
+<li>Stage 3: Show near-asymptote behavior with large y-values</li>
+<li>Final: Display one-sided limit conclusions</li>
+</ul>
+<p>Instructional Rationale: Visualizing both one-sided behaviors simultaneously reveals the complete picture of vertical asymptote behavior.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="horizontal-asymptotes">Horizontal Asymptotes</h2>
+<p>A <strong>horizontal asymptote</strong> describes where a function levels off as <span class="arithmatex">\(x\)</span> goes to positive or negative infinity.</p>
+<h3 id="definition-using-limits_1">Definition Using Limits</h3>
+<div class="admonition tip">
+<p class="admonition-title">Horizontal Asymptote Definition</p>
+<p>The line <span class="arithmatex">\(y = L\)</span> is a horizontal asymptote of <span class="arithmatex">\(f(x)\)</span> if:</p>
+<div class="arithmatex">\[\lim_{x \to \infty} f(x) = L \quad \text{or} \quad \lim_{x \to -\infty} f(x) = L\]</div>
+</div>
+<p>A function can have:</p>
+<ul>
+<li>No horizontal asymptotes</li>
+<li>One horizontal asymptote (same behavior at <span class="arithmatex">\(+\infty\)</span> and <span class="arithmatex">\(-\infty\)</span>)</li>
+<li>Two horizontal asymptotes (different behavior at each end)</li>
+</ul>
+<h3 id="limits-at-infinity">Limits at Infinity</h3>
+<p>To find horizontal asymptotes, we evaluate <strong>limits at infinity</strong>—what happens to <span class="arithmatex">\(f(x)\)</span> as <span class="arithmatex">\(x\)</span> grows without bound.</p>
+<h4 id="basic-limits-at-infinity">Basic Limits at Infinity</h4>
+<p>Here are some fundamental limits you should know:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th><span class="arithmatex">\(\lim_{x \to \infty}\)</span></th>
+<th><span class="arithmatex">\(\lim_{x \to -\infty}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\frac{1}{x}\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\frac{1}{x^n}\)</span> (positive <span class="arithmatex">\(n\)</span>)</td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(e^x\)</span></td>
+<td><span class="arithmatex">\(\infty\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(e^{-x}\)</span></td>
+<td><span class="arithmatex">\(0\)</span></td>
+<td><span class="arithmatex">\(\infty\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ln x\)</span></td>
+<td><span class="arithmatex">\(\infty\)</span></td>
+<td>(undefined)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="finding-horizontal-asymptotes-of-rational-functions">Finding Horizontal Asymptotes of Rational Functions</h3>
+<p>For rational functions, the horizontal asymptote depends on comparing the degrees of the numerator and denominator.</p>
+<div class="admonition tip">
+<p class="admonition-title">Horizontal Asymptotes of Rational Functions</p>
+<p>For <span class="arithmatex">\(f(x) = \frac{a_n x^n + \cdots}{b_m x^m + \cdots}\)</span>:</p>
+<ul>
+<li><strong>If degree of top &lt; degree of bottom:</strong> <span class="arithmatex">\(y = 0\)</span> is the horizontal asymptote</li>
+<li><strong>If degree of top = degree of bottom:</strong> <span class="arithmatex">\(y = \frac{a_n}{b_m}\)</span> (ratio of leading coefficients)</li>
+<li><strong>If degree of top &gt; degree of bottom:</strong> No horizontal asymptote (may have oblique)</li>
+</ul>
+</div>
+<p><strong>Example 1:</strong> <span class="arithmatex">\(f(x) = \frac{2x + 1}{x^2 - 3}\)</span></p>
+<p>Degree of numerator: 1. Degree of denominator: 2.</p>
+<p>Since <span class="arithmatex">\(1 &lt; 2\)</span>, the horizontal asymptote is <span class="arithmatex">\(y = 0\)</span>.</p>
+<p><strong>Example 2:</strong> <span class="arithmatex">\(f(x) = \frac{3x^2 - 5}{2x^2 + 7}\)</span></p>
+<p>Degrees are equal (both 2). Horizontal asymptote: <span class="arithmatex">\(y = \frac{3}{2}\)</span></p>
+<p><strong>Example 3:</strong> <span class="arithmatex">\(f(x) = \frac{x^3 + 1}{x - 2}\)</span></p>
+<p>Degree of numerator (3) &gt; degree of denominator (1). No horizontal asymptote.</p>
+<h3 id="the-dominant-term-method">The Dominant Term Method</h3>
+<p>A powerful technique for limits at infinity: <strong>identify the dominant term</strong> and factor it out.</p>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\lim_{x \to \infty} \frac{5x^2 - 3x + 1}{2x^2 + 4x - 7}\)</span></p>
+<p><strong>Step 1:</strong> Identify the dominant term in each part. The highest power of <span class="arithmatex">\(x\)</span> is <span class="arithmatex">\(x^2\)</span>.</p>
+<p><strong>Step 2:</strong> Divide every term by <span class="arithmatex">\(x^2\)</span>:</p>
+<div class="arithmatex">\[\frac{5x^2 - 3x + 1}{2x^2 + 4x - 7} = \frac{5 - \frac{3}{x} + \frac{1}{x^2}}{2 + \frac{4}{x} - \frac{7}{x^2}}\]</div>
+<p><strong>Step 3:</strong> Take the limit. As <span class="arithmatex">\(x \to \infty\)</span>, all the <span class="arithmatex">\(\frac{1}{x}\)</span> terms go to zero:</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{5 - 0 + 0}{2 + 0 - 0} = \frac{5}{2}\]</div>
+<p>The horizontal asymptote is <span class="arithmatex">\(y = \frac{5}{2}\)</span>.</p>
+<hr />
+<h2 id="oblique-slant-asymptotes">Oblique (Slant) Asymptotes</h2>
+<p>When a rational function has the numerator's degree exactly one more than the denominator's degree, it has an <strong>oblique asymptote</strong> (also called a slant asymptote).</p>
+<h3 id="finding-oblique-asymptotes">Finding Oblique Asymptotes</h3>
+<p>Use polynomial long division to divide the numerator by the denominator. The quotient (ignoring the remainder) gives the oblique asymptote.</p>
+<p><strong>Example:</strong> Find the oblique asymptote of <span class="arithmatex">\(f(x) = \frac{x^2 + 2x - 1}{x - 1}\)</span></p>
+<p><strong>Step 1:</strong> Perform long division of <span class="arithmatex">\((x^2 + 2x - 1) \div (x - 1)\)</span>:</p>
+<div class="arithmatex">\[x^2 + 2x - 1 = (x - 1)(x + 3) + 2\]</div>
+<p>So:
+<span class="arithmatex">\(<span class="arithmatex">\(f(x) = \frac{x^2 + 2x - 1}{x - 1} = x + 3 + \frac{2}{x - 1}\)</span>\)</span></p>
+<p><strong>Step 2:</strong> As <span class="arithmatex">\(x \to \pm\infty\)</span>, the remainder <span class="arithmatex">\(\frac{2}{x-1} \to 0\)</span>.</p>
+<p>Therefore, <span class="arithmatex">\(f(x) \to x + 3\)</span> as <span class="arithmatex">\(x \to \pm\infty\)</span>.</p>
+<p>The oblique asymptote is <span class="arithmatex">\(y = x + 3\)</span>.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"An oblique asymptote is like a tilted guardrail. As I travel further and further along the curve, I get closer and closer to following that slanted line. The curve never becomes the line, but the difference becomes negligible."</p>
+</div>
+<h4 id="diagram-all-three-asymptote-types">Diagram: All Three Asymptote Types</h4>
+<iframe src="../../sims/asymptote-types/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>All Three Asymptote Types MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Differentiate</p>
+<p>Learning Objective: Students will differentiate between vertical, horizontal, and oblique asymptotes by analyzing their defining characteristics.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Three-panel display showing one function with each asymptote type</li>
+<li>Panel 1: Vertical asymptote example with function approaching ±∞</li>
+<li>Panel 2: Horizontal asymptote example with function leveling off</li>
+<li>Panel 3: Oblique asymptote example with function approaching a slanted line</li>
+<li>Dashed lines showing the asymptote in each case</li>
+<li>Interactive comparison mode: all three on one graph</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>View selector: "Individual panels" or "Comparison view"</li>
+<li>For each panel, toggle to show/hide the asymptote line</li>
+<li>Slider: Zoom out to see long-range behavior</li>
+<li>Function customizer (advanced mode)</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Individual view: detailed explanation of each type</li>
+<li>Comparison view: see all behaviors simultaneously</li>
+<li>Zooming out emphasizes the asymptotic behavior</li>
+<li>Labels update to show asymptote equations</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show each function at moderate zoom</li>
+<li>Stage 2: Zoom out to reveal asymptotic behavior</li>
+<li>Stage 3: Highlight the difference between curve and asymptote</li>
+<li>Final: Display the mathematical definition of each type</li>
+</ul>
+<p>Instructional Rationale: Side-by-side comparison helps students recognize and distinguish the three asymptote types.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="end-behavior">End Behavior</h2>
+<p><strong>End behavior</strong> describes what happens to <span class="arithmatex">\(f(x)\)</span> as <span class="arithmatex">\(x\)</span> goes to <span class="arithmatex">\(+\infty\)</span> or <span class="arithmatex">\(-\infty\)</span>. This is crucial for understanding the overall shape of a function's graph.</p>
+<h3 id="end-behavior-of-polynomials">End Behavior of Polynomials</h3>
+<p>For polynomials, end behavior depends only on the <strong>leading term</strong> (the term with the highest power).</p>
+<div class="admonition tip">
+<p class="admonition-title">Polynomial End Behavior</p>
+<p>For <span class="arithmatex">\(p(x) = a_n x^n + \text{lower terms}\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(a_n\)</span></th>
+<th><span class="arithmatex">\(n\)</span> even</th>
+<th><span class="arithmatex">\(n\)</span> odd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(a_n &gt; 0\)</span></td>
+<td>Both ends go up (<span class="arithmatex">\(\uparrow \uparrow\)</span>)</td>
+<td>Left down, right up (<span class="arithmatex">\(\downarrow \uparrow\)</span>)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(a_n &lt; 0\)</span></td>
+<td>Both ends go down (<span class="arithmatex">\(\downarrow \downarrow\)</span>)</td>
+<td>Left up, right down (<span class="arithmatex">\(\uparrow \downarrow\)</span>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Example:</strong> Describe the end behavior of <span class="arithmatex">\(f(x) = -2x^5 + 7x^3 - x + 4\)</span></p>
+<p>Leading term: <span class="arithmatex">\(-2x^5\)</span></p>
+<ul>
+<li>Coefficient is negative (<span class="arithmatex">\(-2\)</span>)</li>
+<li>Degree is odd (5)</li>
+</ul>
+<p>End behavior: <span class="arithmatex">\(\uparrow \downarrow\)</span> (left up, right down)</p>
+<p>As <span class="arithmatex">\(x \to -\infty\)</span>, <span class="arithmatex">\(f(x) \to +\infty\)</span>
+As <span class="arithmatex">\(x \to +\infty\)</span>, <span class="arithmatex">\(f(x) \to -\infty\)</span></p>
+<h3 id="end-behavior-of-rational-functions">End Behavior of Rational Functions</h3>
+<p>For rational functions, the end behavior depends on the relationship between the degrees of numerator and denominator (as we saw with horizontal asymptotes).</p>
+<table>
+<thead>
+<tr>
+<th>Degree Comparison</th>
+<th>End Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\deg(\text{top}) &lt; \deg(\text{bottom})\)</span></td>
+<td>Approaches <span class="arithmatex">\(y = 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\deg(\text{top}) = \deg(\text{bottom})\)</span></td>
+<td>Approaches <span class="arithmatex">\(y = \frac{a_n}{b_m}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\deg(\text{top}) &gt; \deg(\text{bottom})\)</span></td>
+<td>Grows without bound (like a polynomial)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-end-behavior-explorer">Diagram: End Behavior Explorer</h4>
+<iframe src="../../sims/end-behavior/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>End Behavior Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Examine</p>
+<p>Learning Objective: Students will examine how leading term characteristics determine the end behavior of polynomial and rational functions.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Function graph with adjustable viewing window</li>
+<li>Arrows at the edges indicating direction of end behavior</li>
+<li>Leading term highlighted in the function expression</li>
+<li>End behavior notation displayed: ↑↑, ↓↓, ↑↓, or ↓↑</li>
+<li>Table showing: leading coefficient sign, degree, end behavior</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function type selector: Polynomial or Rational</li>
+<li>For polynomials:</li>
+<li>Leading coefficient slider (-5 to 5)</li>
+<li>Degree slider (1 to 6)</li>
+<li>Toggle: "Show full polynomial" or "Show only leading term"</li>
+<li>For rationals:</li>
+<li>Numerator degree slider</li>
+<li>Denominator degree slider</li>
+<li>Leading coefficient ratio display</li>
+<li>Zoom controls to see far-out behavior</li>
+<li>Button: "Animate end behavior"</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Graph updates in real-time as parameters change</li>
+<li>Arrows at edges animate to show direction</li>
+<li>Table updates with analysis</li>
+<li>Animation shows Delta traveling toward infinity</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show function at standard window</li>
+<li>Stage 2: Zoom out progressively</li>
+<li>Stage 3: Display end behavior arrows</li>
+<li>Final: Show complete end behavior summary</li>
+</ul>
+<p>Instructional Rationale: Manipulating the leading term and seeing immediate graph changes builds intuition for the dominant term principle.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="comparing-growth-rates">Comparing Growth Rates</h2>
+<p>Different function types grow at vastly different rates. Understanding these comparisons helps predict long-term behavior and evaluate limits.</p>
+<h3 id="the-growth-rate-hierarchy">The Growth Rate Hierarchy</h3>
+<p>From slowest to fastest growth:</p>
+<div class="arithmatex">\[\text{logarithmic} \ll \text{polynomial} \ll \text{exponential}\]</div>
+<p>More specifically:
+<span class="arithmatex">\(<span class="arithmatex">\(\ln x \ll x^{0.1} \ll \sqrt{x} \ll x \ll x^2 \ll x^{10} \ll 2^x \ll e^x \ll 10^x \ll x!\)</span>\)</span></p>
+<div class="admonition tip">
+<p class="admonition-title">The Dominance Rule</p>
+<p>When comparing growth rates, the faster-growing function eventually dominates:</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{\text{slower}}{\text{faster}} = 0\]</div>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{\text{faster}}{\text{slower}} = \infty\]</div>
+</div>
+<h3 id="logarithmic-growth-rate">Logarithmic Growth Rate</h3>
+<p>Logarithms grow incredibly slowly. Even though <span class="arithmatex">\(\ln x \to \infty\)</span> as <span class="arithmatex">\(x \to \infty\)</span>, it does so at a glacial pace.</p>
+<p><strong>Key fact:</strong> Any positive power of <span class="arithmatex">\(x\)</span> eventually beats any logarithm:</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{\ln x}{x^n} = 0 \quad \text{for any } n &gt; 0\]</div>
+<p>Even <span class="arithmatex">\(\frac{\ln x}{\sqrt{x}} \to 0\)</span> as <span class="arithmatex">\(x \to \infty\)</span>.</p>
+<h3 id="polynomial-growth-rate">Polynomial Growth Rate</h3>
+<p>Polynomials grow at a moderate rate, determined by their degree. Higher degree = faster growth.</p>
+<p><strong>Key fact:</strong> Higher-degree polynomials dominate lower-degree ones:</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{x^m}{x^n} = \begin{cases} 0 &amp; \text{if } m &lt; n \\ 1 &amp; \text{if } m = n \\ \infty &amp; \text{if } m &gt; n \end{cases}\]</div>
+<h3 id="exponential-growth-rate">Exponential Growth Rate</h3>
+<p>Exponentials grow explosively fast. They eventually outpace any polynomial.</p>
+<p><strong>Key fact:</strong> Exponentials dominate all polynomials:</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{x^n}{e^x} = 0 \quad \text{for any } n\]</div>
+<p>Even <span class="arithmatex">\(\frac{x^{1000}}{e^x} \to 0\)</span> as <span class="arithmatex">\(x \to \infty\)</span>. The exponential always wins!</p>
+<h3 id="using-growth-rates-to-evaluate-limits">Using Growth Rates to Evaluate Limits</h3>
+<p><strong>Example 1:</strong> Find <span class="arithmatex">\(\lim_{x \to \infty} \frac{x^3}{e^x}\)</span></p>
+<p>Polynomial (degree 3) vs. exponential. Exponential dominates.</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{x^3}{e^x} = 0\]</div>
+<p><strong>Example 2:</strong> Find <span class="arithmatex">\(\lim_{x \to \infty} \frac{e^x}{x^{100}}\)</span></p>
+<p>Exponential vs. polynomial. Exponential dominates.</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{e^x}{x^{100}} = \infty\]</div>
+<p><strong>Example 3:</strong> Find <span class="arithmatex">\(\lim_{x \to \infty} \frac{\ln x}{x}\)</span></p>
+<p>Logarithmic vs. polynomial (degree 1). Polynomial dominates.</p>
+<div class="arithmatex">\[\lim_{x \to \infty} \frac{\ln x}{x} = 0\]</div>
+<h4 id="diagram-growth-rate-comparison">Diagram: Growth Rate Comparison</h4>
+<iframe src="../../sims/growth-rates/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Growth Rate Comparison MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Evaluate (L5)
+Bloom Verb: Compare</p>
+<p>Learning Objective: Students will compare growth rates of logarithmic, polynomial, and exponential functions to predict limit behavior.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Graph showing multiple functions simultaneously</li>
+<li>Color-coded curves: log (blue), polynomial (green), exponential (red)</li>
+<li>Dynamic y-axis that adjusts as exponential takes over</li>
+<li>"Race track" visualization showing which function leads at each x-value</li>
+<li>Current y-values displayed for each function</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function selection checkboxes:</li>
+<li><span class="arithmatex">\(\ln x\)</span>, <span class="arithmatex">\(\log_{10} x\)</span></li>
+<li><span class="arithmatex">\(x^{0.5}\)</span>, <span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(x^2\)</span>, <span class="arithmatex">\(x^3\)</span></li>
+<li><span class="arithmatex">\(2^x\)</span>, <span class="arithmatex">\(e^x\)</span>, <span class="arithmatex">\(10^x\)</span></li>
+<li>X-range slider (1 to 1000)</li>
+<li>Y-scale toggle: "Linear" or "Logarithmic"</li>
+<li>Button: "Race to infinity"</li>
+<li>Comparison mode: select two functions to see their ratio</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Graphs update in real-time</li>
+<li>As x increases, relative positions change</li>
+<li>In ratio mode, shows whether ratio → 0, constant, or ∞</li>
+<li>Race animation shows exponential pulling away</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show functions at x = 1 to 10 (similar magnitudes)</li>
+<li>Stage 2: x = 10 to 100 (polynomial pulls ahead of log)</li>
+<li>Stage 3: x = 100 to 1000 (exponential dominates all)</li>
+<li>Final: Display dominance relationships</li>
+</ul>
+<p>Instructional Rationale: Visual comparison at increasing scales makes the dominance hierarchy concrete and memorable.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="behavior-near-asymptotes">Behavior Near Asymptotes</h2>
+<p>Understanding how a function approaches its asymptotes helps you sketch accurate graphs.</p>
+<h3 id="approaching-vertical-asymptotes">Approaching Vertical Asymptotes</h3>
+<p>Near a vertical asymptote at <span class="arithmatex">\(x = c\)</span>:</p>
+<ol>
+<li>Determine which side(s) you're considering</li>
+<li>Check the sign of the function just to the left and just to the right of <span class="arithmatex">\(c\)</span></li>
+<li>The function goes to <span class="arithmatex">\(+\infty\)</span> or <span class="arithmatex">\(-\infty\)</span> based on these signs</li>
+</ol>
+<p><strong>Sign Analysis Method:</strong></p>
+<p>For <span class="arithmatex">\(f(x) = \frac{p(x)}{q(x)}\)</span> near a vertical asymptote at <span class="arithmatex">\(x = c\)</span>:</p>
+<ol>
+<li>Find the sign of <span class="arithmatex">\(p(x)\)</span> near <span class="arithmatex">\(c\)</span></li>
+<li>Find the sign of <span class="arithmatex">\(q(x)\)</span> on each side of <span class="arithmatex">\(c\)</span></li>
+<li>Divide signs to get the sign of <span class="arithmatex">\(f(x)\)</span></li>
+</ol>
+<p><strong>Example:</strong> Analyze <span class="arithmatex">\(f(x) = \frac{x + 2}{x - 3}\)</span> near <span class="arithmatex">\(x = 3\)</span></p>
+<ul>
+<li>At <span class="arithmatex">\(x = 3\)</span>: numerator <span class="arithmatex">\(= 3 + 2 = 5 &gt; 0\)</span> (positive)</li>
+<li>Denominator <span class="arithmatex">\(x - 3\)</span>: negative when <span class="arithmatex">\(x &lt; 3\)</span>, positive when <span class="arithmatex">\(x &gt; 3\)</span></li>
+</ul>
+<p>From the left: <span class="arithmatex">\(\frac{+}{-} = -\)</span> → <span class="arithmatex">\(f(x) \to -\infty\)</span>
+From the right: <span class="arithmatex">\(\frac{+}{+} = +\)</span> → <span class="arithmatex">\(f(x) \to +\infty\)</span></p>
+<h3 id="approaching-horizontal-asymptotes">Approaching Horizontal Asymptotes</h3>
+<p>Functions typically approach horizontal asymptotes smoothly. Key questions:</p>
+<ul>
+<li>Does the function approach from above or below?</li>
+<li>Does it cross the asymptote?</li>
+</ul>
+<p><strong>Example:</strong> For <span class="arithmatex">\(f(x) = \frac{x - 1}{x + 2}\)</span> with horizontal asymptote <span class="arithmatex">\(y = 1\)</span>:</p>
+<p>Check if <span class="arithmatex">\(f(x) &gt; 1\)</span> or <span class="arithmatex">\(f(x) &lt; 1\)</span> for large <span class="arithmatex">\(x\)</span>:</p>
+<div class="arithmatex">\[f(x) - 1 = \frac{x-1}{x+2} - 1 = \frac{x - 1 - (x + 2)}{x + 2} = \frac{-3}{x + 2}\]</div>
+<p>For large positive <span class="arithmatex">\(x\)</span>: <span class="arithmatex">\(\frac{-3}{x+2} &lt; 0\)</span>, so <span class="arithmatex">\(f(x) &lt; 1\)</span></p>
+<p>The function approaches <span class="arithmatex">\(y = 1\)</span> from below.</p>
+<hr />
+<h2 id="summary-asymptote-analysis">Summary: Asymptote Analysis</h2>
+<p>Here's your complete guide to finding asymptotes:</p>
+<h3 id="vertical-asymptotes_1">Vertical Asymptotes</h3>
+<ol>
+<li>Find where the denominator equals zero</li>
+<li>Check that the numerator isn't also zero there (otherwise, possibly a hole)</li>
+<li>Determine one-sided behavior using sign analysis</li>
+</ol>
+<h3 id="horizontal-asymptotes_1">Horizontal Asymptotes</h3>
+<ol>
+<li>Compare degrees of numerator and denominator</li>
+<li>Apply the appropriate rule:</li>
+<li>deg(top) &lt; deg(bottom): <span class="arithmatex">\(y = 0\)</span></li>
+<li>deg(top) = deg(bottom): <span class="arithmatex">\(y = \frac{\text{leading coeff of top}}{\text{leading coeff of bottom}}\)</span></li>
+<li>deg(top) &gt; deg(bottom): no horizontal asymptote</li>
+</ol>
+<h3 id="oblique-asymptotes">Oblique Asymptotes</h3>
+<ol>
+<li>Check if deg(numerator) = deg(denominator) + 1</li>
+<li>If so, perform polynomial long division</li>
+<li>The quotient (without remainder) is the oblique asymptote</li>
+</ol>
+<h3 id="end-behavior_1">End Behavior</h3>
+<ol>
+<li>For polynomials: look at the leading term</li>
+<li>For rationals: compare degrees</li>
+<li>Remember the growth hierarchy: log ≪ polynomial ≪ exponential</li>
+</ol>
+<hr />
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ol>
+<li>
+<p><strong>Vertical asymptotes</strong> occur where the function blows up—typically where the denominator is zero but the numerator isn't.</p>
+</li>
+<li>
+<p><strong>Horizontal asymptotes</strong> describe where the function levels off as <span class="arithmatex">\(x \to \pm\infty\)</span>. Compare degrees for rational functions.</p>
+</li>
+<li>
+<p><strong>Oblique asymptotes</strong> occur when the numerator's degree exceeds the denominator's by exactly one.</p>
+</li>
+<li>
+<p><strong>End behavior</strong> is controlled by the dominant term—the highest-power term in a polynomial, or the faster-growing function type.</p>
+</li>
+<li>
+<p><strong>Growth rate hierarchy:</strong> logarithms grow slowest, then polynomials, then exponentials. Exponentials always win in the long run.</p>
+</li>
+<li>
+<p><strong>Analyzing behavior near asymptotes</strong> requires sign analysis to determine whether the function approaches from above/below or goes to <span class="arithmatex">\(\pm\infty\)</span>.</p>
+</li>
+</ol>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Pun Corner</p>
+<p>"I used to think asymptotes were <em>limiting</em>, but now I see they give functions real <em>direction</em> in life! Okay, that joke was a bit <em>off the line</em>..."</p>
+</div>
+<hr />
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>You now understand how functions behave at their extremes. In Chapter 6, we'll finally tackle the big moment: <strong>the derivative</strong>. You've built all the tools—limits, continuity, asymptotic behavior—and now it's time to answer the question that started calculus: "What is the instantaneous rate of change?"</p>
+<details class="question">
+<summary>Check Your Understanding</summary>
+<ol>
+<li>Find all vertical and horizontal asymptotes of <span class="arithmatex">\(f(x) = \frac{2x^2 - 3}{x^2 - 4}\)</span>.</li>
+<li>Evaluate <span class="arithmatex">\(\lim_{x \to \infty} \frac{5x^3 + 2x}{e^x}\)</span>.</li>
+<li>Describe the end behavior of <span class="arithmatex">\(g(x) = -3x^4 + 2x^2 - 1\)</span>.</li>
+</ol>
+</details>
+<details class="note">
+<summary>Answers</summary>
+<ol>
+<li><strong>Vertical asymptotes:</strong> Factor <span class="arithmatex">\(x^2 - 4 = (x-2)(x+2)\)</span>. The denominator is zero at <span class="arithmatex">\(x = 2\)</span> and <span class="arithmatex">\(x = -2\)</span>. The numerator isn't zero at either point, so we have vertical asymptotes at <span class="arithmatex">\(x = 2\)</span> and <span class="arithmatex">\(x = -2\)</span>.</li>
+</ol>
+<p><strong>Horizontal asymptote:</strong> Degrees are equal (both 2), so <span class="arithmatex">\(y = \frac{2}{1} = 2\)</span>.</p>
+<ol>
+<li>
+<p>This is polynomial (degree 3) divided by exponential. Exponential dominates, so <span class="arithmatex">\(\lim_{x \to \infty} \frac{5x^3 + 2x}{e^x} = 0\)</span>.</p>
+</li>
+<li>
+<p>Leading term is <span class="arithmatex">\(-3x^4\)</span>. The coefficient is negative and the degree is even, so both ends go down: as <span class="arithmatex">\(x \to \pm\infty\)</span>, <span class="arithmatex">\(g(x) \to -\infty\)</span>. End behavior: <span class="arithmatex">\(\downarrow \downarrow\)</span>.</p>
+</li>
+</ol>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../04-continuity/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 4. Continuity">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                4. Continuity
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../06-derivative-concept/" class="md-footer__link md-footer__link--next" aria-label="Next: 6. The Derivative Concept">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                6. The Derivative Concept
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

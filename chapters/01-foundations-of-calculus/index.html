@@ -1,0 +1,4130 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/calculus/chapters/01-foundations-of-calculus/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-understanding-limits/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>1. Foundations of Calculus - Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#foundations-of-calculus" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Calculus" class="md-header__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Foundations of Calculus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Calculus" class="md-nav__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Foundations of Calculus
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Foundations of Calculus
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#meet-your-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meet Your Guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-foundations-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Foundations Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      What's Ahead
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-language-of-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Language of Change
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Language of Change">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Function?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Function?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-function-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Function Machine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain and Range
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Domain and Range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-domain-and-range-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Domain and Range Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-numbers-and-the-number-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Numbers and the Number Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-coordinate-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Coordinate System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Coordinate System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-coordinate-system-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Coordinate System Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graphing Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Graphs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-vertical-line-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Vertical Line Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Vertical Line Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-line-test-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical Line Test Interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-new-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building New Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building New Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composite-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composite Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composite Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composite-function-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composite Function Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-composition-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Composition Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inverse-function-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Function Property
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-inverse-functions-graphically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Inverse Functions Graphically
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-function-reflector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Function Reflector
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Transformations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Transformations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parent-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parent Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transformation Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transformation Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-transformation-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Transformation Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#even-and-odd-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Even and Odd Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piecewise-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Piecewise Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#piecewise-function-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Function Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-piecewise-function-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Piecewise Function Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-polynomial-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Polynomial Family
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Polynomial Family">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-polynomial-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Polynomial Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Polynomials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polynomial-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Polynomial Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-polynomial-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Polynomial Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rational Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rational-function-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Function Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-asymptote-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Asymptote Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exponential-and-logarithmic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential and Logarithmic Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exponential and Logarithmic Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exponential-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exponential Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exponential-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logarithmic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logarithmic Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logarithm-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithm Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-exponential-and-logarithm-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Exponential and Logarithm Relationship
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trigonometric Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-unit-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Unit Circle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Unit Circle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-unit-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Unit Circle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radian-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radian Measure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Radian Measure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#radian-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radian Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-six-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Six Trigonometric Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometric-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Identities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trigonometric Identities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-trig-identity-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Trig Identity Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing Trigonometric Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graphing Trigonometric Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amplitude-period-and-phase-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amplitude, Period, and Phase Shift
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amplitude, Period, and Phase Shift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-trig-graph-transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Trig Graph Transformer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-and-their-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions and Their Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-and-transforming-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building and Transforming Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#major-function-families" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major Function Families
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concept-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concept Checklist
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-understanding-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Understanding Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-evaluating-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Evaluating Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-continuity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Continuity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-asymptotes-and-end-behavior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Asymptotes and End Behavior
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-derivative-concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. The Derivative Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-differentiability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Differentiability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-basic-derivative-rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Basic Derivative Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Product, Quotient, Transcendental
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-chain-rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. The Chain Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-implicit-differentiation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Implicit Differentiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Inverse Function Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Higher-Order Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Related Rates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. L'Hospital's Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-mean-value-theorem-and-extrema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. MVT and Extrema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Derivative Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-curve-sketching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Curve Sketching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-basic-antiderivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20. Basic Antiderivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-transcendental-integrals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21. Transcendental Integrals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-riemann-sums-and-ftc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22. Riemann Sums and FTC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23. Integral Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendix/delta/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#meet-your-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meet Your Guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-foundations-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Foundations Matter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      What's Ahead
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-language-of-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Language of Change
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Language of Change">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Function?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Function?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-function-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Function Machine
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      Domain and Range
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Domain and Range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-domain-and-range-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Domain and Range Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-numbers-and-the-number-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      Real Numbers and the Number Line
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-coordinate-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Coordinate System
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Coordinate System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-coordinate-system-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Coordinate System Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graphing Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Graphs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-vertical-line-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Vertical Line Test
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Vertical Line Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-vertical-line-test-interactive" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Vertical Line Test Interactive
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-new-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building New Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building New Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composite-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composite Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Composite Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#composite-function-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Composite Function Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-function-composition-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Function Composition Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inverse-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inverse-function-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Function Property
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-inverse-functions-graphically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Inverse Functions Graphically
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-function-reflector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Function Reflector
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-transformations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Function Transformations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Function Transformations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parent-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parent Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformation-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transformation Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transformation Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-transformation-playground" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Transformation Playground
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#even-and-odd-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Even and Odd Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piecewise-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Piecewise Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#piecewise-function-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Function Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-piecewise-function-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Piecewise Function Builder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-polynomial-family" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Polynomial Family
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Polynomial Family">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-polynomial-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Polynomial Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Polynomials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polynomial-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomial Behavior
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Polynomial Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-polynomial-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Polynomial Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rational Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rational-function-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Function Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asymptotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Asymptotes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asymptotes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-asymptote-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Asymptote Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exponential-and-logarithmic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential and Logarithmic Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exponential and Logarithmic Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exponential-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exponential Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exponential-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logarithmic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logarithmic Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logarithm-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithm Definition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-exponential-and-logarithm-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Exponential and Logarithm Relationship
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trigonometric Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-unit-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Unit Circle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Unit Circle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-interactive-unit-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Interactive Unit Circle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radian-measure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radian Measure
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Radian Measure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#radian-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Radian Definition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-six-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Six Trigonometric Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometric-identities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Identities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trigonometric Identities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-trig-identity-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Trig Identity Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graphing-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graphing Trigonometric Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Graphing Trigonometric Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#amplitude-period-and-phase-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Amplitude, Period, and Phase Shift
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Amplitude, Period, and Phase Shift">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-trig-graph-transformer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Trig Graph Transformer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter Summary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#functions-and-their-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions and Their Properties
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-and-transforming-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building and Transforming Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#major-function-families" class="md-nav__link">
+    <span class="md-ellipsis">
+      Major Function Families
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concept-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concept Checklist
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/calculus/edit/master/docs/chapters/01-foundations-of-calculus/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="foundations-of-calculus">Foundations of Calculus</h1>
+<h2 id="meet-your-guide">Meet Your Guide</h2>
+<p><img alt="" src="../../img/delta-v1.png" /></p>
+<details>
+<summary>Image Description</summary>
+Please generate a high resolution wide-landscape, professional textbook illustration with a 16:9 width:height ratio
+
+--style: 3D rendered illustration, soft shadows, clean lines
+--mood: friendly, curious, welcoming educational
+--colors: primary teal (#009688), accent orange (#FF5722), green glow (#00E676)
+--quality: high resolution, professional textbook illustration
+
+A friendly triangular robot mascot named Delta, designed for a high school calculus textbook. The robot has an equilateral triangle-shaped body made of smooth teal/turquoise metal (hex #009688) with rounded corners for a friendly appearance. The triangle is oriented with one vertex pointing upward like the Greek letter delta (Δ).
+
+Near the top vertex (apex), Delta has two large, expressive circular LED eyes that glow warm orange (#FF5722), giving her a curious and enthusiastic expression. The eyes are slightly different sizes, with the larger one raised as if asking a question.
+
+At the two bottom vertices of the triangle, small rubber-treaded wheels are attached, allowing Delta to roll along mathematical curves. The wheels are dark gray with visible treads.
+
+Along the left edge of the triangle body, a glowing green LED strip (#00E676) acts as a "slope indicator" that shows the steepness of whatever surface Delta is on.
+
+Delta has small retractable measuring arms on each side - thin metallic appendages with small grabber claws, currently folded against the body.
+
+Next to Delta's is a backpack with the name "integral journal" where she stores accumulated data.
+
+At the very top of the apex, a thin flexible antenna with a small glowing orange ball at the tip wobbles playfully.
+
+The robot has a slightly tilted pose (about 5-10 degrees), as if standing on a slope, which reinforces her connection to derivatives and slopes.
+
+Background: Delta is positioned on a stylized mathematical landscape - a smooth 3D curve that looks like rolling hills, rendered in soft purple and blue gradients. Grid lines subtly suggest a coordinate system. The scene has warm, inviting lighting.
+
+Style: Modern 3D render with soft lighting, slightly cartoonish proportions for approachability, suitable for
+an educational textbook. Clean, professional, and appealing to high school students. Similar aesthetic to Pixar or educational app mascots.
+
+</details>
+
+<div class="admonition quote">
+<p class="admonition-title">Delta Says</p>
+<p>"Hey there! I'm Delta—a curious little triangular robot who <em>lives</em> for exploring
+mathematical landscapes. See this shape I'm rocking? It's not just for looks.
+The Greek letter delta (Δ) means <em>change</em>, and that's basically my whole personality.</p>
+<p>Throughout this course, you and I are going on an adventure together. We'll climb
+the slopes of functions, slide into valleys, hunt for peaks, and discover that
+calculus is really just two big questions: <em>How fast is something changing?</em> and
+<em>How much has accumulated along the way?</em></p>
+<p>Fair warning: I love puns, I get excited about flat spots (you'll see why), and
+I firmly believe that calculus is a superpower. By the end of this course, you'll
+have it too.</p>
+<p>Ready? Let's take this one infinitesimal step at a time!"</p>
+</div>
+<h2 id="summary">Summary</h2>
+<p>This chapter establishes the essential prerequisite knowledge from precalculus that forms the foundation for all calculus concepts. Students will review functions and their properties, including domain, range, composition, and inverses. The chapter covers the major function families—polynomial, rational, exponential, logarithmic, and trigonometric—along with graphing techniques and transformations.</p>
+<p>After completing this chapter, you'll have a solid foundation for understanding limits and derivatives—and Delta will be ready to start exploring some curves!</p>
+<h2 id="why-foundations-matter">Why Foundations Matter</h2>
+<p>Before we can ask "How steep is this curve?" we need to understand what curves look like in the first place. This chapter is like packing your backpack before a hiking trip:</p>
+<ul>
+<li><strong>Functions</strong> are the landscapes Delta will explore</li>
+<li><strong>Domain and range</strong> tell us where Delta can and can't go</li>
+<li><strong>Transformations</strong> show us how one landscape relates to another</li>
+<li><strong>Different function families</strong> give us different types of terrain to master</li>
+</ul>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"I know, I know—you're thinking 'I already learned functions in precalc!' But trust me,
+we're going to see them differently now. Instead of just graphing them, we're going
+to <em>walk</em> on them. And when you walk on a curve, you start noticing things like:
+Where is it steep? Where is it flat? Where does it go forever?</p>
+<p>Those questions? That's calculus whispering to you."</p>
+</div>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 20 concepts from the learning graph:</p>
+<ol>
+<li>Function</li>
+<li>Domain and Range</li>
+<li>Function Notation</li>
+<li>Composite Function</li>
+<li>Inverse Function</li>
+<li>Graphing Functions</li>
+<li>Piecewise Function</li>
+<li>Even and Odd Functions</li>
+<li>Function Transformations</li>
+<li>Polynomial Function</li>
+<li>Rational Function</li>
+<li>Exponential Function</li>
+<li>Logarithmic Function</li>
+<li>Trigonometric Function</li>
+<li>Unit Circle</li>
+<li>Radian Measure</li>
+<li>Trigonometric Identities</li>
+<li>Coordinate System</li>
+<li>Number Line</li>
+<li>Real Numbers</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>, specifically:</p>
+<ul>
+<li>Algebra II (polynomial, rational, exponential, and logarithmic functions)</li>
+<li>Precalculus or Trigonometry (trigonometric functions, identities, and equations)</li>
+<li>Functions and Graphs (domain, range, composition, and transformations)</li>
+</ul>
+<h2 id="whats-ahead">What's Ahead</h2>
+<p>Once we've reviewed these foundations, Delta will be ready to tackle the big ideas:</p>
+<ul>
+<li><strong>Chapter 2</strong>: We'll learn about <em>limits</em>—what happens as Delta gets infinitely close to a point</li>
+<li><strong>Chapter 6</strong>: We'll discover <em>derivatives</em>—how Delta measures her tilt at any instant</li>
+<li><strong>Chapter 20</strong>: We'll explore <em>integrals</em>—how Delta tracks her total journey in her backpack</li>
+</ul>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Sidequest</p>
+<p>"Before we dive into calculus proper, I have a challenge for you: pick your favorite
+function from precalc—maybe a parabola, maybe a sine wave—and imagine actually
+<em>walking</em> on it. Where would you be climbing? Where would you be sliding downhill?
+Where would you stop to catch your breath on flat ground?</p>
+<p>That mental exercise? You just did calculus. Informally, but still. High five!"</p>
+</div>
+<hr />
+<h2 id="the-language-of-change">The Language of Change</h2>
+<p>Before Delta can explore the slopes of curves, she needs to understand the landscapes themselves. Every calculus adventure begins with functions—the mathematical machines that describe how one quantity depends on another. In this chapter, we'll review the essential tools from precalculus that make calculus possible.</p>
+<p>Think of this chapter as gathering your gear before a hiking trip. You wouldn't climb a mountain without knowing how to read a trail map. Similarly, you can't do calculus without understanding functions, their graphs, and their behaviors.</p>
+<h3 id="what-is-a-function">What Is a Function?</h3>
+<p>A <strong>function</strong> is a rule that assigns exactly one output to each input. If you think of it as a machine, you feed in a number, the machine does something to it, and out pops exactly one result.</p>
+<h4 id="the-function-machine">The Function Machine</h4>
+<iframe src="../../sims/function-machine/main.html" width="100%" height="450px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Function Machine MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will explain how a function processes inputs to produce outputs, demonstrating the "one input, one output" rule.</p>
+<p>Visual Elements:
+- A "machine" graphic in the center with an input hopper on the left and output chute on the right
+- Input number entry field (or slider from -10 to 10)
+- Function selector dropdown: f(x) = 2x, f(x) = x², f(x) = |x|, f(x) = sin(x)
+- Animated number flowing into machine, transformation shown inside, output appearing
+- Table showing last 5 input-output pairs</p>
+<p>Interactive Controls:
+- Number input or slider for x value
+- Function dropdown selector
+- "Process" button to animate the transformation
+- "Clear History" button</p>
+<p>Data Visibility Requirements:
+Stage 1: Show input value x entering the machine
+Stage 2: Show the formula being applied (e.g., "2 × 3 = 6")
+Stage 3: Show output value emerging</p>
+<p>Instructional Rationale: Step-through visualization helps students see that each input produces exactly one output, reinforcing the definition of a function.</p>
+<p>Canvas size: 600×400px, responsive
+Implementation: p5.js with canvas-based controls</p>
+</details>
+<p>The key property of a function is this: for every input, there's exactly <em>one</em> output. You can't put in 3 and get both 9 and -9 back—that would break the rule.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Think of me as a function! Give me any point on a curve, and I'll tell you exactly
+one slope. No ambiguity, no multiple answers—just one honest tilt reading."</p>
+</div>
+<h3 id="function-notation">Function Notation</h3>
+<p>When we write <span class="arithmatex">\(f(x) = x^2 + 3\)</span>, we're giving the function a name (<span class="arithmatex">\(f\)</span>) and describing what it does to its input (<span class="arithmatex">\(x\)</span>). The notation <span class="arithmatex">\(f(x)\)</span> is read as "f of x" and represents the output when <span class="arithmatex">\(x\)</span> is the input.</p>
+<p>Common notations you'll encounter:</p>
+<table>
+<thead>
+<tr>
+<th>Notation</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>The output of function <span class="arithmatex">\(f\)</span> when the input is <span class="arithmatex">\(x\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(2)\)</span></td>
+<td>The output when <span class="arithmatex">\(x = 2\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(a + h)\)</span></td>
+<td>The output when the input is the expression <span class="arithmatex">\(a + h\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(y = f(x)\)</span></td>
+<td>The variable <span class="arithmatex">\(y\)</span> represents the output of <span class="arithmatex">\(f\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Function notation becomes essential in calculus because we need to talk about what happens at specific points, and what happens as inputs change.</p>
+<p><strong>Example:</strong> If <span class="arithmatex">\(f(x) = x^2 - 4x + 7\)</span>, then:</p>
+<ul>
+<li><span class="arithmatex">\(f(0) = 0^2 - 4(0) + 7 = 7\)</span></li>
+<li><span class="arithmatex">\(f(3) = 3^2 - 4(3) + 7 = 9 - 12 + 7 = 4\)</span></li>
+<li><span class="arithmatex">\(f(a) = a^2 - 4a + 7\)</span></li>
+</ul>
+<h3 id="domain-and-range">Domain and Range</h3>
+<p>The <strong>domain</strong> of a function is the set of all valid inputs—every <span class="arithmatex">\(x\)</span> value you're allowed to plug in. The <strong>range</strong> is the set of all possible outputs—every <span class="arithmatex">\(y\)</span> value the function can produce.</p>
+<p>Why do some inputs get rejected? Usually for one of these reasons:</p>
+<ul>
+<li><strong>Division by zero</strong>: If <span class="arithmatex">\(f(x) = \frac{1}{x-2}\)</span>, then <span class="arithmatex">\(x = 2\)</span> is not in the domain</li>
+<li><strong>Square roots of negatives</strong>: If <span class="arithmatex">\(f(x) = \sqrt{x}\)</span>, then negative numbers aren't in the domain (for real numbers)</li>
+<li><strong>Logarithms of non-positives</strong>: If <span class="arithmatex">\(f(x) = \ln(x)\)</span>, then <span class="arithmatex">\(x\)</span> must be positive</li>
+</ul>
+<h4 id="diagram-domain-and-range-visualizer">Diagram: Domain and Range Visualizer</h4>
+<iframe src="../../sims/domain-range-visualizer/main.html" width="100%" height="487px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Domain and Range Visualizer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Interpret</p>
+<p>Learning Objective: Students will interpret domain and range graphically, connecting algebraic restrictions to visual representations on the coordinate plane.</p>
+<p>Visual Elements:
+- Coordinate plane with function graph
+- Horizontal number line below graph showing domain (highlighted in green)
+- Vertical number line to the left showing range (highlighted in blue)
+- Vertical dashed lines at domain boundaries
+- Horizontal dashed lines at range boundaries
+- Function selector dropdown</p>
+<p>Functions to include:
+- <span class="arithmatex">\(f(x) = x^2\)</span> (domain: all reals, range: <span class="arithmatex">\(y \geq 0\)</span>)
+- <span class="arithmatex">\(f(x) = \sqrt{x}\)</span> (domain: <span class="arithmatex">\(x \geq 0\)</span>, range: <span class="arithmatex">\(y \geq 0\)</span>)
+- <span class="arithmatex">\(f(x) = \frac{1}{x}\)</span> (domain: <span class="arithmatex">\(x \neq 0\)</span>, range: <span class="arithmatex">\(y \neq 0\)</span>)
+- <span class="arithmatex">\(f(x) = \sin(x)\)</span> (domain: all reals, range: <span class="arithmatex">\(-1 \leq y \leq 1\)</span>)</p>
+<p>Interactive Controls:
+- Function dropdown selector
+- Mouse hover on graph highlights corresponding domain and range points
+- Toggle buttons to show/hide domain and range highlights</p>
+<p>Instructional Rationale: Visual mapping between graph features and domain/range helps students connect algebraic restrictions to geometric meaning.</p>
+<p>Canvas size: 700×500px, responsive
+Implementation: p5.js</p>
+</details>
+<div class="admonition quote">
+<p class="admonition-title">Delta Says</p>
+<p>"Domain tells me where I'm <em>allowed</em> to walk. Range tells me how <em>high</em> or <em>low</em>
+I might end up. Before I explore any curve, I need to know my boundaries!"</p>
+</div>
+<h3 id="real-numbers-and-the-number-line">Real Numbers and the Number Line</h3>
+<p>All the numbers we typically use in calculus are <strong>real numbers</strong>—they include:</p>
+<ul>
+<li>Natural numbers: 1, 2, 3, ...</li>
+<li>Integers: ..., -2, -1, 0, 1, 2, ...</li>
+<li>Rational numbers: fractions like <span class="arithmatex">\(\frac{3}{4}\)</span> or <span class="arithmatex">\(-\frac{7}{2}\)</span></li>
+<li>Irrational numbers: <span class="arithmatex">\(\sqrt{2}\)</span>, <span class="arithmatex">\(\pi\)</span>, <span class="arithmatex">\(e\)</span></li>
+</ul>
+<p>We visualize real numbers on a <strong>number line</strong>, where every point corresponds to exactly one real number, and every real number corresponds to exactly one point.</p>
+<p>The real number line extends infinitely in both directions. In calculus, we'll often talk about:</p>
+<ul>
+<li><strong>Intervals</strong>: portions of the number line like <span class="arithmatex">\([2, 5]\)</span> or <span class="arithmatex">\((-\infty, 3)\)</span></li>
+<li><strong>Approaching values</strong>: what happens as <span class="arithmatex">\(x\)</span> gets closer and closer to some number</li>
+<li><strong>Infinity</strong>: not a number, but a concept describing unbounded growth</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Interval Notation</th>
+<th>Meaning</th>
+<th>Number Line</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\([a, b]\)</span></td>
+<td>All numbers from <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(b\)</span>, including both</td>
+<td>Closed dots at both ends</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((a, b)\)</span></td>
+<td>All numbers from <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(b\)</span>, excluding both</td>
+<td>Open dots at both ends</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\([a, b)\)</span></td>
+<td>Includes <span class="arithmatex">\(a\)</span>, excludes <span class="arithmatex">\(b\)</span></td>
+<td>Closed at <span class="arithmatex">\(a\)</span>, open at <span class="arithmatex">\(b\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((-\infty, b]\)</span></td>
+<td>All numbers up to and including <span class="arithmatex">\(b\)</span></td>
+<td>Arrow left, closed at <span class="arithmatex">\(b\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-coordinate-system">The Coordinate System</h3>
+<p>To graph functions, we use the <strong>Cartesian coordinate system</strong>—a plane defined by two perpendicular number lines called axes.</p>
+<ul>
+<li>The horizontal axis is the <strong><span class="arithmatex">\(x\)</span>-axis</strong> (inputs)</li>
+<li>The vertical axis is the <strong><span class="arithmatex">\(y\)</span>-axis</strong> (outputs)</li>
+<li>The point where they cross is the <strong>origin</strong> <span class="arithmatex">\((0, 0)\)</span></li>
+<li>Every point in the plane has coordinates <span class="arithmatex">\((x, y)\)</span></li>
+</ul>
+<h4 id="diagram-coordinate-system-explorer">Diagram: Coordinate System Explorer</h4>
+<iframe src="../../sims/coordinate-system-explorer/main.html" width="100%" height="450px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Coordinate System Explorer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Remember (L1)
+Bloom Verb: Identify</p>
+<p>Learning Objective: Students will identify points in the coordinate plane and name the quadrant where each point lies.</p>
+<p>Visual Elements:
+- Standard coordinate plane with grid lines
+- Four quadrants labeled (I, II, III, IV)
+- Origin clearly marked
+- Delta mascot that moves to clicked location
+- Coordinate display showing (x, y) of current position</p>
+<p>Interactive Controls:
+- Click anywhere on the plane to place a point
+- Coordinates update in real-time as mouse moves
+- "Quiz Mode" button: shows a point, student identifies coordinates
+- "Place Point" mode: student enters coordinates, Delta moves there</p>
+<p>Instructional Rationale: Direct manipulation builds spatial intuition and reinforces the coordinate system as the foundation for all graphing.</p>
+<p>Canvas size: 500×500px, responsive
+Implementation: p5.js</p>
+</details>
+<p>The coordinate system divides the plane into four <strong>quadrants</strong>:</p>
+<ul>
+<li><strong>Quadrant I</strong>: <span class="arithmatex">\(x &gt; 0\)</span> and <span class="arithmatex">\(y &gt; 0\)</span> (upper right)</li>
+<li><strong>Quadrant II</strong>: <span class="arithmatex">\(x &lt; 0\)</span> and <span class="arithmatex">\(y &gt; 0\)</span> (upper left)</li>
+<li><strong>Quadrant III</strong>: <span class="arithmatex">\(x &lt; 0\)</span> and <span class="arithmatex">\(y &lt; 0\)</span> (lower left)</li>
+<li><strong>Quadrant IV</strong>: <span class="arithmatex">\(x &gt; 0\)</span> and <span class="arithmatex">\(y &lt; 0\)</span> (lower right)</li>
+</ul>
+<hr />
+<h2 id="graphing-functions">Graphing Functions</h2>
+<p>The graph of a function is the set of all points <span class="arithmatex">\((x, f(x))\)</span> plotted on the coordinate plane. It's a visual representation of how outputs change as inputs change—exactly the kind of landscape Delta loves to explore.</p>
+<h3 id="reading-graphs">Reading Graphs</h3>
+<p>From a graph, you can extract a wealth of information:</p>
+<ul>
+<li><strong>Function values</strong>: the height of the graph at any <span class="arithmatex">\(x\)</span></li>
+<li><strong>Zeros/roots</strong>: where the graph crosses the <span class="arithmatex">\(x\)</span>-axis</li>
+<li><strong>Intercepts</strong>: where the graph crosses either axis</li>
+<li><strong>Increasing/decreasing behavior</strong>: where the graph rises or falls</li>
+<li><strong>Maximum and minimum values</strong>: the peaks and valleys</li>
+</ul>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"When I look at a graph, I see a hiking trail. The high points are summits,
+the low points are valleys, and the slopes tell me how hard I'll be working.
+Every graph is an adventure waiting to happen!"</p>
+</div>
+<h3 id="the-vertical-line-test">The Vertical Line Test</h3>
+<p>How do you know if a graph represents a function? Use the <strong>vertical line test</strong>: if any vertical line crosses the graph more than once, it's not a function.</p>
+<p>Why? Because a function can only have one output for each input. If a vertical line (which represents a single <span class="arithmatex">\(x\)</span> value) hits the graph twice, that <span class="arithmatex">\(x\)</span> has two outputs—rule broken!</p>
+<h4 id="diagram-vertical-line-test-interactive">Diagram: Vertical Line Test Interactive</h4>
+<iframe src="../../sims/vertical-line-test/main.html" width="100%" height="400px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Vertical Line Test Interactive</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Use</p>
+<p>Learning Objective: Students will use the vertical line test to determine whether a given graph represents a function.</p>
+<p>Visual Elements:
+- Graph display area with various curves
+- Draggable vertical line that follows mouse horizontally
+- Intersection points highlighted when vertical line crosses graph
+- Counter showing number of intersections
+- "Is it a function?" indicator (green check or red X)</p>
+<p>Graphs to include:
+- Parabola <span class="arithmatex">\(y = x^2\)</span> (passes - function)
+- Circle <span class="arithmatex">\(x^2 + y^2 = 9\)</span> (fails - not a function)
+- Sine wave (passes - function)
+- Sideways parabola <span class="arithmatex">\(x = y^2\)</span> (fails - not a function)
+- Cubic <span class="arithmatex">\(y = x^3\)</span> (passes - function)</p>
+<p>Interactive Controls:
+- Graph selector buttons or dropdown
+- Mouse controls vertical line position
+- Reset button</p>
+<p>Instructional Rationale: Active testing reinforces the "one output per input" concept through direct manipulation.</p>
+<p>Canvas size: 600×400px, responsive
+Implementation: p5.js</p>
+</details>
+<hr />
+<h2 id="building-new-functions">Building New Functions</h2>
+<p>Once you know basic functions, you can combine them to create new ones. This is where function operations become powerful.</p>
+<h3 id="composite-functions">Composite Functions</h3>
+<p>A <strong>composite function</strong> is created by feeding the output of one function into another. If you have functions <span class="arithmatex">\(f\)</span> and <span class="arithmatex">\(g\)</span>, the composite <span class="arithmatex">\(f \circ g\)</span> (read "f composed with g") means:</p>
+<h4 id="composite-function-definition">Composite Function Definition</h4>
+<p><span class="arithmatex">\((f \circ g)(x) = f(g(x))\)</span></p>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(g(x)\)</span> is evaluated first (the "inner" function)</li>
+<li>The result becomes the input to <span class="arithmatex">\(f\)</span> (the "outer" function)</li>
+</ul>
+<p><strong>Example:</strong> If <span class="arithmatex">\(f(x) = x^2\)</span> and <span class="arithmatex">\(g(x) = x + 3\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\((f \circ g)(x) = f(g(x)) = f(x + 3) = (x + 3)^2\)</span></li>
+<li><span class="arithmatex">\((g \circ f)(x) = g(f(x)) = g(x^2) = x^2 + 3\)</span></li>
+</ul>
+<p>Notice that <span class="arithmatex">\(f \circ g \neq g \circ f\)</span> in general—order matters!</p>
+<h4 id="diagram-function-composition-visualizer">Diagram: Function Composition Visualizer</h4>
+<iframe src="../../sims/function-composition/main.html" width="100%" height="450px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Function Composition Visualizer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will explain how composite functions work by tracing values through two function "machines" in sequence.</p>
+<p>Visual Elements:
+- Two function machines arranged in series
+- Input enters first machine (g), output becomes input to second machine (f)
+- Animated flow showing value transformation at each stage
+- Display showing: Input → g(x) → intermediate value → f(intermediate) → final output
+- Both functions displayed algebraically</p>
+<p>Interactive Controls:
+- Input slider (-5 to 5)
+- Function selectors for f and g:
+  - Options: x², x+2, 2x, √x, |x|
+- "Swap Order" button to demonstrate f∘g vs g∘f
+- "Animate" button to show value flowing through</p>
+<p>Data Visibility Requirements:
+Stage 1: Input value x appears
+Stage 2: First function g applied, show calculation
+Stage 3: Intermediate result displayed
+Stage 4: Second function f applied to intermediate
+Stage 5: Final result shown with full chain</p>
+<p>Instructional Rationale: Step-by-step animation demystifies composition by making the sequence of operations visible.</p>
+<p>Canvas size: 700×450px, responsive
+Implementation: p5.js</p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">Calculus Preview</p>
+<p>The <strong>chain rule</strong> in calculus tells us how to find the derivative of composite
+functions. Understanding composition now will make the chain rule feel natural later.</p>
+</div>
+<h3 id="inverse-functions">Inverse Functions</h3>
+<p>An <strong>inverse function</strong> "undoes" what the original function does. If <span class="arithmatex">\(f\)</span> takes <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(b\)</span>, then <span class="arithmatex">\(f^{-1}\)</span> takes <span class="arithmatex">\(b\)</span> back to <span class="arithmatex">\(a\)</span>.</p>
+<h4 id="inverse-function-property">Inverse Function Property</h4>
+<p><span class="arithmatex">\(f^{-1}(f(x)) = x\)</span> and <span class="arithmatex">\(f(f^{-1}(x)) = x\)</span></p>
+<p>For a function to have an inverse, it must be <strong>one-to-one</strong>: each output comes from exactly one input. Graphically, this means it passes the <strong>horizontal line test</strong>—no horizontal line crosses the graph more than once.</p>
+<p><strong>Example:</strong> The function <span class="arithmatex">\(f(x) = x^3\)</span> has inverse <span class="arithmatex">\(f^{-1}(x) = \sqrt[3]{x}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(f(2) = 8\)</span>, and <span class="arithmatex">\(f^{-1}(8) = 2\)</span> ✓</li>
+</ul>
+<p><strong>Non-example:</strong> The function <span class="arithmatex">\(f(x) = x^2\)</span> does <em>not</em> have an inverse over all real numbers because <span class="arithmatex">\(f(2) = f(-2) = 4\)</span>. Which input does <span class="arithmatex">\(f^{-1}(4)\)</span> return?</p>
+<div class="admonition warning">
+<p class="admonition-title">Common Confusion</p>
+<p>The notation <span class="arithmatex">\(f^{-1}(x)\)</span> means the inverse function, NOT <span class="arithmatex">\(\frac{1}{f(x)}\)</span>.
+These are completely different! The superscript -1 here indicates inverse, not a power.</p>
+</div>
+<h4 id="finding-inverse-functions-graphically">Finding Inverse Functions Graphically</h4>
+<p>The graph of <span class="arithmatex">\(f^{-1}\)</span> is the reflection of the graph of <span class="arithmatex">\(f\)</span> across the line <span class="arithmatex">\(y = x\)</span>. This makes sense: if <span class="arithmatex">\((a, b)\)</span> is on the graph of <span class="arithmatex">\(f\)</span>, then <span class="arithmatex">\((b, a)\)</span> is on the graph of <span class="arithmatex">\(f^{-1}\)</span>.</p>
+<h4 id="diagram-inverse-function-reflector">Diagram: Inverse Function Reflector</h4>
+<iframe src="../../sims/inverse-function-reflector/main.html" width="100%" height="500px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Inverse Function Reflector</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Compare</p>
+<p>Learning Objective: Students will compare a function and its inverse graphically, identifying the reflection relationship across the line y = x.</p>
+<p>Visual Elements:
+- Coordinate plane with y = x line shown as dashed
+- Original function f(x) in blue
+- Inverse function f⁻¹(x) in orange (can be toggled on/off)
+- Point on f(x) and corresponding point on f⁻¹(x) highlighted
+- Connecting line showing the reflection</p>
+<p>Functions with inverses:
+- <span class="arithmatex">\(f(x) = 2x + 1\)</span> and <span class="arithmatex">\(f^{-1}(x) = \frac{x-1}{2}\)</span>
+- <span class="arithmatex">\(f(x) = x^3\)</span> and <span class="arithmatex">\(f^{-1}(x) = \sqrt[3]{x}\)</span>
+- <span class="arithmatex">\(f(x) = e^x\)</span> and <span class="arithmatex">\(f^{-1}(x) = \ln(x)\)</span>
+- <span class="arithmatex">\(f(x) = \sqrt{x}\)</span> (x≥0) and <span class="arithmatex">\(f^{-1}(x) = x^2\)</span> (x≥0)</p>
+<p>Interactive Controls:
+- Function selector dropdown
+- Checkbox to show/hide inverse
+- Checkbox to show/hide y = x line
+- Draggable point on f(x) that shows corresponding inverse point</p>
+<p>Instructional Rationale: Visual reflection reinforces that inverse functions "swap" x and y coordinates.</p>
+<p>Canvas size: 550×500px, responsive
+Implementation: p5.js</p>
+</details>
+<hr />
+<h2 id="function-transformations">Function Transformations</h2>
+<p>One of the most powerful tools in mathematics is understanding how basic functions can be stretched, shifted, and flipped to create new functions. Instead of memorizing countless graph shapes, you can master a few parent functions and transform them.</p>
+<h3 id="parent-functions">Parent Functions</h3>
+<p>A <strong>parent function</strong> is the simplest form of a function family. Here are the ones you should know:</p>
+<table>
+<thead>
+<tr>
+<th>Function Family</th>
+<th>Parent Function</th>
+<th>Basic Shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linear</td>
+<td><span class="arithmatex">\(f(x) = x\)</span></td>
+<td>Straight line through origin</td>
+</tr>
+<tr>
+<td>Quadratic</td>
+<td><span class="arithmatex">\(f(x) = x^2\)</span></td>
+<td>U-shaped parabola</td>
+</tr>
+<tr>
+<td>Cubic</td>
+<td><span class="arithmatex">\(f(x) = x^3\)</span></td>
+<td>S-shaped curve</td>
+</tr>
+<tr>
+<td>Square root</td>
+<td><span class="arithmatex">\(f(x) = \sqrt{x}\)</span></td>
+<td>Half parabola on its side</td>
+</tr>
+<tr>
+<td>Absolute value</td>
+<td><span class="arithmatex">\(f(x) = \|x\|\)</span></td>
+<td>V-shape</td>
+</tr>
+<tr>
+<td>Reciprocal</td>
+<td><span class="arithmatex">\(f(x) = \frac{1}{x}\)</span></td>
+<td>Two branches (hyperbola)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transformation-rules">Transformation Rules</h3>
+<p>Starting from any parent function <span class="arithmatex">\(f(x)\)</span>, you can apply transformations:</p>
+<table>
+<thead>
+<tr>
+<th>Transformation</th>
+<th>Notation</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vertical shift up</td>
+<td><span class="arithmatex">\(f(x) + k\)</span></td>
+<td>Moves graph up by <span class="arithmatex">\(k\)</span> units</td>
+</tr>
+<tr>
+<td>Vertical shift down</td>
+<td><span class="arithmatex">\(f(x) - k\)</span></td>
+<td>Moves graph down by <span class="arithmatex">\(k\)</span> units</td>
+</tr>
+<tr>
+<td>Horizontal shift right</td>
+<td><span class="arithmatex">\(f(x - h)\)</span></td>
+<td>Moves graph right by <span class="arithmatex">\(h\)</span> units</td>
+</tr>
+<tr>
+<td>Horizontal shift left</td>
+<td><span class="arithmatex">\(f(x + h)\)</span></td>
+<td>Moves graph left by <span class="arithmatex">\(h\)</span> units</td>
+</tr>
+<tr>
+<td>Vertical stretch</td>
+<td><span class="arithmatex">\(a \cdot f(x)\)</span> where <span class="arithmatex">\(\|a\| &gt; 1\)</span></td>
+<td>Stretches graph vertically</td>
+</tr>
+<tr>
+<td>Vertical compression</td>
+<td><span class="arithmatex">\(a \cdot f(x)\)</span> where <span class="arithmatex">\(0 &lt; \|a\| &lt; 1\)</span></td>
+<td>Compresses graph vertically</td>
+</tr>
+<tr>
+<td>Horizontal stretch</td>
+<td><span class="arithmatex">\(f(bx)\)</span> where <span class="arithmatex">\(0 &lt; \|b\| &lt; 1\)</span></td>
+<td>Stretches graph horizontally</td>
+</tr>
+<tr>
+<td>Horizontal compression</td>
+<td><span class="arithmatex">\(f(bx)\)</span> where <span class="arithmatex">\(\|b\| &gt; 1\)</span></td>
+<td>Compresses graph horizontally</td>
+</tr>
+<tr>
+<td>Reflection over x-axis</td>
+<td><span class="arithmatex">\(-f(x)\)</span></td>
+<td>Flips graph upside down</td>
+</tr>
+<tr>
+<td>Reflection over y-axis</td>
+<td><span class="arithmatex">\(f(-x)\)</span></td>
+<td>Flips graph left-right</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Sidequest</p>
+<p>"The weird thing about horizontal transformations? They work <em>opposite</em> to what you'd
+expect! <span class="arithmatex">\(f(x - 3)\)</span> shifts RIGHT, not left. I remember it this way: the minus sign
+is trying to 'push' the input value to the left, so the whole graph has to
+slide right to compensate."</p>
+</div>
+<h4 id="diagram-transformation-playground">Diagram: Transformation Playground</h4>
+<iframe src="../../sims/transformation-playground/main.html" width="100%" height="550px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Transformation Playground</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Demonstrate</p>
+<p>Learning Objective: Students will demonstrate understanding of function transformations by manipulating parameters and predicting the resulting graph changes.</p>
+<p>Visual Elements:
+- Coordinate plane with parent function shown in light gray
+- Transformed function shown in bold color
+- Formula display showing current transformation: <span class="arithmatex">\(a \cdot f(b(x - h)) + k\)</span>
+- Parameter values displayed next to sliders
+- Key points labeled on both parent and transformed functions</p>
+<p>Interactive Controls:
+- Parent function selector: <span class="arithmatex">\(x^2\)</span>, <span class="arithmatex">\(|x|\)</span>, <span class="arithmatex">\(\sqrt{x}\)</span>, <span class="arithmatex">\(\sin(x)\)</span>, <span class="arithmatex">\(x^3\)</span>
+- Slider for <span class="arithmatex">\(a\)</span> (vertical stretch/reflection): -3 to 3
+- Slider for <span class="arithmatex">\(b\)</span> (horizontal stretch/reflection): -3 to 3
+- Slider for <span class="arithmatex">\(h\)</span> (horizontal shift): -5 to 5
+- Slider for <span class="arithmatex">\(k\)</span> (vertical shift): -5 to 5
+- "Reset" button to return to parent function
+- Checkbox to show/hide parent function</p>
+<p>Challenge Mode:
+- Show target transformed graph
+- Student adjusts sliders to match
+- Check answer button</p>
+<p>Instructional Rationale: Direct manipulation with immediate visual feedback builds transformation intuition faster than memorizing rules.</p>
+<p>Canvas size: 700×550px, responsive
+Implementation: p5.js with canvas-based sliders</p>
+</details>
+<h3 id="even-and-odd-functions">Even and Odd Functions</h3>
+<p>Some functions have special symmetry properties that simplify their analysis.</p>
+<p>An <strong>even function</strong> satisfies <span class="arithmatex">\(f(-x) = f(x)\)</span> for all <span class="arithmatex">\(x\)</span> in its domain. Graphically, even functions are symmetric about the <span class="arithmatex">\(y\)</span>-axis—if you fold the graph along the <span class="arithmatex">\(y\)</span>-axis, both halves match.</p>
+<p><strong>Examples of even functions:</strong> <span class="arithmatex">\(f(x) = x^2\)</span>, <span class="arithmatex">\(f(x) = |x|\)</span>, <span class="arithmatex">\(f(x) = \cos(x)\)</span></p>
+<p>An <strong>odd function</strong> satisfies <span class="arithmatex">\(f(-x) = -f(x)\)</span> for all <span class="arithmatex">\(x\)</span> in its domain. Graphically, odd functions have rotational symmetry about the origin—if you rotate the graph 180°, it looks the same.</p>
+<p><strong>Examples of odd functions:</strong> <span class="arithmatex">\(f(x) = x^3\)</span>, <span class="arithmatex">\(f(x) = x\)</span>, <span class="arithmatex">\(f(x) = \sin(x)\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">Most Functions Are Neither</p>
+<p>Many functions are neither even nor odd. For example, <span class="arithmatex">\(f(x) = x^2 + x\)</span> has no
+special symmetry. Don't assume every function must be one or the other!</p>
+</div>
+<hr />
+<h2 id="piecewise-functions">Piecewise Functions</h2>
+<p>A <strong>piecewise function</strong> is defined by different formulas on different parts of its domain. You use one rule here, another rule there.</p>
+<h4 id="piecewise-function-definition">Piecewise Function Definition</h4>
+<p>A piecewise function has the form:</p>
+<div class="arithmatex">\[f(x) = \begin{cases} \text{formula}_1 &amp; \text{if } x \text{ satisfies condition}_1 \\ \text{formula}_2 &amp; \text{if } x \text{ satisfies condition}_2 \\ \vdots &amp; \vdots \end{cases}\]</div>
+<p><strong>Example:</strong> The absolute value function can be written as a piecewise function:</p>
+<div class="arithmatex">\[|x| = \begin{cases} x &amp; \text{if } x \geq 0 \\ -x &amp; \text{if } x &lt; 0 \end{cases}\]</div>
+<p>Piecewise functions are important in calculus because they can model real situations where behavior changes based on conditions—tax brackets, shipping costs, speed limits, and more.</p>
+<h4 id="diagram-piecewise-function-builder">Diagram: Piecewise Function Builder</h4>
+<iframe src="../../sims/piecewise-builder/main.html" width="100%" height="500px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Piecewise Function Builder</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Create (L6)
+Bloom Verb: Construct</p>
+<p>Learning Objective: Students will construct piecewise functions by defining different rules for different domains and observe the resulting graph.</p>
+<p>Visual Elements:
+- Coordinate plane with piecewise function graph
+- Different colored segments for each piece
+- Open/closed dots at boundaries showing continuity
+- Formula display showing current piecewise definition
+- Delta walking along the function, pausing at breakpoints</p>
+<p>Interactive Controls:
+- Add/remove piece buttons (max 4 pieces)
+- For each piece:
+  - Function type dropdown (linear, quadratic, constant)
+  - Parameter inputs or sliders
+  - Domain boundary inputs
+  - Include/exclude boundary toggles (open vs closed dot)
+- Preset examples: absolute value, floor function, step function</p>
+<p>Instructional Rationale: Building piecewise functions helps students understand how multiple rules combine and prepares them for analyzing continuity.</p>
+<p>Canvas size: 700×500px, responsive
+Implementation: p5.js</p>
+</details>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Walking on a piecewise function is like hiking a trail with different terrains.
+Smooth pavement here, gravel there, maybe a wooden bridge. The question I always
+ask at the boundaries: Can I cross smoothly, or is there a step I might trip on?"</p>
+</div>
+<hr />
+<h2 id="the-polynomial-family">The Polynomial Family</h2>
+<p><strong>Polynomial functions</strong> are built from powers of <span class="arithmatex">\(x\)</span> with constant coefficients. They're some of the most well-behaved functions in mathematics—smooth, continuous, and defined everywhere.</p>
+<h4 id="general-polynomial-form">General Polynomial Form</h4>
+<div class="arithmatex">\[P(x) = a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(n\)</span> is a non-negative integer (the <strong>degree</strong>)</li>
+<li><span class="arithmatex">\(a_n, a_{n-1}, \ldots, a_0\)</span> are constants (the <strong>coefficients</strong>)</li>
+<li><span class="arithmatex">\(a_n \neq 0\)</span> (the <strong>leading coefficient</strong>)</li>
+</ul>
+<h3 id="types-of-polynomials">Types of Polynomials</h3>
+<table>
+<thead>
+<tr>
+<th>Degree</th>
+<th>Name</th>
+<th>General Form</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Constant</td>
+<td><span class="arithmatex">\(f(x) = c\)</span></td>
+<td><span class="arithmatex">\(f(x) = 5\)</span></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Linear</td>
+<td><span class="arithmatex">\(f(x) = ax + b\)</span></td>
+<td><span class="arithmatex">\(f(x) = 2x - 3\)</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Quadratic</td>
+<td><span class="arithmatex">\(f(x) = ax^2 + bx + c\)</span></td>
+<td><span class="arithmatex">\(f(x) = x^2 - 4x + 3\)</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Cubic</td>
+<td><span class="arithmatex">\(f(x) = ax^3 + bx^2 + cx + d\)</span></td>
+<td><span class="arithmatex">\(f(x) = x^3 - 2x\)</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Quartic</td>
+<td><span class="arithmatex">\(f(x) = ax^4 + \cdots\)</span></td>
+<td><span class="arithmatex">\(f(x) = x^4 - 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="polynomial-behavior">Polynomial Behavior</h3>
+<p>The degree and leading coefficient determine the end behavior:</p>
+<ul>
+<li><strong>Even degree, positive leading coefficient</strong>: Both ends go up (<span class="arithmatex">\(\nearrow \quad \nwarrow\)</span>)</li>
+<li><strong>Even degree, negative leading coefficient</strong>: Both ends go down (<span class="arithmatex">\(\searrow \quad \swarrow\)</span>)</li>
+<li><strong>Odd degree, positive leading coefficient</strong>: Falls left, rises right (<span class="arithmatex">\(\swarrow \quad \nearrow\)</span>)</li>
+<li><strong>Odd degree, negative leading coefficient</strong>: Rises left, falls right (<span class="arithmatex">\(\nwarrow \quad \searrow\)</span>)</li>
+</ul>
+<h4 id="diagram-polynomial-explorer">Diagram: Polynomial Explorer</h4>
+<iframe src="../../sims/polynomial-explorer/main.html" width="100%" height="550px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Polynomial Explorer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Examine</p>
+<p>Learning Objective: Students will examine how the degree and leading coefficient of a polynomial affect its shape and end behavior.</p>
+<p>Visual Elements:
+- Large coordinate plane with polynomial graph
+- End behavior arrows showing direction at left/right extremes
+- Zeros marked with dots on x-axis
+- Turning points highlighted
+- Degree and leading coefficient displayed prominently
+- Delta icon at current position showing local slope</p>
+<p>Interactive Controls:
+- Degree selector (1 through 5)
+- Leading coefficient slider (-3 to 3)
+- Additional coefficient sliders for lower terms
+- "Randomize" button for exploration
+- End behavior prediction quiz mode</p>
+<p>Information Panel:
+- Current polynomial equation
+- Degree: n
+- Leading coefficient: positive/negative
+- End behavior description
+- Number of turning points (at most n-1)</p>
+<p>Instructional Rationale: Manipulating polynomials builds intuition for how degree and coefficients shape graphs—essential for curve sketching in calculus.</p>
+<p>Canvas size: 700×550px, responsive
+Implementation: p5.js</p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">Calculus Preview</p>
+<p>Polynomials are the easiest functions to differentiate. The <strong>power rule</strong>—which
+you'll learn in the derivatives chapter—makes finding their slopes a breeze.</p>
+</div>
+<hr />
+<h2 id="rational-functions">Rational Functions</h2>
+<p>A <strong>rational function</strong> is the ratio of two polynomials:</p>
+<h4 id="rational-function-form">Rational Function Form</h4>
+<div class="arithmatex">\[f(x) = \frac{P(x)}{Q(x)}\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(P(x)\)</span> is the numerator polynomial</li>
+<li><span class="arithmatex">\(Q(x)\)</span> is the denominator polynomial</li>
+<li><span class="arithmatex">\(Q(x) \neq 0\)</span> (we can't divide by zero)</li>
+</ul>
+<h3 id="asymptotes">Asymptotes</h3>
+<p>Rational functions often have <strong>asymptotes</strong>—lines that the graph approaches but never touches.</p>
+<p><strong>Vertical asymptotes</strong> occur where the denominator equals zero (and the numerator doesn't). The function "blows up" to infinity.</p>
+<p><strong>Horizontal asymptotes</strong> describe end behavior as <span class="arithmatex">\(x \to \pm\infty\)</span>:</p>
+<ul>
+<li>If degree(numerator) &lt; degree(denominator): horizontal asymptote at <span class="arithmatex">\(y = 0\)</span></li>
+<li>If degree(numerator) = degree(denominator): horizontal asymptote at <span class="arithmatex">\(y = \frac{\text{leading coeff of } P}{\text{leading coeff of } Q}\)</span></li>
+<li>If degree(numerator) &gt; degree(denominator): no horizontal asymptote (may have slant asymptote)</li>
+</ul>
+<p><strong>Example:</strong> For <span class="arithmatex">\(f(x) = \frac{2x + 1}{x - 3}\)</span>:</p>
+<ul>
+<li>Vertical asymptote at <span class="arithmatex">\(x = 3\)</span> (denominator = 0)</li>
+<li>Horizontal asymptote at <span class="arithmatex">\(y = 2\)</span> (degrees equal, ratio of leading coefficients = 2/1)</li>
+</ul>
+<h4 id="diagram-asymptote-analyzer">Diagram: Asymptote Analyzer</h4>
+<iframe src="../../sims/asymptote-analyzer/main.html" width="100%" height="500px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Asymptote Analyzer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Interpret</p>
+<p>Learning Objective: Students will interpret the relationship between rational function formulas and their asymptotes, understanding why the graph approaches but never crosses vertical asymptotes.</p>
+<p>Visual Elements:
+- Coordinate plane with rational function graph
+- Vertical asymptotes shown as dashed red lines
+- Horizontal asymptote shown as dashed blue line
+- Values displayed as x approaches asymptote from left and right
+- Delta approaching asymptote, getting pushed away</p>
+<p>Interactive Controls:
+- Preset function selector
+- Input fields for numerator and denominator coefficients (simple cases)
+- Zoom in/out on asymptotes
+- "Trace" mode: show function values as x approaches asymptote</p>
+<p>Functions to include:
+- <span class="arithmatex">\(f(x) = \frac{1}{x}\)</span>
+- <span class="arithmatex">\(f(x) = \frac{1}{x-2}\)</span>
+- <span class="arithmatex">\(f(x) = \frac{x}{x^2-1}\)</span>
+- <span class="arithmatex">\(f(x) = \frac{2x+1}{x-3}\)</span>
+- <span class="arithmatex">\(f(x) = \frac{x^2}{x^2+1}\)</span> (no vertical asymptote)</p>
+<p>Instructional Rationale: Seeing the function values explode near vertical asymptotes and stabilize near horizontal asymptotes builds intuition for limits.</p>
+<p>Canvas size: 650×500px, responsive
+Implementation: p5.js</p>
+</details>
+<div class="admonition quote">
+<p class="admonition-title">Delta Says</p>
+<p>"Vertical asymptotes are like invisible walls I can never cross. I can get
+infinitely close, but the closer I get, the more the curve rockets away
+from me. Horizontal asymptotes are different—they're like destinations I
+approach but never quite reach. The journey never ends!"</p>
+</div>
+<hr />
+<h2 id="exponential-and-logarithmic-functions">Exponential and Logarithmic Functions</h2>
+<p>These two function families are inverses of each other and are essential for modeling growth, decay, and many natural phenomena.</p>
+<h3 id="exponential-functions">Exponential Functions</h3>
+<p>An <strong>exponential function</strong> has the form:</p>
+<h4 id="exponential-function">Exponential Function</h4>
+<p><span class="arithmatex">\(f(x) = a \cdot b^x\)</span></p>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(a\)</span> is the initial value (the y-intercept when <span class="arithmatex">\(x = 0\)</span>)</li>
+<li><span class="arithmatex">\(b\)</span> is the base, with <span class="arithmatex">\(b &gt; 0\)</span> and <span class="arithmatex">\(b \neq 1\)</span></li>
+<li>If <span class="arithmatex">\(b &gt; 1\)</span>: exponential growth</li>
+<li>If <span class="arithmatex">\(0 &lt; b &lt; 1\)</span>: exponential decay</li>
+</ul>
+<p>The most important exponential function in calculus uses the base <span class="arithmatex">\(e \approx 2.71828\)</span>:</p>
+<div class="arithmatex">\[f(x) = e^x\]</div>
+<p>Why <span class="arithmatex">\(e\)</span>? Because <span class="arithmatex">\(e^x\)</span> is the unique function that equals its own derivative—it's the function whose rate of change at any point equals its value at that point!</p>
+<h3 id="logarithmic-functions">Logarithmic Functions</h3>
+<p>The <strong>logarithm</strong> is the inverse of the exponential. If <span class="arithmatex">\(b^y = x\)</span>, then <span class="arithmatex">\(\log_b(x) = y\)</span>.</p>
+<h4 id="logarithm-definition">Logarithm Definition</h4>
+<p><span class="arithmatex">\(\log_b(x) = y \iff b^y = x\)</span></p>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(b\)</span> is the base (same restrictions as exponentials)</li>
+<li><span class="arithmatex">\(x &gt; 0\)</span> (we can only take logs of positive numbers)</li>
+<li>The <strong>natural logarithm</strong> <span class="arithmatex">\(\ln(x) = \log_e(x)\)</span> uses base <span class="arithmatex">\(e\)</span></li>
+</ul>
+<p>Key properties:</p>
+<ul>
+<li><span class="arithmatex">\(\log_b(1) = 0\)</span> (because <span class="arithmatex">\(b^0 = 1\)</span>)</li>
+<li><span class="arithmatex">\(\log_b(b) = 1\)</span> (because <span class="arithmatex">\(b^1 = b\)</span>)</li>
+<li><span class="arithmatex">\(\log_b(xy) = \log_b(x) + \log_b(y)\)</span></li>
+<li><span class="arithmatex">\(\log_b\left(\frac{x}{y}\right) = \log_b(x) - \log_b(y)\)</span></li>
+<li><span class="arithmatex">\(\log_b(x^n) = n \cdot \log_b(x)\)</span></li>
+</ul>
+<h4 id="diagram-exponential-and-logarithm-relationship">Diagram: Exponential and Logarithm Relationship</h4>
+<iframe src="../../sims/exp-log-relationship/main.html" width="100%" height="500px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Exponential and Logarithm Relationship</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Compare</p>
+<p>Learning Objective: Students will compare exponential and logarithmic functions, recognizing them as inverse functions reflected across the line y = x.</p>
+<p>Visual Elements:
+- Both <span class="arithmatex">\(b^x\)</span> and <span class="arithmatex">\(\log_b(x)\)</span> graphed on same coordinate plane
+- Line y = x shown as dashed line
+- Reflection relationship highlighted with connecting segments
+- Point on one curve, corresponding point on other curve
+- Base value displayed prominently</p>
+<p>Interactive Controls:
+- Base slider (1.5 to 4, including e ≈ 2.718)
+- Draggable point on exponential curve (shows corresponding log point)
+- Toggle for showing/hiding y = x line
+- Toggle for showing/hiding log function
+- "Snap to e" button</p>
+<p>Key values displayed:
+- Coordinates of selected points
+- <span class="arithmatex">\(e^x\)</span> value at point
+- <span class="arithmatex">\(\ln(x)\)</span> value at point</p>
+<p>Instructional Rationale: Seeing exp and log as reflections across y = x reinforces the inverse relationship and prepares students for derivatives of these functions.</p>
+<p>Canvas size: 600×500px, responsive
+Implementation: p5.js</p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">Calculus Preview</p>
+<p>The derivative of <span class="arithmatex">\(e^x\)</span> is <span class="arithmatex">\(e^x\)</span>—the function is its own derivative!
+The derivative of <span class="arithmatex">\(\ln(x)\)</span> is <span class="arithmatex">\(\frac{1}{x}\)</span>. These elegant results make
+exponentials and logarithms central to calculus.</p>
+</div>
+<hr />
+<h2 id="trigonometric-functions">Trigonometric Functions</h2>
+<p>Trigonometry provides functions that model periodic behavior—anything that cycles, oscillates, or repeats. From sound waves to seasonal temperatures, trig functions are everywhere.</p>
+<h3 id="the-unit-circle">The Unit Circle</h3>
+<p>The <strong>unit circle</strong> is a circle with radius 1 centered at the origin. It's the foundation for understanding trigonometric functions.</p>
+<p>For any angle <span class="arithmatex">\(\theta\)</span> measured from the positive <span class="arithmatex">\(x\)</span>-axis:</p>
+<ul>
+<li>The <span class="arithmatex">\(x\)</span>-coordinate of the point on the unit circle is <span class="arithmatex">\(\cos(\theta)\)</span></li>
+<li>The <span class="arithmatex">\(y\)</span>-coordinate is <span class="arithmatex">\(\sin(\theta)\)</span></li>
+</ul>
+<h4 id="diagram-interactive-unit-circle">Diagram: Interactive Unit Circle</h4>
+<iframe src="../../sims/unit-circle/main.html" width="100%" height="550px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Interactive Unit Circle</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will explain the relationship between angles on the unit circle and the values of sine and cosine, connecting circular motion to the graphs of trig functions.</p>
+<p>Visual Elements:
+- Unit circle with radius 1, centered at origin
+- Angle θ shown from positive x-axis
+- Point P on circle with coordinates displayed
+- Horizontal line from P to y-axis (showing cos θ)
+- Vertical line from P to x-axis (showing sin θ)
+- Sine and cosine graphs to the right, showing current values
+- Reference angles marked (0°, 30°, 45°, 60°, 90°, etc.)
+- Delta riding on the circle edge</p>
+<p>Interactive Controls:
+- Draggable point on circle (or angle slider 0 to 360°)
+- Toggle between degrees and radians
+- Show/hide reference triangle
+- Show/hide corresponding points on sin and cos graphs
+- "Animate" button to make point travel around circle continuously</p>
+<p>Information Panel:
+- Angle in degrees and radians
+- sin(θ) value
+- cos(θ) value
+- tan(θ) value (when defined)
+- Quadrant indicator</p>
+<p>Instructional Rationale: Connecting the unit circle to function graphs helps students understand why trig functions behave as they do.</p>
+<p>Canvas size: 800×550px (wider to fit both circle and graphs), responsive
+Implementation: p5.js</p>
+</details>
+<h3 id="radian-measure">Radian Measure</h3>
+<p>While degrees are familiar (360° in a circle), calculus uses <strong>radians</strong> because they make derivatives work out cleanly.</p>
+<h4 id="radian-definition">Radian Definition</h4>
+<p>One radian is the angle that creates an arc length equal to the radius.</p>
+<p>Since circumference = <span class="arithmatex">\(2\pi r\)</span>, a full circle = <span class="arithmatex">\(2\pi\)</span> radians.</p>
+<table>
+<thead>
+<tr>
+<th>Degrees</th>
+<th>Radians</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0°</td>
+<td>0</td>
+</tr>
+<tr>
+<td>30°</td>
+<td><span class="arithmatex">\(\frac{\pi}{6}\)</span></td>
+</tr>
+<tr>
+<td>45°</td>
+<td><span class="arithmatex">\(\frac{\pi}{4}\)</span></td>
+</tr>
+<tr>
+<td>60°</td>
+<td><span class="arithmatex">\(\frac{\pi}{3}\)</span></td>
+</tr>
+<tr>
+<td>90°</td>
+<td><span class="arithmatex">\(\frac{\pi}{2}\)</span></td>
+</tr>
+<tr>
+<td>180°</td>
+<td><span class="arithmatex">\(\pi\)</span></td>
+</tr>
+<tr>
+<td>270°</td>
+<td><span class="arithmatex">\(\frac{3\pi}{2}\)</span></td>
+</tr>
+<tr>
+<td>360°</td>
+<td><span class="arithmatex">\(2\pi\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Radians Required!</p>
+<p>In calculus, we always use radians. The derivative formulas for sine and cosine
+only work in radians. When you see <span class="arithmatex">\(\sin(x)\)</span> in calculus, assume <span class="arithmatex">\(x\)</span> is in radians.</p>
+</div>
+<h3 id="the-six-trigonometric-functions">The Six Trigonometric Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Definition</th>
+<th>Domain</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\sin(\theta)\)</span></td>
+<td>y-coordinate on unit circle</td>
+<td>All real numbers</td>
+<td><span class="arithmatex">\([-1, 1]\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\cos(\theta)\)</span></td>
+<td>x-coordinate on unit circle</td>
+<td>All real numbers</td>
+<td><span class="arithmatex">\([-1, 1]\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\tan(\theta)\)</span></td>
+<td><span class="arithmatex">\(\frac{\sin(\theta)}{\cos(\theta)}\)</span></td>
+<td><span class="arithmatex">\(\theta \neq \frac{\pi}{2} + n\pi\)</span></td>
+<td>All real numbers</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\csc(\theta)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{\sin(\theta)}\)</span></td>
+<td><span class="arithmatex">\(\theta \neq n\pi\)</span></td>
+<td><span class="arithmatex">\((-\infty, -1] \cup [1, \infty)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sec(\theta)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{\cos(\theta)}\)</span></td>
+<td><span class="arithmatex">\(\theta \neq \frac{\pi}{2} + n\pi\)</span></td>
+<td><span class="arithmatex">\((-\infty, -1] \cup [1, \infty)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\cot(\theta)\)</span></td>
+<td><span class="arithmatex">\(\frac{\cos(\theta)}{\sin(\theta)}\)</span></td>
+<td><span class="arithmatex">\(\theta \neq n\pi\)</span></td>
+<td>All real numbers</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trigonometric-identities">Trigonometric Identities</h3>
+<p>These identities simplify expressions and solve equations. Memorize the fundamental ones:</p>
+<p><strong>Pythagorean Identities:</strong></p>
+<ul>
+<li><span class="arithmatex">\(\sin^2(\theta) + \cos^2(\theta) = 1\)</span></li>
+<li><span class="arithmatex">\(1 + \tan^2(\theta) = \sec^2(\theta)\)</span></li>
+<li><span class="arithmatex">\(1 + \cot^2(\theta) = \csc^2(\theta)\)</span></li>
+</ul>
+<p><strong>Sum and Difference Formulas:</strong></p>
+<ul>
+<li><span class="arithmatex">\(\sin(A + B) = \sin A \cos B + \cos A \sin B\)</span></li>
+<li><span class="arithmatex">\(\cos(A + B) = \cos A \cos B - \sin A \sin B\)</span></li>
+</ul>
+<p><strong>Double Angle Formulas:</strong></p>
+<ul>
+<li><span class="arithmatex">\(\sin(2\theta) = 2\sin(\theta)\cos(\theta)\)</span></li>
+<li><span class="arithmatex">\(\cos(2\theta) = \cos^2(\theta) - \sin^2(\theta) = 2\cos^2(\theta) - 1 = 1 - 2\sin^2(\theta)\)</span></li>
+</ul>
+<h4 id="diagram-trig-identity-visualizer">Diagram: Trig Identity Visualizer</h4>
+<iframe src="../../sims/trig-identity-visualizer/main.html" width="100%" height="500px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Trig Identity Visualizer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Interpret</p>
+<p>Learning Objective: Students will interpret the Pythagorean identity <span class="arithmatex">\(\sin^2(\theta) + \cos^2(\theta) = 1\)</span> geometrically using the unit circle.</p>
+<p>Visual Elements:
+- Unit circle with angle θ marked
+- Right triangle inside circle showing sin θ (opposite), cos θ (adjacent), and radius 1 (hypotenuse)
+- Squares drawn on each side of the triangle
+- Area calculations shown: sin²θ, cos²θ, and their sum = 1
+- Pythagorean theorem visualization</p>
+<p>Interactive Controls:
+- Angle slider (0 to 2π)
+- Toggle between identities:
+  - Pythagorean: sin²θ + cos²θ = 1
+  - tan θ = sin θ / cos θ
+  - sec²θ = 1 + tan²θ
+- Show/hide area squares
+- Numerical values displayed</p>
+<p>Instructional Rationale: Seeing identities as geometric relationships makes them memorable and meaningful rather than arbitrary formulas to memorize.</p>
+<p>Canvas size: 600×500px, responsive
+Implementation: p5.js</p>
+</details>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Pun Corner</p>
+<p>"Why do I love the unit circle? Because it really brings everything <em>full circle</em>!
+...Okay, that one was bad even for me."</p>
+</div>
+<hr />
+<h2 id="graphing-trigonometric-functions">Graphing Trigonometric Functions</h2>
+<p>Sine and cosine create smooth, wave-like graphs that repeat forever. Understanding their shape prepares you for analyzing periodic phenomena in calculus.</p>
+<h3 id="amplitude-period-and-phase-shift">Amplitude, Period, and Phase Shift</h3>
+<p>For the function <span class="arithmatex">\(f(x) = A\sin(Bx + C) + D\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(A\)</span></td>
+<td><strong>Amplitude</strong>: vertical stretch, height of waves = <span class="arithmatex">\(\|A\|\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(B\)</span></td>
+<td><strong>Period</strong>: horizontal compression, period = <span class="arithmatex">\(\frac{2\pi}{\|B\|}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(C\)</span></td>
+<td><strong>Phase shift</strong>: horizontal shift by <span class="arithmatex">\(-\frac{C}{B}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(D\)</span></td>
+<td><strong>Vertical shift</strong>: moves midline up/down by <span class="arithmatex">\(D\)</span></td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-trig-graph-transformer">Diagram: Trig Graph Transformer</h4>
+<iframe src="../../sims/trig-graph-transformer/main.html" width="100%" height="550px" scrolling="no" style="border: none;"></iframe>
+
+<details>
+<summary>Trig Graph Transformer</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Demonstrate</p>
+<p>Learning Objective: Students will demonstrate understanding of amplitude, period, phase shift, and vertical shift by manipulating parameters and predicting resulting changes to trigonometric graphs.</p>
+<p>Visual Elements:
+- Large graph area showing transformed trig function
+- Parent function (sin x or cos x) shown in light gray for reference
+- Midline shown as horizontal dashed line
+- Amplitude marked with vertical arrows
+- One period highlighted/bracketed
+- Formula displayed: A·sin(Bx + C) + D with current values</p>
+<p>Interactive Controls:
+- Function selector: sin, cos, tan
+- Slider A (amplitude): 0.5 to 3
+- Slider B (period modifier): 0.5 to 4
+- Slider C (phase shift): -π to π
+- Slider D (vertical shift): -3 to 3
+- Reset button
+- Show/hide parent function toggle</p>
+<p>Challenge Mode:
+- Target graph displayed
+- Student matches parameters
+- Check answer with feedback</p>
+<p>Instructional Rationale: Manipulating each parameter individually reveals its specific effect, building intuition for how the equation encodes the graph's shape.</p>
+<p>Canvas size: 750×550px, responsive
+Implementation: p5.js with canvas-based sliders</p>
+</details>
+<hr />
+<h2 id="chapter-summary">Chapter Summary</h2>
+<p>Congratulations! You've reviewed the essential tools that make calculus possible. Let's recap what Delta has in her toolkit now:</p>
+<h3 id="functions-and-their-properties">Functions and Their Properties</h3>
+<ul>
+<li>A <strong>function</strong> assigns exactly one output to each input</li>
+<li><strong>Function notation</strong> <span class="arithmatex">\(f(x)\)</span> lets us talk about specific inputs and outputs</li>
+<li><strong>Domain</strong> is where a function is defined; <strong>range</strong> is what outputs are possible</li>
+<li>The <strong>coordinate system</strong> lets us graph functions and visualize their behavior</li>
+</ul>
+<h3 id="building-and-transforming-functions">Building and Transforming Functions</h3>
+<ul>
+<li><strong>Composite functions</strong> feed outputs of one function into another</li>
+<li><strong>Inverse functions</strong> undo what the original function does</li>
+<li><strong>Transformations</strong> shift, stretch, and flip graphs in predictable ways</li>
+<li><strong>Even functions</strong> are symmetric about the y-axis; <strong>odd functions</strong> have rotational symmetry</li>
+<li><strong>Piecewise functions</strong> use different rules on different domains</li>
+</ul>
+<h3 id="major-function-families">Major Function Families</h3>
+<ul>
+<li><strong>Polynomials</strong>: smooth, continuous, well-behaved everywhere</li>
+<li><strong>Rational functions</strong>: polynomial ratios with possible asymptotes</li>
+<li><strong>Exponentials</strong>: model growth and decay; <span class="arithmatex">\(e^x\)</span> is special</li>
+<li><strong>Logarithms</strong>: inverse of exponentials; <span class="arithmatex">\(\ln(x)\)</span> is most important</li>
+<li><strong>Trigonometric functions</strong>: model periodic behavior; defined via the unit circle</li>
+</ul>
+<div class="admonition quote">
+<p class="admonition-title">Delta Says</p>
+<p>"We've packed our backpack with all the precalculus tools we need. I can recognize
+any terrain we'll encounter—polynomial hills, rational function valleys with their
+asymptote walls, exponential growth spurts, and the beautiful periodic waves of
+trig functions.</p>
+<p>Now comes the exciting part: instead of just <em>describing</em> these curves, we're going
+to ask the calculus questions—How steep is it? How much accumulates? What happens
+as we get infinitely close?</p>
+<p>Chapter 2, here we come!"</p>
+</div>
+<hr />
+<h2 id="concept-checklist">Concept Checklist</h2>
+<p>Before moving on, make sure you can:</p>
+<ul>
+<li>[ ] Evaluate functions using function notation</li>
+<li>[ ] Determine domain and range from formulas and graphs</li>
+<li>[ ] Plot points and read coordinates on the Cartesian plane</li>
+<li>[ ] Apply the vertical line test to identify functions</li>
+<li>[ ] Compute and interpret composite functions</li>
+<li>[ ] Find inverse functions algebraically and graphically</li>
+<li>[ ] Apply transformation rules to shift, stretch, and reflect graphs</li>
+<li>[ ] Identify even and odd functions</li>
+<li>[ ] Graph and analyze piecewise functions</li>
+<li>[ ] Describe polynomial end behavior from degree and leading coefficient</li>
+<li>[ ] Identify vertical and horizontal asymptotes of rational functions</li>
+<li>[ ] Work with exponential functions and their properties</li>
+<li>[ ] Use logarithm properties to simplify expressions</li>
+<li>[ ] Locate angles on the unit circle and find their sine and cosine</li>
+<li>[ ] Convert between degrees and radians</li>
+<li>[ ] Apply fundamental trigonometric identities</li>
+<li>[ ] Identify amplitude, period, and shifts of transformed trig functions</li>
+</ul>
+<hr />
+<details class="question">
+<summary>Self-Check: Are You Ready for Limits?</summary>
+<p><strong>Question:</strong> Consider the function <span class="arithmatex">\(f(x) = \frac{x^2 - 4}{x - 2}\)</span>.</p>
+<ol>
+<li>What is the domain of this function?</li>
+<li>Can you simplify the expression?</li>
+<li>What happens to <span class="arithmatex">\(f(x)\)</span> as <span class="arithmatex">\(x\)</span> gets very close to 2?</li>
+</ol>
+<p><em>Click to reveal answer...</em></p>
+<p><strong>Answers:</strong>
+1. Domain: all real numbers except <span class="arithmatex">\(x = 2\)</span> (division by zero)
+2. <span class="arithmatex">\(f(x) = \frac{(x-2)(x+2)}{x-2} = x + 2\)</span> for <span class="arithmatex">\(x \neq 2\)</span>
+3. As <span class="arithmatex">\(x\)</span> approaches 2, <span class="arithmatex">\(f(x)\)</span> approaches <span class="arithmatex">\(2 + 2 = 4\)</span></p>
+<p>This is exactly the kind of question that limits will help us answer precisely!
+The function isn't defined at <span class="arithmatex">\(x = 2\)</span>, but it "wants" to equal 4 there.</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../02-understanding-limits/" class="md-footer__link md-footer__link--next" aria-label="Next: 2. Understanding Limits">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                2. Understanding Limits
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

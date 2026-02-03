@@ -1,0 +1,62 @@
+{
+  "title": "Function Machine",
+  "description": "An interactive MicroSim demonstrating how functions process inputs to produce exactly one output, reinforcing the fundamental definition of a function.",
+  "creator": "Dan McCreary",
+  "subject": ["Mathematics", "Calculus", "Functions"],
+  "date": "2026-02-03",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "High School (9-12)",
+  "topic": "Functions and Their Properties",
+  "learningObjectives": [
+    "Explain how a function processes inputs to produce outputs",
+    "Demonstrate the 'one input, one output' rule",
+    "Compare different function types and their behaviors"
+  ],
+  "bloomsTaxonomyLevel": "Understand",
+  "duration": "10-15 minutes",
+  "prerequisites": ["Basic arithmetic", "Understanding of variables"],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive × 480",
+  "responsive": true,
+  "dependencies": ["p5.js 1.11.10"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Input (x)",
+      "min": -10,
+      "max": 10,
+      "default": 3,
+      "step": 1,
+      "description": "Select the input value to feed into the function machine"
+    },
+    {
+      "type": "button",
+      "label": "Process",
+      "description": "Animate the input flowing through the machine to produce output"
+    },
+    {
+      "type": "button",
+      "label": "Clear",
+      "description": "Clear the history table"
+    },
+    {
+      "type": "selector",
+      "label": "Function",
+      "options": ["2x", "x²", "|x|", "sin(x)"],
+      "default": "2x",
+      "description": "Select which function rule the machine applies"
+    }
+  ],
+  "modelType": "Mathematical function visualization",
+  "variables": ["input x", "output f(x)", "function rule"],
+  "equations": ["f(x) = 2x", "f(x) = x²", "f(x) = |x|", "f(x) = sin(x)"],
+  "assumptions": ["Integer inputs only for simplicity", "sin(x) uses radians"],
+  "limitations": ["Limited to four predefined functions", "Input range limited to -10 to 10"]
+}

@@ -1,0 +1,381 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Function,,FOUND
+2,Domain and Range,1,FOUND
+3,Function Notation,1,FOUND
+4,Composite Function,1|3,FOUND
+5,Inverse Function,1|2,FOUND
+6,Graphing Functions,1|2,FOUND
+7,Piecewise Function,1|6,FOUND
+8,Even and Odd Functions,1|6,FOUND
+9,Function Transformations,1|6,FOUND
+10,Polynomial Function,1|3,FOUND
+11,Rational Function,10,FOUND
+12,Exponential Function,1|3,FOUND
+13,Logarithmic Function,12,FOUND
+14,Trigonometric Function,1,FOUND
+15,Unit Circle,14,FOUND
+16,Radian Measure,15,FOUND
+17,Trigonometric Identities,14|15,FOUND
+18,Coordinate System,,FOUND
+19,Number Line,18,FOUND
+20,Real Numbers,19,FOUND
+21,Limit,1|20,LIMIT
+22,Limit Notation,21,LIMIT
+23,Intuitive Limit,21,LIMIT
+24,One-Sided Limit,21|22,LIMIT
+25,Left-Hand Limit,24,LIMIT
+26,Right-Hand Limit,24,LIMIT
+27,Two-Sided Limit,25|26,LIMIT
+28,Limit Existence,27,LIMIT
+29,Limit Laws,21|28,LIMIT
+30,Sum Rule for Limits,29,LIMIT
+31,Product Rule for Limits,29,LIMIT
+32,Quotient Rule for Limits,29,LIMIT
+33,Constant Multiple Rule,29,LIMIT
+34,Power Rule for Limits,29,LIMIT
+35,Direct Substitution,29|10,LIMIT
+36,Indeterminate Form,35,LIMIT
+37,Zero Over Zero Form,36,LIMIT
+38,Infinity Over Infinity,36,LIMIT
+39,Algebraic Limit Technique,36|37,LIMIT
+40,Factoring for Limits,39,LIMIT
+41,Rationalization,39,LIMIT
+42,Complex Fractions,39,LIMIT
+43,Squeeze Theorem,29,LIMIT
+44,Special Trig Limits,43|14,LIMIT
+45,Sin x Over x Limit,44,LIMIT
+46,Limit of Composition,4|29,LIMIT
+47,Limits from Graphs,6|23,LIMIT
+48,Limits from Tables,23,LIMIT
+49,Numerical Estimation,48,LIMIT
+50,Infinite Limit,21,LIMIT
+51,Continuity,21|28,CONT
+52,Continuity at a Point,51,CONT
+53,Three Conditions,52,CONT
+54,Continuity on Interval,52,CONT
+55,One-Sided Continuity,52|24,CONT
+56,Continuous Function,54,CONT
+57,Discontinuity,51,CONT
+58,Removable Discontinuity,57|37,CONT
+59,Jump Discontinuity,57|24,CONT
+60,Infinite Discontinuity,57|50,CONT
+61,Essential Discontinuity,57,CONT
+62,Continuous Extension,58,CONT
+63,Removing Discontinuities,58|62,CONT
+64,Piecewise Continuity,7|52,CONT
+65,Continuity of Composites,4|56,CONT
+66,Continuity of Polynomials,10|56,CONT
+67,Continuity of Rationals,11|56|57,CONT
+68,Continuity of Trig,14|56,CONT
+69,Continuity of Exp Log,12|13|56,CONT
+70,Intermediate Value Thm,54|56,CONT
+71,Asymptote,50|57,ASYM
+72,Vertical Asymptote,71|60,ASYM
+73,Horizontal Asymptote,71,ASYM
+74,Oblique Asymptote,73|11,ASYM
+75,Limit at Infinity,21|73,ASYM
+76,End Behavior,75,ASYM
+77,Behavior Near Asymptote,72|75,ASYM
+78,One-Sided Infinite Limit,50|24,ASYM
+79,Comparing Growth Rates,75|12,ASYM
+80,Dominant Term,79|10,ASYM
+81,Rational End Behavior,11|76,ASYM
+82,Exponential Growth Rate,12|79,ASYM
+83,Logarithmic Growth Rate,13|79,ASYM
+84,Polynomial Growth Rate,10|79,ASYM
+85,Rate of Change,1,DERIV
+86,Average Rate of Change,85,DERIV
+87,Instantaneous Rate,86|21,DERIV
+88,Difference Quotient,86,DERIV
+89,Secant Line,88|6,DERIV
+90,Tangent Line,89|21,DERIV
+91,Slope of Tangent,90,DERIV
+92,Derivative Definition,91|87,DERIV
+93,Limit Definition Deriv,92|21,DERIV
+94,Derivative at a Point,93,DERIV
+95,Derivative Function,94,DERIV
+96,Derivative Notation,95,DERIV
+97,Prime Notation,96,DERIV
+98,Leibniz Notation,96,DERIV
+99,Differentiable Function,95,DERIV
+100,Differentiability,99,DERIV
+101,Differentiability Point,100|94,DERIV
+102,One-Sided Derivative,101|24,DERIV
+103,Non-Differentiable Pts,100,DERIV
+104,Corner Point,103,DERIV
+105,Cusp,103,DERIV
+106,Vertical Tangent Point,103|90,DERIV
+107,Derivative from Graph,95|6,DERIV
+108,Derivative from Table,95|48,DERIV
+109,Symmetric Difference,88,DERIV
+110,Diff Implies Continuous,100|56,DERIV
+111,Continuous Not Implies,110|103,DERIV
+112,Local Linearity,90|99,DERIV
+113,Tangent Approximation,112,DERIV
+114,Instantaneous Velocity,87|92,DERIV
+115,Derivative Rules,95,DRULE
+116,Constant Rule,115,DRULE
+117,Power Rule Derivative,115,DRULE
+118,Sum Rule Derivative,115,DRULE
+119,Difference Rule Deriv,115,DRULE
+120,Constant Multiple Deriv,115,DRULE
+121,Linear Combination,118|120,DRULE
+122,Polynomial Derivative,117|121,DRULE
+123,Derivative of x to n,117,DRULE
+124,Negative Exponent Deriv,123,DRULE
+125,Fractional Exponent,123,DRULE
+126,Derivative of Root,125,DRULE
+127,Product Rule,115,DRULE
+128,Product Rule Formula,127,DRULE
+129,Quotient Rule,127,DRULE
+130,Quotient Rule Formula,129,DRULE
+131,Reciprocal Rule,129,DRULE
+132,Derivative of Sine,115|14,DRULE
+133,Derivative of Cosine,132,DRULE
+134,Derivative of Tangent,132|133|129,DRULE
+135,Derivative of Cotangent,134,DRULE
+136,Derivative of Secant,132|133|129,DRULE
+137,Derivative of Cosecant,136,DRULE
+138,Derivative of e to x,115|12,DRULE
+139,Derivative of a to x,138,DRULE
+140,Derivative of ln x,115|13,DRULE
+141,Derivative of log x,140,DRULE
+142,Combining Rules,121|127|129,DRULE
+143,Simplifying First,142,DRULE
+144,Chain Rule,4|95,CHAIN
+145,Chain Rule Formula,144,CHAIN
+146,Composition Derivative,144,CHAIN
+147,Inside Function,145,CHAIN
+148,Outside Function,145,CHAIN
+149,Nested Chain Rule,145,CHAIN
+150,Leibniz Chain Rule,145|98,CHAIN
+151,Derivative of f of g,146,CHAIN
+152,Recognizing Composition,147|148,CHAIN
+153,Power Chain Rule,145|117,CHAIN
+154,Trig Chain Rule,145|132,CHAIN
+155,Exponential Chain Rule,145|138,CHAIN
+156,Log Chain Rule,145|140,CHAIN
+157,Multiple Chain Rule,149,CHAIN
+158,General Power Rule,153,CHAIN
+159,Combining Chain Rule,145|142,CHAIN
+160,Implicit Function,1,IMPL
+161,Implicit Equation,160,IMPL
+162,Implicit Differentiation,161|144,IMPL
+163,dy dx Implicitly,162,IMPL
+164,Treating y as Function,162,IMPL
+165,Implicit Chain Rule,162|144,IMPL
+166,Solving for dy dx,163,IMPL
+167,Second Deriv Implicit,166,IMPL
+168,Tangent Line Implicit,166|90,IMPL
+169,Inverse Function Thm,5|95,IMPL
+170,Derivative of Inverse,169,IMPL
+171,Inverse Deriv Formula,170,IMPL
+172,Graphical Inverse Deriv,170|6,IMPL
+173,Derivative of Arcsin,170|14,IMPL
+174,Derivative of Arccos,173,IMPL
+175,Derivative of Arctan,173,IMPL
+176,Derivative of Arcsec,175,IMPL
+177,Derivative of Arccsc,176,IMPL
+178,Derivative of Arccot,175,IMPL
+179,Inverse Trig Domain,173,IMPL
+180,Logarithmic Differentiate,140|162,IMPL
+181,Differentiating Products,180,IMPL
+182,Differentiating Powers,180,IMPL
+183,Variable Exponents,182,IMPL
+184,Higher-Order Derivative,95,HIGH
+185,Second Derivative,184,HIGH
+186,Third Derivative,185,HIGH
+187,nth Derivative,186,HIGH
+188,Second Deriv Notation,185,HIGH
+189,f Double Prime,188,HIGH
+190,d2y dx2 Notation,188,HIGH
+191,Velocity from Position,114|185,HIGH
+192,Acceleration,191,HIGH
+193,Jerk,192|186,HIGH
+194,Position Velocity Accel,191|192,HIGH
+195,Speed vs Velocity,191,HIGH
+196,Direction of Motion,195,HIGH
+197,Speeding Up Slowing,192|196,HIGH
+198,Higher Trig Derivatives,187|132,HIGH
+199,Related Rates,162|87,APPL
+200,Related Rates Setup,199,APPL
+201,Implicit in Context,199|162,APPL
+202,Rate Variables,200,APPL
+203,Related Rates Diagram,200,APPL
+204,Ladder Problem,199|203,APPL
+205,Balloon Problem,199|203,APPL
+206,Shadow Problem,199|203,APPL
+207,Conical Tank Problem,199|203,APPL
+208,Distance Rate Problem,199|203,APPL
+209,Linear Approximation,112|113,APPL
+210,Tangent Line Approx,209,APPL
+211,Linearization Formula,209,APPL
+212,Error in Approximation,209,APPL
+213,Differential,98|209,APPL
+214,dy Notation,213,APPL
+215,dx Notation,213,APPL
+216,Differential Approx,213|212,APPL
+217,Marginal Analysis,95|87,APPL
+218,Marginal Cost,217,APPL
+219,Marginal Revenue,217,APPL
+220,Marginal Profit,218|219,APPL
+221,Economics Interpretation,217,APPL
+222,Units of Derivative,95|87,APPL
+223,Rate Interpretation,222,APPL
+224,Derivative in Context,223,APPL
+225,Population Rate,224,APPL
+226,Temperature Rate,224,APPL
+227,Concentration Rate,224,APPL
+228,L'Hospital's Rule,36|37|38,APPL
+229,L'Hospital Conditions,228,APPL
+230,Zero Over Zero Apply,228|37,APPL
+231,Inf Over Inf Apply,228|38,APPL
+232,Indeterminate Products,228,APPL
+233,Zero Times Infinity,232,APPL
+234,Indeterminate Powers,228,APPL
+235,One to Infinity,234,APPL
+236,Repeated L'Hospital,228,APPL
+237,Verify L'Hospital,229,APPL
+238,Mean Value Theorem,56|99,ANAL
+239,MVT Statement,238,ANAL
+240,MVT Conditions,238,ANAL
+241,MVT Conclusion,239,ANAL
+242,Rolle's Theorem,238,ANAL
+243,Rolle's Conditions,242,ANAL
+244,MVT Applications,241,ANAL
+245,Average vs Instant MVT,244|86|87,ANAL
+246,Extreme Value Theorem,56|54,ANAL
+247,EVT Statement,246,ANAL
+248,EVT Conditions,246,ANAL
+249,Global Maximum,246,ANAL
+250,Global Minimum,246,ANAL
+251,Local Maximum,95,ANAL
+252,Local Minimum,95,ANAL
+253,Critical Point,95|251|252,ANAL
+254,Critical Number,253,ANAL
+255,Where f Prime Zero,254,ANAL
+256,Where f Prime DNE,254|103,ANAL
+257,First Derivative Test,253|255,ANAL
+258,Sign Chart,257,ANAL
+259,Increasing Function,257,ANAL
+260,Decreasing Function,257,ANAL
+261,Monotonicity,259|260,ANAL
+262,Sign Change Analysis,258,ANAL
+263,Second Derivative Test,185|253,ANAL
+264,Concavity,185,ANAL
+265,Concave Up,264,ANAL
+266,Concave Down,264,ANAL
+267,Inflection Point,264|265|266,ANAL
+268,Point of Inflection,267,ANAL
+269,Candidates Test,249|250|254,ANAL
+270,Closed Interval Method,269,ANAL
+271,Endpoint Extrema,270,ANAL
+272,Curve Sketching,257|264,CURV
+273,Complete Curve Analysis,272,CURV
+274,f f Prime f Dbl Prime,272|185,CURV
+275,Graph from Derivative,274,CURV
+276,Derivative from Graph,275,CURV
+277,Connecting Three Graphs,274|275|276,CURV
+278,Domain Analysis,2|272,CURV
+279,Intercept Analysis,272,CURV
+280,Symmetry Analysis,8|272,CURV
+281,Asymptote Analysis,71|272,CURV
+282,Increasing Decreasing,259|260|272,CURV
+283,Local Extrema Analysis,257|272,CURV
+284,Concavity Analysis,264|272,CURV
+285,Inflection Analysis,267|272,CURV
+286,Optimization,253|269,OPT
+287,Optimization Problem,286,OPT
+288,Objective Function,287,OPT
+289,Constraint Equation,287,OPT
+290,Primary Equation,288|289,OPT
+291,Setting Up Optimization,290,OPT
+292,Maximizing Area,291,OPT
+293,Minimizing Distance,291,OPT
+294,Minimizing Cost,291,OPT
+295,Maximizing Volume,291,OPT
+296,Fencing Problem,292,OPT
+297,Box Problem,295,OPT
+298,Can Problem,295,OPT
+299,Closest Point Problem,293,OPT
+300,Maximum Profit,294|220,OPT
+301,Applied Optimization,287,OPT
+302,Verifying Maximum,263|269,OPT
+303,Verifying Minimum,263|269,OPT
+304,Second Deriv Verify,302|303,OPT
+305,Endpoint Consideration,271|287,OPT
+306,Practical Domain,2|287,OPT
+307,Antiderivative,95,INTEG
+308,Indefinite Integral,307,INTEG
+309,Integral Notation,308,INTEG
+310,Integrand,309,INTEG
+311,Variable of Integration,309,INTEG
+312,Constant of Integration,308,INTEG
+313,General Antiderivative,308|312,INTEG
+314,Particular Antideriv,313,INTEG
+315,Power Rule Integration,308|117,INTEG
+316,Constant Rule Integr,308,INTEG
+317,Sum Rule Integration,308,INTEG
+318,Difference Rule Integr,308,INTEG
+319,Constant Multiple Integ,308,INTEG
+320,Basic Trig Integrals,308|132,INTEG
+321,Integral of Sin x,320,INTEG
+322,Integral of Cos x,320,INTEG
+323,Integral of Sec Squared,320,INTEG
+324,Integral of Csc Squared,320,INTEG
+325,Integral of Sec Tan,320,INTEG
+326,Integral of Csc Cot,320,INTEG
+327,Integral of e to x,308|138,INTEG
+328,Integral of a to x,327,INTEG
+329,Integral of 1 Over x,308|140,INTEG
+330,Natural Log Integral,329,INTEG
+331,Inverse Trig Integrals,308|173,INTEG
+332,Arcsin Integral,331,INTEG
+333,Arctan Integral,331,INTEG
+334,Arcsec Integral,331,INTEG
+335,Riemann Sum,86|308,RIEM
+336,Left Riemann Sum,335,RIEM
+337,Right Riemann Sum,335,RIEM
+338,Midpoint Riemann Sum,335,RIEM
+339,Trapezoidal Rule,335,RIEM
+340,Summation Notation,335,RIEM
+341,Sigma Notation,340,RIEM
+342,Index of Summation,341,RIEM
+343,Limit of Riemann Sum,335|21,RIEM
+344,Definite Integral,343,RIEM
+345,Definite Integral Notat,344,RIEM
+346,Limits of Integration,345,RIEM
+347,Fundamental Theorem,344|307,FTC
+348,FTC Part One,347,FTC
+349,FTC Part Two,347,FTC
+350,Evaluation Theorem,349,FTC
+351,Accumulation Function,348,FTC
+352,Integral as Function,351,FTC
+353,Derivative of Integral,348,FTC
+354,FTC Chain Rule,348|144,FTC
+355,Net Change Theorem,349,FTC
+356,Net Signed Area,344,FTC
+357,Area Under Curve,356,FTC
+358,Integral Properties,344,FTC
+359,Additivity Property,358,FTC
+360,Reversing Limits,358,FTC
+361,Zero Width Integral,358,FTC
+362,Integral of Sum,358,FTC
+363,Integral Bounds Split,359,FTC
+364,Comparison Property,358,FTC
+365,Even Function Integral,8|358,FTC
+366,Odd Function Integral,8|358,FTC
+367,Average Value,344,FTC
+368,Average Value Formula,367,FTC
+369,Mean Value Integral,367|238,FTC
+370,u-Substitution,308|144,TECH
+371,Substitution Method,370,TECH
+372,Choosing u,371,TECH
+373,du Calculation,371,TECH
+374,Back Substitution,371,TECH
+375,Definite Substitution,370|344,TECH
+376,Changing Bounds,375,TECH
+377,Long Division Method,308|11,TECH
+378,Completing Square,308,TECH
+379,Partial Fractions,308|11,TECH
+380,Integration Strategy,370|377|378,TECH

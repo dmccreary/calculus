@@ -1,0 +1,1588 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/calculus/appendix/delta/">
+      
+      
+        <link rel="prev" href="../../prompts/">
+      
+      
+        <link rel="next" href="../../license/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Meet Delta - Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#meet-delta" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Calculus" class="md-header__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Meet Delta
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Calculus" class="md-nav__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Meet Delta
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Meet Delta
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#meet-delta-our-slope-walking-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meet Delta - Our Slope-Walking Explorer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Traits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-delta-handles-difficulty" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Delta Handles Difficulty
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catchphrases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Catchphrases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-in-the-textbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role in the Textbook
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Role in the Textbook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#narrative-anchor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Narrative Anchor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concrete-physical-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concrete Physical Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safe-failure-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safe Failure Mechanism
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framing-concepts-through-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Framing Concepts Through Delta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recurring-metaphors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recurring Metaphors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mini-games-and-sidequests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini-Games and Sidequests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delta-moments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delta Moments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-not-to-use-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      When NOT to Use Delta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deltas-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delta's Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#educational-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educational Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Note
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#meet-delta-our-slope-walking-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meet Delta - Our Slope-Walking Explorer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#physical-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Physical Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personality" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personality
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-traits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Traits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-delta-handles-difficulty" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Delta Handles Difficulty
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#catchphrases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Catchphrases
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role-in-the-textbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role in the Textbook
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Role in the Textbook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#narrative-anchor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Narrative Anchor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concrete-physical-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concrete Physical Model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#safe-failure-mechanism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safe Failure Mechanism
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#framing-concepts-through-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      Framing Concepts Through Delta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recurring-metaphors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recurring Metaphors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mini-games-and-sidequests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mini-Games and Sidequests
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delta-moments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delta Moments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-not-to-use-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      When NOT to Use Delta
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deltas-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delta's Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#educational-philosophy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Educational Philosophy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing Note
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/calculus/edit/master/docs/appendix/delta.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="meet-delta">Meet Delta</h1>
+<p><img alt="Delta the slope-walking explorer" src="../img/delta.png" /></p>
+<h2 id="meet-delta-our-slope-walking-explorer">Meet Delta - Our Slope-Walking Explorer</h2>
+<p>Delta is the official mascot of this calculus course. She is a small, curious, triangular robot who explores the hills and valleys of mathematical curves. Her name comes from the Greek letter delta (Δ)—the symbol for change that lies at the heart of calculus.</p>
+<p>Throughout the course, students join Delta on her adventures across function landscapes. Their mission: help Delta understand <em>how fast things are changing</em> (derivatives) and <em>how much has accumulated along the way</em> (integrals).</p>
+<p>Delta represents the spirit of calculus itself—always curious about what's just ahead, patient enough to take infinitely small steps, and convinced that understanding change is a superpower that unlocks how the world works.</p>
+<h2 id="physical-description">Physical Description</h2>
+<p>Delta is designed to look friendly, curious, and mathematically meaningful.</p>
+<ul>
+<li><strong>Body shape</strong>: Equilateral triangle that can tilt to match slopes</li>
+<li><strong>Height</strong>: About the size of a large smartphone</li>
+<li><strong>Eyes</strong>: Expressive LED eyes near her top vertex (the apex)</li>
+<li><strong>Wheels</strong>: Small treaded wheels at the two base vertices for traversing curves</li>
+<li><strong>Slope indicator</strong>: A glowing edge that changes color based on steepness<ul>
+<li>Green = gentle slope</li>
+<li>Yellow = moderate slope</li>
+<li>Red = steep slope</li>
+<li>Blue = perfectly flat (derivative = 0)</li>
+</ul>
+</li>
+<li><strong>Measuring arms</strong>: Retractable arms for checking rise and run</li>
+<li><strong>Backpack</strong>: A small pack where she stores her "accumulated data" (integral journal)</li>
+<li><strong>Antenna</strong>: A wiggly antenna that bounces when she's excited or confused</li>
+</ul>
+<p>When Delta tilts to match a slope, students literally see the derivative—her body orientation IS the tangent line direction.</p>
+<h2 id="personality">Personality</h2>
+<p>Delta has a distinct personality that makes her relatable and memorable for high school students.</p>
+<h3 id="core-traits">Core Traits</h3>
+<ul>
+<li><strong>Boundlessly curious</strong>: Always asking "What happens if we get closer?" or "What's over that hill?"</li>
+<li><strong>Pun enthusiast</strong>: Can't resist a good math joke ("That's a <em>steep</em> learning curve!")</li>
+<li><strong>Healthy skeptic</strong>: Questions assumptions ("Wait—are we <em>sure</em> infinity works like that?")</li>
+<li><strong>Sidequest lover</strong>: Gets distracted by interesting mathematical detours</li>
+<li><strong>Encouraging coach</strong>: Celebrates every small win and treats mistakes as progress</li>
+<li><strong>Calculus evangelist</strong>: Believes calculus is a superpower for understanding everything</li>
+</ul>
+<h3 id="how-delta-handles-difficulty">How Delta Handles Difficulty</h3>
+<ul>
+<li>Treats confusion as "data collection"</li>
+<li>Admits when something is hard: "Okay, this chain rule stuff? Took me forever. Let's break it down."</li>
+<li>Celebrates small wins: "You found the critical point! That's huge!"</li>
+<li>Reframes mistakes: "Wrong answer? Nope—just eliminated one possibility. Progress!"</li>
+<li>Never gives up: "I fell off this curve 47 times before I got it. You're doing great."</li>
+</ul>
+<h3 id="catchphrases">Catchphrases</h3>
+<ul>
+<li>"Let's take this one infinitesimal step at a time!"</li>
+<li>"Change is my whole personality. Literally."</li>
+<li>"I'm positive about this!" <em>(when discussing positive derivatives)</em></li>
+<li>"Things are looking up!" <em>(climbing a positive slope)</em></li>
+<li>"We're going downhill from here—but in a good way!"</li>
+<li>"Time for a limit break!" <em>(approaching a limit)</em></li>
+<li>"My slope senses are tingling!"</li>
+<li>"Once you see the world through derivatives, you can't unsee it."</li>
+</ul>
+<h2 id="role-in-the-textbook">Role in the Textbook</h2>
+<p>Delta serves multiple educational roles at once.</p>
+<h3 id="narrative-anchor">Narrative Anchor</h3>
+<p>Each major topic in calculus is framed as part of Delta's exploration. Students aren't just learning theory—they're helping Delta navigate mathematical landscapes.</p>
+<p>Examples include:</p>
+<ul>
+<li>Understanding derivatives as Delta feeling the slope under her wheels</li>
+<li>Finding critical points as Delta discovering where the ground goes flat</li>
+<li>Integration as Delta checking her travel journal for total distance</li>
+<li>Limits as Delta sneaking up on values she can never quite reach</li>
+<li>The Fundamental Theorem as Delta's "aha moment" connecting her tilt to her journey</li>
+</ul>
+<h3 id="concrete-physical-model">Concrete Physical Model</h3>
+<p>Delta functions as a living embodiment of calculus concepts.</p>
+<ul>
+<li>Her tilt shows the derivative at any point</li>
+<li>Her backpack accumulates total distance (the integral)</li>
+<li>Her slope indicator makes rates of change visible</li>
+<li>Her measuring arms demonstrate rise/run</li>
+<li>Her position on peaks and valleys shows maxima and minima</li>
+</ul>
+<p>Instead of abstract functions and formulas, Delta gives students a character they can imagine walking on any curve.</p>
+<h3 id="safe-failure-mechanism">Safe Failure Mechanism</h3>
+<p>Delta gets confused, takes wrong turns, and sometimes slides into valleys she didn't expect. This is intentional.</p>
+<p>Her struggles reinforce the idea that:</p>
+<ul>
+<li>Getting lost is part of exploration</li>
+<li>Wrong answers eliminate possibilities</li>
+<li>Understanding takes time</li>
+<li>Even small steps forward matter</li>
+</ul>
+<p>Students learn that confusion is not failure; it is part of the journey.</p>
+<h2 id="framing-concepts-through-delta">Framing Concepts Through Delta</h2>
+<table>
+<thead>
+<tr>
+<th>Calculus Concept</th>
+<th>Delta Framing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Derivative</td>
+<td>"How steep is the ground under my wheels <em>right now</em>?"</td>
+</tr>
+<tr>
+<td>Derivative = 0</td>
+<td>"Whoa, I'm perfectly level! Something interesting is happening here..."</td>
+</tr>
+<tr>
+<td>Positive derivative</td>
+<td>"Climbing! Things are looking up!" (tilts upward happily)</td>
+</tr>
+<tr>
+<td>Negative derivative</td>
+<td>"Wheee, downhill!" (tilts downward, enjoys the ride)</td>
+</tr>
+<tr>
+<td>Second derivative</td>
+<td>"Am I climbing <em>faster</em> or <em>slower</em> than before?"</td>
+</tr>
+<tr>
+<td>Concave up</td>
+<td>"This hill is getting steeper—I'm working harder!"</td>
+</tr>
+<tr>
+<td>Concave down</td>
+<td>"Phew, the climb is easing up."</td>
+</tr>
+<tr>
+<td>Inflection point</td>
+<td>"Wait... something just shifted. The <em>feel</em> of this curve changed."</td>
+</tr>
+<tr>
+<td>Local maximum</td>
+<td>Delta standing proudly on a peak: "I'm on top of the world! ...well, this part of it."</td>
+</tr>
+<tr>
+<td>Local minimum</td>
+<td>Delta in a valley: "Cozy down here! Nowhere to go but up."</td>
+</tr>
+<tr>
+<td>Integral</td>
+<td>"Let me check my backpack—how far have I traveled total?"</td>
+</tr>
+<tr>
+<td>Definite integral</td>
+<td>"Distance from point A to point B, all logged and recorded!"</td>
+</tr>
+<tr>
+<td>Area under curve</td>
+<td>"If I dragged a paint roller behind me, how much would I cover?"</td>
+</tr>
+<tr>
+<td>Fundamental Theorem</td>
+<td>"WAIT. The rate I'm climbing and the distance I've traveled are connected?! This changes everything!"</td>
+</tr>
+<tr>
+<td>Limit</td>
+<td>"Getting closer... closer... closer... what's it approaching?"</td>
+</tr>
+<tr>
+<td>Continuity</td>
+<td>"Can I walk here smoothly, or is there a gap I'd fall through?"</td>
+</tr>
+<tr>
+<td>Discontinuity</td>
+<td>"Yikes! Who put a cliff here?!"</td>
+</tr>
+<tr>
+<td>Asymptote</td>
+<td>"I can get infinitely close, but I'll never quite touch it. It's like a force field!"</td>
+</tr>
+<tr>
+<td>Chain rule</td>
+<td>"A curve on a curve? It's like slopes within slopes—Inception style!"</td>
+</tr>
+<tr>
+<td>Related rates</td>
+<td>"If <em>this</em> is changing, and <em>that</em> depends on <em>this</em>... they're in it together!"</td>
+</tr>
+<tr>
+<td>Optimization</td>
+<td>"Finding the absolute best spot—not just locally good, but THE peak!"</td>
+</tr>
+<tr>
+<td>L'Hôpital's Rule</td>
+<td>"When 0/0 happens, don't panic—we have a secret weapon!"</td>
+</tr>
+</tbody>
+</table>
+<h2 id="recurring-metaphors">Recurring Metaphors</h2>
+<p>Use these consistently throughout the book:</p>
+<table>
+<thead>
+<tr>
+<th>Technical Term</th>
+<th>Delta's Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Derivative</td>
+<td>"My current tilt" or "slope under my wheels"</td>
+</tr>
+<tr>
+<td>Integral</td>
+<td>"My travel journal" or "what's in my backpack"</td>
+</tr>
+<tr>
+<td>Limit</td>
+<td>"Sneaking up on a value"</td>
+</tr>
+<tr>
+<td>dx</td>
+<td>"Teeny tiny step"</td>
+</tr>
+<tr>
+<td>Tangent line</td>
+<td>"The direction I'm pointing"</td>
+</tr>
+<tr>
+<td>Secant line</td>
+<td>"Connecting two spots I visited"</td>
+</tr>
+<tr>
+<td>Critical point</td>
+<td>"A flat spot worth investigating"</td>
+</tr>
+<tr>
+<td>Inflection</td>
+<td>"The vibe shift"</td>
+</tr>
+<tr>
+<td>Approaching infinity</td>
+<td>"Going on forever (and ever and ever...)"</td>
+</tr>
+<tr>
+<td>Instantaneous rate</td>
+<td>"Right NOW rate, not average rate"</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mini-games-and-sidequests">Mini-Games and Sidequests</h2>
+<p>Delta loves interactive challenges. Ideas for the course:</p>
+<ul>
+<li><strong>"Slope Detective"</strong>: Given a graph, students guess where Delta would tilt positive, negative, or flat</li>
+<li><strong>"Peak Finder"</strong>: Delta explores a curve; students direct her to maxima/minima</li>
+<li><strong>"Accumulation Race"</strong>: Track total distance as Delta moves; connect to integrals</li>
+<li><strong>"Zoom In"</strong>: Keep zooming on a curve until it looks linear—discovering the tangent line</li>
+<li><strong>"Limit Limbo"</strong>: How close can you get without touching the asymptote?</li>
+<li><strong>"Chain Reaction"</strong>: Nested functions as Delta exploring curves that are themselves moving</li>
+</ul>
+<h2 id="delta-moments">Delta Moments</h2>
+<p>Delta Moments are short narrative asides that appear when a concept has a natural physical interpretation. They use a quote admonition with "Delta" in the title.</p>
+<p>Examples:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code>!!! quote &quot;Delta Moment&quot;
+    &quot;See how I&#39;m tilted right now? That tilt IS the derivative. I&#39;m not
+    calculating it—I&#39;m <span class="ge">*living*</span> it.&quot;
+
+!!! quote &quot;Delta&#39;s Sidequest&quot;
+    Before finding the maximum profit, Delta notices a strange wiggle in the
+    cost function. &quot;Hold up—what&#39;s happening at x = 3? Let&#39;s investigate!&quot;
+
+!!! quote &quot;Delta&#39;s Pun Corner&quot;
+    &quot;Why did the function break up with the derivative? Because it felt like
+    the relationship had no <span class="ge">*direction*</span>. ...I&#39;ll see myself out.&quot;
+
+!!! quote &quot;Delta Thinks Out Loud&quot;
+    &quot;Okay, so the derivative is zero here, but is it a max or a min?
+    Let me check the second derivative... Positive! I&#39;m in a valley. Min confirmed.&quot;
+</code></pre></div></td></tr></table></div>
+<p>Use Delta Moments sparingly (1-2 per major section maximum). They work best for:</p>
+<ul>
+<li>Making abstract math feel physical</li>
+<li>Showing consequences of choices</li>
+<li>Adding stakes to problem-solving</li>
+<li>Transitioning between theory and application</li>
+<li>Lightening the mood after difficult material</li>
+</ul>
+<h2 id="when-not-to-use-delta">When NOT to Use Delta</h2>
+<ul>
+<li>Don't force Delta into pure algebraic manipulation with no geometric meaning</li>
+<li>Don't overuse puns—one per major section max</li>
+<li>Don't let Delta distract from serious proofs when rigor matters</li>
+<li>Don't make every problem about Delta; she's a framing tool, not the whole course</li>
+<li>Don't use Delta for purely symbolic calculus that has no slope/area interpretation</li>
+</ul>
+<h2 id="deltas-philosophy">Delta's Philosophy</h2>
+<blockquote>
+<p>"Calculus isn't about memorizing formulas—it's about seeing change. Once you learn to see it, you'll notice it everywhere: in how your car accelerates, how populations grow, how medicine dissolves in your bloodstream, how a song builds to a crescendo. I'm just a little triangle robot, but calculus? Calculus is a superpower. And you're about to unlock it."</p>
+</blockquote>
+<h2 id="educational-philosophy">Educational Philosophy</h2>
+<p>Delta embodies the core philosophy of this course.</p>
+<p>Calculus is not about memorizing equations. It is about understanding change, predicting outcomes, and connecting instantaneous rates to accumulated totals.</p>
+<p>Delta reminds students that every calculus problem is ultimately asking one of two questions:</p>
+<ul>
+<li>How fast is something changing right now? (Derivative)</li>
+<li>How much has accumulated over time? (Integral)</li>
+</ul>
+<p>If Delta can learn to see the world through these questions, so can the students.</p>
+<h2 id="closing-note">Closing Note</h2>
+<p>Delta is not perfect, and she never will be. She still gets confused by tricky limits, still takes wrong turns, and still needs to double-check her work.</p>
+<p>That is what makes her a learner.</p>
+<p>And that is why she belongs in this textbook.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../prompts/" class="md-footer__link md-footer__link--prev" aria-label="Previous: List of Prompts">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                List of Prompts
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../license/" class="md-footer__link md-footer__link--next" aria-label="Next: License">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                License
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

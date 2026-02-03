@@ -1,0 +1,2873 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Understanding continuous functions, types of discontinuities, and the Intermediate Value Theorem">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/calculus/chapters/04-continuity/">
+      
+      
+        <link rel="prev" href="../03-evaluating-limits/">
+      
+      
+        <link rel="next" href="../05-asymptotes-and-end-behavior/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Continuity - Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#continuity" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Calculus" class="md-header__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Continuity
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Calculus" class="md-nav__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-foundations-of-calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Foundations of Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-understanding-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Understanding Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-evaluating-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Evaluating Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    4. Continuity
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    4. Continuity
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-continuity-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Does Continuity Mean?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-conditions-for-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Conditions for Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Conditions for Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checking-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Checking Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Checking Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-conditions-visualized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Conditions Visualized
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-discontinuities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Discontinuities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Discontinuities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removable-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removable Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jump-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jump Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infinite-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infinite Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#essential-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-table-of-discontinuity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table of Discontinuity Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary Table of Discontinuity Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-discontinuity-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Discontinuity Classification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuity-on-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity on Intervals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuity on Intervals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuity-on-open-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity on Open Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuity-on-closed-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity on Closed Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-sided-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-Sided Continuity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-functions-you-know-and-love" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous Functions You Know and Love
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuous Functions You Know and Love">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exponential-and-logarithmic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential and Logarithmic Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-continuous-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Continuous Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-continuous-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Continuous Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Continuous Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuity-of-composite-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity of Composite Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piecewise-functions-and-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Functions and Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Piecewise Functions and Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checking-piecewise-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Piecewise Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Checking Piecewise Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-piecewise-continuity-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Piecewise Continuity Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-discontinuities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing Discontinuities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing Discontinuities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuous-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous Extension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-values-for-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Values for Continuity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-intermediate-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Intermediate Value Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Intermediate Value Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statement-of-the-ivt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statement of the IVT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statement of the IVT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-intermediate-value-theorem-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Intermediate Value Theorem Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-ivt-to-find-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the IVT to Find Roots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ivt-and-sign-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      The IVT and Sign Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-continuity-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Continuity Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-asymptotes-and-end-behavior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Asymptotes and End Behavior
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-derivative-concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. The Derivative Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-differentiability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Differentiability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-basic-derivative-rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Basic Derivative Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Product, Quotient, Transcendental
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-chain-rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. The Chain Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-implicit-differentiation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Implicit Differentiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Inverse Function Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Higher-Order Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Related Rates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. L'Hospital's Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-mean-value-theorem-and-extrema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. MVT and Extrema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Derivative Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-curve-sketching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Curve Sketching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-basic-antiderivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20. Basic Antiderivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-transcendental-integrals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21. Transcendental Integrals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-riemann-sums-and-ftc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22. Riemann Sums and FTC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23. Integral Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendix/delta/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-continuity-mean" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Does Continuity Mean?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-conditions-for-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Conditions for Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Three Conditions for Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-checking-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Checking Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Checking Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-three-conditions-visualized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Three Conditions Visualized
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-discontinuities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of Discontinuities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Discontinuities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#removable-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removable Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jump-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jump Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infinite-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infinite Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#essential-discontinuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Essential Discontinuity
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-table-of-discontinuity-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table of Discontinuity Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary Table of Discontinuity Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-discontinuity-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Discontinuity Classification
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuity-on-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity on Intervals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuity on Intervals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuity-on-open-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity on Open Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuity-on-closed-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity on Closed Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#one-sided-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-Sided Continuity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-functions-you-know-and-love" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous Functions You Know and Love
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuous Functions You Know and Love">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polynomials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Polynomials
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rational-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rational Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trigonometric Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exponential-and-logarithmic-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential and Logarithmic Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-continuous-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Continuous Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-continuous-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Continuous Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Continuous Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuity-of-composite-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuity of Composite Functions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#piecewise-functions-and-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Piecewise Functions and Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Piecewise Functions and Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checking-piecewise-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Checking Piecewise Continuity
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Checking Piecewise Continuity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-piecewise-continuity-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Piecewise Continuity Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-discontinuities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing Discontinuities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Removing Discontinuities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#continuous-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous Extension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-values-for-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Values for Continuity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-intermediate-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Intermediate Value Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Intermediate Value Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statement-of-the-ivt" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statement of the IVT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Statement of the IVT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-intermediate-value-theorem-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Intermediate Value Theorem Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-ivt-to-find-roots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using the IVT to Find Roots
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ivt-and-sign-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      The IVT and Sign Changes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-continuity-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Continuity Checklist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/calculus/edit/master/docs/chapters/04-continuity/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="continuity">Continuity</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter explores the concept of continuity, which describes functions that have no breaks, holes, or jumps in their graphs. Students will learn the three conditions required for continuity at a point, distinguish between different types of discontinuities (removable, jump, and infinite), and understand how to determine continuity for various function types. The chapter culminates with the Intermediate Value Theorem, a powerful result about continuous functions. After completing this chapter, students will be able to analyze function continuity and apply the IVT to prove the existence of roots.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 20 concepts from the learning graph:</p>
+<ol>
+<li>Continuity</li>
+<li>Continuity at a Point</li>
+<li>Three Conditions</li>
+<li>Continuity on Interval</li>
+<li>One-Sided Continuity</li>
+<li>Continuous Function</li>
+<li>Discontinuity</li>
+<li>Removable Discontinuity</li>
+<li>Jump Discontinuity</li>
+<li>Infinite Discontinuity</li>
+<li>Essential Discontinuity</li>
+<li>Continuous Extension</li>
+<li>Removing Discontinuities</li>
+<li>Piecewise Continuity</li>
+<li>Continuity of Composites</li>
+<li>Continuity of Polynomials</li>
+<li>Continuity of Rationals</li>
+<li>Continuity of Trig</li>
+<li>Continuity of Exp Log</li>
+<li>Intermediate Value Thm</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-foundations-of-calculus/">Chapter 1: Foundations of Calculus</a></li>
+<li><a href="../02-understanding-limits/">Chapter 2: Understanding Limits</a></li>
+<li><a href="../03-evaluating-limits/">Chapter 3: Evaluating Limits</a></li>
+</ul>
+<hr />
+<h2 id="what-does-continuity-mean">What Does Continuity Mean?</h2>
+<p>You've mastered limits. Now it's time to connect limits to one of the most intuitive ideas in mathematics: <strong>continuity</strong>.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Can I roll smoothly along this curve, or is there a gap I'd fall through? That's the question continuity answers. A continuous function is one where I never have to teleport!"</p>
+</div>
+<p>Intuitively, a function is <strong>continuous</strong> if you can draw its graph without lifting your pencil. No holes, no jumps, no gaps. But mathematics demands precision, so let's make this intuition rigorous.</p>
+<hr />
+<h2 id="the-three-conditions-for-continuity">The Three Conditions for Continuity</h2>
+<p>A function <span class="arithmatex">\(f\)</span> is <strong>continuous at a point <span class="arithmatex">\(c\)</span></strong> if and only if three conditions are all met:</p>
+<div class="admonition tip">
+<p class="admonition-title">Three Conditions for Continuity at <span class="arithmatex">\(x = c\)</span></p>
+<ol>
+<li><strong><span class="arithmatex">\(f(c)\)</span> is defined</strong> — There's actually a point at <span class="arithmatex">\(x = c\)</span></li>
+<li><strong><span class="arithmatex">\(\lim_{x \to c} f(x)\)</span> exists</strong> — The function approaches a single value</li>
+<li><strong><span class="arithmatex">\(\lim_{x \to c} f(x) = f(c)\)</span></strong> — The limit equals the function value</li>
+</ol>
+</div>
+<p>All three must be true. If any one fails, the function is discontinuous at <span class="arithmatex">\(c\)</span>.</p>
+<p>Let's see what happens when each condition fails:</p>
+<table>
+<thead>
+<tr>
+<th>Condition That Fails</th>
+<th>What It Looks Like</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(c)\)</span> not defined</td>
+<td>Hole in the graph</td>
+<td><span class="arithmatex">\(f(x) = \frac{x^2-1}{x-1}\)</span> at <span class="arithmatex">\(x=1\)</span></td>
+</tr>
+<tr>
+<td>Limit doesn't exist</td>
+<td>Jump in the graph</td>
+<td>Step functions</td>
+</tr>
+<tr>
+<td>Limit ≠ function value</td>
+<td>Hole with point elsewhere</td>
+<td>Piecewise with mismatched value</td>
+</tr>
+</tbody>
+</table>
+<h3 id="example-checking-continuity">Example: Checking Continuity</h3>
+<p>Is <span class="arithmatex">\(f(x) = \frac{x^2 - 4}{x - 2}\)</span> continuous at <span class="arithmatex">\(x = 2\)</span>?</p>
+<p><strong>Check Condition 1:</strong> Is <span class="arithmatex">\(f(2)\)</span> defined?
+<span class="arithmatex">\(<span class="arithmatex">\(f(2) = \frac{4 - 4}{2 - 2} = \frac{0}{0} \quad \text{Undefined! ✗}\)</span>\)</span></p>
+<p>The function fails the very first condition. We don't even need to check the others—<span class="arithmatex">\(f\)</span> is <strong>not continuous at <span class="arithmatex">\(x = 2\)</span></strong>.</p>
+<div class="admonition warning">
+<p class="admonition-title">One Strike, You're Out</p>
+<p>A function only needs to fail ONE condition to be discontinuous. Always check Condition 1 first—it's usually the quickest.</p>
+</div>
+<h4 id="diagram-three-conditions-visualized">Diagram: Three Conditions Visualized</h4>
+<iframe src="../../sims/continuity-conditions/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<details>
+<summary>Three Conditions Visualized MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will explain how each of the three continuity conditions corresponds to visual features of a function graph.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with function graph</li>
+<li>Target point <span class="arithmatex">\(x = c\)</span> highlighted with dashed vertical line</li>
+<li>Three condition checklist displayed:</li>
+<li>Condition 1: f(c) defined (check/x mark)</li>
+<li>Condition 2: Limit exists (check/x mark)</li>
+<li>Condition 3: Limit = f(c) (check/x mark)</li>
+<li>Delta robot positioned at the point (or hovering over a hole)</li>
+<li>Final verdict: "CONTINUOUS" (green) or "DISCONTINUOUS" (red)</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function selector with 5 scenarios:</li>
+<li>Scenario A: Fully continuous function</li>
+<li>Scenario B: Hole (condition 1 fails)</li>
+<li>Scenario C: Jump (condition 2 fails)</li>
+<li>Scenario D: Misplaced point (condition 3 fails)</li>
+<li>Scenario E: Vertical asymptote (condition 2 fails)</li>
+<li>Slider: Move the target point c along the x-axis</li>
+<li>Button: "Check continuity at c"</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When checking continuity, conditions animate one by one</li>
+<li>Failed condition is highlighted in red</li>
+<li>Successful conditions show green checkmarks</li>
+<li>Visual cues appear on graph (circle at limit value, dot at function value)</li>
+</ul>
+<p>Instructional Rationale: Linking the abstract conditions to visual graph features builds conceptual understanding before procedural skills.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="types-of-discontinuities">Types of Discontinuities</h2>
+<p>When a function isn't continuous at a point, we classify the <strong>type of discontinuity</strong> based on how it fails. This classification helps us understand the function's behavior and sometimes repair it.</p>
+<h3 id="removable-discontinuity">Removable Discontinuity</h3>
+<p>A <strong>removable discontinuity</strong> occurs when the limit exists but either:</p>
+<ul>
+<li><span class="arithmatex">\(f(c)\)</span> is not defined, OR</li>
+<li><span class="arithmatex">\(f(c)\)</span> is defined but doesn't equal the limit</li>
+</ul>
+<p>The discontinuity is "removable" because you could fix it by (re)defining <span class="arithmatex">\(f(c)\)</span> to equal the limit.</p>
+<p><strong>Example:</strong> <span class="arithmatex">\(f(x) = \frac{x^2 - 1}{x - 1}\)</span> at <span class="arithmatex">\(x = 1\)</span></p>
+<p>The limit is:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 1} \frac{x^2 - 1}{x - 1} = \lim_{x \to 1} \frac{(x+1)(x-1)}{x-1} = \lim_{x \to 1} (x + 1) = 2\)</span>\)</span></p>
+<p>But <span class="arithmatex">\(f(1)\)</span> is undefined. If we define <span class="arithmatex">\(f(1) = 2\)</span>, the discontinuity disappears!</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"A removable discontinuity is like a pothole in the road. The path is clear—there's just a hole that needs patching. I know exactly where I should be; someone just forgot to put the point there!"</p>
+</div>
+<h3 id="jump-discontinuity">Jump Discontinuity</h3>
+<p>A <strong>jump discontinuity</strong> occurs when the left-hand and right-hand limits both exist but are different:</p>
+<div class="arithmatex">\[\lim_{x \to c^-} f(x) \neq \lim_{x \to c^+} f(x)\]</div>
+<p>The function "jumps" from one value to another.</p>
+<p><strong>Example:</strong> The floor function <span class="arithmatex">\(f(x) = \lfloor x \rfloor\)</span> at any integer.</p>
+<p>At <span class="arithmatex">\(x = 2\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(\lim_{x \to 2^-} \lfloor x \rfloor = 1\)</span></li>
+<li><span class="arithmatex">\(\lim_{x \to 2^+} \lfloor x \rfloor = 2\)</span></li>
+</ul>
+<p>The limits don't match, so there's a jump discontinuity.</p>
+<h3 id="infinite-discontinuity">Infinite Discontinuity</h3>
+<p>An <strong>infinite discontinuity</strong> occurs when the function values grow without bound as <span class="arithmatex">\(x\)</span> approaches <span class="arithmatex">\(c\)</span>. The limit is infinite (or negative infinite) from at least one side.</p>
+<p><strong>Example:</strong> <span class="arithmatex">\(f(x) = \frac{1}{x}\)</span> at <span class="arithmatex">\(x = 0\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\lim_{x \to 0^+} \frac{1}{x} = +\infty\)</span></li>
+<li><span class="arithmatex">\(\lim_{x \to 0^-} \frac{1}{x} = -\infty\)</span></li>
+</ul>
+<p>The function blows up near the discontinuity.</p>
+<h3 id="essential-discontinuity">Essential Discontinuity</h3>
+<p>An <strong>essential discontinuity</strong> (also called oscillating discontinuity) occurs when the function oscillates infinitely without approaching any limit.</p>
+<p><strong>Example:</strong> <span class="arithmatex">\(f(x) = \sin\left(\frac{1}{x}\right)\)</span> at <span class="arithmatex">\(x = 0\)</span></p>
+<p>As <span class="arithmatex">\(x \to 0\)</span>, the function oscillates between <span class="arithmatex">\(-1\)</span> and <span class="arithmatex">\(1\)</span> infinitely many times. Neither one-sided limit exists.</p>
+<h3 id="summary-table-of-discontinuity-types">Summary Table of Discontinuity Types</h3>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Limit Behavior</th>
+<th>Visual Appearance</th>
+<th>Fixable?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Removable</td>
+<td>Limit exists</td>
+<td>Hole in graph</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Jump</td>
+<td>Left ≠ Right limits</td>
+<td>Step/gap in graph</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Infinite</td>
+<td>Limit is <span class="arithmatex">\(\pm\infty\)</span></td>
+<td>Vertical asymptote</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Essential</td>
+<td>Limit doesn't exist</td>
+<td>Wild oscillation</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h4 id="diagram-discontinuity-classification">Diagram: Discontinuity Classification</h4>
+<iframe src="../../sims/discontinuity-types/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Discontinuity Classification MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Classify</p>
+<p>Learning Objective: Students will classify discontinuities by analyzing limit behavior at specific points.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Four panels showing one example of each discontinuity type</li>
+<li>Each panel has: graph, one-sided limit values, discontinuity type label</li>
+<li>Interactive quiz mode: single graph with hidden type</li>
+<li>Classification result display with explanation</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Mode selector: "Gallery View" (see all four types) or "Quiz Mode" (identify type)</li>
+<li>In Quiz Mode:</li>
+<li>"New Function" generates random discontinuity</li>
+<li>Four buttons for classification: "Removable," "Jump," "Infinite," "Essential"</li>
+<li>Feedback shows correct answer with explanation</li>
+<li>In Gallery View:</li>
+<li>Click any panel to see detailed analysis</li>
+<li>Slider to zoom in on discontinuity point</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Gallery mode provides reference examples for each type</li>
+<li>Quiz mode tests classification skills</li>
+<li>Feedback explains why each answer is correct/incorrect</li>
+<li>Score tracker for quiz attempts</li>
+</ul>
+<p>Instructional Rationale: Classification practice reinforces the distinguishing features of each discontinuity type.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="continuity-on-intervals">Continuity on Intervals</h2>
+<p>So far we've talked about continuity at a single point. But we often want to know if a function is continuous on an entire interval.</p>
+<h3 id="continuity-on-open-intervals">Continuity on Open Intervals</h3>
+<p>A function is <strong>continuous on an open interval <span class="arithmatex">\((a, b)\)</span></strong> if it's continuous at every point in that interval.</p>
+<h3 id="continuity-on-closed-intervals">Continuity on Closed Intervals</h3>
+<p>For closed intervals <span class="arithmatex">\([a, b]\)</span>, we need a slightly different definition because we can only approach the endpoints from one side:</p>
+<div class="admonition tip">
+<p class="admonition-title">Continuity on <span class="arithmatex">\([a, b]\)</span></p>
+<p>A function <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span> if:</p>
+<ol>
+<li><span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\((a, b)\)</span></li>
+<li><span class="arithmatex">\(\lim_{x \to a^+} f(x) = f(a)\)</span> — continuous from the right at <span class="arithmatex">\(a\)</span></li>
+<li><span class="arithmatex">\(\lim_{x \to b^-} f(x) = f(b)\)</span> — continuous from the left at <span class="arithmatex">\(b\)</span></li>
+</ol>
+</div>
+<h3 id="one-sided-continuity">One-Sided Continuity</h3>
+<p>A function is:</p>
+<ul>
+<li><strong>Continuous from the right</strong> at <span class="arithmatex">\(c\)</span> if <span class="arithmatex">\(\lim_{x \to c^+} f(x) = f(c)\)</span></li>
+<li><strong>Continuous from the left</strong> at <span class="arithmatex">\(c\)</span> if <span class="arithmatex">\(\lim_{x \to c^-} f(x) = f(c)\)</span></li>
+</ul>
+<p>This matters for endpoints and piecewise functions.</p>
+<hr />
+<h2 id="continuous-functions-you-know-and-love">Continuous Functions You Know and Love</h2>
+<p>The good news: most functions you've worked with are continuous on their natural domains. Let's catalog them.</p>
+<h3 id="polynomials">Polynomials</h3>
+<div class="admonition tip">
+<p class="admonition-title">Continuity of Polynomials</p>
+<p>Every polynomial function is continuous everywhere (on all of <span class="arithmatex">\(\mathbb{R}\)</span>).</p>
+</div>
+<p>This includes constant functions, linear functions, quadratics, cubics, and so on.</p>
+<p><strong>Why?</strong> For polynomials, direct substitution always works: <span class="arithmatex">\(\lim_{x \to c} p(x) = p(c)\)</span>.</p>
+<h3 id="rational-functions">Rational Functions</h3>
+<div class="admonition tip">
+<p class="admonition-title">Continuity of Rational Functions</p>
+<p>A rational function <span class="arithmatex">\(f(x) = \frac{p(x)}{q(x)}\)</span> is continuous everywhere except where <span class="arithmatex">\(q(x) = 0\)</span>.</p>
+</div>
+<p>The "holes" and vertical asymptotes occur precisely where the denominator is zero.</p>
+<p><strong>Example:</strong> <span class="arithmatex">\(f(x) = \frac{x+1}{x^2 - 4}\)</span> is continuous everywhere except <span class="arithmatex">\(x = 2\)</span> and <span class="arithmatex">\(x = -2\)</span>.</p>
+<h3 id="trigonometric-functions">Trigonometric Functions</h3>
+<div class="admonition tip">
+<p class="admonition-title">Continuity of Trig Functions</p>
+<ul>
+<li><span class="arithmatex">\(\sin x\)</span> and <span class="arithmatex">\(\cos x\)</span> are continuous everywhere</li>
+<li><span class="arithmatex">\(\tan x\)</span>, <span class="arithmatex">\(\sec x\)</span> are continuous except where <span class="arithmatex">\(\cos x = 0\)</span></li>
+<li><span class="arithmatex">\(\cot x\)</span>, <span class="arithmatex">\(\csc x\)</span> are continuous except where <span class="arithmatex">\(\sin x = 0\)</span></li>
+</ul>
+</div>
+<h3 id="exponential-and-logarithmic-functions">Exponential and Logarithmic Functions</h3>
+<div class="admonition tip">
+<p class="admonition-title">Continuity of Exp/Log</p>
+<ul>
+<li><span class="arithmatex">\(e^x\)</span> and <span class="arithmatex">\(a^x\)</span> (for <span class="arithmatex">\(a &gt; 0\)</span>) are continuous everywhere</li>
+<li><span class="arithmatex">\(\ln x\)</span> and <span class="arithmatex">\(\log_a x\)</span> are continuous for <span class="arithmatex">\(x &gt; 0\)</span></li>
+</ul>
+</div>
+<h3 id="summary-of-continuous-functions">Summary of Continuous Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Function Type</th>
+<th>Continuous On</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Polynomial</td>
+<td>All real numbers</td>
+</tr>
+<tr>
+<td>Rational <span class="arithmatex">\(\frac{p(x)}{q(x)}\)</span></td>
+<td>Wherever <span class="arithmatex">\(q(x) \neq 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sin x\)</span>, <span class="arithmatex">\(\cos x\)</span></td>
+<td>All real numbers</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\tan x\)</span>, <span class="arithmatex">\(\sec x\)</span></td>
+<td>Wherever <span class="arithmatex">\(\cos x \neq 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(e^x\)</span>, <span class="arithmatex">\(a^x\)</span></td>
+<td>All real numbers</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ln x\)</span>, <span class="arithmatex">\(\log_a x\)</span></td>
+<td><span class="arithmatex">\(x &gt; 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sqrt{x}\)</span></td>
+<td><span class="arithmatex">\(x \geq 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sqrt[n]{x}\)</span> (odd <span class="arithmatex">\(n\)</span>)</td>
+<td>All real numbers</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="building-continuous-functions">Building Continuous Functions</h2>
+<p>Continuous functions combine nicely. If <span class="arithmatex">\(f\)</span> and <span class="arithmatex">\(g\)</span> are both continuous at <span class="arithmatex">\(c\)</span>, then so are:</p>
+<ul>
+<li><span class="arithmatex">\(f + g\)</span> (sum)</li>
+<li><span class="arithmatex">\(f - g\)</span> (difference)</li>
+<li><span class="arithmatex">\(f \cdot g\)</span> (product)</li>
+<li><span class="arithmatex">\(\frac{f}{g}\)</span> (quotient, if <span class="arithmatex">\(g(c) \neq 0\)</span>)</li>
+<li><span class="arithmatex">\(k \cdot f\)</span> (constant multiple)</li>
+</ul>
+<h3 id="continuity-of-composite-functions">Continuity of Composite Functions</h3>
+<p>Here's a powerful result for nested functions:</p>
+<div class="admonition tip">
+<p class="admonition-title">Continuity of Composites</p>
+<p>If <span class="arithmatex">\(g\)</span> is continuous at <span class="arithmatex">\(c\)</span> and <span class="arithmatex">\(f\)</span> is continuous at <span class="arithmatex">\(g(c)\)</span>, then <span class="arithmatex">\(f \circ g\)</span> (that is, <span class="arithmatex">\(f(g(x))\)</span>) is continuous at <span class="arithmatex">\(c\)</span>.</p>
+</div>
+<p><strong>Example:</strong> Is <span class="arithmatex">\(h(x) = \sin(x^2 + 1)\)</span> continuous?</p>
+<ul>
+<li>The inner function <span class="arithmatex">\(g(x) = x^2 + 1\)</span> is a polynomial, so it's continuous everywhere.</li>
+<li>The outer function <span class="arithmatex">\(f(x) = \sin x\)</span> is continuous everywhere.</li>
+<li>Therefore, <span class="arithmatex">\(h(x) = f(g(x)) = \sin(x^2 + 1)\)</span> is continuous everywhere.</li>
+</ul>
+<hr />
+<h2 id="piecewise-functions-and-continuity">Piecewise Functions and Continuity</h2>
+<p>Piecewise functions require special attention at the boundaries between pieces.</p>
+<h3 id="checking-piecewise-continuity">Checking Piecewise Continuity</h3>
+<p>For a piecewise function to be continuous at a boundary point <span class="arithmatex">\(c\)</span>:</p>
+<ol>
+<li>Both pieces must approach the same limit as <span class="arithmatex">\(x \to c\)</span></li>
+<li>The function value <span class="arithmatex">\(f(c)\)</span> must equal that common limit</li>
+</ol>
+<p><strong>Example:</strong> Is <span class="arithmatex">\(f(x) = \begin{cases} x^2 &amp; \text{if } x &lt; 2 \\ 3x - 2 &amp; \text{if } x \geq 2 \end{cases}\)</span> continuous at <span class="arithmatex">\(x = 2\)</span>?</p>
+<p><strong>Step 1:</strong> Find the left-hand limit.
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2^-} x^2 = 4\)</span>\)</span></p>
+<p><strong>Step 2:</strong> Find the right-hand limit.
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2^+} (3x - 2) = 6 - 2 = 4\)</span>\)</span></p>
+<p><strong>Step 3:</strong> Check if they match: <span class="arithmatex">\(4 = 4\)</span> ✓</p>
+<p><strong>Step 4:</strong> Check the function value: <span class="arithmatex">\(f(2) = 3(2) - 2 = 4\)</span> ✓</p>
+<p>All conditions are met! The function is <strong>continuous at <span class="arithmatex">\(x = 2\)</span></strong>.</p>
+<h4 id="diagram-piecewise-continuity-explorer">Diagram: Piecewise Continuity Explorer</h4>
+<iframe src="../../sims/piecewise-continuity/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Piecewise Continuity Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Determine</p>
+<p>Learning Objective: Students will determine whether piecewise functions are continuous at boundary points by checking all three conditions.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Graph of piecewise function with visible boundary point</li>
+<li>Two function pieces shown in different colors</li>
+<li>Boundary point highlighted with:</li>
+<li>Left-hand limit value (blue dot approaching)</li>
+<li>Right-hand limit value (orange dot approaching)</li>
+<li>Actual function value (green dot)</li>
+<li>Checklist showing three conditions with results</li>
+<li>"Continuous" or "Discontinuous" verdict</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Two function input fields for left and right pieces</li>
+<li>Boundary point slider (where pieces meet)</li>
+<li>"Evaluate Continuity" button</li>
+<li>Preset examples dropdown:</li>
+<li>Example 1: Continuous piecewise</li>
+<li>Example 2: Jump discontinuity</li>
+<li>Example 3: Removable discontinuity</li>
+<li>Example 4: Challenge case</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Graphs update in real-time as functions are changed</li>
+<li>Animated approach to boundary from both sides</li>
+<li>Condition checklist animates through verification</li>
+<li>Final verdict displays with explanation</li>
+</ul>
+<p>Instructional Rationale: Manipulating the pieces and seeing immediate visual/analytical feedback builds understanding of what makes piecewise functions continuous.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="removing-discontinuities">Removing Discontinuities</h2>
+<p>Some discontinuities can be "fixed" by carefully defining the function at the problem point.</p>
+<h3 id="continuous-extension">Continuous Extension</h3>
+<p>When a function has a removable discontinuity at <span class="arithmatex">\(c\)</span>, we can create a <strong>continuous extension</strong> by defining:</p>
+<div class="arithmatex">\[\tilde{f}(x) = \begin{cases} f(x) &amp; \text{if } x \neq c \\ \lim_{x \to c} f(x) &amp; \text{if } x = c \end{cases}\]</div>
+<p>This "fills the hole" with the correct value.</p>
+<p><strong>Example:</strong> Create a continuous extension of <span class="arithmatex">\(f(x) = \frac{x^2 - 9}{x - 3}\)</span> at <span class="arithmatex">\(x = 3\)</span>.</p>
+<p>First, find the limit:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 3} \frac{x^2 - 9}{x - 3} = \lim_{x \to 3} \frac{(x+3)(x-3)}{x-3} = \lim_{x \to 3} (x + 3) = 6\)</span>\)</span></p>
+<p>The continuous extension is:
+<span class="arithmatex">\(<span class="arithmatex">\(\tilde{f}(x) = \begin{cases} \frac{x^2 - 9}{x - 3} &amp; \text{if } x \neq 3 \\ 6 &amp; \text{if } x = 3 \end{cases}\)</span>\)</span></p>
+<p>Or equivalently, just <span class="arithmatex">\(\tilde{f}(x) = x + 3\)</span> for all <span class="arithmatex">\(x\)</span>.</p>
+<h3 id="finding-values-for-continuity">Finding Values for Continuity</h3>
+<p>A common problem type: "Find the value of <span class="arithmatex">\(k\)</span> that makes the function continuous."</p>
+<p><strong>Example:</strong> For what value of <span class="arithmatex">\(k\)</span> is <span class="arithmatex">\(f(x) = \begin{cases} x^2 + k &amp; \text{if } x &lt; 1 \\ 3x &amp; \text{if } x \geq 1 \end{cases}\)</span> continuous?</p>
+<p>For continuity at <span class="arithmatex">\(x = 1\)</span>, we need:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 1^-} (x^2 + k) = \lim_{x \to 1^+} 3x\)</span>\)</span></p>
+<div class="arithmatex">\[1 + k = 3\]</div>
+<div class="arithmatex">\[k = 2\]</div>
+<hr />
+<h2 id="the-intermediate-value-theorem">The Intermediate Value Theorem</h2>
+<p>Now we arrive at one of the most powerful and beautiful results about continuous functions.</p>
+<h3 id="statement-of-the-ivt">Statement of the IVT</h3>
+<div class="admonition tip">
+<p class="admonition-title">Intermediate Value Theorem (IVT)</p>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span> and <span class="arithmatex">\(N\)</span> is any number between <span class="arithmatex">\(f(a)\)</span> and <span class="arithmatex">\(f(b)\)</span>, then there exists at least one <span class="arithmatex">\(c\)</span> in <span class="arithmatex">\((a, b)\)</span> such that <span class="arithmatex">\(f(c) = N\)</span>.</p>
+</div>
+<p>In plain English: a continuous function hits every value between its starting and ending heights.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"If I start at one altitude and end at another without teleporting, I have to pass through every altitude in between. No skipping! That's the IVT."</p>
+</div>
+<h4 id="diagram-intermediate-value-theorem-visualization">Diagram: Intermediate Value Theorem Visualization</h4>
+<iframe src="../../sims/ivt-visualization/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Intermediate Value Theorem Visualization MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Explain</p>
+<p>Learning Objective: Students will explain how the Intermediate Value Theorem guarantees the existence of roots for continuous functions.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Graph of continuous function on interval [a, b]</li>
+<li>Horizontal line at y = N (the target value)</li>
+<li>Points marked at (a, f(a)) and (b, f(b))</li>
+<li>Intersection point(s) highlighted where f(c) = N</li>
+<li>Delta robot traveling along the curve from a to b</li>
+<li>"Altitude tracker" showing current y-value as Delta travels</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function selector (several continuous functions)</li>
+<li>Sliders for endpoints a and b</li>
+<li>Slider for target value N (constrained between f(a) and f(b))</li>
+<li>Button: "Animate Delta's journey"</li>
+<li>Toggle: "Show all solutions" (for multiple intersections)</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>As N slider moves, horizontal line adjusts</li>
+<li>Intersection point(s) update in real-time</li>
+<li>Animation shows Delta traveling and crossing the N-line</li>
+<li>Highlights when Delta reaches altitude N</li>
+<li>If N is outside [f(a), f(b)], displays "N not in range—IVT doesn't apply"</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show f(a) and f(b) values</li>
+<li>Stage 2: Show target value N between them</li>
+<li>Stage 3: Animate crossing, highlight c where f(c) = N</li>
+<li>Final: Display the guaranteed point (c, N)</li>
+</ul>
+<p>Instructional Rationale: Watching Delta travel and necessarily cross every intermediate height makes the theorem intuitive.</p>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<h3 id="using-the-ivt-to-find-roots">Using the IVT to Find Roots</h3>
+<p>The most common application of the IVT: proving that an equation has a solution.</p>
+<p><strong>Example:</strong> Show that <span class="arithmatex">\(x^3 + x - 1 = 0\)</span> has a solution in <span class="arithmatex">\([0, 1]\)</span>.</p>
+<p>Let <span class="arithmatex">\(f(x) = x^3 + x - 1\)</span>.</p>
+<p><strong>Step 1:</strong> Check that <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([0, 1]\)</span>.</p>
+<p>Yes—it's a polynomial, so it's continuous everywhere.</p>
+<p><strong>Step 2:</strong> Calculate <span class="arithmatex">\(f(0)\)</span> and <span class="arithmatex">\(f(1)\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(f(0) = 0 + 0 - 1 = -1\)</span></li>
+<li><span class="arithmatex">\(f(1) = 1 + 1 - 1 = 1\)</span></li>
+</ul>
+<p><strong>Step 3:</strong> Note that <span class="arithmatex">\(0\)</span> is between <span class="arithmatex">\(-1\)</span> and <span class="arithmatex">\(1\)</span>.</p>
+<p><strong>Step 4:</strong> Apply the IVT.</p>
+<p>Since <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([0, 1]\)</span>, <span class="arithmatex">\(f(0) = -1 &lt; 0\)</span>, and <span class="arithmatex">\(f(1) = 1 &gt; 0\)</span>, the IVT guarantees there exists some <span class="arithmatex">\(c \in (0, 1)\)</span> where <span class="arithmatex">\(f(c) = 0\)</span>.</p>
+<p>Therefore, <span class="arithmatex">\(x^3 + x - 1 = 0\)</span> has at least one solution in <span class="arithmatex">\((0, 1)\)</span>.</p>
+<div class="admonition warning">
+<p class="admonition-title">What the IVT Doesn't Tell You</p>
+<p>The IVT proves existence but not uniqueness. It tells you there's at least one solution, but there could be more. It also doesn't tell you what the solution actually is—just that it exists.</p>
+</div>
+<h3 id="the-ivt-and-sign-changes">The IVT and Sign Changes</h3>
+<p>A useful corollary: if a continuous function changes sign on an interval, it must have a root (zero) in that interval.</p>
+<p>This is the basis for the <strong>bisection method</strong> for finding roots numerically:</p>
+<ol>
+<li>Start with an interval <span class="arithmatex">\([a, b]\)</span> where <span class="arithmatex">\(f(a)\)</span> and <span class="arithmatex">\(f(b)\)</span> have opposite signs.</li>
+<li>Check the midpoint <span class="arithmatex">\(m = \frac{a+b}{2}\)</span>.</li>
+<li>If <span class="arithmatex">\(f(m) = 0\)</span>, you've found the root. Otherwise, the root is in whichever half has the sign change.</li>
+<li>Repeat with the smaller interval.</li>
+</ol>
+<p>Each step cuts the interval in half, so you can get arbitrarily close to the root.</p>
+<hr />
+<h2 id="summary-continuity-checklist">Summary: Continuity Checklist</h2>
+<p>When analyzing continuity, work through this checklist:</p>
+<p><strong>At a single point <span class="arithmatex">\(c\)</span>:</strong></p>
+<ol>
+<li>Is <span class="arithmatex">\(f(c)\)</span> defined?</li>
+<li>Does <span class="arithmatex">\(\lim_{x \to c} f(x)\)</span> exist?</li>
+<li>Does <span class="arithmatex">\(\lim_{x \to c} f(x) = f(c)\)</span>?</li>
+</ol>
+<p><strong>For piecewise functions at boundaries:</strong></p>
+<ol>
+<li>Calculate left-hand and right-hand limits</li>
+<li>Check if they're equal</li>
+<li>Check if the function value matches</li>
+</ol>
+<p><strong>For applying the IVT:</strong></p>
+<ol>
+<li>Verify the function is continuous on <span class="arithmatex">\([a, b]\)</span></li>
+<li>Compute <span class="arithmatex">\(f(a)\)</span> and <span class="arithmatex">\(f(b)\)</span></li>
+<li>Identify the target value <span class="arithmatex">\(N\)</span> between them</li>
+<li>Conclude that some <span class="arithmatex">\(c\)</span> exists with <span class="arithmatex">\(f(c) = N\)</span></li>
+</ol>
+<hr />
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ol>
+<li>
+<p><strong>Continuity at a point</strong> requires three conditions: <span class="arithmatex">\(f(c)\)</span> defined, limit exists, and limit equals <span class="arithmatex">\(f(c)\)</span>.</p>
+</li>
+<li>
+<p><strong>Types of discontinuities:</strong></p>
+</li>
+<li>Removable: limit exists but doesn't match <span class="arithmatex">\(f(c)\)</span></li>
+<li>Jump: left and right limits differ</li>
+<li>Infinite: function blows up (vertical asymptote)</li>
+<li>
+<p>Essential: limit doesn't exist due to oscillation</p>
+</li>
+<li>
+<p><strong>Most familiar functions are continuous</strong> on their natural domains: polynomials, trig functions, exponentials, logs.</p>
+</li>
+<li>
+<p><strong>Continuous functions combine nicely:</strong> sums, products, quotients (where defined), and compositions of continuous functions are continuous.</p>
+</li>
+<li>
+<p><strong>The IVT</strong> guarantees that continuous functions hit all intermediate values—crucial for proving roots exist.</p>
+</li>
+</ol>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Pun Corner</p>
+<p>"I used to find continuity <em>gaps</em> in my understanding. But now that I've <em>filled in</em> all the holes, I feel like I can go on <em>forever</em> without interruption!"</p>
+</div>
+<hr />
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>You now understand what it means for a function to be continuous and how to prove roots exist. In Chapter 5, we'll explore what happens when functions <em>aren't</em> well-behaved—specifically, the world of <strong>asymptotes</strong> and <strong>end behavior</strong>. What happens when <span class="arithmatex">\(x\)</span> or <span class="arithmatex">\(f(x)\)</span> goes to infinity?</p>
+<details class="question">
+<summary>Check Your Understanding</summary>
+<ol>
+<li>State the three conditions for continuity at a point <span class="arithmatex">\(c\)</span>.</li>
+<li>A function has <span class="arithmatex">\(\lim_{x \to 3^-} f(x) = 5\)</span> and <span class="arithmatex">\(\lim_{x \to 3^+} f(x) = 5\)</span>, but <span class="arithmatex">\(f(3) = 7\)</span>. Is <span class="arithmatex">\(f\)</span> continuous at 3? What type of discontinuity is this?</li>
+<li>Use the IVT to show that <span class="arithmatex">\(\cos x = x\)</span> has a solution in <span class="arithmatex">\([0, 1]\)</span>.</li>
+</ol>
+</details>
+<details class="note">
+<summary>Answers</summary>
+<ol>
+<li>
+<p>The three conditions are: (1) <span class="arithmatex">\(f(c)\)</span> is defined, (2) <span class="arithmatex">\(\lim_{x \to c} f(x)\)</span> exists, and (3) <span class="arithmatex">\(\lim_{x \to c} f(x) = f(c)\)</span>.</p>
+</li>
+<li>
+<p>No, <span class="arithmatex">\(f\)</span> is not continuous at 3 because <span class="arithmatex">\(\lim_{x \to 3} f(x) = 5 \neq 7 = f(3)\)</span>. This is a <strong>removable discontinuity</strong> because the limit exists; the function value just doesn't match.</p>
+</li>
+<li>
+<p>Let <span class="arithmatex">\(g(x) = \cos x - x\)</span>. This is continuous (difference of continuous functions). We have <span class="arithmatex">\(g(0) = \cos(0) - 0 = 1 &gt; 0\)</span> and <span class="arithmatex">\(g(1) = \cos(1) - 1 \approx 0.54 - 1 = -0.46 &lt; 0\)</span>. Since <span class="arithmatex">\(g\)</span> is continuous and <span class="arithmatex">\(g(0) &gt; 0 &gt; g(1)\)</span>, by the IVT there exists <span class="arithmatex">\(c \in (0, 1)\)</span> with <span class="arithmatex">\(g(c) = 0\)</span>, meaning <span class="arithmatex">\(\cos c = c\)</span>.</p>
+</li>
+</ol>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../03-evaluating-limits/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 3. Evaluating Limits">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                3. Evaluating Limits
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../05-asymptotes-and-end-behavior/" class="md-footer__link md-footer__link--next" aria-label="Next: 5. Asymptotes and End Behavior">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                5. Asymptotes and End Behavior
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

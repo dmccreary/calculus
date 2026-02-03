@@ -1,0 +1,2683 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introduction to limits, limit notation, one-sided limits, and the fundamental limit laws">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/calculus/chapters/02-understanding-limits/">
+      
+      
+        <link rel="prev" href="../01-foundations-of-calculus/">
+      
+      
+        <link rel="next" href="../03-evaluating-limits/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Understanding Limits - Calculus</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#understanding-limits" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Calculus" class="md-header__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Calculus
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Understanding Limits
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Calculus" class="md-nav__button md-logo" aria-label="Calculus" data-md-component="logo">
+      
+  <img src="../../img/logo-192.png" alt="logo">
+
+    </a>
+    Calculus
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/calculus" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About the Course
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-foundations-of-calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Foundations of Calculus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2. Understanding Limits
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2. Understanding Limits
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Limit?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Limit?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-limits-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Limits Matter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-intuitive-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Intuitive Limit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Intuitive Limit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-limit-visualization-with-hole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Limit Visualization with Hole
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limit Notation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Limit Notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading-limit-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Limit Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-target-vs-the-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Target vs. The Value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-sided-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-Sided Limits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="One-Sided Limits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#left-hand-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Left-Hand Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-hand-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Right-Hand Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-piecewise-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Piecewise Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-sided-limits-and-limit-existence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Sided Limits and Limit Existence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two-Sided Limits and Limit Existence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-sided-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Two-Sided Limit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-limits-fail-to-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Limits Fail to Exist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Limits Fail to Exist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-one-sided-limits-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: One-Sided Limits Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-limit-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Limit Laws
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Limit Laws">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constant-multiple-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Multiple Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difference-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quotient-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quotient Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-table-of-limit-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table of Limit Laws
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direct-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Substitution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Direct Substitution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-direct-substitution-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Direct Substitution Property
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-direct-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Direct Substitution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-direct-substitution-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Direct Substitution Fails
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Direct Substitution Fails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-direct-substitution-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Direct Substitution Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-building-your-limit-intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice: Building Your Limit Intuition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice: Building Your Limit Intuition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-limit-laws-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Limit Laws Practice
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-evaluating-limits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Evaluating Limits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-continuity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Continuity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-asymptotes-and-end-behavior/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Asymptotes and End Behavior
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-derivative-concept/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. The Derivative Concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-differentiability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Differentiability
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-basic-derivative-rules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Basic Derivative Rules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Product, Quotient, Transcendental
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-chain-rule/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. The Chain Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-implicit-differentiation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Implicit Differentiation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Inverse Function Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. Higher-Order Derivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Related Rates
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. L'Hospital's Rule
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-mean-value-theorem-and-extrema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. MVT and Extrema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Derivative Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-curve-sketching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Curve Sketching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-basic-antiderivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20. Basic Antiderivatives
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-transcendental-integrals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21. Transcendental Integrals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-riemann-sums-and-ftc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22. Riemann Sums and FTC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23. Integral Properties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Sample Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../appendix/delta/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      What Is a Limit?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Is a Limit?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-limits-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Limits Matter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-intuitive-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Intuitive Limit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Intuitive Limit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-limit-visualization-with-hole" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Limit Visualization with Hole
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limit-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limit Notation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Limit Notation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reading-limit-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reading Limit Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-target-vs-the-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Target vs. The Value
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#one-sided-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-Sided Limits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="One-Sided Limits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#left-hand-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Left-Hand Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#right-hand-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Right-Hand Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-piecewise-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Piecewise Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-sided-limits-and-limit-existence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Two-Sided Limits and Limit Existence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Two-Sided Limits and Limit Existence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-two-sided-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Two-Sided Limit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-limits-fail-to-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Limits Fail to Exist
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Limits Fail to Exist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-one-sided-limits-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: One-Sided Limits Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-limit-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Limit Laws
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Limit Laws">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#constant-multiple-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Multiple Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#difference-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Difference Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#product-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Product Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quotient-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quotient Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power-rule-for-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power Rule for Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-table-of-limit-laws" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary Table of Limit Laws
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direct-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direct Substitution
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Direct Substitution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-direct-substitution-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Direct Substitution Property
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-direct-substitution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of Direct Substitution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-direct-substitution-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Direct Substitution Fails
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When Direct Substitution Fails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-direct-substitution-decision-tree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Direct Substitution Decision Tree
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-building-your-limit-intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice: Building Your Limit Intuition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice: Building Your Limit Intuition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-limit-laws-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Limit Laws Practice
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/calculus/edit/master/docs/chapters/02-understanding-limits/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="understanding-limits">Understanding Limits</h1>
+<h2 id="summary">Summary</h2>
+<p>This chapter introduces the fundamental concept of limits, which forms the cornerstone of calculus. Students will develop an intuitive understanding of what it means for a function to approach a value, learn proper limit notation, and explore one-sided and two-sided limits. The chapter also covers the essential limit laws that allow for algebraic manipulation of limits. After completing this chapter, students will be able to evaluate basic limits and understand when limits exist or fail to exist.</p>
+<h2 id="concepts-covered">Concepts Covered</h2>
+<p>This chapter covers the following 15 concepts from the learning graph:</p>
+<ol>
+<li>Limit</li>
+<li>Limit Notation</li>
+<li>Intuitive Limit</li>
+<li>One-Sided Limit</li>
+<li>Left-Hand Limit</li>
+<li>Right-Hand Limit</li>
+<li>Two-Sided Limit</li>
+<li>Limit Existence</li>
+<li>Limit Laws</li>
+<li>Sum Rule for Limits</li>
+<li>Product Rule for Limits</li>
+<li>Quotient Rule for Limits</li>
+<li>Constant Multiple Rule</li>
+<li>Power Rule for Limits</li>
+<li>Direct Substitution</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This chapter builds on concepts from:</p>
+<ul>
+<li><a href="../01-foundations-of-calculus/">Chapter 1: Foundations of Calculus</a></li>
+</ul>
+<hr />
+<h2 id="what-is-a-limit">What Is a Limit?</h2>
+<p>Welcome to the heart of calculus! If Chapter 1 introduced you to the <em>idea</em> of change, this chapter gives you the precise language to describe it. That language is called <strong>limits</strong>, and once you master it, you'll have the key that unlocks everything else in calculus.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"I'm standing at <span class="arithmatex">\(x = 2\)</span> on this curve, but I'm curious about what's happening <em>just</em> to my left and right. What value is the function sneaking up on? That's a limit!"</p>
+</div>
+<p>Here's the big idea: a <strong>limit</strong> describes what value a function <em>approaches</em> as its input gets closer and closer to some target. Notice the word "approaches"—we're not always asking what the function <em>equals</em> at that point. We're asking what it's <em>heading toward</em>.</p>
+<p>Think about walking toward a door. The limit is where you're heading, even if you never actually step through. In math terms:</p>
+<div class="arithmatex">\[\lim_{x \to c} f(x) = L\]</div>
+<p>This reads as: "The limit of <span class="arithmatex">\(f(x)\)</span> as <span class="arithmatex">\(x\)</span> approaches <span class="arithmatex">\(c\)</span> equals <span class="arithmatex">\(L\)</span>."</p>
+<h3 id="why-limits-matter">Why Limits Matter</h3>
+<p>Limits solve a problem that plagued mathematicians for centuries: how do you describe something that's changing <em>at a single instant</em>?</p>
+<p>Consider your speedometer. It doesn't show your average speed over the last hour—it shows your speed <em>right now</em>. But "right now" is just an instant, with no time elapsed. How can you have speed without time? The answer, as we'll see in later chapters, involves limits.</p>
+<p>For now, let's build your intuition with a classic example.</p>
+<h3 id="the-intuitive-limit">The Intuitive Limit</h3>
+<p>Consider the function:</p>
+<div class="arithmatex">\[f(x) = \frac{x^2 - 4}{x - 2}\]</div>
+<p>What happens at <span class="arithmatex">\(x = 2\)</span>? If you plug in directly, you get <span class="arithmatex">\(\frac{0}{0}\)</span>—which is undefined. The function literally has a hole at <span class="arithmatex">\(x = 2\)</span>.</p>
+<p>But here's the interesting question: what is <span class="arithmatex">\(f(x)\)</span> <em>approaching</em> as <span class="arithmatex">\(x\)</span> gets close to 2?</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(x\)</span></th>
+<th><span class="arithmatex">\(f(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.9</td>
+<td>3.9</td>
+</tr>
+<tr>
+<td>1.99</td>
+<td>3.99</td>
+</tr>
+<tr>
+<td>1.999</td>
+<td>3.999</td>
+</tr>
+<tr>
+<td>2.001</td>
+<td>4.001</td>
+</tr>
+<tr>
+<td>2.01</td>
+<td>4.01</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>4.1</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern is unmistakable. As <span class="arithmatex">\(x\)</span> approaches 2, <span class="arithmatex">\(f(x)\)</span> approaches 4. We write:</p>
+<div class="arithmatex">\[\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = 4\]</div>
+<p>The function never equals 4 at <span class="arithmatex">\(x = 2\)</span> (there's a hole there!), but 4 is still the limit.</p>
+<h4 id="diagram-limit-visualization-with-hole">Diagram: Limit Visualization with Hole</h4>
+<iframe src="../../sims/limit-with-hole/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<details>
+<summary>Limit Visualization with Hole MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Understand (L2)
+Bloom Verb: Interpret</p>
+<p>Learning Objective: Students will interpret the concept of a limit by observing how function values approach a target as x approaches a specific point, even when the function is undefined at that point.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with x-axis from -1 to 5, y-axis from -1 to 8</li>
+<li>Graph of <span class="arithmatex">\(f(x) = \frac{x^2 - 4}{x - 2}\)</span> which simplifies to <span class="arithmatex">\(f(x) = x + 2\)</span> with a hole at <span class="arithmatex">\((2, 4)\)</span></li>
+<li>Open circle (hole) at the point <span class="arithmatex">\((2, 4)\)</span></li>
+<li>Delta robot character positioned on the curve</li>
+<li>Animated point that approaches <span class="arithmatex">\(x = 2\)</span> from both sides</li>
+<li>Dashed horizontal line at <span class="arithmatex">\(y = 4\)</span> (the limit value)</li>
+<li>Value display showing current <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(f(x)\)</span> values</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Slider: "Distance from 2" ranging from 0.5 to 0.001</li>
+<li>Dropdown: "Approach from" with options "Left," "Right," "Both"</li>
+<li>Button: "Animate approach"</li>
+<li>Button: "Reset"</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>As slider moves toward 0, the point on the curve moves toward x = 2</li>
+<li>The y-value display updates to show f(x) getting closer to 4</li>
+<li>When "Both" is selected, two points animate simultaneously from left and right</li>
+<li>Delta tilts to match the slope at the current position</li>
+</ul>
+<p>Instructional Rationale: Step-through visualization is appropriate because the Understand/interpret objective requires learners to see the connection between approaching x-values and the resulting y-values converging to the limit. The hole visualization makes explicit that limits describe approach behavior, not actual values.</p>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show x = 1.5, f(x) = 3.5</li>
+<li>Stage 2: Show x = 1.9, f(x) = 3.9</li>
+<li>Stage 3: Show x = 1.99, f(x) = 3.99</li>
+<li>Stage 4: Show x = 1.999, f(x) = 3.999</li>
+<li>Final: Show limit value L = 4 with all approach values visible</li>
+</ul>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="limit-notation">Limit Notation</h2>
+<p>Now that you understand what limits mean intuitively, let's nail down the notation you'll use throughout calculus.</p>
+<h3 id="reading-limit-notation">Reading Limit Notation</h3>
+<p>The expression <span class="arithmatex">\(\lim_{x \to c} f(x) = L\)</span> contains several parts:</p>
+<ul>
+<li><strong>lim</strong> — short for "limit"</li>
+<li><strong><span class="arithmatex">\(x \to c\)</span></strong> — "as <span class="arithmatex">\(x\)</span> approaches <span class="arithmatex">\(c\)</span>" (written below the lim)</li>
+<li><strong><span class="arithmatex">\(f(x)\)</span></strong> — the function we're analyzing</li>
+<li><strong><span class="arithmatex">\(= L\)</span></strong> — the value the function approaches</li>
+</ul>
+<p>Here are some examples to practice reading:</p>
+<table>
+<thead>
+<tr>
+<th>Notation</th>
+<th>How to Read It</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\lim_{x \to 3} f(x) = 7\)</span></td>
+<td>"The limit of <span class="arithmatex">\(f(x)\)</span> as <span class="arithmatex">\(x\)</span> approaches 3 equals 7"</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lim_{t \to 0} g(t) = -2\)</span></td>
+<td>"The limit of <span class="arithmatex">\(g(t)\)</span> as <span class="arithmatex">\(t\)</span> approaches 0 equals negative 2"</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\lim_{h \to 0} \frac{f(x+h) - f(x)}{h}\)</span></td>
+<td>"The limit as <span class="arithmatex">\(h\)</span> approaches 0 of the difference quotient"</td>
+</tr>
+</tbody>
+</table>
+<p>The last one is important—it's the definition of the derivative, which you'll meet soon!</p>
+<h3 id="the-target-vs-the-value">The Target vs. The Value</h3>
+<p>A crucial distinction: in <span class="arithmatex">\(\lim_{x \to c} f(x) = L\)</span>, the value <span class="arithmatex">\(c\)</span> is the <em>target</em> that <span class="arithmatex">\(x\)</span> approaches, while <span class="arithmatex">\(L\)</span> is the <em>limit value</em> that <span class="arithmatex">\(f(x)\)</span> approaches.</p>
+<p>These can be the same number, but they don't have to be. They're measuring different things:</p>
+<ul>
+<li><span class="arithmatex">\(c\)</span> is about where we're <em>going</em> on the x-axis</li>
+<li><span class="arithmatex">\(L\)</span> is about what's <em>happening</em> on the y-axis as we get there</li>
+</ul>
+<hr />
+<h2 id="one-sided-limits">One-Sided Limits</h2>
+<p>Sometimes a function behaves differently depending on which direction you approach from. This is where <strong>one-sided limits</strong> become essential.</p>
+<h3 id="left-hand-limits">Left-Hand Limits</h3>
+<p>A <strong>left-hand limit</strong> (or limit from the left) describes what <span class="arithmatex">\(f(x)\)</span> approaches as <span class="arithmatex">\(x\)</span> gets closer to <span class="arithmatex">\(c\)</span> <em>from values less than <span class="arithmatex">\(c\)</span></em>. We use a superscript minus sign:</p>
+<div class="arithmatex">\[\lim_{x \to c^-} f(x)\]</div>
+<p>This reads: "The limit of <span class="arithmatex">\(f(x)\)</span> as <span class="arithmatex">\(x\)</span> approaches <span class="arithmatex">\(c\)</span> from the left."</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"I'm rolling toward <span class="arithmatex">\(x = c\)</span> from the left side of the number line. What y-value am I heading toward? That's my left-hand limit!"</p>
+</div>
+<h3 id="right-hand-limits">Right-Hand Limits</h3>
+<p>A <strong>right-hand limit</strong> (or limit from the right) describes what <span class="arithmatex">\(f(x)\)</span> approaches as <span class="arithmatex">\(x\)</span> gets closer to <span class="arithmatex">\(c\)</span> <em>from values greater than <span class="arithmatex">\(c\)</span></em>. We use a superscript plus sign:</p>
+<div class="arithmatex">\[\lim_{x \to c^+} f(x)\]</div>
+<p>This reads: "The limit of <span class="arithmatex">\(f(x)\)</span> as <span class="arithmatex">\(x\)</span> approaches <span class="arithmatex">\(c\)</span> from the right."</p>
+<h3 id="example-piecewise-function">Example: Piecewise Function</h3>
+<p>Consider this piecewise function:</p>
+<div class="arithmatex">\[f(x) = \begin{cases} x + 1 &amp; \text{if } x &lt; 2 \\ x^2 - 1 &amp; \text{if } x \geq 2 \end{cases}\]</div>
+<p>What are the one-sided limits at <span class="arithmatex">\(x = 2\)</span>?</p>
+<p><strong>From the left:</strong> As <span class="arithmatex">\(x \to 2^-\)</span>, we use <span class="arithmatex">\(f(x) = x + 1\)</span>, so:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2^-} f(x) = 2 + 1 = 3\)</span>\)</span></p>
+<p><strong>From the right:</strong> As <span class="arithmatex">\(x \to 2^+\)</span>, we use <span class="arithmatex">\(f(x) = x^2 - 1\)</span>, so:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2^+} f(x) = 4 - 1 = 3\)</span>\)</span></p>
+<p>Both one-sided limits equal 3! This leads us to two-sided limits.</p>
+<hr />
+<h2 id="two-sided-limits-and-limit-existence">Two-Sided Limits and Limit Existence</h2>
+<h3 id="the-two-sided-limit">The Two-Sided Limit</h3>
+<p>When we write <span class="arithmatex">\(\lim_{x \to c} f(x)\)</span> without any plus or minus sign, we mean the <strong>two-sided limit</strong>. This is the "regular" limit you'll use most often.</p>
+<p>Here's the key rule:</p>
+<div class="admonition tip">
+<p class="admonition-title">The Two-Sided Limit Existence Condition</p>
+<p>The two-sided limit <span class="arithmatex">\(\lim_{x \to c} f(x) = L\)</span> exists if and only if both one-sided limits exist AND are equal:</p>
+<div class="arithmatex">\[\lim_{x \to c^-} f(x) = \lim_{x \to c^+} f(x) = L\]</div>
+</div>
+<p>In our piecewise example above, since both one-sided limits equal 3, the two-sided limit exists and equals 3:</p>
+<div class="arithmatex">\[\lim_{x \to 2} f(x) = 3\]</div>
+<h3 id="when-limits-fail-to-exist">When Limits Fail to Exist</h3>
+<p>Limits can fail to exist for several reasons:</p>
+<ol>
+<li>
+<p><strong>One-sided limits differ:</strong> If <span class="arithmatex">\(\lim_{x \to c^-} f(x) \neq \lim_{x \to c^+} f(x)\)</span>, the two-sided limit doesn't exist.</p>
+</li>
+<li>
+<p><strong>Function oscillates:</strong> Some functions wiggle infinitely as <span class="arithmatex">\(x \to c\)</span> without settling on any value.</p>
+</li>
+<li>
+<p><strong>Function goes to infinity:</strong> We'll explore this case in Chapter 5.</p>
+</li>
+</ol>
+<p>Let's see an example where one-sided limits disagree.</p>
+<h4 id="diagram-one-sided-limits-comparison">Diagram: One-Sided Limits Comparison</h4>
+<iframe src="../../sims/one-sided-limits/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<details>
+<summary>One-Sided Limits Comparison MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Analyze (L4)
+Bloom Verb: Compare</p>
+<p>Learning Objective: Students will compare left-hand and right-hand limits to determine whether a two-sided limit exists.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with grid</li>
+<li>Piecewise function with a jump discontinuity</li>
+<li>Two Delta robots: one approaching from left (teal), one from right (orange)</li>
+<li>Dashed horizontal lines showing the y-values each Delta is approaching</li>
+<li>Clear visual gap between the two limit values</li>
+<li>Display panel showing: Left limit, Right limit, and "Two-sided limit exists?" (Yes/No)</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function selector dropdown with 4 preset piecewise functions:</li>
+<li>Function A: Jump at x = 1 (limits differ)</li>
+<li>Function B: Continuous at x = 2 (limits equal)</li>
+<li>Function C: Removable discontinuity (limits equal)</li>
+<li>Function D: Jump at x = 0 (limits differ)</li>
+<li>Slider: Approach distance (0.5 to 0.01)</li>
+<li>Button: "Animate both Deltas"</li>
+<li>Button: "Reset"</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Both Deltas move toward the target x-value simultaneously</li>
+<li>Y-value readouts update in real-time</li>
+<li>When limits differ, a red "X" appears and "Does not exist" displays</li>
+<li>When limits match, a green checkmark appears with the limit value</li>
+</ul>
+<p>Instructional Rationale: Comparing left and right approaches simultaneously makes the limit existence criterion concrete. Students see that disagreeing one-sided limits prevent the two-sided limit from existing.</p>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show both Deltas at starting positions with initial y-values</li>
+<li>Stage 2: Show both approaching, y-values converging or diverging</li>
+<li>Stage 3: Show final approach with numerical comparison</li>
+<li>Final: Display conclusion about limit existence</li>
+</ul>
+<p>Implementation: p5.js with canvas-based controls</p>
+</details>
+<hr />
+<h2 id="the-limit-laws">The Limit Laws</h2>
+<p>You now understand what limits mean. But evaluating limits by making tables every time would be tedious. Fortunately, mathematicians have proven <strong>limit laws</strong> that let us compute limits algebraically.</p>
+<p>These laws work whenever both <span class="arithmatex">\(\lim_{x \to c} f(x)\)</span> and <span class="arithmatex">\(\lim_{x \to c} g(x)\)</span> exist.</p>
+<h3 id="constant-multiple-rule">Constant Multiple Rule</h3>
+<div class="arithmatex">\[\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\]</div>
+<p>You can pull constants out of limits. If <span class="arithmatex">\(f(x)\)</span> approaches <span class="arithmatex">\(L\)</span>, then <span class="arithmatex">\(3f(x)\)</span> approaches <span class="arithmatex">\(3L\)</span>.</p>
+<h3 id="sum-rule-for-limits">Sum Rule for Limits</h3>
+<div class="arithmatex">\[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\]</div>
+<p>The limit of a sum equals the sum of the limits.</p>
+<h3 id="difference-rule">Difference Rule</h3>
+<div class="arithmatex">\[\lim_{x \to c} [f(x) - g(x)] = \lim_{x \to c} f(x) - \lim_{x \to c} g(x)\]</div>
+<p>The limit of a difference equals the difference of the limits.</p>
+<h3 id="product-rule-for-limits">Product Rule for Limits</h3>
+<div class="arithmatex">\[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]</div>
+<p>The limit of a product equals the product of the limits.</p>
+<h3 id="quotient-rule-for-limits">Quotient Rule for Limits</h3>
+<div class="arithmatex">\[\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}, \quad \text{provided } \lim_{x \to c} g(x) \neq 0\]</div>
+<p>The limit of a quotient equals the quotient of the limits—as long as the denominator's limit isn't zero!</p>
+<h3 id="power-rule-for-limits">Power Rule for Limits</h3>
+<div class="arithmatex">\[\lim_{x \to c} [f(x)]^n = \left[\lim_{x \to c} f(x)\right]^n\]</div>
+<p>The limit of a power equals the power of the limit.</p>
+<h3 id="summary-table-of-limit-laws">Summary Table of Limit Laws</h3>
+<table>
+<thead>
+<tr>
+<th>Law</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constant Multiple</td>
+<td><span class="arithmatex">\(\lim [k \cdot f] = k \cdot \lim f\)</span></td>
+</tr>
+<tr>
+<td>Sum</td>
+<td><span class="arithmatex">\(\lim [f + g] = \lim f + \lim g\)</span></td>
+</tr>
+<tr>
+<td>Difference</td>
+<td><span class="arithmatex">\(\lim [f - g] = \lim f - \lim g\)</span></td>
+</tr>
+<tr>
+<td>Product</td>
+<td><span class="arithmatex">\(\lim [f \cdot g] = \lim f \cdot \lim g\)</span></td>
+</tr>
+<tr>
+<td>Quotient</td>
+<td><span class="arithmatex">\(\lim \frac{f}{g} = \frac{\lim f}{\lim g}\)</span> (if <span class="arithmatex">\(\lim g \neq 0\)</span>)</td>
+</tr>
+<tr>
+<td>Power</td>
+<td><span class="arithmatex">\(\lim [f]^n = [\lim f]^n\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="direct-substitution">Direct Substitution</h2>
+<p>Here's wonderful news: for most functions you encounter, finding limits is surprisingly simple.</p>
+<h3 id="the-direct-substitution-property">The Direct Substitution Property</h3>
+<p>If <span class="arithmatex">\(f(x)\)</span> is a polynomial, rational function (where the denominator isn't zero), or any combination of continuous functions, then:</p>
+<div class="arithmatex">\[\lim_{x \to c} f(x) = f(c)\]</div>
+<p>Just plug in the value! This is called <strong>direct substitution</strong>.</p>
+<h3 id="examples-of-direct-substitution">Examples of Direct Substitution</h3>
+<p><strong>Example 1:</strong> Find <span class="arithmatex">\(\lim_{x \to 3} (2x^2 - 5x + 1)\)</span></p>
+<p>This is a polynomial, so we can substitute directly:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 3} (2x^2 - 5x + 1) = 2(3)^2 - 5(3) + 1 = 18 - 15 + 1 = 4\)</span>\)</span></p>
+<p><strong>Example 2:</strong> Find <span class="arithmatex">\(\lim_{x \to 2} \frac{x + 1}{x - 5}\)</span></p>
+<p>This is a rational function. At <span class="arithmatex">\(x = 2\)</span>, the denominator is <span class="arithmatex">\(2 - 5 = -3 \neq 0\)</span>, so we can substitute:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2} \frac{x + 1}{x - 5} = \frac{2 + 1}{2 - 5} = \frac{3}{-3} = -1\)</span>\)</span></p>
+<p><strong>Example 3:</strong> Find <span class="arithmatex">\(\lim_{\theta \to \pi/4} \sin(\theta)\)</span></p>
+<p>Sine is continuous everywhere, so:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{\theta \to \pi/4} \sin(\theta) = \sin\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}\)</span>\)</span></p>
+<h3 id="when-direct-substitution-fails">When Direct Substitution Fails</h3>
+<p>Direct substitution doesn't work when it produces an undefined expression, like:</p>
+<ul>
+<li><span class="arithmatex">\(\frac{0}{0}\)</span> — indeterminate form (we'll handle this in Chapter 3)</li>
+<li><span class="arithmatex">\(\frac{\text{nonzero}}{0}\)</span> — possible infinite limit (Chapter 5)</li>
+</ul>
+<p>When direct substitution fails, you'll need the techniques from the next chapter.</p>
+<h4 id="diagram-direct-substitution-decision-tree">Diagram: Direct Substitution Decision Tree</h4>
+<iframe src="../../sims/direct-substitution-tree/main.html" width="100%" height="400px" scrolling="no"></iframe>
+
+<details>
+<summary>Direct Substitution Decision Tree</summary>
+<p>Type: workflow</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Use</p>
+<p>Learning Objective: Students will use a systematic decision process to determine whether direct substitution can evaluate a limit.</p>
+<p>Purpose: Guide students through the decision process for evaluating limits.</p>
+<p>Visual style: Flowchart with decision diamonds and process rectangles</p>
+<p>Steps:</p>
+<ol>
+<li>
+<p>Start: "Given <span class="arithmatex">\(\lim_{x \to c} f(x)\)</span>"
+   Hover text: "We want to find the limit of f(x) as x approaches c"</p>
+</li>
+<li>
+<p>Process: "Try substituting x = c into f(x)"
+   Hover text: "Calculate f(c) directly"</p>
+</li>
+<li>
+<p>Decision: "Does f(c) produce a real number?"
+   Hover text: "Check if the result is defined (not 0/0, not nonzero/0)"</p>
+</li>
+</ol>
+<p>4a. Process: "Limit = f(c)" (if YES)
+   Hover text: "Direct substitution works! The limit equals f(c)."</p>
+<p>4b. Decision: "Is the result 0/0?" (if NO)
+   Hover text: "0/0 is an indeterminate form that requires algebraic techniques"</p>
+<p>5a. Process: "Use algebraic techniques (Chapter 3)"
+   Hover text: "Try factoring, rationalization, or other methods"</p>
+<p>5b. Decision: "Is the result nonzero/0?" (if not 0/0)
+   Hover text: "This suggests the limit may be infinite or not exist"</p>
+<ol>
+<li>Process: "Investigate infinite limit (Chapter 5)"
+   Hover text: "Check one-sided behavior to determine if limit is +∞, -∞, or DNE"</li>
+</ol>
+<p>Color coding:</p>
+<ul>
+<li>Green: Direct substitution success</li>
+<li>Yellow: Decision points</li>
+<li>Orange: Need algebraic techniques</li>
+<li>Red: Need asymptote analysis</li>
+</ul>
+<p>Implementation: p5.js with interactive flowchart, highlight current step on hover</p>
+</details>
+<hr />
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+<p>Let's work through a comprehensive example using limit laws.</p>
+<p><strong>Problem:</strong> Find <span class="arithmatex">\(\lim_{x \to 2} \frac{3x^2 + 2x - 1}{x + 4}\)</span></p>
+<p><strong>Solution:</strong></p>
+<p>First, check if direct substitution works. At <span class="arithmatex">\(x = 2\)</span>:</p>
+<ul>
+<li>Denominator: <span class="arithmatex">\(2 + 4 = 6 \neq 0\)</span> ✓</li>
+</ul>
+<p>Direct substitution is valid! Using the quotient rule:</p>
+<div class="arithmatex">\[\lim_{x \to 2} \frac{3x^2 + 2x - 1}{x + 4} = \frac{\lim_{x \to 2}(3x^2 + 2x - 1)}{\lim_{x \to 2}(x + 4)}\]</div>
+<p>For the numerator, apply sum and constant multiple rules:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2}(3x^2 + 2x - 1) = 3(2)^2 + 2(2) - 1 = 12 + 4 - 1 = 15\)</span>\)</span></p>
+<p>For the denominator:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2}(x + 4) = 2 + 4 = 6\)</span>\)</span></p>
+<p>Therefore:
+<span class="arithmatex">\(<span class="arithmatex">\(\lim_{x \to 2} \frac{3x^2 + 2x - 1}{x + 4} = \frac{15}{6} = \frac{5}{2}\)</span>\)</span></p>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Pun Corner</p>
+<p>"Why did the limit go to therapy? It had trouble <em>approaching</em> its problems. ...I'll see myself out."</p>
+</div>
+<hr />
+<h2 id="practice-building-your-limit-intuition">Practice: Building Your Limit Intuition</h2>
+<h4 id="diagram-limit-laws-practice">Diagram: Limit Laws Practice</h4>
+<iframe src="../../sims/limit-laws-practice/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Limit Laws Practice MicroSim</summary>
+<p>Type: microsim</p>
+<p>Bloom Level: Apply (L3)
+Bloom Verb: Calculate</p>
+<p>Learning Objective: Students will calculate limits by selecting and applying appropriate limit laws.</p>
+<p>Visual elements:</p>
+<ul>
+<li>Problem display area showing a limit expression</li>
+<li>Step-by-step workspace showing the solution process</li>
+<li>Available limit laws displayed as clickable cards</li>
+<li>Running calculation showing intermediate results</li>
+<li>Score tracker for correct answers</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Button: "New Problem" generates a random limit problem</li>
+<li>Difficulty selector: "Basic," "Intermediate," "Challenge"</li>
+<li>Clickable law cards that students select to apply</li>
+<li>Input field for final numerical answer</li>
+<li>Button: "Check Answer"</li>
+<li>Button: "Show Solution"</li>
+</ul>
+<p>Problem types by difficulty:</p>
+<ul>
+<li>Basic: Single rule applications (e.g., <span class="arithmatex">\(\lim_{x \to 3} 5x\)</span>)</li>
+<li>Intermediate: Two rules combined (e.g., <span class="arithmatex">\(\lim_{x \to 2} (x^2 + 3x)\)</span>)</li>
+<li>Challenge: Three or more rules (e.g., <span class="arithmatex">\(\lim_{x \to 1} \frac{2x^2 - x}{x + 1}\)</span>)</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Each problem shows the expression and target x-value</li>
+<li>Students click law cards in the order they'd apply them</li>
+<li>System highlights whether the sequence is valid</li>
+<li>Final answer is checked numerically</li>
+<li>"Show Solution" reveals step-by-step worked solution</li>
+</ul>
+<p>Instructional Rationale: Active practice with immediate feedback reinforces procedural fluency while the law-selection interface makes the reasoning process explicit.</p>
+<p>Implementation: p5.js with canvas-based controls and problem generation</p>
+</details>
+<hr />
+<h2 id="key-takeaways">Key Takeaways</h2>
+<p>Let's summarize what you've learned in this chapter:</p>
+<ol>
+<li>
+<p><strong>A limit</strong> describes what value a function approaches as its input approaches some target—regardless of what happens at that exact point.</p>
+</li>
+<li>
+<p><strong>Limit notation</strong> <span class="arithmatex">\(\lim_{x \to c} f(x) = L\)</span> means "<span class="arithmatex">\(f(x)\)</span> approaches <span class="arithmatex">\(L\)</span> as <span class="arithmatex">\(x\)</span> approaches <span class="arithmatex">\(c\)</span>."</p>
+</li>
+<li>
+<p><strong>One-sided limits</strong> look at approach from only one direction:</p>
+</li>
+<li>Left-hand limit: <span class="arithmatex">\(\lim_{x \to c^-} f(x)\)</span></li>
+<li>
+<p>Right-hand limit: <span class="arithmatex">\(\lim_{x \to c^+} f(x)\)</span></p>
+</li>
+<li>
+<p><strong>A two-sided limit exists</strong> only when both one-sided limits exist and are equal.</p>
+</li>
+<li>
+<p><strong>Limit laws</strong> let you break apart complex limits:</p>
+</li>
+<li>Sum, difference, product, quotient rules</li>
+<li>
+<p>Constant multiple and power rules</p>
+</li>
+<li>
+<p><strong>Direct substitution</strong> works for most functions: if <span class="arithmatex">\(f\)</span> is continuous at <span class="arithmatex">\(c\)</span>, then <span class="arithmatex">\(\lim_{x \to c} f(x) = f(c)\)</span>.</p>
+</li>
+</ol>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Limits are about the journey, not the destination. What matters is where you're <em>headed</em>, even if you never quite arrive. That's actually pretty deep for math, right?"</p>
+</div>
+<hr />
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>You've built a solid foundation for understanding limits. But what happens when direct substitution gives you <span class="arithmatex">\(\frac{0}{0}\)</span>? In Chapter 3, you'll learn algebraic techniques to handle these tricky cases, including the powerful Squeeze Theorem.</p>
+<details class="question">
+<summary>Check Your Understanding</summary>
+<ol>
+<li>What's the difference between <span class="arithmatex">\(f(2)\)</span> and <span class="arithmatex">\(\lim_{x \to 2} f(x)\)</span>?</li>
+<li>If <span class="arithmatex">\(\lim_{x \to 5^-} f(x) = 3\)</span> and <span class="arithmatex">\(\lim_{x \to 5^+} f(x) = 7\)</span>, what is <span class="arithmatex">\(\lim_{x \to 5} f(x)\)</span>?</li>
+<li>True or false: If direct substitution gives a number, that number is the limit.</li>
+</ol>
+</details>
+<details class="note">
+<summary>Answers</summary>
+<ol>
+<li><span class="arithmatex">\(f(2)\)</span> is the actual value of the function at <span class="arithmatex">\(x = 2\)</span>, while <span class="arithmatex">\(\lim_{x \to 2} f(x)\)</span> is the value the function <em>approaches</em> as <span class="arithmatex">\(x\)</span> gets close to 2. These can be different (or <span class="arithmatex">\(f(2)\)</span> might not even exist).</li>
+<li>The limit does not exist because the one-sided limits are different.</li>
+<li>True! When direct substitution produces a real number, that is the limit value.</li>
+</ol>
+</details>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01-foundations-of-calculus/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 1. Foundations of Calculus">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                1. Foundations of Calculus
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-evaluating-limits/" class="md-footer__link md-footer__link--next" aria-label="Next: 3. Evaluating Limits">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                3. Evaluating Limits
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,82 @@
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+.md-header__button.md-logo img, .md-header__button.md-logo svg {
+    height: 50px;
+    width: 50px;
+}
+
+/* Container to control the iframe size and scaling */
+.iframe-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Iframe styles */
+  iframe {
+    width: 100%;
+    border: solid 2px blue;
+  }
+
+  /* if a div with <div class="upper-alpha"> wraps a list, then number A.B.C.D etc */
+  /* this requires that the markdown extension md_in_html is enabled in the mkdocs.yml file */
+  .upper-alpha ol {
+    list-style-type: upper-alpha;
+  }
+
+/* Styling for the Copy Button */
+.admonition.prompt {
+  position: relative;
+}
+
+.admonition.prompt .copy-button {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  background-color: #0056d6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.3rem;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.admonition.prompt .copy-button:hover {
+  background-color: #0041a4; /* Darker blue on hover */
+}
+
+/* Delta Moment admonitions - triangular robot mascot icon */
+.admonition.delta-moment {
+  position: relative;
+  border-left-color: #009688 !important; /* Teal accent for Delta */
+}
+
+.admonition.delta-moment > .admonition-title {
+  background-color: rgba(0, 150, 136, 0.1) !important;
+}
+
+.admonition.delta-moment::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3C!-- Delta: Triangular slope-walking robot --%3E%3C!-- Main triangle body - tilted to show slope --%3E%3Cpolygon points='32,8 52,52 12,52' fill='%23009688' stroke='%23006064' stroke-width='2' transform='rotate(5 32 36)'/%3E%3C!-- Face plate --%3E%3Crect x='22' y='28' width='20' height='12' rx='2' fill='%23fff' transform='rotate(5 32 34)'/%3E%3C!-- Eyes - curious expression --%3E%3Ccircle cx='27' cy='33' r='2.5' fill='%23ff5722'/%3E%3Ccircle cx='37' cy='34' r='2.5' fill='%23ff5722'/%3E%3C!-- Small wheels at base vertices --%3E%3Ccircle cx='14' cy='54' r='4' fill='%23555' stroke='%23333' stroke-width='1.5'/%3E%3Ccircle cx='50' cy='54' r='4' fill='%23555' stroke='%23333' stroke-width='1.5'/%3E%3C!-- Antenna --%3E%3Cline x1='33' y1='10' x2='38' y2='4' stroke='%23333' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='39' cy='3' r='2.5' fill='%23ff5722'/%3E%3C!-- Slope indicator on left edge - glowing --%3E%3Cline x1='14' y1='50' x2='31' y2='12' stroke='%2300e676' stroke-width='3' stroke-linecap='round' opacity='0.8'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.85;
+}
+
+/* Adjust icon position for smaller screens */
+@media (max-width: 600px) {
+  .admonition.delta-moment::after {
+    width: 24px;
+    height: 24px;
+    top: 1px;
+    right: 8px;
+  }
+}
