@@ -1,0 +1,19 @@
+{
+  "FOUND": "Foundation Concepts",
+  "LIMIT": "Limits",
+  "CONT": "Continuity",
+  "ASYM": "Asymptotes & End Behavior",
+  "DERIV": "Derivative Basics",
+  "DRULE": "Derivative Rules",
+  "CHAIN": "Chain Rule",
+  "IMPL": "Implicit & Inverse",
+  "HIGH": "Higher-Order Derivatives",
+  "APPL": "Applications",
+  "ANAL": "Analytical Tools",
+  "CURV": "Curve Sketching",
+  "OPT": "Optimization",
+  "INTEG": "Integration Basics",
+  "RIEM": "Riemann Sums",
+  "FTC": "Fundamental Theorem",
+  "TECH": "Integration Techniques"
+}

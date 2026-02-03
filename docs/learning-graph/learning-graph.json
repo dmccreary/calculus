@@ -1,0 +1,4191 @@
+{
+  "metadata": {
+    "title": "AP Calculus Learning Graph",
+    "description": "A comprehensive learning graph covering AP Calculus AB and BC curriculum including limits, derivatives, integrals, differential equations, and series. Contains 380 concepts with prerequisite dependencies for intelligent learning path recommendations.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-03",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "white"
+      }
+    },
+    "LIMIT": {
+      "classifierName": "Limits",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CONT": {
+      "classifierName": "Continuity",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ASYM": {
+      "classifierName": "Asymptotes & End Behavior",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "DERIV": {
+      "classifierName": "Derivative Basics",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "DRULE": {
+      "classifierName": "Derivative Rules",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CHAIN": {
+      "classifierName": "Chain Rule",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "IMPL": {
+      "classifierName": "Implicit & Inverse",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "HIGH": {
+      "classifierName": "Higher-Order Derivatives",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "APPL": {
+      "classifierName": "Applications",
+      "color": "MintCream",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ANAL": {
+      "classifierName": "Analytical Tools",
+      "color": "LightPink",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CURV": {
+      "classifierName": "Curve Sketching",
+      "color": "Gainsboro",
+      "font": {
+        "color": "black"
+      }
+    },
+    "OPT": {
+      "classifierName": "Optimization",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "INTEG": {
+      "classifierName": "Integration Basics",
+      "color": "Aquamarine",
+      "font": {
+        "color": "black"
+      }
+    },
+    "RIEM": {
+      "classifierName": "Riemann Sums",
+      "color": "Plum",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FTC": {
+      "classifierName": "Fundamental Theorem",
+      "color": "LightSteelBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "TECH": {
+      "classifierName": "Integration Techniques",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Function",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Domain and Range",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Function Notation",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Composite Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Inverse Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Graphing Functions",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Piecewise Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Even and Odd Functions",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Function Transformations",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Polynomial Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Rational Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "Exponential Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Logarithmic Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "Trigonometric Function",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Unit Circle",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "Radian Measure",
+      "group": "FOUND"
+    },
+    {
+      "id": 17,
+      "label": "Trigonometric Identities",
+      "group": "FOUND"
+    },
+    {
+      "id": 18,
+      "label": "Coordinate System",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 19,
+      "label": "Number Line",
+      "group": "FOUND"
+    },
+    {
+      "id": 20,
+      "label": "Real Numbers",
+      "group": "FOUND"
+    },
+    {
+      "id": 21,
+      "label": "Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 22,
+      "label": "Limit Notation",
+      "group": "LIMIT"
+    },
+    {
+      "id": 23,
+      "label": "Intuitive Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 24,
+      "label": "One-Sided Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 25,
+      "label": "Left-Hand Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 26,
+      "label": "Right-Hand Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 27,
+      "label": "Two-Sided Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 28,
+      "label": "Limit Existence",
+      "group": "LIMIT"
+    },
+    {
+      "id": 29,
+      "label": "Limit Laws",
+      "group": "LIMIT"
+    },
+    {
+      "id": 30,
+      "label": "Sum Rule for Limits",
+      "group": "LIMIT"
+    },
+    {
+      "id": 31,
+      "label": "Product Rule for Limits",
+      "group": "LIMIT"
+    },
+    {
+      "id": 32,
+      "label": "Quotient Rule for Limits",
+      "group": "LIMIT"
+    },
+    {
+      "id": 33,
+      "label": "Constant Multiple Rule",
+      "group": "LIMIT"
+    },
+    {
+      "id": 34,
+      "label": "Power Rule for Limits",
+      "group": "LIMIT"
+    },
+    {
+      "id": 35,
+      "label": "Direct Substitution",
+      "group": "LIMIT"
+    },
+    {
+      "id": 36,
+      "label": "Indeterminate Form",
+      "group": "LIMIT"
+    },
+    {
+      "id": 37,
+      "label": "Zero Over Zero Form",
+      "group": "LIMIT"
+    },
+    {
+      "id": 38,
+      "label": "Infinity Over Infinity",
+      "group": "LIMIT"
+    },
+    {
+      "id": 39,
+      "label": "Algebraic Limit Technique",
+      "group": "LIMIT"
+    },
+    {
+      "id": 40,
+      "label": "Factoring for Limits",
+      "group": "LIMIT"
+    },
+    {
+      "id": 41,
+      "label": "Rationalization",
+      "group": "LIMIT"
+    },
+    {
+      "id": 42,
+      "label": "Complex Fractions",
+      "group": "LIMIT"
+    },
+    {
+      "id": 43,
+      "label": "Squeeze Theorem",
+      "group": "LIMIT"
+    },
+    {
+      "id": 44,
+      "label": "Special Trig Limits",
+      "group": "LIMIT"
+    },
+    {
+      "id": 45,
+      "label": "Sin x Over x Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 46,
+      "label": "Limit of Composition",
+      "group": "LIMIT"
+    },
+    {
+      "id": 47,
+      "label": "Limits from Graphs",
+      "group": "LIMIT"
+    },
+    {
+      "id": 48,
+      "label": "Limits from Tables",
+      "group": "LIMIT"
+    },
+    {
+      "id": 49,
+      "label": "Numerical Estimation",
+      "group": "LIMIT"
+    },
+    {
+      "id": 50,
+      "label": "Infinite Limit",
+      "group": "LIMIT"
+    },
+    {
+      "id": 51,
+      "label": "Continuity",
+      "group": "CONT"
+    },
+    {
+      "id": 52,
+      "label": "Continuity at a Point",
+      "group": "CONT"
+    },
+    {
+      "id": 53,
+      "label": "Three Conditions",
+      "group": "CONT"
+    },
+    {
+      "id": 54,
+      "label": "Continuity on Interval",
+      "group": "CONT"
+    },
+    {
+      "id": 55,
+      "label": "One-Sided Continuity",
+      "group": "CONT"
+    },
+    {
+      "id": 56,
+      "label": "Continuous Function",
+      "group": "CONT"
+    },
+    {
+      "id": 57,
+      "label": "Discontinuity",
+      "group": "CONT"
+    },
+    {
+      "id": 58,
+      "label": "Removable Discontinuity",
+      "group": "CONT"
+    },
+    {
+      "id": 59,
+      "label": "Jump Discontinuity",
+      "group": "CONT"
+    },
+    {
+      "id": 60,
+      "label": "Infinite Discontinuity",
+      "group": "CONT"
+    },
+    {
+      "id": 61,
+      "label": "Essential Discontinuity",
+      "group": "CONT"
+    },
+    {
+      "id": 62,
+      "label": "Continuous Extension",
+      "group": "CONT"
+    },
+    {
+      "id": 63,
+      "label": "Removing Discontinuities",
+      "group": "CONT"
+    },
+    {
+      "id": 64,
+      "label": "Piecewise Continuity",
+      "group": "CONT"
+    },
+    {
+      "id": 65,
+      "label": "Continuity of Composites",
+      "group": "CONT"
+    },
+    {
+      "id": 66,
+      "label": "Continuity of Polynomials",
+      "group": "CONT"
+    },
+    {
+      "id": 67,
+      "label": "Continuity of Rationals",
+      "group": "CONT"
+    },
+    {
+      "id": 68,
+      "label": "Continuity of Trig",
+      "group": "CONT"
+    },
+    {
+      "id": 69,
+      "label": "Continuity of Exp Log",
+      "group": "CONT"
+    },
+    {
+      "id": 70,
+      "label": "Intermediate Value Thm",
+      "group": "CONT"
+    },
+    {
+      "id": 71,
+      "label": "Asymptote",
+      "group": "ASYM"
+    },
+    {
+      "id": 72,
+      "label": "Vertical Asymptote",
+      "group": "ASYM"
+    },
+    {
+      "id": 73,
+      "label": "Horizontal Asymptote",
+      "group": "ASYM"
+    },
+    {
+      "id": 74,
+      "label": "Oblique Asymptote",
+      "group": "ASYM"
+    },
+    {
+      "id": 75,
+      "label": "Limit at Infinity",
+      "group": "ASYM"
+    },
+    {
+      "id": 76,
+      "label": "End Behavior",
+      "group": "ASYM"
+    },
+    {
+      "id": 77,
+      "label": "Behavior Near Asymptote",
+      "group": "ASYM"
+    },
+    {
+      "id": 78,
+      "label": "One-Sided Infinite Limit",
+      "group": "ASYM"
+    },
+    {
+      "id": 79,
+      "label": "Comparing Growth Rates",
+      "group": "ASYM"
+    },
+    {
+      "id": 80,
+      "label": "Dominant Term",
+      "group": "ASYM"
+    },
+    {
+      "id": 81,
+      "label": "Rational End Behavior",
+      "group": "ASYM"
+    },
+    {
+      "id": 82,
+      "label": "Exponential Growth Rate",
+      "group": "ASYM"
+    },
+    {
+      "id": 83,
+      "label": "Logarithmic Growth Rate",
+      "group": "ASYM"
+    },
+    {
+      "id": 84,
+      "label": "Polynomial Growth Rate",
+      "group": "ASYM"
+    },
+    {
+      "id": 85,
+      "label": "Rate of Change",
+      "group": "DERIV"
+    },
+    {
+      "id": 86,
+      "label": "Average Rate of Change",
+      "group": "DERIV"
+    },
+    {
+      "id": 87,
+      "label": "Instantaneous Rate",
+      "group": "DERIV"
+    },
+    {
+      "id": 88,
+      "label": "Difference Quotient",
+      "group": "DERIV"
+    },
+    {
+      "id": 89,
+      "label": "Secant Line",
+      "group": "DERIV"
+    },
+    {
+      "id": 90,
+      "label": "Tangent Line",
+      "group": "DERIV"
+    },
+    {
+      "id": 91,
+      "label": "Slope of Tangent",
+      "group": "DERIV"
+    },
+    {
+      "id": 92,
+      "label": "Derivative Definition",
+      "group": "DERIV"
+    },
+    {
+      "id": 93,
+      "label": "Limit Definition Deriv",
+      "group": "DERIV"
+    },
+    {
+      "id": 94,
+      "label": "Derivative at a Point",
+      "group": "DERIV"
+    },
+    {
+      "id": 95,
+      "label": "Derivative Function",
+      "group": "DERIV"
+    },
+    {
+      "id": 96,
+      "label": "Derivative Notation",
+      "group": "DERIV"
+    },
+    {
+      "id": 97,
+      "label": "Prime Notation",
+      "group": "DERIV"
+    },
+    {
+      "id": 98,
+      "label": "Leibniz Notation",
+      "group": "DERIV"
+    },
+    {
+      "id": 99,
+      "label": "Differentiable Function",
+      "group": "DERIV"
+    },
+    {
+      "id": 100,
+      "label": "Differentiability",
+      "group": "DERIV"
+    },
+    {
+      "id": 101,
+      "label": "Differentiability Point",
+      "group": "DERIV"
+    },
+    {
+      "id": 102,
+      "label": "One-Sided Derivative",
+      "group": "DERIV"
+    },
+    {
+      "id": 103,
+      "label": "Non-Differentiable Pts",
+      "group": "DERIV"
+    },
+    {
+      "id": 104,
+      "label": "Corner Point",
+      "group": "DERIV"
+    },
+    {
+      "id": 105,
+      "label": "Cusp",
+      "group": "DERIV"
+    },
+    {
+      "id": 106,
+      "label": "Vertical Tangent Point",
+      "group": "DERIV"
+    },
+    {
+      "id": 107,
+      "label": "Derivative from Graph",
+      "group": "DERIV"
+    },
+    {
+      "id": 108,
+      "label": "Derivative from Table",
+      "group": "DERIV"
+    },
+    {
+      "id": 109,
+      "label": "Symmetric Difference",
+      "group": "DERIV"
+    },
+    {
+      "id": 110,
+      "label": "Diff Implies Continuous",
+      "group": "DERIV"
+    },
+    {
+      "id": 111,
+      "label": "Continuous Not Implies",
+      "group": "DERIV"
+    },
+    {
+      "id": 112,
+      "label": "Local Linearity",
+      "group": "DERIV"
+    },
+    {
+      "id": 113,
+      "label": "Tangent Approximation",
+      "group": "DERIV"
+    },
+    {
+      "id": 114,
+      "label": "Instantaneous Velocity",
+      "group": "DERIV"
+    },
+    {
+      "id": 115,
+      "label": "Derivative Rules",
+      "group": "DRULE"
+    },
+    {
+      "id": 116,
+      "label": "Constant Rule",
+      "group": "DRULE"
+    },
+    {
+      "id": 117,
+      "label": "Power Rule Derivative",
+      "group": "DRULE"
+    },
+    {
+      "id": 118,
+      "label": "Sum Rule Derivative",
+      "group": "DRULE"
+    },
+    {
+      "id": 119,
+      "label": "Difference Rule Deriv",
+      "group": "DRULE"
+    },
+    {
+      "id": 120,
+      "label": "Constant Multiple Deriv",
+      "group": "DRULE"
+    },
+    {
+      "id": 121,
+      "label": "Linear Combination",
+      "group": "DRULE"
+    },
+    {
+      "id": 122,
+      "label": "Polynomial Derivative",
+      "group": "DRULE"
+    },
+    {
+      "id": 123,
+      "label": "Derivative of x to n",
+      "group": "DRULE"
+    },
+    {
+      "id": 124,
+      "label": "Negative Exponent Deriv",
+      "group": "DRULE"
+    },
+    {
+      "id": 125,
+      "label": "Fractional Exponent",
+      "group": "DRULE"
+    },
+    {
+      "id": 126,
+      "label": "Derivative of Root",
+      "group": "DRULE"
+    },
+    {
+      "id": 127,
+      "label": "Product Rule",
+      "group": "DRULE"
+    },
+    {
+      "id": 128,
+      "label": "Product Rule Formula",
+      "group": "DRULE"
+    },
+    {
+      "id": 129,
+      "label": "Quotient Rule",
+      "group": "DRULE"
+    },
+    {
+      "id": 130,
+      "label": "Quotient Rule Formula",
+      "group": "DRULE"
+    },
+    {
+      "id": 131,
+      "label": "Reciprocal Rule",
+      "group": "DRULE"
+    },
+    {
+      "id": 132,
+      "label": "Derivative of Sine",
+      "group": "DRULE"
+    },
+    {
+      "id": 133,
+      "label": "Derivative of Cosine",
+      "group": "DRULE"
+    },
+    {
+      "id": 134,
+      "label": "Derivative of Tangent",
+      "group": "DRULE"
+    },
+    {
+      "id": 135,
+      "label": "Derivative of Cotangent",
+      "group": "DRULE"
+    },
+    {
+      "id": 136,
+      "label": "Derivative of Secant",
+      "group": "DRULE"
+    },
+    {
+      "id": 137,
+      "label": "Derivative of Cosecant",
+      "group": "DRULE"
+    },
+    {
+      "id": 138,
+      "label": "Derivative of e to x",
+      "group": "DRULE"
+    },
+    {
+      "id": 139,
+      "label": "Derivative of a to x",
+      "group": "DRULE"
+    },
+    {
+      "id": 140,
+      "label": "Derivative of ln x",
+      "group": "DRULE"
+    },
+    {
+      "id": 141,
+      "label": "Derivative of log x",
+      "group": "DRULE"
+    },
+    {
+      "id": 142,
+      "label": "Combining Rules",
+      "group": "DRULE"
+    },
+    {
+      "id": 143,
+      "label": "Simplifying First",
+      "group": "DRULE"
+    },
+    {
+      "id": 144,
+      "label": "Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 145,
+      "label": "Chain Rule Formula",
+      "group": "CHAIN"
+    },
+    {
+      "id": 146,
+      "label": "Composition Derivative",
+      "group": "CHAIN"
+    },
+    {
+      "id": 147,
+      "label": "Inside Function",
+      "group": "CHAIN"
+    },
+    {
+      "id": 148,
+      "label": "Outside Function",
+      "group": "CHAIN"
+    },
+    {
+      "id": 149,
+      "label": "Nested Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 150,
+      "label": "Leibniz Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 151,
+      "label": "Derivative of f of g",
+      "group": "CHAIN"
+    },
+    {
+      "id": 152,
+      "label": "Recognizing Composition",
+      "group": "CHAIN"
+    },
+    {
+      "id": 153,
+      "label": "Power Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 154,
+      "label": "Trig Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 155,
+      "label": "Exponential Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 156,
+      "label": "Log Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 157,
+      "label": "Multiple Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 158,
+      "label": "General Power Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 159,
+      "label": "Combining Chain Rule",
+      "group": "CHAIN"
+    },
+    {
+      "id": 160,
+      "label": "Implicit Function",
+      "group": "IMPL"
+    },
+    {
+      "id": 161,
+      "label": "Implicit Equation",
+      "group": "IMPL"
+    },
+    {
+      "id": 162,
+      "label": "Implicit Differentiation",
+      "group": "IMPL"
+    },
+    {
+      "id": 163,
+      "label": "dy dx Implicitly",
+      "group": "IMPL"
+    },
+    {
+      "id": 164,
+      "label": "Treating y as Function",
+      "group": "IMPL"
+    },
+    {
+      "id": 165,
+      "label": "Implicit Chain Rule",
+      "group": "IMPL"
+    },
+    {
+      "id": 166,
+      "label": "Solving for dy dx",
+      "group": "IMPL"
+    },
+    {
+      "id": 167,
+      "label": "Second Deriv Implicit",
+      "group": "IMPL"
+    },
+    {
+      "id": 168,
+      "label": "Tangent Line Implicit",
+      "group": "IMPL"
+    },
+    {
+      "id": 169,
+      "label": "Inverse Function Thm",
+      "group": "IMPL"
+    },
+    {
+      "id": 170,
+      "label": "Derivative of Inverse",
+      "group": "IMPL"
+    },
+    {
+      "id": 171,
+      "label": "Inverse Deriv Formula",
+      "group": "IMPL"
+    },
+    {
+      "id": 172,
+      "label": "Graphical Inverse Deriv",
+      "group": "IMPL"
+    },
+    {
+      "id": 173,
+      "label": "Derivative of Arcsin",
+      "group": "IMPL"
+    },
+    {
+      "id": 174,
+      "label": "Derivative of Arccos",
+      "group": "IMPL"
+    },
+    {
+      "id": 175,
+      "label": "Derivative of Arctan",
+      "group": "IMPL"
+    },
+    {
+      "id": 176,
+      "label": "Derivative of Arcsec",
+      "group": "IMPL"
+    },
+    {
+      "id": 177,
+      "label": "Derivative of Arccsc",
+      "group": "IMPL"
+    },
+    {
+      "id": 178,
+      "label": "Derivative of Arccot",
+      "group": "IMPL"
+    },
+    {
+      "id": 179,
+      "label": "Inverse Trig Domain",
+      "group": "IMPL"
+    },
+    {
+      "id": 180,
+      "label": "Logarithmic Differentiate",
+      "group": "IMPL"
+    },
+    {
+      "id": 181,
+      "label": "Differentiating Products",
+      "group": "IMPL"
+    },
+    {
+      "id": 182,
+      "label": "Differentiating Powers",
+      "group": "IMPL"
+    },
+    {
+      "id": 183,
+      "label": "Variable Exponents",
+      "group": "IMPL"
+    },
+    {
+      "id": 184,
+      "label": "Higher-Order Derivative",
+      "group": "HIGH"
+    },
+    {
+      "id": 185,
+      "label": "Second Derivative",
+      "group": "HIGH"
+    },
+    {
+      "id": 186,
+      "label": "Third Derivative",
+      "group": "HIGH"
+    },
+    {
+      "id": 187,
+      "label": "nth Derivative",
+      "group": "HIGH"
+    },
+    {
+      "id": 188,
+      "label": "Second Deriv Notation",
+      "group": "HIGH"
+    },
+    {
+      "id": 189,
+      "label": "f Double Prime",
+      "group": "HIGH"
+    },
+    {
+      "id": 190,
+      "label": "d2y dx2 Notation",
+      "group": "HIGH"
+    },
+    {
+      "id": 191,
+      "label": "Velocity from Position",
+      "group": "HIGH"
+    },
+    {
+      "id": 192,
+      "label": "Acceleration",
+      "group": "HIGH"
+    },
+    {
+      "id": 193,
+      "label": "Jerk",
+      "group": "HIGH"
+    },
+    {
+      "id": 194,
+      "label": "Position Velocity Accel",
+      "group": "HIGH"
+    },
+    {
+      "id": 195,
+      "label": "Speed vs Velocity",
+      "group": "HIGH"
+    },
+    {
+      "id": 196,
+      "label": "Direction of Motion",
+      "group": "HIGH"
+    },
+    {
+      "id": 197,
+      "label": "Speeding Up Slowing",
+      "group": "HIGH"
+    },
+    {
+      "id": 198,
+      "label": "Higher Trig Derivatives",
+      "group": "HIGH"
+    },
+    {
+      "id": 199,
+      "label": "Related Rates",
+      "group": "APPL"
+    },
+    {
+      "id": 200,
+      "label": "Related Rates Setup",
+      "group": "APPL"
+    },
+    {
+      "id": 201,
+      "label": "Implicit in Context",
+      "group": "APPL"
+    },
+    {
+      "id": 202,
+      "label": "Rate Variables",
+      "group": "APPL"
+    },
+    {
+      "id": 203,
+      "label": "Related Rates Diagram",
+      "group": "APPL"
+    },
+    {
+      "id": 204,
+      "label": "Ladder Problem",
+      "group": "APPL"
+    },
+    {
+      "id": 205,
+      "label": "Balloon Problem",
+      "group": "APPL"
+    },
+    {
+      "id": 206,
+      "label": "Shadow Problem",
+      "group": "APPL"
+    },
+    {
+      "id": 207,
+      "label": "Conical Tank Problem",
+      "group": "APPL"
+    },
+    {
+      "id": 208,
+      "label": "Distance Rate Problem",
+      "group": "APPL"
+    },
+    {
+      "id": 209,
+      "label": "Linear Approximation",
+      "group": "APPL"
+    },
+    {
+      "id": 210,
+      "label": "Tangent Line Approx",
+      "group": "APPL"
+    },
+    {
+      "id": 211,
+      "label": "Linearization Formula",
+      "group": "APPL"
+    },
+    {
+      "id": 212,
+      "label": "Error in Approximation",
+      "group": "APPL"
+    },
+    {
+      "id": 213,
+      "label": "Differential",
+      "group": "APPL"
+    },
+    {
+      "id": 214,
+      "label": "dy Notation",
+      "group": "APPL"
+    },
+    {
+      "id": 215,
+      "label": "dx Notation",
+      "group": "APPL"
+    },
+    {
+      "id": 216,
+      "label": "Differential Approx",
+      "group": "APPL"
+    },
+    {
+      "id": 217,
+      "label": "Marginal Analysis",
+      "group": "APPL"
+    },
+    {
+      "id": 218,
+      "label": "Marginal Cost",
+      "group": "APPL"
+    },
+    {
+      "id": 219,
+      "label": "Marginal Revenue",
+      "group": "APPL"
+    },
+    {
+      "id": 220,
+      "label": "Marginal Profit",
+      "group": "APPL"
+    },
+    {
+      "id": 221,
+      "label": "Economics Interpretation",
+      "group": "APPL"
+    },
+    {
+      "id": 222,
+      "label": "Units of Derivative",
+      "group": "APPL"
+    },
+    {
+      "id": 223,
+      "label": "Rate Interpretation",
+      "group": "APPL"
+    },
+    {
+      "id": 224,
+      "label": "Derivative in Context",
+      "group": "APPL"
+    },
+    {
+      "id": 225,
+      "label": "Population Rate",
+      "group": "APPL"
+    },
+    {
+      "id": 226,
+      "label": "Temperature Rate",
+      "group": "APPL"
+    },
+    {
+      "id": 227,
+      "label": "Concentration Rate",
+      "group": "APPL"
+    },
+    {
+      "id": 228,
+      "label": "L'Hospital's Rule",
+      "group": "APPL"
+    },
+    {
+      "id": 229,
+      "label": "L'Hospital Conditions",
+      "group": "APPL"
+    },
+    {
+      "id": 230,
+      "label": "Zero Over Zero Apply",
+      "group": "APPL"
+    },
+    {
+      "id": 231,
+      "label": "Inf Over Inf Apply",
+      "group": "APPL"
+    },
+    {
+      "id": 232,
+      "label": "Indeterminate Products",
+      "group": "APPL"
+    },
+    {
+      "id": 233,
+      "label": "Zero Times Infinity",
+      "group": "APPL"
+    },
+    {
+      "id": 234,
+      "label": "Indeterminate Powers",
+      "group": "APPL"
+    },
+    {
+      "id": 235,
+      "label": "One to Infinity",
+      "group": "APPL"
+    },
+    {
+      "id": 236,
+      "label": "Repeated L'Hospital",
+      "group": "APPL"
+    },
+    {
+      "id": 237,
+      "label": "Verify L'Hospital",
+      "group": "APPL"
+    },
+    {
+      "id": 238,
+      "label": "Mean Value Theorem",
+      "group": "ANAL"
+    },
+    {
+      "id": 239,
+      "label": "MVT Statement",
+      "group": "ANAL"
+    },
+    {
+      "id": 240,
+      "label": "MVT Conditions",
+      "group": "ANAL"
+    },
+    {
+      "id": 241,
+      "label": "MVT Conclusion",
+      "group": "ANAL"
+    },
+    {
+      "id": 242,
+      "label": "Rolle's Theorem",
+      "group": "ANAL"
+    },
+    {
+      "id": 243,
+      "label": "Rolle's Conditions",
+      "group": "ANAL"
+    },
+    {
+      "id": 244,
+      "label": "MVT Applications",
+      "group": "ANAL"
+    },
+    {
+      "id": 245,
+      "label": "Average vs Instant MVT",
+      "group": "ANAL"
+    },
+    {
+      "id": 246,
+      "label": "Extreme Value Theorem",
+      "group": "ANAL"
+    },
+    {
+      "id": 247,
+      "label": "EVT Statement",
+      "group": "ANAL"
+    },
+    {
+      "id": 248,
+      "label": "EVT Conditions",
+      "group": "ANAL"
+    },
+    {
+      "id": 249,
+      "label": "Global Maximum",
+      "group": "ANAL"
+    },
+    {
+      "id": 250,
+      "label": "Global Minimum",
+      "group": "ANAL"
+    },
+    {
+      "id": 251,
+      "label": "Local Maximum",
+      "group": "ANAL"
+    },
+    {
+      "id": 252,
+      "label": "Local Minimum",
+      "group": "ANAL"
+    },
+    {
+      "id": 253,
+      "label": "Critical Point",
+      "group": "ANAL"
+    },
+    {
+      "id": 254,
+      "label": "Critical Number",
+      "group": "ANAL"
+    },
+    {
+      "id": 255,
+      "label": "Where f Prime Zero",
+      "group": "ANAL"
+    },
+    {
+      "id": 256,
+      "label": "Where f Prime DNE",
+      "group": "ANAL"
+    },
+    {
+      "id": 257,
+      "label": "First Derivative Test",
+      "group": "ANAL"
+    },
+    {
+      "id": 258,
+      "label": "Sign Chart",
+      "group": "ANAL"
+    },
+    {
+      "id": 259,
+      "label": "Increasing Function",
+      "group": "ANAL"
+    },
+    {
+      "id": 260,
+      "label": "Decreasing Function",
+      "group": "ANAL"
+    },
+    {
+      "id": 261,
+      "label": "Monotonicity",
+      "group": "ANAL"
+    },
+    {
+      "id": 262,
+      "label": "Sign Change Analysis",
+      "group": "ANAL"
+    },
+    {
+      "id": 263,
+      "label": "Second Derivative Test",
+      "group": "ANAL"
+    },
+    {
+      "id": 264,
+      "label": "Concavity",
+      "group": "ANAL"
+    },
+    {
+      "id": 265,
+      "label": "Concave Up",
+      "group": "ANAL"
+    },
+    {
+      "id": 266,
+      "label": "Concave Down",
+      "group": "ANAL"
+    },
+    {
+      "id": 267,
+      "label": "Inflection Point",
+      "group": "ANAL"
+    },
+    {
+      "id": 268,
+      "label": "Point of Inflection",
+      "group": "ANAL"
+    },
+    {
+      "id": 269,
+      "label": "Candidates Test",
+      "group": "ANAL"
+    },
+    {
+      "id": 270,
+      "label": "Closed Interval Method",
+      "group": "ANAL"
+    },
+    {
+      "id": 271,
+      "label": "Endpoint Extrema",
+      "group": "ANAL"
+    },
+    {
+      "id": 272,
+      "label": "Curve Sketching",
+      "group": "CURV"
+    },
+    {
+      "id": 273,
+      "label": "Complete Curve Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 274,
+      "label": "f f Prime f Dbl Prime",
+      "group": "CURV"
+    },
+    {
+      "id": 275,
+      "label": "Graph from Derivative",
+      "group": "CURV"
+    },
+    {
+      "id": 276,
+      "label": "Derivative from Graph",
+      "group": "CURV"
+    },
+    {
+      "id": 277,
+      "label": "Connecting Three Graphs",
+      "group": "CURV"
+    },
+    {
+      "id": 278,
+      "label": "Domain Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 279,
+      "label": "Intercept Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 280,
+      "label": "Symmetry Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 281,
+      "label": "Asymptote Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 282,
+      "label": "Increasing Decreasing",
+      "group": "CURV"
+    },
+    {
+      "id": 283,
+      "label": "Local Extrema Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 284,
+      "label": "Concavity Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 285,
+      "label": "Inflection Analysis",
+      "group": "CURV"
+    },
+    {
+      "id": 286,
+      "label": "Optimization",
+      "group": "OPT"
+    },
+    {
+      "id": 287,
+      "label": "Optimization Problem",
+      "group": "OPT"
+    },
+    {
+      "id": 288,
+      "label": "Objective Function",
+      "group": "OPT"
+    },
+    {
+      "id": 289,
+      "label": "Constraint Equation",
+      "group": "OPT"
+    },
+    {
+      "id": 290,
+      "label": "Primary Equation",
+      "group": "OPT"
+    },
+    {
+      "id": 291,
+      "label": "Setting Up Optimization",
+      "group": "OPT"
+    },
+    {
+      "id": 292,
+      "label": "Maximizing Area",
+      "group": "OPT"
+    },
+    {
+      "id": 293,
+      "label": "Minimizing Distance",
+      "group": "OPT"
+    },
+    {
+      "id": 294,
+      "label": "Minimizing Cost",
+      "group": "OPT"
+    },
+    {
+      "id": 295,
+      "label": "Maximizing Volume",
+      "group": "OPT"
+    },
+    {
+      "id": 296,
+      "label": "Fencing Problem",
+      "group": "OPT"
+    },
+    {
+      "id": 297,
+      "label": "Box Problem",
+      "group": "OPT"
+    },
+    {
+      "id": 298,
+      "label": "Can Problem",
+      "group": "OPT"
+    },
+    {
+      "id": 299,
+      "label": "Closest Point Problem",
+      "group": "OPT"
+    },
+    {
+      "id": 300,
+      "label": "Maximum Profit",
+      "group": "OPT"
+    },
+    {
+      "id": 301,
+      "label": "Applied Optimization",
+      "group": "OPT"
+    },
+    {
+      "id": 302,
+      "label": "Verifying Maximum",
+      "group": "OPT"
+    },
+    {
+      "id": 303,
+      "label": "Verifying Minimum",
+      "group": "OPT"
+    },
+    {
+      "id": 304,
+      "label": "Second Deriv Verify",
+      "group": "OPT"
+    },
+    {
+      "id": 305,
+      "label": "Endpoint Consideration",
+      "group": "OPT"
+    },
+    {
+      "id": 306,
+      "label": "Practical Domain",
+      "group": "OPT"
+    },
+    {
+      "id": 307,
+      "label": "Antiderivative",
+      "group": "INTEG"
+    },
+    {
+      "id": 308,
+      "label": "Indefinite Integral",
+      "group": "INTEG"
+    },
+    {
+      "id": 309,
+      "label": "Integral Notation",
+      "group": "INTEG"
+    },
+    {
+      "id": 310,
+      "label": "Integrand",
+      "group": "INTEG"
+    },
+    {
+      "id": 311,
+      "label": "Variable of Integration",
+      "group": "INTEG"
+    },
+    {
+      "id": 312,
+      "label": "Constant of Integration",
+      "group": "INTEG"
+    },
+    {
+      "id": 313,
+      "label": "General Antiderivative",
+      "group": "INTEG"
+    },
+    {
+      "id": 314,
+      "label": "Particular Antideriv",
+      "group": "INTEG"
+    },
+    {
+      "id": 315,
+      "label": "Power Rule Integration",
+      "group": "INTEG"
+    },
+    {
+      "id": 316,
+      "label": "Constant Rule Integr",
+      "group": "INTEG"
+    },
+    {
+      "id": 317,
+      "label": "Sum Rule Integration",
+      "group": "INTEG"
+    },
+    {
+      "id": 318,
+      "label": "Difference Rule Integr",
+      "group": "INTEG"
+    },
+    {
+      "id": 319,
+      "label": "Constant Multiple Integ",
+      "group": "INTEG"
+    },
+    {
+      "id": 320,
+      "label": "Basic Trig Integrals",
+      "group": "INTEG"
+    },
+    {
+      "id": 321,
+      "label": "Integral of Sin x",
+      "group": "INTEG"
+    },
+    {
+      "id": 322,
+      "label": "Integral of Cos x",
+      "group": "INTEG"
+    },
+    {
+      "id": 323,
+      "label": "Integral of Sec Squared",
+      "group": "INTEG"
+    },
+    {
+      "id": 324,
+      "label": "Integral of Csc Squared",
+      "group": "INTEG"
+    },
+    {
+      "id": 325,
+      "label": "Integral of Sec Tan",
+      "group": "INTEG"
+    },
+    {
+      "id": 326,
+      "label": "Integral of Csc Cot",
+      "group": "INTEG"
+    },
+    {
+      "id": 327,
+      "label": "Integral of e to x",
+      "group": "INTEG"
+    },
+    {
+      "id": 328,
+      "label": "Integral of a to x",
+      "group": "INTEG"
+    },
+    {
+      "id": 329,
+      "label": "Integral of 1 Over x",
+      "group": "INTEG"
+    },
+    {
+      "id": 330,
+      "label": "Natural Log Integral",
+      "group": "INTEG"
+    },
+    {
+      "id": 331,
+      "label": "Inverse Trig Integrals",
+      "group": "INTEG"
+    },
+    {
+      "id": 332,
+      "label": "Arcsin Integral",
+      "group": "INTEG"
+    },
+    {
+      "id": 333,
+      "label": "Arctan Integral",
+      "group": "INTEG"
+    },
+    {
+      "id": 334,
+      "label": "Arcsec Integral",
+      "group": "INTEG"
+    },
+    {
+      "id": 335,
+      "label": "Riemann Sum",
+      "group": "RIEM"
+    },
+    {
+      "id": 336,
+      "label": "Left Riemann Sum",
+      "group": "RIEM"
+    },
+    {
+      "id": 337,
+      "label": "Right Riemann Sum",
+      "group": "RIEM"
+    },
+    {
+      "id": 338,
+      "label": "Midpoint Riemann Sum",
+      "group": "RIEM"
+    },
+    {
+      "id": 339,
+      "label": "Trapezoidal Rule",
+      "group": "RIEM"
+    },
+    {
+      "id": 340,
+      "label": "Summation Notation",
+      "group": "RIEM"
+    },
+    {
+      "id": 341,
+      "label": "Sigma Notation",
+      "group": "RIEM"
+    },
+    {
+      "id": 342,
+      "label": "Index of Summation",
+      "group": "RIEM"
+    },
+    {
+      "id": 343,
+      "label": "Limit of Riemann Sum",
+      "group": "RIEM"
+    },
+    {
+      "id": 344,
+      "label": "Definite Integral",
+      "group": "RIEM"
+    },
+    {
+      "id": 345,
+      "label": "Definite Integral Notat",
+      "group": "RIEM"
+    },
+    {
+      "id": 346,
+      "label": "Limits of Integration",
+      "group": "RIEM"
+    },
+    {
+      "id": 347,
+      "label": "Fundamental Theorem",
+      "group": "FTC"
+    },
+    {
+      "id": 348,
+      "label": "FTC Part One",
+      "group": "FTC"
+    },
+    {
+      "id": 349,
+      "label": "FTC Part Two",
+      "group": "FTC"
+    },
+    {
+      "id": 350,
+      "label": "Evaluation Theorem",
+      "group": "FTC"
+    },
+    {
+      "id": 351,
+      "label": "Accumulation Function",
+      "group": "FTC"
+    },
+    {
+      "id": 352,
+      "label": "Integral as Function",
+      "group": "FTC"
+    },
+    {
+      "id": 353,
+      "label": "Derivative of Integral",
+      "group": "FTC"
+    },
+    {
+      "id": 354,
+      "label": "FTC Chain Rule",
+      "group": "FTC"
+    },
+    {
+      "id": 355,
+      "label": "Net Change Theorem",
+      "group": "FTC"
+    },
+    {
+      "id": 356,
+      "label": "Net Signed Area",
+      "group": "FTC"
+    },
+    {
+      "id": 357,
+      "label": "Area Under Curve",
+      "group": "FTC"
+    },
+    {
+      "id": 358,
+      "label": "Integral Properties",
+      "group": "FTC"
+    },
+    {
+      "id": 359,
+      "label": "Additivity Property",
+      "group": "FTC"
+    },
+    {
+      "id": 360,
+      "label": "Reversing Limits",
+      "group": "FTC"
+    },
+    {
+      "id": 361,
+      "label": "Zero Width Integral",
+      "group": "FTC"
+    },
+    {
+      "id": 362,
+      "label": "Integral of Sum",
+      "group": "FTC"
+    },
+    {
+      "id": 363,
+      "label": "Integral Bounds Split",
+      "group": "FTC"
+    },
+    {
+      "id": 364,
+      "label": "Comparison Property",
+      "group": "FTC"
+    },
+    {
+      "id": 365,
+      "label": "Even Function Integral",
+      "group": "FTC"
+    },
+    {
+      "id": 366,
+      "label": "Odd Function Integral",
+      "group": "FTC"
+    },
+    {
+      "id": 367,
+      "label": "Average Value",
+      "group": "FTC"
+    },
+    {
+      "id": 368,
+      "label": "Average Value Formula",
+      "group": "FTC"
+    },
+    {
+      "id": 369,
+      "label": "Mean Value Integral",
+      "group": "FTC"
+    },
+    {
+      "id": 370,
+      "label": "u-Substitution",
+      "group": "TECH"
+    },
+    {
+      "id": 371,
+      "label": "Substitution Method",
+      "group": "TECH"
+    },
+    {
+      "id": 372,
+      "label": "Choosing u",
+      "group": "TECH"
+    },
+    {
+      "id": 373,
+      "label": "du Calculation",
+      "group": "TECH"
+    },
+    {
+      "id": 374,
+      "label": "Back Substitution",
+      "group": "TECH"
+    },
+    {
+      "id": 375,
+      "label": "Definite Substitution",
+      "group": "TECH"
+    },
+    {
+      "id": 376,
+      "label": "Changing Bounds",
+      "group": "TECH"
+    },
+    {
+      "id": 377,
+      "label": "Long Division Method",
+      "group": "TECH"
+    },
+    {
+      "id": 378,
+      "label": "Completing Square",
+      "group": "TECH"
+    },
+    {
+      "id": 379,
+      "label": "Partial Fractions",
+      "group": "TECH"
+    },
+    {
+      "id": 380,
+      "label": "Integration Strategy",
+      "group": "TECH"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 2
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 6,
+      "to": 2
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 9,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 6
+    },
+    {
+      "from": 10,
+      "to": 1
+    },
+    {
+      "from": 10,
+      "to": 3
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 1
+    },
+    {
+      "from": 12,
+      "to": 3
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 1
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 15
+    },
+    {
+      "from": 17,
+      "to": 14
+    },
+    {
+      "from": 17,
+      "to": 15
+    },
+    {
+      "from": 19,
+      "to": 18
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 1
+    },
+    {
+      "from": 21,
+      "to": 20
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 22
+    },
+    {
+      "from": 25,
+      "to": 24
+    },
+    {
+      "from": 26,
+      "to": 24
+    },
+    {
+      "from": 27,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 28,
+      "to": 27
+    },
+    {
+      "from": 29,
+      "to": 21
+    },
+    {
+      "from": 29,
+      "to": 28
+    },
+    {
+      "from": 30,
+      "to": 29
+    },
+    {
+      "from": 31,
+      "to": 29
+    },
+    {
+      "from": 32,
+      "to": 29
+    },
+    {
+      "from": 33,
+      "to": 29
+    },
+    {
+      "from": 34,
+      "to": 29
+    },
+    {
+      "from": 35,
+      "to": 29
+    },
+    {
+      "from": 35,
+      "to": 10
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 37,
+      "to": 36
+    },
+    {
+      "from": 38,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 36
+    },
+    {
+      "from": 39,
+      "to": 37
+    },
+    {
+      "from": 40,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 39
+    },
+    {
+      "from": 42,
+      "to": 39
+    },
+    {
+      "from": 43,
+      "to": 29
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 44,
+      "to": 14
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 46,
+      "to": 4
+    },
+    {
+      "from": 46,
+      "to": 29
+    },
+    {
+      "from": 47,
+      "to": 6
+    },
+    {
+      "from": 47,
+      "to": 23
+    },
+    {
+      "from": 48,
+      "to": 23
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 21
+    },
+    {
+      "from": 51,
+      "to": 21
+    },
+    {
+      "from": 51,
+      "to": 28
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 52
+    },
+    {
+      "from": 55,
+      "to": 52
+    },
+    {
+      "from": 55,
+      "to": 24
+    },
+    {
+      "from": 56,
+      "to": 54
+    },
+    {
+      "from": 57,
+      "to": 51
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 58,
+      "to": 37
+    },
+    {
+      "from": 59,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 24
+    },
+    {
+      "from": 60,
+      "to": 57
+    },
+    {
+      "from": 60,
+      "to": 50
+    },
+    {
+      "from": 61,
+      "to": 57
+    },
+    {
+      "from": 62,
+      "to": 58
+    },
+    {
+      "from": 63,
+      "to": 58
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 7
+    },
+    {
+      "from": 64,
+      "to": 52
+    },
+    {
+      "from": 65,
+      "to": 4
+    },
+    {
+      "from": 65,
+      "to": 56
+    },
+    {
+      "from": 66,
+      "to": 10
+    },
+    {
+      "from": 66,
+      "to": 56
+    },
+    {
+      "from": 67,
+      "to": 11
+    },
+    {
+      "from": 67,
+      "to": 56
+    },
+    {
+      "from": 67,
+      "to": 57
+    },
+    {
+      "from": 68,
+      "to": 14
+    },
+    {
+      "from": 68,
+      "to": 56
+    },
+    {
+      "from": 69,
+      "to": 12
+    },
+    {
+      "from": 69,
+      "to": 13
+    },
+    {
+      "from": 69,
+      "to": 56
+    },
+    {
+      "from": 70,
+      "to": 54
+    },
+    {
+      "from": 70,
+      "to": 56
+    },
+    {
+      "from": 71,
+      "to": 50
+    },
+    {
+      "from": 71,
+      "to": 57
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 72,
+      "to": 60
+    },
+    {
+      "from": 73,
+      "to": 71
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 74,
+      "to": 11
+    },
+    {
+      "from": 75,
+      "to": 21
+    },
+    {
+      "from": 75,
+      "to": 73
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 72
+    },
+    {
+      "from": 77,
+      "to": 75
+    },
+    {
+      "from": 78,
+      "to": 50
+    },
+    {
+      "from": 78,
+      "to": 24
+    },
+    {
+      "from": 79,
+      "to": 75
+    },
+    {
+      "from": 79,
+      "to": 12
+    },
+    {
+      "from": 80,
+      "to": 79
+    },
+    {
+      "from": 80,
+      "to": 10
+    },
+    {
+      "from": 81,
+      "to": 11
+    },
+    {
+      "from": 81,
+      "to": 76
+    },
+    {
+      "from": 82,
+      "to": 12
+    },
+    {
+      "from": 82,
+      "to": 79
+    },
+    {
+      "from": 83,
+      "to": 13
+    },
+    {
+      "from": 83,
+      "to": 79
+    },
+    {
+      "from": 84,
+      "to": 10
+    },
+    {
+      "from": 84,
+      "to": 79
+    },
+    {
+      "from": 85,
+      "to": 1
+    },
+    {
+      "from": 86,
+      "to": 85
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 87,
+      "to": 21
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 89,
+      "to": 88
+    },
+    {
+      "from": 89,
+      "to": 6
+    },
+    {
+      "from": 90,
+      "to": 89
+    },
+    {
+      "from": 90,
+      "to": 21
+    },
+    {
+      "from": 91,
+      "to": 90
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 92,
+      "to": 87
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 93,
+      "to": 21
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 94
+    },
+    {
+      "from": 96,
+      "to": 95
+    },
+    {
+      "from": 97,
+      "to": 96
+    },
+    {
+      "from": 98,
+      "to": 96
+    },
+    {
+      "from": 99,
+      "to": 95
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 101,
+      "to": 100
+    },
+    {
+      "from": 101,
+      "to": 94
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 102,
+      "to": 24
+    },
+    {
+      "from": 103,
+      "to": 100
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 103
+    },
+    {
+      "from": 106,
+      "to": 103
+    },
+    {
+      "from": 106,
+      "to": 90
+    },
+    {
+      "from": 107,
+      "to": 95
+    },
+    {
+      "from": 107,
+      "to": 6
+    },
+    {
+      "from": 108,
+      "to": 95
+    },
+    {
+      "from": 108,
+      "to": 48
+    },
+    {
+      "from": 109,
+      "to": 88
+    },
+    {
+      "from": 110,
+      "to": 100
+    },
+    {
+      "from": 110,
+      "to": 56
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 111,
+      "to": 103
+    },
+    {
+      "from": 112,
+      "to": 90
+    },
+    {
+      "from": 112,
+      "to": 99
+    },
+    {
+      "from": 113,
+      "to": 112
+    },
+    {
+      "from": 114,
+      "to": 87
+    },
+    {
+      "from": 114,
+      "to": 92
+    },
+    {
+      "from": 115,
+      "to": 95
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 117,
+      "to": 115
+    },
+    {
+      "from": 118,
+      "to": 115
+    },
+    {
+      "from": 119,
+      "to": 115
+    },
+    {
+      "from": 120,
+      "to": 115
+    },
+    {
+      "from": 121,
+      "to": 118
+    },
+    {
+      "from": 121,
+      "to": 120
+    },
+    {
+      "from": 122,
+      "to": 117
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 117
+    },
+    {
+      "from": 124,
+      "to": 123
+    },
+    {
+      "from": 125,
+      "to": 123
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 115
+    },
+    {
+      "from": 128,
+      "to": 127
+    },
+    {
+      "from": 129,
+      "to": 127
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 129
+    },
+    {
+      "from": 132,
+      "to": 115
+    },
+    {
+      "from": 132,
+      "to": 14
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 134,
+      "to": 129
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 136,
+      "to": 132
+    },
+    {
+      "from": 136,
+      "to": 133
+    },
+    {
+      "from": 136,
+      "to": 129
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 115
+    },
+    {
+      "from": 138,
+      "to": 12
+    },
+    {
+      "from": 139,
+      "to": 138
+    },
+    {
+      "from": 140,
+      "to": 115
+    },
+    {
+      "from": 140,
+      "to": 13
+    },
+    {
+      "from": 141,
+      "to": 140
+    },
+    {
+      "from": 142,
+      "to": 121
+    },
+    {
+      "from": 142,
+      "to": 127
+    },
+    {
+      "from": 142,
+      "to": 129
+    },
+    {
+      "from": 143,
+      "to": 142
+    },
+    {
+      "from": 144,
+      "to": 4
+    },
+    {
+      "from": 144,
+      "to": 95
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 146,
+      "to": 144
+    },
+    {
+      "from": 147,
+      "to": 145
+    },
+    {
+      "from": 148,
+      "to": 145
+    },
+    {
+      "from": 149,
+      "to": 145
+    },
+    {
+      "from": 150,
+      "to": 145
+    },
+    {
+      "from": 150,
+      "to": 98
+    },
+    {
+      "from": 151,
+      "to": 146
+    },
+    {
+      "from": 152,
+      "to": 147
+    },
+    {
+      "from": 152,
+      "to": 148
+    },
+    {
+      "from": 153,
+      "to": 145
+    },
+    {
+      "from": 153,
+      "to": 117
+    },
+    {
+      "from": 154,
+      "to": 145
+    },
+    {
+      "from": 154,
+      "to": 132
+    },
+    {
+      "from": 155,
+      "to": 145
+    },
+    {
+      "from": 155,
+      "to": 138
+    },
+    {
+      "from": 156,
+      "to": 145
+    },
+    {
+      "from": 156,
+      "to": 140
+    },
+    {
+      "from": 157,
+      "to": 149
+    },
+    {
+      "from": 158,
+      "to": 153
+    },
+    {
+      "from": 159,
+      "to": 145
+    },
+    {
+      "from": 159,
+      "to": 142
+    },
+    {
+      "from": 160,
+      "to": 1
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 162,
+      "to": 144
+    },
+    {
+      "from": 163,
+      "to": 162
+    },
+    {
+      "from": 164,
+      "to": 162
+    },
+    {
+      "from": 165,
+      "to": 162
+    },
+    {
+      "from": 165,
+      "to": 144
+    },
+    {
+      "from": 166,
+      "to": 163
+    },
+    {
+      "from": 167,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 166
+    },
+    {
+      "from": 168,
+      "to": 90
+    },
+    {
+      "from": 169,
+      "to": 5
+    },
+    {
+      "from": 169,
+      "to": 95
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 170
+    },
+    {
+      "from": 172,
+      "to": 6
+    },
+    {
+      "from": 173,
+      "to": 170
+    },
+    {
+      "from": 173,
+      "to": 14
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 173
+    },
+    {
+      "from": 176,
+      "to": 175
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 175
+    },
+    {
+      "from": 179,
+      "to": 173
+    },
+    {
+      "from": 180,
+      "to": 140
+    },
+    {
+      "from": 180,
+      "to": 162
+    },
+    {
+      "from": 181,
+      "to": 180
+    },
+    {
+      "from": 182,
+      "to": 180
+    },
+    {
+      "from": 183,
+      "to": 182
+    },
+    {
+      "from": 184,
+      "to": 95
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 186,
+      "to": 185
+    },
+    {
+      "from": 187,
+      "to": 186
+    },
+    {
+      "from": 188,
+      "to": 185
+    },
+    {
+      "from": 189,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 188
+    },
+    {
+      "from": 191,
+      "to": 114
+    },
+    {
+      "from": 191,
+      "to": 185
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 192
+    },
+    {
+      "from": 193,
+      "to": 186
+    },
+    {
+      "from": 194,
+      "to": 191
+    },
+    {
+      "from": 194,
+      "to": 192
+    },
+    {
+      "from": 195,
+      "to": 191
+    },
+    {
+      "from": 196,
+      "to": 195
+    },
+    {
+      "from": 197,
+      "to": 192
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 198,
+      "to": 187
+    },
+    {
+      "from": 198,
+      "to": 132
+    },
+    {
+      "from": 199,
+      "to": 162
+    },
+    {
+      "from": 199,
+      "to": 87
+    },
+    {
+      "from": 200,
+      "to": 199
+    },
+    {
+      "from": 201,
+      "to": 199
+    },
+    {
+      "from": 201,
+      "to": 162
+    },
+    {
+      "from": 202,
+      "to": 200
+    },
+    {
+      "from": 203,
+      "to": 200
+    },
+    {
+      "from": 204,
+      "to": 199
+    },
+    {
+      "from": 204,
+      "to": 203
+    },
+    {
+      "from": 205,
+      "to": 199
+    },
+    {
+      "from": 205,
+      "to": 203
+    },
+    {
+      "from": 206,
+      "to": 199
+    },
+    {
+      "from": 206,
+      "to": 203
+    },
+    {
+      "from": 207,
+      "to": 199
+    },
+    {
+      "from": 207,
+      "to": 203
+    },
+    {
+      "from": 208,
+      "to": 199
+    },
+    {
+      "from": 208,
+      "to": 203
+    },
+    {
+      "from": 209,
+      "to": 112
+    },
+    {
+      "from": 209,
+      "to": 113
+    },
+    {
+      "from": 210,
+      "to": 209
+    },
+    {
+      "from": 211,
+      "to": 209
+    },
+    {
+      "from": 212,
+      "to": 209
+    },
+    {
+      "from": 213,
+      "to": 98
+    },
+    {
+      "from": 213,
+      "to": 209
+    },
+    {
+      "from": 214,
+      "to": 213
+    },
+    {
+      "from": 215,
+      "to": 213
+    },
+    {
+      "from": 216,
+      "to": 213
+    },
+    {
+      "from": 216,
+      "to": 212
+    },
+    {
+      "from": 217,
+      "to": 95
+    },
+    {
+      "from": 217,
+      "to": 87
+    },
+    {
+      "from": 218,
+      "to": 217
+    },
+    {
+      "from": 219,
+      "to": 217
+    },
+    {
+      "from": 220,
+      "to": 218
+    },
+    {
+      "from": 220,
+      "to": 219
+    },
+    {
+      "from": 221,
+      "to": 217
+    },
+    {
+      "from": 222,
+      "to": 95
+    },
+    {
+      "from": 222,
+      "to": 87
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 223
+    },
+    {
+      "from": 225,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 224
+    },
+    {
+      "from": 227,
+      "to": 224
+    },
+    {
+      "from": 228,
+      "to": 36
+    },
+    {
+      "from": 228,
+      "to": 37
+    },
+    {
+      "from": 228,
+      "to": 38
+    },
+    {
+      "from": 229,
+      "to": 228
+    },
+    {
+      "from": 230,
+      "to": 228
+    },
+    {
+      "from": 230,
+      "to": 37
+    },
+    {
+      "from": 231,
+      "to": 228
+    },
+    {
+      "from": 231,
+      "to": 38
+    },
+    {
+      "from": 232,
+      "to": 228
+    },
+    {
+      "from": 233,
+      "to": 232
+    },
+    {
+      "from": 234,
+      "to": 228
+    },
+    {
+      "from": 235,
+      "to": 234
+    },
+    {
+      "from": 236,
+      "to": 228
+    },
+    {
+      "from": 237,
+      "to": 229
+    },
+    {
+      "from": 238,
+      "to": 56
+    },
+    {
+      "from": 238,
+      "to": 99
+    },
+    {
+      "from": 239,
+      "to": 238
+    },
+    {
+      "from": 240,
+      "to": 238
+    },
+    {
+      "from": 241,
+      "to": 239
+    },
+    {
+      "from": 242,
+      "to": 238
+    },
+    {
+      "from": 243,
+      "to": 242
+    },
+    {
+      "from": 244,
+      "to": 241
+    },
+    {
+      "from": 245,
+      "to": 244
+    },
+    {
+      "from": 245,
+      "to": 86
+    },
+    {
+      "from": 245,
+      "to": 87
+    },
+    {
+      "from": 246,
+      "to": 56
+    },
+    {
+      "from": 246,
+      "to": 54
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 248,
+      "to": 246
+    },
+    {
+      "from": 249,
+      "to": 246
+    },
+    {
+      "from": 250,
+      "to": 246
+    },
+    {
+      "from": 251,
+      "to": 95
+    },
+    {
+      "from": 252,
+      "to": 95
+    },
+    {
+      "from": 253,
+      "to": 95
+    },
+    {
+      "from": 253,
+      "to": 251
+    },
+    {
+      "from": 253,
+      "to": 252
+    },
+    {
+      "from": 254,
+      "to": 253
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 256,
+      "to": 254
+    },
+    {
+      "from": 256,
+      "to": 103
+    },
+    {
+      "from": 257,
+      "to": 253
+    },
+    {
+      "from": 257,
+      "to": 255
+    },
+    {
+      "from": 258,
+      "to": 257
+    },
+    {
+      "from": 259,
+      "to": 257
+    },
+    {
+      "from": 260,
+      "to": 257
+    },
+    {
+      "from": 261,
+      "to": 259
+    },
+    {
+      "from": 261,
+      "to": 260
+    },
+    {
+      "from": 262,
+      "to": 258
+    },
+    {
+      "from": 263,
+      "to": 185
+    },
+    {
+      "from": 263,
+      "to": 253
+    },
+    {
+      "from": 264,
+      "to": 185
+    },
+    {
+      "from": 265,
+      "to": 264
+    },
+    {
+      "from": 266,
+      "to": 264
+    },
+    {
+      "from": 267,
+      "to": 264
+    },
+    {
+      "from": 267,
+      "to": 265
+    },
+    {
+      "from": 267,
+      "to": 266
+    },
+    {
+      "from": 268,
+      "to": 267
+    },
+    {
+      "from": 269,
+      "to": 249
+    },
+    {
+      "from": 269,
+      "to": 250
+    },
+    {
+      "from": 269,
+      "to": 254
+    },
+    {
+      "from": 270,
+      "to": 269
+    },
+    {
+      "from": 271,
+      "to": 270
+    },
+    {
+      "from": 272,
+      "to": 257
+    },
+    {
+      "from": 272,
+      "to": 264
+    },
+    {
+      "from": 273,
+      "to": 272
+    },
+    {
+      "from": 274,
+      "to": 272
+    },
+    {
+      "from": 274,
+      "to": 185
+    },
+    {
+      "from": 275,
+      "to": 274
+    },
+    {
+      "from": 276,
+      "to": 275
+    },
+    {
+      "from": 277,
+      "to": 274
+    },
+    {
+      "from": 277,
+      "to": 275
+    },
+    {
+      "from": 277,
+      "to": 276
+    },
+    {
+      "from": 278,
+      "to": 2
+    },
+    {
+      "from": 278,
+      "to": 272
+    },
+    {
+      "from": 279,
+      "to": 272
+    },
+    {
+      "from": 280,
+      "to": 8
+    },
+    {
+      "from": 280,
+      "to": 272
+    },
+    {
+      "from": 281,
+      "to": 71
+    },
+    {
+      "from": 281,
+      "to": 272
+    },
+    {
+      "from": 282,
+      "to": 259
+    },
+    {
+      "from": 282,
+      "to": 260
+    },
+    {
+      "from": 282,
+      "to": 272
+    },
+    {
+      "from": 283,
+      "to": 257
+    },
+    {
+      "from": 283,
+      "to": 272
+    },
+    {
+      "from": 284,
+      "to": 264
+    },
+    {
+      "from": 284,
+      "to": 272
+    },
+    {
+      "from": 285,
+      "to": 267
+    },
+    {
+      "from": 285,
+      "to": 272
+    },
+    {
+      "from": 286,
+      "to": 253
+    },
+    {
+      "from": 286,
+      "to": 269
+    },
+    {
+      "from": 287,
+      "to": 286
+    },
+    {
+      "from": 288,
+      "to": 287
+    },
+    {
+      "from": 289,
+      "to": 287
+    },
+    {
+      "from": 290,
+      "to": 288
+    },
+    {
+      "from": 290,
+      "to": 289
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 292,
+      "to": 291
+    },
+    {
+      "from": 293,
+      "to": 291
+    },
+    {
+      "from": 294,
+      "to": 291
+    },
+    {
+      "from": 295,
+      "to": 291
+    },
+    {
+      "from": 296,
+      "to": 292
+    },
+    {
+      "from": 297,
+      "to": 295
+    },
+    {
+      "from": 298,
+      "to": 295
+    },
+    {
+      "from": 299,
+      "to": 293
+    },
+    {
+      "from": 300,
+      "to": 294
+    },
+    {
+      "from": 300,
+      "to": 220
+    },
+    {
+      "from": 301,
+      "to": 287
+    },
+    {
+      "from": 302,
+      "to": 263
+    },
+    {
+      "from": 302,
+      "to": 269
+    },
+    {
+      "from": 303,
+      "to": 263
+    },
+    {
+      "from": 303,
+      "to": 269
+    },
+    {
+      "from": 304,
+      "to": 302
+    },
+    {
+      "from": 304,
+      "to": 303
+    },
+    {
+      "from": 305,
+      "to": 271
+    },
+    {
+      "from": 305,
+      "to": 287
+    },
+    {
+      "from": 306,
+      "to": 2
+    },
+    {
+      "from": 306,
+      "to": 287
+    },
+    {
+      "from": 307,
+      "to": 95
+    },
+    {
+      "from": 308,
+      "to": 307
+    },
+    {
+      "from": 309,
+      "to": 308
+    },
+    {
+      "from": 310,
+      "to": 309
+    },
+    {
+      "from": 311,
+      "to": 309
+    },
+    {
+      "from": 312,
+      "to": 308
+    },
+    {
+      "from": 313,
+      "to": 308
+    },
+    {
+      "from": 313,
+      "to": 312
+    },
+    {
+      "from": 314,
+      "to": 313
+    },
+    {
+      "from": 315,
+      "to": 308
+    },
+    {
+      "from": 315,
+      "to": 117
+    },
+    {
+      "from": 316,
+      "to": 308
+    },
+    {
+      "from": 317,
+      "to": 308
+    },
+    {
+      "from": 318,
+      "to": 308
+    },
+    {
+      "from": 319,
+      "to": 308
+    },
+    {
+      "from": 320,
+      "to": 308
+    },
+    {
+      "from": 320,
+      "to": 132
+    },
+    {
+      "from": 321,
+      "to": 320
+    },
+    {
+      "from": 322,
+      "to": 320
+    },
+    {
+      "from": 323,
+      "to": 320
+    },
+    {
+      "from": 324,
+      "to": 320
+    },
+    {
+      "from": 325,
+      "to": 320
+    },
+    {
+      "from": 326,
+      "to": 320
+    },
+    {
+      "from": 327,
+      "to": 308
+    },
+    {
+      "from": 327,
+      "to": 138
+    },
+    {
+      "from": 328,
+      "to": 327
+    },
+    {
+      "from": 329,
+      "to": 308
+    },
+    {
+      "from": 329,
+      "to": 140
+    },
+    {
+      "from": 330,
+      "to": 329
+    },
+    {
+      "from": 331,
+      "to": 308
+    },
+    {
+      "from": 331,
+      "to": 173
+    },
+    {
+      "from": 332,
+      "to": 331
+    },
+    {
+      "from": 333,
+      "to": 331
+    },
+    {
+      "from": 334,
+      "to": 331
+    },
+    {
+      "from": 335,
+      "to": 86
+    },
+    {
+      "from": 335,
+      "to": 308
+    },
+    {
+      "from": 336,
+      "to": 335
+    },
+    {
+      "from": 337,
+      "to": 335
+    },
+    {
+      "from": 338,
+      "to": 335
+    },
+    {
+      "from": 339,
+      "to": 335
+    },
+    {
+      "from": 340,
+      "to": 335
+    },
+    {
+      "from": 341,
+      "to": 340
+    },
+    {
+      "from": 342,
+      "to": 341
+    },
+    {
+      "from": 343,
+      "to": 335
+    },
+    {
+      "from": 343,
+      "to": 21
+    },
+    {
+      "from": 344,
+      "to": 343
+    },
+    {
+      "from": 345,
+      "to": 344
+    },
+    {
+      "from": 346,
+      "to": 345
+    },
+    {
+      "from": 347,
+      "to": 344
+    },
+    {
+      "from": 347,
+      "to": 307
+    },
+    {
+      "from": 348,
+      "to": 347
+    },
+    {
+      "from": 349,
+      "to": 347
+    },
+    {
+      "from": 350,
+      "to": 349
+    },
+    {
+      "from": 351,
+      "to": 348
+    },
+    {
+      "from": 352,
+      "to": 351
+    },
+    {
+      "from": 353,
+      "to": 348
+    },
+    {
+      "from": 354,
+      "to": 348
+    },
+    {
+      "from": 354,
+      "to": 144
+    },
+    {
+      "from": 355,
+      "to": 349
+    },
+    {
+      "from": 356,
+      "to": 344
+    },
+    {
+      "from": 357,
+      "to": 356
+    },
+    {
+      "from": 358,
+      "to": 344
+    },
+    {
+      "from": 359,
+      "to": 358
+    },
+    {
+      "from": 360,
+      "to": 358
+    },
+    {
+      "from": 361,
+      "to": 358
+    },
+    {
+      "from": 362,
+      "to": 358
+    },
+    {
+      "from": 363,
+      "to": 359
+    },
+    {
+      "from": 364,
+      "to": 358
+    },
+    {
+      "from": 365,
+      "to": 8
+    },
+    {
+      "from": 365,
+      "to": 358
+    },
+    {
+      "from": 366,
+      "to": 8
+    },
+    {
+      "from": 366,
+      "to": 358
+    },
+    {
+      "from": 367,
+      "to": 344
+    },
+    {
+      "from": 368,
+      "to": 367
+    },
+    {
+      "from": 369,
+      "to": 367
+    },
+    {
+      "from": 369,
+      "to": 238
+    },
+    {
+      "from": 370,
+      "to": 308
+    },
+    {
+      "from": 370,
+      "to": 144
+    },
+    {
+      "from": 371,
+      "to": 370
+    },
+    {
+      "from": 372,
+      "to": 371
+    },
+    {
+      "from": 373,
+      "to": 371
+    },
+    {
+      "from": 374,
+      "to": 371
+    },
+    {
+      "from": 375,
+      "to": 370
+    },
+    {
+      "from": 375,
+      "to": 344
+    },
+    {
+      "from": 376,
+      "to": 375
+    },
+    {
+      "from": 377,
+      "to": 308
+    },
+    {
+      "from": 377,
+      "to": 11
+    },
+    {
+      "from": 378,
+      "to": 308
+    },
+    {
+      "from": 379,
+      "to": 308
+    },
+    {
+      "from": 379,
+      "to": 11
+    },
+    {
+      "from": 380,
+      "to": 370
+    },
+    {
+      "from": 380,
+      "to": 377
+    },
+    {
+      "from": 380,
+      "to": 378
+    }
+  ]
+}
