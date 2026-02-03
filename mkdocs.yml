@@ -11,29 +11,75 @@ nav:
 
   - Chapters:
     - Overview: chapters/index.md
-    - 1. Foundations of Calculus: chapters/01-foundations-of-calculus/index.md
-    - 2. Understanding Limits: chapters/02-understanding-limits/index.md
-    - 3. Evaluating Limits: chapters/03-evaluating-limits/index.md
-    - 4. Continuity: chapters/04-continuity/index.md
-    - 5. Asymptotes and End Behavior: chapters/05-asymptotes-and-end-behavior/index.md
-    - 6. The Derivative Concept: chapters/06-derivative-concept/index.md
-    - 7. Differentiability: chapters/07-differentiability/index.md
-    - 8. Basic Derivative Rules: chapters/08-basic-derivative-rules/index.md
-    - 9. Product, Quotient, Transcendental: chapters/09-product-quotient-transcendental-derivatives/index.md
-    - 10. The Chain Rule: chapters/10-chain-rule/index.md
-    - 11. Implicit Differentiation: chapters/11-implicit-differentiation/index.md
-    - 12. Inverse Function Derivatives: chapters/12-inverse-function-derivatives/index.md
-    - 13. Higher-Order Derivatives: chapters/13-higher-order-derivatives-and-motion/index.md
-    - 14. Related Rates: chapters/14-related-rates-and-linear-approximation/index.md
-    - 15. L'Hospital's Rule: chapters/15-lhospitals-rule-and-applications/index.md
-    - 16. MVT and Extrema: chapters/16-mean-value-theorem-and-extrema/index.md
-    - 17. Derivative Tests: chapters/17-derivative-tests-and-concavity/index.md
-    - 18. Curve Sketching: chapters/18-curve-sketching/index.md
-    - 19. Optimization: chapters/19-optimization/index.md
-    - 20. Basic Antiderivatives: chapters/20-basic-antiderivatives/index.md
-    - 21. Transcendental Integrals: chapters/21-transcendental-integrals/index.md
-    - 22. Riemann Sums and FTC: chapters/22-riemann-sums-and-ftc/index.md
-    - 23. Integral Properties: chapters/23-integral-properties-and-techniques/index.md
+    - 1. Foundations of Calculus:
+      - Content: chapters/01-foundations-of-calculus/index.md
+      - Quiz: chapters/01-foundations-of-calculus/quiz.md
+    - 2. Understanding Limits:
+      - Content: chapters/02-understanding-limits/index.md
+      - Quiz: chapters/02-understanding-limits/quiz.md
+    - 3. Evaluating Limits:
+      - Content: chapters/03-evaluating-limits/index.md
+      - Quiz: chapters/03-evaluating-limits/quiz.md
+    - 4. Continuity:
+      - Content: chapters/04-continuity/index.md
+      - Quiz: chapters/04-continuity/quiz.md
+    - 5. Asymptotes and End Behavior:
+      - Content: chapters/05-asymptotes-and-end-behavior/index.md
+      - Quiz: chapters/05-asymptotes-and-end-behavior/quiz.md
+    - 6. The Derivative Concept:
+      - Content: chapters/06-derivative-concept/index.md
+      - Quiz: chapters/06-derivative-concept/quiz.md
+    - 7. Differentiability:
+      - Content: chapters/07-differentiability/index.md
+      - Quiz: chapters/07-differentiability/quiz.md
+    - 8. Basic Derivative Rules:
+      - Content: chapters/08-basic-derivative-rules/index.md
+      - Quiz: chapters/08-basic-derivative-rules/quiz.md
+    - 9. Product, Quotient, Transcendental:
+      - Content: chapters/09-product-quotient-transcendental-derivatives/index.md
+      - Quiz: chapters/09-product-quotient-transcendental-derivatives/quiz.md
+    - 10. The Chain Rule:
+      - Content: chapters/10-chain-rule/index.md
+      - Quiz: chapters/10-chain-rule/quiz.md
+    - 11. Implicit Differentiation:
+      - Content: chapters/11-implicit-differentiation/index.md
+      - Quiz: chapters/11-implicit-differentiation/quiz.md
+    - 12. Inverse Function Derivatives:
+      - Content: chapters/12-inverse-function-derivatives/index.md
+      - Quiz: chapters/12-inverse-function-derivatives/quiz.md
+    - 13. Higher-Order Derivatives:
+      - Content: chapters/13-higher-order-derivatives-and-motion/index.md
+      - Quiz: chapters/13-higher-order-derivatives-and-motion/quiz.md
+    - 14. Related Rates:
+      - Content: chapters/14-related-rates-and-linear-approximation/index.md
+      - Quiz: chapters/14-related-rates-and-linear-approximation/quiz.md
+    - 15. L'Hospital's Rule:
+      - Content: chapters/15-lhospitals-rule-and-applications/index.md
+      - Quiz: chapters/15-lhospitals-rule-and-applications/quiz.md
+    - 16. MVT and Extrema:
+      - Content: chapters/16-mean-value-theorem-and-extrema/index.md
+      - Quiz: chapters/16-mean-value-theorem-and-extrema/quiz.md
+    - 17. Derivative Tests:
+      - Content: chapters/17-derivative-tests-and-concavity/index.md
+      - Quiz: chapters/17-derivative-tests-and-concavity/quiz.md
+    - 18. Curve Sketching:
+      - Content: chapters/18-curve-sketching/index.md
+      - Quiz: chapters/18-curve-sketching/quiz.md
+    - 19. Optimization:
+      - Content: chapters/19-optimization/index.md
+      - Quiz: chapters/19-optimization/quiz.md
+    - 20. Basic Antiderivatives:
+      - Content: chapters/20-basic-antiderivatives/index.md
+      - Quiz: chapters/20-basic-antiderivatives/quiz.md
+    - 21. Transcendental Integrals:
+      - Content: chapters/21-transcendental-integrals/index.md
+      - Quiz: chapters/21-transcendental-integrals/quiz.md
+    - 22. Riemann Sums and FTC:
+      - Content: chapters/22-riemann-sums-and-ftc/index.md
+      - Quiz: chapters/22-riemann-sums-and-ftc/quiz.md
+    - 23. Integral Properties:
+      - Content: chapters/23-integral-properties-and-techniques/index.md
+      - Quiz: chapters/23-integral-properties-and-techniques/quiz.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md
