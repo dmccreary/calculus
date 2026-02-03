@@ -102,7 +102,7 @@ nav:
   - Appendices:
     - List of Appendices: appendices/index.md
     - College Credit: appendices/college-credit.md
-    - Meet Delta: appendix/delta.md
+    - Meet Delta: appendices/delta.md
     - Timeline of Calculus: appendices/timeline-of-calculus.md
   
   - Learning Graph:
@@ -129,6 +129,7 @@ nav:
     - learning-graph/chapter-metrics.md
     - learning-graph/diagram-details.md
     - learning-graph/diagram-table.md
+    - prompts/timeline-data.md
   
   - Glossary: glossary.md
   - FAQ: faq.md
