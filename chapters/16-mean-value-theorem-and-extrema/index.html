@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+        <meta name="description" content="Understanding the MVT, Rolle's Theorem, EVT, and critical points for finding extrema">
       
       
         <meta name="author" content="Dan McCreary">
@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://dmccreary.github.io/calculus/chapters/16-mean-value-theorem-and-extrema/">
       
       
-        <link rel="prev" href="../15-lhospitals-rule-and-applications/">
+        <link rel="prev" href="../15-lhospitals-rule-and-applications/quiz/">
       
       
-        <link rel="next" href="../17-derivative-tests-and-concavity/">
+        <link rel="next" href="quiz/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>16. MVT and Extrema - Calculus</title>
+        <title>Mean Value Theorem and Extrema - AP Calculus</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="16. MVT and Extrema - Calculus" >
+        <meta  property="og:title"  content="Mean Value Theorem and Extrema - AP Calculus" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP calculus designed for college credit." >
+        <meta  property="og:description"  content="Understanding the MVT, Rolle's Theorem, EVT, and critical points for finding extrema" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/16-mean-value-theorem-and-extrema/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="16. MVT and Extrema - Calculus" >
+        <meta  name="twitter:title"  content="Mean Value Theorem and Extrema - AP Calculus" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP calculus designed for college credit." >
+        <meta  name="twitter:description"  content="Understanding the MVT, Rolle's Theorem, EVT, and critical points for finding extrema" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/16-mean-value-theorem-and-extrema/index.png" >
       
@@ -120,7 +120,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Calculus" class="md-header__button md-logo" aria-label="Calculus" data-md-component="logo">
+    <a href="../.." title="AP Calculus" class="md-header__button md-logo" aria-label="AP Calculus" data-md-component="logo">
       
   <img src="../../img/logo-192.png" alt="logo">
 
@@ -133,13 +133,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Calculus
+            AP Calculus
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              16. MVT and Extrema
+              Mean Value Theorem and Extrema
             
           </span>
         </div>
@@ -226,12 +226,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Calculus" class="md-nav__button md-logo" aria-label="Calculus" data-md-component="logo">
+    <a href="../.." title="AP Calculus" class="md-nav__button md-logo" aria-label="AP Calculus" data-md-component="logo">
       
   <img src="../../img/logo-192.png" alt="logo">
 
     </a>
-    Calculus
+    AP Calculus
   </label>
   
     <div class="md-nav__source">
@@ -324,95 +324,49 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
         
       
     
@@ -461,16 +415,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../01-foundations-of-calculus/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../01-foundations-of-calculus/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     1. Foundations of Calculus
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -482,16 +463,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../02-understanding-limits/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../02-understanding-limits/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     2. Understanding Limits
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -503,16 +511,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../03-evaluating-limits/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../03-evaluating-limits/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     3. Evaluating Limits
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -524,16 +559,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../04-continuity/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../04-continuity/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     4. Continuity
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -545,16 +607,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../05-asymptotes-and-end-behavior/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../05-asymptotes-and-end-behavior/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     5. Asymptotes and End Behavior
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -566,16 +655,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../06-derivative-concept/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../06-derivative-concept/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     6. The Derivative Concept
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -587,16 +703,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../07-differentiability/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../07-differentiability/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     7. Differentiability
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -608,16 +751,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../08-basic-derivative-rules/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../08-basic-derivative-rules/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     8. Basic Derivative Rules
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -629,16 +799,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     9. Product, Quotient, Transcendental
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -650,16 +847,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../10-chain-rule/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../10-chain-rule/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     10. The Chain Rule
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -671,16 +895,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../11-implicit-differentiation/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../11-implicit-differentiation/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     11. Implicit Differentiation
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -692,16 +943,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     12. Inverse Function Derivatives
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -713,16 +991,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     13. Higher-Order Derivatives
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -734,16 +1039,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     14. Related Rates
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -755,16 +1087,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     15. L'Hospital's Rule
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -778,84 +1137,53 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    16. MVT and Extrema
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    16. MVT and Extrema
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    
       
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
+        
+          
+        
       
-        <li class="md-nav__item">
-  <a href="#concepts-covered" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concepts Covered
-    </span>
-  </a>
-  
-</li>
+        
       
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
+    
+    
+    
       
-    </ul>
-  
-</nav>
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-    </li>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_17" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    16. MVT and Extrema
+  </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_4_17" id="__nav_4_17_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_17_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_17">
+            <span class="md-nav__icon md-icon"></span>
+            16. MVT and Extrema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -865,15 +1193,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+      <a href="quiz/" class="md-nav__link">
         
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     17. Derivative Tests
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -885,16 +1269,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../18-curve-sketching/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../18-curve-sketching/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     18. Curve Sketching
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -906,16 +1317,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../19-optimization/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../19-optimization/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     19. Optimization
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -927,16 +1365,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../20-basic-antiderivatives/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../20-basic-antiderivatives/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     20. Basic Antiderivatives
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -948,16 +1413,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../21-transcendental-integrals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../21-transcendental-integrals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     21. Transcendental Integrals
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -969,16 +1461,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../22-riemann-sums-and-ftc/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../22-riemann-sums-and-ftc/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     22. Riemann Sums and FTC
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -990,16 +1509,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     23. Integral Properties
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1193,6 +1739,18 @@
           
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1232,7 +1790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../glossary.md" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1252,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq.md" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,6 +1959,420 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-connecting-average-and-instantaneous" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Connecting Average and Instantaneous
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolles-theorem-the-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolle's Theorem: The Foundation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rolle's Theorem: The Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statement-of-rolles-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statement of Rolle's Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-rolles-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Rolle's Conditions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Interpretation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Interpretation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-rolles-theorem-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Rolle's Theorem Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-applying-rolles-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Applying Rolle's Theorem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-mean-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Mean Value Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Mean Value Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statement-of-the-mean-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statement of the Mean Value Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#average-vs-instantaneous-the-core-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average vs. Instantaneous: The Core Connection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#geometric-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Geometric Picture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Geometric Picture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-mean-value-theorem-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Mean Value Theorem Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-is-the-mvt-true" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why is the MVT True?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-applying-the-mean-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Applying the Mean Value Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mvt-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      MVT Applications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-extreme-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Extreme Value Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Extreme Value Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-extrema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Extrema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Extrema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-global-vs-local-extrema-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Global vs Local Extrema Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statement-of-the-extreme-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Statement of the Extreme Value Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evt-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      EVT Conditions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-the-evt-works-intuitive-argument" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why the EVT Works (Intuitive Argument)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why the EVT Works (Intuitive Argument)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-evt-conditions-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: EVT Conditions Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-points-where-extrema-occur" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critical Points: Where Extrema Occur
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical Points: Where Extrema Occur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-critical-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is a Critical Point?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-critical-points-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Critical Points Matter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-critical-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Critical Points
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Critical Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-critical-point-finder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Critical Point Finder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-critical-points-with-dne" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Critical Points with DNE
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-finding-extrema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: Finding Extrema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: Finding Extrema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-closed-interval-method-candidates-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Closed Interval Method (Candidates Test)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Closed Interval Method (Candidates Test)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-candidates-test-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Candidates Test Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-critical-points-arent-extrema" class="md-nav__link">
+    <span class="md-ellipsis">
+      When Critical Points Aren't Extrema
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-the-theoretical-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: The Theoretical Foundation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary: The Theoretical Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rolles-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rolle's Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mean-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mean Value Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extreme-value-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extreme Value Theorem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-point-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critical Point Theorem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1456,7 +2428,727 @@
 <li><a href="../08-basic-derivative-rules/">Chapter 8: Basic Derivative Rules</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-connecting-average-and-instantaneous">Introduction: Connecting Average and Instantaneous</h2>
+<p>Here's a puzzle: if you drive 120 miles in exactly 2 hours, you know your average speed was 60 mph. But did you ever <em>actually</em> travel at exactly 60 mph during the trip? Common sense says yes—at some point, you must have been going exactly 60 mph. But can we prove it mathematically?</p>
+<p>This is precisely what the Mean Value Theorem does. It guarantees that somewhere in your journey, your instantaneous speed matched your average speed. This seemingly simple observation turns out to be one of the most powerful tools in calculus.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Okay, so I rolled from point A to point B, and my average tilt was, say, 3 degrees. The Mean Value Theorem says that somewhere along the way, I was tilted at EXACTLY 3 degrees. Not approximately—exactly! That's wild."</p>
+</div>
+<p>In this chapter, we'll explore three foundational theorems that connect derivatives to function behavior:</p>
+<ul>
+<li><strong>Rolle's Theorem</strong> — When a function starts and ends at the same height, it must have a horizontal tangent somewhere</li>
+<li><strong>Mean Value Theorem</strong> — The average rate of change equals the instantaneous rate somewhere</li>
+<li><strong>Extreme Value Theorem</strong> — Continuous functions on closed intervals always have maximum and minimum values</li>
+</ul>
+<p>These theorems provide the theoretical foundation for everything that follows: finding extrema, optimization, and understanding what derivatives tell us about function behavior.</p>
+<h2 id="rolles-theorem-the-foundation">Rolle's Theorem: The Foundation</h2>
+<p>Before tackling the Mean Value Theorem, let's start with a simpler version that captures the key insight.</p>
+<p>Imagine throwing a ball straight up. It leaves your hand, rises, and returns to your hand at the same height. At the very top of its path, the ball has zero velocity—it's momentarily stationary. This is Rolle's Theorem in action.</p>
+<h3 id="statement-of-rolles-theorem">Statement of Rolle's Theorem</h3>
+<p>Let <span class="arithmatex">\(f\)</span> be a function that satisfies three conditions:</p>
+<ol>
+<li><strong>Continuous on <span class="arithmatex">\([a, b]\)</span></strong> — No gaps or jumps in the closed interval</li>
+<li><strong>Differentiable on <span class="arithmatex">\((a, b)\)</span></strong> — Smooth with a well-defined tangent at every interior point</li>
+<li><strong><span class="arithmatex">\(f(a) = f(b)\)</span></strong> — The function starts and ends at the same value</li>
+</ol>
+<p>Then there exists at least one number <span class="arithmatex">\(c\)</span> in the open interval <span class="arithmatex">\((a, b)\)</span> such that:</p>
+<div class="arithmatex">\[f'(c) = 0\]</div>
+<p>In other words, the function has at least one horizontal tangent line between <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span>.</p>
+<h3 id="understanding-rolles-conditions">Understanding Rolle's Conditions</h3>
+<p>Each condition in Rolle's Theorem is essential. Let's see why:</p>
+<table>
+<thead>
+<tr>
+<th>Condition</th>
+<th>What It Ensures</th>
+<th>What Happens If Violated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Continuous on <span class="arithmatex">\([a, b]\)</span></td>
+<td>No gaps in the graph</td>
+<td>Function could jump over where <span class="arithmatex">\(f'(c) = 0\)</span> would occur</td>
+</tr>
+<tr>
+<td>Differentiable on <span class="arithmatex">\((a, b)\)</span></td>
+<td>Smooth curve throughout</td>
+<td>Could have a corner at the max/min instead of horizontal tangent</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(a) = f(b)\)</span></td>
+<td>Starts and ends at same height</td>
+<td>Function might not need to "turn around"</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Sharp Corners Don't Count</p>
+<p>The function <span class="arithmatex">\(f(x) = |x|\)</span> on <span class="arithmatex">\([-1, 1]\)</span> satisfies <span class="arithmatex">\(f(-1) = f(1) = 1\)</span> and is continuous, but it's not differentiable at <span class="arithmatex">\(x = 0\)</span>. The highest point is at <span class="arithmatex">\(x = 0\)</span>, but there's no horizontal tangent—just a sharp corner. This is why differentiability matters.</p>
+</div>
+<h3 id="geometric-interpretation">Geometric Interpretation</h3>
+<p>Think of Rolle's Theorem this way: if you start at some height, wander around, and return to exactly the same height, you must have turned around somewhere. At that turning point, you were momentarily horizontal.</p>
+<h4 id="diagram-rolles-theorem-visualizer">Diagram: Rolle's Theorem Visualizer</h4>
+<iframe src="../../sims/rolles-theorem/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Rolle's Theorem Visualizer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Allow students to explore Rolle's Theorem by manipulating functions that satisfy its conditions and seeing where the horizontal tangent occurs.</p>
+<p>Learning Objective: Students will explain the geometric meaning of Rolle's Theorem and verify its conditions (Bloom Level 2: Understand)</p>
+<p>Bloom Taxonomy Verb: explain, interpret, verify</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with a smooth curve</li>
+<li>Two endpoints marked with dots at <span class="arithmatex">\((a, f(a))\)</span> and <span class="arithmatex">\((b, f(b))\)</span></li>
+<li>Horizontal dashed line connecting the equal endpoints</li>
+<li>The point <span class="arithmatex">\(c\)</span> where <span class="arithmatex">\(f'(c) = 0\)</span> marked with a special marker</li>
+<li>Tangent line at <span class="arithmatex">\(c\)</span> shown horizontally</li>
+<li>Text display showing f(a), f(b), and f'(c)</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown to select function: parabola, sine wave, cubic polynomial</li>
+<li>Sliders to adjust the interval endpoints <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span></li>
+<li>Slider to morph the function while maintaining <span class="arithmatex">\(f(a) = f(b)\)</span></li>
+<li>Toggle: Show/hide the tangent line at c</li>
+<li>Button: "Find all critical points" to show multiple solutions when they exist</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show the function with endpoints highlighted</li>
+<li>Stage 2: Display f(a) and f(b) values to verify equality</li>
+<li>Stage 3: Animate search for where tangent is horizontal</li>
+<li>Stage 4: Mark point c and show f'(c) = 0</li>
+<li>Final: Display complete verification of all three conditions</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When f(a) ≠ f(b), display message "Rolle's conditions not satisfied"</li>
+<li>Animate the tangent line sliding along the curve to find horizontal positions</li>
+<li>When multiple critical points exist, highlight all of them</li>
+<li>Show verification checklist: Continuous ✓, Differentiable ✓, f(a)=f(b) ✓</li>
+</ul>
+<p>Instructional Rationale: Direct visualization of the theorem in action helps students understand why each condition matters. Seeing the tangent line become horizontal builds geometric intuition.</p>
+<p>Implementation: p5.js with smooth animations</p>
+</details>
+<h3 id="example-applying-rolles-theorem">Example: Applying Rolle's Theorem</h3>
+<p><strong>Example:</strong> Show that <span class="arithmatex">\(f(x) = x^3 - 3x\)</span> has a horizontal tangent somewhere in the interval <span class="arithmatex">\([-\sqrt{3}, \sqrt{3}]\)</span>.</p>
+<p><strong>Solution:</strong> Let's verify the three conditions:</p>
+<ol>
+<li><strong>Continuous?</strong> Yes—<span class="arithmatex">\(f(x) = x^3 - 3x\)</span> is a polynomial, continuous everywhere</li>
+<li><strong>Differentiable?</strong> Yes—polynomials are differentiable everywhere</li>
+<li><strong><span class="arithmatex">\(f(a) = f(b)\)</span>?</strong> Check:</li>
+<li><span class="arithmatex">\(f(-\sqrt{3}) = (-\sqrt{3})^3 - 3(-\sqrt{3}) = -3\sqrt{3} + 3\sqrt{3} = 0\)</span></li>
+<li><span class="arithmatex">\(f(\sqrt{3}) = (\sqrt{3})^3 - 3(\sqrt{3}) = 3\sqrt{3} - 3\sqrt{3} = 0\)</span></li>
+</ol>
+<p>All conditions satisfied! Rolle's Theorem guarantees at least one <span class="arithmatex">\(c\)</span> in <span class="arithmatex">\((-\sqrt{3}, \sqrt{3})\)</span> where <span class="arithmatex">\(f'(c) = 0\)</span>.</p>
+<p>To find <span class="arithmatex">\(c\)</span>: <span class="arithmatex">\(f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)\)</span></p>
+<p>Setting <span class="arithmatex">\(f'(c) = 0\)</span>: <span class="arithmatex">\(c = -1\)</span> or <span class="arithmatex">\(c = 1\)</span></p>
+<p>Both values are in the interval <span class="arithmatex">\((-\sqrt{3}, \sqrt{3}) \approx (-1.73, 1.73)\)</span>, confirming Rolle's Theorem.</p>
+<h2 id="the-mean-value-theorem">The Mean Value Theorem</h2>
+<p>Now we're ready for the main event. The Mean Value Theorem (MVT) generalizes Rolle's Theorem to functions that don't necessarily start and end at the same height.</p>
+<h3 id="statement-of-the-mean-value-theorem">Statement of the Mean Value Theorem</h3>
+<p>Let <span class="arithmatex">\(f\)</span> be a function that satisfies two conditions:</p>
+<ol>
+<li><strong>Continuous on <span class="arithmatex">\([a, b]\)</span></strong> — The closed interval</li>
+<li><strong>Differentiable on <span class="arithmatex">\((a, b)\)</span></strong> — The open interval</li>
+</ol>
+<p>Then there exists at least one number <span class="arithmatex">\(c\)</span> in <span class="arithmatex">\((a, b)\)</span> such that:</p>
+<div class="arithmatex">\[f'(c) = \frac{f(b) - f(a)}{b - a}\]</div>
+<p>In words: the instantaneous rate of change at some point <span class="arithmatex">\(c\)</span> equals the average rate of change over the entire interval.</p>
+<div class="admonition tip">
+<p class="admonition-title">The Key Insight</p>
+<p>The right side, <span class="arithmatex">\(\frac{f(b) - f(a)}{b - a}\)</span>, is the slope of the <strong>secant line</strong> connecting <span class="arithmatex">\((a, f(a))\)</span> to <span class="arithmatex">\((b, f(b))\)</span>. The MVT says somewhere between <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span>, the tangent line is parallel to this secant line.</p>
+</div>
+<h3 id="average-vs-instantaneous-the-core-connection">Average vs. Instantaneous: The Core Connection</h3>
+<p>The Mean Value Theorem bridges the gap between average and instantaneous rates:</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Average rate of change</td>
+<td><span class="arithmatex">\(\frac{f(b) - f(a)}{b - a}\)</span></td>
+<td>Overall slope from start to finish</td>
+</tr>
+<tr>
+<td>Instantaneous rate at <span class="arithmatex">\(c\)</span></td>
+<td><span class="arithmatex">\(f'(c)\)</span></td>
+<td>Slope of tangent line at point <span class="arithmatex">\(c\)</span></td>
+</tr>
+<tr>
+<td>MVT says</td>
+<td>These are equal for some <span class="arithmatex">\(c\)</span></td>
+<td>The tangent somewhere is parallel to the secant</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"If my average tilt over the whole journey was 2 (rising 2 units per horizontal unit), then at some moment during the trip, my instantaneous tilt was exactly 2. Not close to 2—EXACTLY 2. The math demands it!"</p>
+</div>
+<h3 id="geometric-picture">Geometric Picture</h3>
+<p>Imagine a function's graph between <span class="arithmatex">\(x = a\)</span> and <span class="arithmatex">\(x = b\)</span>. Draw the secant line connecting the endpoints. The MVT guarantees that somewhere in between, you can draw a tangent line that's perfectly parallel to that secant.</p>
+<h4 id="diagram-mean-value-theorem-explorer">Diagram: Mean Value Theorem Explorer</h4>
+<iframe src="../../sims/mvt-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Mean Value Theorem Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Visualize the Mean Value Theorem by showing the secant line and finding parallel tangent lines.</p>
+<p>Learning Objective: Students will apply the MVT to find values of c where the tangent line is parallel to the secant line (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: apply, calculate, demonstrate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with a smooth curve</li>
+<li>Endpoints <span class="arithmatex">\((a, f(a))\)</span> and <span class="arithmatex">\((b, f(b))\)</span> marked clearly</li>
+<li>Secant line connecting the endpoints (dashed, in blue)</li>
+<li>Point <span class="arithmatex">\(c\)</span> that can be dragged along the curve</li>
+<li>Tangent line at the current position of c (solid, in orange)</li>
+<li>Display showing: slope of secant, slope of tangent at c, difference between slopes</li>
+<li>Indicator that lights up when tangent is parallel to secant</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown to select function: quadratic, cubic, sine, square root</li>
+<li>Sliders to adjust interval endpoints a and b</li>
+<li>Draggable point c on the curve</li>
+<li>Button: "Auto-find c" to snap to where MVT is satisfied</li>
+<li>Toggle: Show/hide both lines simultaneously</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show function with endpoints marked</li>
+<li>Stage 2: Draw secant line and display its slope</li>
+<li>Stage 3: As user drags c, show tangent line and its slope</li>
+<li>Stage 4: Calculate difference |secant slope - tangent slope|</li>
+<li>Final: When difference ≈ 0, highlight that MVT is satisfied</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Real-time calculation of both slopes as user interacts</li>
+<li>Color change when tangent becomes parallel to secant</li>
+<li>"Auto-find" animates c sliding to correct position</li>
+<li>Multiple c values highlighted when function has them</li>
+</ul>
+<p>Instructional Rationale: Active manipulation helps students discover the MVT relationship. Seeing numerical slopes converge to equality reinforces the algebraic statement.</p>
+<p>Implementation: p5.js with draggable points</p>
+</details>
+<h3 id="why-is-the-mvt-true">Why is the MVT True?</h3>
+<p>Here's an intuitive argument: Take the secant line and imagine "sliding" it down (keeping it parallel) until it just touches the curve. At that point of tangency, the tangent line equals the secant line's slope.</p>
+<p>More formally, consider the function:</p>
+<div class="arithmatex">\[g(x) = f(x) - \left[\frac{f(b) - f(a)}{b - a}\right](x - a) - f(a)\]</div>
+<p>This function measures the vertical distance from <span class="arithmatex">\(f(x)\)</span> to the secant line. You can verify that <span class="arithmatex">\(g(a) = g(b) = 0\)</span>, so Rolle's Theorem applies! There exists <span class="arithmatex">\(c\)</span> where <span class="arithmatex">\(g'(c) = 0\)</span>, which gives us exactly the MVT conclusion.</p>
+<h3 id="example-applying-the-mean-value-theorem">Example: Applying the Mean Value Theorem</h3>
+<p><strong>Example:</strong> For <span class="arithmatex">\(f(x) = x^2\)</span> on the interval <span class="arithmatex">\([1, 3]\)</span>, find a value <span class="arithmatex">\(c\)</span> guaranteed by the MVT.</p>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Verify conditions</p>
+<ul>
+<li>Continuous on <span class="arithmatex">\([1, 3]\)</span>? Yes (polynomial)</li>
+<li>Differentiable on <span class="arithmatex">\((1, 3)\)</span>? Yes (polynomial)</li>
+</ul>
+<p>Step 2: Calculate the average rate of change</p>
+<div class="arithmatex">\[\frac{f(3) - f(1)}{3 - 1} = \frac{9 - 1}{2} = \frac{8}{2} = 4\]</div>
+<p>Step 3: Find <span class="arithmatex">\(c\)</span> where <span class="arithmatex">\(f'(c) = 4\)</span></p>
+<div class="arithmatex">\[f'(x) = 2x$$
+$$f'(c) = 2c = 4$$
+$$c = 2\]</div>
+<p>Since <span class="arithmatex">\(c = 2\)</span> is in the interval <span class="arithmatex">\((1, 3)\)</span>, we've verified the MVT. At <span class="arithmatex">\(x = 2\)</span>, the tangent line has slope 4, matching the secant line's slope.</p>
+<h3 id="mvt-applications">MVT Applications</h3>
+<p>The Mean Value Theorem isn't just an abstract result—it has practical applications.</p>
+<p><strong>Application 1: Speed Traps</strong></p>
+<p>If you enter a highway toll section at 2:00 PM and exit 60 miles later at 2:45 PM, your average speed was:</p>
+<div class="arithmatex">\[\text{Average speed} = \frac{60 \text{ miles}}{0.75 \text{ hours}} = 80 \text{ mph}\]</div>
+<p>The MVT guarantees that at some instant during your trip, you were traveling exactly 80 mph. If the speed limit is 65 mph, a ticket could theoretically be justified without ever clocking you directly!</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Sidequest</p>
+<p>"Wait, so if I roll from one point to another, even if I speed up and slow down, there's ALWAYS a moment where my instantaneous speed matches my average? This explains those highway cameras at toll booths..."</p>
+</div>
+<p><strong>Application 2: Proving Function Bounds</strong></p>
+<p>The MVT can prove inequalities. For example, to show that <span class="arithmatex">\(\sin(x) \leq x\)</span> for all <span class="arithmatex">\(x \geq 0\)</span>:</p>
+<p>Consider <span class="arithmatex">\(f(x) = \sin(x)\)</span> on <span class="arithmatex">\([0, x]\)</span> where <span class="arithmatex">\(x &gt; 0\)</span>. The MVT gives us:</p>
+<div class="arithmatex">\[\frac{\sin(x) - \sin(0)}{x - 0} = \cos(c) \text{ for some } c \in (0, x)\]</div>
+<p>Since <span class="arithmatex">\(\cos(c) \leq 1\)</span> for all <span class="arithmatex">\(c\)</span>, we have:</p>
+<div class="arithmatex">\[\frac{\sin(x)}{x} \leq 1 \implies \sin(x) \leq x\]</div>
+<p><strong>Application 3: Showing Functions Are Constant</strong></p>
+<p>If <span class="arithmatex">\(f'(x) = 0\)</span> for all <span class="arithmatex">\(x\)</span> in an interval, then <span class="arithmatex">\(f\)</span> must be constant on that interval.</p>
+<p>Proof: For any two points <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> in the interval, the MVT says:</p>
+<div class="arithmatex">\[\frac{f(b) - f(a)}{b - a} = f'(c) = 0\]</div>
+<p>So <span class="arithmatex">\(f(b) - f(a) = 0\)</span>, meaning <span class="arithmatex">\(f(b) = f(a)\)</span> for all choices of <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span>. The function is constant!</p>
+<h2 id="the-extreme-value-theorem">The Extreme Value Theorem</h2>
+<p>Now we shift focus to finding maximum and minimum values. The Extreme Value Theorem tells us when we're guaranteed to find them.</p>
+<h3 id="understanding-extrema">Understanding Extrema</h3>
+<p>First, let's clarify terminology:</p>
+<p><strong>Global (Absolute) Maximum:</strong> The largest value a function achieves over its entire domain (or a specified interval). If <span class="arithmatex">\(f(c) \geq f(x)\)</span> for all <span class="arithmatex">\(x\)</span> in the domain, then <span class="arithmatex">\(f(c)\)</span> is the global maximum.</p>
+<p><strong>Global (Absolute) Minimum:</strong> The smallest value a function achieves. If <span class="arithmatex">\(f(c) \leq f(x)\)</span> for all <span class="arithmatex">\(x\)</span> in the domain, then <span class="arithmatex">\(f(c)\)</span> is the global minimum.</p>
+<p><strong>Local (Relative) Maximum:</strong> A value that's largest compared to nearby points. <span class="arithmatex">\(f(c)\)</span> is a local maximum if <span class="arithmatex">\(f(c) \geq f(x)\)</span> for all <span class="arithmatex">\(x\)</span> near <span class="arithmatex">\(c\)</span>.</p>
+<p><strong>Local (Relative) Minimum:</strong> A value that's smallest compared to nearby points.</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Comparison</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Global Maximum</td>
+<td>Highest point overall</td>
+<td>The summit of Mount Everest</td>
+</tr>
+<tr>
+<td>Local Maximum</td>
+<td>Highest in neighborhood</td>
+<td>The top of a small hill</td>
+</tr>
+<tr>
+<td>Global Minimum</td>
+<td>Lowest point overall</td>
+<td>The bottom of the ocean</td>
+</tr>
+<tr>
+<td>Local Minimum</td>
+<td>Lowest in neighborhood</td>
+<td>A valley between two hills</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Standing on a local maximum is like being on top of a hill—I'm higher than everything nearby. But a global maximum? That's THE highest point anywhere. I might be on a local peak, looking enviously at a taller mountain in the distance."</p>
+</div>
+<h4 id="diagram-global-vs-local-extrema-visualizer">Diagram: Global vs Local Extrema Visualizer</h4>
+<iframe src="../../sims/extrema-types/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Global vs Local Extrema Visualizer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Help students distinguish between global and local maxima/minima on a function graph.</p>
+<p>Learning Objective: Students will classify extrema as global or local and understand the difference (Bloom Level 4: Analyze)</p>
+<p>Bloom Taxonomy Verb: classify, distinguish, compare</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with a wavy curve having multiple peaks and valleys</li>
+<li>Different colored markers for each type of extremum:</li>
+<li>Global maximum: Gold star</li>
+<li>Local maximum: Orange circle</li>
+<li>Global minimum: Blue star</li>
+<li>Local minimum: Light blue circle</li>
+<li>Dashed horizontal lines at global extrema heights</li>
+<li>Labels showing coordinates of each extremum</li>
+<li>Legend explaining the marker colors</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown: Select from preset functions with different extrema patterns</li>
+<li>Toggle: Show/hide global extrema markers</li>
+<li>Toggle: Show/hide local extrema markers</li>
+<li>Slider: Adjust the interval [a, b] being considered</li>
+<li>Button: "Quiz Mode" - hide markers and let student click where they think extrema are</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show function curve with interval marked</li>
+<li>Stage 2: Identify all critical points</li>
+<li>Stage 3: Classify each as max or min based on sign change</li>
+<li>Stage 4: Determine which are global vs local</li>
+<li>Final: Complete labeling with all extrema marked</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Changing interval can change which points are global extrema</li>
+<li>Hover over any point to see its classification and value</li>
+<li>Quiz mode provides feedback on student classifications</li>
+<li>Endpoints are highlighted when they're extrema</li>
+</ul>
+<p>Instructional Rationale: Visual comparison helps students develop intuition for the global/local distinction. The ability to change intervals shows how context affects classification.</p>
+<p>Implementation: p5.js with multiple labeled points</p>
+</details>
+<h3 id="statement-of-the-extreme-value-theorem">Statement of the Extreme Value Theorem</h3>
+<p>The <strong>Extreme Value Theorem (EVT)</strong> states:</p>
+<p>If <span class="arithmatex">\(f\)</span> is <strong>continuous</strong> on a <strong>closed interval</strong> <span class="arithmatex">\([a, b]\)</span>, then <span class="arithmatex">\(f\)</span> attains both a global maximum and a global minimum on that interval.</p>
+<p>In other words: continuous functions on closed intervals always have highest and lowest points.</p>
+<h3 id="evt-conditions">EVT Conditions</h3>
+<p>Both conditions are essential:</p>
+<ol>
+<li>
+<p><strong>Continuity:</strong> The function must be continuous on the entire closed interval—no holes, jumps, or asymptotes.</p>
+</li>
+<li>
+<p><strong>Closed Interval:</strong> Both endpoints must be included. Open intervals like <span class="arithmatex">\((a, b)\)</span> don't guarantee extrema.</p>
+</li>
+</ol>
+<p>Let's see what goes wrong without these conditions:</p>
+<table>
+<thead>
+<tr>
+<th>Condition Violated</th>
+<th>Example</th>
+<th>What Happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Not continuous</td>
+<td><span class="arithmatex">\(f(x) = \frac{1}{x}\)</span> on <span class="arithmatex">\([-1, 1]\)</span></td>
+<td>Vertical asymptote at <span class="arithmatex">\(x = 0\)</span>; no finite max/min</td>
+</tr>
+<tr>
+<td>Open interval</td>
+<td><span class="arithmatex">\(f(x) = x\)</span> on <span class="arithmatex">\((0, 1)\)</span></td>
+<td>Values get arbitrarily close to 0 and 1, but never reach them</td>
+</tr>
+<tr>
+<td>Half-open</td>
+<td><span class="arithmatex">\(f(x) = x^2\)</span> on <span class="arithmatex">\([0, 1)\)</span></td>
+<td>Minimum at <span class="arithmatex">\(x = 0\)</span>, but no maximum (approaches 1 but never gets there)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Endpoints Matter!</p>
+<p>The function <span class="arithmatex">\(f(x) = x\)</span> on the open interval <span class="arithmatex">\((0, 1)\)</span> has no maximum or minimum—values approach 0 and 1 but never reach them. Change it to <span class="arithmatex">\([0, 1]\)</span>, and suddenly we have a minimum of 0 at <span class="arithmatex">\(x = 0\)</span> and a maximum of 1 at <span class="arithmatex">\(x = 1\)</span>.</p>
+</div>
+<h3 id="why-the-evt-works-intuitive-argument">Why the EVT Works (Intuitive Argument)</h3>
+<p>Picture a continuous function on a closed interval. The curve starts at <span class="arithmatex">\(x = a\)</span>, ends at <span class="arithmatex">\(x = b\)</span>, and has no breaks in between. As you trace along the curve, the height must achieve some highest value somewhere (either at an interior point or at an endpoint). Similarly for the lowest value.</p>
+<p>The continuity ensures no "escapes"—the function can't jump over a potential extremum. The closed interval ensures we include the endpoints, which might themselves be extrema.</p>
+<h4 id="diagram-evt-conditions-explorer">Diagram: EVT Conditions Explorer</h4>
+<iframe src="../../sims/evt-conditions/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>EVT Conditions Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Show why both EVT conditions (continuity and closed interval) are necessary by demonstrating counterexamples.</p>
+<p>Learning Objective: Students will evaluate whether EVT conditions are satisfied and predict consequences (Bloom Level 5: Evaluate)</p>
+<p>Bloom Taxonomy Verb: evaluate, assess, judge</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate plane with function graph</li>
+<li>Interval markers showing open/closed endpoints (parentheses vs brackets)</li>
+<li>Potential extrema highlighted when they exist</li>
+<li>Message area explaining why EVT does or doesn't apply</li>
+<li>Checklist showing: Continuous? ✓/✗, Closed interval? ✓/✗</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown: Select scenario (continuous on closed, discontinuous, open interval)</li>
+<li>Sliders to adjust interval endpoints</li>
+<li>Toggle: Open/closed at left endpoint</li>
+<li>Toggle: Open/closed at right endpoint</li>
+<li>Button: "Find extrema" to highlight where max/min would be</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Display function and interval type</li>
+<li>Stage 2: Check continuity condition</li>
+<li>Stage 3: Check closed interval condition</li>
+<li>Stage 4: Predict existence of extrema based on conditions</li>
+<li>Final: Show actual extrema (or explain why they don't exist)</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When both conditions met: clearly mark global max and min</li>
+<li>When continuity violated: show discontinuity and explain failure</li>
+<li>When interval not closed: show how extremum "escapes"</li>
+<li>Animate what happens as we approach missing endpoints</li>
+</ul>
+<p>Instructional Rationale: Counterexamples are powerful learning tools. Seeing exactly how and why theorems fail builds deeper understanding of why conditions matter.</p>
+<p>Implementation: p5.js with conditional rendering</p>
+</details>
+<h2 id="critical-points-where-extrema-occur">Critical Points: Where Extrema Occur</h2>
+<p>Now that we know extrema exist (thanks to the EVT), where do we look for them? The answer involves <strong>critical points</strong>.</p>
+<h3 id="what-is-a-critical-point">What is a Critical Point?</h3>
+<p>A <strong>critical point</strong> (or <strong>critical number</strong>) of a function <span class="arithmatex">\(f\)</span> is a value <span class="arithmatex">\(c\)</span> in the domain of <span class="arithmatex">\(f\)</span> where either:</p>
+<ol>
+<li><span class="arithmatex">\(f'(c) = 0\)</span> (horizontal tangent), or</li>
+<li><span class="arithmatex">\(f'(c)\)</span> does not exist (corner, cusp, or vertical tangent)</li>
+</ol>
+<p>Critical points are the candidates for local extrema. Not every critical point is an extremum, but every interior extremum is a critical point!</p>
+<div class="admonition note">
+<p class="admonition-title">Critical Point Theorem</p>
+<p>If <span class="arithmatex">\(f\)</span> has a local maximum or minimum at <span class="arithmatex">\(c\)</span>, and <span class="arithmatex">\(f'(c)\)</span> exists, then <span class="arithmatex">\(f'(c) = 0\)</span>.</p>
+<p>Contrapositive: If <span class="arithmatex">\(f'(c) \neq 0\)</span>, then <span class="arithmatex">\(c\)</span> is not a local extremum.</p>
+</div>
+<h3 id="why-critical-points-matter">Why Critical Points Matter</h3>
+<p>Think about what happens at a local maximum: the function increases on the way up, then decreases on the way down. At the peak, it's neither increasing nor decreasing—the tangent is horizontal.</p>
+<p>Similarly, at a local minimum, the function decreases and then increases. The tangent is horizontal at the bottom.</p>
+<p>If the function has a corner or cusp at an extremum, the derivative doesn't exist there—but it's still a critical point by our definition.</p>
+<table>
+<thead>
+<tr>
+<th>Critical Point Type</th>
+<th>Derivative</th>
+<th>Possible Extremum?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f'(c) = 0\)</span></td>
+<td>Horizontal tangent</td>
+<td>Maybe max, maybe min, maybe neither</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f'(c)\)</span> DNE</td>
+<td>Corner/cusp/vertical tangent</td>
+<td>Maybe max, maybe min, maybe neither</td>
+</tr>
+</tbody>
+</table>
+<h3 id="finding-critical-points">Finding Critical Points</h3>
+<p>To find critical points:</p>
+<ol>
+<li>Find <span class="arithmatex">\(f'(x)\)</span></li>
+<li>Solve <span class="arithmatex">\(f'(x) = 0\)</span></li>
+<li>Find where <span class="arithmatex">\(f'(x)\)</span> doesn't exist (but <span class="arithmatex">\(f(x)\)</span> does)</li>
+</ol>
+<p><strong>Example:</strong> Find the critical points of <span class="arithmatex">\(f(x) = x^3 - 6x^2 + 9x + 1\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Find the derivative
+<span class="arithmatex">\(<span class="arithmatex">\(f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x - 1)(x - 3)\)</span>\)</span></p>
+<p>Step 2: Solve <span class="arithmatex">\(f'(x) = 0\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(3(x - 1)(x - 3) = 0\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(x = 1 \text{ or } x = 3\)</span>\)</span></p>
+<p>Step 3: Check where <span class="arithmatex">\(f'(x)\)</span> doesn't exist
+<span class="arithmatex">\(f'(x) = 3x^2 - 12x + 9\)</span> is a polynomial, so it exists everywhere.</p>
+<p><strong>Critical points: <span class="arithmatex">\(x = 1\)</span> and <span class="arithmatex">\(x = 3\)</span></strong></p>
+<p>At <span class="arithmatex">\(x = 1\)</span>: <span class="arithmatex">\(f(1) = 1 - 6 + 9 + 1 = 5\)</span>
+At <span class="arithmatex">\(x = 3\)</span>: <span class="arithmatex">\(f(3) = 27 - 54 + 27 + 1 = 1\)</span></p>
+<p>So the critical points are <span class="arithmatex">\((1, 5)\)</span> and <span class="arithmatex">\((3, 1)\)</span>.</p>
+<h4 id="diagram-critical-point-finder">Diagram: Critical Point Finder</h4>
+<iframe src="../../sims/critical-point-finder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Critical Point Finder MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Help students identify critical points by finding where f'(x) = 0 or f'(x) doesn't exist.</p>
+<p>Learning Objective: Students will solve for critical points algebraically and verify them graphically (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: solve, calculate, identify</p>
+<p>Visual elements:</p>
+<ul>
+<li>Top panel: Graph of f(x)</li>
+<li>Bottom panel: Graph of f'(x)</li>
+<li>Critical points marked on both graphs with vertical dashed lines</li>
+<li>At each critical point: show whether f' = 0 or f' DNE</li>
+<li>Display the derivative formula and calculation</li>
+<li>Horizontal line at y = 0 on derivative graph</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown: Select function (polynomial, rational, absolute value, piecewise)</li>
+<li>Input field: Enter a custom polynomial</li>
+<li>Button: "Find Critical Points" to show step-by-step solution</li>
+<li>Toggle: Show/hide derivative graph</li>
+<li>Slider: Zoom in/out on x-axis</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show original function</li>
+<li>Stage 2: Calculate and display derivative</li>
+<li>Stage 3: Show derivative graph</li>
+<li>Stage 4: Mark where derivative crosses zero</li>
+<li>Stage 5: Mark where derivative doesn't exist</li>
+<li>Final: List all critical points with coordinates</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Step-by-step solution appears one step at a time</li>
+<li>Critical points on f graph marked with dots</li>
+<li>Corresponding x-intercepts on f' graph highlighted</li>
+<li>For functions with corners, show DNE at those points</li>
+</ul>
+<p>Instructional Rationale: Seeing the derivative graph alongside the original function reinforces that f'(x) = 0 corresponds to horizontal tangents on f(x). The algebraic work connects to the geometric picture.</p>
+<p>Implementation: p5.js with dual graph display</p>
+</details>
+<h3 id="example-critical-points-with-dne">Example: Critical Points with DNE</h3>
+<p><strong>Example:</strong> Find the critical points of <span class="arithmatex">\(f(x) = x^{2/3}\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Find the derivative
+<span class="arithmatex">\(<span class="arithmatex">\(f'(x) = \frac{2}{3}x^{-1/3} = \frac{2}{3\sqrt[3]{x}}\)</span>\)</span></p>
+<p>Step 2: Solve <span class="arithmatex">\(f'(x) = 0\)</span>
+The numerator is always 2, never zero. So <span class="arithmatex">\(f'(x) = 0\)</span> has no solutions.</p>
+<p>Step 3: Find where <span class="arithmatex">\(f'(x)\)</span> doesn't exist
+When <span class="arithmatex">\(x = 0\)</span>, the denominator is zero, so <span class="arithmatex">\(f'(0)\)</span> doesn't exist.</p>
+<p>But is <span class="arithmatex">\(x = 0\)</span> in the domain of <span class="arithmatex">\(f\)</span>? Yes—<span class="arithmatex">\(f(0) = 0^{2/3} = 0\)</span>.</p>
+<p><strong>Critical point: <span class="arithmatex">\(x = 0\)</span></strong></p>
+<p>This function has a cusp at the origin. Even though the derivative doesn't exist there, it's still a critical point—and in fact, it's a local minimum.</p>
+<h2 id="putting-it-all-together-finding-extrema">Putting It All Together: Finding Extrema</h2>
+<p>We now have the theoretical tools to find extrema on closed intervals. Here's the strategy:</p>
+<h3 id="the-closed-interval-method-candidates-test">The Closed Interval Method (Candidates Test)</h3>
+<p>To find the global maximum and minimum of a continuous function <span class="arithmatex">\(f\)</span> on <span class="arithmatex">\([a, b]\)</span>:</p>
+<ol>
+<li>Find all critical points of <span class="arithmatex">\(f\)</span> in the interval <span class="arithmatex">\((a, b)\)</span></li>
+<li>Evaluate <span class="arithmatex">\(f\)</span> at each critical point</li>
+<li>Evaluate <span class="arithmatex">\(f\)</span> at the endpoints <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span></li>
+<li>Compare all values: the largest is the global maximum, the smallest is the global minimum</li>
+</ol>
+<p>This method is sometimes called the <strong>Candidates Test</strong> because we're testing all the "candidates" for extrema.</p>
+<div class="admonition tip">
+<p class="admonition-title">Why This Works</p>
+<p>By the EVT, a global max and min exist. By the Critical Point Theorem, interior extrema can only occur at critical points. The only other possibilities are the endpoints. So we just check everything and pick the winner!</p>
+</div>
+<p><strong>Example:</strong> Find the global extrema of <span class="arithmatex">\(f(x) = x^3 - 3x + 2\)</span> on <span class="arithmatex">\([-2, 2]\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Find critical points
+<span class="arithmatex">\(<span class="arithmatex">\(f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(f'(x) = 0 \Rightarrow x = -1 \text{ or } x = 1\)</span>\)</span></p>
+<p>Both are in <span class="arithmatex">\((-2, 2)\)</span>.</p>
+<p>Step 2: Evaluate at critical points</p>
+<ul>
+<li><span class="arithmatex">\(f(-1) = (-1)^3 - 3(-1) + 2 = -1 + 3 + 2 = 4\)</span></li>
+<li><span class="arithmatex">\(f(1) = (1)^3 - 3(1) + 2 = 1 - 3 + 2 = 0\)</span></li>
+</ul>
+<p>Step 3: Evaluate at endpoints</p>
+<ul>
+<li><span class="arithmatex">\(f(-2) = (-2)^3 - 3(-2) + 2 = -8 + 6 + 2 = 0\)</span></li>
+<li><span class="arithmatex">\(f(2) = (2)^3 - 3(2) + 2 = 8 - 6 + 2 = 4\)</span></li>
+</ul>
+<p>Step 4: Compare all values</p>
+<table>
+<thead>
+<tr>
+<th>Point</th>
+<th><span class="arithmatex">\(f\)</span> value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x = -2\)</span></td>
+<td>0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x = -1\)</span></td>
+<td>4</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x = 1\)</span></td>
+<td>0</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x = 2\)</span></td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Global maximum: <span class="arithmatex">\(f(-1) = f(2) = 4\)</span></strong> (achieved at two points!)
+<strong>Global minimum: <span class="arithmatex">\(f(-2) = f(1) = 0\)</span></strong> (also achieved at two points!)</p>
+<h4 id="diagram-candidates-test-calculator">Diagram: Candidates Test Calculator</h4>
+<iframe src="../../sims/candidates-test/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Candidates Test Calculator MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Guide students through the closed interval method for finding global extrema, showing each step.</p>
+<p>Learning Objective: Students will apply the candidates test to find global extrema on closed intervals (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: apply, execute, implement</p>
+<p>Visual elements:</p>
+<ul>
+<li>Function graph with closed interval clearly marked</li>
+<li>Critical points marked with one color</li>
+<li>Endpoints marked with different color</li>
+<li>Horizontal dashed lines at the global max and min values</li>
+<li>Table showing all candidate points and their f values</li>
+<li>Stars on the winning candidates (global max and min)</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function selector dropdown</li>
+<li>Input fields for interval endpoints a and b</li>
+<li>Step-by-step button: "Next Step" to reveal one step at a time</li>
+<li>Button: "Show All" to reveal complete solution</li>
+<li>Toggle: Show/hide derivative to see why critical points matter</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Step 1: Show function and interval</li>
+<li>Step 2: Find and list critical points</li>
+<li>Step 3: Evaluate f at each critical point</li>
+<li>Step 4: Evaluate f at endpoints</li>
+<li>Step 5: Create comparison table</li>
+<li>Step 6: Identify global max and min</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Each step adds information to the display</li>
+<li>Table builds row by row</li>
+<li>Final step highlights maximum and minimum rows</li>
+<li>Graph marks all candidates, then circles the winners</li>
+</ul>
+<p>Instructional Rationale: Step-by-step reveal mimics how students should approach these problems. The comparison table organizes information clearly and builds good problem-solving habits.</p>
+<p>Implementation: p5.js with progressive disclosure</p>
+</details>
+<h3 id="when-critical-points-arent-extrema">When Critical Points Aren't Extrema</h3>
+<p>Not every critical point is an extremum. Consider <span class="arithmatex">\(f(x) = x^3\)</span>:</p>
+<div class="arithmatex">\[f'(x) = 3x^2$$
+$$f'(x) = 0 \text{ when } x = 0\]</div>
+<p>So <span class="arithmatex">\(x = 0\)</span> is a critical point. But <span class="arithmatex">\(f(x) = x^3\)</span> is always increasing! At <span class="arithmatex">\(x = 0\)</span>, the tangent is horizontal, but the function doesn't actually turn around. This is called an <strong>inflection point</strong>—we'll explore these in the next chapter.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Thinks Out Loud</p>
+<p>"So I'm at a critical point where f'(c) = 0, but how do I know if I'm on a peak, in a valley, or just passing through a flat spot? I need more information... That's what the derivative tests are for, coming up next chapter!"</p>
+</div>
+<h2 id="summary-the-theoretical-foundation">Summary: The Theoretical Foundation</h2>
+<p>Let's recap the powerful theorems we've learned:</p>
+<h3 id="rolles-theorem">Rolle's Theorem</h3>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span>, differentiable on <span class="arithmatex">\((a, b)\)</span>, and <span class="arithmatex">\(f(a) = f(b)\)</span>, then there exists <span class="arithmatex">\(c\)</span> in <span class="arithmatex">\((a, b)\)</span> where <span class="arithmatex">\(f'(c) = 0\)</span>.</p>
+<h3 id="mean-value-theorem">Mean Value Theorem</h3>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span> and differentiable on <span class="arithmatex">\((a, b)\)</span>, then there exists <span class="arithmatex">\(c\)</span> in <span class="arithmatex">\((a, b)\)</span> where:
+<span class="arithmatex">\(<span class="arithmatex">\(f'(c) = \frac{f(b) - f(a)}{b - a}\)</span>\)</span></p>
+<h3 id="extreme-value-theorem">Extreme Value Theorem</h3>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on the closed interval <span class="arithmatex">\([a, b]\)</span>, then <span class="arithmatex">\(f\)</span> attains both a global maximum and a global minimum on <span class="arithmatex">\([a, b]\)</span>.</p>
+<h3 id="critical-point-theorem">Critical Point Theorem</h3>
+<p>If <span class="arithmatex">\(f\)</span> has a local extremum at <span class="arithmatex">\(c\)</span>, then either <span class="arithmatex">\(f'(c) = 0\)</span> or <span class="arithmatex">\(f'(c)\)</span> does not exist.</p>
+<p>These theorems form the theoretical backbone for optimization—finding the best, largest, smallest, most efficient, or most effective values in any context.</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>
+<p><strong>Rolle's Theorem</strong> guarantees a horizontal tangent when <span class="arithmatex">\(f(a) = f(b)\)</span> (under continuity and differentiability conditions)</p>
+</li>
+<li>
+<p>The <strong>Mean Value Theorem</strong> connects average and instantaneous rates: somewhere the tangent is parallel to the secant</p>
+</li>
+<li>
+<p>MVT conditions: continuous on <span class="arithmatex">\([a, b]\)</span>, differentiable on <span class="arithmatex">\((a, b)\)</span></p>
+</li>
+<li>
+<p>The <strong>Extreme Value Theorem</strong> guarantees global extrema exist for continuous functions on closed intervals</p>
+</li>
+<li>
+<p>EVT conditions: continuous function AND closed interval <span class="arithmatex">\([a, b]\)</span></p>
+</li>
+<li>
+<p><strong>Global extrema</strong> are the absolute highest/lowest values; <strong>local extrema</strong> are highest/lowest in a neighborhood</p>
+</li>
+<li>
+<p>A <strong>critical point</strong> occurs where <span class="arithmatex">\(f'(c) = 0\)</span> or <span class="arithmatex">\(f'(c)\)</span> doesn't exist</p>
+</li>
+<li>
+<p>Critical points are the only candidates for interior extrema</p>
+</li>
+<li>
+<p>The <strong>Candidates Test</strong>: check critical points and endpoints, compare <span class="arithmatex">\(f\)</span> values</p>
+</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: If <span class="arithmatex">\(f(x) = x^4 - 4x^3\)</span> on <span class="arithmatex">\([0, 4]\)</span>, what are the global maximum and minimum?</summary>
+<p>First, find critical points:</p>
+<p><span class="arithmatex">\(f'(x) = 4x^3 - 12x^2 = 4x^2(x - 3)\)</span></p>
+<p><span class="arithmatex">\(f'(x) = 0\)</span> when <span class="arithmatex">\(x = 0\)</span> or <span class="arithmatex">\(x = 3\)</span></p>
+<p>Both are in <span class="arithmatex">\([0, 4]\)</span>. Evaluate at critical points and endpoints:</p>
+<ul>
+<li><span class="arithmatex">\(f(0) = 0\)</span></li>
+<li><span class="arithmatex">\(f(3) = 81 - 108 = -27\)</span></li>
+<li><span class="arithmatex">\(f(4) = 256 - 256 = 0\)</span></li>
+</ul>
+<p><strong>Global maximum:</strong> <span class="arithmatex">\(f(0) = f(4) = 0\)</span> (achieved at both endpoints!)</p>
+<p><strong>Global minimum:</strong> <span class="arithmatex">\(f(3) = -27\)</span> (achieved at interior critical point)</p>
+</details>
 
 
 
@@ -1495,7 +3187,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../15-lhospitals-rule-and-applications/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 15. L&#39;Hospital&#39;s Rule">
+          <a href="../15-lhospitals-rule-and-applications/quiz/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quiz">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1505,20 +3197,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                15. L'Hospital's Rule
+                Quiz
               </div>
             </div>
           </a>
         
         
           
-          <a href="../17-derivative-tests-and-concavity/" class="md-footer__link md-footer__link--next" aria-label="Next: 17. Derivative Tests">
+          <a href="quiz/" class="md-footer__link md-footer__link--next" aria-label="Next: Quiz">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                17. Derivative Tests
+                Quiz
               </div>
             </div>
             <div class="md-footer__button md-icon">

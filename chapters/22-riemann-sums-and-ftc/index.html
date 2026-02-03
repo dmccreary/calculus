@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+        <meta name="description" content="Connecting areas and antiderivatives through Riemann sums and the FTC">
       
       
         <meta name="author" content="Dan McCreary">
@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://dmccreary.github.io/calculus/chapters/22-riemann-sums-and-ftc/">
       
       
-        <link rel="prev" href="../21-transcendental-integrals/">
+        <link rel="prev" href="../21-transcendental-integrals/quiz/">
       
       
-        <link rel="next" href="../23-integral-properties-and-techniques/">
+        <link rel="next" href="quiz/">
       
       
       <link rel="icon" href="../../img/favicon.ico">
@@ -26,7 +26,7 @@
     
     
       
-        <title>22. Riemann Sums and FTC - Calculus</title>
+        <title>Riemann Sums and the Fundamental Theorem - AP Calculus</title>
       
     
     
@@ -63,9 +63,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="22. Riemann Sums and FTC - Calculus" >
+        <meta  property="og:title"  content="Riemann Sums and the Fundamental Theorem - AP Calculus" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP calculus designed for college credit." >
+        <meta  property="og:description"  content="Connecting areas and antiderivatives through Riemann sums and the FTC" >
       
         <meta  property="og:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/22-riemann-sums-and-ftc/index.png" >
       
@@ -79,9 +79,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="22. Riemann Sums and FTC - Calculus" >
+        <meta  name="twitter:title"  content="Riemann Sums and the Fundamental Theorem - AP Calculus" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP calculus designed for college credit." >
+        <meta  name="twitter:description"  content="Connecting areas and antiderivatives through Riemann sums and the FTC" >
       
         <meta  name="twitter:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/22-riemann-sums-and-ftc/index.png" >
       
@@ -120,7 +120,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Calculus" class="md-header__button md-logo" aria-label="Calculus" data-md-component="logo">
+    <a href="../.." title="AP Calculus" class="md-header__button md-logo" aria-label="AP Calculus" data-md-component="logo">
       
   <img src="../../img/logo-192.png" alt="logo">
 
@@ -133,13 +133,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Calculus
+            AP Calculus
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              22. Riemann Sums and FTC
+              Riemann Sums and the Fundamental Theorem
             
           </span>
         </div>
@@ -226,12 +226,12 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Calculus" class="md-nav__button md-logo" aria-label="Calculus" data-md-component="logo">
+    <a href="../.." title="AP Calculus" class="md-nav__button md-logo" aria-label="AP Calculus" data-md-component="logo">
       
   <img src="../../img/logo-192.png" alt="logo">
 
     </a>
-    Calculus
+    AP Calculus
   </label>
   
     <div class="md-nav__source">
@@ -324,95 +324,49 @@
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
+      
         
       
         
-          
-        
       
         
-          
-        
       
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
         
       
     
@@ -461,16 +415,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../01-foundations-of-calculus/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../01-foundations-of-calculus/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     1. Foundations of Calculus
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -482,16 +463,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../02-understanding-limits/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../02-understanding-limits/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     2. Understanding Limits
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -503,16 +511,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../03-evaluating-limits/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../03-evaluating-limits/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     3. Evaluating Limits
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -524,16 +559,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../04-continuity/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../04-continuity/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     4. Continuity
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -545,16 +607,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../05-asymptotes-and-end-behavior/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../05-asymptotes-and-end-behavior/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     5. Asymptotes and End Behavior
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -566,16 +655,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../06-derivative-concept/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../06-derivative-concept/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     6. The Derivative Concept
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -587,16 +703,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../07-differentiability/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../07-differentiability/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     7. Differentiability
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -608,16 +751,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../08-basic-derivative-rules/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../08-basic-derivative-rules/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     8. Basic Derivative Rules
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -629,16 +799,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../09-product-quotient-transcendental-derivatives/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     9. Product, Quotient, Transcendental
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -650,16 +847,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../10-chain-rule/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../10-chain-rule/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     10. The Chain Rule
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -671,16 +895,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../11-implicit-differentiation/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../11-implicit-differentiation/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     11. Implicit Differentiation
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -692,16 +943,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../12-inverse-function-derivatives/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     12. Inverse Function Derivatives
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -713,16 +991,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../13-higher-order-derivatives-and-motion/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     13. Higher-Order Derivatives
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -734,16 +1039,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../14-related-rates-and-linear-approximation/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     14. Related Rates
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -755,16 +1087,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../15-lhospitals-rule-and-applications/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     15. L'Hospital's Rule
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -776,16 +1135,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../16-mean-value-theorem-and-extrema/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../16-mean-value-theorem-and-extrema/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     16. MVT and Extrema
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -797,16 +1183,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../17-derivative-tests-and-concavity/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     17. Derivative Tests
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -818,16 +1231,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../18-curve-sketching/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../18-curve-sketching/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     18. Curve Sketching
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -839,16 +1279,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../19-optimization/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../19-optimization/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     19. Optimization
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -860,16 +1327,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../20-basic-antiderivatives/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../20-basic-antiderivatives/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     20. Basic Antiderivatives
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -881,16 +1375,43 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../21-transcendental-integrals/" class="md-nav__link">
+    
+    
+      
         
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../21-transcendental-integrals/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     21. Transcendental Integrals
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -904,84 +1425,53 @@
   
   
   
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    22. Riemann Sums and FTC
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
-    22. Riemann Sums and FTC
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
     
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+    
       
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summary
-    </span>
-  </a>
-  
-</li>
+        
+          
+        
       
-        <li class="md-nav__item">
-  <a href="#concepts-covered" class="md-nav__link">
-    <span class="md-ellipsis">
-      Concepts Covered
-    </span>
-  </a>
-  
-</li>
+        
       
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
+    
+    
+    
       
-    </ul>
-  
-</nav>
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
-    </li>
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_23" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    22. Riemann Sums and FTC
+  </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_4_23" id="__nav_4_23_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_23_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_23">
+            <span class="md-nav__icon md-icon"></span>
+            22. Riemann Sums and FTC
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
             
               
@@ -991,15 +1481,71 @@
   
   
     <li class="md-nav__item">
-      <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+      <a href="quiz/" class="md-nav__link">
         
+  
+  <span class="md-ellipsis">
+    Quiz
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../23-integral-properties-and-techniques/" class="md-nav__link">
+      
   
   <span class="md-ellipsis">
     23. Integral Properties
   </span>
   
 
-      </a>
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
     </li>
   
 
@@ -1193,6 +1739,18 @@
           
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -1232,7 +1790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../glossary.md" class="md-nav__link">
+      <a href="../../glossary/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1252,7 +1810,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../faq.md" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1401,6 +1959,510 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-the-grand-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: The Grand Connection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approximating-area-the-rectangle-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approximating Area: The Rectangle Strategy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Approximating Area: The Rectangle Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-big-idea" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Big Idea
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summation-notation-the-language-of-adding-things-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summation Notation: The Language of Adding Things Up
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summation Notation: The Language of Adding Things Up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-sigma-notation-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Sigma Notation Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#useful-summation-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Summation Formulas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Useful Summation Formulas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sum-of-first-n-integers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum of First n Integers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum-of-first-n-squares" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum of First n Squares
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sum-of-first-n-cubes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum of First n Cubes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#left-riemann-sums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Left Riemann Sums
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#right-riemann-sums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Right Riemann Sums
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Right Riemann Sums">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-left-vs-right-riemann-sums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Left vs Right Riemann Sums
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#midpoint-riemann-sums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Midpoint Riemann Sums
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-trapezoidal-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Trapezoidal Rule
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Trapezoidal Rule">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-four-riemann-sum-methods-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Four Riemann Sum Methods Comparison
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-limit-of-riemann-sums-defining-the-definite-integral" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Limit of Riemann Sums: Defining the Definite Integral
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Limit of Riemann Sums: Defining the Definite Integral">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definite-integral-as-net-signed-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definite Integral as Net Signed Area
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definite Integral as Net Signed Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-net-signed-area-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Net Signed Area Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties-of-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties of Definite Integrals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties of Definite Integrals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#property-1-reversing-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property 1: Reversing Limits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-2-zero-width-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property 2: Zero Width Interval
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-3-constant-multiple" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property 3: Constant Multiple
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-4-sumdifference" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property 4: Sum/Difference
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-5-additivity-over-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property 5: Additivity over Intervals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#property-6-comparison-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property 6: Comparison Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accumulation-functions-integrals-with-variable-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accumulation Functions: Integrals with Variable Limits
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Accumulation Functions: Integrals with Variable Limits">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-accumulation-function-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Accumulation Function Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-fundamental-theorem-of-calculus-part-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Fundamental Theorem of Calculus, Part 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Fundamental Theorem of Calculus, Part 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ftc-part-1-with-chain-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      FTC Part 1 with Chain Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-the-lower-limit-is-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      When the Lower Limit is Variable
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When the Lower Limit is Variable">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ftc-part-1-derivative-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: FTC Part 1 Derivative Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-fundamental-theorem-of-calculus-part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Fundamental Theorem of Calculus, Part 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Fundamental Theorem of Calculus, Part 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-evaluation-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Evaluation Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ftc-part-2-step-by-step-evaluator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: FTC Part 2 Step-by-Step Evaluator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-net-change-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Net Change Theorem
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#area-under-the-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Under the Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Area Under the Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#area-between-a-curve-and-the-x-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Area Between a Curve and the x-axis
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-both-parts-the-big-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connecting Both Parts: The Big Picture
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connecting Both Parts: The Big Picture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ftc-connection-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: FTC Connection Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worked Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Worked Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-riemann-sum-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Riemann Sum Calculation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-ftc-part-2-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: FTC Part 2 Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-ftc-part-1-with-chain-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: FTC Part 1 with Chain Rule
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-4-net-change-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 4: Net Change Application
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-and-key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary and Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1464,7 +2526,970 @@
 <li><a href="../21-transcendental-integrals/">Chapter 21: Transcendental Integrals</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-the-grand-connection">Introduction: The Grand Connection</h2>
+<p>Welcome to what many mathematicians consider the most beautiful result in all of calculus. You're about to discover something remarkable: the process of finding slopes (differentiation) and the process of finding areas (integration) are not just related—they're <strong>inverse operations</strong>.</p>
+<p>This connection isn't obvious at first. What does the slope of a curve have to do with the area underneath it? As it turns out, everything.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"For months I've been doing two things: measuring how steep the ground is under my wheels, and checking my backpack to see how far I've traveled. I never thought those two activities were connected. But they are. They're TWO SIDES OF THE SAME COIN. This chapter is where everything clicks!"</p>
+</div>
+<p>In this chapter, we'll build up the definite integral from scratch using rectangles to approximate areas. Then we'll reveal the Fundamental Theorem of Calculus—the bridge that connects everything you've learned about derivatives to everything you'll learn about integrals.</p>
+<h2 id="approximating-area-the-rectangle-strategy">Approximating Area: The Rectangle Strategy</h2>
+<p>Let's start with a concrete problem: How do we find the area under a curve?</p>
+<p>For simple shapes like rectangles, triangles, and circles, we have formulas. But what about the area under <span class="arithmatex">\(y = x^2\)</span> between <span class="arithmatex">\(x = 0\)</span> and <span class="arithmatex">\(x = 3\)</span>? There's no "curved shape" formula for that.</p>
+<p>Here's the key insight: <strong>we can approximate any curved area using rectangles</strong>. Rectangles are easy—the area is just base times height. If we use enough rectangles, we can get as close to the true area as we want.</p>
+<h4 id="the-big-idea">The Big Idea</h4>
+<p>Imagine slicing the region under a curve into thin vertical strips. Each strip is approximately a rectangle. Add up all the rectangle areas, and you've approximated the total area.</p>
+<ul>
+<li>More rectangles = better approximation</li>
+<li>Infinitely many rectangles = exact area</li>
+</ul>
+<p>This process of approximating areas with rectangles has a name: <strong>Riemann sums</strong>, named after the German mathematician Bernhard Riemann.</p>
+<h2 id="summation-notation-the-language-of-adding-things-up">Summation Notation: The Language of Adding Things Up</h2>
+<p>Before we dive into Riemann sums, we need a compact way to write "add up a bunch of terms." That's where <strong>sigma notation</strong> comes in.</p>
+<div class="admonition tip">
+<p class="admonition-title">Sigma Notation</p>
+<p>The Greek letter sigma (<span class="arithmatex">\(\Sigma\)</span>) means "sum." The notation:</p>
+<div class="arithmatex">\[\sum_{i=1}^{n} a_i = a_1 + a_2 + a_3 + \cdots + a_n\]</div>
+<p>reads as "the sum of <span class="arithmatex">\(a_i\)</span> from <span class="arithmatex">\(i = 1\)</span> to <span class="arithmatex">\(n\)</span>."</p>
+</div>
+<p>The components of sigma notation are:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Name</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\Sigma\)</span></td>
+<td>Sigma (summation sign)</td>
+<td>"Add up all the terms"</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(i\)</span></td>
+<td>Index of summation</td>
+<td>Counter variable</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(1\)</span></td>
+<td>Lower limit</td>
+<td>Starting value of <span class="arithmatex">\(i\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(n\)</span></td>
+<td>Upper limit</td>
+<td>Ending value of <span class="arithmatex">\(i\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(a_i\)</span></td>
+<td>General term</td>
+<td>The pattern being summed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\sum_{i=1}^{5} i = 1 + 2 + 3 + 4 + 5 = 15\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sum_{i=1}^{4} i^2 = 1^2 + 2^2 + 3^2 + 4^2 = 1 + 4 + 9 + 16 = 30\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\sum_{k=0}^{3} 2^k = 2^0 + 2^1 + 2^2 + 2^3 = 1 + 2 + 4 + 8 = 15\)</span></p>
+</li>
+</ul>
+<p>Note that the index variable can be any letter (<span class="arithmatex">\(i\)</span>, <span class="arithmatex">\(k\)</span>, <span class="arithmatex">\(j\)</span>, etc.)—it's just a placeholder.</p>
+<h4 id="diagram-sigma-notation-visualizer">Diagram: Sigma Notation Visualizer</h4>
+<iframe src="../../sims/sigma-notation-visualizer/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
+<details>
+<summary>Sigma Notation Visualizer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Build understanding of sigma notation by expanding sums and calculating totals.</p>
+<p>Learning Objective: Students will interpret sigma notation and evaluate summations (Bloom Level 2: Understand)</p>
+<p>Bloom Taxonomy Verb: interpret, explain, calculate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Large sigma notation display with adjustable parameters</li>
+<li>Expansion showing individual terms being added</li>
+<li>Running total accumulator</li>
+<li>Visual blocks representing each term value</li>
+<li>Animation of terms being added together</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Slider: Upper limit n (1 to 10)</li>
+<li>Dropdown: Choose formula type (i, i^2, 2i, 2^i, constant)</li>
+<li>Slider: Lower limit start value</li>
+<li>Button: Step through expansion</li>
+<li>Button: Show all at once</li>
+<li>Display: Final sum</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show the sigma notation</li>
+<li>Stage 2: Show first term with its value</li>
+<li>Stage 3: Add subsequent terms one by one</li>
+<li>Stage 4: Show running total</li>
+<li>Stage 5: Display final sum</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Terms animate into the total</li>
+<li>Visual blocks stack to show accumulation</li>
+<li>Clear connection between notation and meaning</li>
+<li>Practice mode with random problems</li>
+</ul>
+<p>Instructional Rationale: Students often struggle with sigma notation because they don't connect the compact notation to the expansion. Seeing terms added one by one builds fluency.</p>
+<p>Implementation: p5.js with animated term expansion and visual blocks</p>
+</details>
+<h3 id="useful-summation-formulas">Useful Summation Formulas</h3>
+<p>Certain sums appear so often that we have closed-form formulas for them:</p>
+<h4 id="sum-of-first-n-integers">Sum of First n Integers</h4>
+<div class="arithmatex">\[\sum_{i=1}^{n} i = \frac{n(n+1)}{2}\]</div>
+<h4 id="sum-of-first-n-squares">Sum of First n Squares</h4>
+<div class="arithmatex">\[\sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6}\]</div>
+<h4 id="sum-of-first-n-cubes">Sum of First n Cubes</h4>
+<div class="arithmatex">\[\sum_{i=1}^{n} i^3 = \left[\frac{n(n+1)}{2}\right]^2\]</div>
+<p>These formulas will help us evaluate Riemann sums without manually adding hundreds of terms.</p>
+<h2 id="left-riemann-sums">Left Riemann Sums</h2>
+<p>Now let's use rectangles to approximate area. We'll start with the <strong>left Riemann sum</strong>.</p>
+<p>Consider finding the area under <span class="arithmatex">\(f(x)\)</span> from <span class="arithmatex">\(x = a\)</span> to <span class="arithmatex">\(x = b\)</span>.</p>
+<p><strong>Setup:</strong></p>
+<ol>
+<li>Divide <span class="arithmatex">\([a, b]\)</span> into <span class="arithmatex">\(n\)</span> equal subintervals</li>
+<li>Width of each subinterval: <span class="arithmatex">\(\Delta x = \frac{b - a}{n}\)</span></li>
+<li>For each rectangle, use the <strong>left endpoint</strong> to determine the height</li>
+</ol>
+<p>The left endpoints are: <span class="arithmatex">\(x_0 = a\)</span>, <span class="arithmatex">\(x_1 = a + \Delta x\)</span>, <span class="arithmatex">\(x_2 = a + 2\Delta x\)</span>, ..., <span class="arithmatex">\(x_{n-1} = a + (n-1)\Delta x\)</span></p>
+<div class="admonition tip">
+<p class="admonition-title">Left Riemann Sum Formula</p>
+<div class="arithmatex">\[L_n = \sum_{i=0}^{n-1} f(x_i) \cdot \Delta x = \sum_{i=0}^{n-1} f(a + i \cdot \Delta x) \cdot \Delta x\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(L_n\)</span> is the left Riemann sum with <span class="arithmatex">\(n\)</span> rectangles</li>
+<li><span class="arithmatex">\(\Delta x = \frac{b-a}{n}\)</span> is the width of each rectangle</li>
+<li><span class="arithmatex">\(f(x_i)\)</span> is the height of the <span class="arithmatex">\(i\)</span>th rectangle (using left endpoint)</li>
+</ul>
+</div>
+<p><strong>Example:</strong> Approximate <span class="arithmatex">\(\int_0^2 x^2 \, dx\)</span> using <span class="arithmatex">\(n = 4\)</span> left rectangles.</p>
+<p>Step 1: Calculate <span class="arithmatex">\(\Delta x = \frac{2 - 0}{4} = 0.5\)</span></p>
+<p>Step 2: Find left endpoints: <span class="arithmatex">\(x_0 = 0\)</span>, <span class="arithmatex">\(x_1 = 0.5\)</span>, <span class="arithmatex">\(x_2 = 1\)</span>, <span class="arithmatex">\(x_3 = 1.5\)</span></p>
+<p>Step 3: Calculate heights: <span class="arithmatex">\(f(0) = 0\)</span>, <span class="arithmatex">\(f(0.5) = 0.25\)</span>, <span class="arithmatex">\(f(1) = 1\)</span>, <span class="arithmatex">\(f(1.5) = 2.25\)</span></p>
+<p>Step 4: Sum the rectangle areas:
+<span class="arithmatex">\(<span class="arithmatex">\(L_4 = (0)(0.5) + (0.25)(0.5) + (1)(0.5) + (2.25)(0.5) = 1.75\)</span>\)</span></p>
+<p>The true value turns out to be <span class="arithmatex">\(\frac{8}{3} \approx 2.67\)</span>, so our approximation is an underestimate (because <span class="arithmatex">\(x^2\)</span> is increasing on this interval).</p>
+<h2 id="right-riemann-sums">Right Riemann Sums</h2>
+<p>The <strong>right Riemann sum</strong> uses the right endpoint of each subinterval to determine rectangle heights.</p>
+<div class="admonition tip">
+<p class="admonition-title">Right Riemann Sum Formula</p>
+<div class="arithmatex">\[R_n = \sum_{i=1}^{n} f(x_i) \cdot \Delta x = \sum_{i=1}^{n} f(a + i \cdot \Delta x) \cdot \Delta x\]</div>
+</div>
+<p><strong>Example:</strong> Using the same function and interval (<span class="arithmatex">\(\int_0^2 x^2 \, dx\)</span> with <span class="arithmatex">\(n = 4\)</span>):</p>
+<p>Right endpoints: <span class="arithmatex">\(x_1 = 0.5\)</span>, <span class="arithmatex">\(x_2 = 1\)</span>, <span class="arithmatex">\(x_3 = 1.5\)</span>, <span class="arithmatex">\(x_4 = 2\)</span></p>
+<p>Heights: <span class="arithmatex">\(f(0.5) = 0.25\)</span>, <span class="arithmatex">\(f(1) = 1\)</span>, <span class="arithmatex">\(f(1.5) = 2.25\)</span>, <span class="arithmatex">\(f(2) = 4\)</span></p>
+<div class="arithmatex">\[R_4 = (0.25)(0.5) + (1)(0.5) + (2.25)(0.5) + (4)(0.5) = 3.75\]</div>
+<p>This time we got an overestimate!</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Here's the pattern: when I'm climbing uphill (function increasing), left rectangles miss the tops of the curve—underestimate! Right rectangles poke above—overestimate! It flips when I'm going downhill."</p>
+</div>
+<h4 id="diagram-left-vs-right-riemann-sums">Diagram: Left vs Right Riemann Sums</h4>
+<iframe src="../../sims/left-right-riemann/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Left vs Right Riemann Sums MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Compare left and right Riemann sum approximations visually and numerically.</p>
+<p>Learning Objective: Students will distinguish between left and right Riemann sums and explain when each overestimates or underestimates (Bloom Level 4: Analyze)</p>
+<p>Bloom Taxonomy Verb: compare, distinguish, analyze</p>
+<p>Visual elements:</p>
+<ul>
+<li>Graph of function with shaded region under curve</li>
+<li>Left Riemann rectangles (one color, e.g., blue with transparency)</li>
+<li>Right Riemann rectangles (another color, e.g., orange with transparency)</li>
+<li>Toggle to show one or both at once</li>
+<li>Numerical display of both approximations</li>
+<li>Visual indicator of over/underestimate</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Slider: Number of rectangles n (2 to 50)</li>
+<li>Dropdown: Choose function (x^2, sin(x), e^x, linear, decreasing function)</li>
+<li>Slider: Adjust interval [a, b]</li>
+<li>Toggle: Show left only / right only / both overlapped</li>
+<li>Display: L_n value, R_n value, difference, true value (if computable)</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Rectangles update in real-time as n changes</li>
+<li>Excess or deficit areas highlighted</li>
+<li>As n increases, both approximations converge</li>
+<li>Clear visual of which approximation is larger</li>
+</ul>
+<p>Instructional Rationale: Side-by-side comparison reveals the relationship between function behavior (increasing/decreasing) and over/underestimates. Increasing n shows convergence.</p>
+<p>Implementation: p5.js with overlay rectangles and numerical displays</p>
+</details>
+<h2 id="midpoint-riemann-sums">Midpoint Riemann Sums</h2>
+<p>The <strong>midpoint Riemann sum</strong> uses the midpoint of each subinterval for the height. This often gives better approximations than left or right sums.</p>
+<div class="admonition tip">
+<p class="admonition-title">Midpoint Riemann Sum Formula</p>
+<div class="arithmatex">\[M_n = \sum_{i=1}^{n} f(\bar{x}_i) \cdot \Delta x\]</div>
+<p>where <span class="arithmatex">\(\bar{x}_i = a + \left(i - \frac{1}{2}\right)\Delta x\)</span> is the midpoint of the <span class="arithmatex">\(i\)</span>th subinterval.</p>
+</div>
+<p><strong>Example:</strong> For <span class="arithmatex">\(\int_0^2 x^2 \, dx\)</span> with <span class="arithmatex">\(n = 4\)</span>:</p>
+<p>Midpoints: <span class="arithmatex">\(\bar{x}_1 = 0.25\)</span>, <span class="arithmatex">\(\bar{x}_2 = 0.75\)</span>, <span class="arithmatex">\(\bar{x}_3 = 1.25\)</span>, <span class="arithmatex">\(\bar{x}_4 = 1.75\)</span></p>
+<p>Heights: <span class="arithmatex">\(f(0.25) = 0.0625\)</span>, <span class="arithmatex">\(f(0.75) = 0.5625\)</span>, <span class="arithmatex">\(f(1.25) = 1.5625\)</span>, <span class="arithmatex">\(f(1.75) = 3.0625\)</span></p>
+<div class="arithmatex">\[M_4 = (0.0625 + 0.5625 + 1.5625 + 3.0625)(0.5) = 2.625\]</div>
+<p>This is much closer to the true value of <span class="arithmatex">\(\frac{8}{3} \approx 2.67\)</span>!</p>
+<h2 id="the-trapezoidal-rule">The Trapezoidal Rule</h2>
+<p>Instead of rectangles, we can use <strong>trapezoids</strong>. A trapezoid connects the left and right endpoints with a straight line, capturing more of the curve's shape.</p>
+<p>The area of a trapezoid is <span class="arithmatex">\(\frac{1}{2}(b_1 + b_2)h\)</span>, where <span class="arithmatex">\(b_1\)</span> and <span class="arithmatex">\(b_2\)</span> are the parallel sides.</p>
+<div class="admonition tip">
+<p class="admonition-title">Trapezoidal Rule Formula</p>
+<div class="arithmatex">\[T_n = \frac{\Delta x}{2}\left[f(x_0) + 2f(x_1) + 2f(x_2) + \cdots + 2f(x_{n-1}) + f(x_n)\right]\]</div>
+<p>Or equivalently:</p>
+<div class="arithmatex">\[T_n = \frac{L_n + R_n}{2}\]</div>
+<p>The trapezoidal sum is the average of the left and right sums!</p>
+</div>
+<p><strong>Example:</strong> For <span class="arithmatex">\(\int_0^2 x^2 \, dx\)</span> with <span class="arithmatex">\(n = 4\)</span>:</p>
+<p>We already found <span class="arithmatex">\(L_4 = 1.75\)</span> and <span class="arithmatex">\(R_4 = 3.75\)</span>.</p>
+<div class="arithmatex">\[T_4 = \frac{1.75 + 3.75}{2} = 2.75\]</div>
+<p>Even closer to <span class="arithmatex">\(2.67\)</span>!</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Approximation</th>
+<th>Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Left (<span class="arithmatex">\(L_4\)</span>)</td>
+<td>1.75</td>
+<td>0.92</td>
+</tr>
+<tr>
+<td>Right (<span class="arithmatex">\(R_4\)</span>)</td>
+<td>3.75</td>
+<td>1.08</td>
+</tr>
+<tr>
+<td>Midpoint (<span class="arithmatex">\(M_4\)</span>)</td>
+<td>2.625</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td>Trapezoidal (<span class="arithmatex">\(T_4\)</span>)</td>
+<td>2.75</td>
+<td>0.08</td>
+</tr>
+<tr>
+<td>True value</td>
+<td>2.667</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Notice that midpoint and trapezoidal methods tend to be more accurate than left and right methods.</p>
+<h4 id="diagram-four-riemann-sum-methods-comparison">Diagram: Four Riemann Sum Methods Comparison</h4>
+<iframe src="../../sims/riemann-sum-methods/main.html" width="100%" height="600px" scrolling="no"></iframe>
+
+<details>
+<summary>Four Riemann Sum Methods Comparison MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Compare all four approximation methods (left, right, midpoint, trapezoidal) on the same function.</p>
+<p>Learning Objective: Students will evaluate which Riemann sum method provides the best approximation for a given function (Bloom Level 5: Evaluate)</p>
+<p>Bloom Taxonomy Verb: evaluate, compare, judge, assess</p>
+<p>Visual elements:</p>
+<ul>
+<li>Main graph showing function and selected approximation method</li>
+<li>Four small preview graphs showing all methods simultaneously</li>
+<li>Numerical comparison table with all values</li>
+<li>Error bars or accuracy indicators</li>
+<li>Highlight of best approximation</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Slider: Number of subintervals n (2 to 100)</li>
+<li>Radio buttons: Select which method to show in main view</li>
+<li>Toggle: Show all methods overlapped</li>
+<li>Dropdown: Choose function</li>
+<li>Adjustable interval [a, b]</li>
+<li>Display: Calculated values for each method and true integral (when known)</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Show setup: function, interval, n value</li>
+<li>Show each method's approximation</li>
+<li>Show true value (computed or provided)</li>
+<li>Show absolute error for each method</li>
+<li>Rank methods by accuracy</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Methods update simultaneously as n changes</li>
+<li>Best method highlighted</li>
+<li>Error shrinks visibly as n increases</li>
+<li>Different functions favor different methods</li>
+</ul>
+<p>Instructional Rationale: Direct comparison builds intuition for choosing approximation methods. Students see that no method is universally best—it depends on function shape.</p>
+<p>Implementation: p5.js with four-panel display and interactive comparison</p>
+</details>
+<h2 id="the-limit-of-riemann-sums-defining-the-definite-integral">The Limit of Riemann Sums: Defining the Definite Integral</h2>
+<p>Here's the crucial insight: as we use more and more rectangles (letting <span class="arithmatex">\(n \to \infty\)</span>), all four methods converge to the same value—the <strong>exact area</strong> under the curve.</p>
+<p>This leads to the definition of the definite integral.</p>
+<div class="admonition tip">
+<p class="admonition-title">Definition: Definite Integral</p>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span>, the <strong>definite integral</strong> of <span class="arithmatex">\(f\)</span> from <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(b\)</span> is:</p>
+<div class="arithmatex">\[\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \cdot \Delta x\]</div>
+<p>where <span class="arithmatex">\(\Delta x = \frac{b-a}{n}\)</span> and <span class="arithmatex">\(x_i^*\)</span> is any point in the <span class="arithmatex">\(i\)</span>th subinterval.</p>
+</div>
+<p>This is a <strong>limit of Riemann sums</strong>. As the rectangles get infinitely thin, the approximation becomes exact.</p>
+<p>The notation tells us:</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\int\)</span></td>
+<td>Integral sign</td>
+<td>Sum of infinitely many infinitesimal pieces</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(a\)</span></td>
+<td>Lower limit of integration</td>
+<td>Starting x-value</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(b\)</span></td>
+<td>Upper limit of integration</td>
+<td>Ending x-value</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>Integrand</td>
+<td>Function being integrated</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(dx\)</span></td>
+<td>Differential</td>
+<td>Indicates integration variable</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"When the rectangles get infinitely thin, they perfectly trace the curve beneath my wheels. The sum of infinitely many infinitely thin rectangles—that's the definite integral. It's not an approximation anymore. It's the EXACT area!"</p>
+</div>
+<h3 id="definite-integral-as-net-signed-area">Definite Integral as Net Signed Area</h3>
+<p>Important: the definite integral computes <strong>net signed area</strong>, not just area.</p>
+<ul>
+<li>When <span class="arithmatex">\(f(x) &gt; 0\)</span>: the area counts as <strong>positive</strong></li>
+<li>When <span class="arithmatex">\(f(x) &lt; 0\)</span>: the area counts as <strong>negative</strong></li>
+</ul>
+<p>The definite integral adds these signed areas together.</p>
+<p><strong>Example:</strong> For <span class="arithmatex">\(f(x) = x\)</span> from <span class="arithmatex">\(-2\)</span> to <span class="arithmatex">\(2\)</span>:</p>
+<ul>
+<li>From <span class="arithmatex">\(-2\)</span> to <span class="arithmatex">\(0\)</span>: The region is below the x-axis, contributing <span class="arithmatex">\(-2\)</span> to the integral</li>
+<li>From <span class="arithmatex">\(0\)</span> to <span class="arithmatex">\(2\)</span>: The region is above the x-axis, contributing <span class="arithmatex">\(+2\)</span> to the integral</li>
+<li>Total: <span class="arithmatex">\(\int_{-2}^{2} x \, dx = -2 + 2 = 0\)</span></li>
+</ul>
+<p>The positive and negative areas cancel!</p>
+<h4 id="diagram-net-signed-area-visualizer">Diagram: Net Signed Area Visualizer</h4>
+<iframe src="../../sims/net-signed-area/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Net Signed Area Visualizer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Demonstrate that definite integrals compute net signed area, with regions below the x-axis contributing negatively.</p>
+<p>Learning Objective: Students will explain how positive and negative areas combine in a definite integral (Bloom Level 2: Understand)</p>
+<p>Bloom Taxonomy Verb: explain, interpret, distinguish</p>
+<p>Visual elements:</p>
+<ul>
+<li>Graph with regions colored by sign (blue for positive, red for negative)</li>
+<li>Area values displayed for each region</li>
+<li>Running total showing net signed area</li>
+<li>x-axis clearly visible as the dividing line</li>
+<li>Numerical breakdown of contributions</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown: Select function (sine, linear crossing axis, polynomial with roots)</li>
+<li>Slider: Adjust interval [a, b]</li>
+<li>Toggle: Show areas separately vs. combined</li>
+<li>Display: Positive area total, negative area total, net signed area</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Regions above x-axis colored positively</li>
+<li>Regions below x-axis colored negatively</li>
+<li>Clear demonstration of cancellation</li>
+<li>Comparison to total unsigned area option</li>
+</ul>
+<p>Instructional Rationale: The signed nature of definite integrals surprises many students. Seeing positive and negative regions with their values builds correct intuition.</p>
+<p>Implementation: p5.js with colored regions and area calculations</p>
+</details>
+<h2 id="properties-of-definite-integrals">Properties of Definite Integrals</h2>
+<p>The definite integral satisfies several important properties that follow from the limit definition.</p>
+<h3 id="property-1-reversing-limits">Property 1: Reversing Limits</h3>
+<div class="arithmatex">\[\int_a^b f(x) \, dx = -\int_b^a f(x) \, dx\]</div>
+<p>Switching the limits of integration changes the sign.</p>
+<h3 id="property-2-zero-width-interval">Property 2: Zero Width Interval</h3>
+<div class="arithmatex">\[\int_a^a f(x) \, dx = 0\]</div>
+<p>If the interval has no width, the integral is zero (no area).</p>
+<h3 id="property-3-constant-multiple">Property 3: Constant Multiple</h3>
+<div class="arithmatex">\[\int_a^b k \cdot f(x) \, dx = k \int_a^b f(x) \, dx\]</div>
+<p>Constants can be pulled out of definite integrals.</p>
+<h3 id="property-4-sumdifference">Property 4: Sum/Difference</h3>
+<div class="arithmatex">\[\int_a^b [f(x) \pm g(x)] \, dx = \int_a^b f(x) \, dx \pm \int_a^b g(x) \, dx\]</div>
+<p>Integrals split over sums and differences.</p>
+<h3 id="property-5-additivity-over-intervals">Property 5: Additivity over Intervals</h3>
+<div class="arithmatex">\[\int_a^b f(x) \, dx + \int_b^c f(x) \, dx = \int_a^c f(x) \, dx\]</div>
+<p>You can break an integral into pieces at any interior point.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Formula</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reverse limits</td>
+<td><span class="arithmatex">\(\int_a^b f = -\int_b^a f\)</span></td>
+<td>Going backwards reverses sign</td>
+</tr>
+<tr>
+<td>Zero width</td>
+<td><span class="arithmatex">\(\int_a^a f = 0\)</span></td>
+<td>No width = no area</td>
+</tr>
+<tr>
+<td>Constant multiple</td>
+<td><span class="arithmatex">\(\int_a^b kf = k\int_a^b f\)</span></td>
+<td>Scale the area</td>
+</tr>
+<tr>
+<td>Sum/Difference</td>
+<td><span class="arithmatex">\(\int_a^b (f \pm g) = \int_a^b f \pm \int_a^b g\)</span></td>
+<td>Add/subtract areas</td>
+</tr>
+<tr>
+<td>Additivity</td>
+<td><span class="arithmatex">\(\int_a^c f = \int_a^b f + \int_b^c f\)</span></td>
+<td>Combine adjacent regions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="property-6-comparison-properties">Property 6: Comparison Properties</h3>
+<p>If <span class="arithmatex">\(f(x) \geq 0\)</span> on <span class="arithmatex">\([a, b]\)</span>, then <span class="arithmatex">\(\int_a^b f(x) \, dx \geq 0\)</span></p>
+<p>If <span class="arithmatex">\(f(x) \geq g(x)\)</span> on <span class="arithmatex">\([a, b]\)</span>, then <span class="arithmatex">\(\int_a^b f(x) \, dx \geq \int_a^b g(x) \, dx\)</span></p>
+<p>Bigger functions have bigger integrals!</p>
+<h2 id="accumulation-functions-integrals-with-variable-limits">Accumulation Functions: Integrals with Variable Limits</h2>
+<p>Now for something that seems abstract but leads to the Fundamental Theorem.</p>
+<p>What if the upper limit of integration is a variable?</p>
+<div class="admonition tip">
+<p class="admonition-title">Accumulation Function</p>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span>, the <strong>accumulation function</strong> is defined by:</p>
+<div class="arithmatex">\[F(x) = \int_a^x f(t) \, dt\]</div>
+<p>This represents the accumulated signed area from <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(x\)</span>.</p>
+</div>
+<p>Notice we changed the variable inside the integral from <span class="arithmatex">\(x\)</span> to <span class="arithmatex">\(t\)</span> to avoid confusion—<span class="arithmatex">\(x\)</span> is now the upper limit, not the integration variable.</p>
+<p><strong>What does <span class="arithmatex">\(F(x)\)</span> represent?</strong></p>
+<ul>
+<li><span class="arithmatex">\(F(x)\)</span> tells us how much area has accumulated from <span class="arithmatex">\(a\)</span> up to the point <span class="arithmatex">\(x\)</span></li>
+<li>As <span class="arithmatex">\(x\)</span> increases, we accumulate more area (if <span class="arithmatex">\(f &gt; 0\)</span>)</li>
+<li>As <span class="arithmatex">\(x\)</span> increases past regions where <span class="arithmatex">\(f &lt; 0\)</span>, accumulated area decreases</li>
+</ul>
+<p><strong>Example:</strong> Let <span class="arithmatex">\(F(x) = \int_0^x t^2 \, dt\)</span></p>
+<ul>
+<li><span class="arithmatex">\(F(0) = \int_0^0 t^2 \, dt = 0\)</span> (no area yet)</li>
+<li><span class="arithmatex">\(F(1) = \int_0^1 t^2 \, dt = \frac{1}{3}\)</span> (area under <span class="arithmatex">\(y = t^2\)</span> from 0 to 1)</li>
+<li><span class="arithmatex">\(F(2) = \int_0^2 t^2 \, dt = \frac{8}{3}\)</span> (area from 0 to 2)</li>
+</ul>
+<p>As <span class="arithmatex">\(x\)</span> grows, <span class="arithmatex">\(F(x)\)</span> accumulates more and more area.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"The accumulation function is like my travel journal! <span class="arithmatex">\(F(x)\)</span> tells me the total signed area I've covered from where I started (<span class="arithmatex">\(a\)</span>) to where I am now (<span class="arithmatex">\(x\)</span>). Every step I take adds (or subtracts) a little more to my journal."</p>
+</div>
+<h4 id="diagram-accumulation-function-explorer">Diagram: Accumulation Function Explorer</h4>
+<iframe src="../../sims/accumulation-function/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Accumulation Function Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Visualize how the accumulation function <span class="arithmatex">\(F(x) = \int_a^x f(t) \, dt\)</span> grows as x moves.</p>
+<p>Learning Objective: Students will interpret accumulation functions graphically and explain how they relate to the integrand (Bloom Level 2: Understand)</p>
+<p>Bloom Taxonomy Verb: interpret, trace, explain</p>
+<p>Visual elements:</p>
+<ul>
+<li>Top panel: Graph of <span class="arithmatex">\(f(t)\)</span> with shaded region from <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(x\)</span></li>
+<li>Bottom panel: Graph of <span class="arithmatex">\(F(x)\)</span> being traced out</li>
+<li>Movable vertical line at <span class="arithmatex">\(x\)</span> showing current position</li>
+<li>Numerical display of current <span class="arithmatex">\(F(x)\)</span> value</li>
+<li>Delta showing current rate of accumulation</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Slider or drag: Move x across the interval</li>
+<li>Dropdown: Choose integrand <span class="arithmatex">\(f(t)\)</span> (constant, linear, quadratic, sine)</li>
+<li>Slider: Adjust starting point <span class="arithmatex">\(a\)</span></li>
+<li>Button: Animate x moving across interval</li>
+<li>Toggle: Show instantaneous rate of accumulation</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Show current x position</li>
+<li>Show shaded area representing <span class="arithmatex">\(F(x)\)</span></li>
+<li>Show numerical value of <span class="arithmatex">\(F(x)\)</span></li>
+<li>Show how F changes as x moves</li>
+<li>Connect rate of accumulation to <span class="arithmatex">\(f(x)\)</span> value</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>As x increases through positive regions, F(x) rises</li>
+<li>As x increases through negative regions, F(x) falls</li>
+<li>Slope of F(x) at each point equals f(x) at that point</li>
+<li>Clear visual of "accumulated area so far"</li>
+</ul>
+<p>Instructional Rationale: Understanding accumulation functions is essential for FTC Part 1. Seeing F(x) build up as x moves makes the abstract concrete.</p>
+<p>Implementation: p5.js with synchronized dual panels and draggable x-position</p>
+</details>
+<h2 id="the-fundamental-theorem-of-calculus-part-1">The Fundamental Theorem of Calculus, Part 1</h2>
+<p>Now we arrive at the first half of the most important theorem in calculus.</p>
+<p><strong>The Question:</strong> If we have an accumulation function <span class="arithmatex">\(F(x) = \int_a^x f(t) \, dt\)</span>, what is its derivative?</p>
+<p>Think about it: <span class="arithmatex">\(F(x)\)</span> represents accumulated area. <span class="arithmatex">\(F'(x)\)</span> represents the rate at which area is accumulating. And the rate at which area accumulates depends on the height of the function at that point—which is <span class="arithmatex">\(f(x)\)</span>!</p>
+<div class="admonition tip">
+<p class="admonition-title">Fundamental Theorem of Calculus, Part 1</p>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span>, then the function <span class="arithmatex">\(F\)</span> defined by:</p>
+<div class="arithmatex">\[F(x) = \int_a^x f(t) \, dt\]</div>
+<p>is differentiable on <span class="arithmatex">\((a, b)\)</span>, and:</p>
+<div class="arithmatex">\[F'(x) = \frac{d}{dx}\left[\int_a^x f(t) \, dt\right] = f(x)\]</div>
+<p><strong>The derivative of an accumulation function is the integrand!</strong></p>
+</div>
+<p>This is remarkable. It says:</p>
+<ul>
+<li>Start with <span class="arithmatex">\(f(x)\)</span></li>
+<li>Build the accumulation function by integrating <span class="arithmatex">\(f\)</span></li>
+<li>Take the derivative of that accumulation function</li>
+<li>You get back <span class="arithmatex">\(f(x)\)</span>!</li>
+</ul>
+<p>Integration and differentiation are <strong>inverse operations</strong>.</p>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}\left[\int_1^x t^3 \, dt\right]\)</span></p>
+<p>By FTC Part 1, the answer is simply <span class="arithmatex">\(x^3\)</span>.</p>
+<p>We don't need to evaluate the integral—the derivative just gives back the integrand with <span class="arithmatex">\(t\)</span> replaced by <span class="arithmatex">\(x\)</span>.</p>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}\left[\int_0^x \cos(t^2) \, dt\right]\)</span></p>
+<p>By FTC Part 1: <span class="arithmatex">\(\frac{d}{dx}\left[\int_0^x \cos(t^2) \, dt\right] = \cos(x^2)\)</span></p>
+<p>Again, we couldn't even evaluate <span class="arithmatex">\(\int \cos(t^2) \, dt\)</span> using elementary functions—but we can still differentiate the accumulation function!</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Pun Corner</p>
+<p>"The Fundamental Theorem is like the undo button for calculus. Integration does something, differentiation undoes it. It's the mathematical Ctrl+Z!"</p>
+</div>
+<h3 id="ftc-part-1-with-chain-rule">FTC Part 1 with Chain Rule</h3>
+<p>What if the upper limit is not just <span class="arithmatex">\(x\)</span> but some function of <span class="arithmatex">\(x\)</span>, like <span class="arithmatex">\(x^2\)</span>?</p>
+<div class="admonition tip">
+<p class="admonition-title">FTC Part 1 with Chain Rule</p>
+<p>If <span class="arithmatex">\(F(x) = \int_a^{g(x)} f(t) \, dt\)</span>, then:</p>
+<div class="arithmatex">\[F'(x) = f(g(x)) \cdot g'(x)\]</div>
+<p>This is FTC Part 1 combined with the chain rule.</p>
+</div>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}\left[\int_0^{x^2} \sin t \, dt\right]\)</span></p>
+<p>Here <span class="arithmatex">\(g(x) = x^2\)</span>, so <span class="arithmatex">\(g'(x) = 2x\)</span>.</p>
+<p>By FTC Part 1 with chain rule:
+<span class="arithmatex">\(<span class="arithmatex">\(\frac{d}{dx}\left[\int_0^{x^2} \sin t \, dt\right] = \sin(x^2) \cdot 2x = 2x\sin(x^2)\)</span>\)</span></p>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}\left[\int_1^{\ln x} e^{t^2} \, dt\right]\)</span></p>
+<p>Here <span class="arithmatex">\(g(x) = \ln x\)</span>, so <span class="arithmatex">\(g'(x) = \frac{1}{x}\)</span>.</p>
+<div class="arithmatex">\[\frac{d}{dx}\left[\int_1^{\ln x} e^{t^2} \, dt\right] = e^{(\ln x)^2} \cdot \frac{1}{x} = \frac{e^{(\ln x)^2}}{x}\]</div>
+<h3 id="when-the-lower-limit-is-variable">When the Lower Limit is Variable</h3>
+<p>If the lower limit is a function: <span class="arithmatex">\(\int_{h(x)}^{b} f(t) \, dt\)</span></p>
+<p>Use the property <span class="arithmatex">\(\int_{h(x)}^{b} f(t) \, dt = -\int_b^{h(x)} f(t) \, dt\)</span>, then apply FTC Part 1 with chain rule:</p>
+<div class="arithmatex">\[\frac{d}{dx}\left[\int_{h(x)}^{b} f(t) \, dt\right] = -f(h(x)) \cdot h'(x)\]</div>
+<h4 id="diagram-ftc-part-1-derivative-calculator">Diagram: FTC Part 1 Derivative Calculator</h4>
+<iframe src="../../sims/ftc-part1-calculator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>FTC Part 1 Derivative Calculator MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Practice applying FTC Part 1 with and without chain rule.</p>
+<p>Learning Objective: Students will apply FTC Part 1 to find derivatives of accumulation functions (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: apply, calculate, use</p>
+<p>Visual elements:</p>
+<ul>
+<li>Input display showing accumulation function</li>
+<li>Step-by-step solution display</li>
+<li>Graph showing integrand f(t) and shaded accumulation</li>
+<li>Result with chain rule term highlighted when applicable</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown: Choose integrand f(t)</li>
+<li>Input: Upper limit as function of x</li>
+<li>Input: Lower limit (constant or function of x)</li>
+<li>Button: Show solution step-by-step</li>
+<li>Toggle: Include chain rule explanation</li>
+<li>Practice mode with random problems</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Display the integral expression</li>
+<li>Stage 2: Identify the integrand f(t)</li>
+<li>Stage 3: Identify upper/lower limits</li>
+<li>Stage 4: Apply FTC Part 1 (show substitution)</li>
+<li>Stage 5: Apply chain rule if needed</li>
+<li>Stage 6: Simplify final answer</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Clear step-by-step solution</li>
+<li>Chain rule factor highlighted</li>
+<li>Visual connection to accumulation interpretation</li>
+<li>Practice problems with feedback</li>
+</ul>
+<p>Instructional Rationale: FTC Part 1 problems follow a pattern. Breaking into explicit steps builds procedural fluency while reinforcing the theorem's meaning.</p>
+<p>Implementation: p5.js with step-by-step reveal and practice mode</p>
+</details>
+<h2 id="the-fundamental-theorem-of-calculus-part-2">The Fundamental Theorem of Calculus, Part 2</h2>
+<p>Part 1 told us that the derivative of an accumulation function gives back the integrand. Part 2 gives us a way to <strong>evaluate</strong> definite integrals using antiderivatives.</p>
+<div class="admonition tip">
+<p class="admonition-title">Fundamental Theorem of Calculus, Part 2 (Evaluation Theorem)</p>
+<p>If <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span> and <span class="arithmatex">\(F\)</span> is any antiderivative of <span class="arithmatex">\(f\)</span> (i.e., <span class="arithmatex">\(F'(x) = f(x)\)</span>), then:</p>
+<div class="arithmatex">\[\int_a^b f(x) \, dx = F(b) - F(a)\]</div>
+<p>We often write this as:</p>
+<div class="arithmatex">\[\int_a^b f(x) \, dx = \bigl[F(x)\bigr]_a^b = F(b) - F(a)\]</div>
+</div>
+<p>This is the <strong>Evaluation Theorem</strong>, and it's incredibly powerful. Instead of computing limits of Riemann sums (adding up infinitely many rectangles), we just:</p>
+<ol>
+<li>Find an antiderivative <span class="arithmatex">\(F(x)\)</span></li>
+<li>Evaluate it at the endpoints</li>
+<li>Subtract: <span class="arithmatex">\(F(b) - F(a)\)</span></li>
+</ol>
+<p><strong>Example:</strong> Evaluate <span class="arithmatex">\(\int_0^2 x^2 \, dx\)</span></p>
+<p>Step 1: Find an antiderivative: <span class="arithmatex">\(F(x) = \frac{x^3}{3}\)</span></p>
+<p>Step 2: Apply FTC Part 2:
+<span class="arithmatex">\(<span class="arithmatex">\(\int_0^2 x^2 \, dx = \left[\frac{x^3}{3}\right]_0^2 = \frac{2^3}{3} - \frac{0^3}{3} = \frac{8}{3} - 0 = \frac{8}{3}\)</span>\)</span></p>
+<p>This is the exact value we were approximating earlier with Riemann sums!</p>
+<p><strong>Example:</strong> Evaluate <span class="arithmatex">\(\int_0^{\pi} \sin x \, dx\)</span></p>
+<p>Antiderivative: <span class="arithmatex">\(F(x) = -\cos x\)</span></p>
+<div class="arithmatex">\[\int_0^{\pi} \sin x \, dx = [-\cos x]_0^{\pi} = -\cos(\pi) - (-\cos(0)) = -(-1) - (-1) = 1 + 1 = 2\]</div>
+<div class="admonition note">
+<p class="admonition-title">No +C Needed!</p>
+<p>When evaluating definite integrals, we don't need the "+C". Why? Because:</p>
+<div class="arithmatex">\[[F(x) + C]_a^b = (F(b) + C) - (F(a) + C) = F(b) - F(a)\]</div>
+<p>The constants cancel!</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"FTC Part 2 is a cheat code! Instead of slicing curves into a million rectangles, I just find the antiderivative and plug in two numbers. It's like teleporting instead of walking—same destination, way faster!"</p>
+</div>
+<h4 id="the-evaluation-notation">The Evaluation Notation</h4>
+<p>The vertical bar notation <span class="arithmatex">\(\bigl[F(x)\bigr]_a^b\)</span> means:</p>
+<ul>
+<li>Evaluate <span class="arithmatex">\(F(x)\)</span> at <span class="arithmatex">\(x = b\)</span> (upper limit)</li>
+<li>Evaluate <span class="arithmatex">\(F(x)\)</span> at <span class="arithmatex">\(x = a\)</span> (lower limit)</li>
+<li>Subtract: (value at top) - (value at bottom)</li>
+</ul>
+<p><strong>More examples:</strong></p>
+<div class="arithmatex">\[\int_1^4 (3x^2 - 2x + 1) \, dx = \left[x^3 - x^2 + x\right]_1^4$$
+$$= (64 - 16 + 4) - (1 - 1 + 1) = 52 - 1 = 51\]</div>
+<div class="arithmatex">\[\int_0^{\pi/2} \cos x \, dx = [\sin x]_0^{\pi/2} = \sin\frac{\pi}{2} - \sin 0 = 1 - 0 = 1\]</div>
+<div class="arithmatex">\[\int_1^e \frac{1}{x} \, dx = [\ln x]_1^e = \ln e - \ln 1 = 1 - 0 = 1\]</div>
+<h4 id="diagram-ftc-part-2-step-by-step-evaluator">Diagram: FTC Part 2 Step-by-Step Evaluator</h4>
+<iframe src="../../sims/ftc-part2-evaluator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>FTC Part 2 Step-by-Step Evaluator MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Walk through the FTC Part 2 evaluation process step by step.</p>
+<p>Learning Objective: Students will apply FTC Part 2 to evaluate definite integrals (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: apply, calculate, evaluate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Input: Definite integral to evaluate</li>
+<li>Step-by-step solution panels</li>
+<li>Graph showing function with shaded area</li>
+<li>Numerical result highlighted</li>
+<li>Connection to antiderivative graph</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Input: Function f(x)</li>
+<li>Input: Lower limit a</li>
+<li>Input: Upper limit b</li>
+<li>Button: Step through solution</li>
+<li>Dropdown: Preset problems for practice</li>
+<li>Display: Each step of the evaluation</li>
+</ul>
+<p>Data Visibility Requirements:</p>
+<ul>
+<li>Stage 1: Show the definite integral <span class="arithmatex">\(\int_a^b f(x) \, dx\)</span></li>
+<li>Stage 2: Find antiderivative F(x)</li>
+<li>Stage 3: Write <span class="arithmatex">\([F(x)]_a^b\)</span></li>
+<li>Stage 4: Substitute: <span class="arithmatex">\(F(b) - F(a)\)</span></li>
+<li>Stage 5: Calculate numerical values</li>
+<li>Stage 6: Final answer</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Steps reveal one at a time</li>
+<li>Graph shows shaded area = numerical answer</li>
+<li>Practice mode with increasing difficulty</li>
+<li>Hint system for common antiderivatives</li>
+</ul>
+<p>Instructional Rationale: Explicit step-through builds procedural fluency. Connecting the algebraic result to the graphical area reinforces understanding.</p>
+<p>Implementation: p5.js with step reveal and graph visualization</p>
+</details>
+<h2 id="the-net-change-theorem">The Net Change Theorem</h2>
+<p>The Fundamental Theorem has an important interpretation in terms of <strong>net change</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Net Change Theorem</p>
+<p>If <span class="arithmatex">\(F'(x) = f(x)\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span>, then:</p>
+<div class="arithmatex">\[\int_a^b F'(x) \, dx = F(b) - F(a)\]</div>
+<p>The integral of a rate of change gives the net change.</p>
+</div>
+<p>This is just FTC Part 2 restated, but the interpretation is powerful:</p>
+<ul>
+<li>If <span class="arithmatex">\(F'(x)\)</span> represents a <strong>rate</strong> (velocity, growth rate, flow rate, etc.)</li>
+<li>Then <span class="arithmatex">\(\int_a^b F'(x) \, dx\)</span> represents the <strong>total change</strong> in <span class="arithmatex">\(F\)</span> from <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(b\)</span></li>
+</ul>
+<p><strong>Applications:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Rate Function</th>
+<th>Integral Gives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Velocity <span class="arithmatex">\(v(t)\)</span></td>
+<td>Displacement (net change in position)</td>
+</tr>
+<tr>
+<td>Acceleration <span class="arithmatex">\(a(t)\)</span></td>
+<td>Change in velocity</td>
+</tr>
+<tr>
+<td>Marginal cost</td>
+<td>Change in total cost</td>
+</tr>
+<tr>
+<td>Population growth rate</td>
+<td>Change in population</td>
+</tr>
+<tr>
+<td>Flow rate</td>
+<td>Total volume transferred</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong> Water flows into a tank at a rate of <span class="arithmatex">\(r(t) = 2t + 3\)</span> gallons per minute. How much water flows in during the first 5 minutes?</p>
+<p>Total water = <span class="arithmatex">\(\int_0^5 (2t + 3) \, dt = [t^2 + 3t]_0^5 = (25 + 15) - 0 = 40\)</span> gallons</p>
+<p><strong>Example:</strong> A car's velocity is <span class="arithmatex">\(v(t) = 3t^2 - 6t + 10\)</span> ft/sec. Find the displacement from <span class="arithmatex">\(t = 0\)</span> to <span class="arithmatex">\(t = 4\)</span> seconds.</p>
+<p>Displacement = <span class="arithmatex">\(\int_0^4 (3t^2 - 6t + 10) \, dt = [t^3 - 3t^2 + 10t]_0^4\)</span>
+<span class="arithmatex">\(= (64 - 48 + 40) - 0 = 56\)</span> feet</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"The Net Change Theorem says: if you want to know how far I traveled, integrate my velocity. If you want to know how much my velocity changed, integrate my acceleration. Rate in, total out!"</p>
+</div>
+<h2 id="area-under-the-curve">Area Under the Curve</h2>
+<p>When the function is non-negative on <span class="arithmatex">\([a, b]\)</span>, the definite integral gives the actual <strong>area</strong> under the curve.</p>
+<h4 id="area-between-a-curve-and-the-x-axis">Area Between a Curve and the x-axis</h4>
+<div class="arithmatex">\[\text{Area} = \int_a^b f(x) \, dx \quad \text{when } f(x) \geq 0 \text{ on } [a, b]\]</div>
+<p>But remember: if <span class="arithmatex">\(f(x)\)</span> is negative somewhere, the integral gives <strong>net signed area</strong>, which could be less than the total area.</p>
+<p><strong>To find total area (ignoring sign):</strong></p>
+<div class="arithmatex">\[\text{Total Area} = \int_a^b |f(x)| \, dx\]</div>
+<p>This requires splitting the integral at points where <span class="arithmatex">\(f(x)\)</span> changes sign.</p>
+<p><strong>Example:</strong> Find the total area bounded by <span class="arithmatex">\(y = x^2 - 4\)</span> and the x-axis from <span class="arithmatex">\(x = -3\)</span> to <span class="arithmatex">\(x = 3\)</span>.</p>
+<p>First, find where <span class="arithmatex">\(f(x) = 0\)</span>: <span class="arithmatex">\(x^2 - 4 = 0 \Rightarrow x = \pm 2\)</span></p>
+<p>The function is negative on <span class="arithmatex">\((-2, 2)\)</span> and positive elsewhere.</p>
+<p>Total area = <span class="arithmatex">\(\int_{-3}^{-2} (x^2 - 4) \, dx + \int_{-2}^{2} |x^2 - 4| \, dx + \int_2^3 (x^2 - 4) \, dx\)</span></p>
+<p>Since <span class="arithmatex">\(x^2 - 4 &lt; 0\)</span> on <span class="arithmatex">\((-2, 2)\)</span>: <span class="arithmatex">\(|x^2 - 4| = -(x^2 - 4) = 4 - x^2\)</span></p>
+<p>Total area = <span class="arithmatex">\(\int_{-3}^{-2} (x^2 - 4) \, dx + \int_{-2}^{2} (4 - x^2) \, dx + \int_2^3 (x^2 - 4) \, dx\)</span></p>
+<p>Each integral can be evaluated:</p>
+<ul>
+<li>First: <span class="arithmatex">\([\frac{x^3}{3} - 4x]_{-3}^{-2} = (-\frac{8}{3} + 8) - (-9 + 12) = \frac{16}{3} - 3 = \frac{7}{3}\)</span></li>
+<li>Second: <span class="arithmatex">\([4x - \frac{x^3}{3}]_{-2}^{2} = (8 - \frac{8}{3}) - (-8 + \frac{8}{3}) = \frac{16}{3} + \frac{16}{3} = \frac{32}{3}\)</span></li>
+<li>Third: (By symmetry, same as first) <span class="arithmatex">\(= \frac{7}{3}\)</span></li>
+</ul>
+<p>Total area = <span class="arithmatex">\(\frac{7}{3} + \frac{32}{3} + \frac{7}{3} = \frac{46}{3}\)</span></p>
+<p>Compare to net signed area:
+<span class="arithmatex">\(\int_{-3}^{3} (x^2 - 4) \, dx = [\frac{x^3}{3} - 4x]_{-3}^{3} = (9 - 12) - (-9 + 12) = -3 - 3 = -6\)</span></p>
+<p>The net signed area is negative, but the total area is <span class="arithmatex">\(\frac{46}{3}\)</span> square units.</p>
+<h2 id="connecting-both-parts-the-big-picture">Connecting Both Parts: The Big Picture</h2>
+<p>Let's step back and see how the two parts of the FTC work together.</p>
+<p><strong>FTC Part 1:</strong> Differentiation undoes integration
+<span class="arithmatex">\(<span class="arithmatex">\(\frac{d}{dx}\left[\int_a^x f(t) \, dt\right] = f(x)\)</span>\)</span></p>
+<p><strong>FTC Part 2:</strong> Integration "undoes" differentiation (with evaluation at endpoints)
+<span class="arithmatex">\(<span class="arithmatex">\(\int_a^b F'(x) \, dx = F(b) - F(a)\)</span>\)</span></p>
+<p>These two statements are two sides of the same coin:</p>
+<ul>
+<li>Part 1 says: The derivative of an area function is the height function</li>
+<li>Part 2 says: The total of instantaneous rates equals the net change</li>
+</ul>
+<p>Together, they reveal that differentiation and integration are <strong>inverse operations</strong>—the two fundamental operations of calculus are intimately connected.</p>
+<h4 id="diagram-ftc-connection-visualization">Diagram: FTC Connection Visualization</h4>
+<iframe src="../../sims/ftc-connection/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>FTC Connection Visualization MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Show how FTC Part 1 and Part 2 are two sides of the same relationship.</p>
+<p>Learning Objective: Students will analyze the relationship between differentiation and integration through the Fundamental Theorem (Bloom Level 4: Analyze)</p>
+<p>Bloom Taxonomy Verb: analyze, connect, distinguish, relate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Three synchronized panels: f(x), F(x) = antiderivative, and accumulation function</li>
+<li>Arrows showing relationships: derivative connects F to f, integral connects f to F</li>
+<li>FTC Part 1 demonstration: d/dx of shaded area equals f(x)</li>
+<li>FTC Part 2 demonstration: F(b) - F(a) equals shaded area</li>
+<li>Toggle between Part 1 and Part 2 views</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown: Choose function family</li>
+<li>Slider: Move point x (for Part 1 view)</li>
+<li>Slider: Set interval [a, b] (for Part 2 view)</li>
+<li>Radio: Focus on Part 1 / Part 2 / Both</li>
+<li>Animation: Watch both theorems in action simultaneously</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Part 1 view: shows derivative of accumulation equals integrand</li>
+<li>Part 2 view: shows area equals antiderivative difference</li>
+<li>Both views use same underlying function</li>
+<li>Clear visual of inverse relationship</li>
+</ul>
+<p>Instructional Rationale: Seeing both parts together reinforces that FTC describes one unified relationship between differentiation and integration, viewed from two perspectives.</p>
+<p>Implementation: p5.js with three synchronized panels and dual-theorem view</p>
+</details>
+<h2 id="worked-examples">Worked Examples</h2>
+<p>Let's work through a variety of problems to solidify your understanding.</p>
+<h3 id="example-1-riemann-sum-calculation">Example 1: Riemann Sum Calculation</h3>
+<p><strong>Problem:</strong> Calculate the right Riemann sum for <span class="arithmatex">\(f(x) = x^3\)</span> on <span class="arithmatex">\([0, 2]\)</span> with <span class="arithmatex">\(n = 4\)</span>.</p>
+<p><strong>Solution:</strong></p>
+<p>Step 1: Calculate <span class="arithmatex">\(\Delta x = \frac{2 - 0}{4} = 0.5\)</span></p>
+<p>Step 2: Find right endpoints: <span class="arithmatex">\(x_1 = 0.5\)</span>, <span class="arithmatex">\(x_2 = 1\)</span>, <span class="arithmatex">\(x_3 = 1.5\)</span>, <span class="arithmatex">\(x_4 = 2\)</span></p>
+<p>Step 3: Calculate heights:</p>
+<ul>
+<li><span class="arithmatex">\(f(0.5) = 0.125\)</span></li>
+<li><span class="arithmatex">\(f(1) = 1\)</span></li>
+<li><span class="arithmatex">\(f(1.5) = 3.375\)</span></li>
+<li><span class="arithmatex">\(f(2) = 8\)</span></li>
+</ul>
+<p>Step 4: Sum:
+<span class="arithmatex">\(<span class="arithmatex">\(R_4 = (0.125 + 1 + 3.375 + 8)(0.5) = 12.5(0.5) = 6.25\)</span>\)</span></p>
+<p>The true value is <span class="arithmatex">\(\int_0^2 x^3 \, dx = [\frac{x^4}{4}]_0^2 = 4\)</span>, so <span class="arithmatex">\(R_4 = 6.25\)</span> is an overestimate.</p>
+<h3 id="example-2-ftc-part-2-evaluation">Example 2: FTC Part 2 Evaluation</h3>
+<p><strong>Problem:</strong> Evaluate <span class="arithmatex">\(\int_1^4 (2\sqrt{x} - \frac{1}{x^2}) \, dx\)</span></p>
+<p><strong>Solution:</strong></p>
+<p>Rewrite: <span class="arithmatex">\(2\sqrt{x} = 2x^{1/2}\)</span> and <span class="arithmatex">\(\frac{1}{x^2} = x^{-2}\)</span></p>
+<p>Antiderivative: <span class="arithmatex">\(F(x) = 2 \cdot \frac{x^{3/2}}{3/2} - \frac{x^{-1}}{-1} = \frac{4x^{3/2}}{3} + \frac{1}{x}\)</span></p>
+<p>Evaluate:
+<span class="arithmatex">\(<span class="arithmatex">\(\int_1^4 (2\sqrt{x} - \frac{1}{x^2}) \, dx = \left[\frac{4x^{3/2}}{3} + \frac{1}{x}\right]_1^4\)</span>\)</span></p>
+<p>At <span class="arithmatex">\(x = 4\)</span>: <span class="arithmatex">\(\frac{4(8)}{3} + \frac{1}{4} = \frac{32}{3} + \frac{1}{4} = \frac{128 + 3}{12} = \frac{131}{12}\)</span></p>
+<p>At <span class="arithmatex">\(x = 1\)</span>: <span class="arithmatex">\(\frac{4(1)}{3} + 1 = \frac{4}{3} + 1 = \frac{7}{3}\)</span></p>
+<p>Result: <span class="arithmatex">\(\frac{131}{12} - \frac{7}{3} = \frac{131}{12} - \frac{28}{12} = \frac{103}{12}\)</span></p>
+<h3 id="example-3-ftc-part-1-with-chain-rule">Example 3: FTC Part 1 with Chain Rule</h3>
+<p><strong>Problem:</strong> Find <span class="arithmatex">\(\frac{d}{dx}\left[\int_2^{x^3} \sqrt{1 + t^4} \, dt\right]\)</span></p>
+<p><strong>Solution:</strong></p>
+<p>Let <span class="arithmatex">\(g(x) = x^3\)</span> (the upper limit as a function of x)</p>
+<p>Then <span class="arithmatex">\(g'(x) = 3x^2\)</span></p>
+<p>By FTC Part 1 with chain rule:
+<span class="arithmatex">\(<span class="arithmatex">\(\frac{d}{dx}\left[\int_2^{x^3} \sqrt{1 + t^4} \, dt\right] = \sqrt{1 + (x^3)^4} \cdot 3x^2 = 3x^2\sqrt{1 + x^{12}}\)</span>\)</span></p>
+<h3 id="example-4-net-change-application">Example 4: Net Change Application</h3>
+<p><strong>Problem:</strong> The population of a bacteria colony grows at a rate of <span class="arithmatex">\(P'(t) = 200e^{0.1t}\)</span> bacteria per hour. If the initial population is 1000, find the population after 10 hours.</p>
+<p><strong>Solution:</strong></p>
+<p>Net change in population = <span class="arithmatex">\(\int_0^{10} 200e^{0.1t} \, dt\)</span></p>
+<p><span class="arithmatex">\(= 200 \cdot \frac{e^{0.1t}}{0.1} \Big|_0^{10} = 2000[e^{0.1t}]_0^{10}\)</span></p>
+<p><span class="arithmatex">\(= 2000(e^1 - e^0) = 2000(e - 1) \approx 2000(1.718) \approx 3436\)</span></p>
+<p>Population after 10 hours = Initial + Net Change = <span class="arithmatex">\(1000 + 3436 = 4436\)</span> bacteria</p>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<p><strong>Mistake 1: Forgetting to change limits with substitution</strong></p>
+<p>When using u-substitution with definite integrals, either:
+- Change the limits to u-values, OR
+- Convert back to x and use original limits</p>
+<p>Don't mix them!</p>
+<p><strong>Mistake 2: Sign errors with FTC Part 2</strong></p>
+<p>Remember: <span class="arithmatex">\([F(x)]_a^b = F(b) - F(a)\)</span>, not <span class="arithmatex">\(F(a) - F(b)\)</span>.
+Upper limit comes first!</p>
+<p><strong>Mistake 3: Confusing net signed area with total area</strong></p>
+<p><span class="arithmatex">\(\int_a^b f(x) \, dx\)</span> gives net signed area. For total area when <span class="arithmatex">\(f\)</span> crosses the x-axis, you need to split the integral and use absolute values.</p>
+<p><strong>Mistake 4: Missing the chain rule in FTC Part 1</strong></p>
+<p>If the upper limit is not just <span class="arithmatex">\(x\)</span>, you need the chain rule:
+<span class="arithmatex">\(\frac{d}{dx}\left[\int_a^{g(x)} f(t) \, dt\right] = f(g(x)) \cdot g'(x)\)</span></p>
+<p><strong>Mistake 5: Using +C with definite integrals</strong></p>
+<p>Definite integrals evaluate to a number. No +C needed (the constants cancel).</p>
+<h2 id="summary-and-key-takeaways">Summary and Key Takeaways</h2>
+<p>This chapter covered the essential bridge between differential and integral calculus.</p>
+<p><strong>Riemann Sums:</strong></p>
+<ul>
+<li>Approximate areas using rectangles (or trapezoids)</li>
+<li>Left, right, midpoint, and trapezoidal methods</li>
+<li>As <span class="arithmatex">\(n \to \infty\)</span>, all methods converge to the exact area</li>
+</ul>
+<p><strong>Definite Integral:</strong></p>
+<ul>
+<li><span class="arithmatex">\(\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^n f(x_i^*) \Delta x\)</span></li>
+<li>Represents net signed area under the curve</li>
+<li>Satisfies properties: linearity, additivity over intervals, comparison</li>
+</ul>
+<p><strong>Accumulation Functions:</strong></p>
+<ul>
+<li><span class="arithmatex">\(F(x) = \int_a^x f(t) \, dt\)</span> accumulates signed area</li>
+<li>Represents "total so far" from starting point <span class="arithmatex">\(a\)</span></li>
+</ul>
+<p><strong>Fundamental Theorem, Part 1:</strong></p>
+<ul>
+<li><span class="arithmatex">\(\frac{d}{dx}\left[\int_a^x f(t) \, dt\right] = f(x)\)</span></li>
+<li>The derivative of an accumulation function is the integrand</li>
+<li>With chain rule: <span class="arithmatex">\(\frac{d}{dx}\left[\int_a^{g(x)} f(t) \, dt\right] = f(g(x)) \cdot g'(x)\)</span></li>
+</ul>
+<p><strong>Fundamental Theorem, Part 2 (Evaluation Theorem):</strong></p>
+<ul>
+<li><span class="arithmatex">\(\int_a^b f(x) \, dx = F(b) - F(a)\)</span> where <span class="arithmatex">\(F\)</span> is any antiderivative of <span class="arithmatex">\(f\)</span></li>
+<li>Converts area problems to antiderivative evaluation</li>
+<li>The definite integral equals the net change in the antiderivative</li>
+</ul>
+<p><strong>Net Change Theorem:</strong></p>
+<ul>
+<li><span class="arithmatex">\(\int_a^b F'(x) \, dx = F(b) - F(a)\)</span></li>
+<li>The integral of a rate gives the total change</li>
+</ul>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"The Fundamental Theorem is where everything clicks. My tilt (derivative) and my travel journal (integral) aren't just related—they're inverse operations! Knowing one tells you about the other. This is the heart of calculus, and now you've got it too."</p>
+</div>
+<details class="question">
+<summary>Check Your Understanding: Evaluate <span class="arithmatex">\(\int_0^3 (4x - x^2) \, dx\)</span></summary>
+<p>Antiderivative: <span class="arithmatex">\(F(x) = 2x^2 - \frac{x^3}{3}\)</span></p>
+<p>Evaluate: <span class="arithmatex">\([2x^2 - \frac{x^3}{3}]_0^3 = (18 - 9) - (0 - 0) = 9\)</span></p>
+<p><strong>Answer: 9</strong></p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: Find <span class="arithmatex">\(\frac{d}{dx}\left[\int_1^{x^2} \cos(t^3) \, dt\right]\)</span></summary>
+<p>Use FTC Part 1 with chain rule.</p>
+<p>Let <span class="arithmatex">\(g(x) = x^2\)</span>, so <span class="arithmatex">\(g'(x) = 2x\)</span>.</p>
+<p><span class="arithmatex">\(\frac{d}{dx}\left[\int_1^{x^2} \cos(t^3) \, dt\right] = \cos((x^2)^3) \cdot 2x = 2x\cos(x^6)\)</span></p>
+<p><strong>Answer: <span class="arithmatex">\(2x\cos(x^6)\)</span></strong></p>
+</details>
+<details class="question">
+<summary>Check Your Understanding: The rate of water leaking from a tank is <span class="arithmatex">\(r(t) = 10 - 0.5t\)</span> gallons/min. How much water leaks out in the first 10 minutes?</summary>
+<p>Total leaked = <span class="arithmatex">\(\int_0^{10} (10 - 0.5t) \, dt = [10t - 0.25t^2]_0^{10}\)</span></p>
+<p><span class="arithmatex">\(= (100 - 25) - 0 = 75\)</span> gallons</p>
+<p><strong>Answer: 75 gallons</strong></p>
+</details>
 
 
 
@@ -1503,7 +3528,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../21-transcendental-integrals/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 21. Transcendental Integrals">
+          <a href="../21-transcendental-integrals/quiz/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quiz">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1513,20 +3538,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                21. Transcendental Integrals
+                Quiz
               </div>
             </div>
           </a>
         
         
           
-          <a href="../23-integral-properties-and-techniques/" class="md-footer__link md-footer__link--next" aria-label="Next: 23. Integral Properties">
+          <a href="quiz/" class="md-footer__link md-footer__link--next" aria-label="Next: Quiz">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                23. Integral Properties
+                Quiz
               </div>
             </div>
             <div class="md-footer__button md-icon">
