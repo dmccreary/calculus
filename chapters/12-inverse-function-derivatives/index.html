@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+        <meta name="description" content="Mastering derivatives of inverse trigonometric functions and logarithmic differentiation">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>12. Inverse Function Derivatives - Calculus</title>
+        <title>Inverse Function Derivatives - Calculus</title>
       
     
     
@@ -59,6 +59,32 @@
       
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Inverse Function Derivatives - Calculus" >
+      
+        <meta  property="og:description"  content="Mastering derivatives of inverse trigonometric functions and logarithmic differentiation" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/12-inverse-function-derivatives/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/calculus/chapters/12-inverse-function-derivatives/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Inverse Function Derivatives - Calculus" >
+      
+        <meta  name="twitter:description"  content="Mastering derivatives of inverse trigonometric functions and logarithmic differentiation" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/12-inverse-function-derivatives/index.png" >
+      
     
     
   </head>
@@ -113,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              12. Inverse Function Derivatives
+              Inverse Function Derivatives
             
           </span>
         </div>
@@ -734,6 +760,330 @@
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-retracing-your-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Retracing Your Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graphical-relationship-inverse-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graphical Relationship: Inverse Derivatives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Graphical Relationship: Inverse Derivatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflecting-across-the-line-y-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflecting Across the Line \(y = x\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-graphical-inverse-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Graphical Inverse Derivatives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trigonometric-functions-domain-restrictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trigonometric Functions: Domain Restrictions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Trigonometric Functions: Domain Restrictions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-restrictions-are-necessary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Restrictions Are Necessary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Restrictions Are Necessary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-trig-domain-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Trig Domain Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivative-of-arcsine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arcsine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivative-of-arccosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arccosine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivative-of-arctangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arctangent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivatives-of-arcsecant-arccosecant-and-arccotangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Arcsecant, Arccosecant, and Arccotangent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivatives of Arcsecant, Arccosecant, and Arccotangent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arcsecant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arcsecant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arccosecant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arccosecant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arccotangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arccotangent
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-all-inverse-trig-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: All Inverse Trig Derivatives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary: All Inverse Trig Derivatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-trig-derivatives-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Trig Derivatives Practice
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logarithmic-differentiation-a-powerful-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Differentiation: A Powerful Technique
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logarithmic Differentiation: A Powerful Technique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-idea" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Basic Idea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-this-works-the-logarithmic-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Works: The Logarithmic Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differentiating-products-with-logarithmic-differentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differentiating Products with Logarithmic Differentiation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differentiating-powers-with-logarithmic-differentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differentiating Powers with Logarithmic Differentiation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-exponents-when-both-base-and-power-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Exponents: When Both Base and Power Change
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Exponents: When Both Base and Power Change">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-function-y-xx" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Function \(y = x^x\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-variable-exponent-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Variable Exponent Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="More Variable Exponent Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-logarithmic-differentiation-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Logarithmic Differentiation Step-by-Step
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-techniques-complex-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Techniques: Complex Derivatives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
     </span>
   </a>
   
@@ -1373,6 +1723,330 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-retracing-your-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Retracing Your Steps
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-graphical-relationship-inverse-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Graphical Relationship: Inverse Derivatives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Graphical Relationship: Inverse Derivatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflecting-across-the-line-y-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflecting Across the Line \(y = x\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual Example
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Visual Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-graphical-inverse-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Graphical Inverse Derivatives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverse-trigonometric-functions-domain-restrictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverse Trigonometric Functions: Domain Restrictions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inverse Trigonometric Functions: Domain Restrictions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#why-restrictions-are-necessary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Restrictions Are Necessary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Restrictions Are Necessary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-trig-domain-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Trig Domain Visualization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivative-of-arcsine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arcsine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivative-of-arccosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arccosine
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivative-of-arctangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arctangent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivatives-of-arcsecant-arccosecant-and-arccotangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Arcsecant, Arccosecant, and Arccotangent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivatives of Arcsecant, Arccosecant, and Arccotangent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arcsecant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arcsecant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arccosecant" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arccosecant
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arccotangent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arccotangent
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-all-inverse-trig-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: All Inverse Trig Derivatives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary: All Inverse Trig Derivatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-trig-derivatives-practice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Trig Derivatives Practice
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logarithmic-differentiation-a-powerful-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logarithmic Differentiation: A Powerful Technique
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logarithmic Differentiation: A Powerful Technique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-basic-idea" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Basic Idea
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-this-works-the-logarithmic-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Works: The Logarithmic Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differentiating-products-with-logarithmic-differentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differentiating Products with Logarithmic Differentiation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differentiating-powers-with-logarithmic-differentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Differentiating Powers with Logarithmic Differentiation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variable-exponents-when-both-base-and-power-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Exponents: When Both Base and Power Change
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Exponents: When Both Base and Power Change">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-function-y-xx" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Function \(y = x^x\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-variable-exponent-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Variable Exponent Examples
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="More Variable Exponent Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-logarithmic-differentiation-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Logarithmic Differentiation Step-by-Step
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-techniques-complex-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Combining Techniques: Complex Derivatives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#looking-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Looking Ahead
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1423,13 +2097,510 @@
 <li><a href="../11-implicit-differentiation/">Chapter 11: Implicit Differentiation</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-retracing-your-steps">Introduction: Retracing Your Steps</h2>
+<p>Imagine you've climbed a mountain trail. You know exactly how your altitude changed as you walked forward. But what if you wanted to describe your horizontal progress based on your altitude? That's essentially what inverse functions do—they swap the roles of input and output.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Inverse functions are like retracing my path—same journey, opposite direction! If <span class="arithmatex">\(f\)</span> tells me my altitude from my position, <span class="arithmatex">\(f^{-1}\)</span> tells me my position from my altitude."</p>
+</div>
+<p>In this chapter, we'll discover how to find derivatives of inverse functions, with special attention to the six inverse trigonometric functions. We'll also learn a clever technique called <strong>logarithmic differentiation</strong> that makes seemingly impossible derivatives surprisingly manageable.</p>
+<h2 id="the-graphical-relationship-inverse-derivatives">The Graphical Relationship: Inverse Derivatives</h2>
+<p>Before diving into formulas, let's understand what happens graphically when we differentiate an inverse function. This visual intuition will make the formulas feel natural rather than mysterious.</p>
+<h3 id="reflecting-across-the-line-y-x">Reflecting Across the Line <span class="arithmatex">\(y = x\)</span></h3>
+<p>Recall that the graph of <span class="arithmatex">\(f^{-1}\)</span> is the reflection of <span class="arithmatex">\(f\)</span> across the line <span class="arithmatex">\(y = x\)</span>. This reflection swaps the roles of <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span>, which has fascinating consequences for slopes.</p>
+<p>Consider a point <span class="arithmatex">\((a, b)\)</span> on the graph of <span class="arithmatex">\(f\)</span>, where <span class="arithmatex">\(f(a) = b\)</span>. The corresponding point on <span class="arithmatex">\(f^{-1}\)</span> is <span class="arithmatex">\((b, a)\)</span>. If the tangent line to <span class="arithmatex">\(f\)</span> at <span class="arithmatex">\((a, b)\)</span> has slope <span class="arithmatex">\(m\)</span>, then the tangent line to <span class="arithmatex">\(f^{-1}\)</span> at <span class="arithmatex">\((b, a)\)</span> has slope <span class="arithmatex">\(\frac{1}{m}\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title">The Inverse Function Derivative Formula</p>
+<p>If <span class="arithmatex">\(f\)</span> is differentiable at <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(f'(a) \neq 0\)</span>, then <span class="arithmatex">\(f^{-1}\)</span> is differentiable at <span class="arithmatex">\(b = f(a)\)</span>, and:</p>
+<div class="arithmatex">\[(f^{-1})'(b) = \frac{1}{f'(a)} = \frac{1}{f'(f^{-1}(b))}\]</div>
+<p>In Leibniz notation: <span class="arithmatex">\(\frac{dx}{dy} = \frac{1}{\frac{dy}{dx}}\)</span></p>
+</div>
+<p><strong>Why does this work?</strong> When you reflect a line across <span class="arithmatex">\(y = x\)</span>, a slope of <span class="arithmatex">\(m\)</span> becomes <span class="arithmatex">\(\frac{1}{m}\)</span>. A line rising 3 units for every 1 unit right becomes a line rising 1 unit for every 3 units right.</p>
+<h3 id="visual-example">Visual Example</h3>
+<p>Consider <span class="arithmatex">\(f(x) = x^3\)</span> and its inverse <span class="arithmatex">\(f^{-1}(x) = \sqrt[3]{x}\)</span>.</p>
+<ul>
+<li>At <span class="arithmatex">\(x = 2\)</span>: <span class="arithmatex">\(f(2) = 8\)</span> and <span class="arithmatex">\(f'(2) = 3(2)^2 = 12\)</span></li>
+<li>The corresponding point on <span class="arithmatex">\(f^{-1}\)</span> is <span class="arithmatex">\((8, 2)\)</span></li>
+<li>The slope of <span class="arithmatex">\(f^{-1}\)</span> at <span class="arithmatex">\(x = 8\)</span> should be <span class="arithmatex">\(\frac{1}{12}\)</span></li>
+</ul>
+<p>Let's verify: <span class="arithmatex">\((f^{-1})'(x) = \frac{1}{3}x^{-2/3}\)</span>, so <span class="arithmatex">\((f^{-1})'(8) = \frac{1}{3} \cdot \frac{1}{4} = \frac{1}{12}\)</span> ✓</p>
+<details>
+<summary>Inverse Function Derivatives MicroSim</summary>
+<h4 id="diagram-graphical-inverse-derivatives">Diagram: Graphical Inverse Derivatives</h4>
+<p>Type: interactive visualization</p>
+<p>Purpose: Show the relationship between a function and its inverse, with tangent lines demonstrating the reciprocal slope property.</p>
+<p>Learning Objective: Students will understand that the derivative of an inverse function equals the reciprocal of the original function's derivative (Bloom Level 2: Understand)</p>
+<p>Bloom Taxonomy Verb: explain, interpret, demonstrate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Two graphs side by side: <span class="arithmatex">\(f(x)\)</span> and <span class="arithmatex">\(f^{-1}(x)\)</span></li>
+<li>Line <span class="arithmatex">\(y = x\)</span> shown as dashed reference</li>
+<li>Draggable point on <span class="arithmatex">\(f(x)\)</span> with tangent line</li>
+<li>Corresponding point on <span class="arithmatex">\(f^{-1}(x)\)</span> with tangent line</li>
+<li>Slope values displayed for both tangent lines</li>
+<li>Visual showing <span class="arithmatex">\(m_1 \times m_2 = 1\)</span></li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Draggable point along the curve <span class="arithmatex">\(f(x)\)</span></li>
+<li>Dropdown: Select function family (cubic, exponential, etc.)</li>
+<li>Toggle: Show/hide <span class="arithmatex">\(y = x\)</span> line</li>
+<li>Toggle: Show/hide slope calculations</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>As user drags point on <span class="arithmatex">\(f\)</span>, corresponding point on <span class="arithmatex">\(f^{-1}\)</span> updates</li>
+<li>Tangent lines update in real-time</li>
+<li>Slope display shows both values and their product (always 1)</li>
+<li>Animation option: Auto-trace along the curve</li>
+</ul>
+<p>Instructional Rationale: Seeing slopes as reciprocals builds intuition before the formula. The interactive element allows students to verify the relationship at many points.</p>
+<p>Implementation: p5.js with synchronized graphs</p>
+</details>
+<h2 id="inverse-trigonometric-functions-domain-restrictions">Inverse Trigonometric Functions: Domain Restrictions</h2>
+<p>Before we can differentiate inverse trig functions, we need to address a crucial issue: trigonometric functions aren't one-to-one, so they don't have true inverses unless we restrict their domains.</p>
+<h3 id="why-restrictions-are-necessary">Why Restrictions Are Necessary</h3>
+<p>The sine function oscillates forever between -1 and 1. If you ask "what angle has sine equal to 0.5?", there are infinitely many answers: <span class="arithmatex">\(\frac{\pi}{6}, \frac{5\pi}{6}, \frac{13\pi}{6}, \ldots\)</span></p>
+<p>To create a proper inverse function, mathematicians chose <strong>principal value ranges</strong> for each inverse trig function:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Domain</th>
+<th>Range (Principal Values)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\arcsin(x)\)</span></td>
+<td><span class="arithmatex">\([-1, 1]\)</span></td>
+<td><span class="arithmatex">\(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\arccos(x)\)</span></td>
+<td><span class="arithmatex">\([-1, 1]\)</span></td>
+<td><span class="arithmatex">\([0, \pi]\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\arctan(x)\)</span></td>
+<td><span class="arithmatex">\((-\infty, \infty)\)</span></td>
+<td><span class="arithmatex">\(\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arcsec}(x)\)</span></td>
+<td><span class="arithmatex">\((-\infty, -1] \cup [1, \infty)\)</span></td>
+<td><span class="arithmatex">\(\left[0, \frac{\pi}{2}\right) \cup \left(\frac{\pi}{2}, \pi\right]\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arccsc}(x)\)</span></td>
+<td><span class="arithmatex">\((-\infty, -1] \cup [1, \infty)\)</span></td>
+<td><span class="arithmatex">\(\left[-\frac{\pi}{2}, 0\right) \cup \left(0, \frac{\pi}{2}\right]\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arccot}(x)\)</span></td>
+<td><span class="arithmatex">\((-\infty, \infty)\)</span></td>
+<td><span class="arithmatex">\((0, \pi)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key insight:</strong> The domain of an inverse trig function is the range of the original trig function (restricted). The range of the inverse is the restricted domain we chose.</p>
+<div class="admonition warning">
+<p class="admonition-title">Notation Alert</p>
+<p><span class="arithmatex">\(\arcsin(x)\)</span> and <span class="arithmatex">\(\sin^{-1}(x)\)</span> mean the same thing: the inverse sine function. But <span class="arithmatex">\(\sin^{-1}(x) \neq \frac{1}{\sin(x)}\)</span>! The notation <span class="arithmatex">\((\sin x)^{-1} = \csc x\)</span> is for the reciprocal. Context matters!</p>
+</div>
+<details>
+<summary>Inverse Trig Domains MicroSim</summary>
+<h4 id="diagram-inverse-trig-domain-visualization">Diagram: Inverse Trig Domain Visualization</h4>
+<p>Type: interactive diagram</p>
+<p>Purpose: Visualize the domain restrictions for inverse trig functions and why they're necessary.</p>
+<p>Learning Objective: Students will identify the domain and range of each inverse trigonometric function (Bloom Level 1: Remember)</p>
+<p>Bloom Taxonomy Verb: identify, recognize, list</p>
+<p>Visual elements:</p>
+<ul>
+<li>Six panels, one for each inverse trig function</li>
+<li>Original trig function with restricted domain highlighted</li>
+<li>Inverse function graph shown below</li>
+<li>Horizontal line test demonstration</li>
+<li>Domain and range labeled clearly</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Select inverse trig function from dropdown</li>
+<li>Slider: Draw horizontal line to show why restriction is needed</li>
+<li>Toggle: Show both original and inverse on same axes</li>
+<li>Button: "Why this range?" reveals explanation</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Horizontal line intersects unrestricted function at multiple points</li>
+<li>Highlight shows chosen interval passes horizontal line test</li>
+<li>Inverse graph updates based on selection</li>
+<li>Clear labeling of domain/range</li>
+</ul>
+<p>Instructional Rationale: Students often struggle with why domain restrictions exist. Showing the horizontal line test makes the necessity concrete.</p>
+<p>Implementation: p5.js with multiple function graphs</p>
+</details>
+<h2 id="derivative-of-arcsine">Derivative of Arcsine</h2>
+<p>Let's derive the formula for <span class="arithmatex">\(\frac{d}{dx}[\arcsin(x)]\)</span> using implicit differentiation.</p>
+<p>Let <span class="arithmatex">\(y = \arcsin(x)\)</span>. Then by definition:</p>
+<div class="arithmatex">\[\sin(y) = x\]</div>
+<p>where <span class="arithmatex">\(-\frac{\pi}{2} \leq y \leq \frac{\pi}{2}\)</span></p>
+<p>Differentiate both sides with respect to <span class="arithmatex">\(x\)</span>:</p>
+<div class="arithmatex">\[\cos(y) \cdot \frac{dy}{dx} = 1\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{\cos(y)}\]</div>
+<p>Now we need to express <span class="arithmatex">\(\cos(y)\)</span> in terms of <span class="arithmatex">\(x\)</span>. Since <span class="arithmatex">\(\sin(y) = x\)</span>, we use the Pythagorean identity:</p>
+<div class="arithmatex">\[\cos^2(y) + \sin^2(y) = 1\]</div>
+<div class="arithmatex">\[\cos^2(y) = 1 - x^2\]</div>
+<div class="arithmatex">\[\cos(y) = \pm\sqrt{1 - x^2}\]</div>
+<p>Here's where the domain restriction matters! Since <span class="arithmatex">\(-\frac{\pi}{2} \leq y \leq \frac{\pi}{2}\)</span>, we know <span class="arithmatex">\(\cos(y) \geq 0\)</span>, so:</p>
+<div class="arithmatex">\[\cos(y) = \sqrt{1 - x^2}\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Derivative of Arcsine</p>
+<div class="arithmatex">\[\frac{d}{dx}[\arcsin(x)] = \frac{1}{\sqrt{1 - x^2}}\]</div>
+<p>where: <span class="arithmatex">\(-1 &lt; x &lt; 1\)</span> (derivative undefined at endpoints)</p>
+</div>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}[\arcsin(3x)]\)</span></p>
+<p>Using the chain rule with <span class="arithmatex">\(u = 3x\)</span>:</p>
+<div class="arithmatex">\[\frac{d}{dx}[\arcsin(3x)] = \frac{1}{\sqrt{1 - (3x)^2}} \cdot 3 = \frac{3}{\sqrt{1 - 9x^2}}\]</div>
+<h2 id="derivative-of-arccosine">Derivative of Arccosine</h2>
+<p>The derivation follows the same pattern. Let <span class="arithmatex">\(y = \arccos(x)\)</span>, so <span class="arithmatex">\(\cos(y) = x\)</span> where <span class="arithmatex">\(0 \leq y \leq \pi\)</span>.</p>
+<p>Differentiating: <span class="arithmatex">\(-\sin(y) \cdot \frac{dy}{dx} = 1\)</span></p>
+<p>Since <span class="arithmatex">\(0 \leq y \leq \pi\)</span>, we have <span class="arithmatex">\(\sin(y) \geq 0\)</span>, so <span class="arithmatex">\(\sin(y) = \sqrt{1 - x^2}\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Derivative of Arccosine</p>
+<div class="arithmatex">\[\frac{d}{dx}[\arccos(x)] = -\frac{1}{\sqrt{1 - x^2}}\]</div>
+<p>where: <span class="arithmatex">\(-1 &lt; x &lt; 1\)</span></p>
+</div>
+<p><strong>Notice something?</strong> The derivatives of arcsine and arccosine are negatives of each other! This makes sense because <span class="arithmatex">\(\arcsin(x) + \arccos(x) = \frac{\pi}{2}\)</span> for all <span class="arithmatex">\(x\)</span> in <span class="arithmatex">\([-1, 1]\)</span>.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Whoa—arcsine and arccosine are complementary angles! No wonder their derivatives are opposites. When one tilts up, the other tilts down by the same amount!"</p>
+</div>
+<h2 id="derivative-of-arctangent">Derivative of Arctangent</h2>
+<p>This is perhaps the most important inverse trig derivative for applications. Let <span class="arithmatex">\(y = \arctan(x)\)</span>, so <span class="arithmatex">\(\tan(y) = x\)</span> where <span class="arithmatex">\(-\frac{\pi}{2} &lt; y &lt; \frac{\pi}{2}\)</span>.</p>
+<p>Differentiating: <span class="arithmatex">\(\sec^2(y) \cdot \frac{dy}{dx} = 1\)</span></p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{\sec^2(y)} = \cos^2(y)\]</div>
+<p>Using the identity <span class="arithmatex">\(\sec^2(y) = 1 + \tan^2(y) = 1 + x^2\)</span>:</p>
+<div class="admonition tip">
+<p class="admonition-title">Derivative of Arctangent</p>
+<div class="arithmatex">\[\frac{d}{dx}[\arctan(x)] = \frac{1}{1 + x^2}\]</div>
+<p>where: <span class="arithmatex">\(x\)</span> can be any real number</p>
+</div>
+<p><strong>Why is this special?</strong> The arctangent derivative is defined for ALL real numbers—no square roots, no domain restrictions (except it approaches 0 as <span class="arithmatex">\(x \to \pm\infty\)</span>).</p>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}[\arctan(e^x)]\)</span></p>
+<p>Using the chain rule:</p>
+<div class="arithmatex">\[\frac{d}{dx}[\arctan(e^x)] = \frac{1}{1 + (e^x)^2} \cdot e^x = \frac{e^x}{1 + e^{2x}}\]</div>
+<h2 id="derivatives-of-arcsecant-arccosecant-and-arccotangent">Derivatives of Arcsecant, Arccosecant, and Arccotangent</h2>
+<p>The remaining three inverse trig functions appear less frequently on the AP exam, but their derivatives follow similar derivation patterns.</p>
+<h3 id="derivative-of-arcsecant">Derivative of Arcsecant</h3>
+<p>Let <span class="arithmatex">\(y = \text{arcsec}(x)\)</span>, so <span class="arithmatex">\(\sec(y) = x\)</span>.</p>
+<p>Differentiating: <span class="arithmatex">\(\sec(y)\tan(y) \cdot \frac{dy}{dx} = 1\)</span></p>
+<p>After careful analysis of the domain restrictions:</p>
+<div class="admonition tip">
+<p class="admonition-title">Derivative of Arcsecant</p>
+<div class="arithmatex">\[\frac{d}{dx}[\text{arcsec}(x)] = \frac{1}{|x|\sqrt{x^2 - 1}}\]</div>
+<p>where: <span class="arithmatex">\(|x| &gt; 1\)</span></p>
+</div>
+<p><strong>The absolute value</strong> is necessary because the derivative must be positive for both <span class="arithmatex">\(x &gt; 1\)</span> and <span class="arithmatex">\(x &lt; -1\)</span> (arcsecant is increasing on both parts of its domain).</p>
+<h3 id="derivative-of-arccosecant">Derivative of Arccosecant</h3>
+<div class="admonition tip">
+<p class="admonition-title">Derivative of Arccosecant</p>
+<div class="arithmatex">\[\frac{d}{dx}[\text{arccsc}(x)] = -\frac{1}{|x|\sqrt{x^2 - 1}}\]</div>
+<p>where: <span class="arithmatex">\(|x| &gt; 1\)</span></p>
+</div>
+<h3 id="derivative-of-arccotangent">Derivative of Arccotangent</h3>
+<div class="admonition tip">
+<p class="admonition-title">Derivative of Arccotangent</p>
+<div class="arithmatex">\[\frac{d}{dx}[\text{arccot}(x)] = -\frac{1}{1 + x^2}\]</div>
+<p>where: <span class="arithmatex">\(x\)</span> can be any real number</p>
+</div>
+<p>Notice that <span class="arithmatex">\(\frac{d}{dx}[\text{arccot}(x)] = -\frac{d}{dx}[\arctan(x)]\)</span>, similar to the sine/cosine relationship.</p>
+<h2 id="summary-all-inverse-trig-derivatives">Summary: All Inverse Trig Derivatives</h2>
+<p>Here's your reference table for all six inverse trig derivatives:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Derivative</th>
+<th>Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\arcsin(x)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{\sqrt{1-x^2}}\)</span></td>
+<td><span class="arithmatex">\(-1 &lt; x &lt; 1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\arccos(x)\)</span></td>
+<td><span class="arithmatex">\(-\frac{1}{\sqrt{1-x^2}}\)</span></td>
+<td><span class="arithmatex">\(-1 &lt; x &lt; 1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\arctan(x)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{1+x^2}\)</span></td>
+<td>all real <span class="arithmatex">\(x\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arccot}(x)\)</span></td>
+<td><span class="arithmatex">\(-\frac{1}{1+x^2}\)</span></td>
+<td>all real <span class="arithmatex">\(x\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arcsec}(x)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{\|x\|\sqrt{x^2-1}}\)</span></td>
+<td><span class="arithmatex">\(\|x\| &gt; 1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arccsc}(x)\)</span></td>
+<td><span class="arithmatex">\(-\frac{1}{\|x\|\sqrt{x^2-1}}\)</span></td>
+<td><span class="arithmatex">\(\|x\| &gt; 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Memory patterns:</strong></p>
+<ul>
+<li>Arcsine and arccosine use <span class="arithmatex">\(\sqrt{1-x^2}\)</span> (their domains require <span class="arithmatex">\(|x| \leq 1\)</span>)</li>
+<li>Arctangent and arccotangent use <span class="arithmatex">\(1+x^2\)</span> (no domain restrictions)</li>
+<li>Arcsecant and arccosecant use <span class="arithmatex">\(|x|\sqrt{x^2-1}\)</span> (their domains require <span class="arithmatex">\(|x| \geq 1\)</span>)</li>
+<li>"Co-functions" have negative derivatives (arccos, arccot, arccsc)</li>
+</ul>
+<details>
+<summary>Inverse Trig Derivatives Quiz MicroSim</summary>
+<h4 id="diagram-inverse-trig-derivatives-practice">Diagram: Inverse Trig Derivatives Practice</h4>
+<p>Type: interactive quiz</p>
+<p>Purpose: Help students memorize and apply inverse trig derivative formulas.</p>
+<p>Learning Objective: Students will apply the inverse trigonometric derivative formulas to compute derivatives (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: calculate, apply, solve</p>
+<p>Visual elements:</p>
+<ul>
+<li>Flashcard-style interface</li>
+<li>Six cards showing each inverse trig function</li>
+<li>Graph of each function with tangent line at user-selected point</li>
+<li>Derivative formula revealed after attempt</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Click card to attempt derivative</li>
+<li>Type answer before reveal</li>
+<li>"Check" button for verification</li>
+<li>Slider: Evaluate derivative at specific x-value</li>
+<li>Progress tracker: 0/6 mastered</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Cards flip to reveal derivative</li>
+<li>Incorrect attempts show hint then answer</li>
+<li>Graph updates to show derivative value at selected point</li>
+<li>Track mastery: 3 correct in a row = mastered</li>
+</ul>
+<p>Instructional Rationale: Active recall through quizzing is more effective than passive review. Immediate feedback corrects misconceptions.</p>
+<p>Implementation: p5.js with card flip animation and quiz logic</p>
+</details>
+<h2 id="logarithmic-differentiation-a-powerful-technique">Logarithmic Differentiation: A Powerful Technique</h2>
+<p>Now we introduce a technique that seems like a detour but unlocks problems that would otherwise be extremely difficult. <strong>Logarithmic differentiation</strong> converts multiplication into addition and powers into multiplication—making complex expressions much simpler.</p>
+<h3 id="the-basic-idea">The Basic Idea</h3>
+<p>To find <span class="arithmatex">\(\frac{d}{dx}[f(x)]\)</span> using logarithmic differentiation:</p>
+<ol>
+<li>Take the natural log of both sides: <span class="arithmatex">\(\ln(y) = \ln(f(x))\)</span></li>
+<li>Use log properties to simplify the right side</li>
+<li>Differentiate both sides implicitly</li>
+<li>Solve for <span class="arithmatex">\(\frac{dy}{dx}\)</span></li>
+<li>Substitute back <span class="arithmatex">\(y = f(x)\)</span></li>
+</ol>
+<h3 id="why-this-works-the-logarithmic-properties">Why This Works: The Logarithmic Properties</h3>
+<p>Recall these essential properties:</p>
+<ul>
+<li><span class="arithmatex">\(\ln(ab) = \ln(a) + \ln(b)\)</span> (products become sums)</li>
+<li><span class="arithmatex">\(\ln\left(\frac{a}{b}\right) = \ln(a) - \ln(b)\)</span> (quotients become differences)</li>
+<li><span class="arithmatex">\(\ln(a^n) = n \cdot \ln(a)\)</span> (powers become products)</li>
+</ul>
+<p>These transformations turn multiplicative complexity into additive simplicity!</p>
+<h2 id="differentiating-products-with-logarithmic-differentiation">Differentiating Products with Logarithmic Differentiation</h2>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}[x^2 \cdot \sin(x) \cdot e^x]\)</span></p>
+<p>You could use the product rule twice, but logarithmic differentiation is cleaner.</p>
+<p>Let <span class="arithmatex">\(y = x^2 \cdot \sin(x) \cdot e^x\)</span></p>
+<p><strong>Step 1:</strong> Take the natural log:</p>
+<div class="arithmatex">\[\ln(y) = \ln(x^2 \cdot \sin(x) \cdot e^x)\]</div>
+<p><strong>Step 2:</strong> Apply log properties:</p>
+<div class="arithmatex">\[\ln(y) = \ln(x^2) + \ln(\sin x) + \ln(e^x)\]</div>
+<div class="arithmatex">\[\ln(y) = 2\ln(x) + \ln(\sin x) + x\]</div>
+<p><strong>Step 3:</strong> Differentiate both sides:</p>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \frac{2}{x} + \frac{\cos x}{\sin x} + 1\]</div>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \frac{2}{x} + \cot(x) + 1\]</div>
+<p><strong>Step 4:</strong> Solve for <span class="arithmatex">\(\frac{dy}{dx}\)</span>:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = y \left(\frac{2}{x} + \cot(x) + 1\right)\]</div>
+<p><strong>Step 5:</strong> Substitute back:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = x^2 \sin(x) \cdot e^x \left(\frac{2}{x} + \cot(x) + 1\right)\]</div>
+<p>This can be simplified:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = e^x \left(2x\sin(x) + x^2\cos(x) + x^2\sin(x)\right)\]</div>
+<h2 id="differentiating-powers-with-logarithmic-differentiation">Differentiating Powers with Logarithmic Differentiation</h2>
+<p>Logarithmic differentiation shines when differentiating expressions with many factors or complicated exponents.</p>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}\left[\frac{x^3(x+1)^4}{(2x-1)^5}\right]\)</span></p>
+<p>Let <span class="arithmatex">\(y = \frac{x^3(x+1)^4}{(2x-1)^5}\)</span></p>
+<p><strong>Step 1-2:</strong> Take log and simplify:</p>
+<div class="arithmatex">\[\ln(y) = 3\ln(x) + 4\ln(x+1) - 5\ln(2x-1)\]</div>
+<p><strong>Step 3:</strong> Differentiate:</p>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \frac{3}{x} + \frac{4}{x+1} - \frac{5 \cdot 2}{2x-1}\]</div>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \frac{3}{x} + \frac{4}{x+1} - \frac{10}{2x-1}\]</div>
+<p><strong>Step 4-5:</strong> Solve and substitute:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{x^3(x+1)^4}{(2x-1)^5} \left(\frac{3}{x} + \frac{4}{x+1} - \frac{10}{2x-1}\right)\]</div>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Logarithmic differentiation is like getting a translator for a language I don't speak. The original expression looks scary, but the log version? I can handle that!"</p>
+</div>
+<h2 id="variable-exponents-when-both-base-and-power-change">Variable Exponents: When Both Base and Power Change</h2>
+<p>Here's where logarithmic differentiation becomes absolutely essential. Consider <span class="arithmatex">\(f(x) = x^x\)</span>. The power rule assumes a constant exponent. The exponential rule assumes a constant base. But here, BOTH vary!</p>
+<h3 id="the-function-y-xx">The Function <span class="arithmatex">\(y = x^x\)</span></h3>
+<p>Let <span class="arithmatex">\(y = x^x\)</span> for <span class="arithmatex">\(x &gt; 0\)</span>.</p>
+<p><strong>Step 1-2:</strong> Take log and simplify:</p>
+<div class="arithmatex">\[\ln(y) = \ln(x^x) = x \cdot \ln(x)\]</div>
+<p><strong>Step 3:</strong> Differentiate using the product rule:</p>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = 1 \cdot \ln(x) + x \cdot \frac{1}{x}\]</div>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \ln(x) + 1\]</div>
+<p><strong>Step 4-5:</strong> Solve and substitute:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = y(\ln(x) + 1) = x^x(\ln(x) + 1)\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Derivative of Variable Exponent Functions</p>
+<p>For <span class="arithmatex">\(y = [f(x)]^{g(x)}\)</span> where <span class="arithmatex">\(f(x) &gt; 0\)</span>:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = [f(x)]^{g(x)} \left[g'(x)\ln(f(x)) + g(x) \cdot \frac{f'(x)}{f(x)}\right]\]</div>
+<p>Equivalently, think of it as: <span class="arithmatex">\(\frac{dy}{dx} = y \cdot \frac{d}{dx}[g(x)\ln(f(x))]\)</span></p>
+</div>
+<h3 id="more-variable-exponent-examples">More Variable Exponent Examples</h3>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}[(\sin x)^x]\)</span> for <span class="arithmatex">\(0 &lt; x &lt; \pi\)</span></p>
+<p>Let <span class="arithmatex">\(y = (\sin x)^x\)</span></p>
+<div class="arithmatex">\[\ln(y) = x \ln(\sin x)\]</div>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \ln(\sin x) + x \cdot \frac{\cos x}{\sin x}\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = (\sin x)^x \left[\ln(\sin x) + x\cot(x)\right]\]</div>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}[x^{\sin x}]\)</span> for <span class="arithmatex">\(x &gt; 0\)</span></p>
+<p>Let <span class="arithmatex">\(y = x^{\sin x}\)</span></p>
+<div class="arithmatex">\[\ln(y) = \sin(x) \cdot \ln(x)\]</div>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \cos(x) \cdot \ln(x) + \sin(x) \cdot \frac{1}{x}\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = x^{\sin x} \left[\cos(x) \ln(x) + \frac{\sin(x)}{x}\right]\]</div>
+<details>
+<summary>Logarithmic Differentiation MicroSim</summary>
+<h4 id="diagram-logarithmic-differentiation-step-by-step">Diagram: Logarithmic Differentiation Step-by-Step</h4>
+<p>Type: interactive tutorial</p>
+<p>Purpose: Guide students through the logarithmic differentiation process with multiple examples.</p>
+<p>Learning Objective: Students will apply logarithmic differentiation to compute derivatives of complex products, quotients, and variable exponent functions (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: apply, calculate, solve</p>
+<p>Visual elements:</p>
+<ul>
+<li>Split screen: original function left, log form right</li>
+<li>Step-by-step transformation showing each log property applied</li>
+<li>Color coding: products in blue, quotients in red, powers in green</li>
+<li>Final answer with simplification options</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Example selector: Products, Quotients, Powers, Variable Exponents</li>
+<li>"Next Step" button to advance through derivation</li>
+<li>"Why?" button at each step for explanation</li>
+<li>"Try It" mode: Student selects which log property to apply</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Each step highlights the transformation</li>
+<li>Hover over terms to see which log property applies</li>
+<li>Error feedback if wrong property selected</li>
+<li>Multiple examples per category</li>
+</ul>
+<p>Instructional Rationale: Breaking the process into discrete steps builds procedural fluency. The "Why?" buttons address the reasoning behind each transformation.</p>
+<p>Implementation: p5.js with step-through animation</p>
+</details>
+<h2 id="combining-techniques-complex-derivatives">Combining Techniques: Complex Derivatives</h2>
+<p>Real problems often require combining multiple differentiation techniques. Here's a comprehensive example.</p>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d}{dx}\left[\frac{(x^2+1)^3 \cdot \arctan(x)}{e^{2x}}\right]\)</span></p>
+<p>This combines:</p>
+<ul>
+<li>A product of three functions</li>
+<li>Inverse trig (arctan)</li>
+<li>Exponential function</li>
+<li>Chain rule applications</li>
+</ul>
+<p><strong>Using logarithmic differentiation:</strong></p>
+<p>Let <span class="arithmatex">\(y = \frac{(x^2+1)^3 \cdot \arctan(x)}{e^{2x}}\)</span></p>
+<div class="arithmatex">\[\ln(y) = 3\ln(x^2+1) + \ln(\arctan(x)) - 2x\]</div>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \frac{3 \cdot 2x}{x^2+1} + \frac{1}{\arctan(x)} \cdot \frac{1}{1+x^2} - 2\]</div>
+<div class="arithmatex">\[\frac{1}{y} \cdot \frac{dy}{dx} = \frac{6x}{x^2+1} + \frac{1}{(1+x^2)\arctan(x)} - 2\]</div>
+<p>Therefore:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{(x^2+1)^3 \cdot \arctan(x)}{e^{2x}} \left[\frac{6x}{x^2+1} + \frac{1}{(1+x^2)\arctan(x)} - 2\right]\]</div>
+<p>This can be simplified by distributing, but the logarithmic form is often preferable for computation.</p>
+<h2 id="practice-problems">Practice Problems</h2>
+<p><strong>Basic Inverse Trig Derivatives:</strong></p>
+<ol>
+<li><span class="arithmatex">\(\frac{d}{dx}[\arcsin(2x)]\)</span></li>
+<li><span class="arithmatex">\(\frac{d}{dx}[\arctan(x^2)]\)</span></li>
+<li><span class="arithmatex">\(\frac{d}{dx}[\arccos(\sqrt{x})]\)</span></li>
+<li><span class="arithmatex">\(\frac{d}{dx}[x \cdot \arctan(x)]\)</span></li>
+</ol>
+<p><strong>Logarithmic Differentiation:</strong></p>
+<ol>
+<li>Find <span class="arithmatex">\(\frac{d}{dx}[(x+1)(x+2)(x+3)]\)</span> using logarithmic differentiation</li>
+<li>Find <span class="arithmatex">\(\frac{d}{dx}\left[\frac{\sqrt{x}(x-1)^2}{(x+1)^3}\right]\)</span></li>
+<li>Find <span class="arithmatex">\(\frac{d}{dx}[x^{\cos x}]\)</span></li>
+<li>Find <span class="arithmatex">\(\frac{d}{dx}[(\ln x)^x]\)</span> for <span class="arithmatex">\(x &gt; 1\)</span></li>
+</ol>
+<details>
+<summary>Practice Problem Answers</summary>
+<ol>
+<li>
+<p><span class="arithmatex">\(\frac{2}{\sqrt{1-4x^2}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{2x}{1+x^4}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(-\frac{1}{2\sqrt{x}\sqrt{1-x}} = -\frac{1}{2\sqrt{x-x^2}}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\arctan(x) + \frac{x}{1+x^2}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((x+1)(x+2)(x+3)\left[\frac{1}{x+1} + \frac{1}{x+2} + \frac{1}{x+3}\right]\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{\sqrt{x}(x-1)^2}{(x+1)^3}\left[\frac{1}{2x} + \frac{2}{x-1} - \frac{3}{x+1}\right]\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(x^{\cos x}\left[-\sin(x)\ln(x) + \frac{\cos(x)}{x}\right]\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((\ln x)^x\left[\ln(\ln x) + \frac{1}{\ln x}\right]\)</span></p>
+</li>
+</ol>
+</details>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<p>In this chapter, you've mastered two powerful derivative techniques:</p>
+<p><strong>Inverse Trig Derivatives:</strong></p>
+<ul>
+<li>Derived using implicit differentiation</li>
+<li>Domain restrictions determine the sign of square roots</li>
+<li>Key formulas: <span class="arithmatex">\(\arcsin' = \frac{1}{\sqrt{1-x^2}}\)</span>, <span class="arithmatex">\(\arctan' = \frac{1}{1+x^2}\)</span></li>
+<li>"Co-functions" have negative derivatives</li>
+</ul>
+<p><strong>Logarithmic Differentiation:</strong></p>
+<ul>
+<li>Converts products to sums, quotients to differences, powers to products</li>
+<li>Essential for variable exponent functions like <span class="arithmatex">\(x^x\)</span></li>
+<li>Process: ln both sides → simplify → implicit differentiation → solve for <span class="arithmatex">\(\frac{dy}{dx}\)</span></li>
+</ul>
+<p>With these tools, you can now differentiate virtually any combination of functions you'll encounter in AP Calculus. That's a significant milestone!</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Pun Corner</p>
+<p>"Why did the inverse function break up with the original? Because their relationship was too one-to-one! ...okay, that one was a stretch. But seriously, you've just mastered some seriously powerful techniques. Time to celebrate with a victory lap around the unit circle!"</p>
+</div>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>In the next chapter, we'll apply all our derivative techniques to solve <strong>related rates problems</strong>—situations where multiple quantities change together, and we need to find how fast one is changing based on another. Delta will be measuring shadows, filling tanks, and chasing moving objects!</p>
 
 
 
 
 
 
+
+  
+  
 
 
 

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+        <meta name="description" content="Second and higher-order derivatives with applications to velocity, acceleration, and motion analysis">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>13. Higher-Order Derivatives - Calculus</title>
+        <title>Higher-Order Derivatives and Motion - Calculus</title>
       
     
     
@@ -59,6 +59,32 @@
       
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Higher-Order Derivatives and Motion - Calculus" >
+      
+        <meta  property="og:description"  content="Second and higher-order derivatives with applications to velocity, acceleration, and motion analysis" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/13-higher-order-derivatives-and-motion/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/calculus/chapters/13-higher-order-derivatives-and-motion/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Higher-Order Derivatives and Motion - Calculus" >
+      
+        <meta  name="twitter:description"  content="Second and higher-order derivatives with applications to velocity, acceleration, and motion analysis" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/13-higher-order-derivatives-and-motion/index.png" >
+      
     
     
   </head>
@@ -113,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              13. Higher-Order Derivatives
+              Higher-Order Derivatives and Motion
             
           </span>
         </div>
@@ -760,6 +786,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-beyond-the-first-derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Beyond the First Derivative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher-Order Derivatives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-second-derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Second Derivative
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Second Derivative">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-second-derivative-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Second Derivative Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-third-derivative-and-beyond" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Third Derivative and Beyond
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notation-for-higher-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notation for Higher Derivatives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Notation for Higher Derivatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prime-notation-lagrange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prime Notation (Lagrange)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leibniz-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leibniz Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Notation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motion-where-physics-meets-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion: Where Physics Meets Calculus
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motion: Where Physics Meets Calculus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#position-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Position Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velocity-from-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Velocity from Position
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceleration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jerk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jerk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jerk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-position-velocity-acceleration-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Position-Velocity-Acceleration Relationship
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-position-velocity-acceleration-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Position-Velocity-Acceleration Chain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed-vs-velocity-an-important-distinction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed vs. Velocity: An Important Distinction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-of-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction of Motion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Direction of Motion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-direction-and-speed-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Direction and Speed Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speeding-up-vs-slowing-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speeding Up vs. Slowing Down
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Speeding Up vs. Slowing Down">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-speeding-upslowing-down-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Speeding Up/Slowing Down Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-derivatives-of-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher Derivatives of Trigonometric Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Higher Derivatives of Trigonometric Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivatives-of-sine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Sine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivatives-of-cosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Cosine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-the-nth-derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the nth Derivative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exponential-functions-stay-the-same" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Functions Stay the Same
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-examples-complete-motion-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worked Examples: Complete Motion Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-the-derivative-tower" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: The Derivative Tower
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1373,6 +1711,318 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-beyond-the-first-derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: Beyond the First Derivative
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-order-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher-Order Derivatives
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-second-derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Second Derivative
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Second Derivative">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-second-derivative-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Second Derivative Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-third-derivative-and-beyond" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Third Derivative and Beyond
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notation-for-higher-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notation for Higher Derivatives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Notation for Higher Derivatives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prime-notation-lagrange" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prime Notation (Lagrange)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leibniz-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leibniz Notation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-of-notation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of Notation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motion-where-physics-meets-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motion: Where Physics Meets Calculus
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Motion: Where Physics Meets Calculus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#position-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Position Function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#velocity-from-position" class="md-nav__link">
+    <span class="md-ellipsis">
+      Velocity from Position
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Acceleration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jerk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jerk
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jerk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-position-velocity-acceleration-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Position-Velocity-Acceleration Relationship
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-position-velocity-acceleration-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Position-Velocity-Acceleration Chain
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed-vs-velocity-an-important-distinction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed vs. Velocity: An Important Distinction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-of-motion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Direction of Motion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Direction of Motion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-direction-and-speed-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Direction and Speed Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speeding-up-vs-slowing-down" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speeding Up vs. Slowing Down
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Speeding Up vs. Slowing Down">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-speeding-upslowing-down-analyzer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Speeding Up/Slowing Down Analyzer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#higher-derivatives-of-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Higher Derivatives of Trigonometric Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Higher Derivatives of Trigonometric Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivatives-of-sine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Sine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivatives-of-cosine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Cosine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finding-the-nth-derivative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding the nth Derivative
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exponential-functions-stay-the-same" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Functions Stay the Same
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-examples-complete-motion-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Worked Examples: Complete Motion Analysis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Applications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-the-derivative-tower" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: The Derivative Tower
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1426,13 +2076,729 @@
 <li><a href="../09-product-quotient-transcendental-derivatives/">Chapter 9: Product, Quotient, and Transcendental Derivatives</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-beyond-the-first-derivative">Introduction: Beyond the First Derivative</h2>
+<p>You've mastered finding derivatives, which tell you how fast a function is changing at any instant. But here's a question: what if that rate of change is itself changing? When you accelerate in a car, your speed (a rate of change) is increasing. How do we measure that mathematically?</p>
+<p>The answer is to take the derivative of the derivative. Just as the first derivative tells you how the original function changes, the second derivative tells you how the first derivative changes. This simple idea opens up a whole new world of applications, especially in physics.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"The first derivative tells me my tilt—how steep the ground is under my wheels. But the <em>second</em> derivative? That tells me whether I'm climbing faster or slower than before. Am I working harder, or is the hill easing up?"</p>
+</div>
+<p>In this chapter, we'll explore higher-order derivatives and their most important application: describing motion. By the end, you'll understand why physicists love calculus so much.</p>
+<h2 id="higher-order-derivatives">Higher-Order Derivatives</h2>
+<p>A <strong>higher-order derivative</strong> is what you get when you take the derivative of a derivative. Since a derivative is itself a function, we can differentiate it again and again.</p>
+<ul>
+<li>The <strong>first derivative</strong> <span class="arithmatex">\(f'(x)\)</span> tells us the rate of change of <span class="arithmatex">\(f\)</span>.</li>
+<li>The <strong>second derivative</strong> <span class="arithmatex">\(f''(x)\)</span> tells us the rate of change of <span class="arithmatex">\(f'\)</span>—how fast the slope is changing.</li>
+<li>The <strong>third derivative</strong> <span class="arithmatex">\(f'''(x)\)</span> tells us the rate of change of <span class="arithmatex">\(f''\)</span>.</li>
+<li>And so on!</li>
+</ul>
+<p>Each derivative gives us new information about how the function behaves. The first derivative describes direction and steepness. The second derivative describes curvature and concavity. Higher derivatives reveal increasingly subtle patterns in how the function changes.</p>
+<table>
+<thead>
+<tr>
+<th>Derivative Order</th>
+<th>What It Measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First (<span class="arithmatex">\(f'\)</span>)</td>
+<td>Rate of change of <span class="arithmatex">\(f\)</span> (slope)</td>
+</tr>
+<tr>
+<td>Second (<span class="arithmatex">\(f''\)</span>)</td>
+<td>Rate of change of slope (curvature)</td>
+</tr>
+<tr>
+<td>Third (<span class="arithmatex">\(f'''\)</span>)</td>
+<td>Rate of change of curvature</td>
+</tr>
+<tr>
+<td>Fourth (<span class="arithmatex">\(f^{(4)}\)</span>)</td>
+<td>Rate of change of third derivative</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-second-derivative">The Second Derivative</h2>
+<p>The <strong>second derivative</strong> is the most important higher-order derivative. It's the derivative of the first derivative:</p>
+<div class="arithmatex">\[f''(x) = \frac{d}{dx}\left[f'(x)\right]\]</div>
+<p>To find the second derivative, simply differentiate twice: find <span class="arithmatex">\(f'(x)\)</span> first, then differentiate that result to get <span class="arithmatex">\(f''(x)\)</span>.</p>
+<p><strong>Example:</strong> Find the first and second derivatives of <span class="arithmatex">\(f(x) = x^4 - 3x^2 + 5x\)</span>.</p>
+<p>Step 1: Find the first derivative using the power rule:</p>
+<div class="arithmatex">\[f'(x) = 4x^3 - 6x + 5\]</div>
+<p>Step 2: Differentiate again to find the second derivative:</p>
+<div class="arithmatex">\[f''(x) = 12x^2 - 6\]</div>
+<p>The first derivative <span class="arithmatex">\(f'(x) = 4x^3 - 6x + 5\)</span> tells us the slope at any point. The second derivative <span class="arithmatex">\(f''(x) = 12x^2 - 6\)</span> tells us how that slope is changing.</p>
+<h4 id="diagram-second-derivative-explorer">Diagram: Second Derivative Explorer</h4>
+<details>
+<summary>Second Derivative Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Visualize the relationship between a function, its first derivative, and its second derivative.</p>
+<p>Learning Objective: Students will analyze how the second derivative relates to the curvature of the original function (Bloom Level 4: Analyze)</p>
+<p>Bloom Taxonomy Verb: analyze, connect, interpret</p>
+<p>Visual elements:</p>
+<ul>
+<li>Three stacked panels showing <span class="arithmatex">\(f(x)\)</span>, <span class="arithmatex">\(f'(x)\)</span>, and <span class="arithmatex">\(f''(x)\)</span></li>
+<li>Synchronized moving point across all three graphs</li>
+<li>Tangent line on the original function</li>
+<li>Color-coding: blue for original, green for first derivative, red for second derivative</li>
+<li>Concavity indicators on the original function</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Slider: Move point along x-axis</li>
+<li>Dropdown: Select function from presets (<span class="arithmatex">\(x^3\)</span>, <span class="arithmatex">\(x^4 - 3x^2\)</span>, <span class="arithmatex">\(\sin(x)\)</span>)</li>
+<li>Toggle: Show/hide second derivative panel</li>
+<li>Display: Current values of <span class="arithmatex">\(f(x)\)</span>, <span class="arithmatex">\(f'(x)\)</span>, <span class="arithmatex">\(f''(x)\)</span></li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When <span class="arithmatex">\(f''(x) &gt; 0\)</span>: original curve is concave up, first derivative increasing</li>
+<li>When <span class="arithmatex">\(f''(x) &lt; 0\)</span>: original curve is concave down, first derivative decreasing</li>
+<li>When <span class="arithmatex">\(f''(x) = 0\)</span>: possible inflection point</li>
+</ul>
+<p>Instructional Rationale: Seeing all three functions simultaneously helps students understand the chain of relationships. The synchronized point makes abstract connections concrete.</p>
+<p>Implementation: p5.js with three-panel display</p>
+</details>
+<h2 id="the-third-derivative-and-beyond">The Third Derivative and Beyond</h2>
+<p>We can keep differentiating! The <strong>third derivative</strong> is the derivative of the second derivative:</p>
+<div class="arithmatex">\[f'''(x) = \frac{d}{dx}\left[f''(x)\right]\]</div>
+<p>And in general, the <strong>nth derivative</strong> is found by differentiating <span class="arithmatex">\(n\)</span> times.</p>
+<p><strong>Example:</strong> Find the first four derivatives of <span class="arithmatex">\(f(x) = x^5\)</span>.</p>
+<div class="arithmatex">\[f(x) = x^5\]</div>
+<div class="arithmatex">\[f'(x) = 5x^4\]</div>
+<div class="arithmatex">\[f''(x) = 20x^3\]</div>
+<div class="arithmatex">\[f'''(x) = 60x^2\]</div>
+<div class="arithmatex">\[f^{(4)}(x) = 120x\]</div>
+<p>Notice the pattern: each derivative reduces the power by 1 until eventually we get a constant, then zero. For <span class="arithmatex">\(f(x) = x^5\)</span>:</p>
+<div class="arithmatex">\[f^{(5)}(x) = 120\]</div>
+<div class="arithmatex">\[f^{(6)}(x) = 0\]</div>
+<p>Once we hit zero, all subsequent derivatives remain zero.</p>
+<div class="admonition tip">
+<p class="admonition-title">Key Observation</p>
+<p>For a polynomial of degree <span class="arithmatex">\(n\)</span>, the <span class="arithmatex">\((n+1)\)</span>th derivative and all higher derivatives are zero. The degree decreases by 1 with each differentiation until nothing is left.</p>
+</div>
+<h2 id="notation-for-higher-derivatives">Notation for Higher Derivatives</h2>
+<p>Mathematicians use several notation systems for higher derivatives. You need to recognize all of them since different textbooks and contexts prefer different styles.</p>
+<h3 id="prime-notation-lagrange">Prime Notation (Lagrange)</h3>
+<p>For the second derivative, we use two prime marks:</p>
+<div class="arithmatex">\[f''(x) \quad \text{read as "f double prime of x"}\]</div>
+<p>For the third derivative:</p>
+<div class="arithmatex">\[f'''(x) \quad \text{read as "f triple prime of x"}\]</div>
+<p>Beyond three primes, this gets unwieldy, so we switch to:</p>
+<div class="arithmatex">\[f^{(4)}(x), \quad f^{(5)}(x), \quad f^{(n)}(x)\]</div>
+<p>The parentheses around the number distinguish it from an exponent. <span class="arithmatex">\(f^{(4)}(x)\)</span> is the fourth derivative, not <span class="arithmatex">\(f(x)\)</span> raised to the fourth power.</p>
+<h3 id="leibniz-notation">Leibniz Notation</h3>
+<p>In Leibniz notation, the second derivative of <span class="arithmatex">\(y\)</span> with respect to <span class="arithmatex">\(x\)</span> is written:</p>
+<div class="arithmatex">\[\frac{d^2y}{dx^2} \quad \text{read as "d two y dx squared"}\]</div>
+<p>For higher derivatives:</p>
+<div class="arithmatex">\[\frac{d^3y}{dx^3}, \quad \frac{d^4y}{dx^4}, \quad \frac{d^ny}{dx^n}\]</div>
+<p>The operator form works similarly:</p>
+<div class="arithmatex">\[\frac{d^2}{dx^2}[f(x)] \quad \text{means "take the second derivative of } f(x) \text{"}\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Notation Alert</p>
+<p>In <span class="arithmatex">\(\frac{d^2y}{dx^2}\)</span>, the exponents are positioned differently: the 2 in the numerator is on the <span class="arithmatex">\(d\)</span>, while the 2 in the denominator is on the entire <span class="arithmatex">\(dx\)</span>. This notation evolved from the historical development of calculus and isn't meant to be treated as a fraction in the usual sense.</p>
+</div>
+<h3 id="summary-of-notation">Summary of Notation</h3>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Prime Notation</th>
+<th>Leibniz Notation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First</td>
+<td><span class="arithmatex">\(f'(x)\)</span> or <span class="arithmatex">\(y'\)</span></td>
+<td><span class="arithmatex">\(\frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td>Second</td>
+<td><span class="arithmatex">\(f''(x)\)</span> or <span class="arithmatex">\(y''\)</span></td>
+<td><span class="arithmatex">\(\frac{d^2y}{dx^2}\)</span></td>
+</tr>
+<tr>
+<td>Third</td>
+<td><span class="arithmatex">\(f'''(x)\)</span> or <span class="arithmatex">\(y'''\)</span></td>
+<td><span class="arithmatex">\(\frac{d^3y}{dx^3}\)</span></td>
+</tr>
+<tr>
+<td>Fourth</td>
+<td><span class="arithmatex">\(f^{(4)}(x)\)</span></td>
+<td><span class="arithmatex">\(\frac{d^4y}{dx^4}\)</span></td>
+</tr>
+<tr>
+<td>nth</td>
+<td><span class="arithmatex">\(f^{(n)}(x)\)</span></td>
+<td><span class="arithmatex">\(\frac{d^ny}{dx^n}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="motion-where-physics-meets-calculus">Motion: Where Physics Meets Calculus</h2>
+<p>Now for the fun part! The most natural application of higher-order derivatives is describing motion. When an object moves along a straight line, its position, velocity, and acceleration are all connected by derivatives.</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"My position tells you <em>where</em> I am. My velocity tells you <em>where I'm headed</em>. My acceleration tells you <em>how my journey is changing</em>. They're all connected—each one is the derivative of the one before!"</p>
+</div>
+<h3 id="position-function">Position Function</h3>
+<p>The <strong>position function</strong> <span class="arithmatex">\(s(t)\)</span> (or sometimes <span class="arithmatex">\(x(t)\)</span>) gives the location of an object at time <span class="arithmatex">\(t\)</span>. Position is measured from some reference point, often in meters, feet, or other distance units.</p>
+<h3 id="velocity-from-position">Velocity from Position</h3>
+<p><strong>Velocity</strong> is the rate of change of position with respect to time. It tells us how fast the position is changing and in which direction.</p>
+<div class="arithmatex">\[v(t) = s'(t) = \frac{ds}{dt}\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(v(t)\)</span> is velocity at time <span class="arithmatex">\(t\)</span></li>
+<li><span class="arithmatex">\(s(t)\)</span> is position at time <span class="arithmatex">\(t\)</span></li>
+<li><span class="arithmatex">\(\frac{ds}{dt}\)</span> is the rate of change of position with respect to time</li>
+</ul>
+<p>Velocity can be positive (moving in the positive direction), negative (moving in the negative direction), or zero (momentarily at rest).</p>
+<p><strong>Example:</strong> A particle's position is given by <span class="arithmatex">\(s(t) = t^3 - 6t^2 + 9t + 2\)</span> meters, where <span class="arithmatex">\(t\)</span> is in seconds. Find the velocity at <span class="arithmatex">\(t = 2\)</span> seconds.</p>
+<p>Step 1: Find the velocity function by differentiating position:</p>
+<div class="arithmatex">\[v(t) = s'(t) = 3t^2 - 12t + 9\]</div>
+<p>Step 2: Evaluate at <span class="arithmatex">\(t = 2\)</span>:</p>
+<div class="arithmatex">\[v(2) = 3(2)^2 - 12(2) + 9 = 12 - 24 + 9 = -3 \text{ m/s}\]</div>
+<p>The negative velocity means the particle is moving in the negative direction at <span class="arithmatex">\(t = 2\)</span> seconds.</p>
+<h3 id="acceleration">Acceleration</h3>
+<p><strong>Acceleration</strong> is the rate of change of velocity. It tells us how fast the velocity is changing.</p>
+<div class="arithmatex">\[a(t) = v'(t) = s''(t) = \frac{d^2s}{dt^2}\]</div>
+<p>where:</p>
+<ul>
+<li><span class="arithmatex">\(a(t)\)</span> is acceleration at time <span class="arithmatex">\(t\)</span></li>
+<li><span class="arithmatex">\(v'(t)\)</span> is the derivative of velocity</li>
+<li><span class="arithmatex">\(s''(t)\)</span> is the second derivative of position</li>
+</ul>
+<p>Positive acceleration means velocity is increasing. Negative acceleration means velocity is decreasing (sometimes called deceleration in everyday language, though physicists just call it negative acceleration).</p>
+<p><strong>Continuing our example:</strong> Find the acceleration at <span class="arithmatex">\(t = 2\)</span> seconds.</p>
+<div class="arithmatex">\[a(t) = v'(t) = 6t - 12\]</div>
+<div class="arithmatex">\[a(2) = 6(2) - 12 = 12 - 12 = 0 \text{ m/s}^2\]</div>
+<p>At <span class="arithmatex">\(t = 2\)</span>, the acceleration is zero, meaning the velocity isn't changing at that instant.</p>
+<h3 id="jerk">Jerk</h3>
+<p>The <strong>third derivative of position</strong> is called <strong>jerk</strong>. It measures how quickly acceleration changes.</p>
+<div class="arithmatex">\[j(t) = a'(t) = s'''(t) = \frac{d^3s}{dt^3}\]</div>
+<p>Why do we care about jerk? Because it's what you <em>feel</em>. When you're in a car with constant acceleration, you feel pressed into your seat, but it's smooth. When acceleration suddenly changes (high jerk), you feel a sudden "jerk"—hence the name!</p>
+<p>Engineers designing elevators, roller coasters, and vehicles work hard to minimize jerk because it creates discomfort. A smooth ride has low jerk values.</p>
+<p><strong>Completing our example:</strong> Find the jerk for <span class="arithmatex">\(s(t) = t^3 - 6t^2 + 9t + 2\)</span>.</p>
+<div class="arithmatex">\[j(t) = a'(t) = 6 \text{ m/s}^3\]</div>
+<p>The jerk is constant (6 m/s³) for this motion, meaning the acceleration increases at a steady rate.</p>
+<h4 id="diagram-position-velocity-acceleration-relationship">Diagram: Position-Velocity-Acceleration Relationship</h4>
+<details>
+<summary>Motion Analysis MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Show the relationship between position, velocity, and acceleration for a moving object.</p>
+<p>Learning Objective: Students will connect position, velocity, and acceleration through derivatives (Bloom Level 4: Analyze)</p>
+<p>Bloom Taxonomy Verb: analyze, interpret, connect</p>
+<p>Visual elements:</p>
+<ul>
+<li>Four panels: Position vs time, Velocity vs time, Acceleration vs time, Animation of moving particle</li>
+<li>Animated particle on a number line showing actual motion</li>
+<li>Synchronized time marker across all graphs</li>
+<li>Current values displayed: <span class="arithmatex">\(s(t)\)</span>, <span class="arithmatex">\(v(t)\)</span>, <span class="arithmatex">\(a(t)\)</span></li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Play/Pause animation button</li>
+<li>Time slider for manual control</li>
+<li>Dropdown: Select motion scenario (polynomial, sinusoidal, custom)</li>
+<li>Speed control for animation</li>
+<li>Reset button</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When <span class="arithmatex">\(v &gt; 0\)</span>: particle moves right, velocity graph positive</li>
+<li>When <span class="arithmatex">\(v &lt; 0\)</span>: particle moves left, velocity graph negative</li>
+<li>When <span class="arithmatex">\(a &gt; 0\)</span>: velocity graph increasing</li>
+<li>When <span class="arithmatex">\(a &lt; 0\)</span>: velocity graph decreasing</li>
+<li>Particle trace shows path history</li>
+</ul>
+<p>Instructional Rationale: Seeing the actual motion alongside the mathematical graphs creates powerful connections. Students can pause at any moment and verify that derivatives match the graph behaviors.</p>
+<p>Implementation: p5.js with animated particle and synchronized graphs</p>
+</details>
+<h2 id="the-position-velocity-acceleration-chain">The Position-Velocity-Acceleration Chain</h2>
+<p>Here's the beautiful pattern that connects everything:</p>
+<div class="arithmatex">\[\text{Position} \xrightarrow{\text{differentiate}} \text{Velocity} \xrightarrow{\text{differentiate}} \text{Acceleration} \xrightarrow{\text{differentiate}} \text{Jerk}\]</div>
+<p>Or symbolically:</p>
+<div class="arithmatex">\[s(t) \xrightarrow{d/dt} v(t) \xrightarrow{d/dt} a(t) \xrightarrow{d/dt} j(t)\]</div>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Symbol</th>
+<th>What It Measures</th>
+<th>Units (if position in meters, time in seconds)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Position</td>
+<td><span class="arithmatex">\(s(t)\)</span></td>
+<td>Where the object is</td>
+<td>meters (m)</td>
+</tr>
+<tr>
+<td>Velocity</td>
+<td><span class="arithmatex">\(v(t) = s'(t)\)</span></td>
+<td>How fast position changes</td>
+<td>meters per second (m/s)</td>
+</tr>
+<tr>
+<td>Acceleration</td>
+<td><span class="arithmatex">\(a(t) = s''(t)\)</span></td>
+<td>How fast velocity changes</td>
+<td>meters per second squared (m/s²)</td>
+</tr>
+<tr>
+<td>Jerk</td>
+<td><span class="arithmatex">\(j(t) = s'''(t)\)</span></td>
+<td>How fast acceleration changes</td>
+<td>meters per second cubed (m/s³)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="speed-vs-velocity-an-important-distinction">Speed vs. Velocity: An Important Distinction</h2>
+<p>In everyday language, "speed" and "velocity" are often used interchangeably. In physics and calculus, they mean different things!</p>
+<ul>
+<li><strong>Velocity</strong> <span class="arithmatex">\(v(t)\)</span> is a signed quantity. It can be positive or negative, indicating direction.</li>
+<li><strong>Speed</strong> <span class="arithmatex">\(|v(t)|\)</span> is the absolute value of velocity. It's always non-negative.</li>
+</ul>
+<div class="arithmatex">\[\text{Speed} = |v(t)| = |s'(t)|\]</div>
+<p>Speed tells you how fast you're going without regard to direction. Velocity tells you both how fast AND which way.</p>
+<p><strong>Example:</strong> If <span class="arithmatex">\(v(t) = -15\)</span> m/s:</p>
+<ul>
+<li>Velocity is <span class="arithmatex">\(-15\)</span> m/s (moving in the negative direction)</li>
+<li>Speed is <span class="arithmatex">\(|-15| = 15\)</span> m/s (moving at 15 m/s)</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">When Does Direction Matter?</p>
+<p>For many practical problems, we want to know if an object is moving "forward" or "backward" (positive or negative direction). Velocity gives us this information; speed does not.</p>
+</div>
+<h2 id="direction-of-motion">Direction of Motion</h2>
+<p>The <strong>direction of motion</strong> is determined by the sign of velocity:</p>
+<ul>
+<li>If <span class="arithmatex">\(v(t) &gt; 0\)</span>: Object is moving in the positive direction (usually right or up)</li>
+<li>If <span class="arithmatex">\(v(t) &lt; 0\)</span>: Object is moving in the negative direction (usually left or down)</li>
+<li>If <span class="arithmatex">\(v(t) = 0\)</span>: Object is momentarily at rest (might be changing direction!)</li>
+</ul>
+<p>When velocity equals zero, the object has stopped—at least for that instant. This is often when the object changes direction.</p>
+<p><strong>Example:</strong> For <span class="arithmatex">\(v(t) = t^2 - 4t + 3 = (t-1)(t-3)\)</span>:</p>
+<ul>
+<li><span class="arithmatex">\(v(t) = 0\)</span> when <span class="arithmatex">\(t = 1\)</span> or <span class="arithmatex">\(t = 3\)</span></li>
+<li>For <span class="arithmatex">\(0 &lt; t &lt; 1\)</span>: <span class="arithmatex">\(v(t) &gt; 0\)</span> (moving positive)</li>
+<li>For <span class="arithmatex">\(1 &lt; t &lt; 3\)</span>: <span class="arithmatex">\(v(t) &lt; 0\)</span> (moving negative)</li>
+<li>For <span class="arithmatex">\(t &gt; 3\)</span>: <span class="arithmatex">\(v(t) &gt; 0\)</span> (moving positive again)</li>
+</ul>
+<p>The object changes direction at <span class="arithmatex">\(t = 1\)</span> (from positive to negative) and again at <span class="arithmatex">\(t = 3\)</span> (from negative to positive).</p>
+<h4 id="diagram-direction-and-speed-analyzer">Diagram: Direction and Speed Analyzer</h4>
+<details>
+<summary>Direction of Motion Analyzer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Analyze when an object is moving in the positive vs negative direction and when it changes direction.</p>
+<p>Learning Objective: Students will determine direction of motion from velocity function (Bloom Level 4: Analyze)</p>
+<p>Bloom Taxonomy Verb: analyze, determine, interpret</p>
+<p>Visual elements:</p>
+<ul>
+<li>Number line with animated particle</li>
+<li>Velocity graph with positive region shaded one color, negative another</li>
+<li>Direction arrows appearing on the number line</li>
+<li>Timeline showing intervals of positive/negative motion</li>
+<li>Markers at points where <span class="arithmatex">\(v(t) = 0\)</span></li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Input: Position function or velocity function</li>
+<li>Dropdown: Preset motion scenarios</li>
+<li>Play/Pause for animation</li>
+<li>Toggle: Show velocity sign regions</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Particle moves right when velocity is positive</li>
+<li>Particle moves left when velocity is negative</li>
+<li>Particle stops momentarily when velocity is zero</li>
+<li>Clear visual indication of direction changes</li>
+</ul>
+<p>Instructional Rationale: Connecting the sign of velocity to physical direction of motion helps students understand why velocity is a signed quantity.</p>
+<p>Implementation: p5.js with animated particle</p>
+</details>
+<h2 id="speeding-up-vs-slowing-down">Speeding Up vs. Slowing Down</h2>
+<p>Here's where things get interesting! An object is:</p>
+<ul>
+<li><strong>Speeding up</strong> when velocity and acceleration have the <strong>same sign</strong></li>
+<li><strong>Slowing down</strong> when velocity and acceleration have <strong>opposite signs</strong></li>
+</ul>
+<p>This makes sense if you think about it:</p>
+<ul>
+<li>If you're moving right (<span class="arithmatex">\(v &gt; 0\)</span>) and accelerating right (<span class="arithmatex">\(a &gt; 0\)</span>), you speed up.</li>
+<li>If you're moving right (<span class="arithmatex">\(v &gt; 0\)</span>) but accelerating left (<span class="arithmatex">\(a &lt; 0\)</span>), you slow down.</li>
+<li>If you're moving left (<span class="arithmatex">\(v &lt; 0\)</span>) and accelerating left (<span class="arithmatex">\(a &lt; 0\)</span>), you speed up (in the negative direction).</li>
+<li>If you're moving left (<span class="arithmatex">\(v &lt; 0\)</span>) but accelerating right (<span class="arithmatex">\(a &gt; 0\)</span>), you slow down.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Velocity Sign</th>
+<th>Acceleration Sign</th>
+<th>Speed Is...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Positive</td>
+<td>Positive</td>
+<td>Increasing (speeding up)</td>
+</tr>
+<tr>
+<td>Positive</td>
+<td>Negative</td>
+<td>Decreasing (slowing down)</td>
+</tr>
+<tr>
+<td>Negative</td>
+<td>Positive</td>
+<td>Decreasing (slowing down)</td>
+</tr>
+<tr>
+<td>Negative</td>
+<td>Negative</td>
+<td>Increasing (speeding up)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"If I'm rolling forward and my acceleration pushes me forward too, I go faster. But if acceleration pushes against my motion, I slow down. It's all about whether velocity and acceleration are working together or fighting each other!"</p>
+</div>
+<p><strong>Example:</strong> A particle moves along a line with position <span class="arithmatex">\(s(t) = t^3 - 9t^2 + 24t\)</span> for <span class="arithmatex">\(t \geq 0\)</span>. When is the particle speeding up?</p>
+<p>Step 1: Find velocity and acceleration.</p>
+<div class="arithmatex">\[v(t) = s'(t) = 3t^2 - 18t + 24 = 3(t^2 - 6t + 8) = 3(t-2)(t-4)\]</div>
+<div class="arithmatex">\[a(t) = v'(t) = 6t - 18 = 6(t-3)\]</div>
+<p>Step 2: Find where each equals zero.</p>
+<ul>
+<li><span class="arithmatex">\(v(t) = 0\)</span> when <span class="arithmatex">\(t = 2\)</span> or <span class="arithmatex">\(t = 4\)</span></li>
+<li><span class="arithmatex">\(a(t) = 0\)</span> when <span class="arithmatex">\(t = 3\)</span></li>
+</ul>
+<p>Step 3: Create a sign chart.</p>
+<table>
+<thead>
+<tr>
+<th>Interval</th>
+<th><span class="arithmatex">\(v(t)\)</span> sign</th>
+<th><span class="arithmatex">\(a(t)\)</span> sign</th>
+<th>Same/Opposite</th>
+<th>Speeding up?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(0 &lt; t &lt; 2\)</span></td>
+<td>+</td>
+<td>-</td>
+<td>Opposite</td>
+<td>Slowing down</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(2 &lt; t &lt; 3\)</span></td>
+<td>-</td>
+<td>-</td>
+<td>Same</td>
+<td>Speeding up</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(3 &lt; t &lt; 4\)</span></td>
+<td>-</td>
+<td>+</td>
+<td>Opposite</td>
+<td>Slowing down</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(t &gt; 4\)</span></td>
+<td>+</td>
+<td>+</td>
+<td>Same</td>
+<td>Speeding up</td>
+</tr>
+</tbody>
+</table>
+<p>The particle is speeding up on the intervals <span class="arithmatex">\((2, 3)\)</span> and <span class="arithmatex">\((4, \infty)\)</span>.</p>
+<h4 id="diagram-speeding-upslowing-down-analyzer">Diagram: Speeding Up/Slowing Down Analyzer</h4>
+<details>
+<summary>Speed Change Analyzer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Visualize when an object is speeding up vs slowing down based on velocity and acceleration signs.</p>
+<p>Learning Objective: Students will determine when an object speeds up or slows down (Bloom Level 4: Analyze)</p>
+<p>Bloom Taxonomy Verb: analyze, determine, evaluate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Three graphs: position, velocity, acceleration</li>
+<li>Color-coded regions: green when speeding up, red when slowing down</li>
+<li>Animated particle with speed indicator (size or color intensity)</li>
+<li>Sign comparison display showing <span class="arithmatex">\(v\)</span> and <span class="arithmatex">\(a\)</span> signs</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Slider: Time control</li>
+<li>Play/Pause animation</li>
+<li>Dropdown: Select position function</li>
+<li>Toggle: Show sign comparison table</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>When <span class="arithmatex">\(v\)</span> and <span class="arithmatex">\(a\)</span> same sign: particle speeds up, indicator grows</li>
+<li>When <span class="arithmatex">\(v\)</span> and <span class="arithmatex">\(a\)</span> opposite sign: particle slows down, indicator shrinks</li>
+<li>Clear visual feedback on the relationship</li>
+</ul>
+<p>Instructional Rationale: The sign comparison table alongside the animated motion helps students internalize the speeding up/slowing down rule.</p>
+<p>Implementation: p5.js with color-coded indicators</p>
+</details>
+<h2 id="higher-derivatives-of-trigonometric-functions">Higher Derivatives of Trigonometric Functions</h2>
+<p>Trigonometric functions have beautiful patterns when differentiated repeatedly. Let's explore these patterns.</p>
+<h3 id="derivatives-of-sine">Derivatives of Sine</h3>
+<p>Starting with <span class="arithmatex">\(f(x) = \sin(x)\)</span>:</p>
+<div class="arithmatex">\[f(x) = \sin(x)$$
+$$f'(x) = \cos(x)$$
+$$f''(x) = -\sin(x)$$
+$$f'''(x) = -\cos(x)$$
+$$f^{(4)}(x) = \sin(x)\]</div>
+<p>After four derivatives, we're back to <span class="arithmatex">\(\sin(x)\)</span>! The pattern cycles with period 4:</p>
+<div class="arithmatex">\[\sin(x) \rightarrow \cos(x) \rightarrow -\sin(x) \rightarrow -\cos(x) \rightarrow \sin(x) \rightarrow \cdots\]</div>
+<h3 id="derivatives-of-cosine">Derivatives of Cosine</h3>
+<p>For <span class="arithmatex">\(g(x) = \cos(x)\)</span>:</p>
+<div class="arithmatex">\[g(x) = \cos(x)$$
+$$g'(x) = -\sin(x)$$
+$$g''(x) = -\cos(x)$$
+$$g'''(x) = \sin(x)$$
+$$g^{(4)}(x) = \cos(x)\]</div>
+<p>Again, the pattern repeats every 4 derivatives.</p>
+<h3 id="finding-the-nth-derivative">Finding the nth Derivative</h3>
+<p>Because of this cycling, we can find any derivative of sine or cosine by looking at the remainder when <span class="arithmatex">\(n\)</span> is divided by 4.</p>
+<p>For <span class="arithmatex">\(\frac{d^n}{dx^n}[\sin(x)]\)</span>, compute <span class="arithmatex">\(n \mod 4\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(n \mod 4\)</span></th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td><span class="arithmatex">\(\sin(x)\)</span></td>
+</tr>
+<tr>
+<td>1</td>
+<td><span class="arithmatex">\(\cos(x)\)</span></td>
+</tr>
+<tr>
+<td>2</td>
+<td><span class="arithmatex">\(-\sin(x)\)</span></td>
+</tr>
+<tr>
+<td>3</td>
+<td><span class="arithmatex">\(-\cos(x)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong> Find <span class="arithmatex">\(\frac{d^{43}}{dx^{43}}[\sin(x)]\)</span>.</p>
+<p>Since <span class="arithmatex">\(43 = 4 \times 10 + 3\)</span>, we have <span class="arithmatex">\(43 \mod 4 = 3\)</span>.</p>
+<p>Therefore, <span class="arithmatex">\(\frac{d^{43}}{dx^{43}}[\sin(x)] = -\cos(x)\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Why This Pattern?</p>
+<p>The cycling happens because <span class="arithmatex">\(\frac{d}{dx}[\sin x] = \cos x\)</span> and <span class="arithmatex">\(\frac{d}{dx}[\cos x] = -\sin x\)</span>. After four steps, the two negative signs cancel out, bringing us back to the start.</p>
+</div>
+<h3 id="exponential-functions-stay-the-same">Exponential Functions Stay the Same</h3>
+<p>As a contrast, recall that <span class="arithmatex">\(\frac{d}{dx}[e^x] = e^x\)</span>. So all higher derivatives of <span class="arithmatex">\(e^x\)</span> are also <span class="arithmatex">\(e^x\)</span>:</p>
+<div class="arithmatex">\[\frac{d^n}{dx^n}[e^x] = e^x \quad \text{for all } n \geq 1\]</div>
+<p>This makes <span class="arithmatex">\(e^x\)</span> unique—it's the only function (up to constant multiples) that equals its own derivative!</p>
+<h2 id="worked-examples-complete-motion-analysis">Worked Examples: Complete Motion Analysis</h2>
+<p>Let's put everything together with a complete motion analysis problem.</p>
+<p><strong>Problem:</strong> A particle moves along a horizontal line with position function <span class="arithmatex">\(s(t) = 2t^3 - 15t^2 + 24t + 5\)</span> for <span class="arithmatex">\(t \geq 0\)</span>, where <span class="arithmatex">\(s\)</span> is in feet and <span class="arithmatex">\(t\)</span> is in seconds.</p>
+<p>Find:
+(a) The velocity and acceleration functions
+(b) When the particle is at rest
+(c) When the particle changes direction
+(d) When the particle is speeding up
+(e) The total distance traveled in the first 5 seconds</p>
+<p><strong>Solution:</strong></p>
+<p><strong>(a) Velocity and acceleration:</strong></p>
+<div class="arithmatex">\[v(t) = s'(t) = 6t^2 - 30t + 24 = 6(t^2 - 5t + 4) = 6(t-1)(t-4)\]</div>
+<div class="arithmatex">\[a(t) = v'(t) = 12t - 30 = 6(2t - 5)\]</div>
+<p><strong>(b) When is the particle at rest?</strong></p>
+<p>Set <span class="arithmatex">\(v(t) = 0\)</span>:</p>
+<div class="arithmatex">\[6(t-1)(t-4) = 0\]</div>
+<div class="arithmatex">\[t = 1 \text{ or } t = 4 \text{ seconds}\]</div>
+<p><strong>(c) When does the particle change direction?</strong></p>
+<p>The particle changes direction when velocity changes sign. Check the sign of <span class="arithmatex">\(v(t)\)</span> in each interval:</p>
+<ul>
+<li>For <span class="arithmatex">\(0 &lt; t &lt; 1\)</span>: <span class="arithmatex">\(v(t) &gt; 0\)</span> (moving right)</li>
+<li>For <span class="arithmatex">\(1 &lt; t &lt; 4\)</span>: <span class="arithmatex">\(v(t) &lt; 0\)</span> (moving left)</li>
+<li>For <span class="arithmatex">\(t &gt; 4\)</span>: <span class="arithmatex">\(v(t) &gt; 0\)</span> (moving right)</li>
+</ul>
+<p>The particle changes direction at <span class="arithmatex">\(t = 1\)</span> and <span class="arithmatex">\(t = 4\)</span> seconds.</p>
+<p><strong>(d) When is the particle speeding up?</strong></p>
+<p>Find where <span class="arithmatex">\(a(t) = 0\)</span>: <span class="arithmatex">\(6(2t - 5) = 0 \Rightarrow t = 2.5\)</span></p>
+<p>Create a sign chart:</p>
+<table>
+<thead>
+<tr>
+<th>Interval</th>
+<th><span class="arithmatex">\(v(t)\)</span></th>
+<th><span class="arithmatex">\(a(t)\)</span></th>
+<th>Speeding up?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\((0, 1)\)</span></td>
+<td>+</td>
+<td>-</td>
+<td>No (slowing)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((1, 2.5)\)</span></td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((2.5, 4)\)</span></td>
+<td>-</td>
+<td>+</td>
+<td>No (slowing)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((4, \infty)\)</span></td>
+<td>+</td>
+<td>+</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The particle speeds up on <span class="arithmatex">\((1, 2.5) \cup (4, \infty)\)</span>.</strong></p>
+<p><strong>(e) Total distance in first 5 seconds:</strong></p>
+<p>Since direction changes at <span class="arithmatex">\(t = 1\)</span> and <span class="arithmatex">\(t = 4\)</span>, we calculate displacement in each segment and take absolute values:</p>
+<div class="arithmatex">\[s(0) = 5$$
+$$s(1) = 2(1) - 15(1) + 24(1) + 5 = 2 - 15 + 24 + 5 = 16$$
+$$s(4) = 2(64) - 15(16) + 24(4) + 5 = 128 - 240 + 96 + 5 = -11$$
+$$s(5) = 2(125) - 15(25) + 24(5) + 5 = 250 - 375 + 120 + 5 = 0\]</div>
+<p>Distance traveled:</p>
+<div class="arithmatex">\[|s(1) - s(0)| + |s(4) - s(1)| + |s(5) - s(4)|$$
+$$= |16 - 5| + |-11 - 16| + |0 - (-11)|$$
+$$= 11 + 27 + 11 = 49 \text{ feet}\]</div>
+<div class="admonition note">
+<p class="admonition-title">Distance vs. Displacement</p>
+<p><strong>Displacement</strong> from <span class="arithmatex">\(t = 0\)</span> to <span class="arithmatex">\(t = 5\)</span> is <span class="arithmatex">\(s(5) - s(0) = 0 - 5 = -5\)</span> feet.
+<strong>Total distance traveled</strong> is 49 feet (sum of absolute displacements).
+The particle ended up only 5 feet from where it started, but it traveled much farther!</p>
+</div>
+<h2 id="practical-applications">Practical Applications</h2>
+<p>Higher-order derivatives appear throughout physics and engineering:</p>
+<ul>
+<li>
+<p><strong>Free Fall:</strong> Position is <span class="arithmatex">\(s(t) = -\frac{1}{2}gt^2 + v_0t + s_0\)</span>, velocity is <span class="arithmatex">\(v(t) = -gt + v_0\)</span>, acceleration is <span class="arithmatex">\(a(t) = -g\)</span> (constant).</p>
+</li>
+<li>
+<p><strong>Simple Harmonic Motion:</strong> Position is <span class="arithmatex">\(s(t) = A\cos(\omega t)\)</span>. Velocity is <span class="arithmatex">\(v(t) = -A\omega\sin(\omega t)\)</span>. Acceleration is <span class="arithmatex">\(a(t) = -A\omega^2\cos(\omega t) = -\omega^2 s(t)\)</span>. The acceleration is proportional to position!</p>
+</li>
+<li>
+<p><strong>Projectile Motion:</strong> Second derivatives tell us about gravitational acceleration.</p>
+</li>
+<li>
+<p><strong>Economics:</strong> The first derivative of a cost function is marginal cost. The second derivative tells us if marginal cost is increasing or decreasing.</p>
+</li>
+</ul>
+<h2 id="summary-the-derivative-tower">Summary: The Derivative Tower</h2>
+<p>Let's visualize the complete picture:</p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Function</th>
+<th>Physical Meaning</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base</td>
+<td><span class="arithmatex">\(s(t)\)</span></td>
+<td>Position</td>
+<td>m</td>
+</tr>
+<tr>
+<td>1st derivative</td>
+<td><span class="arithmatex">\(s'(t) = v(t)\)</span></td>
+<td>Velocity</td>
+<td>m/s</td>
+</tr>
+<tr>
+<td>2nd derivative</td>
+<td><span class="arithmatex">\(s''(t) = a(t)\)</span></td>
+<td>Acceleration</td>
+<td>m/s²</td>
+</tr>
+<tr>
+<td>3rd derivative</td>
+<td><span class="arithmatex">\(s'''(t) = j(t)\)</span></td>
+<td>Jerk</td>
+<td>m/s³</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>
+<p><strong>Higher-order derivatives</strong> are found by differentiating repeatedly. The second derivative is the derivative of the first derivative.</p>
+</li>
+<li>
+<p><strong>Notation:</strong> Prime notation uses <span class="arithmatex">\(f'\)</span>, <span class="arithmatex">\(f''\)</span>, <span class="arithmatex">\(f'''\)</span>, <span class="arithmatex">\(f^{(n)}\)</span>. Leibniz notation uses <span class="arithmatex">\(\frac{dy}{dx}\)</span>, <span class="arithmatex">\(\frac{d^2y}{dx^2}\)</span>, etc.</p>
+</li>
+<li>
+<p><strong>Velocity</strong> is the first derivative of position: <span class="arithmatex">\(v(t) = s'(t)\)</span></p>
+</li>
+<li>
+<p><strong>Acceleration</strong> is the second derivative of position: <span class="arithmatex">\(a(t) = s''(t) = v'(t)\)</span></p>
+</li>
+<li>
+<p><strong>Jerk</strong> is the third derivative of position: <span class="arithmatex">\(j(t) = s'''(t)\)</span></p>
+</li>
+<li>
+<p><strong>Speed</strong> is the absolute value of velocity: <span class="arithmatex">\(|v(t)|\)</span></p>
+</li>
+<li>
+<p><strong>Direction of motion</strong> is determined by the sign of velocity</p>
+</li>
+<li>
+<p>An object is <strong>speeding up</strong> when <span class="arithmatex">\(v\)</span> and <span class="arithmatex">\(a\)</span> have the same sign, and <strong>slowing down</strong> when they have opposite signs</p>
+</li>
+<li>
+<p><strong>Trigonometric derivatives</strong> cycle with period 4: <span class="arithmatex">\(\sin \to \cos \to -\sin \to -\cos \to \sin\)</span></p>
+</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: A ball is thrown upward with position <span class="arithmatex">\(s(t) = -16t^2 + 48t + 4\)</span> feet. When is the ball speeding up?</summary>
+<p>Step 1: Find velocity and acceleration.</p>
+<p><span class="arithmatex">\(v(t) = -32t + 48\)</span>
+<span class="arithmatex">\(a(t) = -32\)</span> (constant negative—gravity!)</p>
+<p>Step 2: Find when velocity is zero.</p>
+<p><span class="arithmatex">\(-32t + 48 = 0 \Rightarrow t = 1.5\)</span> seconds</p>
+<p>Step 3: Analyze signs.</p>
+<ul>
+<li>For <span class="arithmatex">\(0 &lt; t &lt; 1.5\)</span>: <span class="arithmatex">\(v(t) &gt; 0\)</span> and <span class="arithmatex">\(a(t) &lt; 0\)</span> → opposite signs → slowing down</li>
+<li>For <span class="arithmatex">\(t &gt; 1.5\)</span>: <span class="arithmatex">\(v(t) &lt; 0\)</span> and <span class="arithmatex">\(a(t) &lt; 0\)</span> → same signs → speeding up</li>
+</ul>
+<p><strong>Answer:</strong> The ball is speeding up for <span class="arithmatex">\(t &gt; 1.5\)</span> seconds (after it reaches the peak and starts falling back down).</p>
+<p>This makes physical sense: on the way up, gravity slows the ball. After the peak, gravity speeds the ball up as it falls.</p>
+</details>
 
 
 
 
 
 
+
+  
+  
 
 
 

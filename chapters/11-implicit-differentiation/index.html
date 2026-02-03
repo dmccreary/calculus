@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+        <meta name="description" content="Finding derivatives when y cannot be easily solved for as an explicit function of x">
       
       
         <meta name="author" content="Dan McCreary">
@@ -26,7 +26,7 @@
     
     
       
-        <title>11. Implicit Differentiation - Calculus</title>
+        <title>Implicit Differentiation - Calculus</title>
       
     
     
@@ -59,6 +59,32 @@
       
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Implicit Differentiation - Calculus" >
+      
+        <meta  property="og:description"  content="Finding derivatives when y cannot be easily solved for as an explicit function of x" >
+      
+        <meta  property="og:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/11-implicit-differentiation/index.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://dmccreary.github.io/calculus/chapters/11-implicit-differentiation/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Implicit Differentiation - Calculus" >
+      
+        <meta  name="twitter:description"  content="Finding derivatives when y cannot be easily solved for as an explicit function of x" >
+      
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/calculus/assets/images/social/chapters/11-implicit-differentiation/index.png" >
+      
     
     
   </head>
@@ -113,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              11. Implicit Differentiation
+              Implicit Differentiation
             
           </span>
         </div>
@@ -713,6 +739,453 @@
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-when-y-plays-hide-and-seek" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: When y Plays Hide and Seek
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-functions-and-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit Functions and Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Functions and Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicit-vs-implicit-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit vs. Implicit Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-implicit-equations-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Implicit Equations Matter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Implicit Equations Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-implicit-curve-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Implicit Curve Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-idea-treating-y-as-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Big Idea: Treating y as a Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-implicit-chain-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Implicit Chain Rule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-differentiation-the-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit Differentiation: The Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Differentiation: The Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-the-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: The Circle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-a-cubic-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: A Cubic Curve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-exponential-and-logarithmic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Exponential and Logarithmic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3: Exponential and Logarithmic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-implicit-differentiation-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Implicit Differentiation Step-by-Step
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-for-dydx-algebraic-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solving for dy/dx: Algebraic Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solving for dy/dx: Algebraic Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-dydx-appears-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 1: dy/dx Appears Once
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-dydx-appears-multiple-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 2: dy/dx Appears Multiple Times
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-nested-inside-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 3: Nested Inside a Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-tangent-lines-to-implicit-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Tangent Lines to Implicit Curves
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Tangent Lines to Implicit Curves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-tangent-to-a-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Tangent to a Circle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-tangent-to-a-folium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Tangent to a Folium
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Tangent to a Folium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-tangent-line-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Tangent Line Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-derivatives-implicitly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Second Derivatives Implicitly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Derivatives Implicitly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-second-derivative-of-a-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Second Derivative of a Circle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-inverse-function-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Inverse Function Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Inverse Function Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motivation-whats-the-derivative-of-an-inverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motivation: What's the Derivative of an Inverse?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-formula-geometrically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Formula Geometrically
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Formula Geometrically">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-function-derivative-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Function Derivative Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivatives-of-inverse-functions-the-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Inverse Functions: The Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivatives of Inverse Functions: The Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-derivative-of-square-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Derivative of Square Root
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-derivative-of-natural-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Derivative of Natural Log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-a-specific-inverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: A Specific Inverse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-derivatives-of-inverse-trig-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application: Derivatives of Inverse Trig Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application: Derivatives of Inverse Trig Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arcsin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arcsin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arctan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arctan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-inverse-trig-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Inverse Trig Derivatives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-implicit-differentiation-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Implicit Differentiation Toolkit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary: Implicit Differentiation Toolkit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-implicit-differentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Implicit Differentiation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
     </span>
   </a>
   
@@ -1373,6 +1846,453 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#introduction-when-y-plays-hide-and-seek" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction: When y Plays Hide and Seek
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-functions-and-equations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit Functions and Equations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Functions and Equations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#explicit-vs-implicit-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit vs. Implicit Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-implicit-equations-matter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Implicit Equations Matter
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why Implicit Equations Matter">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-implicit-curve-gallery" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Implicit Curve Gallery
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-idea-treating-y-as-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Big Idea: Treating y as a Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-implicit-chain-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Implicit Chain Rule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implicit-differentiation-the-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implicit Differentiation: The Method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implicit Differentiation: The Method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-the-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: The Circle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-a-cubic-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: A Cubic Curve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-exponential-and-logarithmic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Exponential and Logarithmic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example 3: Exponential and Logarithmic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-implicit-differentiation-step-by-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Implicit Differentiation Step-by-Step
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-for-dydx-algebraic-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Solving for dy/dx: Algebraic Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solving for dy/dx: Algebraic Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pattern-1-dydx-appears-once" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 1: dy/dx Appears Once
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-2-dydx-appears-multiple-times" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 2: dy/dx Appears Multiple Times
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pattern-3-nested-inside-a-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pattern 3: Nested Inside a Function
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-tangent-lines-to-implicit-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Tangent Lines to Implicit Curves
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Tangent Lines to Implicit Curves">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-tangent-to-a-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Tangent to a Circle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-tangent-to-a-folium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Tangent to a Folium
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example: Tangent to a Folium">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-tangent-line-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Tangent Line Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-derivatives-implicitly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Second Derivatives Implicitly
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Second Derivatives Implicitly">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-second-derivative-of-a-circle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example: Second Derivative of a Circle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-inverse-function-theorem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Inverse Function Theorem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Inverse Function Theorem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#motivation-whats-the-derivative-of-an-inverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motivation: What's the Derivative of an Inverse?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-formula-geometrically" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Formula Geometrically
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Formula Geometrically">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-inverse-function-derivative-visualizer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Inverse Function Derivative Visualizer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivatives-of-inverse-functions-the-formula" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivatives of Inverse Functions: The Formula
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivatives of Inverse Functions: The Formula">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-1-derivative-of-square-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Derivative of Square Root
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-2-derivative-of-natural-log" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Derivative of Natural Log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-3-a-specific-inverse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: A Specific Inverse
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-derivatives-of-inverse-trig-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application: Derivatives of Inverse Trig Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Application: Derivatives of Inverse Trig Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arcsin" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arcsin
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derivative-of-arctan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derivative of Arctan
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#summary-inverse-trig-derivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Inverse Trig Derivatives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Mistakes to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practice Problems
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-implicit-differentiation-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary: Implicit Differentiation Toolkit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Summary: Implicit Differentiation Toolkit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-formulas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Formulas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-to-use-implicit-differentiation" class="md-nav__link">
+    <span class="md-ellipsis">
+      When to Use Implicit Differentiation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1423,13 +2343,677 @@
 <li><a href="../10-chain-rule/">Chapter 10: The Chain Rule</a></li>
 </ul>
 <hr />
-<p>TODO: Generate Chapter Content</p>
+<h2 id="introduction-when-y-plays-hide-and-seek">Introduction: When y Plays Hide and Seek</h2>
+<p>So far, we've differentiated functions where <span class="arithmatex">\(y\)</span> is explicitly written in terms of <span class="arithmatex">\(x\)</span>—formulas like <span class="arithmatex">\(y = x^2\)</span>, <span class="arithmatex">\(y = \sin(x)\)</span>, or <span class="arithmatex">\(y = e^{2x}\)</span>. These are called <strong>explicit functions</strong> because <span class="arithmatex">\(y\)</span> is isolated on one side, explicitly telling us its value for any <span class="arithmatex">\(x\)</span>.</p>
+<p>But what happens when <span class="arithmatex">\(y\)</span> refuses to be isolated? Consider the equation of a circle:</p>
+<div class="arithmatex">\[x^2 + y^2 = 25\]</div>
+<p>Try solving for <span class="arithmatex">\(y\)</span>, and you get <span class="arithmatex">\(y = \pm\sqrt{25 - x^2}\)</span>—that pesky <span class="arithmatex">\(\pm\)</span> means this isn't even a function in the traditional sense! Yet the circle clearly has tangent lines at every point. How do we find their slopes?</p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"Sometimes I can't see the whole path ahead, but I can still feel the slope under my wheels! Even when the equation looks tangled, I know there's a tilt at every point."</p>
+</div>
+<p>This is where <strong>implicit differentiation</strong> comes to the rescue. It's a powerful technique that lets us find <span class="arithmatex">\(\frac{dy}{dx}\)</span> even when <span class="arithmatex">\(y\)</span> can't be (or doesn't need to be) explicitly solved for in terms of <span class="arithmatex">\(x\)</span>.</p>
+<h2 id="implicit-functions-and-equations">Implicit Functions and Equations</h2>
+<p>Let's establish some vocabulary before diving in.</p>
+<h3 id="explicit-vs-implicit-functions">Explicit vs. Implicit Functions</h3>
+<p>An <strong>explicit function</strong> is one where <span class="arithmatex">\(y\)</span> is expressed directly in terms of <span class="arithmatex">\(x\)</span>:</p>
+<table>
+<thead>
+<tr>
+<th>Explicit Function</th>
+<th>Form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(y = x^3 - 4x\)</span></td>
+<td><span class="arithmatex">\(y\)</span> alone on the left</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(y = \ln(x + 1)\)</span></td>
+<td>Direct formula for <span class="arithmatex">\(y\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(x) = e^{2x}\sin(x)\)</span></td>
+<td>Function notation</td>
+</tr>
+</tbody>
+</table>
+<p>An <strong>implicit function</strong> is defined by an equation relating <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span>, where <span class="arithmatex">\(y\)</span> isn't isolated:</p>
+<table>
+<thead>
+<tr>
+<th>Implicit Equation</th>
+<th>Why It's Implicit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x^2 + y^2 = 25\)</span></td>
+<td>Can't solve cleanly for <span class="arithmatex">\(y\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(x^3 + y^3 = 6xy\)</span></td>
+<td><span class="arithmatex">\(y\)</span> appears in multiple terms</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sin(xy) = x + y\)</span></td>
+<td><span class="arithmatex">\(y\)</span> is inside a function</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(e^y + y = x\)</span></td>
+<td>Can't isolate <span class="arithmatex">\(y\)</span> algebraically</td>
+</tr>
+</tbody>
+</table>
+<p>The term "implicit" means the relationship between <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> is <em>implied</em> by the equation rather than stated directly.</p>
+<h3 id="why-implicit-equations-matter">Why Implicit Equations Matter</h3>
+<p>Implicit equations describe many important curves:</p>
+<ul>
+<li><strong>Circles:</strong> <span class="arithmatex">\(x^2 + y^2 = r^2\)</span></li>
+<li><strong>Ellipses:</strong> <span class="arithmatex">\(\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\)</span></li>
+<li><strong>Hyperbolas:</strong> <span class="arithmatex">\(\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1\)</span></li>
+<li><strong>Cardioids, lemniscates, and other exotic curves</strong></li>
+</ul>
+<p>These shapes appear everywhere—in physics, engineering, economics, and nature. We need to analyze them without requiring an explicit formula for <span class="arithmatex">\(y\)</span>.</p>
+<h4 id="diagram-implicit-curve-gallery">Diagram: Implicit Curve Gallery</h4>
+<iframe src="../../sims/implicit-curves/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Implicit Curve Gallery MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Display various curves defined by implicit equations and allow students to explore how tangent lines behave at different points.</p>
+<p>Learning Objective: Students will recognize that implicit equations define curves where tangent lines exist even when y cannot be explicitly solved for x (Bloom Level 2: Understand)</p>
+<p>Bloom Taxonomy Verb: identify, describe, recognize</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate grid with multiple implicit curves displayed</li>
+<li>Curves include: circle, ellipse, hyperbola, folium of Descartes, lemniscate</li>
+<li>Movable point that follows the selected curve</li>
+<li>Tangent line displayed at the current point</li>
+<li>Equation of the curve shown in the corner</li>
+<li>dy/dx value displayed at current point</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown to select curve type</li>
+<li>Click/drag to move point along curve</li>
+<li>Checkbox to show/hide tangent line</li>
+<li>Slider to adjust curve parameters (radius, eccentricity, etc.)</li>
+<li>"Random Point" button</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Point snaps to curve when dragged</li>
+<li>Tangent line updates in real-time</li>
+<li>dy/dx value updates as point moves</li>
+<li>Shows that tangent exists even at points where y isn't a function of x</li>
+</ul>
+<p>Instructional Rationale: Seeing tangent lines on implicit curves builds intuition that derivatives exist even without explicit formulas.</p>
+<p>Implementation: p5.js with implicit curve plotting using marching squares algorithm</p>
+</details>
+<h2 id="the-big-idea-treating-y-as-a-function">The Big Idea: Treating y as a Function</h2>
+<p>Here's the key insight behind implicit differentiation:</p>
+<div class="admonition tip">
+<p class="admonition-title">The Core Principle</p>
+<p>Even if we can't solve for <span class="arithmatex">\(y\)</span> explicitly, we <strong>assume</strong> <span class="arithmatex">\(y\)</span> is some function of <span class="arithmatex">\(x\)</span> and differentiate accordingly.</p>
+</div>
+<p>When we write <span class="arithmatex">\(y\)</span>, we're thinking of it as <span class="arithmatex">\(y(x)\)</span>—a function whose formula we might not know, but which still follows the rules of calculus.</p>
+<p>This means whenever we differentiate a term containing <span class="arithmatex">\(y\)</span>, we must use the <strong>chain rule</strong>. The variable <span class="arithmatex">\(y\)</span> is the "inside function," and <span class="arithmatex">\(x\)</span> is the ultimate variable.</p>
+<div class="arithmatex">\[\frac{d}{dx}[y] = \frac{dy}{dx}\]</div>
+<div class="arithmatex">\[\frac{d}{dx}[y^2] = 2y \cdot \frac{dy}{dx}\]</div>
+<div class="arithmatex">\[\frac{d}{dx}[y^3] = 3y^2 \cdot \frac{dy}{dx}\]</div>
+<div class="arithmatex">\[\frac{d}{dx}[\sin(y)] = \cos(y) \cdot \frac{dy}{dx}\]</div>
+<p>Notice the pattern: differentiate with respect to <span class="arithmatex">\(y\)</span>, then multiply by <span class="arithmatex">\(\frac{dy}{dx}\)</span>.</p>
+<h2 id="the-implicit-chain-rule">The Implicit Chain Rule</h2>
+<p>This is the chain rule applied when <span class="arithmatex">\(y\)</span> is the inside function.</p>
+<div class="admonition tip">
+<p class="admonition-title">Implicit Chain Rule</p>
+<p>If <span class="arithmatex">\(y = y(x)\)</span> is a function of <span class="arithmatex">\(x\)</span>, then for any expression <span class="arithmatex">\(f(y)\)</span>:</p>
+<div class="arithmatex">\[\frac{d}{dx}[f(y)] = f'(y) \cdot \frac{dy}{dx}\]</div>
+</div>
+<p>Let's build a reference table:</p>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Derivative with Respect to <span class="arithmatex">\(x\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(y\)</span></td>
+<td><span class="arithmatex">\(\frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(y^n\)</span></td>
+<td><span class="arithmatex">\(ny^{n-1} \cdot \frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(e^y\)</span></td>
+<td><span class="arithmatex">\(e^y \cdot \frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\ln(y)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{y} \cdot \frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sin(y)\)</span></td>
+<td><span class="arithmatex">\(\cos(y) \cdot \frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\cos(y)\)</span></td>
+<td><span class="arithmatex">\(-\sin(y) \cdot \frac{dy}{dx}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>But what about mixed terms like <span class="arithmatex">\(xy\)</span>? Use the product rule:</p>
+<div class="arithmatex">\[\frac{d}{dx}[xy] = \frac{d}{dx}[x] \cdot y + x \cdot \frac{d}{dx}[y] = 1 \cdot y + x \cdot \frac{dy}{dx} = y + x\frac{dy}{dx}\]</div>
+<h2 id="implicit-differentiation-the-method">Implicit Differentiation: The Method</h2>
+<p>Here's the step-by-step process:</p>
+<p><strong>Step 1:</strong> Start with the implicit equation.</p>
+<p><strong>Step 2:</strong> Differentiate both sides with respect to <span class="arithmatex">\(x\)</span>.</p>
+<ul>
+<li>Treat <span class="arithmatex">\(y\)</span> as a function of <span class="arithmatex">\(x\)</span></li>
+<li>Use the chain rule on every <span class="arithmatex">\(y\)</span> term (multiply by <span class="arithmatex">\(\frac{dy}{dx}\)</span>)</li>
+<li>Use product rule for terms like <span class="arithmatex">\(xy\)</span></li>
+</ul>
+<p><strong>Step 3:</strong> Collect all terms containing <span class="arithmatex">\(\frac{dy}{dx}\)</span> on one side.</p>
+<p><strong>Step 4:</strong> Factor out <span class="arithmatex">\(\frac{dy}{dx}\)</span>.</p>
+<p><strong>Step 5:</strong> Solve for <span class="arithmatex">\(\frac{dy}{dx}\)</span>.</p>
+<h3 id="example-1-the-circle">Example 1: The Circle</h3>
+<p>Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> for <span class="arithmatex">\(x^2 + y^2 = 25\)</span>.</p>
+<p><strong>Step 1:</strong> Start with <span class="arithmatex">\(x^2 + y^2 = 25\)</span></p>
+<p><strong>Step 2:</strong> Differentiate both sides with respect to <span class="arithmatex">\(x\)</span>:</p>
+<div class="arithmatex">\[\frac{d}{dx}[x^2] + \frac{d}{dx}[y^2] = \frac{d}{dx}[25]\]</div>
+<div class="arithmatex">\[2x + 2y\frac{dy}{dx} = 0\]</div>
+<p><strong>Step 3-5:</strong> Solve for <span class="arithmatex">\(\frac{dy}{dx}\)</span>:</p>
+<div class="arithmatex">\[2y\frac{dy}{dx} = -2x\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = -\frac{x}{y}\]</div>
+<p>That's it! The derivative is <span class="arithmatex">\(\frac{dy}{dx} = -\frac{x}{y}\)</span>.</p>
+<p>Notice this answer contains both <span class="arithmatex">\(x\)</span> AND <span class="arithmatex">\(y\)</span>. This is typical for implicit differentiation—and it makes sense because the slope depends on where you are on the curve.</p>
+<div class="admonition note">
+<p class="admonition-title">Why the Answer Contains Both Variables</p>
+<p>At the point <span class="arithmatex">\((3, 4)\)</span> on the circle, the slope is <span class="arithmatex">\(-\frac{3}{4}\)</span>.</p>
+<p>At the point <span class="arithmatex">\((3, -4)\)</span> (also on the circle), the slope is <span class="arithmatex">\(-\frac{3}{-4} = \frac{3}{4}\)</span>.</p>
+<p>Same <span class="arithmatex">\(x\)</span>, different <span class="arithmatex">\(y\)</span>, different slopes. The formula <span class="arithmatex">\(-\frac{x}{y}\)</span> captures this.</p>
+</div>
+<h3 id="example-2-a-cubic-curve">Example 2: A Cubic Curve</h3>
+<p>Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> for <span class="arithmatex">\(x^3 + y^3 = 6xy\)</span>.</p>
+<p><strong>Step 2:</strong> Differentiate both sides:</p>
+<div class="arithmatex">\[3x^2 + 3y^2\frac{dy}{dx} = 6\left(y + x\frac{dy}{dx}\right)\]</div>
+<p>(On the right, we used the product rule on <span class="arithmatex">\(6xy\)</span>)</p>
+<p><strong>Step 3:</strong> Expand and collect <span class="arithmatex">\(\frac{dy}{dx}\)</span> terms:</p>
+<div class="arithmatex">\[3x^2 + 3y^2\frac{dy}{dx} = 6y + 6x\frac{dy}{dx}\]</div>
+<div class="arithmatex">\[3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2\]</div>
+<p><strong>Step 4:</strong> Factor:</p>
+<div class="arithmatex">\[\frac{dy}{dx}(3y^2 - 6x) = 6y - 3x^2\]</div>
+<p><strong>Step 5:</strong> Solve:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x} = \frac{2y - x^2}{y^2 - 2x}\]</div>
+<h3 id="example-3-exponential-and-logarithmic">Example 3: Exponential and Logarithmic</h3>
+<p>Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> for <span class="arithmatex">\(e^y + y = x\)</span>.</p>
+<p><strong>Step 2:</strong> Differentiate:</p>
+<div class="arithmatex">\[e^y \cdot \frac{dy}{dx} + \frac{dy}{dx} = 1\]</div>
+<p><strong>Step 4:</strong> Factor:</p>
+<div class="arithmatex">\[\frac{dy}{dx}(e^y + 1) = 1\]</div>
+<p><strong>Step 5:</strong> Solve:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{e^y + 1}\]</div>
+<h4 id="diagram-implicit-differentiation-step-by-step">Diagram: Implicit Differentiation Step-by-Step</h4>
+<iframe src="../../sims/implicit-diff-steps/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details>
+<summary>Implicit Differentiation Step-by-Step MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Walk students through the implicit differentiation process with visual highlighting of each step.</p>
+<p>Learning Objective: Students will apply implicit differentiation systematically to find dy/dx (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: apply, execute, implement</p>
+<p>Visual elements:</p>
+<ul>
+<li>Original equation displayed at top</li>
+<li>Step-by-step work area showing:</li>
+<li>Differentiate each term (highlight y terms in color)</li>
+<li>Show chain rule application on each y term</li>
+<li>Collect dy/dx terms (move to one side)</li>
+<li>Factor out dy/dx</li>
+<li>Final answer</li>
+<li>Color coding: x terms in blue, y terms in green, dy/dx in red</li>
+<li>Animated transitions between steps</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>"Next Step" button to advance</li>
+<li>"Show All Steps" button</li>
+<li>Preset equations to choose from</li>
+<li>Input field for custom equation</li>
+<li>"Reset" button</li>
+</ul>
+<p>Preset equations:</p>
+<ul>
+<li><span class="arithmatex">\(x^2 + y^2 = 25\)</span></li>
+<li><span class="arithmatex">\(x^3 + y^3 = 6xy\)</span></li>
+<li><span class="arithmatex">\(xy = 1\)</span></li>
+<li><span class="arithmatex">\(\sin(x + y) = y\)</span></li>
+<li><span class="arithmatex">\(e^{xy} = x - y\)</span></li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Each step highlights what's happening</li>
+<li>Chain rule applications are explicitly shown</li>
+<li>Algebraic manipulations animated</li>
+<li>Final answer boxed</li>
+</ul>
+<p>Instructional Rationale: Explicit step-by-step visualization helps students internalize the procedure before practicing on their own.</p>
+<p>Implementation: p5.js with text rendering and color highlighting</p>
+</details>
+<h2 id="solving-for-dydx-algebraic-strategies">Solving for dy/dx: Algebraic Strategies</h2>
+<p>The "solving for <span class="arithmatex">\(\frac{dy}{dx}\)</span>" step can get algebraically tricky. Here are patterns to watch for.</p>
+<h3 id="pattern-1-dydx-appears-once">Pattern 1: dy/dx Appears Once</h3>
+<p>If <span class="arithmatex">\(\frac{dy}{dx}\)</span> appears in only one term, just isolate it:</p>
+<p><strong>Example:</strong> From <span class="arithmatex">\(2x + 2y\frac{dy}{dx} = 0\)</span></p>
+<div class="arithmatex">\[\frac{dy}{dx} = -\frac{x}{y}\]</div>
+<h3 id="pattern-2-dydx-appears-multiple-times">Pattern 2: dy/dx Appears Multiple Times</h3>
+<p>Collect all <span class="arithmatex">\(\frac{dy}{dx}\)</span> terms on one side, factor it out:</p>
+<p><strong>Example:</strong> From <span class="arithmatex">\(3y^2\frac{dy}{dx} - 6x\frac{dy}{dx} = 6y - 3x^2\)</span></p>
+<div class="arithmatex">\[\frac{dy}{dx}(3y^2 - 6x) = 6y - 3x^2\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{6y - 3x^2}{3y^2 - 6x}\]</div>
+<h3 id="pattern-3-nested-inside-a-function">Pattern 3: Nested Inside a Function</h3>
+<p>Sometimes <span class="arithmatex">\(\frac{dy}{dx}\)</span> appears inside a more complex expression. Differentiate carefully:</p>
+<p><strong>Example:</strong> <span class="arithmatex">\(\sin(x + y) = y\)</span></p>
+<div class="arithmatex">\[\cos(x + y) \cdot \frac{d}{dx}[x + y] = \frac{dy}{dx}\]</div>
+<div class="arithmatex">\[\cos(x + y) \cdot \left(1 + \frac{dy}{dx}\right) = \frac{dy}{dx}\]</div>
+<div class="arithmatex">\[\cos(x + y) + \cos(x + y)\frac{dy}{dx} = \frac{dy}{dx}\]</div>
+<div class="arithmatex">\[\cos(x + y) = \frac{dy}{dx} - \cos(x + y)\frac{dy}{dx}\]</div>
+<div class="arithmatex">\[\cos(x + y) = \frac{dy}{dx}(1 - \cos(x + y))\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{\cos(x + y)}{1 - \cos(x + y)}\]</div>
+<h2 id="finding-tangent-lines-to-implicit-curves">Finding Tangent Lines to Implicit Curves</h2>
+<p>One of the most useful applications of implicit differentiation is finding tangent lines.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tangent Line to Implicit Curve</p>
+<p>To find the tangent line at a point <span class="arithmatex">\((a, b)\)</span> on an implicit curve:</p>
+<ol>
+<li>Verify that <span class="arithmatex">\((a, b)\)</span> satisfies the original equation</li>
+<li>Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> using implicit differentiation</li>
+<li>Evaluate <span class="arithmatex">\(\frac{dy}{dx}\)</span> at <span class="arithmatex">\((a, b)\)</span> to get the slope <span class="arithmatex">\(m\)</span></li>
+<li>Use point-slope form: <span class="arithmatex">\(y - b = m(x - a)\)</span></li>
+</ol>
+</div>
+<h3 id="example-tangent-to-a-circle">Example: Tangent to a Circle</h3>
+<p>Find the tangent line to <span class="arithmatex">\(x^2 + y^2 = 25\)</span> at the point <span class="arithmatex">\((3, 4)\)</span>.</p>
+<p><strong>Step 1:</strong> Verify: <span class="arithmatex">\(3^2 + 4^2 = 9 + 16 = 25\)</span> ✓</p>
+<p><strong>Step 2:</strong> We found <span class="arithmatex">\(\frac{dy}{dx} = -\frac{x}{y}\)</span></p>
+<p><strong>Step 3:</strong> At <span class="arithmatex">\((3, 4)\)</span>: <span class="arithmatex">\(m = -\frac{3}{4}\)</span></p>
+<p><strong>Step 4:</strong> Tangent line: <span class="arithmatex">\(y - 4 = -\frac{3}{4}(x - 3)\)</span></p>
+<p>Simplifying: <span class="arithmatex">\(y = -\frac{3}{4}x + \frac{25}{4}\)</span></p>
+<p>Or in standard form: <span class="arithmatex">\(3x + 4y = 25\)</span></p>
+<div class="admonition quote">
+<p class="admonition-title">Delta Moment</p>
+<p>"I'm rolling along the circle, and at the point (3, 4), my tilt is exactly -3/4. Downhill to the right! The tangent line shows exactly which direction I'm headed at that instant."</p>
+</div>
+<h3 id="example-tangent-to-a-folium">Example: Tangent to a Folium</h3>
+<p>The <strong>folium of Descartes</strong> is defined by <span class="arithmatex">\(x^3 + y^3 = 6xy\)</span>. Find the tangent line at <span class="arithmatex">\((3, 3)\)</span>.</p>
+<p><strong>Step 1:</strong> Verify: <span class="arithmatex">\(27 + 27 = 54\)</span> and <span class="arithmatex">\(6(3)(3) = 54\)</span> ✓</p>
+<p><strong>Step 2:</strong> We found <span class="arithmatex">\(\frac{dy}{dx} = \frac{2y - x^2}{y^2 - 2x}\)</span></p>
+<p><strong>Step 3:</strong> At <span class="arithmatex">\((3, 3)\)</span>:</p>
+<div class="arithmatex">\[m = \frac{2(3) - 9}{9 - 6} = \frac{6 - 9}{3} = \frac{-3}{3} = -1\]</div>
+<p><strong>Step 4:</strong> Tangent line: <span class="arithmatex">\(y - 3 = -1(x - 3)\)</span>, so <span class="arithmatex">\(y = -x + 6\)</span></p>
+<h4 id="diagram-tangent-line-explorer">Diagram: Tangent Line Explorer</h4>
+<iframe src="../../sims/implicit-tangent/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Implicit Tangent Line Explorer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Allow students to explore tangent lines at various points on implicit curves interactively.</p>
+<p>Learning Objective: Students will find tangent lines to curves defined by implicit equations (Bloom Level 3: Apply)</p>
+<p>Bloom Taxonomy Verb: apply, calculate, demonstrate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Coordinate grid with implicit curve displayed</li>
+<li>Draggable point on the curve</li>
+<li>Tangent line drawn at the point</li>
+<li>Display panel showing:</li>
+<li>Current point coordinates <span class="arithmatex">\((x, y)\)</span></li>
+<li>Value of <span class="arithmatex">\(\frac{dy}{dx}\)</span> at the point</li>
+<li>Equation of the tangent line</li>
+<li>Step-by-step calculation (collapsible)</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Dropdown to select curve type</li>
+<li>Click/drag point along curve</li>
+<li>Input fields for specific coordinates</li>
+<li>"Random Point" button</li>
+<li>Toggle to show/hide normal line</li>
+<li>Parameter sliders for adjustable curves</li>
+</ul>
+<p>Preset curves:</p>
+<ul>
+<li>Circle: <span class="arithmatex">\(x^2 + y^2 = r^2\)</span></li>
+<li>Ellipse: <span class="arithmatex">\(\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\)</span></li>
+<li>Hyperbola</li>
+<li>Folium of Descartes</li>
+</ul>
+<p>Behavior:</p>
+<ul>
+<li>Point stays on curve when dragged</li>
+<li>Tangent line updates in real-time</li>
+<li>All calculations update live</li>
+<li>Shows vertical tangent warning when dy/dx undefined</li>
+</ul>
+<p>Instructional Rationale: Interactive exploration builds understanding of how tangent lines behave at different points, including edge cases.</p>
+<p>Implementation: p5.js with real-time implicit curve evaluation</p>
+</details>
+<h2 id="second-derivatives-implicitly">Second Derivatives Implicitly</h2>
+<p>Sometimes we need the second derivative <span class="arithmatex">\(\frac{d^2y}{dx^2}\)</span> of an implicit function. The process is:</p>
+<ol>
+<li>Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> using implicit differentiation</li>
+<li>Differentiate <span class="arithmatex">\(\frac{dy}{dx}\)</span> with respect to <span class="arithmatex">\(x\)</span> (implicitly again!)</li>
+<li>Substitute the expression for <span class="arithmatex">\(\frac{dy}{dx}\)</span> to eliminate it from the answer</li>
+</ol>
+<h3 id="example-second-derivative-of-a-circle">Example: Second Derivative of a Circle</h3>
+<p>For <span class="arithmatex">\(x^2 + y^2 = 25\)</span>, we found <span class="arithmatex">\(\frac{dy}{dx} = -\frac{x}{y}\)</span>.</p>
+<p>Now differentiate <span class="arithmatex">\(\frac{dy}{dx}\)</span> with respect to <span class="arithmatex">\(x\)</span>:</p>
+<div class="arithmatex">\[\frac{d^2y}{dx^2} = \frac{d}{dx}\left[-\frac{x}{y}\right]\]</div>
+<p>Use the quotient rule:</p>
+<div class="arithmatex">\[= -\frac{y \cdot 1 - x \cdot \frac{dy}{dx}}{y^2}\]</div>
+<div class="arithmatex">\[= -\frac{y - x\frac{dy}{dx}}{y^2}\]</div>
+<p>Now substitute <span class="arithmatex">\(\frac{dy}{dx} = -\frac{x}{y}\)</span>:</p>
+<div class="arithmatex">\[= -\frac{y - x\left(-\frac{x}{y}\right)}{y^2}\]</div>
+<div class="arithmatex">\[= -\frac{y + \frac{x^2}{y}}{y^2}\]</div>
+<div class="arithmatex">\[= -\frac{\frac{y^2 + x^2}{y}}{y^2}\]</div>
+<div class="arithmatex">\[= -\frac{y^2 + x^2}{y^3}\]</div>
+<p>Since we're on the circle where <span class="arithmatex">\(x^2 + y^2 = 25\)</span>:</p>
+<div class="arithmatex">\[\frac{d^2y}{dx^2} = -\frac{25}{y^3}\]</div>
+<p>This tells us about the concavity of the circle! When <span class="arithmatex">\(y &gt; 0\)</span> (top half), the curve is concave down. When <span class="arithmatex">\(y &lt; 0\)</span> (bottom half), concave up.</p>
+<div class="admonition note">
+<p class="admonition-title">Why Second Derivatives Matter</p>
+<p>The second derivative tells us about concavity and acceleration. For the circle, this confirms what we see geometrically—the top half curves downward, the bottom half curves upward.</p>
+</div>
+<h2 id="the-inverse-function-theorem">The Inverse Function Theorem</h2>
+<p>Implicit differentiation is closely related to finding derivatives of inverse functions. Here's the connection.</p>
+<h3 id="motivation-whats-the-derivative-of-an-inverse">Motivation: What's the Derivative of an Inverse?</h3>
+<p>If <span class="arithmatex">\(f\)</span> and <span class="arithmatex">\(g\)</span> are inverse functions, then <span class="arithmatex">\(f(g(x)) = x\)</span> and <span class="arithmatex">\(g(f(x)) = x\)</span>.</p>
+<p>What's the relationship between <span class="arithmatex">\(f'\)</span> and <span class="arithmatex">\(g'\)</span>?</p>
+<p>Let's use implicit differentiation on <span class="arithmatex">\(f(g(x)) = x\)</span>:</p>
+<div class="arithmatex">\[\frac{d}{dx}[f(g(x))] = \frac{d}{dx}[x]\]</div>
+<div class="arithmatex">\[f'(g(x)) \cdot g'(x) = 1\]</div>
+<div class="arithmatex">\[g'(x) = \frac{1}{f'(g(x))}\]</div>
+<p>This is the <strong>Inverse Function Theorem</strong> (for derivatives).</p>
+<div class="admonition tip">
+<p class="admonition-title">Inverse Function Theorem</p>
+<p>If <span class="arithmatex">\(f\)</span> is a differentiable function with inverse <span class="arithmatex">\(f^{-1}\)</span>, and if <span class="arithmatex">\(f'(f^{-1}(x)) \neq 0\)</span>, then:</p>
+<div class="arithmatex">\[\frac{d}{dx}[f^{-1}(x)] = \frac{1}{f'(f^{-1}(x))}\]</div>
+<p>Or equivalently, if <span class="arithmatex">\(y = f^{-1}(x)\)</span>, then <span class="arithmatex">\(x = f(y)\)</span>, and:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{\frac{dx}{dy}}\]</div>
+</div>
+<p>The formula says: <strong>The derivative of the inverse is the reciprocal of the derivative of the original function.</strong></p>
+<h3 id="understanding-the-formula-geometrically">Understanding the Formula Geometrically</h3>
+<p>Think about the graphs of <span class="arithmatex">\(f\)</span> and <span class="arithmatex">\(f^{-1}\)</span>. They're reflections of each other across the line <span class="arithmatex">\(y = x\)</span>.</p>
+<p>If the graph of <span class="arithmatex">\(f\)</span> is steep (large slope), then its reflection <span class="arithmatex">\(f^{-1}\)</span> is shallow (small slope). If <span class="arithmatex">\(f\)</span> has slope 3, then <span class="arithmatex">\(f^{-1}\)</span> has slope <span class="arithmatex">\(\frac{1}{3}\)</span> at the corresponding point.</p>
+<p>This reciprocal relationship is exactly what the theorem states.</p>
+<h4 id="diagram-inverse-function-derivative-visualizer">Diagram: Inverse Function Derivative Visualizer</h4>
+<iframe src="../../sims/inverse-derivative/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Inverse Function Derivative Visualizer MicroSim</summary>
+<p>Type: microsim</p>
+<p>Purpose: Show geometrically why the derivative of an inverse function is the reciprocal of the original derivative.</p>
+<p>Learning Objective: Students will explain the relationship between the derivative of a function and the derivative of its inverse (Bloom Level 2: Understand)</p>
+<p>Bloom Taxonomy Verb: explain, interpret, illustrate</p>
+<p>Visual elements:</p>
+<ul>
+<li>Split view or overlaid graphs</li>
+<li>Left/blue: Graph of <span class="arithmatex">\(f(x)\)</span> with a point and tangent line</li>
+<li>Right/orange: Graph of <span class="arithmatex">\(f^{-1}(x)\)</span> with corresponding point and tangent line</li>
+<li>Line <span class="arithmatex">\(y = x\)</span> shown as reference</li>
+<li>Slope values displayed for both tangent lines</li>
+<li>Shows that slopes are reciprocals</li>
+</ul>
+<p>Interactive controls:</p>
+<ul>
+<li>Function selector (several invertible functions)</li>
+<li>Draggable point on <span class="arithmatex">\(f\)</span></li>
+<li>Corresponding point on <span class="arithmatex">\(f^{-1}\)</span> moves automatically</li>
+<li>Toggle to show/hide line <span class="arithmatex">\(y = x\)</span></li>
+<li>Animation mode to sweep point along curve</li>
+</ul>
+<p>Functions available:</p>
+<ul>
+<li><span class="arithmatex">\(f(x) = x^2\)</span> (restricted to <span class="arithmatex">\(x \geq 0\)</span>), inverse <span class="arithmatex">\(\sqrt{x}\)</span></li>
+<li><span class="arithmatex">\(f(x) = x^3\)</span>, inverse <span class="arithmatex">\(\sqrt[3]{x}\)</span></li>
+<li><span class="arithmatex">\(f(x) = e^x\)</span>, inverse <span class="arithmatex">\(\ln(x)\)</span></li>
+<li><span class="arithmatex">\(f(x) = \sin(x)\)</span> (restricted), inverse <span class="arithmatex">\(\arcsin(x)\)</span></li>
+</ul>
+<p>Display shows:</p>
+<ul>
+<li>At point <span class="arithmatex">\((a, b)\)</span> on <span class="arithmatex">\(f\)</span>: slope = <span class="arithmatex">\(f'(a)\)</span></li>
+<li>At point <span class="arithmatex">\((b, a)\)</span> on <span class="arithmatex">\(f^{-1}\)</span>: slope = <span class="arithmatex">\(\frac{1}{f'(a)}\)</span></li>
+<li>Verification: product of slopes = 1</li>
+</ul>
+<p>Instructional Rationale: Geometric visualization makes the reciprocal relationship intuitive and memorable.</p>
+<p>Implementation: p5.js with dual graph display</p>
+</details>
+<h2 id="derivatives-of-inverse-functions-the-formula">Derivatives of Inverse Functions: The Formula</h2>
+<p>Let's derive a more explicit formula. If <span class="arithmatex">\(y = f^{-1}(x)\)</span>, then <span class="arithmatex">\(f(y) = x\)</span>.</p>
+<p>Differentiate implicitly:</p>
+<div class="arithmatex">\[f'(y) \cdot \frac{dy}{dx} = 1\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{f'(y)}\]</div>
+<p>Since <span class="arithmatex">\(y = f^{-1}(x)\)</span>:</p>
+<div class="arithmatex">\[\frac{d}{dx}[f^{-1}(x)] = \frac{1}{f'(f^{-1}(x))}\]</div>
+<p>This is the <strong>Inverse Derivative Formula</strong>.</p>
+<h3 id="example-1-derivative-of-square-root">Example 1: Derivative of Square Root</h3>
+<p>Let <span class="arithmatex">\(f(x) = x^2\)</span> (for <span class="arithmatex">\(x \geq 0\)</span>), so <span class="arithmatex">\(f^{-1}(x) = \sqrt{x}\)</span>.</p>
+<p>Using the formula:</p>
+<div class="arithmatex">\[\frac{d}{dx}[\sqrt{x}] = \frac{d}{dx}[f^{-1}(x)] = \frac{1}{f'(f^{-1}(x))} = \frac{1}{2\sqrt{x}}\]</div>
+<p>where we used <span class="arithmatex">\(f'(x) = 2x\)</span> and <span class="arithmatex">\(f^{-1}(x) = \sqrt{x}\)</span>.</p>
+<p>This matches what we know: <span class="arithmatex">\(\frac{d}{dx}[\sqrt{x}] = \frac{1}{2\sqrt{x}}\)</span> ✓</p>
+<h3 id="example-2-derivative-of-natural-log">Example 2: Derivative of Natural Log</h3>
+<p>Let <span class="arithmatex">\(f(x) = e^x\)</span>, so <span class="arithmatex">\(f^{-1}(x) = \ln(x)\)</span>.</p>
+<div class="arithmatex">\[\frac{d}{dx}[\ln(x)] = \frac{1}{f'(f^{-1}(x))} = \frac{1}{e^{\ln(x)}} = \frac{1}{x}\]</div>
+<p>This also matches our known result! ✓</p>
+<h3 id="example-3-a-specific-inverse">Example 3: A Specific Inverse</h3>
+<p>If <span class="arithmatex">\(f(x) = x^3 + x\)</span>, and we want to find <span class="arithmatex">\((f^{-1})'(2)\)</span>.</p>
+<p>We can't find <span class="arithmatex">\(f^{-1}\)</span> explicitly, but we can find its derivative at <span class="arithmatex">\(x = 2\)</span>.</p>
+<p>First, we need to find <span class="arithmatex">\(a\)</span> such that <span class="arithmatex">\(f(a) = 2\)</span>, i.e., <span class="arithmatex">\(a^3 + a = 2\)</span>.</p>
+<p>By inspection, <span class="arithmatex">\(a = 1\)</span> works: <span class="arithmatex">\(1 + 1 = 2\)</span> ✓</p>
+<p>Now use the formula:</p>
+<div class="arithmatex">\[(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))} = \frac{1}{f'(1)}\]</div>
+<p>Since <span class="arithmatex">\(f'(x) = 3x^2 + 1\)</span>, we have <span class="arithmatex">\(f'(1) = 3 + 1 = 4\)</span>.</p>
+<p>Therefore: <span class="arithmatex">\((f^{-1})'(2) = \frac{1}{4}\)</span></p>
+<div class="admonition tip">
+<p class="admonition-title">Strategy for <span class="arithmatex">\((f^{-1})'(b)\)</span></p>
+<p>To find <span class="arithmatex">\((f^{-1})'(b)\)</span>:</p>
+<ol>
+<li>Find <span class="arithmatex">\(a\)</span> such that <span class="arithmatex">\(f(a) = b\)</span></li>
+<li>Calculate <span class="arithmatex">\(f'(a)\)</span></li>
+<li>The answer is <span class="arithmatex">\((f^{-1})'(b) = \frac{1}{f'(a)}\)</span></li>
+</ol>
+</div>
+<h2 id="application-derivatives-of-inverse-trig-functions">Application: Derivatives of Inverse Trig Functions</h2>
+<p>The inverse function theorem gives us a systematic way to find derivatives of inverse trigonometric functions.</p>
+<h3 id="derivative-of-arcsin">Derivative of Arcsin</h3>
+<p>Let <span class="arithmatex">\(y = \arcsin(x)\)</span>, so <span class="arithmatex">\(\sin(y) = x\)</span> where <span class="arithmatex">\(-\frac{\pi}{2} \leq y \leq \frac{\pi}{2}\)</span>.</p>
+<p>Differentiate implicitly:</p>
+<div class="arithmatex">\[\cos(y) \cdot \frac{dy}{dx} = 1\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{\cos(y)}\]</div>
+<p>Now we need <span class="arithmatex">\(\cos(y)\)</span> in terms of <span class="arithmatex">\(x\)</span>. Since <span class="arithmatex">\(\sin(y) = x\)</span> and <span class="arithmatex">\(y\)</span> is in <span class="arithmatex">\([-\frac{\pi}{2}, \frac{\pi}{2}]\)</span> (where cosine is non-negative):</p>
+<div class="arithmatex">\[\cos(y) = \sqrt{1 - \sin^2(y)} = \sqrt{1 - x^2}\]</div>
+<p>Therefore:</p>
+<div class="arithmatex">\[\frac{d}{dx}[\arcsin(x)] = \frac{1}{\sqrt{1 - x^2}}\]</div>
+<h3 id="derivative-of-arctan">Derivative of Arctan</h3>
+<p>Let <span class="arithmatex">\(y = \arctan(x)\)</span>, so <span class="arithmatex">\(\tan(y) = x\)</span> where <span class="arithmatex">\(-\frac{\pi}{2} &lt; y &lt; \frac{\pi}{2}\)</span>.</p>
+<p>Differentiate implicitly:</p>
+<div class="arithmatex">\[\sec^2(y) \cdot \frac{dy}{dx} = 1\]</div>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{\sec^2(y)} = \cos^2(y)\]</div>
+<p>Using the identity <span class="arithmatex">\(\sec^2(y) = 1 + \tan^2(y) = 1 + x^2\)</span>:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1}{1 + x^2}\]</div>
+<p>Therefore:</p>
+<div class="arithmatex">\[\frac{d}{dx}[\arctan(x)] = \frac{1}{1 + x^2}\]</div>
+<h3 id="summary-inverse-trig-derivatives">Summary: Inverse Trig Derivatives</h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Derivative</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\arcsin(x)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{\sqrt{1-x^2}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\arccos(x)\)</span></td>
+<td><span class="arithmatex">\(-\frac{1}{\sqrt{1-x^2}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\arctan(x)\)</span></td>
+<td><span class="arithmatex">\(\frac{1}{1+x^2}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arccot}(x)\)</span></td>
+<td><span class="arithmatex">\(-\frac{1}{1+x^2}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arcsec}(x)\)</span></td>
+<td>$\frac{1}{</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\text{arccsc}(x)\)</span></td>
+<td>$-\frac{1}{</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition quote">
+<p class="admonition-title">Delta's Pun Corner</p>
+<p>"Why was the inverse function so confident? Because it knew its derivative was just the reciprocal of the original—no need to reinvent the wheel, just flip it!"</p>
+</div>
+<h2 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h2>
+<p>When working with implicit differentiation, watch out for these pitfalls.</p>
+<p><strong>Mistake 1: Forgetting the chain rule on <span class="arithmatex">\(y\)</span> terms</strong></p>
+<ul>
+<li>Wrong: <span class="arithmatex">\(\frac{d}{dx}[y^2] = 2y\)</span></li>
+<li>Right: <span class="arithmatex">\(\frac{d}{dx}[y^2] = 2y\frac{dy}{dx}\)</span></li>
+</ul>
+<p><strong>Mistake 2: Forgetting the product rule on <span class="arithmatex">\(xy\)</span> terms</strong></p>
+<ul>
+<li>Wrong: <span class="arithmatex">\(\frac{d}{dx}[xy] = y\)</span></li>
+<li>Right: <span class="arithmatex">\(\frac{d}{dx}[xy] = y + x\frac{dy}{dx}\)</span></li>
+</ul>
+<p><strong>Mistake 3: Not substituting back when finding second derivatives</strong></p>
+<p>After finding <span class="arithmatex">\(\frac{d^2y}{dx^2}\)</span>, replace any remaining <span class="arithmatex">\(\frac{dy}{dx}\)</span> with its expression.</p>
+<p><strong>Mistake 4: Getting confused about what to differentiate</strong></p>
+<p>Remember: you're always differentiating with respect to <span class="arithmatex">\(x\)</span>. The variable <span class="arithmatex">\(y\)</span> is just shorthand for "some function of <span class="arithmatex">\(x\)</span>."</p>
+<h2 id="practice-problems">Practice Problems</h2>
+<p><strong>Problem 1:</strong> Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> for <span class="arithmatex">\(x^2 - xy + y^2 = 7\)</span>.</p>
+<p>Differentiate: <span class="arithmatex">\(2x - (y + x\frac{dy}{dx}) + 2y\frac{dy}{dx} = 0\)</span></p>
+<p><span class="arithmatex">\(2x - y - x\frac{dy}{dx} + 2y\frac{dy}{dx} = 0\)</span></p>
+<p><span class="arithmatex">\(\frac{dy}{dx}(2y - x) = y - 2x\)</span></p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{y - 2x}{2y - x}\]</div>
+<p><strong>Problem 2:</strong> Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> for <span class="arithmatex">\(\sin(xy) = x\)</span>.</p>
+<p>Differentiate: <span class="arithmatex">\(\cos(xy) \cdot (y + x\frac{dy}{dx}) = 1\)</span></p>
+<p><span class="arithmatex">\(y\cos(xy) + x\cos(xy)\frac{dy}{dx} = 1\)</span></p>
+<p><span class="arithmatex">\(\frac{dy}{dx} = \frac{1 - y\cos(xy)}{x\cos(xy)}\)</span></p>
+<p><strong>Problem 3:</strong> Find the tangent line to <span class="arithmatex">\(x^2 + xy + y^2 = 3\)</span> at <span class="arithmatex">\((1, 1)\)</span>.</p>
+<p>First verify: <span class="arithmatex">\(1 + 1 + 1 = 3\)</span> ✓</p>
+<p>Differentiate: <span class="arithmatex">\(2x + y + x\frac{dy}{dx} + 2y\frac{dy}{dx} = 0\)</span></p>
+<p>At <span class="arithmatex">\((1, 1)\)</span>: <span class="arithmatex">\(2 + 1 + \frac{dy}{dx} + 2\frac{dy}{dx} = 0\)</span></p>
+<p><span class="arithmatex">\(3\frac{dy}{dx} = -3\)</span>, so <span class="arithmatex">\(\frac{dy}{dx} = -1\)</span></p>
+<p>Tangent line: <span class="arithmatex">\(y - 1 = -1(x - 1)\)</span>, so <span class="arithmatex">\(y = -x + 2\)</span></p>
+<p><strong>Problem 4:</strong> Find <span class="arithmatex">\((f^{-1})'(3)\)</span> if <span class="arithmatex">\(f(x) = x^3 + 2x\)</span>.</p>
+<p>Find <span class="arithmatex">\(a\)</span> where <span class="arithmatex">\(f(a) = 3\)</span>: <span class="arithmatex">\(a^3 + 2a = 3\)</span>. By inspection, <span class="arithmatex">\(a = 1\)</span>.</p>
+<p><span class="arithmatex">\(f'(x) = 3x^2 + 2\)</span>, so <span class="arithmatex">\(f'(1) = 5\)</span>.</p>
+<p><span class="arithmatex">\((f^{-1})'(3) = \frac{1}{f'(1)} = \frac{1}{5}\)</span></p>
+<h2 id="summary-implicit-differentiation-toolkit">Summary: Implicit Differentiation Toolkit</h2>
+<h3 id="the-process">The Process</h3>
+<ol>
+<li><strong>Differentiate both sides</strong> with respect to <span class="arithmatex">\(x\)</span></li>
+<li><strong>Apply the chain rule</strong> to all <span class="arithmatex">\(y\)</span> terms (multiply by <span class="arithmatex">\(\frac{dy}{dx}\)</span>)</li>
+<li><strong>Collect</strong> all <span class="arithmatex">\(\frac{dy}{dx}\)</span> terms on one side</li>
+<li><strong>Factor out</strong> <span class="arithmatex">\(\frac{dy}{dx}\)</span></li>
+<li><strong>Solve</strong> for <span class="arithmatex">\(\frac{dy}{dx}\)</span></li>
+</ol>
+<h3 id="key-formulas">Key Formulas</h3>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Implicit Chain Rule</td>
+<td><span class="arithmatex">\(\frac{d}{dx}[f(y)] = f'(y) \cdot \frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td>Product with <span class="arithmatex">\(y\)</span></td>
+<td><span class="arithmatex">\(\frac{d}{dx}[xy] = y + x\frac{dy}{dx}\)</span></td>
+</tr>
+<tr>
+<td>Inverse Derivative</td>
+<td><span class="arithmatex">\((f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}\)</span></td>
+</tr>
+<tr>
+<td>Reciprocal Form</td>
+<td><span class="arithmatex">\(\frac{dy}{dx} = \frac{1}{\frac{dx}{dy}}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-to-use-implicit-differentiation">When to Use Implicit Differentiation</h3>
+<ul>
+<li>Equation can't be easily solved for <span class="arithmatex">\(y\)</span></li>
+<li>Finding tangent lines to circles, ellipses, and other implicit curves</li>
+<li>Deriving derivatives of inverse functions</li>
+<li>When the explicit formula for <span class="arithmatex">\(y\)</span> is messy</li>
+</ul>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ul>
+<li>
+<p>An <strong>implicit function</strong> is defined by an equation relating <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span> without isolating <span class="arithmatex">\(y\)</span></p>
+</li>
+<li>
+<p><strong>Implicit differentiation</strong> treats <span class="arithmatex">\(y\)</span> as a function of <span class="arithmatex">\(x\)</span> and uses the chain rule on every <span class="arithmatex">\(y\)</span> term</p>
+</li>
+<li>
+<p>The answer <span class="arithmatex">\(\frac{dy}{dx}\)</span> typically contains <strong>both <span class="arithmatex">\(x\)</span> and <span class="arithmatex">\(y\)</span></strong>—you need a specific point to get a numerical slope</p>
+</li>
+<li>
+<p><strong>Tangent lines</strong> to implicit curves: find <span class="arithmatex">\(\frac{dy}{dx}\)</span>, evaluate at the point, use point-slope form</p>
+</li>
+<li>
+<p><strong>Second derivatives</strong> require differentiating <span class="arithmatex">\(\frac{dy}{dx}\)</span> implicitly and substituting</p>
+</li>
+<li>
+<p>The <strong>Inverse Function Theorem</strong> says <span class="arithmatex">\((f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}\)</span>—the derivative of the inverse is the reciprocal</p>
+</li>
+<li>
+<p>This theorem lets us derive formulas for <strong>inverse trig derivatives</strong> systematically</p>
+</li>
+</ul>
+<details class="question">
+<summary>Check Your Understanding: Find <span class="arithmatex">\(\frac{dy}{dx}\)</span> for <span class="arithmatex">\(e^{xy} = x + y\)</span></summary>
+<p>Differentiate both sides with respect to <span class="arithmatex">\(x\)</span>:</p>
+<div class="arithmatex">\[e^{xy} \cdot \frac{d}{dx}[xy] = 1 + \frac{dy}{dx}\]</div>
+<div class="arithmatex">\[e^{xy} \cdot \left(y + x\frac{dy}{dx}\right) = 1 + \frac{dy}{dx}\]</div>
+<p>Expand:</p>
+<div class="arithmatex">\[ye^{xy} + xe^{xy}\frac{dy}{dx} = 1 + \frac{dy}{dx}\]</div>
+<p>Collect <span class="arithmatex">\(\frac{dy}{dx}\)</span> terms:</p>
+<div class="arithmatex">\[xe^{xy}\frac{dy}{dx} - \frac{dy}{dx} = 1 - ye^{xy}\]</div>
+<p>Factor:</p>
+<div class="arithmatex">\[\frac{dy}{dx}(xe^{xy} - 1) = 1 - ye^{xy}\]</div>
+<p>Solve:</p>
+<div class="arithmatex">\[\frac{dy}{dx} = \frac{1 - ye^{xy}}{xe^{xy} - 1}\]</div>
+<p><strong>Answer:</strong> <span class="arithmatex">\(\frac{dy}{dx} = \frac{1 - ye^{xy}}{xe^{xy} - 1}\)</span></p>
+</details>
 
 
 
 
 
 
+
+  
+  
 
 
 
