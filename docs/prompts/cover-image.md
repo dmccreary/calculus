@@ -1,3 +1,5 @@
+# Generate Cover Image
+
 Create a professional textbook cover image for the book with the title "Calculus"
 
 Aspect ratio: 1.91:1 (1200x630 pixels) for social media Open Graph compatibility.

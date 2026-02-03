@@ -67,7 +67,12 @@ nav:
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
-
+    - prompts/chapter-content-generation-in-parallel.md
+    - prompts/college-credit.md
+    - prompts/cover-image.md
+    - prompts/delta.md
+    - prompts/generate-course-description.md
+    - prompts/learning-graph.md
   - Glossary: glossary.md
   - FAQ: faq.md
 

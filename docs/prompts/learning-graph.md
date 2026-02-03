@@ -5,7 +5,7 @@
     log the results to logs/learning-graph-generator-VERSION-DATE.md
 
 ## Log
-[Link to the Log File on GitHub]()
+[Link to the Log File on GitHub](../learning-graph/index.md)
 
 !!! prompt
     run the /book-installer learning graph viewer skill                                                            

@@ -1,3 +1,5 @@
+# Generate Delta Mascot Image
+
 Please generate a high resolution wide-landscape, professional textbook illustration with a 16:9 width:height ratio
 
 --style: 3D rendered illustration, soft shadows, clean lines

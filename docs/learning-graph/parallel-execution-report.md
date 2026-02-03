@@ -1,8 +1,8 @@
 # Parallel Chapter Generation Execution Report
 
 **Date:** 2026-02-03
-**Chapters Generated:** 11-15
-**Method:** Task tool with background agents (5 parallel)
+**Chapters Generated:** 11-15, 16-20
+**Method:** Task tool with background agents (5 parallel per batch)
 
 ## Executive Summary
 
@@ -126,3 +126,117 @@ A new rule was added to `CLAUDE.md`:
 > ```
 
 This ensures future parallel execution reports contain accurate, verifiable timing data.
+
+---
+
+# Batch 2: Chapters 16-20
+
+**Time:** 14:03:19 - 14:07:06
+**Method:** Task tool with background agents (5 parallel)
+
+## Executive Summary (Batch 2)
+
+All 5 chapters (16-20) were generated simultaneously using parallel background agents. Real timestamps were used throughout (via `date` command), eliminating the synthetic timestamp issue from Batch 1.
+
+## Timestamp Analysis (Batch 2)
+
+All agents started at 14:03:19 when the Task tool launched them in parallel.
+
+### Chapter Generation Times (from filesystem metadata)
+
+| Chapter | Start Time | End Time | Duration |
+|---------|------------|----------|----------|
+| Ch 16 | 14:03:19 | 14:06:24 | 3m 05s |
+| Ch 17 | 14:03:19 | 14:06:19 | 3m 00s |
+| Ch 18 | 14:03:19 | 14:06:49 | 3m 30s |
+| Ch 19 | 14:03:19 | 14:07:06 | 3m 47s |
+| Ch 20 | 14:03:19 | 14:06:03 | 2m 44s |
+
+### Completion Order (Batch 2)
+
+1. **Chapter 20** - Basic Antiderivatives (completed first at 14:06:03)
+2. **Chapter 17** - Derivative Tests and Concavity (14:06:19)
+3. **Chapter 16** - Mean Value Theorem and Extrema (14:06:24)
+4. **Chapter 18** - Curve Sketching (14:06:49)
+5. **Chapter 19** - Optimization (completed last at 14:07:06)
+
+## Evidence of Parallel Execution (Batch 2)
+
+### Time Window Analysis
+
+- **All agents started:** 14:03:19
+- **First completion:** 14:06:03 (Chapter 20)
+- **Last completion:** 14:07:06 (Chapter 19)
+- **Total generation window:** 3 minutes 47 seconds
+
+### Sequential vs Parallel Comparison
+
+If tasks had run sequentially (average ~3.2 minutes each to generate ~5,400 words):
+- **Estimated sequential time:** 5 chapters x 3.2 min = **16+ minutes**
+
+Actual parallel execution:
+- **Total elapsed time:** **3 minutes 47 seconds**
+
+**Speedup factor:** ~4.2x (all 5 agents running concurrently)
+
+### Overlap Analysis
+
+The timestamps prove parallel execution:
+- All 5 agents started at exactly 14:03:19
+- Chapters 16, 17, and 20 all completed within 21 seconds of each other
+- The longest chapter (Ch 19) took 3m 47s; if sequential, just Ch 19 + Ch 18 would exceed total time
+- The staggered completion times reflect natural variation in content complexity
+
+## Content Statistics (Batch 2)
+
+| Chapter | Title | Word Count | Concepts |
+|---------|-------|------------|----------|
+| 16 | Mean Value Theorem and Extrema | 5,269 | 17 |
+| 17 | Derivative Tests and Concavity | 5,507 | 17 |
+| 18 | Curve Sketching | 6,226 | 14 |
+| 19 | Optimization | 6,081 | 21 |
+| 20 | Basic Antiderivatives | 4,242 | 14 |
+| **Total** | | **27,325** | **83** |
+
+### Correlation: Complexity vs Completion Time
+
+- **Shortest chapter (Ch 20, 4,242 words):** Completed first
+- **Longest chapter (Ch 18, 6,226 words):** Completed 4th
+- **Most concepts (Ch 19, 21 concepts):** Completed last
+
+The completion order correlates well with a combination of word count and concept count.
+
+## Timestamp Validation (Batch 2)
+
+The log files recorded timestamps using `date "+%Y-%m-%d %H:%M:%S"`:
+
+| Chapter | Log Start | Log End | File Mod Time |
+|---------|-----------|---------|---------------|
+| Ch 16 | 14:03:19 | 14:06:30 | 14:06:24 |
+| Ch 17 | 14:03:19 | 14:06:25 | 14:06:19 |
+| Ch 18 | 14:03:19 | 14:06:58 | 14:06:49 |
+| Ch 19 | 14:03:19 | 14:07:12 | 14:07:06 |
+| Ch 20 | 14:03:19 | 14:06:08 | 14:06:03 |
+
+The 5-6 second difference between file modification time and log end time is expected—the file is written first, then the agent records the end timestamp.
+
+---
+
+# Combined Summary (Chapters 11-20)
+
+## Overall Statistics
+
+| Metric | Batch 1 (Ch 11-15) | Batch 2 (Ch 16-20) | Total |
+|--------|-------------------|-------------------|-------|
+| Chapters | 5 | 5 | 10 |
+| Total Words | 20,937 | 27,325 | **48,262** |
+| Total Concepts | 78 | 83 | **161** |
+| Elapsed Time | 3m 39s | 3m 47s | 7m 26s |
+| Avg Words/Chapter | 4,187 | 5,465 | 4,826 |
+
+## Parallel Execution Benefit
+
+- **Total content generated:** 48,262 words covering 161 calculus concepts
+- **Total wall-clock time:** ~7.5 minutes (two batches)
+- **Estimated sequential time:** 28+ minutes
+- **Overall speedup:** ~3.7x
