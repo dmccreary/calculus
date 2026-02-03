@@ -1,3 +1,11 @@
+---
+title: L'Hospital's Rule and Contextual Applications
+description: Master L'Hospital's Rule for indeterminate forms and interpret derivatives in economics, biology, and physics contexts
+generated_by: claude skill chapter-content-generator
+date: 2026-02-03 15:32:00
+version: 0.03
+---
+
 # L'Hospital's Rule and Contextual Applications
 
 ## Summary
