@@ -11,3 +11,5 @@ toc:
 .md-content__inner h1 {display: none !important;}
 </style>
 ![](./img/cover.png)
+
+A fun simulation-filled interactive intelligent Calculus textbook that is designed to maximize the odds that you will get college credit.
