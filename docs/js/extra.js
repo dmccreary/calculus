@@ -1,4 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    // Find all quote admonitions with "Delta" in the title (Delta Moment, Delta's Sidequest, etc.)
+    document.querySelectorAll(".admonition.quote").forEach((admonition) => {
+        const title = admonition.querySelector(".admonition-title");
+        if (title && title.textContent.toLowerCase().includes("delta")) {
+            admonition.classList.add("delta-moment");
+        }
+    });
+
     // Find all admonitions with the "prompt" class
     document.querySelectorAll(".admonition.prompt").forEach((admonition) => {
         // Create a "Copy" button

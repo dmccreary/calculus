@@ -38,6 +38,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Graph Viewer: sims/graph-viewer/index.md
+    - Domain and Range Visualizer: sims/domain-range-visualizer/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md
@@ -55,6 +56,10 @@ nav:
 
   - Glossary: glossary.md
   - FAQ: faq.md
+
+  - Appendix:
+    - Meet Delta: appendix/delta.md
+
   - License: license.md
   - Contact: contact.md
 

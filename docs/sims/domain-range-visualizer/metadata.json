@@ -1,0 +1,76 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "title": "Domain and Range Visualizer",
+  "description": "An interactive visualization that helps students interpret domain and range graphically by showing function graphs with highlighted number lines for domain (green) and range (blue).",
+  "creator": "Claude Code",
+  "subject": ["Mathematics", "Precalculus", "Functions"],
+  "date": "2026-02-03",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educationalLevel": "High School (Grades 10-12)",
+  "topic": "Domain and Range of Functions",
+  "learningObjectives": [
+    "Interpret domain and range graphically",
+    "Connect algebraic restrictions to visual representations",
+    "Understand why certain functions have domain restrictions",
+    "Identify range boundaries from function graphs"
+  ],
+  "bloomsTaxonomy": {
+    "level": "Understand",
+    "verb": "Interpret"
+  },
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Function notation",
+    "Graphing on coordinate plane",
+    "Basic function types (quadratic, radical, rational, trigonometric)"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": {
+    "width": "responsive",
+    "drawHeight": 400,
+    "controlHeight": 85
+  },
+  "responsive": true,
+  "dependencies": ["p5.js 1.11.10"],
+  "accessibility": {
+    "describe": true,
+    "keyboardNav": false,
+    "colorContrast": "high"
+  },
+  "controls": [
+    {
+      "type": "select",
+      "label": "Function",
+      "options": ["f(x) = x²", "f(x) = √x", "f(x) = 1/x", "f(x) = sin(x)"],
+      "default": "f(x) = x²"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Domain",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Range",
+      "default": true
+    },
+    {
+      "type": "slider",
+      "label": "x-value",
+      "min": -5,
+      "max": 5,
+      "default": 0,
+      "step": 0.1,
+      "description": "Controls the x-position of the point on the curve"
+    }
+  ],
+  "interactions": [
+    {
+      "type": "slider",
+      "description": "Moving the x-value slider moves a point along the curve and highlights corresponding positions on the domain and range number lines"
+    }
+  ]
+}
