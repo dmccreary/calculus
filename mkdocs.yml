@@ -99,6 +99,12 @@ nav:
     - Trig Identity Visualizer: sims/trig-identity-visualizer/index.md
     - Trig Graph Transformer: sims/trig-graph-transformer/index.md
 
+  - Appendices:
+    - List of Appendices: appendices/index.md
+    - College Credit: appendices/college-credit.md
+    - Meet Delta: appendix/delta.md
+    - Timeline of Calculus: appendices/timeline-of-calculus.md
+  
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -119,11 +125,16 @@ nav:
     - prompts/delta.md
     - prompts/generate-course-description.md
     - prompts/learning-graph.md
+    - learning-graph/book-metrics.md
+    - learning-graph/chapter-metrics.md
+    - learning-graph/diagram-details.md
+    - learning-graph/diagram-table.md
+  
   - Glossary: glossary.md
   - FAQ: faq.md
 
   - Appendix:
-    - Meet Delta: appendix/delta.md
+
 
   - License: license.md
   - Contact: contact.md

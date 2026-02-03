@@ -1,0 +1,207 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "content": "Ancient Area Methods",
+      "start": "-300",
+      "group": "Foundations",
+      "title": "Greek mathematicians such as Eudoxus and Archimedes developed the method of exhaustion to compute areas and volumes. This anticipates integral calculus. Archimedes' work on areas under curves is often considered proto-calculus."
+    },
+    {
+      "id": 2,
+      "content": "Archimedes' Quadrature",
+      "start": "-250",
+      "group": "Foundations",
+      "title": "Archimedes computed areas of parabolas and volumes of spheres using limiting processes. His methods resemble definite integrals and limits used in modern calculus."
+    },
+    {
+      "id": 3,
+      "content": "Indian Infinite Series",
+      "start": "1400",
+      "group": "Foundations",
+      "title": "The Kerala School of Mathematics developed infinite series expansions for sine, cosine, and arctangent centuries before Europe. These ideas are core to calculus and numerical analysis."
+    },
+    {
+      "id": 4,
+      "content": "Descartes Coordinates",
+      "start": "1637",
+      "group": "Pre-Calculus",
+      "title": "Ren\u00e9 Descartes introduced Cartesian coordinates, allowing algebraic equations to represent geometric curves. This made calculus on functions possible."
+    },
+    {
+      "id": 5,
+      "content": "Fermat Tangents",
+      "start": "1630",
+      "group": "Pre-Calculus",
+      "title": "Pierre de Fermat developed methods to find tangents and maxima/minima. His techniques resemble differentiation."
+    },
+    {
+      "id": 6,
+      "content": "Cavalieri's Method",
+      "start": "1635",
+      "group": "Pre-Calculus",
+      "title": "Bonaventura Cavalieri introduced indivisibles to compute areas and volumes, paving the way for integral calculus."
+    },
+    {
+      "id": 7,
+      "content": "Newton Fluxions",
+      "start": "1665",
+      "group": "Foundations of Calculus",
+      "title": "Isaac Newton developed calculus using fluxions to study motion and change. His work linked derivatives and integrals through the Fundamental Theorem of Calculus."
+    },
+    {
+      "id": 8,
+      "content": "Leibniz Notation",
+      "start": "1675",
+      "group": "Foundations of Calculus",
+      "title": "Gottfried Wilhelm Leibniz independently developed calculus and introduced notation still used today, including \u222b and d/dx."
+    },
+    {
+      "id": 9,
+      "content": "Calculus Publication",
+      "start": "1684",
+      "group": "Foundations of Calculus",
+      "title": "Leibniz published the first formal paper on calculus, enabling rapid spread across Europe."
+    },
+    {
+      "id": 10,
+      "content": "Newton Principia",
+      "start": "1687",
+      "group": "Applications",
+      "title": "Newton used calculus concepts (geometrically expressed) in Principia to describe planetary motion and gravity."
+    },
+    {
+      "id": 11,
+      "content": "Bernoulli Family",
+      "start": "1690",
+      "group": "Expansion",
+      "title": "The Bernoulli brothers applied calculus to curves, optimization, and physics, expanding its applications."
+    },
+    {
+      "id": 12,
+      "content": "L'H\u00f4pital's Text",
+      "start": "1696",
+      "group": "Education",
+      "title": "L'H\u00f4pital published the first calculus textbook, spreading Leibnizian calculus across Europe."
+    },
+    {
+      "id": 13,
+      "content": "Euler Formalization",
+      "start": "1730",
+      "group": "Expansion",
+      "title": "Leonhard Euler standardized notation and introduced functions, exponential growth, and differential equations."
+    },
+    {
+      "id": 14,
+      "content": "Calculus of Variations",
+      "start": "1744",
+      "group": "Advanced Topics",
+      "title": "Euler and Lagrange developed calculus of variations to solve optimization problems involving functions."
+    },
+    {
+      "id": 15,
+      "content": "Lagrange Functions",
+      "start": "1788",
+      "group": "Advanced Topics",
+      "title": "Joseph-Louis Lagrange reformulated calculus using functions and derivatives, influencing modern analysis."
+    },
+    {
+      "id": 16,
+      "content": "Limits Clarified",
+      "start": "1821",
+      "group": "Rigor",
+      "title": "Augustin-Louis Cauchy introduced rigorous definitions of limits, continuity, and derivatives."
+    },
+    {
+      "id": 17,
+      "content": "Weierstrass Rigour",
+      "start": "1860",
+      "group": "Rigor",
+      "title": "Karl Weierstrass formalized epsilon-delta definitions, giving calculus a rigorous foundation."
+    },
+    {
+      "id": 18,
+      "content": "Riemann Integral",
+      "start": "1854",
+      "group": "Integration",
+      "title": "Bernhard Riemann defined integration formally, extending integral calculus."
+    },
+    {
+      "id": 19,
+      "content": "Lebesgue Integral",
+      "start": "1902",
+      "group": "Integration",
+      "title": "Henri Lebesgue generalized integration, enabling modern analysis and probability theory."
+    },
+    {
+      "id": 20,
+      "content": "Vector Calculus",
+      "start": "1870",
+      "group": "Applications",
+      "title": "Vector calculus emerged to support physics and engineering, including electromagnetism."
+    },
+    {
+      "id": 21,
+      "content": "Calculus in Physics",
+      "start": "1900",
+      "group": "Applications",
+      "title": "Calculus became central to classical mechanics, thermodynamics, and electromagnetism."
+    },
+    {
+      "id": 22,
+      "content": "Calculus in Engineering",
+      "start": "1920",
+      "group": "Applications",
+      "title": "Engineering curricula worldwide standardized calculus as a core requirement."
+    },
+    {
+      "id": 23,
+      "content": "AP Calculus Created",
+      "start": "1955",
+      "group": "Education",
+      "title": "The Advanced Placement Calculus program launched in the U.S. Today, over 300,000 students take AP Calculus exams annually."
+    },
+    {
+      "id": 24,
+      "content": "Calculus Reform",
+      "start": "1988",
+      "group": "Education",
+      "title": "The Calculus Reform movement emphasized conceptual understanding and technology use."
+    },
+    {
+      "id": 25,
+      "content": "Graphing Calculators",
+      "start": "1990",
+      "group": "Technology",
+      "title": "Graphing calculators transformed calculus education and visualization."
+    },
+    {
+      "id": 26,
+      "content": "Computer Algebra",
+      "start": "1995",
+      "group": "Technology",
+      "title": "CAS tools like Mathematica and Maple enabled symbolic differentiation and integration."
+    },
+    {
+      "id": 27,
+      "content": "Online Calculus",
+      "start": "2010",
+      "group": "Education",
+      "title": "Online platforms expanded access to calculus education worldwide."
+    },
+    {
+      "id": 28,
+      "content": "Calculus Enrollment",
+      "start": "2020",
+      "group": "Demographics",
+      "title": "Approximately 800,000 U.S. high school students and over 1.5 million college students take calculus annually."
+    },
+    {
+      "id": 29,
+      "content": "AI in Calculus",
+      "start": "2023",
+      "group": "Technology",
+      "title": "AI tools and intelligent textbooks support personalized calculus learning experiences."
+    }
+  ]
+}
