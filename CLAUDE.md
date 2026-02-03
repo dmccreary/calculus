@@ -177,3 +177,19 @@ When creating p5.js MicroSims:
 ## vis-network Notes
 
 There's a rendering bug with edge labels on perfectly horizontal edges. Use a slight y-offset (e.g., from 480 to 490) to give edges enough angle for labels to render on initial load.
+
+## Timestamps: NEVER Use Synthetic Data
+
+**CRITICAL:** When logging timestamps (start/end times, generation logs, etc.), ALWAYS use real system timestamps. NEVER generate synthetic or made-up timestamps.
+
+To get the current timestamp, use:
+```bash
+date "+%Y-%m-%d %H:%M:%S"
+```
+
+When writing to log files, capture the actual time:
+```bash
+echo "Start: $(date '+%Y-%m-%d %H:%M:%S')" >> logfile.md
+```
+
+**Why this matters:** Synthetic timestamps are useless for analyzing actual performance, debugging timing issues, or verifying parallel execution. Real timestamps provide accurate data for reports and analysis.
