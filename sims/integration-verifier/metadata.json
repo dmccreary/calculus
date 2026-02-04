@@ -1,0 +1,20 @@
+{
+  "title": "Integration Verifier",
+  "description": "Interactive tool to verify integration results by differentiating the proposed antiderivative and comparing to the original integrand",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integration",
+  "subtopic": "Verification by Differentiation",
+  "bloomLevel": "4-Analyze",
+  "bloomVerbs": ["verify", "check", "analyze"],
+  "learningObjective": "Students will verify integration results by differentiating",
+  "prerequisites": ["antiderivatives", "differentiation-rules", "chain-rule", "product-rule"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["integration", "antiderivative", "verification", "differentiation", "check work"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Integration Strategy Decision Flowchart</title>
+    <!-- MathJax for LaTeX rendering -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(','\\)']], displayMath: [['\\[','\\]']] },
+            options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: hidden; font-family: 'Segoe UI', Arial, sans-serif; }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            min-height: 480px;
+        }
+        /* --- Diagram panel --- */
+        .diagram-panel {
+            flex: 2;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8edf3 100%);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .toolbar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 14px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+        .toolbar h1 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #333;
+            margin-right: auto;
+        }
+        .toolbar button {
+            padding: 6px 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        #quiz-btn {
+            background: #6a1b9a;
+            color: #fff;
+        }
+        #quiz-btn:hover { background: #8e24aa; }
+        #reset-btn {
+            background: #e0e0e0;
+            color: #333;
+        }
+        #reset-btn:hover { background: #bdbdbd; }
+        #legend-slot {
+            display: flex;
+            align-items: center;
+        }
+        .chart-area {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        #flowchart-container {
+            width: 100%;
+            max-width: 660px;
+        }
+        #flowchart-container svg {
+            width: 100%;
+            height: auto;
+        }
+        /* --- Info panel --- */
+        .info-panel {
+            flex: 1;
+            min-width: 240px;
+            max-width: 340px;
+            background: #fff;
+            border-left: 1px solid #ddd;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        .info-header {
+            padding: 14px 16px 10px;
+            border-bottom: 2px solid #6a1b9a;
+        }
+        #info-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #333;
+        }
+        #info-content {
+            padding: 12px 16px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #444;
+        }
+        #info-content p { margin-bottom: 8px; }
+        .example-integral {
+            font-size: 17px;
+            font-weight: 600;
+            color: #1565c0;
+            margin: 8px 0;
+        }
+        .example-steps {
+            margin: 6px 0 6px 20px;
+            font-size: 14px;
+        }
+        .example-steps li {
+            margin-bottom: 6px;
+        }
+        .panel-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            background: #6a1b9a;
+            color: #fff;
+        }
+        .panel-btn:hover { background: #8e24aa; }
+        /* --- Legend --- */
+        .legend {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: #555;
+        }
+        .legend-swatch {
+            width: 14px;
+            height: 14px;
+            border-radius: 3px;
+            display: inline-block;
+        }
+        /* --- Responsive --- */
+        @media (max-width: 700px) {
+            .container { flex-direction: column; }
+            .info-panel { max-width: none; min-width: 0; max-height: 40vh; border-left: none; border-top: 1px solid #ddd; }
+            .legend { gap: 6px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="toolbar">
+                <h1>Integration Strategy</h1>
+                <div id="legend-slot"></div>
+                <button id="quiz-btn">Mini-Quiz</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <div class="chart-area">
+                <div id="flowchart-container"></div>
+            </div>
+        </div>
+        <div class="info-panel">
+            <div class="info-header">
+                <div id="info-title">Integration Strategy</div>
+            </div>
+            <div id="info-content">
+                <p>Hover over a node to learn about that step. Click action nodes (colored rectangles) to see worked examples.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <br/>
+    <a href=".">Back to Lesson Plan</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "title": "Additivity Property Visualization",
+  "description": "Demonstrates how the area under a curve can be split into sub-regions that sum to the total, illustrating the additivity property of definite integrals.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Mathematics",
+    "Calculus",
+    "Integration",
+    "Definite Integrals",
+    "Integral Properties"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/additivity-property/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Additivity Property",
+    "Definite Integral",
+    "Area Under Curve",
+    "Integral Properties",
+    "Sub-intervals"
+  ],
+  "prerequisites": [
+    "Understanding of definite integrals",
+    "Area under a curve",
+    "Numerical integration basics"
+  ],
+  "library": "p5.js"
+}

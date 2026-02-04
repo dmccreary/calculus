@@ -1,0 +1,20 @@
+{
+  "title": "Even and Odd Function Integral Symmetry",
+  "description": "Interactive visualization showing how symmetry properties of even and odd functions affect definite integrals over symmetric intervals [-a, a]",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integration",
+  "subtopic": "Integral Properties and Symmetry",
+  "bloomLevel": "4-Analyze",
+  "bloomVerbs": ["analyze", "predict", "compare"],
+  "learningObjective": "Students will predict integral values based on function symmetry",
+  "prerequisites": ["definite-integrals", "even-odd-functions", "integral-properties"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["even functions", "odd functions", "symmetry", "definite integral", "cancellation", "area"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

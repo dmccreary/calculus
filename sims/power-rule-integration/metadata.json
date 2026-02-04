@@ -1,0 +1,20 @@
+{
+  "title": "Power Rule Integration",
+  "description": "Interactive visualization showing the relationship between the derivative and integral power rules with step-by-step calculation breakdown",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integration",
+  "subtopic": "Power Rule for Integration",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "calculate", "use"],
+  "learningObjective": "Students will apply the power rule for integration",
+  "prerequisites": ["power-rule-derivatives", "antiderivatives", "exponent-rules"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["power rule", "integration", "antiderivative", "exponent", "inverse operations"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

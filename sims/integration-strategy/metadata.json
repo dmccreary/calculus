@@ -1,0 +1,67 @@
+{
+  "title": "Integration Strategy Decision Flowchart",
+  "description": "Interactive decision tree for choosing integration techniques based on integrand structure. Features hover explanations, click-through worked examples, path highlighting, and a mini-quiz.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Mathematics",
+    "Calculus",
+    "Integration",
+    "Integral Techniques",
+    "Decision Trees"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/integration-strategy/",
+  "publisher": "Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "decision flowchart",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Evaluate"
+  ],
+  "concepts": [
+    "Integration Techniques",
+    "u-Substitution",
+    "Partial Fractions",
+    "Completing the Square",
+    "Power Rule",
+    "Algebraic Simplification",
+    "Rational Functions",
+    "Antiderivatives"
+  ],
+  "prerequisites": [
+    "Understanding of basic antiderivative rules",
+    "Familiarity with algebraic simplification",
+    "Knowledge of derivative rules (for recognizing u-substitution)"
+  ],
+  "library": "Vanilla JavaScript / SVG",
+  "controls": {
+    "buttons": [
+      {
+        "name": "Mini-Quiz",
+        "description": "Launches a 5-question quiz where students identify the correct integration technique by clicking on the flowchart"
+      },
+      {
+        "name": "Reset",
+        "description": "Clears all highlighting and returns to the default view"
+      }
+    ],
+    "interactions": [
+      {
+        "name": "Hover",
+        "description": "Hover over any node to see a detailed explanation in the side panel"
+      },
+      {
+        "name": "Click",
+        "description": "Click an action node to see a worked example and highlight the decision path"
+      }
+    ]
+  }
+}

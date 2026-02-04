@@ -1,0 +1,51 @@
+{
+  "title": "Family of Antiderivatives",
+  "description": "Interactive visualization showing how different values of the constant C produce a family of parallel antiderivative curves. Demonstrates that all antiderivatives of a function differ only by a constant, with tangent lines at the same x-value having identical slopes.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Antiderivatives",
+    "Integration",
+    "Constant of Integration",
+    "Family of Functions"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/antiderivative-family/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": [
+    "explain",
+    "interpret",
+    "visualize"
+  ],
+  "concepts": [
+    "Antiderivative",
+    "Constant of Integration",
+    "Family of Functions",
+    "Vertical Shift",
+    "Derivative",
+    "Tangent Line",
+    "Indefinite Integral"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Familiarity with basic functions (polynomial, trigonometric)",
+    "Concept of slope and tangent lines"
+  ],
+  "library": "p5.js",
+  "learningObjective": "Students will explain why antiderivatives differ by a constant",
+  "duration": "15-20 minutes"
+}

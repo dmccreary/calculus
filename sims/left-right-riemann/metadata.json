@@ -1,0 +1,42 @@
+{
+  "title": "Left vs Right Riemann Sums",
+  "description": "Interactive comparison of left and right Riemann sum approximations showing visually when each method overestimates or underestimates the true integral value.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Mathematics",
+    "Calculus",
+    "Integration",
+    "Riemann Sums",
+    "Area Approximation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/left-right-riemann/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Left Riemann Sum",
+    "Right Riemann Sum",
+    "Area Under Curve",
+    "Approximation Error",
+    "Increasing Functions",
+    "Decreasing Functions"
+  ],
+  "prerequisites": [
+    "Understanding of functions",
+    "Basic integration concepts"
+  ],
+  "library": "p5.js"
+}
