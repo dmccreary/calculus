@@ -1,8 +1,8 @@
 # Diagram and MicroSim Details
 
-**Total Visual Elements:** 113
+**Total Visual Elements:** 124
 **Diagrams:** 2
-**MicroSims:** 110
+**MicroSims:** 118
 
 ## Chapter 1: Foundations Of Calculus
 
@@ -380,15 +380,27 @@
 
 ## Chapter 12: Inverse Function Derivatives
 
-**Total elements:** 2
+**Total elements:** 4
 
 ### [Graphical Inverse Derivatives](../chapters/12-inverse-function-derivatives/index.md#diagram-graphical-inverse-derivatives)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 5
+- **Difficulty:** Hard
+
+### [Inverse Trig Derivatives Practice](../chapters/12-inverse-function-derivatives/index.md#diagram-inverse-trig-derivatives-practice)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 3
+- **Difficulty:** Medium
+
+### [Inverse Trig Domain Visualization](../chapters/12-inverse-function-derivatives/index.md#diagram-inverse-trig-domain-visualization)
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 6
 - **Difficulty:** Medium
 
-### [Inverse Trig Derivatives Practice](../chapters/12-inverse-function-derivatives/index.md#diagram-inverse-trig-derivatives-practice)
+### [Logarithmic Differentiation Step-by-Step](../chapters/12-inverse-function-derivatives/index.md#diagram-logarithmic-differentiation-step-by-step)
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 5
@@ -424,41 +436,95 @@
 
 ## Chapter 14: Related Rates And Linear Approximation
 
-**Total elements:** 3
+**Total elements:** 10
 
-### [Related Rates Problem Setup</summary>](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-related-rates-problem-setup<-summary>)
-- **Type:** Microsim
-- **Bloom's Taxonomy:** Not specified
-- **UI Elements:** 10
-- **Difficulty:** Hard
-
-### [Shadow Problem Similar Triangles</summary>](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-shadow-problem-similar-triangles<-summary>)
+### [Balloon Inflation Simulator](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-balloon-inflation-simulator)
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 5
 - **Difficulty:** Hard
 
-### [dy vs Delta y Comparison</summary>](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-dy-vs-delta-y-comparison<-summary>)
+### [Conical Tank Draining](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-conical-tank-draining)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 5
+- **Difficulty:** Hard
+
+### [Ladder Problem Explorer](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-ladder-problem-explorer)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 10
+- **Difficulty:** Hard
+
+### [Linear Approximation Error Visualizer](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-linear-approximation-error-visualizer)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 8
+- **Difficulty:** Hard
+
+### [Marginal Cost Analyzer](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-marginal-cost-analyzer)
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 6
 - **Difficulty:** Hard
 
-## Chapter 15: Lhospitals Rule And Applications
-
-**Total elements:** 2
-
-### [L'Hospital's Rule Visualizer</summary>](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-lhospitals-rule-visualizer<-summary>)
+### [Related Rates Problem Setup](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-related-rates-problem-setup)
 - **Type:** Diagram
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 0
 - **Difficulty:** Easy
 
-### [Rate Interpretation Dashboard</summary>](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-rate-interpretation-dashboard<-summary>)
+### [Shadow Problem Similar Triangles](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-shadow-problem-similar-triangles)
+- **Type:** Unknown
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 0
+- **Difficulty:** Easy
+
+### [Two Moving Objects Distance](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-two-moving-objects-distance)
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 7
 - **Difficulty:** Hard
+
+### [Zoom to Linear](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-zoom-to-linear)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 7
+- **Difficulty:** Medium
+
+### [dy vs Delta y Comparison](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-dy-vs-delta-y-comparison)
+- **Type:** Unknown
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 0
+- **Difficulty:** Easy
+
+## Chapter 15: Lhospitals Rule And Applications
+
+**Total elements:** 4
+
+### [L'Hospital's Rule Visualizer](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-lhospitals-rule-visualizer)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 9
+- **Difficulty:** Very Hard
+
+### [Marginal Analysis Calculator](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-marginal-analysis-calculator)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 7
+- **Difficulty:** Hard
+
+### [Rate Interpretation Dashboard](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-rate-interpretation-dashboard)
+- **Type:** Microsim
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 6
+- **Difficulty:** Medium
+
+### [Zero Times Infinity Converter](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-zero-times-infinity-converter)
+- **Type:** Unknown
+- **Bloom's Taxonomy:** Not specified
+- **UI Elements:** 0
+- **Difficulty:** Easy
 
 ## Chapter 16: Mean Value Theorem And Extrema
 

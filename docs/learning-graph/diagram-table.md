@@ -5,16 +5,16 @@ hide:
 
 # Diagram and MicroSim Table
 
-**Total Visual Elements:** 113
+**Total Visual Elements:** 124
 **Diagrams:** 2
-**MicroSims:** 110
+**MicroSims:** 118
 
 ## Summary by Difficulty
 
-- **Easy:** 3
-- **Medium:** 26
-- **Hard:** 77
-- **Very Hard:** 7
+- **Easy:** 6
+- **Medium:** 29
+- **Hard:** 81
+- **Very Hard:** 8
 
 ## All Visual Elements
 
@@ -75,17 +75,28 @@ hide:
 | 11 | [Implicit Differentiation Step-by-Step](../chapters/11-implicit-differentiation/index.md#diagram-implicit-differentiation-step-by-step) |  | Microsim | Not specified | 5 | Medium |  |
 | 11 | [Inverse Function Derivative Visualizer](../chapters/11-implicit-differentiation/index.md#diagram-inverse-function-derivative-visualizer) |  | Microsim | Not specified | 5 | Hard |  |
 | 11 | [Tangent Line Explorer](../chapters/11-implicit-differentiation/index.md#diagram-tangent-line-explorer) |  | Microsim | Not specified | 8 | Hard |  |
-| 12 | [Graphical Inverse Derivatives](../chapters/12-inverse-function-derivatives/index.md#diagram-graphical-inverse-derivatives) |  | Microsim | Not specified | 6 | Medium |  |
-| 12 | [Inverse Trig Derivatives Practice](../chapters/12-inverse-function-derivatives/index.md#diagram-inverse-trig-derivatives-practice) |  | Microsim | Not specified | 5 | Hard |  |
+| 12 | [Graphical Inverse Derivatives](../chapters/12-inverse-function-derivatives/index.md#diagram-graphical-inverse-derivatives) |  | Microsim | Not specified | 5 | Hard |  |
+| 12 | [Inverse Trig Derivatives Practice](../chapters/12-inverse-function-derivatives/index.md#diagram-inverse-trig-derivatives-practice) |  | Microsim | Not specified | 3 | Medium |  |
+| 12 | [Inverse Trig Domain Visualization](../chapters/12-inverse-function-derivatives/index.md#diagram-inverse-trig-domain-visualization) |  | Microsim | Not specified | 6 | Medium |  |
+| 12 | [Logarithmic Differentiation Step-by-Step](../chapters/12-inverse-function-derivatives/index.md#diagram-logarithmic-differentiation-step-by-step) |  | Microsim | Not specified | 5 | Hard |  |
 | 13 | [Direction and Speed Analyzer](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-direction-and-speed-analyzer) |  | Microsim | Not specified | 4 | Hard |  |
 | 13 | [Position-Velocity-Acceleration Relationship](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-position-velocity-acceleration-relationship) |  | Microsim | Not specified | 8 | Hard |  |
 | 13 | [Second Derivative Explorer](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-second-derivative-explorer) |  | Microsim | Not specified | 9 | Hard |  |
 | 13 | [Speeding Up/Slowing Down Analyzer](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-speeding-up-slowing-down-analyzer) |  | Microsim | Not specified | 6 | Hard |  |
-| 14 | [Related Rates Problem Setup</summary>](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-related-rates-problem-setup<-summary>) |  | Microsim | Not specified | 10 | Hard |  |
-| 14 | [Shadow Problem Similar Triangles</summary>](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-shadow-problem-similar-triangles<-summary>) |  | Microsim | Not specified | 5 | Hard |  |
-| 14 | [dy vs Delta y Comparison</summary>](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-dy-vs-delta-y-comparison<-summary>) |  | Microsim | Not specified | 6 | Hard |  |
-| 15 | [L'Hospital's Rule Visualizer</summary>](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-lhospitals-rule-visualizer<-summary>) |  | Diagram | Not specified | 0 | Easy |  |
-| 15 | [Rate Interpretation Dashboard</summary>](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-rate-interpretation-dashboard<-summary>) |  | Microsim | Not specified | 7 | Hard |  |
+| 14 | [Balloon Inflation Simulator](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-balloon-inflation-simulator) |  | Microsim | Not specified | 5 | Hard |  |
+| 14 | [Conical Tank Draining](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-conical-tank-draining) |  | Microsim | Not specified | 5 | Hard |  |
+| 14 | [Ladder Problem Explorer](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-ladder-problem-explorer) |  | Microsim | Not specified | 10 | Hard |  |
+| 14 | [Linear Approximation Error Visualizer](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-linear-approximation-error-visualizer) |  | Microsim | Not specified | 8 | Hard |  |
+| 14 | [Marginal Cost Analyzer](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-marginal-cost-analyzer) |  | Microsim | Not specified | 6 | Hard |  |
+| 14 | [Related Rates Problem Setup](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-related-rates-problem-setup) |  | Diagram | Not specified | 0 | Easy |  |
+| 14 | [Shadow Problem Similar Triangles](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-shadow-problem-similar-triangles) |  | Unknown | Not specified | 0 | Easy |  |
+| 14 | [Two Moving Objects Distance](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-two-moving-objects-distance) |  | Microsim | Not specified | 7 | Hard |  |
+| 14 | [Zoom to Linear](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-zoom-to-linear) |  | Microsim | Not specified | 7 | Medium |  |
+| 14 | [dy vs Delta y Comparison](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-dy-vs-delta-y-comparison) |  | Unknown | Not specified | 0 | Easy |  |
+| 15 | [L'Hospital's Rule Visualizer](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-lhospitals-rule-visualizer) |  | Microsim | Not specified | 9 | Very Hard |  |
+| 15 | [Marginal Analysis Calculator](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-marginal-analysis-calculator) |  | Microsim | Not specified | 7 | Hard |  |
+| 15 | [Rate Interpretation Dashboard](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-rate-interpretation-dashboard) |  | Microsim | Not specified | 6 | Medium |  |
+| 15 | [Zero Times Infinity Converter](../chapters/15-lhospitals-rule-and-applications/index.md#diagram-zero-times-infinity-converter) |  | Unknown | Not specified | 0 | Easy |  |
 | 16 | [Candidates Test Calculator](../chapters/16-mean-value-theorem-and-extrema/index.md#diagram-candidates-test-calculator) |  | Microsim | Not specified | 8 | Hard |  |
 | 16 | [Critical Point Finder](../chapters/16-mean-value-theorem-and-extrema/index.md#diagram-critical-point-finder) |  | Microsim | Not specified | 11 | Hard |  |
 | 16 | [EVT Conditions Explorer](../chapters/16-mean-value-theorem-and-extrema/index.md#diagram-evt-conditions-explorer) |  | Microsim | Not specified | 7 | Hard |  |
