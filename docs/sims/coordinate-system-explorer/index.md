@@ -5,7 +5,7 @@ quality_score: 85
 ---
 # Coordinate System Explorer
 
-<iframe src="main.html" height="452px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="462px" width="100%" scrolling="no"></iframe>
 
 [Run Fullscreen](./main.html){ .md-button .md-button--primary }
 

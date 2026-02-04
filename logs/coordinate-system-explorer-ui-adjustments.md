@@ -83,10 +83,111 @@ function mouseReleased() {
 **Updated instructions:**
 Changed from "Click to place a point" to "Click to place or drag to move point"
 
+### 4. Global Variable for Vertical Translate
+
+Replaced hardcoded translate offset with a global variable for easier maintenance:
+
+```javascript
+let verticalTranslate = 15;  // Vertical offset for drawing area content
+```
+
+All references to the offset (in `translate()`, `mousePressed()`, `mouseDragged()`) now use `verticalTranslate` instead of the hardcoded value `15`.
+
+### 5. Fixed Quiz Mode Logic
+
+The original quiz mode was backwards - it showed a point and asked users to identify coordinates. Fixed to show coordinates and have users click the correct location:
+
+**Before:** Show point → User guesses coordinates
+**After:** Show coordinates → User clicks on that location
+
+```javascript
+function drawQuizPrompt() {
+  // Show the coordinates and ask user to click on that location
+  text('Click on the point:', boxX + 10, boxY + 10);
+  text('(' + quizPoint.x + ', ' + quizPoint.y + ')', boxX + boxW/2, boxY + 30);
+}
+```
+
+Also fixed the quiz point drawing to account for the `verticalTranslate` offset.
+
+### 6. Celebration Animation
+
+Added a red dot explosion animation when users answer quiz questions correctly:
+
+```javascript
+let celebrationParticles = [];
+
+function createCelebration(centerX, centerY) {
+  let numParticles = 30;
+  for (let i = 0; i < numParticles; i++) {
+    let angle = random(TWO_PI);
+    let speed = random(3, 8);
+    celebrationParticles.push({
+      x: centerX, y: centerY,
+      vx: cos(angle) * speed,
+      vy: sin(angle) * speed,
+      size: random(8, 16),
+      alpha: 255,
+      decay: random(3, 6),
+      hue: random(-20, 20)
+    });
+  }
+}
+
+function updateAndDrawCelebration() {
+  for (let i = celebrationParticles.length - 1; i >= 0; i--) {
+    let p = celebrationParticles[i];
+    p.x += p.vx;
+    p.y += p.vy;
+    p.vy += 0.15;  // Gravity
+    p.alpha -= p.decay;
+
+    // Draw with glow effect
+    fill(255, 80 + p.hue, 80 + p.hue, p.alpha);
+    circle(p.x, p.y, p.size);
+
+    if (p.alpha <= 0) celebrationParticles.splice(i, 1);
+  }
+}
+```
+
+**Features:**
+- 30 particles burst outward from center
+- Gravity effect (particles arc downward)
+- Fade out with glow effect
+- Slight color variation around red
+
+### 7. Quiz Score Tracking
+
+Added running score display in quiz mode:
+
+```javascript
+let quizCorrectCount = 0;
+let quizTotalTries = 0;
+
+function drawQuizScore() {
+  fill('black');
+  noStroke();
+  textSize(14);
+  textAlign(RIGHT, BOTTOM);
+  text('Score: ' + quizCorrectCount + ' / ' + quizTotalTries, canvasWidth - 10, drawHeight - 10);
+}
+```
+
+- Displays "Score: X / Y" in lower right corner during quiz mode
+- Resets when entering quiz mode
+- Increments on each attempt
+
 ## Lessons Learned
 
 1. **Coordinate transformations simplify layout adjustments** - The push/translate/pop pattern is powerful for moving groups of elements without modifying each function individually.
 
-2. **Account for transforms in mouse handling** - When using translate(), mouse coordinates need adjustment (e.g., `mouseY - 15`) to correctly map screen positions to logical coordinates.
+2. **Account for transforms in mouse handling** - When using translate(), mouse coordinates need adjustment (e.g., `mouseY - verticalTranslate`) to correctly map screen positions to logical coordinates.
 
 3. **Hit detection radius matters** - Using `dist()` with a 15px radius for point clicking provides a good balance between precision and ease of use.
+
+4. **Use global variables for magic numbers** - The `verticalTranslate` variable makes future adjustments trivial and documents the purpose of the value.
+
+5. **Particle systems are straightforward** - A simple array of particle objects with position, velocity, and alpha properties creates effective animations. Using `splice()` from the end of the array safely removes expired particles during iteration.
+
+6. **Quiz design matters** - Showing coordinates and having users locate them tests spatial understanding better than the reverse (showing a point and asking for coordinates).
