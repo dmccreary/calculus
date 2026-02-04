@@ -1,0 +1,20 @@
+{
+  "title": "Polynomial Integration",
+  "description": "Interactive step-by-step guide to integrating polynomial functions using the power rule with animated term transformations and graph visualization",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integration",
+  "subtopic": "Polynomial Integration",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "calculate", "execute"],
+  "learningObjective": "Students will apply integration rules to polynomial functions",
+  "prerequisites": ["power-rule", "polynomial-functions", "derivative-rules", "antiderivative-concept"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["integration", "polynomial", "power rule", "antiderivative", "constant of integration", "term by term"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}
