@@ -1,0 +1,52 @@
+{
+  "title": "Graphical Inverse Derivatives",
+  "description": "Interactive visualization showing the relationship between a function and its inverse, with tangent lines demonstrating that the derivative of an inverse function equals the reciprocal of the original function's derivative.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Inverse Functions",
+    "Tangent Lines",
+    "Reciprocal Slopes"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/graphical-inverse-derivatives/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": [
+    "explain",
+    "interpret",
+    "demonstrate"
+  ],
+  "concepts": [
+    "Inverse Function",
+    "Derivative",
+    "Tangent Line",
+    "Reciprocal",
+    "Slope",
+    "Reflection",
+    "Chain Rule",
+    "Implicit Differentiation"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives as slopes",
+    "Knowledge of inverse functions",
+    "Familiarity with function families (exponential, logarithmic, power)"
+  ],
+  "library": "p5.js",
+  "learningObjective": "Students will understand that the derivative of an inverse function equals the reciprocal of the original function's derivative",
+  "duration": "15-20 minutes"
+}

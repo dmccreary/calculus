@@ -1,0 +1,43 @@
+{
+  "title": "Concavity Explorer",
+  "description": "Interactive MicroSim for exploring concave up and concave down regions of functions. Students drag a point along a curve to see how the tangent line rotates, observe the second derivative graph, and understand the connection between the sign of f''(x) and concavity.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Concavity",
+    "Second Derivative",
+    "Inflection Points",
+    "Curve Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/concavity-explorer/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus, College",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Concave Up",
+    "Concave Down",
+    "Second Derivative",
+    "Inflection Point",
+    "Tangent Line",
+    "Rate of Change of Slope"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Tangent lines",
+    "Basic function graphing"
+  ],
+  "library": "p5.js"
+}

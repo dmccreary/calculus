@@ -1,0 +1,100 @@
+{
+    "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+    "title": "Ladder Problem Explorer",
+    "description": "Interactive visualization of the classic related rates ladder problem, showing how the rate of change of the ladder's height depends on base position and sliding speed. Students can see why the top speeds up as it approaches the ground.",
+    "creator": "Dan McCreary",
+    "subject": ["Calculus", "Related Rates", "Derivatives", "Implicit Differentiation"],
+    "date": "2026-02-04",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0",
+    "gradeLevel": "High School (9-12)",
+    "topic": "Related Rates - Ladder Problem",
+    "learningObjectives": [
+        "Calculate the rate of change of the ladder's height given different positions and sliding speeds of the base",
+        "Apply implicit differentiation to derive the related rates equation",
+        "Explain why the top of the ladder speeds up as it approaches the ground"
+    ],
+    "bloomsLevel": ["Apply"],
+    "bloomsVerb": ["calculate", "apply", "execute"],
+    "duration": "10-15 minutes",
+    "prerequisites": [
+        "Implicit differentiation",
+        "Chain rule",
+        "Pythagorean theorem",
+        "Understanding of rate of change"
+    ],
+    "framework": "p5.js",
+    "canvasDimensions": "responsive x 565",
+    "responsive": "Width-responsive",
+    "dependencies": ["p5.js 1.11.10"],
+    "controls": [
+        {
+            "type": "slider",
+            "name": "lengthSlider",
+            "label": "Ladder Length L",
+            "description": "Total length of the ladder in feet",
+            "min": 6,
+            "max": 15,
+            "default": 10,
+            "step": 0.1
+        },
+        {
+            "type": "slider",
+            "name": "speedSlider",
+            "label": "Base Speed db/dt",
+            "description": "Rate at which the base slides away from the wall in ft/sec",
+            "min": 0.5,
+            "max": 4,
+            "default": 1,
+            "step": 0.1
+        },
+        {
+            "type": "slider",
+            "name": "positionSlider",
+            "label": "Base Position b",
+            "description": "Manual control of base distance from wall in feet",
+            "min": 0.5,
+            "max": 9.5,
+            "default": 4,
+            "step": 0.1
+        },
+        {
+            "type": "button",
+            "name": "playPauseButton",
+            "label": "Play/Pause",
+            "description": "Start or stop the ladder animation"
+        },
+        {
+            "type": "button",
+            "name": "resetButton",
+            "label": "Reset",
+            "description": "Reset to initial configuration"
+        }
+    ],
+    "modelType": "Mathematical Visualization",
+    "variables": [
+        "L - ladder length (constant)",
+        "b - horizontal distance from wall to base",
+        "h - vertical height of ladder top",
+        "db/dt - rate of change of base position",
+        "dh/dt - rate of change of height"
+    ],
+    "equations": [
+        "b^2 + h^2 = L^2 (Pythagorean constraint)",
+        "2b(db/dt) + 2h(dh/dt) = 0 (differentiated constraint)",
+        "dh/dt = -(b/h)(db/dt) (solved for dh/dt)"
+    ],
+    "assumptions": [
+        "Ladder remains in contact with both wall and ground",
+        "Wall and ground meet at a right angle",
+        "Ladder is rigid with fixed length",
+        "Base slides at constant rate (db/dt is constant)"
+    ],
+    "limitations": [
+        "Does not account for friction or real-world ladder dynamics",
+        "Infinite speed predicted as h approaches 0 is physically unrealistic",
+        "Assumes perfect sliding contact at both ends"
+    ]
+}

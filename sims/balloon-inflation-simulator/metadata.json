@@ -1,0 +1,133 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "title": "Balloon Inflation Simulator",
+  "description": "An interactive simulation that helps students compare how the rate of radius change varies with different radii and volume flow rates, discovering the inverse relationship dr/dt = (dV/dt) / (4 pi r squared).",
+  "creator": "Claude Code",
+  "subject": ["Mathematics", "Calculus", "Related Rates"],
+  "date": "2026-02-04",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educationalLevel": "High School (Grades 11-12)",
+  "topic": "Related Rates and Derivatives",
+  "learningObjectives": [
+    "Compare how dr/dt varies with different radii",
+    "Analyze the inverse square relationship between dr/dt and r",
+    "Discover why constant volume flow doesn't mean constant radius growth",
+    "Connect surface area to rate of radius change"
+  ],
+  "bloomsTaxonomy": {
+    "level": "Analyze",
+    "verb": "Compare"
+  },
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Related rates concepts",
+    "Chain rule for differentiation",
+    "Volume formula for sphere",
+    "Surface area formula for sphere"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": {
+    "width": "responsive",
+    "drawHeight": 500,
+    "controlHeight": 120
+  },
+  "responsive": true,
+  "dependencies": ["p5.js 1.11.10"],
+  "accessibility": {
+    "describe": true,
+    "keyboardNav": false,
+    "colorContrast": "high"
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "label": "dV/dt (volume flow rate)",
+      "min": 10,
+      "max": 200,
+      "default": 50,
+      "step": 1,
+      "unit": "cm^3/sec",
+      "description": "Controls the rate at which air flows into the balloon"
+    },
+    {
+      "type": "slider",
+      "label": "Animation Speed",
+      "min": 0.5,
+      "max": 3,
+      "default": 1,
+      "step": 0.1,
+      "description": "Controls the speed of the simulation"
+    },
+    {
+      "type": "button",
+      "label": "Play/Pause",
+      "description": "Start or pause the balloon inflation animation"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Reset the simulation to initial state"
+    }
+  ],
+  "visualElements": [
+    {
+      "type": "animation",
+      "description": "Animated expanding sphere shown as circle in 2D"
+    },
+    {
+      "type": "particles",
+      "description": "Volume flow visualization showing air entering balloon"
+    },
+    {
+      "type": "graph",
+      "title": "V(t)",
+      "description": "Volume over time graph"
+    },
+    {
+      "type": "graph",
+      "title": "r(t)",
+      "description": "Radius over time graph"
+    },
+    {
+      "type": "graph",
+      "title": "dr/dt",
+      "description": "Rate of radius change over time"
+    },
+    {
+      "type": "panel",
+      "description": "Current values display: V, r, dV/dt, dr/dt, surface area"
+    },
+    {
+      "type": "panel",
+      "description": "Key observations panel with formula"
+    }
+  ],
+  "interactions": [
+    {
+      "type": "slider",
+      "description": "Adjusting dV/dt changes the rate of volume increase"
+    },
+    {
+      "type": "slider",
+      "description": "Adjusting speed controls animation playback rate"
+    },
+    {
+      "type": "button",
+      "description": "Play/Pause controls animation state"
+    },
+    {
+      "type": "button",
+      "description": "Reset returns simulation to initial state"
+    }
+  ],
+  "keyFormula": "dr/dt = (dV/dt) / (4*pi*r^2)",
+  "relatedConcepts": [
+    "Related rates",
+    "Chain rule",
+    "Implicit differentiation",
+    "Sphere volume and surface area"
+  ]
+}

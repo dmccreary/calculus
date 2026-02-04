@@ -1,0 +1,20 @@
+{
+  "title": "Implicit Differentiation Steps",
+  "description": "Step-by-step visualization of implicit differentiation showing chain rule application to find dy/dx",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Differentiation",
+  "subtopic": "Implicit Differentiation",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "execute", "implement"],
+  "learningObjective": "Students will apply implicit differentiation systematically to find dy/dx",
+  "prerequisites": ["chain-rule", "product-rule", "explicit-differentiation"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["implicit differentiation", "chain rule", "dy/dx", "derivative"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

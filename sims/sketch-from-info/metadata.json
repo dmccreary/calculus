@@ -1,0 +1,80 @@
+{
+  "title": "Sketch from Derivative Info",
+  "description": "Interactive simulation where students construct function graphs given only derivative information, developing the ability to translate algebraic conditions about increasing/decreasing behavior, critical points, and concavity into visual curve representations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Curve Sketching",
+    "Critical Points",
+    "Concavity",
+    "Graph Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/sketch-from-info/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Create"
+  ],
+  "concepts": [
+    "First Derivative",
+    "Second Derivative",
+    "Critical Points",
+    "Local Maximum",
+    "Local Minimum",
+    "Inflection Points",
+    "Concavity",
+    "Increasing Functions",
+    "Decreasing Functions",
+    "Curve Sketching"
+  ],
+  "prerequisites": [
+    "Understanding of first and second derivatives",
+    "Knowledge of critical points",
+    "Understanding of concavity and inflection points",
+    "Ability to interpret derivative signs"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "drawing",
+      "description": "Click and drag on the graph area to sketch a curve"
+    },
+    {
+      "type": "button",
+      "label": "Clear",
+      "description": "Erase the current sketch and start over"
+    },
+    {
+      "type": "button",
+      "label": "Check",
+      "description": "Evaluate which conditions the sketch satisfies"
+    },
+    {
+      "type": "button",
+      "label": "Hint",
+      "description": "Show the next visual hint (points, tangents, arrows)"
+    },
+    {
+      "type": "button",
+      "label": "Solution",
+      "description": "Toggle display of one valid solution curve"
+    },
+    {
+      "type": "button",
+      "label": "New",
+      "description": "Move to the next problem"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Global vs Local Extrema Visualizer",
+  "description": "Interactive simulation helping students distinguish between global and local maxima/minima on function graphs. Features multiple functions, adjustable intervals, visual markers with hover tooltips, and a quiz mode for active learning.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Extrema",
+    "Optimization",
+    "Maximum and Minimum",
+    "Critical Points",
+    "Function Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/extrema-types/",
+  "publisher": "Calculus Intelligent Textbook",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Global Maximum",
+    "Local Maximum",
+    "Global Minimum",
+    "Local Minimum",
+    "Critical Points",
+    "Closed Interval Method",
+    "Extreme Value Theorem"
+  ],
+  "prerequisites": [
+    "Understanding of maximum and minimum values",
+    "Basic function graphing",
+    "Concept of domain and interval"
+  ],
+  "library": "p5.js"
+}

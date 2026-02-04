@@ -1,0 +1,106 @@
+{
+  "title": "Implicit Tangent Line Explorer",
+  "description": "Interactive simulation for exploring tangent lines to curves defined by implicit equations, demonstrating implicit differentiation with circles, ellipses, hyperbolas, and the Folium of Descartes.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Implicit Differentiation",
+    "Tangent Lines",
+    "Conic Sections",
+    "Implicit Curves"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/implicit-tangent/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School (AP Calculus)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Implicit differentiation",
+    "Tangent line to implicit curve",
+    "Partial derivatives",
+    "Chain rule",
+    "Normal line",
+    "Conic sections",
+    "Vertical tangent"
+  ],
+  "prerequisites": [
+    "Derivative rules",
+    "Chain rule",
+    "Point-slope form of a line",
+    "Basic conic sections"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "dropdown",
+      "label": "Curve Selection",
+      "options": ["Circle", "Ellipse", "Hyperbola", "Folium of Descartes"],
+      "default": "Circle",
+      "description": "Select the implicit curve to explore"
+    },
+    {
+      "type": "draggable-point",
+      "label": "Point on Curve",
+      "description": "Click and drag the point along the curve to see tangent line updates"
+    },
+    {
+      "type": "slider",
+      "label": "Parameter 1",
+      "min": 0.5,
+      "max": 4,
+      "default": 2,
+      "description": "Adjust the first curve parameter (e.g., radius r, semi-axis a)"
+    },
+    {
+      "type": "slider",
+      "label": "Parameter 2",
+      "min": 0.5,
+      "max": 4,
+      "default": 2,
+      "description": "Adjust the second curve parameter (e.g., semi-axis b) when applicable"
+    },
+    {
+      "type": "toggle",
+      "label": "Show Normal Line",
+      "default": false,
+      "description": "Toggle visibility of the normal (perpendicular) line"
+    },
+    {
+      "type": "toggle",
+      "label": "Show Steps",
+      "default": false,
+      "description": "Toggle visibility of implicit differentiation steps"
+    },
+    {
+      "type": "button",
+      "label": "Random Point",
+      "description": "Move the point to a random location on the curve"
+    }
+  ],
+  "visualElements": [
+    "Coordinate grid with implicit curve",
+    "Draggable point constrained to curve",
+    "Tangent line at point",
+    "Optional normal line",
+    "Info panel with coordinates and slope",
+    "Step-by-step derivation panel"
+  ],
+  "interactiveFeatures": [
+    "Real-time tangent line updates",
+    "Point snapping to curve",
+    "Vertical tangent detection",
+    "Parameter adjustment with curve redraw"
+  ]
+}

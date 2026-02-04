@@ -1,0 +1,53 @@
+{
+  "title": "Rate Interpretation Dashboard",
+  "description": "Interactive dashboard for interpreting derivative values in context by connecting numerical rates to physical meaning. Features four real-world scenarios: population growth, cooling coffee, drug concentration, and stock prices, each with appropriate units and verbal interpretations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Rate of Change",
+    "Applications",
+    "Interpretation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/rate-interpretation-dashboard/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "bloomVerb": [
+    "interpret",
+    "analyze",
+    "connect"
+  ],
+  "concepts": [
+    "Derivative",
+    "Rate of Change",
+    "Instantaneous Rate",
+    "Units of Measurement",
+    "Linear Approximation",
+    "Tangent Line",
+    "Population Growth",
+    "Exponential Decay",
+    "Pharmacokinetics"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives as rates of change",
+    "Familiarity with tangent lines",
+    "Basic exponential and logarithmic functions"
+  ],
+  "library": "p5.js",
+  "learningObjective": "Students will interpret derivative values in context by connecting numerical rates to physical meaning",
+  "duration": "20-25 minutes"
+}

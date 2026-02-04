@@ -1,0 +1,96 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schema/microsim-schema.json",
+  "title": "Composite Function Identifier",
+  "description": "An interactive MicroSim for training students to recognize composite functions and decompose them into inside (g) and outside (f) functions, essential preparation for chain rule mastery.",
+  "creator": "Dan McCreary",
+  "subject": ["Calculus", "Differentiation", "Chain Rule", "Function Composition"],
+  "date": "2026-02-04",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educational": {
+    "gradeLevel": "High School, Undergraduate",
+    "subjectArea": "Mathematics",
+    "topic": "Composite Functions and Chain Rule Preparation",
+    "learningObjectives": [
+      "Identify composite functions in various forms",
+      "Decompose composite functions into inside and outside components",
+      "Recognize patterns that indicate function composition",
+      "Prepare for chain rule application"
+    ],
+    "bloomsLevel": ["Analyze"],
+    "bloomsVerbs": ["Analyze", "Distinguish", "Deconstruct"],
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Function notation",
+      "Trigonometric functions",
+      "Exponential and logarithmic functions",
+      "Function composition concept"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": "responsive x 560",
+    "responsive": "width-responsive",
+    "dependencies": ["p5.js CDN"]
+  },
+  "controls": [
+    {
+      "type": "text-input",
+      "label": "Inside Function",
+      "description": "Enter the inside function g(x)"
+    },
+    {
+      "type": "text-input",
+      "label": "Outside Function",
+      "description": "Enter the outside function f(u)"
+    },
+    {
+      "type": "button-group",
+      "label": "Difficulty",
+      "options": ["Simple", "Medium", "Nested"],
+      "description": "Select problem complexity level"
+    },
+    {
+      "type": "button",
+      "label": "New Function",
+      "description": "Generate a new composite function problem"
+    },
+    {
+      "type": "button",
+      "label": "Check Answer",
+      "description": "Validate the user's decomposition"
+    },
+    {
+      "type": "button",
+      "label": "Show Solution",
+      "description": "Reveal the correct inside and outside functions"
+    },
+    {
+      "type": "button",
+      "label": "Clear",
+      "description": "Clear the input fields"
+    }
+  ],
+  "simulation": {
+    "modelType": "quiz-practice",
+    "problemCount": 24,
+    "difficultyLevels": 3,
+    "features": [
+      "Immediate feedback",
+      "Visual layer diagram",
+      "Score tracking",
+      "Progressive difficulty"
+    ],
+    "functionTypes": [
+      "Trigonometric",
+      "Exponential",
+      "Logarithmic",
+      "Power/Polynomial",
+      "Radical",
+      "Nested compositions"
+    ]
+  }
+}

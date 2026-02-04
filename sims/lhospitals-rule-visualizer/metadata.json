@@ -1,0 +1,20 @@
+{
+  "title": "L'Hospital's Rule Visualizer",
+  "description": "Interactive visualization showing how L'Hospital's Rule transforms indeterminate limits by comparing the original ratio f(x)/g(x) with the derivative ratio f'(x)/g'(x)",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Limits",
+  "subtopic": "L'Hospital's Rule",
+  "bloomLevel": "2-Understand",
+  "bloomVerbs": ["illustrate", "demonstrate", "explain"],
+  "learningObjective": "Students will illustrate how L'Hospital's Rule transforms indeterminate limits by comparing the original ratio with the ratio of derivatives",
+  "prerequisites": ["limits", "derivatives", "indeterminate-forms"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["L'Hospital's Rule", "indeterminate form", "0/0", "limit", "derivative ratio", "sin(x)/x"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

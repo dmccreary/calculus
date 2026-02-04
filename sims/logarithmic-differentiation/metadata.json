@@ -1,0 +1,20 @@
+{
+  "title": "Logarithmic Differentiation Guide",
+  "description": "Step-by-step interactive guide through the logarithmic differentiation process with color-coded transformations for products, quotients, powers, and variable exponent functions",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Derivatives",
+  "subtopic": "Logarithmic Differentiation",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "calculate", "solve"],
+  "learningObjective": "Students will apply logarithmic differentiation to compute derivatives of complex products, quotients, and variable exponent functions",
+  "prerequisites": ["natural-logarithm", "logarithm-properties", "implicit-differentiation", "chain-rule", "product-rule"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "15-25 minutes",
+  "keywords": ["logarithmic differentiation", "derivative", "logarithm properties", "variable exponent", "implicit differentiation", "product rule for logs", "chain rule"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

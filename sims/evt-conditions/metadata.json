@@ -1,0 +1,50 @@
+{
+  "title": "EVT Conditions Explorer",
+  "description": "Interactive visualization demonstrating why the Extreme Value Theorem requires both continuity and a closed interval. Shows counterexamples including jump discontinuities, removable discontinuities, and open intervals.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Extreme Value Theorem",
+    "Continuity",
+    "Closed Intervals",
+    "Maxima and Minima",
+    "AP Calculus"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/evt-conditions/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Evaluate",
+    "Analyze"
+  ],
+  "concepts": [
+    "Extreme Value Theorem",
+    "Continuity",
+    "Closed Interval",
+    "Open Interval",
+    "Global Maximum",
+    "Global Minimum",
+    "Discontinuity",
+    "Jump Discontinuity",
+    "Removable Discontinuity",
+    "Counterexamples"
+  ],
+  "prerequisites": [
+    "Understanding of continuity",
+    "Interval notation",
+    "Maximum and minimum values",
+    "Basic calculus concepts"
+  ],
+  "library": "p5.js"
+}

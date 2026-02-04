@@ -1,0 +1,53 @@
+{
+  "title": "Complete Curve Sketch",
+  "description": "Interactive MicroSim demonstrating the complete curve sketching process, building graphs step-by-step with intercepts, asymptotes, extrema, and concavity.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": ["calculus", "curve sketching", "derivatives", "asymptotes", "concavity", "extrema"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educational": {
+    "gradeLevel": "11-12, Undergraduate",
+    "subjectArea": "Mathematics",
+    "topic": "Curve Sketching",
+    "bloomLevel": "Apply (L3)",
+    "learningObjective": "Students will demonstrate the complete curve sketching process by building the graph step-by-step, adding each feature (intercepts, asymptotes, extrema, concavity) one at a time to see how the pieces combine.",
+    "duration": "10-15 minutes",
+    "prerequisites": ["derivatives", "limits", "continuity", "asymptotes", "critical points"]
+  },
+  "technical": {
+    "library": "p5.js",
+    "version": "1.11.10",
+    "responsive": true
+  },
+  "controls": [
+    {
+      "type": "button",
+      "label": "Previous",
+      "description": "Go back to the previous step"
+    },
+    {
+      "type": "button",
+      "label": "Next Step",
+      "description": "Progress to the next curve sketching step"
+    },
+    {
+      "type": "button",
+      "label": "Show All",
+      "description": "Reveal the complete graph with all features"
+    },
+    {
+      "type": "button",
+      "label": "Start Over",
+      "description": "Reset to step 1"
+    },
+    {
+      "type": "selector",
+      "label": "Function",
+      "description": "Choose from three different rational functions",
+      "options": ["x^2/(x^2-1)", "x^3/(x^2+1)", "(x-1)/(x^2-4)"]
+    }
+  ]
+}

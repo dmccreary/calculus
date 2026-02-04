@@ -1,0 +1,78 @@
+{
+  "title": "Closest Point Finder",
+  "description": "Interactive simulation demonstrating how to find the minimum distance from a fixed point to various curves. Shows that at the closest point, the connecting line is perpendicular to the tangent line, connecting optimization concepts to geometric reasoning.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Optimization",
+    "Distance Minimization",
+    "Perpendicularity",
+    "Derivatives",
+    "Tangent Lines"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/closest-point-finder/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "bloomVerb": "Compare",
+  "concepts": [
+    "Minimum Distance",
+    "Perpendicularity",
+    "Tangent Lines",
+    "Optimization",
+    "Parametric Curves",
+    "Distance Function"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Tangent lines to curves",
+    "Basic optimization concepts",
+    "Parametric curves (for circle)"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "draggable point",
+      "name": "Target Point",
+      "description": "Red target point that can be dragged anywhere on the coordinate plane"
+    },
+    {
+      "type": "slider",
+      "name": "Parameter Slider",
+      "description": "Controls the position of the green point along the selected curve"
+    },
+    {
+      "type": "button",
+      "name": "Find Minimum",
+      "description": "Automatically locates the closest point on the curve to the target"
+    },
+    {
+      "type": "button group",
+      "name": "Curve Selector",
+      "description": "Select from parabola, cubic, circle, or sine curve"
+    },
+    {
+      "type": "toggle",
+      "name": "Show Perpendicular",
+      "description": "Displays tangent line and slope calculations to verify perpendicularity at minimum"
+    }
+  ],
+  "canvasSize": {
+    "width": 650,
+    "height": 500,
+    "responsive": true
+  }
+}

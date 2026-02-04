@@ -1,0 +1,44 @@
+{
+    "title": "Implicit Curves Explorer",
+    "description": "Interactive visualization of implicit curves (circle, ellipse, hyperbola, folium, lemniscate) with tangent lines and dy/dx values to demonstrate that derivatives exist even when y cannot be explicitly solved for x.",
+    "subject": "Mathematics",
+    "topic": "Calculus - Implicit Differentiation",
+    "keywords": [
+        "implicit curves",
+        "implicit differentiation",
+        "tangent line",
+        "derivative",
+        "circle",
+        "ellipse",
+        "hyperbola",
+        "folium of Descartes",
+        "lemniscate",
+        "dy/dx",
+        "marching squares"
+    ],
+    "audience": "High school AP Calculus students",
+    "language": "en",
+    "educationalLevel": "High School",
+    "learningResourceType": "Interactive Simulation",
+    "interactivityType": "active",
+    "bloomsLevel": "Understand",
+    "bloomsVerbs": ["identify", "describe", "recognize"],
+    "learningObjective": "Students will recognize that implicit equations define curves where tangent lines exist even when y cannot be explicitly solved for x",
+    "prerequisites": [
+        "Understanding of functions and graphs",
+        "Basic derivative concepts",
+        "Familiarity with conic sections"
+    ],
+    "concepts": [
+        "implicit-differentiation",
+        "tangent-line",
+        "derivative",
+        "implicit-function"
+    ],
+    "library": "p5.js",
+    "libraryVersion": "1.9.4",
+    "format": "text/html",
+    "dateCreated": "2026-02-04",
+    "creator": "Claude AI",
+    "license": "MIT"
+}

@@ -1,0 +1,87 @@
+{
+  "title": "Conical Tank Draining",
+  "description": "Interactive simulation showing how fast water level changes in a conical tank, demonstrating related rates and similar triangles relationship between tank dimensions and rate of water level change.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Related Rates",
+    "Derivatives",
+    "Applied Mathematics"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/conical-tank-draining/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School (AP Calculus)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Related rates",
+    "Similar triangles",
+    "Volume of a cone",
+    "Chain rule",
+    "Rate of change",
+    "Implicit differentiation"
+  ],
+  "prerequisites": [
+    "Volume of a cone formula",
+    "Similar triangles",
+    "Chain rule differentiation",
+    "Related rates problem setup"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "label": "H (tank height)",
+      "min": 5,
+      "max": 15,
+      "default": 10,
+      "unit": "ft",
+      "description": "Adjust the total height of the conical tank"
+    },
+    {
+      "type": "slider",
+      "label": "R (tank radius)",
+      "min": 2,
+      "max": 6,
+      "default": 4,
+      "unit": "ft",
+      "description": "Adjust the radius at the top of the conical tank"
+    },
+    {
+      "type": "slider",
+      "label": "dV/dt (drain rate)",
+      "min": -5,
+      "max": -0.5,
+      "default": -2,
+      "unit": "ft^3/min",
+      "description": "Set the rate at which water drains from the tank"
+    },
+    {
+      "type": "button",
+      "label": "Play/Pause",
+      "description": "Start or stop the draining animation"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Reset simulation to default values"
+    },
+    {
+      "type": "interaction",
+      "label": "Click tank",
+      "description": "Click on the tank visualization to set water level"
+    }
+  ]
+}

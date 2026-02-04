@@ -1,0 +1,85 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "title": "Inverse Trig Domains",
+  "description": "An interactive visualization that demonstrates why domain restrictions are necessary for inverse trigonometric functions using the horizontal line test.",
+  "creator": "Claude Code",
+  "subject": ["Mathematics", "Precalculus", "Trigonometry", "Inverse Functions"],
+  "date": "2026-02-04",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educationalLevel": "High School (Grades 10-12)",
+  "topic": "Inverse Trigonometric Functions",
+  "learningObjectives": [
+    "Identify the domain and range of each inverse trigonometric function",
+    "Understand why domain restrictions are necessary for inverse functions",
+    "Recognize that the horizontal line test for the original function corresponds to the vertical line test for the inverse",
+    "List the conventional domain restrictions for all six inverse trig functions"
+  ],
+  "bloomsTaxonomy": {
+    "level": "Remember",
+    "verb": "Identify"
+  },
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Understanding of function notation",
+    "Graphs of sine, cosine, tangent, and their reciprocals",
+    "Concept of inverse functions",
+    "Vertical line test for functions"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": {
+    "width": "responsive",
+    "drawHeight": 450,
+    "controlHeight": 120
+  },
+  "responsive": true,
+  "dependencies": ["p5.js 1.11.10"],
+  "accessibility": {
+    "describe": true,
+    "keyboardNav": false,
+    "colorContrast": "high"
+  },
+  "controls": [
+    {
+      "type": "button-group",
+      "label": "Function",
+      "options": ["arcsin", "arccos", "arctan", "arccot", "arcsec", "arccsc"],
+      "default": "arcsin"
+    },
+    {
+      "type": "slider",
+      "label": "Horizontal line y",
+      "min": -2,
+      "max": 2,
+      "default": 0.5,
+      "step": 0.05,
+      "description": "Controls the y-position of the horizontal line used to demonstrate why restrictions are needed"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show y = x reflection line",
+      "default": false
+    },
+    {
+      "type": "button",
+      "label": "Why this range?",
+      "description": "Toggles display of explanation for the chosen domain restriction"
+    }
+  ],
+  "interactions": [
+    {
+      "type": "button-group",
+      "description": "Selecting an inverse trig function updates both graphs and the domain/range display"
+    },
+    {
+      "type": "slider",
+      "description": "Moving the horizontal line shows multiple intersections on the unrestricted curve but only one on the restricted portion"
+    },
+    {
+      "type": "button",
+      "description": "Reveals explanation text for why mathematicians chose this particular domain restriction"
+    }
+  ]
+}

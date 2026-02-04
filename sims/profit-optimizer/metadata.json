@@ -1,0 +1,105 @@
+{
+  "title": "Profit Optimizer",
+  "description": "Interactive visualization showing revenue, cost, and profit functions with controls to explore optimal production quantity, break-even points, and the MR=MC condition for profit maximization.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Economics",
+    "Optimization",
+    "Business Mathematics",
+    "Marginal Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/profit-optimizer/",
+  "publisher": "Calculus Intelligent Textbook",
+  "educationalLevel": "High School AP Calculus, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Apply"
+  ],
+  "bloomVerb": "Differentiate",
+  "learningObjective": "Students will differentiate between revenue, cost, and profit functions, understanding how their relationships determine the optimal production level.",
+  "concepts": [
+    "Revenue Function",
+    "Cost Function",
+    "Profit Function",
+    "Break-even Analysis",
+    "Marginal Revenue",
+    "Marginal Cost",
+    "Optimization",
+    "Critical Points"
+  ],
+  "prerequisites": [
+    "Understanding of functions and graphs",
+    "Basic derivative concepts",
+    "Quadratic functions"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "Quantity",
+      "description": "Production quantity (x) from 0 to 100 units",
+      "min": 0,
+      "max": 100,
+      "default": 50
+    },
+    {
+      "type": "slider",
+      "name": "Fixed Cost",
+      "description": "Fixed cost component of the cost function",
+      "min": 0,
+      "max": 500,
+      "default": 200
+    },
+    {
+      "type": "slider",
+      "name": "Variable Cost",
+      "description": "Variable cost per unit produced",
+      "min": 0,
+      "max": 10,
+      "default": 2
+    },
+    {
+      "type": "slider",
+      "name": "Base Price",
+      "description": "Price at quantity = 0 in the demand function",
+      "min": 10,
+      "max": 50,
+      "default": 30
+    },
+    {
+      "type": "slider",
+      "name": "Demand Slope",
+      "description": "Rate at which price decreases with quantity",
+      "min": 0.05,
+      "max": 0.5,
+      "default": 0.2
+    },
+    {
+      "type": "button",
+      "name": "Explore/Challenge",
+      "description": "Toggle between Explore mode (all visible) and Challenge mode (profit hidden)"
+    },
+    {
+      "type": "toggle",
+      "name": "Show Profit",
+      "description": "Toggle visibility of the profit curve"
+    },
+    {
+      "type": "button",
+      "name": "Find Max Profit",
+      "description": "Jump to the optimal production quantity where profit is maximized"
+    }
+  ]
+}

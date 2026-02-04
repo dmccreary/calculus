@@ -1,0 +1,50 @@
+{
+  "title": "Curve Analysis Dashboard",
+  "description": "Comprehensive interactive visualization that synthesizes all derivative-based analysis techniques to fully describe a function's behavior. Shows f(x), f'(x), and f''(x) with critical points, inflection points, concavity shading, and a dynamic summary table.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Curve Sketching",
+    "Derivatives",
+    "Critical Points",
+    "Inflection Points",
+    "Concavity",
+    "Function Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/curve-analysis-dashboard/",
+  "publisher": "Calculus Course",
+  "educationalLevel": "High School AP, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Critical Points",
+    "Local Maximum",
+    "Local Minimum",
+    "Inflection Points",
+    "Concavity",
+    "First Derivative Test",
+    "Second Derivative Test",
+    "Increasing Functions",
+    "Decreasing Functions",
+    "Curve Sketching"
+  ],
+  "prerequisites": [
+    "Derivatives",
+    "Critical Points",
+    "Second Derivative",
+    "Concavity"
+  ],
+  "library": "p5.js"
+}
