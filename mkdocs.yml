@@ -129,6 +129,7 @@ nav:
     - Inverse Trig Domains: sims/inverse-trig-domains/index.md
     - IVT Visualization: sims/ivt-visualization/index.md
     - Ladder Problem Explorer: sims/ladder-problem-explorer/index.md
+    - Left Right Riemann: sims/left-right-riemann/index.md
     - L'Hopital's Rule Visualizer: sims/lhospitals-rule-visualizer/index.md
     - Limit Laws Practice: sims/limit-laws-practice/index.md
     - Limit with Hole: sims/limit-with-hole/index.md
@@ -157,6 +158,7 @@ nav:
     - Rule Selector: sims/rule-selector/index.md
     - Secant to Tangent: sims/secant-to-tangent/index.md
     - Second Derivative Explorer: sims/second-derivative-explorer/index.md
+    - Sigma Notation Visualizer: sims/sigma-notation-visualizer/index.md
     - Sign Chart Builder: sims/sign-chart-builder/index.md
     - Three Connected Graphs Explorer: sims/three-graphs-explorer/index.md
     - Sin(x)/x: sims/sinx-over-x/index.md
@@ -222,6 +224,7 @@ nav:
     - FAQ Quality Report: learning-graph/faq-quality-report.md
     - Quiz Generation Report: learning-graph/quiz-generation-report.md
     - Parallel Execution Report: learning-graph/parallel-execution-report.md
+    - Generate MicroSims in Parallel: learning-graph/generate-microsims-in-parallel.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
@@ -236,6 +239,8 @@ nav:
     - learning-graph/diagram-details.md
     - learning-graph/diagram-table.md
     - prompts/timeline-data.md
+    - prompts/generate-microsims-in-parallel.md
+    - prompts/microsim-y-axis-overlap.md
   
   - Glossary: glossary.md
   - FAQ: faq.md
