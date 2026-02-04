@@ -1,0 +1,29 @@
+{
+  "title": "Timeline of Calculus History",
+  "description": "An interactive timeline showing 2300 years of calculus development, from Ancient Greek mathematicians to modern AI-assisted learning, featuring 29 key events in 11 categories.",
+  "creator": "Dan McCreary",
+  "subject": ["calculus", "mathematics history", "timeline", "education"],
+  "type": "InteractiveResource",
+  "format": "text/html",
+  "language": "en",
+  "created": "2026-02-03",
+  "modified": "2026-02-03",
+  "audience": "High school AP Calculus students",
+  "educationalLevel": "High School",
+  "learningResourceType": "Timeline Visualization",
+  "interactivityType": "active",
+  "keywords": [
+    "calculus history",
+    "Newton",
+    "Leibniz",
+    "Archimedes",
+    "mathematics timeline",
+    "AP Calculus",
+    "interactive timeline",
+    "vis-timeline"
+  ],
+  "library": "vis-timeline",
+  "libraryVersion": "7.7.3",
+  "bloomLevel": "Understand",
+  "estimatedTime": "15-30 minutes"
+}

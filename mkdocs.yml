@@ -98,6 +98,7 @@ nav:
     - Unit Circle: sims/unit-circle/index.md
     - Trig Identity Visualizer: sims/trig-identity-visualizer/index.md
     - Trig Graph Transformer: sims/trig-graph-transformer/index.md
+    - Timeline of Calculus History: sims/timeline/index.md
 
   - Appendices:
     - List of Appendices: appendices/index.md
@@ -165,6 +166,7 @@ markdown_extensions:
   - md_in_html
   - attr_list
   - admonition
+  - footnotes
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:

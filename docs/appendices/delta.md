@@ -1,6 +1,6 @@
 # Meet Delta
 
-![Delta the slope-walking explorer](../img/delta.png)
+![Delta the slope-walking explorer](../img/delta-v1.png)
 
 ## Meet Delta - Our Slope-Walking Explorer
 
