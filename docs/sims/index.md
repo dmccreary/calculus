@@ -1,204 +1,756 @@
-# MicroSims
+---
+title: MicroSims Gallery
+description: Interactive educational simulations for exploring calculus concepts. Browse all 123 MicroSims with visual previews.
+hide:
+  - toc
+---
 
-Interactive educational simulations for exploring calculus concepts. Each MicroSim focuses on a single learning objective and provides immediate visual feedback.
+# MicroSims Gallery
 
-## Chapter 1: Foundations of Calculus
+Interactive educational simulations for exploring calculus concepts.
+Each MicroSim focuses on a single learning objective and provides immediate visual feedback.
 
-| MicroSim | Description |
-|----------|-------------|
-| [Coordinate System Explorer](./coordinate-system-explorer/index.md) | Interactive exploration of the Cartesian coordinate plane with point placement and quadrant identification |
-| [Domain and Range Visualizer](./domain-range-visualizer/index.md) | Interpret domain and range graphically with highlighted number lines |
-| [Exponential-Logarithm Relationship](./exp-log-relationship/index.md) | Compare exponential and logarithmic functions as inverses reflected across y = x |
-| [Function Composition](./function-composition/index.md) | Shows how composite functions work by tracing values through two function machines |
-| [Function Machine](./function-machine/index.md) | Demonstrates how functions process inputs to produce exactly one output |
-| [Inverse Function Reflector](./inverse-function-reflector/index.md) | Compare functions and their inverses graphically with reflection across y = x |
-| [Piecewise Builder](./piecewise-builder/index.md) | Construct piecewise functions by defining different rules for different domains |
-| [Polynomial Explorer](./polynomial-explorer/index.md) | Examine how polynomial degree and leading coefficient affect graph shape |
-| [Transformation Playground](./transformation-playground/index.md) | Manipulate a, b, h, k parameters to transform parent functions in real-time |
-| [Trig Graph Transformer](./trig-graph-transformer/index.md) | Manipulate amplitude, period, phase shift, and vertical shift for trig functions |
-| [Trig Identity Visualizer](./trig-identity-visualizer/index.md) | See the Pythagorean identity geometrically using the unit circle |
-| [Unit Circle](./unit-circle/index.md) | Explore the relationship between angles and sine/cosine values |
-| [Vertical Line Test](./vertical-line-test/index.md) | Interactive tool for testing whether graphs represent functions |
+<div class="grid cards" markdown>
 
-## Chapter 2: Understanding Limits
+-   **[Accumulation Function Explorer](./accumulation-function/index.md)**
 
-| MicroSim | Description |
-|----------|-------------|
-| [Limit with Hole](./limit-with-hole/index.md) | Shows how function values approach a limit even with a hole at that point |
-| [Limits from Graphs](./limits-from-graphs/index.md) | Practice reading left-hand, right-hand, and two-sided limits from graphs |
-| [One-Sided Limits](./one-sided-limits/index.md) | Compare left-hand and right-hand limits to determine if two-sided limit exists |
+    ![Accumulation Function Explorer](./accumulation-function/screenimage.png)
 
-## Chapter 3: Evaluating Limits
+    Visualize how the accumulation function F(x) = integral from a to x of f(t) dt grows as x moves across the interval.
 
-| MicroSim | Description |
-|----------|-------------|
-| [Direct Substitution Tree](./direct-substitution-tree/index.md) | Interactive flowchart for the decision process of evaluating limits |
-| [Factoring Limits](./factoring-limits/index.md) | Visualize how factoring and canceling reveals limit values |
-| [Limit Laws Practice](./limit-laws-practice/index.md) | Interactive practice for applying limit laws algebraically |
-| [Sin(x)/x Visualization](./sinx-over-x/index.md) | Understand the fundamental trigonometric limit using unit circle |
-| [Squeeze Theorem](./squeeze-theorem/index.md) | Interactive demonstration of how the Squeeze Theorem pins down limits |
+-   **[Additivity Property Visualization](./additivity-property/index.md)**
 
-## Chapter 4: Continuity
+    ![Additivity Property Visualization](./additivity-property/screenimage.png)
 
-| MicroSim | Description |
-|----------|-------------|
-| [Continuity Conditions](./continuity-conditions/index.md) | Visualize the three conditions for continuity at a point |
-| [Discontinuity Types](./discontinuity-types/index.md) | Interactive classification of discontinuities (removable, jump, infinite) |
-| [IVT Visualization](./ivt-visualization/index.md) | Demonstrates the Intermediate Value Theorem with Delta robot |
-| [Piecewise Continuity](./piecewise-continuity/index.md) | Determine continuity of piecewise functions at boundary points |
+    Demonstrates how the area under a curve can be split into sub-regions that sum to the total, illustrating the additivity property of definite integrals.
 
-## Chapter 5: Asymptotes and End Behavior
+-   **[Family of Antiderivatives](./antiderivative-family/index.md)**
 
-| MicroSim | Description |
-|----------|-------------|
-| [Asymptote Analyzer](./asymptote-analyzer/index.md) | Explore vertical and horizontal asymptotes of rational functions |
-| [Asymptote Behavior](./asymptote-behavior/index.md) | Shows function behavior near vertical asymptotes and at infinity |
-| [Asymptote Types](./asymptote-types/index.md) | Compare vertical, horizontal, and oblique asymptotes side-by-side |
-| [End Behavior](./end-behavior/index.md) | How leading term characteristics determine end behavior |
-| [Growth Rates](./growth-rates/index.md) | Compare logarithmic, polynomial, and exponential growth rates |
-| [Vertical Asymptote](./vertical-asymptote/index.md) | Shows how one-sided limits determine behavior near vertical asymptotes |
+    ![Family of Antiderivatives](./antiderivative-family/screenimage.png)
 
-## Chapter 6: The Derivative Concept
+    Interactive visualization showing how different values of the constant C produce a family of parallel antiderivative curves. All antiderivatives of a function differ only by a constant.
 
-| MicroSim | Description |
-|----------|-------------|
-| [Average Rate of Change](./average-rate-change/index.md) | Explore average rate of change by dragging points along a curve |
-| [Derivative from Graph](./derivative-from-graph/index.md) | Practice estimating derivatives by drawing tangent lines |
-| [Derivative Interpretation](./derivative-interpretation/index.md) | Shows the derivative as both slope and rate of change |
-| [Rate Interpretation Dashboard](./rate-interpretation-dashboard/index.md) | Connect numerical rates to physical meaning in real-world scenarios |
-| [Secant to Tangent](./secant-to-tangent/index.md) | Shows secant lines approaching the tangent line as h approaches 0 |
+-   **[Asymptote Analyzer](./asymptote-analyzer/index.md)**
 
-## Chapter 7: Differentiability
+    ![Asymptote Analyzer](./asymptote-analyzer/screenimage.png)
 
-| MicroSim | Description |
-|----------|-------------|
-| [Differentiability Checker](./differentiability-checker/index.md) | Step-through tool for checking differentiability at a point |
-| [Differentiability vs Continuity](./diff-cont-relationship/index.md) | Interactive Venn diagram of differentiable and continuous functions |
-| [Non-Differentiable Gallery](./non-differentiable-gallery/index.md) | Gallery of corners, cusps, and vertical tangents |
-| [One-Sided Derivatives](./one-sided-derivatives/index.md) | Shows when left and right secant lines match or differ |
+    Explore vertical and horizontal asymptotes of rational functions.
 
-## Chapter 8: Basic Derivative Rules
+-   **[Asymptote Behavior Visualization](./asymptote-behavior/index.md)**
 
-| MicroSim | Description |
-|----------|-------------|
-| [Multi-Rule Builder](./multi-rule-builder/index.md) | Step-by-step tool showing how derivative rules combine |
-| [Power Rule Explorer](./power-rule-explorer/index.md) | Visualize how x^n and nx^(n-1) relate graphically |
-| [Rule Selector](./rule-selector/index.md) | Interactive decision tree for choosing differentiation rules |
-| [Term by Term Differentiation](./term-by-term-diff/index.md) | Step-by-step polynomial differentiation using basic rules |
+    ![Asymptote Behavior Visualization](./asymptote-behavior/screenimage.png)
 
-## Chapter 9: Product, Quotient, and Transcendental Derivatives
+    Interactive visualization showing how rational functions behave near vertical asymptotes and as x approaches infinity, featuring Delta the robot traveling along curves.
 
-| MicroSim | Description |
-|----------|-------------|
-| [e^x is Its Own Derivative](./exp-self-derivative/index.md) | Shows that the exponential function's derivative equals itself |
-| [Logarithmic Differentiation](./logarithmic-differentiation/index.md) | Step-by-step guide through logarithmic differentiation |
-| [Product Rule Visualizer](./product-rule-viz/index.md) | Illustrate the product rule geometrically with area interpretation |
-| [Trig Derivative Cycle](./trig-derivative-cycle/index.md) | Shows the cyclic pattern sin→cos→-sin→-cos |
-| [Trig Derivatives Flashcards](./trig-derivatives-card/index.md) | Interactive flashcards for trigonometric derivatives |
+-   **[All Three Asymptote Types](./asymptote-types/index.md)**
 
-## Chapter 10: Chain Rule
+    ![All Three Asymptote Types](./asymptote-types/screenimage.png)
 
-| MicroSim | Description |
-|----------|-------------|
-| [Chain Rule Steps](./chain-rule-steps/index.md) | Interactive step-by-step guide to applying the chain rule |
-| [Composite Identifier](./composite-identifier/index.md) | Training tool to decompose functions into inside and outside parts |
-| [Nested Chain Unwrap](./nested-chain-unwrap/index.md) | Visualize nested compositions differentiated layer by layer |
+    Interactive comparison of vertical, horizontal, and oblique asymptotes showing their defining characteristics and behavior.
 
-## Chapter 11: Implicit Differentiation
+-   **[Average Rate of Change Explorer](./average-rate-change/index.md)**
 
-| MicroSim | Description |
-|----------|-------------|
-| [Implicit Curves](./implicit-curves/index.md) | Interactive visualization of implicit curves with tangent lines |
-| [Implicit Differentiation Steps](./implicit-diff-steps/index.md) | Step-by-step visualization showing chain rule application |
-| [Implicit Tangent](./implicit-tangent/index.md) | Explores tangent lines to curves defined by implicit equations |
+    ![Average Rate of Change Explorer](./average-rate-change/screenimage.png)
 
-## Chapter 12: Inverse Function Derivatives
+    An interactive MicroSim that allows students to explore average rate of change by dragging two points along a curve and observing the secant line and slope calculation update in real-time.
 
-| MicroSim | Description |
-|----------|-------------|
-| [Graphical Inverse Derivatives](./graphical-inverse-derivatives/index.md) | Shows derivative relationship between functions and their inverses |
-| [Inverse Derivative](./inverse-derivative/index.md) | Why the derivative of an inverse equals the reciprocal |
-| [Inverse Trig Derivatives Quiz](./inverse-trig-derivatives-quiz/index.md) | Interactive quiz for inverse trig derivative formulas |
-| [Inverse Trig Domains](./inverse-trig-domains/index.md) | Why domain restrictions are necessary for inverse trig functions |
+-   **[Average Value of a Function](./average-value/index.md)**
 
-## Chapter 13: Higher-Order Derivatives and Motion
+    ![Average Value of a Function](./average-value/screenimage.png)
 
-| MicroSim | Description |
-|----------|-------------|
-| [Direction of Motion Analyzer](./direction-of-motion-analyzer/index.md) | Analyzes when objects move in positive vs negative direction |
-| [Motion Analysis](./motion-analysis/index.md) | Relationship between position, velocity, and acceleration |
-| [Second Derivative Explorer](./second-derivative-explorer/index.md) | Shows f(x), f'(x), and f''(x) in three synchronized panels |
-| [Speed Change Analyzer](./speed-change-analyzer/index.md) | When objects speed up vs slow down based on velocity and acceleration |
-| [Three Graphs Explorer](./three-graphs-explorer/index.md) | f(x), f'(x), and f''(x) simultaneously with synchronized cursor |
+    Interactive visualization showing the average value of a function as the height of a rectangle with equal area to the region under the curve.
 
-## Chapter 14: Related Rates and Linear Approximation
+-   **[Balloon Inflation Simulator](./balloon-inflation-simulator/index.md)**
 
-| MicroSim | Description |
-|----------|-------------|
-| [Balloon Inflation Simulator](./balloon-inflation-simulator/index.md) | How radius change rate varies with different radii and flow rates |
-| [Conical Tank Draining](./conical-tank-draining/index.md) | Water level change rate in a conical tank using similar triangles |
-| [Ladder Problem Explorer](./ladder-problem-explorer/index.md) | Classic related rates ladder problem visualization |
-| [Linear Approximation Error](./linear-approx-error/index.md) | Assess accuracy of linear approximations vs actual values |
-| [Local Linearity Zoom](./local-linearity/index.md) | How curves appear linear when zoomed in sufficiently |
-| [Two Moving Objects Distance](./two-moving-objects-distance/index.md) | Rate of distance change between two moving objects |
+    ![Balloon Inflation Simulator](./balloon-inflation-simulator/screenimage.png)
 
-## Chapter 15: L'Hospital's Rule
+    An interactive MicroSim that helps students compare how the rate of radius change varies with different radii and volume flow rates, discovering the inverse relationship between dr/dt and r squared.
 
-| MicroSim | Description |
-|----------|-------------|
-| [L'Hospital's Rule Visualizer](./lhospitals-rule-visualizer/index.md) | Transforms indeterminate limits by comparing ratio with derivative ratio |
+-   **[Box Volume Optimizer](./box-optimizer/index.md)**
 
-## Chapter 16: Mean Value Theorem and Extrema
+    ![Box Volume Optimizer](./box-optimizer/screenimage.png)
 
-| MicroSim | Description |
-|----------|-------------|
-| [Closed Interval Method](./closed-interval-method/index.md) | Finding absolute extrema on closed intervals with three-step process |
-| [Critical Point Finder](./critical-point-finder/index.md) | Identify where f'(x) = 0 or f'(x) does not exist |
-| [EVT Conditions](./evt-conditions/index.md) | Why Extreme Value Theorem requires continuity and closed interval |
-| [Extrema Types](./extrema-types/index.md) | Distinguish between global and local maxima/minima |
-| [MVT Explorer](./mvt-explorer/index.md) | Secant lines connecting endpoints and tangent lines at point c |
-| [Rolle's Theorem](./rolles-theorem/index.md) | Explore functions satisfying Rolle's Theorem conditions |
+    Interactive MicroSim demonstrating how cutting squares from cardboard corners affects the volume of the resulting box. Students examine the optimization problem V(x) = x(L-2x)(W-2x).
 
-## Chapter 17: Derivative Tests and Concavity
+-   **[Can Optimizer](./can-optimizer/index.md)**
 
-| MicroSim | Description |
-|----------|-------------|
-| [Candidates Test](./candidates-test/index.md) | Step-by-step guide through the closed interval method |
-| [Concavity Explorer](./concavity-explorer/index.md) | Explore concave up and down regions with tangent line behavior |
-| [Derivative Test Comparison](./derivative-test-comparison/index.md) | Side-by-side comparison of First and Second Derivative Tests |
-| [Sign Chart Builder](./sign-chart-builder/index.md) | Construct sign charts for intervals of increase and decrease |
+    ![Can Optimizer](./can-optimizer/screenimage.png)
 
-## Chapter 18: Curve Sketching
+    An interactive MicroSim demonstrating optimization by exploring how cylinder radius affects surface area for a fixed volume, helping students calculate optimal can dimensions.
 
-| MicroSim | Description |
-|----------|-------------|
-| [Complete Curve Sketch](./complete-curve-sketch/index.md) | Building graphs step-by-step with intercepts, asymptotes, extrema |
-| [Curve Analysis Dashboard](./curve-analysis-dashboard/index.md) | Synthesizes all derivative-based analysis techniques |
-| [Derivative Info Flow](./derivative-info-flow/index.md) | How information flows from f'' to f' to f |
-| [Function-Derivative Comparison](./function-derivative-comparison/index.md) | Side-by-side function and derivative with synchronized display |
-| [Sketch from Info](./sketch-from-info/index.md) | Construct function graphs given only derivative information |
-| [Verification Methods](./verification-methods/index.md) | Which verification method is most appropriate for different situations |
+-   **[Candidates Test Calculator](./candidates-test/index.md)**
 
-## Chapter 19: Optimization
+    ![Candidates Test Calculator](./candidates-test/screenimage.png)
 
-| MicroSim | Description |
-|----------|-------------|
-| [Box Optimizer](./box-optimizer/index.md) | Maximize box volume from cardboard sheet with 2D and 3D views |
-| [Can Optimizer](./can-optimizer/index.md) | How cylinder radius affects surface area for fixed volume |
-| [Closest Point Finder](./closest-point-finder/index.md) | Find minimum distance from a fixed point to various curves |
-| [Fencing Optimizer](./fencing-optimizer/index.md) | Maximize rectangular field area bounded by a river |
-| [Marginal Analysis Calculator](./marginal-analysis-calculator/index.md) | Calculate marginal cost, revenue, and profit |
-| [Marginal Cost Analyzer](./marginal-cost-analyzer/index.md) | Interpret marginal cost as the derivative of cost function |
-| [Optimization Flowchart](./optimization-flowchart/index.md) | Step-by-step process for setting up optimization problems |
-| [Profit Optimizer](./profit-optimizer/index.md) | Revenue, cost, and profit functions for optimal production |
+    An interactive step-by-step guide through the closed interval method for finding global extrema on closed intervals.
 
-## Utility Tools
+-   **[Chain Rule Steps](./chain-rule-steps/index.md)**
 
-| MicroSim | Description |
-|----------|-------------|
-| [Learning Graph Viewer](./graph-viewer/index.md) | Interactive visualization of the course's 200-concept learning graph |
-| [Calculus Timeline](./timeline/index.md) | Historical timeline of calculus development |
-| [Tangent Line Calculator](./tangent-line-calculator/index.md) | Step-by-step calculation of tangent line equations |
+    ![Chain Rule Steps](./chain-rule-steps/screenimage.png)
+
+    Interactive step-by-step guide to applying the chain rule for differentiating composite functions with color-coded visualization of inside and outside functions.
+
+-   **[Changing Bounds in u-Substitution](./changing-bounds/index.md)**
+
+    ![Changing Bounds in u-Substitution](./changing-bounds/screenimage.png)
+
+    Interactive visualization showing how integration bounds transform from x-domain to u-domain during u-substitution, with side-by-side graphs confirming area equality.
+
+-   **[Closed Interval Method](./closed-interval-method/index.md)**
+
+    ![Closed Interval Method](./closed-interval-method/screenimage.png)
+
+    Interactive MicroSim demonstrating the Closed Interval Method for finding absolute extrema on closed intervals through a step-by-step guided process.
+
+-   **[Closest Point Finder](./closest-point-finder/index.md)**
+
+    ![Closest Point Finder](./closest-point-finder/screenimage.png)
+
+    An interactive MicroSim that finds the minimum distance from a draggable target point to various curves, demonstrating that at the closest point, the connecting line is perpendicular to the tangent.
+
+-   **[Complete Curve Sketch](./complete-curve-sketch/index.md)**
+
+    ![Complete Curve Sketch](./complete-curve-sketch/screenimage.png)
+
+    Interactive MicroSim demonstrating the complete curve sketching process, building graphs step-by-step with intercepts, asymptotes, extrema, and concavity.
+
+-   **[Composite Function Identifier](./composite-identifier/index.md)**
+
+    ![Composite Function Identifier](./composite-identifier/screenimage.png)
+
+    An interactive MicroSim for training students to recognize composite functions and decompose them into inside (g) and outside (f) functions, preparing them for the chain rule.
+
+-   **[Concavity Explorer](./concavity-explorer/index.md)**
+
+    ![Concavity Explorer](./concavity-explorer/screenimage.png)
+
+    Interactive MicroSim exploring concave up and concave down regions by dragging a point along a curve and observing how the tangent line slope changes in relation to the second derivative.
+
+-   **[Conical Tank Draining](./conical-tank-draining/index.md)**
+
+    ![Conical Tank Draining](./conical-tank-draining/screenimage.png)
+
+    Interactive visualization of related rates for water draining from a conical tank, showing similar triangles relationship between radius and height.
+
+-   **[Three Conditions for Continuity](./continuity-conditions/index.md)**
+
+    ![Three Conditions for Continuity](./continuity-conditions/screenimage.png)
+
+    An interactive MicroSim that helps students explain how each of the three continuity conditions corresponds to visual features of a function graph.
+
+-   **[Coordinate System Explorer](./coordinate-system-explorer/index.md)**
+
+    ![Coordinate System Explorer](./coordinate-system-explorer/screenimage.png)
+
+    Interactive exploration of the Cartesian coordinate plane with point placement and quadrant identification.
+
+-   **[Critical Point Finder](./critical-point-finder/index.md)**
+
+    ![Critical Point Finder](./critical-point-finder/screenimage.png)
+
+    Interactive MicroSim to help students identify critical points by finding where f'(x) = 0 or f'(x) does not exist, with step-by-step solutions.
+
+-   **[Curve Analysis Dashboard](./curve-analysis-dashboard/index.md)**
+
+    ![Curve Analysis Dashboard](./curve-analysis-dashboard/screenimage.png)
+
+    Complete interactive visualization showing how to fully analyze a function using derivatives, including critical points, inflection points, concavity, and increasing/decreasing intervals.
+
+-   **[Derivative from Graph](./derivative-from-graph/index.md)**
+
+    ![Derivative from Graph](./derivative-from-graph/screenimage.png)
+
+    Practice estimating derivatives by drawing tangent lines on curves and comparing your estimated slope to the actual derivative value.
+
+-   **[Derivative Information Flow](./derivative-info-flow/index.md)**
+
+    ![Derivative Information Flow](./derivative-info-flow/screenimage.png)
+
+    Interactive diagram showing how information about function behavior flows from the second derivative to the first derivative to the original function.
+
+-   **[Derivative Interpretation Selector](./derivative-interpretation/index.md)**
+
+    ![Derivative Interpretation Selector](./derivative-interpretation/screenimage.png)
+
+    Interactive MicroSim showing the derivative as both slope (graphical) and rate of change (contextual).
+
+-   **[Derivative Test Comparison](./derivative-test-comparison/index.md)**
+
+    ![Derivative Test Comparison](./derivative-test-comparison/screenimage.png)
+
+    An interactive comparison tool showing the First and Second Derivative Tests side-by-side for classifying critical points.
+
+-   **[First vs Second Derivative Test](./derivative-tests-comparison/index.md)**
+
+    ![First vs Second Derivative Test](./derivative-tests-comparison/screenimage.png)
+
+    An interactive MicroSim comparing the First Derivative Test and Second Derivative Test methods for classifying critical points of functions.
+
+-   **[Differentiability vs Continuity](./diff-cont-relationship/index.md)**
+
+    ![Differentiability vs Continuity](./diff-cont-relationship/screenimage.png)
+
+    Interactive Venn diagram showing the set relationship between differentiable and continuous functions.
+
+-   **[Differentiability Checker](./differentiability-checker/index.md)**
+
+    ![Differentiability Checker](./differentiability-checker/screenimage.png)
+
+    Step-through tool for checking differentiability at a point.
+
+-   **[Direct Substitution Decision Tree](./direct-substitution-tree/index.md)**
+
+    ![Direct Substitution Decision Tree](./direct-substitution-tree/screenimage.png)
+
+    Interactive flowchart guiding students through the decision process for evaluating limits.
+
+-   **[Direction of Motion Analyzer](./direction-of-motion-analyzer/index.md)**
+
+    ![Direction of Motion Analyzer](./direction-of-motion-analyzer/screenimage.png)
+
+    Interactive MicroSim analyzing when an object moves in positive vs negative direction based on the sign of velocity.
+
+-   **[Discontinuity Classification](./discontinuity-types/index.md)**
+
+    ![Discontinuity Classification](./discontinuity-types/screenimage.png)
+
+    An interactive MicroSim for classifying discontinuities by analyzing limit behavior at specific points.
+
+-   **[Domain and Range Visualizer](./domain-range-visualizer/index.md)**
+
+    ![Domain and Range Visualizer](./domain-range-visualizer/screenimage.png)
+
+    An interactive MicroSim that helps students interpret domain and range graphically by showing function graphs with highlighted number lines.
+
+-   **[End Behavior Explorer](./end-behavior/index.md)**
+
+    ![End Behavior Explorer](./end-behavior/screenimage.png)
+
+    Interactive MicroSim for examining how leading term characteristics determine the end behavior of polynomial and rational functions.
+
+-   **[Even and Odd Function Integral Symmetry](./even-odd-integrals/index.md)**
+
+    ![Even and Odd Function Integral Symmetry](./even-odd-integrals/screenimage.png)
+
+    Interactive visualization showing how symmetry properties of even and odd functions affect definite integrals over symmetric intervals.
+
+-   **[EVT Conditions Explorer](./evt-conditions/index.md)**
+
+    ![EVT Conditions Explorer](./evt-conditions/screenimage.png)
+
+    Interactive visualization showing why the Extreme Value Theorem requires both continuity and a closed interval, with counterexamples.
+
+-   **[Exponential and Logarithm Relationship](./exp-log-relationship/index.md)**
+
+    ![Exponential and Logarithm Relationship](./exp-log-relationship/screenimage.png)
+
+    Compare exponential and logarithmic functions as inverses reflected across y = x.
+
+-   **[e^x is Its Own Derivative](./exp-self-derivative/index.md)**
+
+    ![e^x is Its Own Derivative](./exp-self-derivative/screenimage.png)
+
+    Interactive MicroSim demonstrating that the exponential function e^x is unique because its derivative equals the function itself.
+
+-   **[Exponential Integrals](./exponential-integrals/index.md)**
+
+    ![Exponential Integrals](./exponential-integrals/screenimage.png)
+
+    Interactive visualization demonstrating how the integral of a^x depends on the base a and why dividing by ln(a) is necessary.
+
+-   **[Global vs Local Extrema Visualizer](./extrema-types/index.md)**
+
+    ![Global vs Local Extrema Visualizer](./extrema-types/screenimage.png)
+
+    Interactive MicroSim helping students distinguish between global and local maxima/minima on function graphs.
+
+-   **[Factoring Technique for Limits](./factoring-limits/index.md)**
+
+    ![Factoring Technique for Limits](./factoring-limits/screenimage.png)
+
+    Visualize how factoring and canceling common factors reveals limit values.
+
+-   **[Fencing Problem Optimizer](./fencing-optimizer/index.md)**
+
+    ![Fencing Problem Optimizer](./fencing-optimizer/screenimage.png)
+
+    An interactive MicroSim for visualizing and solving the classic fencing optimization problem.
+
+-   **[FTC Connection Visualization](./ftc-connection/index.md)**
+
+    ![FTC Connection Visualization](./ftc-connection/screenimage.png)
+
+    Visualize how FTC Part 1 and Part 2 are two sides of the same relationship between differentiation and integration.
+
+-   **[FTC Part 1 Calculator](./ftc-part1-calculator/index.md)**
+
+    ![FTC Part 1 Calculator](./ftc-part1-calculator/screenimage.png)
+
+    Practice applying the Fundamental Theorem of Calculus Part 1 to find derivatives of accumulation functions.
+
+-   **[FTC Part 2 Step-by-Step Evaluator](./ftc-part2-evaluator/index.md)**
+
+    ![FTC Part 2 Step-by-Step Evaluator](./ftc-part2-evaluator/screenimage.png)
+
+    Walk through the FTC Part 2 evaluation process step by step to evaluate definite integrals.
+
+-   **[Function Composition Visualizer](./function-composition/index.md)**
+
+    ![Function Composition Visualizer](./function-composition/screenimage.png)
+
+    Interactive visualization showing how composite functions work by tracing values through two function machines in sequence.
+
+-   **[Function and Derivative Comparison](./function-derivative-comparison/index.md)**
+
+    ![Function and Derivative Comparison](./function-derivative-comparison/screenimage.png)
+
+    Interactive side-by-side visualization showing a function and its derivative with synchronized point and tangent line displays.
+
+-   **[Function Machine](./function-machine/index.md)**
+
+    ![Function Machine](./function-machine/screenimage.png)
+
+    An interactive MicroSim demonstrating how functions process inputs to produce exactly one output.
+
+-   **[Learning Graph Viewer](./graph-viewer/index.md)**
+
+    ![Learning Graph Viewer](./graph-viewer/screenimage.png)
+
+    Interactive visualization of the course concept dependency learning graph.
+
+-   **[Graphical Inverse Derivatives](./graphical-inverse-derivatives/index.md)**
+
+    ![Graphical Inverse Derivatives](./graphical-inverse-derivatives/screenimage.png)
+
+    Interactive visualization showing the relationship between a function and its inverse, with tangent lines demonstrating the reciprocal slope property.
+
+-   **[Growth Rate Comparison](./growth-rates/index.md)**
+
+    ![Growth Rate Comparison](./growth-rates/screenimage.png)
+
+    Compare growth rates of logarithmic, polynomial, and exponential functions to understand which dominates as x approaches infinity.
+
+-   **[Implicit Curves Explorer](./implicit-curves/index.md)**
+
+    ![Implicit Curves Explorer](./implicit-curves/screenimage.png)
+
+    Interactive visualization of implicit curves with tangent lines.
+
+-   **[Implicit Differentiation Steps](./implicit-diff-steps/index.md)**
+
+    ![Implicit Differentiation Steps](./implicit-diff-steps/screenimage.png)
+
+    Interactive step-by-step visualization of the implicit differentiation process with color-coded terms.
+
+-   **[Implicit Tangent Line Explorer](./implicit-tangent/index.md)**
+
+    ![Implicit Tangent Line Explorer](./implicit-tangent/screenimage.png)
+
+    Interactive exploration of tangent lines to curves defined by implicit equations, including circles, ellipses, hyperbolas, and the Folium of Descartes.
+
+-   **[Integration Strategy Decision Flowchart](./integration-strategy/index.md)**
+
+    ![Integration Strategy Decision Flowchart](./integration-strategy/screenimage.png)
+
+    An interactive decision tree that guides students through choosing the right integration technique.
+
+-   **[Integration Verifier](./integration-verifier/index.md)**
+
+    ![Integration Verifier](./integration-verifier/screenimage.png)
+
+    Interactive tool to verify integration results by differentiating the proposed antiderivative and comparing to the original integrand.
+
+-   **[Derivative of Inverse Functions](./inverse-derivative/index.md)**
+
+    ![Derivative of Inverse Functions](./inverse-derivative/screenimage.png)
+
+    Interactive visualization showing geometrically why the derivative of an inverse function equals the reciprocal of the original derivative.
+
+-   **[Inverse Function Reflector](./inverse-function-reflector/index.md)**
+
+    ![Inverse Function Reflector](./inverse-function-reflector/screenimage.png)
+
+    Compare functions and their inverses graphically, seeing the reflection relationship across y = x.
+
+-   **[Inverse Trig Derivatives Quiz](./inverse-trig-derivatives-quiz/index.md)**
+
+    ![Inverse Trig Derivatives Quiz](./inverse-trig-derivatives-quiz/screenimage.png)
+
+    Interactive flashcard-style quiz to help students memorize and apply the six inverse trigonometric derivative formulas.
+
+-   **[Inverse Trig Domains](./inverse-trig-domains/index.md)**
+
+    ![Inverse Trig Domains](./inverse-trig-domains/screenimage.png)
+
+    Visualize why domain restrictions are necessary for inverse trigonometric functions using the horizontal line test.
+
+-   **[Inverse Trig Integral Pattern Matcher](./inverse-trig-integral-match/index.md)**
+
+    ![Inverse Trig Integral Pattern Matcher](./inverse-trig-integral-match/screenimage.png)
+
+    Match integrands to their corresponding inverse trigonometric antiderivative types through interactive pattern recognition.
+
+-   **[Intermediate Value Theorem Visualization](./ivt-visualization/index.md)**
+
+    ![Intermediate Value Theorem Visualization](./ivt-visualization/screenimage.png)
+
+    Interactive visualization demonstrating the IVT with Delta robot traveling along continuous functions.
+
+-   **[Ladder Problem Explorer](./ladder-problem-explorer/index.md)**
+
+    ![Ladder Problem Explorer](./ladder-problem-explorer/screenimage.png)
+
+    Interactive visualization of the classic related rates ladder problem.
+
+-   **[Left vs Right Riemann Sums](./left-right-riemann/index.md)**
+
+    ![Left vs Right Riemann Sums](./left-right-riemann/screenimage.png)
+
+    Interactive comparison of left and right Riemann sum approximations showing when each method overestimates or underestimates.
+
+-   **[L'Hospital's Rule Visualizer](./lhospitals-rule-visualizer/index.md)**
+
+    ![L'Hospital's Rule Visualizer](./lhospitals-rule-visualizer/screenimage.png)
+
+    Interactive visualization showing how L'Hospital's Rule transforms indeterminate limits.
+
+-   **[Limit Laws Practice](./limit-laws-practice/index.md)**
+
+    ![Limit Laws Practice](./limit-laws-practice/screenimage.png)
+
+    Interactive practice problems for applying limit laws to evaluate limits algebraically.
+
+-   **[Limit Visualization with Hole](./limit-with-hole/index.md)**
+
+    ![Limit Visualization with Hole](./limit-with-hole/screenimage.png)
+
+    Interactive visualization showing how function values approach a limit even when the function has a hole.
+
+-   **[Limits from Graphs Practice](./limits-from-graphs/index.md)**
+
+    ![Limits from Graphs Practice](./limits-from-graphs/screenimage.png)
+
+    Practice reading left-hand, right-hand, and two-sided limits from graphical representations.
+
+-   **[Linear Approximation Error](./linear-approx-error/index.md)**
+
+    ![Linear Approximation Error](./linear-approx-error/screenimage.png)
+
+    Assess the accuracy of linear approximations by comparing the approximation to the actual function value.
+
+-   **[ln(x) as Area Under 1/t](./ln-as-area/index.md)**
+
+    ![ln(x) as Area Under 1/t](./ln-as-area/screenimage.png)
+
+    Interactive visualization showing the natural logarithm as the accumulated area under the curve y = 1/t.
+
+-   **[Local Linearity](./local-linearity/index.md)**
+
+    ![Local Linearity](./local-linearity/screenimage.png)
+
+    Interactive MicroSim demonstrating how curves appear linear when zoomed in sufficiently.
+
+-   **[Logarithmic Differentiation](./logarithmic-differentiation/index.md)**
+
+    ![Logarithmic Differentiation](./logarithmic-differentiation/screenimage.png)
+
+    Step-by-step guide through the logarithmic differentiation process with color-coded transformations.
+
+-   **[Marginal Analysis Calculator](./marginal-analysis-calculator/index.md)**
+
+    ![Marginal Analysis Calculator](./marginal-analysis-calculator/screenimage.png)
+
+    Interactive visualization for calculating and interpreting marginal cost, revenue, and profit.
+
+-   **[Marginal Cost Analyzer](./marginal-cost-analyzer/index.md)**
+
+    ![Marginal Cost Analyzer](./marginal-cost-analyzer/screenimage.png)
+
+    Interactive MicroSim that calculates and interprets marginal cost as the derivative of the cost function.
+
+-   **[Motion Analysis](./motion-analysis/index.md)**
+
+    ![Motion Analysis](./motion-analysis/screenimage.png)
+
+    Interactive visualization showing the relationship between position, velocity, and acceleration.
+
+-   **[Multi-Rule Derivative Builder](./multi-rule-builder/index.md)**
+
+    ![Multi-Rule Derivative Builder](./multi-rule-builder/screenimage.png)
+
+    An interactive step-by-step tool showing how multiple derivative rules combine to differentiate complex functions.
+
+-   **[Mean Value Theorem Explorer](./mvt-explorer/index.md)**
+
+    ![Mean Value Theorem Explorer](./mvt-explorer/screenimage.png)
+
+    Interactive visualization of the Mean Value Theorem showing secant lines, tangent lines, and the values of c.
+
+-   **[Nested Chain Rule Unwrap](./nested-chain-unwrap/index.md)**
+
+    ![Nested Chain Rule Unwrap](./nested-chain-unwrap/screenimage.png)
+
+    An interactive visualization of nested function differentiation using the chain rule.
+
+-   **[Net Signed Area Visualizer](./net-signed-area/index.md)**
+
+    ![Net Signed Area Visualizer](./net-signed-area/screenimage.png)
+
+    Demonstrates that definite integrals compute net signed area, with regions below the x-axis contributing negatively.
+
+-   **[Non-Differentiable Points Gallery](./non-differentiable-gallery/index.md)**
+
+    ![Non-Differentiable Points Gallery](./non-differentiable-gallery/screenimage.png)
+
+    Interactive gallery showing the three types of non-differentiable points with animated secant lines.
+
+-   **[One-Sided Derivatives](./one-sided-derivatives/index.md)**
+
+    ![One-Sided Derivatives](./one-sided-derivatives/screenimage.png)
+
+    Interactive visualization showing how left and right secant lines approach a point.
+
+-   **[One-Sided Limits Comparison](./one-sided-limits/index.md)**
+
+    ![One-Sided Limits Comparison](./one-sided-limits/screenimage.png)
+
+    Compare left-hand and right-hand limits to determine whether a two-sided limit exists.
+
+-   **[Optimization Problem Setup Flowchart](./optimization-flowchart/index.md)**
+
+    ![Optimization Problem Setup Flowchart](./optimization-flowchart/screenimage.png)
+
+    An interactive flowchart showing the step-by-step process for setting up optimization problems.
+
+-   **[Piecewise Function Builder](./piecewise-builder/index.md)**
+
+    ![Piecewise Function Builder](./piecewise-builder/screenimage.png)
+
+    Construct piecewise functions by defining different rules for different domains.
+
+-   **[Piecewise Continuity Explorer](./piecewise-continuity/index.md)**
+
+    ![Piecewise Continuity Explorer](./piecewise-continuity/screenimage.png)
+
+    Interactive MicroSim for determining whether piecewise functions are continuous at boundary points.
+
+-   **[Polynomial Explorer](./polynomial-explorer/index.md)**
+
+    ![Polynomial Explorer](./polynomial-explorer/screenimage.png)
+
+    Examine how polynomial degree and leading coefficient affect graph shape and end behavior.
+
+-   **[Polynomial Integration](./polynomial-integration/index.md)**
+
+    ![Polynomial Integration](./polynomial-integration/screenimage.png)
+
+    Interactive step-by-step guide to integrating polynomial functions using the power rule.
+
+-   **[Power Rule Explorer](./power-rule-explorer/index.md)**
+
+    ![Power Rule Explorer](./power-rule-explorer/screenimage.png)
+
+    Interactive visualization of the power rule showing f(x) = x^n and its derivative f'(x) = nx^(n-1).
+
+-   **[Power Rule Integration](./power-rule-integration/index.md)**
+
+    ![Power Rule Integration](./power-rule-integration/screenimage.png)
+
+    Interactive visualization showing the relationship between derivative and integral power rules.
+
+-   **[Product Rule Visualization](./product-rule-viz/index.md)**
+
+    ![Product Rule Visualization](./product-rule-viz/screenimage.png)
+
+    Interactive geometric visualization of the product rule showing why d(fg) = f*dg + g*df.
+
+-   **[Profit Optimizer](./profit-optimizer/index.md)**
+
+    ![Profit Optimizer](./profit-optimizer/screenimage.png)
+
+    Interactive MicroSim showing the relationship between revenue, cost, and profit functions.
+
+-   **[Rate Interpretation Dashboard](./rate-interpretation-dashboard/index.md)**
+
+    ![Rate Interpretation Dashboard](./rate-interpretation-dashboard/screenimage.png)
+
+    Interactive dashboard for interpreting derivative values in context across multiple real-world scenarios.
+
+-   **[Four Riemann Sum Methods Comparison](./riemann-sum-methods/index.md)**
+
+    ![Four Riemann Sum Methods Comparison](./riemann-sum-methods/screenimage.png)
+
+    Compare left, right, midpoint, and trapezoidal Riemann sum methods.
+
+-   **[Rolle's Theorem Visualizer](./rolles-theorem/index.md)**
+
+    ![Rolle's Theorem Visualizer](./rolles-theorem/screenimage.png)
+
+    Interactive visualization of Rolle's Theorem showing guaranteed existence of horizontal tangent lines.
+
+-   **[Differentiation Rule Selector](./rule-selector/index.md)**
+
+    ![Differentiation Rule Selector](./rule-selector/screenimage.png)
+
+    An interactive decision tree that helps students choose the appropriate differentiation rule.
+
+-   **[Secant Lines Approaching Tangent Line](./secant-to-tangent/index.md)**
+
+    ![Secant Lines Approaching Tangent Line](./secant-to-tangent/screenimage.png)
+
+    Interactive visualization showing how secant lines approach the tangent line as h approaches 0.
+
+-   **[Second Derivative Explorer](./second-derivative-explorer/index.md)**
+
+    ![Second Derivative Explorer](./second-derivative-explorer/screenimage.png)
+
+    Interactive visualization showing f(x), f'(x), and f''(x) in three synchronized panels.
+
+-   **[Sigma Notation Visualizer](./sigma-notation-visualizer/index.md)**
+
+    ![Sigma Notation Visualizer](./sigma-notation-visualizer/screenimage.png)
+
+    Interactive MicroSim that helps students understand sigma notation by expanding sums and calculating totals step by step.
+
+-   **[Sign Chart Builder](./sign-chart-builder/index.md)**
+
+    ![Sign Chart Builder](./sign-chart-builder/screenimage.png)
+
+    Construct sign charts for derivatives to determine intervals of increase and decrease.
+
+-   **[Sin(x)/x Visualization](./sinx-over-x/index.md)**
+
+    ![Sin(x)/x Visualization](./sinx-over-x/screenimage.png)
+
+    Understand the fundamental trigonometric limit using unit circle and graph visualizations.
+
+-   **[Sketch from Derivative Info](./sketch-from-info/index.md)**
+
+    ![Sketch from Derivative Info](./sketch-from-info/screenimage.png)
+
+    Students construct function graphs given only derivative information.
+
+-   **[Speed Change Analyzer](./speed-change-analyzer/index.md)**
+
+    ![Speed Change Analyzer](./speed-change-analyzer/screenimage.png)
+
+    Interactive MicroSim showing when an object speeds up vs slows down based on velocity and acceleration signs.
+
+-   **[Squeeze Theorem Visualization](./squeeze-theorem/index.md)**
+
+    ![Squeeze Theorem Visualization](./squeeze-theorem/screenimage.png)
+
+    Interactive demonstration of how the Squeeze Theorem pins down limit values.
+
+-   **[Tangent Line Calculator](./tangent-line-calculator/index.md)**
+
+    ![Tangent Line Calculator](./tangent-line-calculator/screenimage.png)
+
+    Given a function and a point, shows step-by-step calculation of the tangent line equation.
+
+-   **[Term by Term Differentiation](./term-by-term-diff/index.md)**
+
+    ![Term by Term Differentiation](./term-by-term-diff/screenimage.png)
+
+    An interactive MicroSim showing how polynomial differentiation works term by term.
+
+-   **[Three Connected Graphs Explorer](./three-graphs-explorer/index.md)**
+
+    ![Three Connected Graphs Explorer](./three-graphs-explorer/screenimage.png)
+
+    Interactive visualization showing f(x), f'(x), and f''(x) simultaneously with synchronized cursor.
+
+-   **[Timeline of Calculus History](./timeline/index.md)**
+
+    ![Timeline of Calculus History](./timeline/screenimage.png)
+
+    An interactive timeline showing 2300 years of calculus development.
+
+-   **[Transcendental Integral Practice](./transcendental-integral-practice/index.md)**
+
+    ![Transcendental Integral Practice](./transcendental-integral-practice/screenimage.png)
+
+    Interactive practice with transcendental integrals including trig, exponential, logarithmic, and inverse trig functions.
+
+-   **[Transformation Playground](./transformation-playground/index.md)**
+
+    ![Transformation Playground](./transformation-playground/screenimage.png)
+
+    Manipulate a, b, h, k parameters to transform parent functions and see the effects in real-time.
+
+-   **[Trig Derivative Cycle](./trig-derivative-cycle/index.md)**
+
+    ![Trig Derivative Cycle](./trig-derivative-cycle/screenimage.png)
+
+    Interactive visualization showing the cyclic pattern of trigonometric derivatives.
+
+-   **[Trig Derivatives Flashcards](./trig-derivatives-card/index.md)**
+
+    ![Trig Derivatives Flashcards](./trig-derivatives-card/screenimage.png)
+
+    Interactive flashcard-style reference for memorizing derivatives of the six trigonometric functions.
+
+-   **[Trig Graph Transformer](./trig-graph-transformer/index.md)**
+
+    ![Trig Graph Transformer](./trig-graph-transformer/screenimage.png)
+
+    Manipulate amplitude, period, phase shift, and vertical shift for trigonometric functions.
+
+-   **[Trig Identity Visualizer](./trig-identity-visualizer/index.md)**
+
+    ![Trig Identity Visualizer](./trig-identity-visualizer/screenimage.png)
+
+    See the Pythagorean identity sin^2 + cos^2 = 1 geometrically using the unit circle.
+
+-   **[Trig Integral Reference](./trig-integral-reference/index.md)**
+
+    ![Trig Integral Reference](./trig-integral-reference/screenimage.png)
+
+    Interactive reference showing all six basic trig integrals with visual connections to their derivatives.
+
+-   **[Two Moving Objects Distance](./two-moving-objects-distance/index.md)**
+
+    ![Two Moving Objects Distance](./two-moving-objects-distance/screenimage.png)
+
+    Interactive visualization examining how the rate of distance change between two moving objects depends on their positions and velocities.
+
+-   **[u-Substitution Steps](./u-substitution/index.md)**
+
+    ![u-Substitution Steps](./u-substitution/screenimage.png)
+
+    Interactive step-by-step guide to applying u-substitution for evaluating integrals.
+
+-   **[Interactive Unit Circle](./unit-circle/index.md)**
+
+    ![Interactive Unit Circle](./unit-circle/screenimage.png)
+
+    Explore the relationship between angles and sine/cosine values with connected graph visualizations.
+
+-   **[Verification Methods Comparison](./verification-methods/index.md)**
+
+    ![Verification Methods Comparison](./verification-methods/screenimage.png)
+
+    An interactive MicroSim that helps students judge which verification method is most appropriate for different optimization scenarios.
+
+-   **[Vertical Asymptote Explorer](./vertical-asymptote/index.md)**
+
+    ![Vertical Asymptote Explorer](./vertical-asymptote/screenimage.png)
+
+    Interactive visualization showing how one-sided limits determine function behavior near vertical asymptotes.
+
+-   **[Vertical Line Test](./vertical-line-test/index.md)**
+
+    ![Vertical Line Test](./vertical-line-test/screenimage.png)
+
+    Interactive tool for testing whether graphs represent functions using the vertical line test.
+
+-   **[Zoom to Linear](./zoom-to-linear/index.md)**
+
+    ![Zoom to Linear](./zoom-to-linear/screenimage.png)
+
+    An interactive MicroSim demonstrating that sufficiently zoomed-in views of differentiable functions appear linear.
+
+</div>
 
 ---
 
@@ -213,4 +765,4 @@ MicroSims are lightweight, interactive educational simulations designed for brow
 
 All MicroSims in this course use open-source JavaScript libraries (primarily p5.js) so students can view the source code and learn from the implementations.
 
-**Total MicroSims:** 97
+**Total MicroSims:** 123
