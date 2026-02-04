@@ -1,0 +1,20 @@
+{
+  "title": "Power Rule Pattern Explorer",
+  "description": "Visualize the power rule by showing how x^n and its derivative nx^(n-1) relate graphically",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Derivative Rules",
+  "subtopic": "Power Rule",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "calculate", "demonstrate"],
+  "learningObjective": "Students will apply the power rule to compute derivatives",
+  "prerequisites": ["derivative-definition", "exponents"],
+  "difficulty": "beginner",
+  "interactivity": "high",
+  "estimatedTime": "5-10 minutes",
+  "keywords": ["power rule", "derivative", "exponent", "nx^(n-1)"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

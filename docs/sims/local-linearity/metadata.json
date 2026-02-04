@@ -1,0 +1,20 @@
+{
+  "title": "Local Linearity Zoom",
+  "description": "Demonstrate how curves appear linear when zoomed in sufficiently, illustrating tangent approximation",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Differentiability",
+  "subtopic": "Local Linearity",
+  "bloomLevel": "2-Understand",
+  "bloomVerbs": ["explain", "interpret", "demonstrate"],
+  "learningObjective": "Students will explain why differentiable functions appear linear at small scales",
+  "prerequisites": ["differentiability", "tangent-line"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "5-8 minutes",
+  "keywords": ["local linearity", "zoom", "tangent approximation", "linear approximation"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

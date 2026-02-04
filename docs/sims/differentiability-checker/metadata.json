@@ -1,0 +1,20 @@
+{
+  "title": "Differentiability Checker",
+  "description": "Step-through tool for checking differentiability at a point, guiding students through the systematic process",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Differentiability",
+  "subtopic": "Checking Differentiability",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "execute", "implement"],
+  "learningObjective": "Students will apply a systematic process to determine differentiability",
+  "prerequisites": ["continuity", "one-sided-derivatives", "non-differentiable-points"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "8-12 minutes",
+  "keywords": ["differentiability", "checker", "step-by-step", "one-sided derivatives", "calculus"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

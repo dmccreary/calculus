@@ -1,4 +1,4 @@
-# exp-self-derivative MicroSim Generation Log
+# power-rule-explorer MicroSim Generation Log
 
 Start: 2026-02-04 04:16:00
 End: 2026-02-04 00:09:33

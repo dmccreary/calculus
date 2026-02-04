@@ -1,0 +1,20 @@
+{
+  "title": "Multi-Rule Derivative Builder",
+  "description": "Step-by-step tool showing how multiple derivative rules combine to differentiate complex functions",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Derivative Rules",
+  "subtopic": "Combining Rules",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "execute", "implement"],
+  "learningObjective": "Students will apply multiple derivative rules in sequence to differentiate complex functions",
+  "prerequisites": ["power-rule", "sum-rule", "product-rule", "quotient-rule"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "8-12 minutes",
+  "keywords": ["derivative rules", "combining rules", "step-by-step", "complex functions"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

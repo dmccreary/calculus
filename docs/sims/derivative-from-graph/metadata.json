@@ -1,0 +1,20 @@
+{
+  "title": "Derivative from Graph Estimator",
+  "description": "Practice estimating derivatives by drawing tangent lines on curves and computing their slopes",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Derivatives",
+  "subtopic": "Estimating Derivatives Graphically",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["estimate", "calculate", "demonstrate"],
+  "learningObjective": "Students will estimate derivatives graphically by visualizing tangent lines",
+  "prerequisites": ["tangent-line", "slope", "derivative-definition"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "8-12 minutes",
+  "keywords": ["derivative", "tangent line", "slope", "estimation", "graphical"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}
