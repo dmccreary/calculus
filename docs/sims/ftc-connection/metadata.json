@@ -1,0 +1,42 @@
+{
+  "title": "FTC Connection Visualization",
+  "description": "Shows how FTC Part 1 and Part 2 are two sides of the same relationship, demonstrating that differentiation and integration are inverse operations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Mathematics",
+    "Calculus",
+    "Fundamental Theorem",
+    "Differentiation",
+    "Integration"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/ftc-connection/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Fundamental Theorem",
+    "FTC Part 1",
+    "FTC Part 2",
+    "Inverse Operations",
+    "Derivative of Antiderivative"
+  ],
+  "prerequisites": [
+    "FTC Part 1",
+    "FTC Part 2",
+    "Antiderivatives"
+  ],
+  "library": "p5.js"
+}

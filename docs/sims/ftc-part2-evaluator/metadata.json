@@ -1,0 +1,41 @@
+{
+  "title": "FTC Part 2 Step-by-Step Evaluator",
+  "description": "Walks through the Fundamental Theorem of Calculus Part 2 evaluation process step by step, showing how to evaluate definite integrals using antiderivatives.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Mathematics",
+    "Calculus",
+    "Fundamental Theorem",
+    "Definite Integrals",
+    "Antiderivatives"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/ftc-part2-evaluator/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "FTC Part 2",
+    "Evaluation Theorem",
+    "Definite Integral Evaluation",
+    "Antiderivative",
+    "Bracket Notation"
+  ],
+  "prerequisites": [
+    "Finding antiderivatives",
+    "Understanding of definite integrals"
+  ],
+  "library": "p5.js"
+}

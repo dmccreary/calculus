@@ -1,0 +1,41 @@
+{
+  "title": "Sigma Notation Visualizer",
+  "description": "Interactive simulation that helps students understand sigma notation by expanding sums step by step and calculating running totals with visual block representations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Mathematics",
+    "Calculus",
+    "Sigma Notation",
+    "Summation",
+    "Series"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/sigma-notation-visualizer/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Sigma Notation",
+    "Summation Notation",
+    "Index of Summation",
+    "Series",
+    "Finite Sums"
+  ],
+  "prerequisites": [
+    "Basic algebra",
+    "Understanding of sequences"
+  ],
+  "library": "p5.js"
+}
