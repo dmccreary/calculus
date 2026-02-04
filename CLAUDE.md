@@ -159,6 +159,51 @@ Always use `~/.local/bin/bk-capture-screenshot` to capture MicroSim screenshots:
 ~/.local/bin/bk-capture-screenshot /path/to/microsim-directory
 ```
 
+### MicroSim References in Chapter Content
+
+**CRITICAL:** When adding MicroSim diagrams to chapter content, the structure must follow this exact order:
+
+1. `#### Diagram:` header **OUTSIDE** the `<details>` element (for anchor links)
+2. `<iframe>` embedding the MicroSim **BEFORE** the `<details>` element
+3. `<details>` containing only the specification
+
+**Correct structure for interactive MicroSims:**
+```markdown
+#### Diagram: MicroSim Name
+
+<iframe src="../../sims/microsim-name/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>MicroSim Name Specification</summary>
+
+Type: microsim
+...specification content...
+</details>
+```
+
+**Correct structure for static infographics (no iframe needed):**
+```markdown
+#### Diagram: Infographic Name
+
+<details markdown="1">
+<summary>Infographic Name Specification</summary>
+
+Type: infographic
+...specification content...
+</details>
+```
+
+**Why this matters:**
+- The `#### Diagram` header outside `<details>` creates an anchor link that instructors can share with students to jump directly to that visualization
+- The iframe displays the actual MicroSim so students can interact with it
+- The `<details>` hides the technical specification from casual readers while preserving it for future reference
+
+**Common mistakes to avoid:**
+- ❌ Putting `#### Diagram` inside `<details>` or `<summary>` — breaks anchor links
+- ❌ Omitting the iframe — students can't see the MicroSim
+- ❌ Putting `#### MicroSim:` in the summary tag — header should be outside
+- ❌ Using `<summary>#### Diagram: Name</summary>` — this hides the header
+
 ## MkDocs Configuration Notes
 
 - Never use `navigation.tabs` feature (no top navigation tabs)
