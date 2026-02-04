@@ -1,0 +1,98 @@
+{
+  "title": "Intermediate Value Theorem Visualization",
+  "description": "Interactive visualization demonstrating the Intermediate Value Theorem with Delta robot traveling along continuous function curves. Students explore how IVT guarantees the existence of roots for continuous functions by watching Delta necessarily cross every intermediate altitude value.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Continuity",
+    "Intermediate Value Theorem",
+    "Root Finding",
+    "Limits"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/ivt-visualization/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": "Explain",
+  "learningObjective": "Students will explain how the Intermediate Value Theorem guarantees the existence of roots for continuous functions.",
+  "concepts": [
+    "Continuous Functions",
+    "Intermediate Value Theorem",
+    "Root Existence",
+    "Closed Intervals",
+    "Function Values"
+  ],
+  "prerequisites": [
+    "Understanding of continuous functions",
+    "Function notation f(x)",
+    "Basic graphing skills"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "select",
+      "label": "Function selector",
+      "description": "Choose from several continuous functions"
+    },
+    {
+      "type": "button",
+      "label": "Step Forward",
+      "description": "Progress through IVT demonstration stages"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Reset the visualization to initial state"
+    },
+    {
+      "type": "slider",
+      "label": "a",
+      "description": "Left endpoint of interval",
+      "min": -4,
+      "max": 4,
+      "default": -2
+    },
+    {
+      "type": "slider",
+      "label": "b",
+      "description": "Right endpoint of interval",
+      "min": -4,
+      "max": 4,
+      "default": 2
+    },
+    {
+      "type": "slider",
+      "label": "N",
+      "description": "Target value between f(a) and f(b)",
+      "min": -5,
+      "max": 5,
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "label": "Show All Solutions",
+      "description": "Display all points where f(c) = N"
+    }
+  ],
+  "features": [
+    "Step-through stages for IVT demonstration",
+    "Delta robot animation along curve",
+    "Altitude tracker showing current y-value",
+    "Multiple continuous function options",
+    "Real-time intersection detection",
+    "Visual feedback when N outside valid range"
+  ]
+}

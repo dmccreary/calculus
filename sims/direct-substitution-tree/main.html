@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Direct Substitution Decision Tree</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        .diagram-panel {
+            flex: 2;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .info-panel {
+            flex: 1;
+            background-color: white;
+            border-left: 1px solid #ddd;
+            padding: 15px;
+            overflow-y: auto;
+        }
+        .info-title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #4a9;
+        }
+        .info-content {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .mermaid {
+            width: 100%;
+            max-height: 100%;
+        }
+        .mermaid svg {
+            max-width: 100%;
+            max-height: 90vh;
+        }
+        .node {
+            cursor: pointer;
+        }
+        .node:hover rect, .node:hover polygon {
+            filter: brightness(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Start(["Given lim f(x) as x→c"]):::startNode
+    Try["Try substituting x = c into f(x)"]:::processNode
+    Check{"Does f(c) produce<br/>a real number?"}:::decisionNode
+    Success(["Limit = f(c)<br/>Direct substitution works!"]):::successNode
+    ZeroCheck{"Is the result 0/0?"}:::decisionNode
+    Algebraic["Use algebraic techniques<br/>(Chapter 3)"]:::algebraNode
+    NonzeroCheck{"Is the result nonzero/0?"}:::decisionNode
+    Infinite["Investigate infinite limit<br/>(Chapter 5)"]:::infiniteNode
+    Other["Check for other<br/>indeterminate forms"]:::otherNode
+
+    Start --> Try --> Check
+    Check -->|Yes| Success
+    Check -->|No| ZeroCheck
+    ZeroCheck -->|Yes| Algebraic
+    ZeroCheck -->|No| NonzeroCheck
+    NonzeroCheck -->|Yes| Infinite
+    NonzeroCheck -->|No| Other
+
+    classDef startNode fill:#667eea,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef processNode fill:#a8d5ba,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef decisionNode fill:#ffd93d,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef successNode fill:#6bcb77,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef algebraNode fill:#ff8c42,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef infiniteNode fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef otherNode fill:#c9b1ff,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+
+    linkStyle default stroke:#666,stroke-width:2px,font-size:14px
+            </div>
+        </div>
+        <div class="info-panel">
+            <div class="info-title">Direct Substitution</div>
+            <div class="info-content" id="info-content">
+                Hover over any node in the flowchart to see detailed information about that step in the limit evaluation process.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const nodeInfo = {
+            'Start': 'Start here with any limit problem. You want to find what value f(x) approaches as x gets closer to c.',
+            'Try': 'The first step is always to try direct substitution. Simply replace every x in the function with the value c and calculate.',
+            'Check': 'After substituting, check if you get a well-defined real number. If so, congratulations—you found the limit!',
+            'Success': 'When direct substitution gives a real number, that number IS the limit. This works for polynomials and most continuous functions.',
+            'ZeroCheck': 'The form 0/0 is called an "indeterminate form." It means both numerator and denominator approach zero, but the limit could be any value.',
+            'Algebraic': 'For 0/0 forms, try factoring, rationalization, or simplifying. The goal is to cancel the factor causing both to be zero.',
+            'NonzeroCheck': 'If you get a nonzero number divided by zero (like 5/0), the function is approaching infinity or negative infinity.',
+            'Infinite': 'Check one-sided limits to determine if the limit is +∞, −∞, or if the two sides disagree (limit does not exist).',
+            'Other': 'Other indeterminate forms include ∞/∞, 0·∞, ∞−∞, etc. These require special techniques like L\'Hôpital\'s Rule.'
+        };
+
+        function setupTooltips() {
+            const nodes = document.querySelectorAll('.node');
+            const infoContent = document.getElementById('info-content');
+
+            nodes.forEach(node => {
+                const nodeId = node.id.replace('flowchart-', '').split('-')[0];
+                if (nodeInfo[nodeId]) {
+                    node.addEventListener('mouseenter', () => {
+                        infoContent.textContent = nodeInfo[nodeId];
+                    });
+                    node.addEventListener('mouseleave', () => {
+                        infoContent.textContent = 'Hover over any node in the flowchart to see detailed information about that step in the limit evaluation process.';
+                    });
+                }
+            });
+        }
+
+        function waitForMermaid() {
+            const mermaidDiv = document.querySelector('.mermaid');
+            const svg = mermaidDiv.querySelector('svg');
+            if (svg && document.querySelectorAll('.node').length > 0) {
+                setupTooltips();
+            } else {
+                setTimeout(waitForMermaid, 100);
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => setTimeout(waitForMermaid, 100));
+        } else {
+            setTimeout(waitForMermaid, 100);
+        }
+    </script>
+</body>
+</html>

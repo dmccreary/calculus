@@ -273,6 +273,10 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/learning-graph/generate-microsims-in-parallel/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/learning-graph/glossary-quality-report/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
@@ -317,6 +321,10 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/prompts/generate-microsims-in-parallel/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/prompts/learning-graph/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
@@ -337,7 +345,31 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/asymptote-types/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/average-rate-change/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/continuity-conditions/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/coordinate-system-explorer/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/derivative-interpretation/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/direct-substitution-tree/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/discontinuity-types/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
@@ -345,11 +377,23 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/end-behavior/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/exp-log-relationship/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/factoring-limits/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/function-composition/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/function-derivative-comparison/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
@@ -361,7 +405,31 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/growth-rates/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/inverse-function-reflector/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/ivt-visualization/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/limit-laws-practice/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/limit-with-hole/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/limits-from-graphs/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/one-sided-limits/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
@@ -369,7 +437,27 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/piecewise-continuity/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/polynomial-explorer/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/secant-to-tangent/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/sinx-over-x/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/squeeze-theorem/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/tangent-line-calculator/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
@@ -390,6 +478,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/calculus/sims/unit-circle/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/vertical-asymptote/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>

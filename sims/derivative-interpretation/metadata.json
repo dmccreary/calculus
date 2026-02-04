@@ -1,0 +1,51 @@
+{
+  "title": "Derivative Interpretation Selector",
+  "description": "Interactive visualization showing the derivative as both slope (graphical) and rate of change (contextual). Demonstrates that the derivative is a single mathematical concept with multiple real-world interpretations including velocity, growth rate, and marginal cost.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Rate of Change",
+    "Slope",
+    "Tangent Lines"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/derivative-interpretation/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": [
+    "interpret",
+    "explain"
+  ],
+  "concepts": [
+    "Derivative",
+    "Slope",
+    "Tangent Line",
+    "Rate of Change",
+    "Velocity",
+    "Marginal Cost",
+    "Growth Rate",
+    "Instantaneous Rate"
+  ],
+  "prerequisites": [
+    "Understanding of functions and graphs",
+    "Concept of slope",
+    "Basic familiarity with rates"
+  ],
+  "library": "p5.js",
+  "learningObjective": "Students will interpret the derivative both as slope and as rate of change in context",
+  "duration": "15-20 minutes"
+}

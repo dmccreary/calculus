@@ -1,0 +1,42 @@
+{
+  "title": "Vertical Asymptote Explorer",
+  "description": "Interactive visualization showing how one-sided limits determine function behavior near vertical asymptotes, with animated approach points and direction arrows indicating whether the function approaches positive or negative infinity.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Limits",
+    "Vertical Asymptotes",
+    "Rational Functions",
+    "One-sided Limits"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/vertical-asymptote/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "concepts": [
+    "Vertical Asymptotes",
+    "One-sided Limits",
+    "Infinite Limits",
+    "Rational Functions",
+    "Limit Behavior"
+  ],
+  "prerequisites": [
+    "Function notation",
+    "Basic limit concepts",
+    "Rational functions"
+  ],
+  "library": "p5.js"
+}

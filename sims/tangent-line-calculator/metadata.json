@@ -1,0 +1,69 @@
+{
+  "title": "Tangent Line Calculator",
+  "description": "Interactive simulation showing step-by-step calculation of tangent line equations at a given point on a function, connecting symbolic derivatives with their geometric meaning.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Tangent Lines",
+    "Differentiation"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/tangent-line-calculator/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School (AP Calculus)",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Derivative at a point",
+    "Tangent line equation",
+    "Point-slope form",
+    "Slope-intercept form",
+    "Instantaneous rate of change"
+  ],
+  "prerequisites": [
+    "Derivative rules",
+    "Function evaluation",
+    "Point-slope form of a line"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "label": "x-point",
+      "min": -4,
+      "max": 4,
+      "default": 1,
+      "description": "Select the x-coordinate of the point of tangency"
+    },
+    {
+      "type": "dropdown",
+      "label": "Function",
+      "options": ["x^2", "x^3", "sin(x)", "e^x", "sqrt(x)", "1/x"],
+      "default": "x^2",
+      "description": "Select the function to analyze"
+    },
+    {
+      "type": "button",
+      "label": "Show Steps",
+      "description": "Toggle visibility of step-by-step calculation panel"
+    },
+    {
+      "type": "toggle",
+      "label": "Show Tangent",
+      "default": true,
+      "description": "Toggle visibility of the tangent line"
+    }
+  ]
+}
