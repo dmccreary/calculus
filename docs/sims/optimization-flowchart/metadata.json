@@ -1,0 +1,64 @@
+{
+  "title": "Optimization Problem Setup Flowchart",
+  "description": "Interactive flowchart showing the step-by-step process for setting up optimization problems in calculus. Features hover explanations, click-to-see examples, and an animated walk-through of a sample problem.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Mathematics",
+    "Calculus",
+    "Optimization",
+    "Applied Mathematics",
+    "Problem Solving"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/optimization-flowchart/",
+  "publisher": "Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "workflow diagram",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Optimization",
+    "Critical Points",
+    "Derivatives",
+    "Constraints",
+    "Objective Function",
+    "Closed Interval Method",
+    "First Derivative Test",
+    "Second Derivative Test",
+    "Practical Domain"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Basic algebraic manipulation",
+    "Function analysis"
+  ],
+  "library": "p5.js",
+  "controls": {
+    "buttons": [
+      {
+        "name": "Walk Through Example",
+        "description": "Starts an animated walk-through of a sample optimization problem, highlighting each step in sequence"
+      }
+    ],
+    "interactions": [
+      {
+        "name": "Hover",
+        "description": "Hover over any flowchart step to see detailed explanation"
+      },
+      {
+        "name": "Click",
+        "description": "Click on a step to see how it applies to the sample garden problem"
+      }
+    ]
+  }
+}

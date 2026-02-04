@@ -1,0 +1,20 @@
+{
+  "title": "Sign Chart Builder",
+  "description": "Construct sign charts for derivatives to determine intervals of increase and decrease by placing critical points and evaluating derivative signs in each interval",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Derivatives",
+  "subtopic": "Sign Charts and Increasing/Decreasing Intervals",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["demonstrate", "execute", "construct"],
+  "learningObjective": "Students will be able to construct sign charts for derivatives and use them to determine intervals of increase and decrease",
+  "prerequisites": ["derivative-definition", "critical-points", "solving-equations"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "15-25 minutes",
+  "keywords": ["sign chart", "derivative", "increasing", "decreasing", "critical points", "first derivative test", "intervals"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

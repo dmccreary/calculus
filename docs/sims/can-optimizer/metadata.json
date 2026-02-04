@@ -1,0 +1,83 @@
+{
+  "title": "Can Optimizer",
+  "description": "Interactive simulation demonstrating optimization by exploring how cylinder radius affects surface area for a fixed volume. Features 3D visualization, surface area graph, and comparison tools to help students understand why optimal dimensions minimize material usage.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Optimization",
+    "Derivatives",
+    "Applied Mathematics",
+    "Geometry"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/can-optimizer/",
+  "publisher": "Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply",
+    "Analyze"
+  ],
+  "concepts": [
+    "Optimization",
+    "Derivatives",
+    "Critical Points",
+    "Surface Area",
+    "Volume",
+    "Cylinder Geometry",
+    "Constraint Problems"
+  ],
+  "prerequisites": [
+    "Derivatives",
+    "Cylinder volume formula",
+    "Cylinder surface area formula",
+    "Setting derivatives equal to zero"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Radius",
+      "min": 1,
+      "max": 15,
+      "default": 5.4,
+      "unit": "cm"
+    },
+    {
+      "type": "input",
+      "label": "Volume",
+      "default": 1000,
+      "unit": "cm³"
+    },
+    {
+      "type": "button",
+      "label": "Show/Hide Breakdown"
+    },
+    {
+      "type": "button",
+      "label": "Find Optimal"
+    },
+    {
+      "type": "button",
+      "label": "Compare"
+    }
+  ],
+  "visualElements": [
+    "3D cylinder with rotating view",
+    "Color-coded surface areas (top/bottom vs lateral)",
+    "Surface area function graph S(r)",
+    "Critical point marker",
+    "Current radius indicator",
+    "Data panel with dimensions and areas",
+    "Comparison view with three cans"
+  ]
+}

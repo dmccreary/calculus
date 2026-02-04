@@ -1,0 +1,66 @@
+{
+  "title": "Three Connected Graphs Explorer",
+  "description": "Interactive visualization showing f(x), f'(x), and f''(x) simultaneously with synchronized cursor. Students can examine relationships between a function and its derivatives by dragging a cursor across all three graphs and observing how critical points, inflection points, and concavity connect across the representations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": ["Calculus", "Derivatives", "Second Derivative", "Critical Points", "Inflection Points", "Concavity"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "MIT License",
+  "educational": {
+    "bloomLevel": "Analyze",
+    "bloomVerb": "Examine",
+    "gradeLevel": "High School AP / College",
+    "duration": "15-30 minutes",
+    "prerequisites": ["Understanding of derivatives", "Concept of slope and tangent lines", "Basic function notation"],
+    "concepts": ["First Derivative", "Second Derivative", "Critical Points", "Inflection Points", "Concavity", "Local Maximum", "Local Minimum", "Increasing Function", "Decreasing Function"]
+  },
+  "technical": {
+    "library": "p5.js",
+    "version": "1.11.10",
+    "responsive": true,
+    "canvasHeight": 660,
+    "drawHeight": 560,
+    "controlHeight": 100
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "x-position",
+      "description": "Draggable slider to move the vertical cursor across all three graphs",
+      "min": -3.5,
+      "max": 3.5,
+      "default": 0.5
+    },
+    {
+      "type": "button-group",
+      "name": "function-selector",
+      "description": "Select from four pre-built function examples",
+      "options": ["Cubic", "Quartic", "Sine", "Rational"]
+    },
+    {
+      "type": "checkbox",
+      "name": "show-f",
+      "description": "Toggle visibility of f(x) graph",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "name": "show-fp",
+      "description": "Toggle visibility of f'(x) graph",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "name": "show-fpp",
+      "description": "Toggle visibility of f''(x) graph",
+      "default": true
+    },
+    {
+      "type": "button",
+      "name": "animate-cursor",
+      "description": "Start/stop automatic cursor animation across the x-range"
+    }
+  ]
+}

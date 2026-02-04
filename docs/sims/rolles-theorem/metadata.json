@@ -1,0 +1,70 @@
+{
+  "title": "Rolle's Theorem Visualizer",
+  "description": "Interactive visualization of Rolle's Theorem allowing students to explore functions that satisfy its conditions (continuous, differentiable, equal endpoint values) and see the guaranteed existence of horizontal tangent lines at critical points.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": ["Calculus", "Rolle's Theorem", "Mean Value Theorem", "Derivatives", "Critical Points"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "MIT License",
+  "educational": {
+    "bloomLevel": "Understand",
+    "bloomVerb": ["explain", "interpret", "verify"],
+    "learningObjective": "Students will explain the geometric meaning of Rolle's Theorem and verify its conditions",
+    "gradeLevel": "11-12, Undergraduate",
+    "prerequisites": ["limits", "continuity", "derivatives", "function notation"],
+    "concepts": ["Rolle's Theorem", "critical points", "horizontal tangent", "differentiability", "continuity"],
+    "duration": "10-15 minutes"
+  },
+  "technical": {
+    "library": "p5.js",
+    "version": "1.11.10",
+    "responsive": true,
+    "canvasWidth": "dynamic",
+    "canvasHeight": 550
+  },
+  "controls": [
+    {
+      "type": "slider",
+      "name": "a",
+      "description": "Left endpoint of the interval [a,b]",
+      "min": -4,
+      "max": 3.5,
+      "default": -2
+    },
+    {
+      "type": "slider",
+      "name": "b",
+      "description": "Right endpoint of the interval [a,b]",
+      "min": -3.5,
+      "max": 4,
+      "default": 2
+    },
+    {
+      "type": "slider",
+      "name": "morphFactor",
+      "description": "Shape parameter to adjust the function curve",
+      "min": 0.2,
+      "max": 2.0,
+      "default": 1.0
+    },
+    {
+      "type": "button-group",
+      "name": "function",
+      "description": "Select the function type",
+      "options": ["Parabola", "Sine Wave", "Cubic"]
+    },
+    {
+      "type": "toggle",
+      "name": "showTangent",
+      "description": "Show or hide horizontal tangent lines at critical points",
+      "default": true
+    },
+    {
+      "type": "button",
+      "name": "findCriticalPoints",
+      "description": "Find and display all critical points where f'(c) = 0"
+    }
+  ]
+}

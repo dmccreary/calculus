@@ -1,0 +1,41 @@
+{
+  "title": "First vs Second Derivative Test Comparison",
+  "description": "An interactive MicroSim comparing the First Derivative Test and Second Derivative Test methods for classifying critical points. Features step-through analysis with three coordinated graphs showing f(x), f'(x), and f''(x), plus special case handling when the second derivative test is inconclusive.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": ["calculus", "derivatives", "critical points", "first derivative test", "second derivative test", "local extrema", "optimization"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "MIT License",
+  "contributor": ["Claude AI"],
+  "bloomLevel": "Analyze",
+  "bloomVerb": "Compare",
+  "learningObjective": "Students will compare the First Derivative Test and Second Derivative Test methods for classifying critical points, understanding when each is most efficient and what each reveals about the function.",
+  "prerequisites": ["derivatives", "critical points", "local extrema concepts"],
+  "concepts": ["first derivative test", "second derivative test", "critical points", "local maximum", "local minimum", "sign change", "concavity", "inflection points"],
+  "library": "p5.js",
+  "version": "1.0.0",
+  "controls": [
+    {
+      "type": "button",
+      "name": "stepButton",
+      "description": "Steps through the analysis: Find f', Apply 1st Test, Apply 2nd Test, Compare"
+    },
+    {
+      "type": "button",
+      "name": "resetButton",
+      "description": "Resets the step-through to the beginning"
+    },
+    {
+      "type": "button-group",
+      "name": "functionSelector",
+      "description": "Selects which function to analyze: x³-3x (standard), x⁴-2x² (quartic), x³ (inconclusive case)"
+    },
+    {
+      "type": "toggle-group",
+      "name": "graphToggles",
+      "description": "Shows or hides individual graphs: f(x), f'(x), f''(x)"
+    }
+  ]
+}

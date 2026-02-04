@@ -1,0 +1,94 @@
+{
+  "title": "Mean Value Theorem Explorer",
+  "description": "Interactive visualization of the Mean Value Theorem showing secant lines connecting interval endpoints and tangent lines at a draggable point c. Students explore finding values where the instantaneous rate of change equals the average rate of change.",
+  "creator": "Dan McCreary",
+  "subject": ["Calculus", "Derivatives", "Mean Value Theorem"],
+  "created": "2026-02-04",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "High School, AP Calculus",
+  "subjectArea": "Mathematics",
+  "topic": "Mean Value Theorem",
+  "learningObjectives": [
+    "Apply the Mean Value Theorem to find values of c where the tangent slope equals the secant slope",
+    "Calculate and compare secant and tangent slopes for various functions",
+    "Demonstrate understanding of when MVT conditions are satisfied"
+  ],
+  "bloomsTaxonomy": ["Apply", "Calculate", "Demonstrate"],
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Understanding of derivatives and their geometric meaning",
+    "Knowledge of secant and tangent lines",
+    "Familiarity with slope calculations"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "700x570",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "describeFunction": true
+  },
+  "controls": [
+    {
+      "type": "draggable point",
+      "name": "Point c",
+      "description": "Draggable point on the curve between a and b"
+    },
+    {
+      "type": "slider",
+      "name": "a",
+      "description": "Left endpoint of the interval",
+      "min": -1,
+      "max": "b - 0.5",
+      "default": 0
+    },
+    {
+      "type": "slider",
+      "name": "b",
+      "description": "Right endpoint of the interval",
+      "min": "a + 0.5",
+      "max": 5,
+      "default": 4
+    },
+    {
+      "type": "button group",
+      "name": "Function selector",
+      "options": ["Quadratic", "Cubic", "Sine", "Square Root"],
+      "default": "Quadratic"
+    },
+    {
+      "type": "button",
+      "name": "Auto-find c",
+      "description": "Animates to a c value that satisfies MVT"
+    },
+    {
+      "type": "toggle",
+      "name": "Show secant",
+      "description": "Toggle visibility of the secant line",
+      "default": true
+    }
+  ],
+  "modelType": "Mathematical visualization",
+  "variables": [
+    "a - left endpoint",
+    "b - right endpoint",
+    "c - point where tangent is evaluated",
+    "secant slope - (f(b) - f(a)) / (b - a)",
+    "tangent slope - f'(c)"
+  ],
+  "equations": [
+    "Secant slope = [f(b) - f(a)] / (b - a)",
+    "MVT condition: f'(c) = [f(b) - f(a)] / (b - a)"
+  ],
+  "assumptions": [
+    "Functions are continuous on [a, b]",
+    "Functions are differentiable on (a, b)"
+  ],
+  "limitations": [
+    "Square root function only valid for x >= 0",
+    "Limited to four preset functions"
+  ]
+}

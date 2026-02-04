@@ -1,0 +1,100 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schema/microsim-schema.json",
+  "title": "Fencing Problem Optimizer",
+  "description": "An interactive visualization for the classic calculus optimization problem of maximizing the area of a rectangular field bounded by a river on one side with a fixed amount of fencing.",
+  "creator": "Dan McCreary",
+  "subject": "Calculus",
+  "date": "2026-02-04",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educational": {
+    "gradeLevel": "High School (9-12)",
+    "subjectArea": "Mathematics",
+    "topic": "Optimization",
+    "learningObjectives": [
+      "Solve fencing optimization problems by manipulating dimensions and observing how area changes",
+      "Connect visual intuition with calculus-based solutions",
+      "Set up constraint equations from word problems",
+      "Find critical points using derivatives",
+      "Verify maximum using second derivative test"
+    ],
+    "bloomsTaxonomy": {
+      "level": "Apply",
+      "verb": "Solve"
+    },
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Understanding of derivatives",
+      "Knowledge of critical points",
+      "Basic algebra skills"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": "700x550",
+    "responsive": "Width-responsive",
+    "dependencies": ["p5.js CDN"],
+    "accessibility": {
+      "describe": true,
+      "keyboardNav": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      {
+        "type": "slider",
+        "label": "x value",
+        "description": "Controls the length of the side parallel to the river",
+        "min": 0,
+        "max": "F/2 (half of total fencing)",
+        "default": 100,
+        "step": 1
+      },
+      {
+        "type": "input",
+        "label": "Fencing",
+        "description": "Total amount of fencing available (constraint)",
+        "default": 400,
+        "unit": "meters"
+      },
+      {
+        "type": "button",
+        "label": "Show Solution",
+        "description": "Toggles display of the calculus solution"
+      },
+      {
+        "type": "button",
+        "label": "Explore/Solve Mode",
+        "description": "Toggles between free exploration and guided solution mode"
+      }
+    ]
+  },
+  "simulationModel": {
+    "type": "Mathematical Optimization",
+    "variables": [
+      "x - length parallel to river",
+      "y - length perpendicular to river",
+      "F - total fencing (constraint)",
+      "A - area to maximize"
+    ],
+    "equations": [
+      "Constraint: x + 2y = F",
+      "Objective: A(x) = xy = x(F-x)/2",
+      "Derivative: A'(x) = F/2 - x",
+      "Critical point: x* = F/2",
+      "Maximum area: A_max = F^2/8"
+    ],
+    "assumptions": [
+      "River is straight",
+      "Field is rectangular",
+      "Fence is infinitely divisible"
+    ],
+    "limitations": [
+      "Does not account for terrain",
+      "Assumes uniform fencing cost"
+    ]
+  }
+}

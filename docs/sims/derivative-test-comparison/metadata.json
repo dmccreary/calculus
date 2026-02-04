@@ -1,0 +1,68 @@
+{
+  "title": "Derivative Test Comparison",
+  "description": "Interactive side-by-side comparison of the First and Second Derivative Tests for classifying critical points. Features sign charts, concavity visualization, step-by-step breakdowns, and examples where each test succeeds or fails.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Critical Points",
+    "First Derivative Test",
+    "Second Derivative Test",
+    "Function Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/derivative-test-comparison/",
+  "publisher": "Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "bloomVerbs": [
+    "compare",
+    "contrast",
+    "differentiate"
+  ],
+  "concepts": [
+    "Critical Points",
+    "Local Maximum",
+    "Local Minimum",
+    "First Derivative Test",
+    "Second Derivative Test",
+    "Sign Chart",
+    "Concavity"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Critical point identification",
+    "Concavity and second derivatives"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button-group",
+      "label": "Function",
+      "options": ["x^4 - 2x^2", "x^3 - 3x", "x^5", "sin(x)", "x^4"],
+      "description": "Select a function to analyze"
+    },
+    {
+      "type": "slider",
+      "label": "Critical Point",
+      "description": "Navigate between critical points of the selected function"
+    },
+    {
+      "type": "toggle",
+      "label": "Show Both",
+      "description": "Toggle visibility of both test panels"
+    }
+  ]
+}

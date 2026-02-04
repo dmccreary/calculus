@@ -1,0 +1,68 @@
+{
+  "title": "Derivative Information Flow",
+  "description": "Interactive diagram showing how information about function behavior flows from the second derivative (f'') to the first derivative (f') to the original function (f), helping students understand the chain of logical implications between derivatives.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Concavity",
+    "Inflection Points",
+    "Function Analysis"
+  ],
+  "type": "Interactive Infographic",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/derivative-info-flow/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "infographic",
+  "audience": "AP Calculus Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": "Explain",
+  "concepts": [
+    "Second Derivative",
+    "First Derivative",
+    "Concavity",
+    "Inflection Point",
+    "Increasing Function",
+    "Decreasing Function",
+    "Local Extremum",
+    "Information Flow"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Basic understanding of concavity",
+    "Familiarity with function graphs"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Trace Example",
+      "description": "Walks through three scenarios showing information flow chains"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Clears all highlights and returns to default state"
+    },
+    {
+      "type": "click",
+      "label": "Property Click",
+      "description": "Click any property box to highlight its implications"
+    },
+    {
+      "type": "hover",
+      "label": "Arrow Hover",
+      "description": "Hover over arrows for verbal explanations"
+    }
+  ]
+}

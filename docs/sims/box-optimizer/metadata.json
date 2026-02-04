@@ -1,0 +1,88 @@
+{
+  "title": "Box Volume Optimizer",
+  "description": "Interactive simulation demonstrating the classic calculus optimization problem of maximizing box volume from a cardboard sheet. Features 2D template view, 3D box visualization, and volume function graph with real-time updates.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Optimization",
+    "Volume",
+    "Derivatives",
+    "Critical Points",
+    "Applied Mathematics"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/box-optimizer/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Apply",
+    "Evaluate"
+  ],
+  "concepts": [
+    "Optimization",
+    "Volume Function",
+    "Derivatives",
+    "Critical Points",
+    "Maximum Value",
+    "3D Geometry",
+    "Applied Calculus"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Setting derivatives equal to zero",
+    "Basic 3D geometry concepts",
+    "Volume formulas for rectangular prisms"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "Cut Size (x)",
+      "description": "Controls the size of squares cut from each corner",
+      "min": 0.1,
+      "max": "W/2 - 0.1",
+      "default": 2,
+      "unit": "inches"
+    },
+    {
+      "type": "button",
+      "name": "Animate Fold",
+      "description": "Shows animation of flat cardboard folding into 3D box"
+    },
+    {
+      "type": "button",
+      "name": "Show Optimal",
+      "description": "Jumps to the cut size that maximizes volume"
+    },
+    {
+      "type": "button",
+      "name": "Reset",
+      "description": "Resets cut size to default value"
+    },
+    {
+      "type": "text input",
+      "name": "Length",
+      "description": "Cardboard length dimension",
+      "default": 18,
+      "unit": "inches"
+    },
+    {
+      "type": "text input",
+      "name": "Width",
+      "description": "Cardboard width dimension",
+      "default": 12,
+      "unit": "inches"
+    }
+  ]
+}

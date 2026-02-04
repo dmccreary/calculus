@@ -1,0 +1,43 @@
+{
+  "title": "Critical Point Finder",
+  "description": "Interactive simulation helping students identify critical points by finding where f'(x) = 0 or f'(x) does not exist, featuring dual-graph display with step-by-step algebraic solutions.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Critical Points",
+    "Optimization",
+    "Function Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/critical-point-finder/",
+  "publisher": "Calculus Intelligent Textbook",
+  "educationalLevel": "High School, College",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Critical Points",
+    "Derivatives",
+    "f'(x) = 0",
+    "Derivative Does Not Exist",
+    "Local Extrema",
+    "Horizontal Tangent Lines"
+  ],
+  "prerequisites": [
+    "Derivative rules (power rule, quotient rule)",
+    "Graphing functions",
+    "Equation solving"
+  ],
+  "library": "p5.js"
+}

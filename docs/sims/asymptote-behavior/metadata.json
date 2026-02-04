@@ -1,0 +1,66 @@
+{
+  "title": "Asymptote Behavior Visualization",
+  "description": "Interactive visualization showing how rational functions behave near vertical asymptotes and as x approaches infinity. Features Delta the robot traveling along curves with real-time coordinate display and color-coded proximity to asymptotes.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Limits",
+    "Rational Functions",
+    "Asymptotes",
+    "Function Behavior"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/asymptote-behavior/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": "Interpret",
+  "concepts": [
+    "Vertical Asymptotes",
+    "Horizontal Asymptotes",
+    "Limits at Infinity",
+    "Rational Functions",
+    "Holes in Functions",
+    "End Behavior"
+  ],
+  "prerequisites": [
+    "Understanding of rational functions",
+    "Basic knowledge of limits",
+    "Coordinate plane interpretation"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "label": "Delta Position",
+      "description": "Move Delta along the x-axis to explore function behavior",
+      "min": -8,
+      "max": 8,
+      "default": 0
+    },
+    {
+      "type": "button-group",
+      "label": "Function Selector",
+      "description": "Choose between three example functions with different asymptote configurations",
+      "options": ["f(x) = 1/x", "f(x) = (2x^2+1)/(x^2-4)", "f(x) = (x^2-1)/(x-1)"]
+    },
+    {
+      "type": "toggle",
+      "label": "Show Asymptotes",
+      "description": "Toggle visibility of asymptote lines",
+      "default": true
+    }
+  ]
+}

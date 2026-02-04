@@ -1,0 +1,87 @@
+{
+  "title": "Closed Interval Method",
+  "description": "Interactive simulation demonstrating the Closed Interval Method for finding absolute extrema on closed intervals. Students work through a three-step process: finding candidates (critical points and endpoints), evaluating the function at each candidate, and identifying the absolute maximum and minimum values.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Optimization",
+    "Extrema",
+    "Critical Points",
+    "Derivatives"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/closed-interval-method/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School AP, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Closed Interval Method",
+    "Absolute Extrema",
+    "Critical Points",
+    "Endpoints",
+    "Extreme Value Theorem",
+    "Optimization"
+  ],
+  "prerequisites": [
+    "Derivatives",
+    "Critical points",
+    "Continuity",
+    "Extreme Value Theorem"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "dropdown",
+      "label": "Function",
+      "description": "Select from preset functions with different critical point behaviors"
+    },
+    {
+      "type": "slider",
+      "label": "a (left endpoint)",
+      "min": -5,
+      "max": 10,
+      "default": -1,
+      "description": "Adjust the left boundary of the closed interval"
+    },
+    {
+      "type": "slider",
+      "label": "b (right endpoint)",
+      "min": -5,
+      "max": 10,
+      "default": 4,
+      "description": "Adjust the right boundary of the closed interval"
+    },
+    {
+      "type": "button",
+      "label": "Find Candidates",
+      "description": "Step 1: Identify critical points and endpoints"
+    },
+    {
+      "type": "button",
+      "label": "Evaluate All",
+      "description": "Step 2: Calculate f(x) at each candidate"
+    },
+    {
+      "type": "button",
+      "label": "Identify Extrema",
+      "description": "Step 3: Determine absolute max and min"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Clear all work and start over"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Candidates Test Calculator",
+  "description": "Interactive step-by-step guide through the closed interval method for finding global extrema. Features function graph with marked critical points and endpoints, progressive table building, and visual highlighting of global max/min values.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Extrema",
+    "Optimization",
+    "Closed Interval Method",
+    "Candidates Test"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/candidates-test/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Global Extrema",
+    "Absolute Maximum",
+    "Absolute Minimum",
+    "Critical Points",
+    "Endpoints",
+    "Closed Interval Method",
+    "Extreme Value Theorem"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Finding critical points",
+    "Local vs global extrema"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Next Step",
+      "description": "Reveals the next step in the candidates test algorithm"
+    },
+    {
+      "type": "button",
+      "label": "Show All",
+      "description": "Reveals the complete solution"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Resets to step 0"
+    },
+    {
+      "type": "toggle",
+      "label": "Show f'(x)",
+      "description": "Shows/hides the derivative curve"
+    },
+    {
+      "type": "selector",
+      "label": "Function",
+      "description": "Selects from preset functions: Cubic, Quadratic, Quartic, Sine"
+    },
+    {
+      "type": "increment",
+      "label": "Interval a",
+      "description": "Adjusts the left endpoint of the interval"
+    },
+    {
+      "type": "increment",
+      "label": "Interval b",
+      "description": "Adjusts the right endpoint of the interval"
+    }
+  ]
+}

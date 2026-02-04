@@ -84,16 +84,23 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Asymptote Analyzer: sims/asymptote-analyzer/index.md
+    - Asymptote Behavior: sims/asymptote-behavior/index.md
     - Asymptote Types: sims/asymptote-types/index.md
     - Average Rate of Change Explorer: sims/average-rate-change/index.md
     - Balloon Inflation Simulator: sims/balloon-inflation-simulator/index.md
+    - Box Volume Optimizer: sims/box-optimizer/index.md
     - Chain Rule Steps: sims/chain-rule-steps/index.md
     - Composite Identifier: sims/composite-identifier/index.md
     - Conical Tank Draining: sims/conical-tank-draining/index.md
+    - Concavity Explorer: sims/concavity-explorer/index.md
     - Continuity Conditions: sims/continuity-conditions/index.md
     - Coordinate System Explorer: sims/coordinate-system-explorer/index.md
+    - Critical Point Finder: sims/critical-point-finder/index.md
     - Derivative from Graph: sims/derivative-from-graph/index.md
+    - Derivative Information Flow: sims/derivative-info-flow/index.md
     - Derivative Interpretation Selector: sims/derivative-interpretation/index.md
+    - Derivative Test Comparison: sims/derivative-test-comparison/index.md
+    - Derivative Tests Comparison: sims/derivative-tests-comparison/index.md
     - Differentiability and Continuity: sims/diff-cont-relationship/index.md
     - Differentiability Checker: sims/differentiability-checker/index.md
     - Direct Substitution Tree: sims/direct-substitution-tree/index.md
@@ -101,9 +108,12 @@ nav:
     - Discontinuity Types: sims/discontinuity-types/index.md
     - Domain and Range Visualizer: sims/domain-range-visualizer/index.md
     - End Behavior Explorer: sims/end-behavior/index.md
+    - EVT Conditions Explorer: sims/evt-conditions/index.md
+    - Extrema Types: sims/extrema-types/index.md
     - Exp-Log Relationship: sims/exp-log-relationship/index.md
     - Exponential Self-Derivative: sims/exp-self-derivative/index.md
     - Factoring Limits: sims/factoring-limits/index.md
+    - Fencing Problem Optimizer: sims/fencing-optimizer/index.md
     - Function Composition: sims/function-composition/index.md
     - Function Derivative Comparison: sims/function-derivative-comparison/index.md
     - Function Machine: sims/function-machine/index.md
@@ -129,20 +139,26 @@ nav:
     - Marginal Analysis Calculator: sims/marginal-analysis-calculator/index.md
     - Marginal Cost Analyzer: sims/marginal-cost-analyzer/index.md
     - Motion Analysis: sims/motion-analysis/index.md
+    - MVT Explorer: sims/mvt-explorer/index.md
     - Multi-Rule Builder: sims/multi-rule-builder/index.md
     - Nested Chain Unwrap: sims/nested-chain-unwrap/index.md
     - Non-Differentiable Gallery: sims/non-differentiable-gallery/index.md
     - One-Sided Derivatives: sims/one-sided-derivatives/index.md
     - One-Sided Limits: sims/one-sided-limits/index.md
+    - Optimization Flowchart: sims/optimization-flowchart/index.md
     - Piecewise Builder: sims/piecewise-builder/index.md
     - Piecewise Continuity Explorer: sims/piecewise-continuity/index.md
     - Polynomial Explorer: sims/polynomial-explorer/index.md
     - Power Rule Explorer: sims/power-rule-explorer/index.md
+    - Profit Optimizer: sims/profit-optimizer/index.md
+    - Rolle's Theorem Visualizer: sims/rolles-theorem/index.md
     - Product Rule Visualizer: sims/product-rule-viz/index.md
     - Rate Interpretation Dashboard: sims/rate-interpretation-dashboard/index.md
     - Rule Selector: sims/rule-selector/index.md
     - Secant to Tangent: sims/secant-to-tangent/index.md
     - Second Derivative Explorer: sims/second-derivative-explorer/index.md
+    - Sign Chart Builder: sims/sign-chart-builder/index.md
+    - Three Connected Graphs Explorer: sims/three-graphs-explorer/index.md
     - Sin(x)/x: sims/sinx-over-x/index.md
     - Speed Change Analyzer: sims/speed-change-analyzer/index.md
     - Squeeze Theorem: sims/squeeze-theorem/index.md
@@ -159,6 +175,14 @@ nav:
     - Vertical Asymptote Explorer: sims/vertical-asymptote/index.md
     - Vertical Line Test: sims/vertical-line-test/index.md
     - Zoom to Linear: sims/zoom-to-linear/index.md
+    - Sketch from Derivative Info: sims/sketch-from-info/index.md
+    - Verification Methods: sims/verification-methods/index.md
+    - Closest Point Finder: sims/closest-point-finder/index.md
+    - Closed Interval Method: sims/closed-interval-method/index.md
+    - Can Optimizer: sims/can-optimizer/index.md
+    - Complete Curve Sketch: sims/complete-curve-sketch/index.md
+    - Curve Analysis Dashboard: sims/curve-analysis-dashboard/index.md
+    - Candidates Test Calculator: sims/candidates-test/index.md
 
   - Appendices:
     - List of Appendices: appendices/index.md
