@@ -159,7 +159,7 @@
       "content": "AP Calculus Created",
       "start": "1955",
       "group": "Education",
-      "title": "The Advanced Placement Calculus program launched in the U.S. Today, over 300,000 students take AP Calculus exams annually."
+      "title": "The Advanced Placement Calculus program launched in the U.S. By 2025, over 446,000 students take AP Calculus AB and BC exams annually."
     },
     {
       "id": 24,
@@ -192,9 +192,9 @@
     {
       "id": 28,
       "content": "Calculus Enrollment",
-      "start": "2020",
+      "start": "2026",
       "group": "Demographics",
-      "title": "Approximately 800,000 U.S. high school students and over 1.5 million college students take calculus annually."
+      "title": "In 2026, approximately 800,000 U.S. high school students and 700,000 college students take calculus annually (~1.5 million total). Worldwide, an estimated 5 million students study calculus each year."
     },
     {
       "id": 29,
@@ -202,6 +202,13 @@
       "start": "2023",
       "group": "Technology",
       "title": "AI tools and intelligent textbooks support personalized calculus learning experiences."
+    },
+    {
+      "id": 30,
+      "content": "This Book",
+      "start": "2026",
+      "group": "Education",
+      "title": "Dan McCreary used Claude Code Skills to generate this intelligent calculus textbook—including 150+ interactive MicroSims—in a single day, demonstrating the transformative potential of AI in educational content creation."
     }
   ]
 }

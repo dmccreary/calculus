@@ -8,6 +8,7 @@ let drawHeight = 450;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 50;
+let chartTop = 50;  // Top of drawing region - must be >= 50 to prevent overlap with title/subtitle
 let defaultTextSize = 16;
 
 // Coordinate system
@@ -111,9 +112,9 @@ function drawAxes() {
     let x = originX + i * scale;
     let y = originY - i * scale;
     if (x > margin && x < canvasWidth - margin) {
-      line(x, 30, x, drawHeight - 20);
+      line(x, chartTop, x, drawHeight - 20);
     }
-    if (y > 30 && y < drawHeight - 20) {
+    if (y > chartTop && y < drawHeight - 20) {
       line(margin, y, canvasWidth - margin, y);
     }
   }
@@ -122,7 +123,7 @@ function drawAxes() {
   stroke(0);
   strokeWeight(2);
   line(margin, originY, canvasWidth - margin, originY);
-  line(originX, 30, originX, drawHeight - 20);
+  line(originX, chartTop, originX, drawHeight - 20);
 
   // Tick labels
   fill('black');
@@ -141,7 +142,7 @@ function drawAxes() {
   for (let i = -4; i <= 4; i++) {
     if (i !== 0) {
       let y = originY - i * scale;
-      if (y > 30 && y < drawHeight - 20) {
+      if (y > chartTop && y < drawHeight - 20) {
         text(i, originX - 5, y);
       }
     }
@@ -160,7 +161,7 @@ function drawParentFunction() {
     let y = parent.f(x);
     if (!isNaN(y) && isFinite(y) && Math.abs(y) < 20) {
       let sy = originY - y * scale;
-      if (sy > 30 && sy < drawHeight - 20) {
+      if (sy > chartTop && sy < drawHeight - 20) {
         vertex(px, sy);
       }
     }
@@ -182,7 +183,7 @@ function drawTransformedFunction() {
     let y = a * parent.f(innerX) + k;
     if (!isNaN(y) && isFinite(y) && Math.abs(y) < 20) {
       let sy = originY - y * scale;
-      if (sy > 30 && sy < drawHeight - 20) {
+      if (sy > chartTop && sy < drawHeight - 20) {
         vertex(px, sy);
       }
     }

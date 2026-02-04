@@ -1,13 +1,15 @@
+/// <reference types="p5/global" />
 // Coordinate System Explorer MicroSim
 // Learning Objective: Students will identify points in the coordinate plane
 // and name the quadrant where each point lies.
 // Bloom Level: Remember (L1)
 
 let canvasWidth = 500;
-let drawHeight = 400;
+let drawHeight = 410;
 let controlHeight = 50;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
+let verticalTranslate = 15;  // Vertical offset for drawing area content
 let defaultTextSize = 16;
 
 // Coordinate system
@@ -20,6 +22,7 @@ let yRange = 4;
 let pointX = 0;
 let pointY = 0;
 let showPoint = true;
+let isDraggingPoint = false;
 
 // Quiz mode
 let quizMode = false;
@@ -27,9 +30,14 @@ let quizPoint = { x: 0, y: 0 };
 let quizAnswer = '';
 let showQuizFeedback = false;
 let quizCorrect = false;
+let quizCorrectCount = 0;
+let quizTotalTries = 0;
 
 // Button positions
 let quizBtnX, quizBtnY, quizBtnW, quizBtnH;
+
+// Celebration animation particles
+let celebrationParticles = [];
 
 function setup() {
   updateCanvasSize();
@@ -41,7 +49,7 @@ function setup() {
 
   updateButtonPositions();
 
-  describe('Coordinate System Explorer: Click anywhere on the coordinate plane to place a point and see its coordinates and quadrant.', LABEL);
+  describe('Coordinate System Explorer: Click to place a point or drag to move it. See coordinates and quadrant.', LABEL);
 }
 
 function updateButtonPositions() {
@@ -66,6 +74,9 @@ function draw() {
   stroke('silver');
   rect(0, drawHeight, canvasWidth, controlHeight);
 
+  // Draw the items in the center of the drawing area
+  push();
+  translate(0, verticalTranslate);
   // Draw grid and axes
   drawGrid();
   drawAxes();
@@ -77,11 +88,21 @@ function draw() {
   if (showPoint && !quizMode) {
     drawPoint(pointX, pointY, color(255, 100, 100));
   }
+  pop();
 
-  // Quiz mode
+  // Quiz mode - show the target point only after answering (inside translate block)
+  if (quizMode && showQuizFeedback) {
+    push();
+    translate(0, verticalTranslate);
+    drawPoint(quizPoint.x, quizPoint.y, quizCorrect ? color(100, 200, 100) : color(200, 100, 100));
+    pop();
+  }
+
+  // Quiz prompt and feedback
   if (quizMode) {
-    drawQuizPoint();
+    drawQuizPrompt();
     drawQuizFeedback();
+    drawQuizScore();
   }
 
   // Title
@@ -98,6 +119,9 @@ function draw() {
   if (!quizMode) {
     drawCoordinateInfo();
   }
+
+  // Draw celebration particles (on top of everything)
+  updateAndDrawCelebration();
 }
 
 function drawGrid() {
@@ -234,29 +258,37 @@ function getQuadrant(x, y) {
   return 'IV';
 }
 
-function drawQuizPoint() {
-  let screenX = originX + quizPoint.x * gridSize;
-  let screenY = originY - quizPoint.y * gridSize;
+function drawQuizPrompt() {
+  // Show the coordinates and ask user to click on that location
+  let boxW = 180;
+  let boxH = 55;
+  let boxX = 10;
+  let boxY = 35;
 
-  fill(50, 100, 200);
-  stroke(0);
+  fill(255, 255, 255, 240);
+  stroke(50, 100, 200);
   strokeWeight(2);
-  circle(screenX, screenY, 16);
+  rect(boxX, boxY, boxW, boxH, 8);
 
-  // Question
   fill('black');
   noStroke();
   textSize(14);
   textAlign(LEFT, TOP);
-  text('What are the coordinates?', 10, 35);
+  text('Click on the point:', boxX + 10, boxY + 10);
+
+  // Show target coordinates prominently
+  fill(50, 100, 200);
+  textSize(20);
+  textAlign(CENTER, TOP);
+  text('(' + quizPoint.x + ', ' + quizPoint.y + ')', boxX + boxW/2, boxY + 30);
 }
 
 function drawQuizFeedback() {
   if (showQuizFeedback) {
-    let boxW = 180;
-    let boxH = 50;
+    let boxW = 140;
+    let boxH = 40;
     let boxX = canvasWidth - boxW - 10;
-    let boxY = 35;
+    let boxY = 40;
 
     fill(quizCorrect ? color(200, 255, 200) : color(255, 200, 200));
     stroke(quizCorrect ? color(100, 200, 100) : color(200, 100, 100));
@@ -265,14 +297,19 @@ function drawQuizFeedback() {
 
     fill('black');
     noStroke();
-    textSize(14);
+    textSize(16);
     textAlign(CENTER, CENTER);
-    if (quizCorrect) {
-      text('Correct! (' + quizPoint.x + ', ' + quizPoint.y + ')', boxX + boxW/2, boxY + boxH/2);
-    } else {
-      text('Answer: (' + quizPoint.x + ', ' + quizPoint.y + ')', boxX + boxW/2, boxY + boxH/2);
-    }
+    text(quizCorrect ? 'Correct!' : 'Try again!', boxX + boxW/2, boxY + boxH/2);
   }
+}
+
+function drawQuizScore() {
+  // Score display in lower right corner of drawing area
+  fill('black');
+  noStroke();
+  textSize(14);
+  textAlign(RIGHT, BOTTOM);
+  text('Score: ' + quizCorrectCount + ' / ' + quizTotalTries, canvasWidth - 10, drawHeight - 10);
 }
 
 function drawControls() {
@@ -296,9 +333,9 @@ function drawControls() {
   textAlign(LEFT, CENTER);
   textSize(12);
   if (quizMode) {
-    text('Click where you think the point is!', 10, drawHeight + 27);
+    text('Click on the grid at the given coordinates', 10, drawHeight + 27);
   } else {
-    text('Click to place a point', 10, drawHeight + 27);
+    text('Click to place or drag to move point', 10, drawHeight + 27);
   }
 }
 
@@ -310,27 +347,45 @@ function mousePressed() {
     return;
   }
 
-  // Check if click is in drawing area
-  if (mouseY >= margin && mouseY <= drawHeight - margin &&
+  // Check if click is in drawing area (account for verticalTranslate offset)
+  let adjustedMouseY = mouseY - verticalTranslate;
+  if (adjustedMouseY >= margin && adjustedMouseY <= drawHeight - margin &&
       mouseX >= margin && mouseX <= canvasWidth - margin) {
 
     if (quizMode) {
-      // Check answer
+      // Check answer - user clicks where they think the coordinates are
       let clickX = Math.round((mouseX - originX) / gridSize);
-      let clickY = Math.round((originY - mouseY) / gridSize);
+      let clickY = Math.round((originY - adjustedMouseY) / gridSize);
 
       quizCorrect = (clickX === quizPoint.x && clickY === quizPoint.y);
       showQuizFeedback = true;
+      quizTotalTries++;
 
-      // Generate new quiz after delay
+      // Trigger celebration if correct
+      if (quizCorrect) {
+        quizCorrectCount++;
+        createCelebration(canvasWidth / 2, drawHeight / 2);
+      }
+
+      // Generate new quiz after delay (longer if wrong to see correct location)
       setTimeout(() => {
         generateQuizPoint();
         showQuizFeedback = false;
-      }, 1500);
+      }, quizCorrect ? 1500 : 2000);
     } else {
-      // Place point
+      // Check if clicking on existing point (for dragging)
+      if (showPoint) {
+        let pointScreenX = originX + pointX * gridSize;
+        let pointScreenY = originY - pointY * gridSize + verticalTranslate;
+        if (dist(mouseX, mouseY, pointScreenX, pointScreenY) < 15) {
+          isDraggingPoint = true;
+          return;
+        }
+      }
+
+      // Place new point
       pointX = Math.round((mouseX - originX) / gridSize);
-      pointY = Math.round((originY - mouseY) / gridSize);
+      pointY = Math.round((originY - adjustedMouseY) / gridSize);
 
       // Constrain to visible range
       pointX = constrain(pointX, -xRange, xRange);
@@ -340,10 +395,30 @@ function mousePressed() {
   }
 }
 
+function mouseDragged() {
+  if (isDraggingPoint && !quizMode) {
+    // Update point position while dragging (account for verticalTranslate offset)
+    let adjustedMouseY = mouseY - verticalTranslate;
+    pointX = Math.round((mouseX - originX) / gridSize);
+    pointY = Math.round((originY - adjustedMouseY) / gridSize);
+
+    // Constrain to visible range
+    pointX = constrain(pointX, -xRange, xRange);
+    pointY = constrain(pointY, -yRange, yRange);
+  }
+}
+
+function mouseReleased() {
+  isDraggingPoint = false;
+}
+
 function toggleQuizMode() {
   quizMode = !quizMode;
   showQuizFeedback = false;
   if (quizMode) {
+    // Reset score when entering quiz mode
+    quizCorrectCount = 0;
+    quizTotalTries = 0;
     generateQuizPoint();
   }
 }
@@ -365,4 +440,59 @@ function updateCanvasSize() {
   canvasWidth = Math.floor(container.width);
   gridSize = Math.min(40, (canvasWidth - 2 * margin) / (2 * xRange + 1));
   updateButtonPositions();
+}
+
+// ============================================
+// Celebration Animation - Red Dot Explosion
+// ============================================
+
+function createCelebration(centerX, centerY) {
+  // Create particles exploding outward from center
+  let numParticles = 30;
+  for (let i = 0; i < numParticles; i++) {
+    let angle = random(TWO_PI);
+    let speed = random(3, 8);
+    let size = random(8, 16);
+    celebrationParticles.push({
+      x: centerX,
+      y: centerY,
+      vx: cos(angle) * speed,
+      vy: sin(angle) * speed,
+      size: size,
+      alpha: 255,
+      decay: random(3, 6),
+      hue: random(-20, 20)  // Slight color variation around red
+    });
+  }
+}
+
+function updateAndDrawCelebration() {
+  // Update and draw each particle
+  for (let i = celebrationParticles.length - 1; i >= 0; i--) {
+    let p = celebrationParticles[i];
+
+    // Update position
+    p.x += p.vx;
+    p.y += p.vy;
+
+    // Add gravity effect
+    p.vy += 0.15;
+
+    // Fade out
+    p.alpha -= p.decay;
+
+    // Draw particle
+    noStroke();
+    fill(255, 80 + p.hue, 80 + p.hue, p.alpha);
+    circle(p.x, p.y, p.size);
+
+    // Add a subtle glow effect
+    fill(255, 100 + p.hue, 100 + p.hue, p.alpha * 0.3);
+    circle(p.x, p.y, p.size * 1.5);
+
+    // Remove faded particles
+    if (p.alpha <= 0) {
+      celebrationParticles.splice(i, 1);
+    }
+  }
 }

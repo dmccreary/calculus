@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Timeline of Calculus History</title>
+    <link rel="stylesheet" href="https://unpkg.com/vis-timeline/standalone/umd/vis-timeline-graph2d.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Timeline of Calculus History</h1>
+            <p>From Ancient Greece to Modern AI — 2300 Years of Mathematical Discovery</p>
+        </header>
+
+        <div class="filter-controls">
+            <button class="filter-btn active" data-category="all" onclick="filterCategory('all')">All Events</button>
+            <button class="filter-btn" data-category="Foundations" onclick="filterCategory('Foundations')">Foundations</button>
+            <button class="filter-btn" data-category="Pre-Calculus" onclick="filterCategory('Pre-Calculus')">Pre-Calculus</button>
+            <button class="filter-btn" data-category="Foundations of Calculus" onclick="filterCategory('Foundations of Calculus')">Calculus Origins</button>
+            <button class="filter-btn" data-category="Applications" onclick="filterCategory('Applications')">Applications</button>
+            <button class="filter-btn" data-category="Expansion" onclick="filterCategory('Expansion')">Expansion</button>
+            <button class="filter-btn" data-category="Education" onclick="filterCategory('Education')">Education</button>
+            <button class="filter-btn" data-category="Advanced Topics" onclick="filterCategory('Advanced Topics')">Advanced</button>
+            <button class="filter-btn" data-category="Rigor" onclick="filterCategory('Rigor')">Rigor</button>
+            <button class="filter-btn" data-category="Integration" onclick="filterCategory('Integration')">Integration</button>
+            <button class="filter-btn" data-category="Technology" onclick="filterCategory('Technology')">Technology</button>
+            <button class="filter-btn" data-category="Demographics" onclick="filterCategory('Demographics')">Demographics</button>
+        </div>
+
+        <div class="nav-controls">
+            <button class="nav-btn" onclick="panLeft()">◀ Earlier</button>
+            <button class="nav-btn" onclick="zoomIn()">+ Zoom In</button>
+            <button class="nav-btn" onclick="zoomOut()">− Zoom Out</button>
+            <button class="nav-btn" onclick="fitAll()">Fit All</button>
+            <button class="nav-btn" onclick="panRight()">Later ▶</button>
+        </div>
+
+        <div id="timeline"></div>
+
+        <p class="instructions">Click and drag to pan • Ctrl+scroll to zoom • Click an event for details</p>
+
+        <div class="event-details-panel">
+            <div id="details-content">
+                <p class="placeholder">Click on an event to see details</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <script>
+        // Category colors
+        const categoryColors = {
+            'Foundations': '#8B4513',
+            'Pre-Calculus': '#DAA520',
+            'Foundations of Calculus': '#228B22',
+            'Applications': '#4169E1',
+            'Expansion': '#9932CC',
+            'Education': '#DC143C',
+            'Advanced Topics': '#008B8B',
+            'Rigor': '#FF6347',
+            'Integration': '#6B8E23',
+            'Technology': '#1E90FF',
+            'Demographics': '#FF69B4'
+        };
+
+        let timeline;
+        let timelineData;
+        let allItems = [];
+
+        // Parse year string (handles negative years for BCE)
+        function parseYear(yearStr) {
+            const year = parseInt(yearStr);
+            if (year < 0) {
+                // For BCE dates, create date properly
+                const date = new Date(0);
+                date.setFullYear(year);
+                return date;
+            }
+            return new Date(year, 0, 1);
+        }
+
+        // Format year for display
+        function formatYear(yearStr) {
+            const year = parseInt(yearStr);
+            if (year < 0) {
+                return Math.abs(year) + ' BCE';
+            }
+            return year + ' CE';
+        }
+
+        // Load data and initialize timeline
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Transform data for vis-timeline
+                allItems = data.items.map(item => ({
+                    id: item.id,
+                    content: item.content,
+                    start: parseYear(item.start),
+                    title: item.title,
+                    category: item.group,
+                    yearStr: item.start,
+                    style: `background-color: ${categoryColors[item.group]}; color: white; border-color: ${categoryColors[item.group]};`
+                }));
+
+                // Create DataSet
+                timelineData = new vis.DataSet(allItems);
+
+                // Timeline options
+                const options = {
+                    width: '100%',
+                    height: '700px',
+                    margin: {
+                        item: { horizontal: 50, vertical: 10 },
+                        axis: 40
+                    },
+                    orientation: 'top',
+                    zoomMin: 1000 * 60 * 60 * 24 * 365 * 10,     // 10 years minimum
+                    zoomMax: 1000 * 60 * 60 * 24 * 365 * 3000,   // 3000 years maximum
+                    min: new Date(-500, 0, 1),
+                    max: new Date(2050, 0, 1),
+                    tooltip: {
+                        followMouse: true
+                    },
+                    stack: true,
+                    selectable: true,
+                    showCurrentTime: false,
+                    moveable: true,
+                    zoomable: true,
+                    zoomKey: 'ctrlKey',  // Require Ctrl key for scroll zoom
+                    horizontalScroll: true,
+                    align: 'center'
+                };
+
+                // Create timeline
+                const container = document.getElementById('timeline');
+                timeline = new vis.Timeline(container, timelineData, options);
+
+                // Fit to show all events with padding
+                fitAllWithPadding();
+
+                // Handle event selection
+                timeline.on('select', function(properties) {
+                    if (properties.items.length > 0) {
+                        showEventDetails(properties.items[0]);
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error loading timeline data:', error);
+                document.getElementById('timeline').innerHTML = '<p style="padding: 20px; color: red;">Error loading timeline data. Please check console for details.</p>';
+            });
+
+        // Fit all with padding
+        function fitAllWithPadding() {
+            const currentItems = timelineData.get();
+            if (currentItems.length === 0) return;
+
+            const dates = currentItems.map(item => item.start.getTime());
+            const minDate = Math.min(...dates);
+            const maxDate = Math.max(...dates);
+
+            // Add padding (5% of range on each side, minimum 2 years)
+            const range = maxDate - minDate;
+            const twoYears = 2 * 365 * 24 * 60 * 60 * 1000;
+            const padding = Math.max(range * 0.05, twoYears);
+
+            timeline.setWindow(
+                new Date(minDate - padding),
+                new Date(maxDate + padding),
+                { animation: false }
+            );
+        }
+
+        // Filter by category
+        function filterCategory(category) {
+            // Update button states
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.category === category) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Filter data
+            if (category === 'all') {
+                timelineData.clear();
+                timelineData.add(allItems);
+            } else {
+                const filtered = allItems.filter(item => item.category === category);
+                timelineData.clear();
+                timelineData.add(filtered);
+            }
+
+            // Fit to filtered items
+            fitAllWithPadding();
+
+            // Clear details
+            document.getElementById('details-content').innerHTML = '<p class="placeholder">Click on an event to see details</p>';
+        }
+
+        // Show event details
+        function showEventDetails(itemId) {
+            const item = allItems.find(i => i.id === itemId);
+            if (!item) return;
+
+            const html = `
+                <div class="event-header">
+                    <span class="event-title">${item.content}</span>
+                    <span class="event-date">${formatYear(item.yearStr)}</span>
+                    <span class="event-category" style="background: ${categoryColors[item.category]};">${item.category}</span>
+                </div>
+                <p class="event-description">${item.title}</p>
+            `;
+            document.getElementById('details-content').innerHTML = html;
+        }
+
+        // Navigation functions
+        function panLeft() {
+            const range = timeline.getWindow();
+            const interval = (range.end - range.start) * 0.3;
+            timeline.setWindow(range.start - interval, range.end - interval);
+        }
+
+        function panRight() {
+            const range = timeline.getWindow();
+            const interval = (range.end - range.start) * 0.3;
+            timeline.setWindow(range.start + interval, range.end + interval);
+        }
+
+        function zoomIn() {
+            const range = timeline.getWindow();
+            const center = (range.start.getTime() + range.end.getTime()) / 2;
+            const newInterval = (range.end - range.start) * 0.5;
+            timeline.setWindow(center - newInterval / 2, center + newInterval / 2);
+        }
+
+        function zoomOut() {
+            const range = timeline.getWindow();
+            const center = (range.start.getTime() + range.end.getTime()) / 2;
+            const newInterval = (range.end - range.start) * 2;
+            timeline.setWindow(center - newInterval / 2, center + newInterval / 2);
+        }
+
+        function fitAll() {
+            fitAllWithPadding();
+        }
+    </script>
+</body>
+</html>

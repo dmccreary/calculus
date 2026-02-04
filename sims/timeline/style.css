@@ -1,0 +1,244 @@
+/* Timeline of Calculus History - Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: aliceblue;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8px 20px 20px 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+}
+
+header p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Filter Controls */
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 6px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.filter-btn {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    color: white;
+}
+
+.filter-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.filter-btn.active {
+    box-shadow: 0 0 0 2px #2c3e50;
+}
+
+/* Category button colors */
+.filter-btn[data-category="all"] { background: #2c3e50; }
+.filter-btn[data-category="Foundations"] { background: #8B4513; }
+.filter-btn[data-category="Pre-Calculus"] { background: #DAA520; color: #333; }
+.filter-btn[data-category="Foundations of Calculus"] { background: #228B22; }
+.filter-btn[data-category="Applications"] { background: #4169E1; }
+.filter-btn[data-category="Expansion"] { background: #9932CC; }
+.filter-btn[data-category="Education"] { background: #DC143C; }
+.filter-btn[data-category="Advanced Topics"] { background: #008B8B; }
+.filter-btn[data-category="Rigor"] { background: #FF6347; }
+.filter-btn[data-category="Integration"] { background: #6B8E23; }
+.filter-btn[data-category="Technology"] { background: #1E90FF; }
+.filter-btn[data-category="Demographics"] { background: #FF69B4; }
+
+/* Navigation Controls */
+.nav-controls {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.nav-btn {
+    padding: 4px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #f0f0f0;
+    border-color: #999;
+}
+
+/* Timeline Container */
+#timeline {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding-left: 80px;
+    padding-right: 80px;
+    overflow: hidden;
+}
+
+/* Override vis-timeline clipping */
+.vis-timeline {
+    overflow: visible !important;
+    border: none !important;
+}
+
+.vis-panel.vis-center {
+    overflow: visible !important;
+}
+
+.vis-item .vis-item-overflow {
+    overflow: visible !important;
+}
+
+/* Timeline item styles */
+.vis-item {
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.vis-item.vis-selected {
+    box-shadow: 0 0 0 2px #2c3e50;
+}
+
+/* Tooltip styles */
+.vis-tooltip {
+    background: #2c3e50 !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    max-width: 300px !important;
+    line-height: 1.4 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+}
+
+.vis-tooltip div {
+    max-width: 280px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+/* Event Details Panel */
+.event-details-panel {
+    margin-top: 12px;
+    padding: 12px 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.event-details-panel .placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.event-details-panel .event-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.event-details-panel .event-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.event-details-panel .event-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.event-details-panel .event-category {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: white;
+}
+
+.event-details-panel .event-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Instructions */
+.instructions {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    #timeline {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .event-details-panel .event-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+}
