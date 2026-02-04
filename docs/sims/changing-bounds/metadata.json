@@ -1,0 +1,20 @@
+{
+  "title": "Changing Bounds in u-Substitution",
+  "description": "Interactive side-by-side visualization showing how integration bounds transform from x-domain to u-domain during u-substitution, with shaded areas confirming equality",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integral Properties and Techniques",
+  "subtopic": "u-Substitution with Changed Bounds",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "transform", "calculate"],
+  "learningObjective": "Students will evaluate definite integrals using u-substitution with changed bounds",
+  "prerequisites": ["u-substitution", "definite-integrals", "function-composition", "chain-rule"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["u-substitution", "changing bounds", "definite integral", "integration", "bound transformation", "substitution rule"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

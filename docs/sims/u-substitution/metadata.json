@@ -1,0 +1,20 @@
+{
+  "title": "u-Substitution Steps",
+  "description": "Interactive step-by-step guide to applying u-substitution for evaluating integrals with color-coded tracking of u and du",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integration Techniques",
+  "subtopic": "u-Substitution",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "execute", "implement"],
+  "learningObjective": "Students will apply u-substitution to evaluate integrals",
+  "prerequisites": ["antiderivatives", "chain-rule", "composite-functions", "differential-notation"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["u-substitution", "integration", "substitution method", "reverse chain rule", "antiderivative", "back-substitution"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

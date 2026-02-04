@@ -183,6 +183,27 @@ nav:
     - Complete Curve Sketch: sims/complete-curve-sketch/index.md
     - Curve Analysis Dashboard: sims/curve-analysis-dashboard/index.md
     - Candidates Test Calculator: sims/candidates-test/index.md
+    - Accumulation Function: sims/accumulation-function/index.md
+    - FTC Connection: sims/ftc-connection/index.md
+    - FTC Part 1 Calculator: sims/ftc-part1-calculator/index.md
+    - FTC Part 2 Evaluator: sims/ftc-part2-evaluator/index.md
+    - Net Signed Area: sims/net-signed-area/index.md
+    - Riemann Sum Methods: sims/riemann-sum-methods/index.md
+    - Additivity Property: sims/additivity-property/index.md
+    - Average Value: sims/average-value/index.md
+    - Changing Bounds: sims/changing-bounds/index.md
+    - Even-Odd Integrals: sims/even-odd-integrals/index.md
+    - Integration Strategy: sims/integration-strategy/index.md
+    - u-Substitution: sims/u-substitution/index.md
+    - Antiderivative Family: sims/antiderivative-family/index.md
+    - Exponential Integrals: sims/exponential-integrals/index.md
+    - Integration Verifier: sims/integration-verifier/index.md
+    - Inverse Trig Integral Match: sims/inverse-trig-integral-match/index.md
+    - Ln as Area: sims/ln-as-area/index.md
+    - Polynomial Integration: sims/polynomial-integration/index.md
+    - Power Rule Integration: sims/power-rule-integration/index.md
+    - Transcendental Integral Practice: sims/transcendental-integral-practice/index.md
+    - Trig Integral Reference: sims/trig-integral-reference/index.md
 
   - Appendices:
     - List of Appendices: appendices/index.md

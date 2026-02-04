@@ -1,0 +1,20 @@
+{
+  "title": "Average Value of a Function",
+  "description": "Interactive visualization showing the average value of a function as the height of a rectangle with equal area to the region under the curve",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integral Properties and Techniques",
+  "subtopic": "Average Value of a Function",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "calculate", "interpret"],
+  "learningObjective": "Students will calculate and interpret the average value of a function",
+  "prerequisites": ["definite-integral", "fundamental-theorem-calculus", "area-under-curve"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["average value", "mean value", "integral", "rectangle", "area", "function", "f_avg"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}
