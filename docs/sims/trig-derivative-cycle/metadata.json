@@ -1,0 +1,63 @@
+{
+  "title": "Trig Derivative Cycle",
+  "description": "Interactive visualization showing the cyclic pattern of trigonometric derivatives. Demonstrates how taking the derivative of sin(x) produces cos(x), then -sin(x), then -cos(x), and finally back to sin(x) after four derivatives.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Trigonometry",
+    "Derivatives",
+    "Trigonometric Functions"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/trig-derivative-cycle/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Remember"
+  ],
+  "bloomVerbs": [
+    "recall",
+    "identify",
+    "recognize"
+  ],
+  "concepts": [
+    "Derivative of sine",
+    "Derivative of cosine",
+    "Trigonometric derivatives",
+    "Derivative patterns",
+    "Cyclic differentiation"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives",
+    "Familiarity with sine and cosine functions",
+    "Basic graphing skills"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Take Derivative",
+      "action": "Advances to the next function in the derivative cycle"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "action": "Returns to sin(x) as the starting function"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Both Graphs",
+      "action": "Toggles display of both f(x) and f'(x) graphs simultaneously"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Term by Term Differentiation",
+  "description": "Interactive MicroSim demonstrating step-by-step polynomial differentiation using the power rule, constant multiple rule, and sum rule. Shows each term's transformation with rule annotations and optional graph visualization of original function and derivative.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Differentiation",
+    "Power Rule",
+    "Polynomial Functions",
+    "Derivatives"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/term-by-term-diff/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "concepts": [
+    "Power Rule",
+    "Constant Multiple Rule",
+    "Sum Rule",
+    "Polynomial Differentiation",
+    "Derivative Calculation"
+  ],
+  "prerequisites": [
+    "Understanding of polynomial functions",
+    "Knowledge of exponent rules",
+    "Basic concept of derivatives"
+  ],
+  "library": "p5.js"
+}

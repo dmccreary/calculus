@@ -120,6 +120,9 @@ nav:
     - Growth Rate Comparison: sims/growth-rates/index.md
     - Discontinuity Types: sims/discontinuity-types/index.md
     - IVT Visualization: sims/ivt-visualization/index.md
+    - Trig Derivative Cycle: sims/trig-derivative-cycle/index.md
+    - e^x is Its Own Derivative: sims/exp-self-derivative/index.md
+    - One-Sided Derivatives: sims/one-sided-derivatives/index.md
 
   - Appendices:
     - List of Appendices: appendices/index.md

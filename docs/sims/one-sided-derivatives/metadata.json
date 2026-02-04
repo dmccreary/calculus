@@ -1,0 +1,65 @@
+{
+  "title": "One-Sided Derivatives",
+  "description": "Interactive visualization showing how left and right secant lines approach a point, demonstrating when one-sided derivatives match or differ to determine differentiability at corners and cusps.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Differentiability",
+    "Limits",
+    "One-Sided Limits"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/one-sided-derivatives/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze",
+    "Evaluate"
+  ],
+  "concepts": [
+    "One-Sided Derivatives",
+    "Differentiability",
+    "Secant Lines",
+    "Limits",
+    "Corners",
+    "Cusps"
+  ],
+  "prerequisites": [
+    "Understanding of limits",
+    "Secant line slopes",
+    "Definition of derivative"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "h",
+      "description": "Controls how close the secant points are to x = a",
+      "min": 0.01,
+      "max": 1.5,
+      "default": 1.0
+    },
+    {
+      "type": "dropdown",
+      "name": "function",
+      "description": "Select different test functions (smooth vs corner)",
+      "options": ["Smooth: x^2", "Corner: |x|", "Cusp: |x|^(1/2)", "Smooth: sin(x)+1", "Corner: max(x,0)"]
+    },
+    {
+      "type": "button",
+      "name": "Reset",
+      "description": "Reset slider and function selection to defaults"
+    }
+  ]
+}

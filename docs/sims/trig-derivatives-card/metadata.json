@@ -1,0 +1,71 @@
+{
+  "title": "Trig Derivatives Flashcards",
+  "description": "Interactive flashcard-style reference for memorizing derivatives of all six trigonometric functions. Features card flip animations, quiz mode with typed input, color coding for positive/negative derivatives, and progress tracking.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Trigonometry",
+    "Derivatives",
+    "Mathematics",
+    "AP Calculus"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/trig-derivatives-card/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, Undergraduate",
+  "learningResourceType": "flashcard simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Remember"
+  ],
+  "concepts": [
+    "Trigonometric derivatives",
+    "sin derivative",
+    "cos derivative",
+    "tan derivative",
+    "cot derivative",
+    "sec derivative",
+    "csc derivative",
+    "Memorization",
+    "Active recall"
+  ],
+  "prerequisites": [
+    "Basic understanding of trigonometric functions",
+    "Introduction to derivatives"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "card-click",
+      "description": "Click any card to flip and reveal derivative"
+    },
+    {
+      "type": "button",
+      "name": "Quiz Mode",
+      "description": "Toggle quiz mode where user types answer before reveal"
+    },
+    {
+      "type": "button",
+      "name": "Show All",
+      "description": "Reveal all derivative answers"
+    },
+    {
+      "type": "button",
+      "name": "Hide All",
+      "description": "Hide all derivative answers"
+    },
+    {
+      "type": "dropdown",
+      "name": "Focus",
+      "description": "Select individual function to study in isolation"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schema/microsim-schema.json",
+  "title": "Differentiation Rule Selector",
+  "description": "An interactive decision tree that helps students choose the appropriate differentiation rule by evaluating function structure through guided questions.",
+  "creator": "Dan McCreary",
+  "subject": ["Calculus", "Differentiation", "Derivative Rules"],
+  "date": "2026-02-03",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educational": {
+    "gradeLevel": "High School, Undergraduate",
+    "subjectArea": "Mathematics",
+    "topic": "Differentiation Techniques",
+    "learningObjectives": [
+      "Evaluate function structure to identify appropriate differentiation techniques",
+      "Select the most efficient rule from Power, Sum/Difference, Product, Quotient, and Chain rules",
+      "Justify rule selection based on function characteristics"
+    ],
+    "bloomsLevel": ["Evaluate"],
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Basic derivative rules",
+      "Product and quotient rules",
+      "Chain rule",
+      "Special function derivatives"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": "responsive x 540",
+    "responsive": "width-responsive",
+    "dependencies": ["p5.js CDN"]
+  },
+  "controls": [
+    {
+      "type": "button",
+      "label": "Yes/No",
+      "description": "Click to answer decision tree questions"
+    },
+    {
+      "type": "button",
+      "label": "Start Over",
+      "description": "Reset the decision tree to the beginning"
+    }
+  ],
+  "simulation": {
+    "modelType": "decision-tree",
+    "nodes": 11,
+    "questionNodes": 5,
+    "terminalNodes": 6,
+    "rules": [
+      "Power Rule + Constant Multiple",
+      "Sum/Difference Rule",
+      "Chain Rule",
+      "Special Function Rules",
+      "Product Rule",
+      "Quotient Rule"
+    ]
+  }
+}
