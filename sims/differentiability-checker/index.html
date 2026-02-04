@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for AP calculus designed for college credit.">
+        <meta name="description" content="Step-through tool for checking differentiability at a point">
       
       
         <meta name="author" content="Dan McCreary">
       
       
-        <link rel="canonical" href="https://dmccreary.github.io/calculus/prompts/generate-microsims-in-parallel/">
+        <link rel="canonical" href="https://dmccreary.github.io/calculus/sims/differentiability-checker/">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>Generate microsims in parallel - AP Calculus</title>
+        <title>Differentiability Checker - AP Calculus</title>
       
     
     
@@ -59,11 +59,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Generate microsims in parallel - AP Calculus" >
+        <meta  property="og:title"  content="Differentiability Checker - AP Calculus" >
       
-        <meta  property="og:description"  content="An interactive intelligent textbook for AP calculus designed for college credit." >
+        <meta  property="og:description"  content="Step-through tool for checking differentiability at a point" >
       
-        <meta  property="og:image"  content="https://dmccreary.github.io/calculus/assets/images/social/prompts/generate-microsims-in-parallel.png" >
+        <meta  property="og:image"  content="https://dmccreary.github.io/calculus/assets/images/social/sims/differentiability-checker/index.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -71,15 +71,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://dmccreary.github.io/calculus/prompts/generate-microsims-in-parallel/" >
+        <meta  property="og:url"  content="https://dmccreary.github.io/calculus/sims/differentiability-checker/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Generate microsims in parallel - AP Calculus" >
+        <meta  name="twitter:title"  content="Differentiability Checker - AP Calculus" >
       
-        <meta  name="twitter:description"  content="An interactive intelligent textbook for AP calculus designed for college credit." >
+        <meta  name="twitter:description"  content="Step-through tool for checking differentiability at a point" >
       
-        <meta  name="twitter:image"  content="https://dmccreary.github.io/calculus/assets/images/social/prompts/generate-microsims-in-parallel.png" >
+        <meta  name="twitter:image"  content="https://dmccreary.github.io/calculus/assets/images/social/sims/differentiability-checker/index.png" >
       
     
     
@@ -98,6 +98,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#differentiability-checker" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -130,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Generate microsims in parallel
+              Differentiability Checker
             
           </span>
         </div>
@@ -576,7 +581,7 @@
         
   
   
-    <a href="../../sims/" class="md-nav__link">
+    <a href="../" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -757,7 +762,7 @@
         
   
   
-    <a href="../" class="md-nav__link">
+    <a href="../../prompts/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -873,6 +878,76 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-microsim" class="md-nav__link">
+    <span class="md-ellipsis">
+      About This MicroSim
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="About This MicroSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-differentiability-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Differentiability Checklist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Functions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-and-explore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit and Explore
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -887,7 +962,7 @@
                   
 
   
-    <a href="https://github.com/dmccreary/calculus/edit/master/docs/prompts/generate-microsims-in-parallel.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/dmccreary/calculus/edit/master/docs/sims/differentiability-checker/index.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -895,11 +970,71 @@
   
 
 
-  <h1>Generate microsims in parallel</h1>
+<h1 id="differentiability-checker">Differentiability Checker</h1>
+<iframe src="main.html" width="100%" height="570px" scrolling="no" style="border: none; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></iframe>
 
-<p>Run the /microsim-generator tool in parallel on all the #### Diagram MicroSim specifications in chapters 4, 5 and 6.  For each Diagram you will find the specification in the <details> XML element after the #### Diagram level 4 header.  Write a log for each microsim to logs/{microsim-name}.md and include a precise timestamp when you started and when you finished.</p>
-<p>Run the /microsim-generator tool in parallel on all the #### Diagram MicroSim specifications in chapters 7, 8 and 9.  For each Diagram you will find the specification in the <details> XML element after the #### Diagram level 4 header.  Write a log for each microsim to logs/{microsim-name}.md and include a precise timestamp when you started and when you finished.</p>
-<p>Run the /microsim-generator tool in parallel on all the #### Diagram MicroSim specifications in chapters 10, 11, 12, 13, 14 and 15.  For each Diagram you will find the specification in the <details> XML element after the #### Diagram level 4 header.  Write a log for each microsim to logs/{microsim-name}.md and include a precise timestamp when you started and when you finished.</p>
+<h2 id="about-this-microsim">About This MicroSim</h2>
+<p>This interactive tool guides you through the systematic process of checking whether a function is differentiable at a point.</p>
+<h3 id="the-differentiability-checklist">The Differentiability Checklist</h3>
+<ol>
+<li><strong>Is f(a) defined?</strong> The function must have a value at the point</li>
+<li><strong>Is f continuous at a?</strong> The limit must equal the function value</li>
+<li><strong>Compute f'₋(a)</strong> - the left-hand derivative</li>
+<li><strong>Compute f'₊(a)</strong> - the right-hand derivative</li>
+<li><strong>Are they equal and finite?</strong> Both one-sided derivatives must match</li>
+</ol>
+<h3 id="how-to-use">How to Use</h3>
+<ol>
+<li><strong>Select a function</strong> from the preset buttons (A-E)</li>
+<li>Click <strong>"Step Through"</strong> to advance one step at a time</li>
+<li>Or click <strong>"Auto Check"</strong> to see all steps automatically</li>
+<li>Watch the checklist populate with ✓ or ✗ for each step</li>
+<li>See the <strong>final verdict</strong>: Differentiable or Not Differentiable (with reason)</li>
+</ol>
+<h3 id="test-functions">Test Functions</h3>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Type</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f(x) = x²</td>
+<td>Smooth</td>
+<td>Differentiable</td>
+</tr>
+<tr>
+<td>f(x) = |x - 1|</td>
+<td>Corner</td>
+<td>Not differentiable at x = 1</td>
+</tr>
+<tr>
+<td>f(x) = x^(2/3)</td>
+<td>Cusp</td>
+<td>Not differentiable at x = 0</td>
+</tr>
+<tr>
+<td>Jump function</td>
+<td>Discontinuity</td>
+<td>Not differentiable</td>
+</tr>
+<tr>
+<td>f(x) = ∛x</td>
+<td>Vertical tangent</td>
+<td>Not differentiable at x = 0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Apply a systematic process to determine differentiability (Bloom Level 3: Apply)</li>
+<li>Identify the reason when differentiability fails</li>
+</ul>
+<h2 id="edit-and-explore">Edit and Explore</h2>
+<p><a href="https://editor.p5js.org/">Edit this MicroSim in the p5.js Editor</a></p>
 
 
 

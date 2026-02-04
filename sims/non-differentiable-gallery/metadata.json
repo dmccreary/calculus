@@ -1,0 +1,20 @@
+{
+  "title": "Gallery of Non-Differentiable Points",
+  "description": "Interactive gallery showing the three types of non-differentiable points: corners, cusps, and vertical tangents",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Differentiability",
+  "subtopic": "Non-Differentiable Points",
+  "bloomLevel": "4-Analyze",
+  "bloomVerbs": ["classify", "distinguish", "compare"],
+  "learningObjective": "Students will classify non-differentiable points by type",
+  "prerequisites": ["differentiability-definition", "one-sided-derivatives"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "5-10 minutes",
+  "keywords": ["corner", "cusp", "vertical tangent", "non-differentiable", "calculus"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

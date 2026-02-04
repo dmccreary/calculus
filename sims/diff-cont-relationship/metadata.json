@@ -1,0 +1,20 @@
+{
+  "title": "Differentiability vs Continuity Relationship",
+  "description": "Interactive Venn diagram visualizing the set relationship between differentiable functions and continuous functions",
+  "type": "infographic",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Differentiability",
+  "subtopic": "Differentiability and Continuity Relationship",
+  "bloomLevel": "2-Understand",
+  "bloomVerbs": ["explain", "interpret", "classify"],
+  "learningObjective": "Students will explain why differentiability implies continuity but not vice versa",
+  "prerequisites": ["continuity", "differentiability-definition"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "5-10 minutes",
+  "keywords": ["differentiability", "continuity", "Venn diagram", "set relationship", "calculus"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

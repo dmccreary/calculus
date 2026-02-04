@@ -1,0 +1,20 @@
+{
+  "title": "Product Rule Visualizer",
+  "description": "Illustrate the product rule geometrically using the area interpretation",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Derivative Rules",
+  "subtopic": "Product Rule",
+  "bloomLevel": "2-Understand",
+  "bloomVerbs": ["explain", "interpret", "demonstrate"],
+  "learningObjective": "Students will explain why the product rule includes two terms",
+  "prerequisites": ["derivative-definition", "multiplication"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "5-10 minutes",
+  "keywords": ["product rule", "derivative", "area", "f'g + fg'"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}
