@@ -1,0 +1,84 @@
+{
+  "title": "End Behavior Explorer",
+  "description": "Interactive simulation demonstrating how leading term characteristics (coefficient sign and degree) determine the end behavior of polynomial and rational functions. Features real-time graphing, end behavior arrows, and an animated Delta mascot traveling toward infinity.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Pre-Calculus",
+    "Algebra",
+    "Polynomial Functions",
+    "Rational Functions",
+    "End Behavior",
+    "Limits"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/end-behavior/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "End Behavior",
+    "Leading Term",
+    "Leading Coefficient",
+    "Polynomial Degree",
+    "Limits at Infinity",
+    "Rational Functions"
+  ],
+  "prerequisites": [
+    "Understanding of polynomial degree",
+    "Graphing polynomial functions",
+    "Concept of infinity"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Polynomial/Rational",
+      "description": "Toggle between polynomial and rational function types"
+    },
+    {
+      "type": "slider",
+      "label": "Lead Coef",
+      "min": -5,
+      "max": 5,
+      "default": 1,
+      "step": 0.5,
+      "description": "Adjust the leading coefficient"
+    },
+    {
+      "type": "slider",
+      "label": "Degree",
+      "min": 1,
+      "max": 6,
+      "default": 2,
+      "step": 1,
+      "description": "Set the degree of the polynomial"
+    },
+    {
+      "type": "slider",
+      "label": "Zoom",
+      "min": 1,
+      "max": 20,
+      "default": 5,
+      "step": 1,
+      "description": "Zoom out to see end behavior at larger x values"
+    },
+    {
+      "type": "button",
+      "label": "Animate",
+      "description": "Watch Delta travel toward infinity to visualize end behavior"
+    }
+  ]
+}

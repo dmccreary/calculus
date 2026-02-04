@@ -1,0 +1,85 @@
+{
+    "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+    "title": "Secant Lines Approaching Tangent Line",
+    "description": "Interactive visualization showing how secant lines approach the tangent line as h approaches 0, demonstrating the limit definition of the derivative for f(x) = x^2",
+    "creator": "Dan McCreary",
+    "subject": ["Calculus", "Derivatives", "Limits"],
+    "date": "2026-02-03",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0",
+    "gradeLevel": "High School (9-12)",
+    "topic": "Limit Definition of Derivative",
+    "learningObjectives": [
+        "Explain how the limit of secant line slopes gives the tangent line slope",
+        "Interpret the geometric meaning of the derivative",
+        "Connect the algebraic limit definition to visual representation"
+    ],
+    "bloomsLevel": ["Understand"],
+    "bloomsVerb": ["explain", "interpret"],
+    "duration": "10-15 minutes",
+    "prerequisites": [
+        "Understanding of slope",
+        "Familiarity with parabolas",
+        "Basic concept of limits"
+    ],
+    "framework": "p5.js",
+    "canvasDimensions": "responsive x 515",
+    "responsive": "Width-responsive",
+    "dependencies": ["p5.js 1.11.10"],
+    "controls": [
+        {
+            "type": "slider",
+            "name": "hSlider",
+            "label": "h",
+            "description": "Distance from point P to point Q along x-axis",
+            "min": 0.01,
+            "max": 2,
+            "default": 2,
+            "step": 0.01
+        },
+        {
+            "type": "slider",
+            "name": "xPSlider",
+            "label": "Point P at x",
+            "description": "x-coordinate of the fixed point P",
+            "min": -1.5,
+            "max": 3,
+            "default": 1,
+            "step": 0.1
+        },
+        {
+            "type": "button",
+            "name": "animateButton",
+            "label": "Watch h approach 0",
+            "description": "Animate h decreasing toward 0"
+        },
+        {
+            "type": "button",
+            "name": "resetButton",
+            "label": "Reset",
+            "description": "Reset to initial values"
+        }
+    ],
+    "modelType": "Mathematical Visualization",
+    "variables": [
+        "h - distance between points",
+        "xP - x-coordinate of fixed point",
+        "secantSlope - slope of secant line PQ",
+        "tangentSlope - slope of tangent line (derivative)"
+    ],
+    "equations": [
+        "f(x) = x^2",
+        "f'(x) = 2x",
+        "secant slope = (f(x+h) - f(x)) / h = 2x + h"
+    ],
+    "assumptions": [
+        "Function is the parabola f(x) = x^2",
+        "h is always positive (approaching from right)"
+    ],
+    "limitations": [
+        "Does not show left-sided approach (h negative)",
+        "Limited to polynomial function x^2"
+    ]
+}

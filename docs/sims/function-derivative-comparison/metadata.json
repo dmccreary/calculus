@@ -1,0 +1,64 @@
+{
+  "title": "Function and Derivative Comparison",
+  "description": "Interactive side-by-side visualization showing a function and its derivative with synchronized point, tangent line, and value displays. Students explore how the tangent line slope equals the derivative value, building intuition for the fundamental relationship between functions and their rates of change.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Tangent Lines",
+    "Rate of Change",
+    "Function Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/function-derivative-comparison/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Derivative",
+    "Tangent Line",
+    "Slope",
+    "Rate of Change",
+    "Function Graphs"
+  ],
+  "prerequisites": [
+    "Function notation",
+    "Slope of a line",
+    "Basic understanding of tangent lines"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "name": "x-position",
+      "description": "Moves the synchronized point along the x-axis",
+      "min": -3,
+      "max": 3,
+      "default": 0.5
+    },
+    {
+      "type": "button-group",
+      "name": "function-selector",
+      "description": "Selects which function to display",
+      "options": ["x^2", "x^3", "sin(x)", "e^x"]
+    },
+    {
+      "type": "toggle",
+      "name": "tangent-toggle",
+      "description": "Shows or hides the tangent line",
+      "default": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Discontinuity Classification",
+  "description": "Interactive MicroSim for classifying discontinuities by analyzing limit behavior. Features gallery view showing all four types (removable, jump, infinite, essential) and quiz mode for practice with immediate feedback and explanations.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Limits",
+    "Discontinuities",
+    "Continuity",
+    "Functions"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/discontinuity-types/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "bloomVerb": "Classify",
+  "concepts": [
+    "Removable Discontinuity",
+    "Jump Discontinuity",
+    "Infinite Discontinuity",
+    "Essential Discontinuity",
+    "One-sided Limits",
+    "Vertical Asymptotes",
+    "Oscillating Functions"
+  ],
+  "prerequisites": [
+    "Understanding of limits",
+    "One-sided limits",
+    "Function graphs",
+    "Limit existence"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Gallery View / Quiz Mode",
+      "description": "Toggle between gallery view and quiz mode"
+    },
+    {
+      "type": "button",
+      "label": "New Function",
+      "description": "Generate a new quiz problem (quiz mode only)"
+    },
+    {
+      "type": "button",
+      "label": "Removable",
+      "description": "Classify as removable discontinuity (quiz mode)"
+    },
+    {
+      "type": "button",
+      "label": "Jump",
+      "description": "Classify as jump discontinuity (quiz mode)"
+    },
+    {
+      "type": "button",
+      "label": "Infinite",
+      "description": "Classify as infinite discontinuity (quiz mode)"
+    },
+    {
+      "type": "button",
+      "label": "Essential",
+      "description": "Classify as essential discontinuity (quiz mode)"
+    }
+  ]
+}

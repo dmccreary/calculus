@@ -1,0 +1,69 @@
+{
+  "title": "Piecewise Continuity Explorer",
+  "description": "Interactive simulation for determining whether piecewise functions are continuous at boundary points by checking all three conditions: function defined, limit exists, and function equals limit.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Limits",
+    "Continuity",
+    "Piecewise Functions",
+    "Analysis"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/piecewise-continuity/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "bloomVerb": "Determine",
+  "concepts": [
+    "Continuity",
+    "Piecewise Functions",
+    "Left-hand Limit",
+    "Right-hand Limit",
+    "Jump Discontinuity",
+    "Removable Discontinuity"
+  ],
+  "prerequisites": [
+    "Understanding of limits",
+    "Familiarity with piecewise functions",
+    "One-sided limits"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "Evaluate Continuity",
+      "description": "Animates approach to boundary and checks all three conditions"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Returns to initial state"
+    },
+    {
+      "type": "dropdown",
+      "label": "Select Example",
+      "description": "Choose from four preset piecewise function examples"
+    },
+    {
+      "type": "slider",
+      "label": "Approach",
+      "description": "Controls how close approach points are to the boundary",
+      "min": 0.02,
+      "max": 0.5,
+      "default": 0.5
+    }
+  ]
+}

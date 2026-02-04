@@ -1,0 +1,45 @@
+{
+  "title": "Three Conditions for Continuity Visualized",
+  "description": "An interactive MicroSim that helps students explain how each of the three continuity conditions (f(c) defined, limit exists, limit equals f(c)) corresponds to visual features of a function graph. Features five scenarios including continuous functions, holes, jumps, misplaced points, and vertical asymptotes.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": ["Calculus", "Continuity", "Limits", "AP Calculus", "Mathematics Education"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "MIT License",
+  "bloom_level": "Understand",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students will explain how each of the three continuity conditions corresponds to visual features of a function graph.",
+  "grade_level": "High School (AP Calculus) / Early Undergraduate",
+  "duration": "15-20 minutes",
+  "prerequisites": ["Function notation", "Basic limits", "Coordinate graphing"],
+  "concepts": ["Continuity at a point", "Three conditions for continuity", "Discontinuities", "Holes", "Jump discontinuities", "Removable discontinuities", "Vertical asymptotes"],
+  "library": "p5.js",
+  "version": "1.0.0",
+  "controls": [
+    {
+      "type": "button",
+      "id": "scenario-selector",
+      "description": "Five buttons (A-E) to select different discontinuity scenarios"
+    },
+    {
+      "type": "slider",
+      "id": "c-slider",
+      "description": "Slider to move the target point c along the x-axis",
+      "min": -1.5,
+      "max": 5.5,
+      "default": 2
+    },
+    {
+      "type": "button",
+      "id": "check-button",
+      "description": "Button to check continuity at the selected point c"
+    },
+    {
+      "type": "button",
+      "id": "reset-button",
+      "description": "Button to reset the condition checker"
+    }
+  ]
+}

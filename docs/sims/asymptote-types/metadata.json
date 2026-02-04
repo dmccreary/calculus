@@ -1,0 +1,81 @@
+{
+  "title": "All Three Asymptote Types",
+  "description": "Interactive comparison of vertical, horizontal, and oblique asymptotes showing their defining characteristics through side-by-side and overlay visualizations.",
+  "creator": "Dan McCreary",
+  "subject": ["Mathematics", "Calculus", "Precalculus"],
+  "date": "2026-02-03",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "High School (9-12)",
+  "topic": "Asymptotes",
+  "learningObjective": "Students will differentiate between vertical, horizontal, and oblique asymptotes by analyzing their defining characteristics.",
+  "bloomLevel": "Analyze",
+  "bloomVerb": "Differentiate",
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Understanding of rational functions",
+    "Familiarity with limits and infinity notation",
+    "Basic graphing skills"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 480",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js CDN"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "button",
+      "label": "Individual/Compare",
+      "description": "Toggle between individual panel view and comparison overlay view"
+    },
+    {
+      "type": "button",
+      "label": "Vertical",
+      "description": "Toggle visibility of vertical asymptote function"
+    },
+    {
+      "type": "button",
+      "label": "Horizontal",
+      "description": "Toggle visibility of horizontal asymptote function"
+    },
+    {
+      "type": "button",
+      "label": "Oblique",
+      "description": "Toggle visibility of oblique asymptote function"
+    },
+    {
+      "type": "slider",
+      "label": "Zoom",
+      "min": 0.5,
+      "max": 4.0,
+      "default": 1.5,
+      "description": "Adjust zoom level to see asymptotic behavior at different scales"
+    }
+  ],
+  "modelType": "Mathematical visualization",
+  "variables": [
+    "viewMode: panels or compare",
+    "showVertical: boolean toggle",
+    "showHorizontal: boolean toggle",
+    "showOblique: boolean toggle",
+    "zoomLevel: 0.5 to 4.0"
+  ],
+  "equations": [
+    "Vertical example: f(x) = 1/(x-2), asymptote at x = 2",
+    "Horizontal example: f(x) = (2x+1)/(x+3), asymptote at y = 2",
+    "Oblique example: f(x) = (x^2-1)/(x-2), asymptote at y = x + 2"
+  ],
+  "assumptions": [
+    "Functions are displayed within a bounded viewing window",
+    "Near-asymptote behavior is clipped for visual clarity"
+  ],
+  "limitations": [
+    "Cannot zoom infinitely close to vertical asymptotes",
+    "Fixed example functions rather than user-defined"
+  ]
+}

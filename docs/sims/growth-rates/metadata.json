@@ -1,0 +1,65 @@
+{
+  "title": "Growth Rate Comparison",
+  "description": "Interactive visualization comparing growth rates of logarithmic, polynomial, and exponential functions to understand dominance relationships and predict limit behavior.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": ["Calculus", "Functions", "Limits", "Growth Rates", "Exponential Functions", "Logarithmic Functions", "Polynomial Functions"],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "MIT License",
+  "educational": {
+    "gradeLevel": "High School (9-12), Undergraduate",
+    "targetAudience": "AP Calculus students, College Calculus students",
+    "bloomLevel": "Evaluate (L5)",
+    "bloomVerb": "Compare",
+    "learningObjective": "Students will compare growth rates of logarithmic, polynomial, and exponential functions to predict limit behavior.",
+    "prerequisites": ["Basic function families", "Understanding of limits", "Indeterminate forms"],
+    "duration": "15-20 minutes",
+    "concepts": ["Growth rates", "Function dominance", "Limits at infinity", "Indeterminate forms", "L'Hopital's rule applications"]
+  },
+  "technical": {
+    "library": "p5.js",
+    "version": "1.11.10",
+    "canvasWidth": "responsive",
+    "canvasHeight": 520,
+    "features": ["Multiple function comparison", "Dynamic scaling", "Race animation", "Ratio mode", "Logarithmic scale toggle"]
+  },
+  "controls": [
+    {
+      "type": "checkbox",
+      "label": "Function toggles",
+      "description": "Enable/disable individual functions: ln(x), log10(x), sqrt(x), x, x^2, x^3, 2^x, e^x, 10^x"
+    },
+    {
+      "type": "slider",
+      "label": "X-Range",
+      "min": 10,
+      "max": 1000,
+      "default": 10,
+      "description": "Adjust the maximum x value to see growth at different scales"
+    },
+    {
+      "type": "button",
+      "label": "Race!",
+      "description": "Animate functions growing from x=1 to x=max"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Reset animation and x-range to initial values"
+    },
+    {
+      "type": "toggle",
+      "label": "Y-Scale",
+      "options": ["Linear", "Log"],
+      "description": "Switch between linear and logarithmic y-axis scaling"
+    },
+    {
+      "type": "toggle",
+      "label": "Ratio Mode",
+      "options": ["Off", "On"],
+      "description": "Display ratio of two functions to see dominance relationships"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Average Rate of Change Explorer",
+  "description": "An interactive MicroSim that allows students to explore average rate of change by dragging two points along a curve and observing the secant line and slope calculation update in real-time.",
+  "creator": "Dan McCreary",
+  "subject": ["Mathematics", "Calculus", "AP Calculus"],
+  "created": "2026-02-03",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "High School (9-12)",
+  "topic": "Average Rate of Change",
+  "learningObjectives": [
+    "Calculate the average rate of change between two points on a curve",
+    "Demonstrate understanding of average rate of change as the slope of a secant line",
+    "Connect the algebraic formula to its geometric interpretation (rise over run)"
+  ],
+  "bloomsTaxonomy": ["Apply"],
+  "duration": "10-15 minutes",
+  "prerequisites": [
+    "Understanding of slope",
+    "Function notation",
+    "Basic graphing skills"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 480",
+  "responsive": "width-responsive",
+  "dependencies": ["p5.js 1.11.10"],
+  "accessibility": {
+    "screenReaderSupport": true,
+    "keyboardNavigation": false
+  },
+  "controls": [
+    {
+      "type": "draggable-point",
+      "name": "Point A",
+      "description": "Red draggable point on the curve representing the starting point (a, f(a))"
+    },
+    {
+      "type": "draggable-point",
+      "name": "Point B",
+      "description": "Blue draggable point on the curve representing the ending point (b, f(b))"
+    },
+    {
+      "type": "button-group",
+      "name": "Function Selection",
+      "options": ["x^2", "x^3 - 3x", "sin(x)"],
+      "description": "Select which function to explore"
+    },
+    {
+      "type": "button",
+      "name": "Reset",
+      "description": "Reset points A and B to default positions"
+    }
+  ],
+  "modelType": "mathematical",
+  "variables": ["pointAx", "pointBx", "slope"],
+  "equations": ["slope = (f(b) - f(a)) / (b - a)"],
+  "assumptions": ["Continuous functions", "2D coordinate plane"],
+  "limitations": ["Points must remain within graph bounds", "Y-values clipped to visible range"]
+}

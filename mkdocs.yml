@@ -94,11 +94,32 @@ nav:
     - Piecewise Builder: sims/piecewise-builder/index.md
     - Polynomial Explorer: sims/polynomial-explorer/index.md
     - Asymptote Analyzer: sims/asymptote-analyzer/index.md
+    - Asymptote Types: sims/asymptote-types/index.md
     - Exp-Log Relationship: sims/exp-log-relationship/index.md
     - Unit Circle: sims/unit-circle/index.md
     - Trig Identity Visualizer: sims/trig-identity-visualizer/index.md
     - Trig Graph Transformer: sims/trig-graph-transformer/index.md
     - Timeline of Calculus History: sims/timeline/index.md
+    - Limit with Hole: sims/limit-with-hole/index.md
+    - One-Sided Limits: sims/one-sided-limits/index.md
+    - Direct Substitution Tree: sims/direct-substitution-tree/index.md
+    - Limit Laws Practice: sims/limit-laws-practice/index.md
+    - Factoring Limits: sims/factoring-limits/index.md
+    - Squeeze Theorem: sims/squeeze-theorem/index.md
+    - Sin(x)/x: sims/sinx-over-x/index.md
+    - Limits from Graphs: sims/limits-from-graphs/index.md
+    - Piecewise Continuity Explorer: sims/piecewise-continuity/index.md
+    - Vertical Asymptote Explorer: sims/vertical-asymptote/index.md
+    - Derivative Interpretation Selector: sims/derivative-interpretation/index.md
+    - Secant to Tangent: sims/secant-to-tangent/index.md
+    - Average Rate of Change Explorer: sims/average-rate-change/index.md
+    - End Behavior Explorer: sims/end-behavior/index.md
+    - Tangent Line Calculator: sims/tangent-line-calculator/index.md
+    - Function Derivative Comparison: sims/function-derivative-comparison/index.md
+    - Three Conditions for Continuity: sims/continuity-conditions/index.md
+    - Growth Rate Comparison: sims/growth-rates/index.md
+    - Discontinuity Types: sims/discontinuity-types/index.md
+    - IVT Visualization: sims/ivt-visualization/index.md
 
   - Appendices:
     - List of Appendices: appendices/index.md
