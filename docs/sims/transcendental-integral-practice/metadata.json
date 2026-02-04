@@ -1,0 +1,23 @@
+{
+  "title": "Transcendental Integral Practice",
+  "description": "Interactive practice tool for transcendental integrals with multiple-choice answers, hints, step-by-step solutions, and progress tracking across categories",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integration",
+  "subtopic": "Transcendental Integrals",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "calculate", "solve"],
+  "learningObjective": "Students will apply the appropriate antiderivative formula for transcendental functions",
+  "prerequisites": ["trig-integrals", "exponential-integrals", "logarithmic-integrals", "inverse-trig-integrals"],
+  "difficulty": "variable",
+  "interactivity": "high",
+  "estimatedTime": "15-30 minutes",
+  "keywords": ["transcendental functions", "integration", "trig integrals", "exponential integrals", "logarithmic integrals", "inverse trig integrals", "practice", "quiz"],
+  "categories": ["Trig", "Exponential", "Log", "Inverse Trig", "Mixed"],
+  "difficultyLevels": ["Basic", "Intermediate", "Advanced"],
+  "features": ["multiple-choice", "hints", "step-by-step solutions", "progress tracking", "graph visualization"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Exponential Integrals",
+  "description": "Interactive visualization demonstrating how the integral of a^x depends on the base a and why dividing by ln(a) is necessary",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Integration",
+  "subtopic": "Exponential Function Integration",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "calculate", "compute"],
+  "learningObjective": "Students will apply the formula for integrating exponential functions with various bases",
+  "prerequisites": ["exponential-functions", "derivatives-of-exponentials", "natural-logarithm", "antiderivatives"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "15-20 minutes",
+  "keywords": ["exponential", "integration", "antiderivative", "ln(a)", "natural base", "e", "euler"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

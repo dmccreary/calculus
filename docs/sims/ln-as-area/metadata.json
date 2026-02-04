@@ -1,0 +1,20 @@
+{
+  "title": "ln(x) as Area Under 1/t",
+  "description": "Interactive visualization showing the natural logarithm as the accumulated area under the curve y = 1/t from t = 1 to t = x",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Logarithmic Functions",
+  "subtopic": "Natural Logarithm Definition",
+  "bloomLevel": "2-Understand",
+  "bloomVerbs": ["interpret", "explain", "visualize"],
+  "learningObjective": "Students will interpret ln(x) as the accumulated area under y = 1/t from 1 to x",
+  "prerequisites": ["area-under-curve", "fundamental-theorem-calculus", "logarithm-properties"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["natural logarithm", "ln", "area", "integral", "1/x", "Euler's number", "e"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}
