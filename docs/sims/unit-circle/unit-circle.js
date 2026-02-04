@@ -11,21 +11,27 @@ let margin = 30;
 let defaultTextSize = 16;
 
 // Unit circle parameters
-let circleX, circleY;
+let circleX = 0;
+let circleY = 0;
 let circleRadius = 140;
 
-// Current angle
-let angle = PI / 4; // 45 degrees
+// Current angle (initialized in setup since PI is a p5.js constant)
+let angle = 0;
 
 // Sine/Cosine graph parameters
-let graphX, graphY, graphW, graphH;
+let graphX = 0;
+let graphY = 0;
+let graphW = 0;
+let graphH = 0;
 
 // Animation
 let isAnimating = false;
 let animSpeed = 0.02;
 
 // Slider
-let sliderX, sliderY, sliderW;
+let sliderX = 0;
+let sliderY = 0;
+let sliderW = 0;
 let isDraggingSlider = false;
 let isDraggingPoint = false;
 
@@ -36,6 +42,9 @@ function setup() {
   updateCanvasSize();
   const canvas = createCanvas(canvasWidth, canvasHeight);
   canvas.parent(document.querySelector('main'));
+
+  // Initialize angle here since PI is only available after p5.js loads
+  angle = PI / 4;  // 45 degrees
 
   updateLayout();
 
@@ -475,7 +484,9 @@ function windowResized() {
 }
 
 function updateCanvasSize() {
-  const container = document.querySelector('main').getBoundingClientRect();
-  canvasWidth = Math.floor(container.width);
+  const container = document.querySelector('main');
+  if (container) {
+    canvasWidth = Math.floor(container.getBoundingClientRect().width);
+  }
   updateLayout();
 }

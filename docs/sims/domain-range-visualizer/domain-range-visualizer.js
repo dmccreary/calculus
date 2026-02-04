@@ -166,7 +166,7 @@ function draw() {
 function updateGraphBounds() {
   graphLeft = graphMargin + 30;
   graphRight = canvasWidth - graphMargin;
-  graphTop = 55;
+  graphTop = 70;  // Must be >= 70 to prevent y-axis label overlap with subtitle
   graphBottom = drawHeight - 50;
   graphWidth = graphRight - graphLeft;
   graphHeight = graphBottom - graphTop;

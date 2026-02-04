@@ -174,6 +174,51 @@ When creating p5.js MicroSims:
 - Do NOT use p5.js DOM functions like `createButton()`, `createSlider()` as they have positioning issues in iframes
 - Always add an "Edit with the p5.js Editor" link in the index.md
 
+### Chart Layout: Preventing Title/Subtitle Overlap
+
+**CRITICAL:** The chart drawing region must start below the title and subtitle to prevent overlap with y-axis labels.
+
+**Layout calculation rules:**
+
+1. **Title only (no subtitle):**
+   - Title: y = 5-8, textSize = 18-20 → bottom edge at ~y = 25-28
+   - Chart top (`chartTop`): minimum 30 pixels
+   - Y-axis label (if present): place at `chartTop` or below
+
+2. **Title + subtitle (with formula or function name):**
+   - Title: y = 5-8, textSize = 18-20 → bottom edge at ~y = 25-28
+   - Subtitle: y = 28-32, textSize = 14-16 → bottom edge at ~y = 42-48
+   - Chart top (`chartTop`): **minimum 50 pixels**
+   - Y-axis label (if present): place at `chartTop` or below
+
+**Standard pattern for MicroSims with title + subtitle:**
+```javascript
+let chartTop = 50;  // Top of drawing region - must be >= 50 with subtitle
+
+function drawAxes() {
+  // Grid lines start at chartTop, not hardcoded 30
+  line(x, chartTop, x, drawHeight - 20);
+
+  // Y-axis starts at chartTop
+  line(originX, chartTop, originX, drawHeight - 20);
+
+  // Y-axis labels constrained to chart region
+  if (y > chartTop && y < drawHeight - 20) {
+    text(i, originX - 5, y);
+  }
+}
+```
+
+**For MicroSims with a named graphTop variable (like domain-range-visualizer):**
+```javascript
+graphTop = 70;  // Must be >= 70 when y-axis label is at graphTop - 10
+// This places y-axis label at y=60, safely below subtitle bottom at ~y=48
+```
+
+**Key formula:**
+- `chartTop >= subtitle_y + subtitle_textSize + 8` (8px minimum clearance)
+- If y-axis label is at `chartTop - offset`, then `chartTop >= subtitle_bottom + offset + 8`
+
 ## vis-network Notes
 
 There's a rendering bug with edge labels on perfectly horizontal edges. Use a slight y-offset (e.g., from 480 to 490) to give edges enough angle for labels to render on initial load.

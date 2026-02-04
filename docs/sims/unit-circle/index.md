@@ -3,11 +3,13 @@ title: Interactive Unit Circle
 description: Explore the relationship between angles and sine/cosine values with connected graph visualizations.
 quality_score: 90
 ---
-# Interactive Unit Circle
+# Interactive Unit Circle MicroSim
 
 <iframe src="main.html" height="552px" width="100%" scrolling="no"></iframe>
 
-[Run Fullscreen](./main.html){ .md-button .md-button--primary }
+[Run Interactive Unit Circle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
+
+[Edit Interactive Unit Circle MicroSim on the p5.js Editor](https://editor.p5js.org/dmccreary/sketches/zm5_m5SFq)
 
 ## About This MicroSim
 

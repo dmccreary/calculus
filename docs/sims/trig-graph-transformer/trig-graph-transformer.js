@@ -8,6 +8,7 @@ let drawHeight = 400;
 let controlHeight = 150;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 50;
+let chartTop = 50;  // Top of drawing region - must be >= 50 to prevent overlap with title/subtitle
 let defaultTextSize = 16;
 
 // Coordinate system
@@ -109,14 +110,14 @@ function drawAxes() {
   for (let i = 0; i <= 8; i++) {
     let x = originX + i * (PI / 2) * scaleX;
     if (x <= canvasWidth - margin) {
-      line(x, 30, x, drawHeight - 20);
+      line(x, chartTop, x, drawHeight - 20);
     }
   }
 
   // Horizontal grid lines
   for (let i = -3; i <= 3; i++) {
     let y = originY - i * scaleY;
-    if (y > 30 && y < drawHeight - 20) {
+    if (y > chartTop && y < drawHeight - 20) {
       line(margin, y, canvasWidth - margin, y);
     }
   }
@@ -125,7 +126,7 @@ function drawAxes() {
   stroke(0);
   strokeWeight(2);
   line(margin, originY, canvasWidth - margin, originY);
-  line(margin, 30, margin, drawHeight - 20);
+  line(margin, chartTop, margin, drawHeight - 20);
 
   // X-axis labels
   fill('black');
@@ -145,7 +146,7 @@ function drawAxes() {
   for (let i = -3; i <= 3; i++) {
     if (i !== 0) {
       let y = originY - i * scaleY;
-      if (y > 30 && y < drawHeight - 20) {
+      if (y > chartTop && y < drawHeight - 20) {
         text(i, margin - 5, y);
       }
     }
