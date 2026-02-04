@@ -1,0 +1,92 @@
+{
+  "title": "Derivative of Inverse Functions",
+  "description": "Interactive visualization showing geometrically why the derivative of an inverse function equals the reciprocal of the original derivative. Features multiple function pairs with draggable points and tangent line display.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Inverse Functions",
+    "Chain Rule"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/inverse-derivative/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": [
+    "explain",
+    "interpret",
+    "illustrate"
+  ],
+  "concepts": [
+    "Inverse Function Derivative",
+    "Reciprocal Slopes",
+    "Chain Rule",
+    "Reflection across y=x",
+    "Tangent Lines"
+  ],
+  "prerequisites": [
+    "Derivatives",
+    "Tangent lines",
+    "Inverse functions",
+    "Exponential and logarithmic functions",
+    "Trigonometric functions"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "label": "x^2",
+      "description": "Select f(x) = x^2 with inverse sqrt(x)"
+    },
+    {
+      "type": "button",
+      "label": "x^3",
+      "description": "Select f(x) = x^3 with inverse cbrt(x)"
+    },
+    {
+      "type": "button",
+      "label": "e^x",
+      "description": "Select f(x) = e^x with inverse ln(x)"
+    },
+    {
+      "type": "button",
+      "label": "sin(x)",
+      "description": "Select f(x) = sin(x) with inverse arcsin(x)"
+    },
+    {
+      "type": "button",
+      "label": "y = x Line",
+      "description": "Toggle display of the y = x reflection line"
+    },
+    {
+      "type": "button",
+      "label": "Animate",
+      "description": "Animate point movement along the curve"
+    },
+    {
+      "type": "draggable",
+      "label": "Point on f(x)",
+      "description": "Drag to move point along the function curve"
+    }
+  ],
+  "equations": [
+    "(f^-1)'(b) = 1 / f'(a) where b = f(a)",
+    "f(x) = x^2, f'(x) = 2x, (f^-1)'(x) = 1/(2*sqrt(x))",
+    "f(x) = x^3, f'(x) = 3x^2, (f^-1)'(x) = 1/(3*cbrt(x)^2)",
+    "f(x) = e^x, f'(x) = e^x, (f^-1)'(x) = 1/x",
+    "f(x) = sin(x), f'(x) = cos(x), (f^-1)'(x) = 1/sqrt(1-x^2)"
+  ]
+}

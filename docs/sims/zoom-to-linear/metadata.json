@@ -1,0 +1,97 @@
+{
+  "$schema": "https://github.com/dmccreary/microsims/blob/main/src/microsim-schema/microsim-schema.json",
+  "title": "Zoom to Linear",
+  "description": "An interactive visualization demonstrating that sufficiently zoomed-in views of differentiable functions appear linear, matching the tangent line. This illustrates the concept of local linearity, which is fundamental to understanding derivatives and linear approximation.",
+  "creator": "Claude Code",
+  "subject": ["Mathematics", "Calculus", "Derivatives", "Local Linearity"],
+  "date": "2026-02-04",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "educationalLevel": "High School (Grades 11-12)",
+  "topic": "Local Linearity and Tangent Lines",
+  "learningObjectives": [
+    "Demonstrate that zoomed-in views of differentiable functions appear linear",
+    "Observe the relationship between a function and its tangent line",
+    "Understand why linear approximation works near a point",
+    "Connect visual intuition to the formal definition of the derivative"
+  ],
+  "bloomsTaxonomy": {
+    "level": "Understand",
+    "verb": "Demonstrate"
+  },
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Understanding of tangent lines",
+    "Basic concept of derivatives",
+    "Familiarity with polynomial, trigonometric, and exponential functions"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": {
+    "width": "responsive",
+    "drawHeight": 450,
+    "controlHeight": 100
+  },
+  "responsive": true,
+  "dependencies": ["p5.js 1.11.10"],
+  "accessibility": {
+    "describe": true,
+    "keyboardNav": false,
+    "colorContrast": "high"
+  },
+  "controls": [
+    {
+      "type": "button-group",
+      "label": "Function",
+      "options": ["sin(x)", "x²", "eˣ", "x³", "ln(x)", "cos(x)"],
+      "default": "sin(x)"
+    },
+    {
+      "type": "slider",
+      "label": "Zoom",
+      "min": 1,
+      "max": 100,
+      "default": 1,
+      "scale": "logarithmic",
+      "description": "Controls the magnification level (1x to 100x)"
+    },
+    {
+      "type": "button",
+      "label": "Auto Zoom",
+      "description": "Automatically animates zoom in and out"
+    },
+    {
+      "type": "button",
+      "label": "Reset",
+      "description": "Resets zoom to 1x and returns to default point"
+    }
+  ],
+  "interactions": [
+    {
+      "type": "drag",
+      "description": "Click and drag on the graph to move the tangent point to a new location on the curve"
+    },
+    {
+      "type": "slider",
+      "description": "Moving the zoom slider magnifies the view around the selected point"
+    }
+  ],
+  "visualElements": [
+    {
+      "name": "Function curve",
+      "color": "#2196F3",
+      "description": "The actual function being examined"
+    },
+    {
+      "name": "Tangent line",
+      "color": "#E91E63",
+      "description": "The linear approximation at the selected point"
+    },
+    {
+      "name": "Center point",
+      "color": "#FF5722",
+      "description": "The point where the tangent line touches the curve"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Second Derivative Explorer",
+  "description": "Interactive visualization showing a function, its first derivative, and its second derivative in three synchronized panels. Demonstrates how the second derivative relates to concavity of the original function and the rate of change of the first derivative.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Second Derivative",
+    "Concavity",
+    "Inflection Points",
+    "Curvature"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/second-derivative-explorer/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "bloomVerb": [
+    "analyze",
+    "connect",
+    "interpret"
+  ],
+  "concepts": [
+    "Second Derivative",
+    "Concavity",
+    "Inflection Point",
+    "Curvature",
+    "First Derivative",
+    "Tangent Line",
+    "Rate of Change"
+  ],
+  "prerequisites": [
+    "Understanding of first derivative as slope",
+    "Familiarity with tangent lines",
+    "Basic knowledge of polynomial and trigonometric functions"
+  ],
+  "library": "p5.js",
+  "learningObjective": "Students will analyze how the second derivative relates to the curvature of the original function",
+  "duration": "20-25 minutes"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Nested Chain Rule Unwrap",
+  "description": "Visualize how nested compositions are differentiated layer by layer using repeated chain rule applications - the onion peeling method",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Differentiation",
+  "subtopic": "Chain Rule",
+  "bloomLevel": "4-Analyze",
+  "bloomVerbs": ["analyze", "deconstruct", "examine"],
+  "learningObjective": "Students will apply the chain rule to nested composite functions (Bloom Level 4: Analyze)",
+  "prerequisites": ["chain-rule", "derivative-of-sin", "derivative-of-cos", "derivative-of-exp", "derivative-of-ln", "power-rule"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "8-12 minutes",
+  "keywords": ["chain rule", "nested functions", "composite functions", "onion method", "layer by layer", "differentiation"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Chain Rule Steps",
+  "description": "Interactive step-by-step guide to applying the chain rule for differentiating composite functions with color-coded visualization",
+  "type": "microsim",
+  "library": "p5.js",
+  "subject": "Calculus",
+  "topic": "Derivative Rules",
+  "subtopic": "Chain Rule",
+  "bloomLevel": "3-Apply",
+  "bloomVerbs": ["apply", "execute", "implement"],
+  "learningObjective": "Students will apply the chain rule systematically to differentiate composite functions",
+  "prerequisites": ["composite-functions", "derivative-rules", "trig-derivatives", "exponential-derivatives"],
+  "difficulty": "intermediate",
+  "interactivity": "high",
+  "estimatedTime": "10-15 minutes",
+  "keywords": ["chain rule", "composite function", "derivative", "inside function", "outside function"],
+  "author": "Claude AI",
+  "dateCreated": "2026-02-04",
+  "version": "1.0"
+}

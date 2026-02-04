@@ -83,46 +83,82 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
-    - Graph Viewer: sims/graph-viewer/index.md
-    - Domain and Range Visualizer: sims/domain-range-visualizer/index.md
-    - Function Machine: sims/function-machine/index.md
-    - Coordinate System Explorer: sims/coordinate-system-explorer/index.md
-    - Vertical Line Test: sims/vertical-line-test/index.md
-    - Function Composition: sims/function-composition/index.md
-    - Inverse Function Reflector: sims/inverse-function-reflector/index.md
-    - Transformation Playground: sims/transformation-playground/index.md
-    - Piecewise Builder: sims/piecewise-builder/index.md
-    - Polynomial Explorer: sims/polynomial-explorer/index.md
     - Asymptote Analyzer: sims/asymptote-analyzer/index.md
     - Asymptote Types: sims/asymptote-types/index.md
-    - Exp-Log Relationship: sims/exp-log-relationship/index.md
-    - Unit Circle: sims/unit-circle/index.md
-    - Trig Identity Visualizer: sims/trig-identity-visualizer/index.md
-    - Trig Graph Transformer: sims/trig-graph-transformer/index.md
-    - Timeline of Calculus History: sims/timeline/index.md
-    - Limit with Hole: sims/limit-with-hole/index.md
-    - One-Sided Limits: sims/one-sided-limits/index.md
-    - Direct Substitution Tree: sims/direct-substitution-tree/index.md
-    - Limit Laws Practice: sims/limit-laws-practice/index.md
-    - Factoring Limits: sims/factoring-limits/index.md
-    - Squeeze Theorem: sims/squeeze-theorem/index.md
-    - Sin(x)/x: sims/sinx-over-x/index.md
-    - Limits from Graphs: sims/limits-from-graphs/index.md
-    - Piecewise Continuity Explorer: sims/piecewise-continuity/index.md
-    - Vertical Asymptote Explorer: sims/vertical-asymptote/index.md
-    - Derivative Interpretation Selector: sims/derivative-interpretation/index.md
-    - Secant to Tangent: sims/secant-to-tangent/index.md
     - Average Rate of Change Explorer: sims/average-rate-change/index.md
-    - End Behavior Explorer: sims/end-behavior/index.md
-    - Tangent Line Calculator: sims/tangent-line-calculator/index.md
-    - Function Derivative Comparison: sims/function-derivative-comparison/index.md
-    - Three Conditions for Continuity: sims/continuity-conditions/index.md
-    - Growth Rate Comparison: sims/growth-rates/index.md
+    - Balloon Inflation Simulator: sims/balloon-inflation-simulator/index.md
+    - Chain Rule Steps: sims/chain-rule-steps/index.md
+    - Composite Identifier: sims/composite-identifier/index.md
+    - Conical Tank Draining: sims/conical-tank-draining/index.md
+    - Continuity Conditions: sims/continuity-conditions/index.md
+    - Coordinate System Explorer: sims/coordinate-system-explorer/index.md
+    - Derivative from Graph: sims/derivative-from-graph/index.md
+    - Derivative Interpretation Selector: sims/derivative-interpretation/index.md
+    - Differentiability and Continuity: sims/diff-cont-relationship/index.md
+    - Differentiability Checker: sims/differentiability-checker/index.md
+    - Direct Substitution Tree: sims/direct-substitution-tree/index.md
+    - Direction of Motion Analyzer: sims/direction-of-motion-analyzer/index.md
     - Discontinuity Types: sims/discontinuity-types/index.md
+    - Domain and Range Visualizer: sims/domain-range-visualizer/index.md
+    - End Behavior Explorer: sims/end-behavior/index.md
+    - Exp-Log Relationship: sims/exp-log-relationship/index.md
+    - Exponential Self-Derivative: sims/exp-self-derivative/index.md
+    - Factoring Limits: sims/factoring-limits/index.md
+    - Function Composition: sims/function-composition/index.md
+    - Function Derivative Comparison: sims/function-derivative-comparison/index.md
+    - Function Machine: sims/function-machine/index.md
+    - Graph Viewer: sims/graph-viewer/index.md
+    - Graphical Inverse Derivatives: sims/graphical-inverse-derivatives/index.md
+    - Growth Rate Comparison: sims/growth-rates/index.md
+    - Implicit Curves: sims/implicit-curves/index.md
+    - Implicit Differentiation Steps: sims/implicit-diff-steps/index.md
+    - Implicit Tangent: sims/implicit-tangent/index.md
+    - Inverse Derivative: sims/inverse-derivative/index.md
+    - Inverse Function Reflector: sims/inverse-function-reflector/index.md
+    - Inverse Trig Derivatives Quiz: sims/inverse-trig-derivatives-quiz/index.md
+    - Inverse Trig Domains: sims/inverse-trig-domains/index.md
     - IVT Visualization: sims/ivt-visualization/index.md
-    - Trig Derivative Cycle: sims/trig-derivative-cycle/index.md
-    - e^x is Its Own Derivative: sims/exp-self-derivative/index.md
+    - Ladder Problem Explorer: sims/ladder-problem-explorer/index.md
+    - L'Hopital's Rule Visualizer: sims/lhospitals-rule-visualizer/index.md
+    - Limit Laws Practice: sims/limit-laws-practice/index.md
+    - Limit with Hole: sims/limit-with-hole/index.md
+    - Limits from Graphs: sims/limits-from-graphs/index.md
+    - Linear Approximation Error: sims/linear-approx-error/index.md
+    - Local Linearity: sims/local-linearity/index.md
+    - Logarithmic Differentiation: sims/logarithmic-differentiation/index.md
+    - Marginal Analysis Calculator: sims/marginal-analysis-calculator/index.md
+    - Marginal Cost Analyzer: sims/marginal-cost-analyzer/index.md
+    - Motion Analysis: sims/motion-analysis/index.md
+    - Multi-Rule Builder: sims/multi-rule-builder/index.md
+    - Nested Chain Unwrap: sims/nested-chain-unwrap/index.md
+    - Non-Differentiable Gallery: sims/non-differentiable-gallery/index.md
     - One-Sided Derivatives: sims/one-sided-derivatives/index.md
+    - One-Sided Limits: sims/one-sided-limits/index.md
+    - Piecewise Builder: sims/piecewise-builder/index.md
+    - Piecewise Continuity Explorer: sims/piecewise-continuity/index.md
+    - Polynomial Explorer: sims/polynomial-explorer/index.md
+    - Power Rule Explorer: sims/power-rule-explorer/index.md
+    - Product Rule Visualizer: sims/product-rule-viz/index.md
+    - Rate Interpretation Dashboard: sims/rate-interpretation-dashboard/index.md
+    - Rule Selector: sims/rule-selector/index.md
+    - Secant to Tangent: sims/secant-to-tangent/index.md
+    - Second Derivative Explorer: sims/second-derivative-explorer/index.md
+    - Sin(x)/x: sims/sinx-over-x/index.md
+    - Speed Change Analyzer: sims/speed-change-analyzer/index.md
+    - Squeeze Theorem: sims/squeeze-theorem/index.md
+    - Tangent Line Calculator: sims/tangent-line-calculator/index.md
+    - Term by Term Differentiation: sims/term-by-term-diff/index.md
+    - Timeline of Calculus History: sims/timeline/index.md
+    - Transformation Playground: sims/transformation-playground/index.md
+    - Trig Derivative Cycle: sims/trig-derivative-cycle/index.md
+    - Trig Derivatives Card: sims/trig-derivatives-card/index.md
+    - Trig Graph Transformer: sims/trig-graph-transformer/index.md
+    - Trig Identity Visualizer: sims/trig-identity-visualizer/index.md
+    - Two Moving Objects Distance: sims/two-moving-objects-distance/index.md
+    - Unit Circle: sims/unit-circle/index.md
+    - Vertical Asymptote Explorer: sims/vertical-asymptote/index.md
+    - Vertical Line Test: sims/vertical-line-test/index.md
+    - Zoom to Linear: sims/zoom-to-linear/index.md
 
   - Appendices:
     - List of Appendices: appendices/index.md

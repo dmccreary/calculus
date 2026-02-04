@@ -1,0 +1,53 @@
+{
+  "title": "Marginal Cost Analyzer",
+  "description": "Interactive visualization that calculates and interprets marginal cost as the derivative of the cost function. Compares marginal cost to actual cost differences using graphs, tables, and bar charts across linear, quadratic, and cubic cost models.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Marginal Cost",
+    "Economics",
+    "Business Applications",
+    "Rate of Change"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/marginal-cost-analyzer/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Apply"
+  ],
+  "bloomVerb": [
+    "calculate",
+    "interpret",
+    "compare"
+  ],
+  "concepts": [
+    "Derivative",
+    "Marginal Cost",
+    "Cost Function",
+    "Rate of Change",
+    "Tangent Line",
+    "Power Rule",
+    "Economies of Scale",
+    "Business Applications"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives and power rule",
+    "Basic cost concepts (fixed vs variable costs)",
+    "Graph interpretation skills"
+  ],
+  "library": "p5.js",
+  "learningObjective": "Students will calculate and interpret marginal cost as the derivative of the cost function, comparing it to actual cost differences",
+  "duration": "35-45 minutes"
+}

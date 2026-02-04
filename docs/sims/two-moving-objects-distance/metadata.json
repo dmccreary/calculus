@@ -1,0 +1,114 @@
+{
+    "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+    "title": "Two Moving Objects Distance",
+    "description": "Interactive visualization examining how the rate of distance change between two moving objects depends on their positions and velocities",
+    "creator": "Dan McCreary",
+    "subject": ["Calculus", "Related Rates", "Derivatives"],
+    "date": "2026-02-04",
+    "type": "Interactive Simulation",
+    "format": "text/html",
+    "language": "en",
+    "rights": "CC BY 4.0",
+    "gradeLevel": "High School (9-12)",
+    "topic": "Related Rates",
+    "learningObjectives": [
+        "Examine how the rate of distance change between two moving objects depends on their positions and velocities",
+        "Apply the related rates formula for distance between two objects",
+        "Investigate how direction changes affect the rate of distance change"
+    ],
+    "bloomsLevel": ["Analyze"],
+    "bloomsVerb": ["examine", "analyze", "investigate"],
+    "duration": "15-20 minutes",
+    "prerequisites": [
+        "Pythagorean theorem",
+        "Basic derivatives",
+        "Chain rule (helpful)"
+    ],
+    "framework": "p5.js",
+    "canvasDimensions": "responsive x 580",
+    "responsive": "Width-responsive",
+    "dependencies": ["p5.js 1.11.10"],
+    "controls": [
+        {
+            "type": "slider",
+            "name": "speedASlider",
+            "label": "Car A Speed",
+            "description": "Speed of Car A in mph",
+            "min": 20,
+            "max": 100,
+            "default": 50,
+            "step": 1
+        },
+        {
+            "type": "slider",
+            "name": "speedBSlider",
+            "label": "Car B Speed",
+            "description": "Speed of Car B in mph",
+            "min": 20,
+            "max": 100,
+            "default": 40,
+            "step": 1
+        },
+        {
+            "type": "button-group",
+            "name": "directionA",
+            "label": "Car A Direction",
+            "description": "Direction of Car A (North or South)",
+            "options": ["N", "S"],
+            "default": "N"
+        },
+        {
+            "type": "button-group",
+            "name": "directionB",
+            "label": "Car B Direction",
+            "description": "Direction of Car B (East or West)",
+            "options": ["E", "W"],
+            "default": "E"
+        },
+        {
+            "type": "slider",
+            "name": "timeSlider",
+            "label": "Time",
+            "description": "Current time in hours",
+            "min": 0,
+            "max": 5,
+            "default": 0,
+            "step": 0.01
+        },
+        {
+            "type": "button",
+            "name": "playButton",
+            "label": "Play/Pause",
+            "description": "Start or pause the animation"
+        },
+        {
+            "type": "button",
+            "name": "resetButton",
+            "label": "Reset",
+            "description": "Reset to initial conditions"
+        }
+    ],
+    "modelType": "Mathematical Visualization",
+    "variables": [
+        "a - distance of Car A from origin (miles)",
+        "b - distance of Car B from origin (miles)",
+        "d - distance between cars (miles)",
+        "da/dt - rate of change of a (mph)",
+        "db/dt - rate of change of b (mph)",
+        "dd/dt - rate of change of distance (mph)"
+    ],
+    "equations": [
+        "d = sqrt(a^2 + b^2)",
+        "dd/dt = (a * da/dt + b * db/dt) / d"
+    ],
+    "assumptions": [
+        "Both cars start at the origin at t=0",
+        "Cars travel in straight lines along perpendicular roads",
+        "Speeds are constant"
+    ],
+    "limitations": [
+        "Maximum simulation time is 5 hours",
+        "Speed range is 20-100 mph",
+        "Does not account for acceleration"
+    ]
+}

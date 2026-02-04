@@ -122,8 +122,10 @@ A **related rates diagram** is essential for understanding the problem and writi
 - Indicate which quantities are constant
 - Note the given rates with arrows showing direction of change
 
+#### Diagram: Related Rates Problem Setup
+
 <details markdown="1">
-<summary>#### Diagram: Related Rates Problem Setup</summary>
+<summary>Related Rates Problem Setup Infographic Specification</summary>
 
 Type: infographic
 
@@ -196,8 +198,12 @@ $$\frac{dh}{dt} = -\frac{24}{16} = -\frac{3}{2} \text{ ft/sec}$$
 
 The negative sign confirms the top is sliding *down* at $\frac{3}{2}$ ft/sec.
 
+#### Diagram: Ladder Problem Explorer
+
+<iframe src="../../sims/ladder-problem-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### MicroSim: Ladder Problem Explorer</summary>
+<summary>Ladder Problem Explorer MicroSim Specification</summary>
 
 Type: microsim
 
@@ -274,8 +280,12 @@ The radius increases at $\frac{1}{\pi}$ cm/sec when the radius is 5 cm.
 !!! tip "Surface Area Connection"
     Notice that $4\pi r^2$ is the surface area of a sphere! This makes sense: the rate of volume increase equals the rate of radius increase times the surface area. Volume flows in through the entire surface.
 
+#### Diagram: Balloon Inflation Simulator
+
+<iframe src="../../sims/balloon-inflation-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### MicroSim: Balloon Inflation Simulator</summary>
+<summary>Balloon Inflation Simulator MicroSim Specification</summary>
 
 Type: microsim
 
@@ -350,8 +360,10 @@ Shadow tip position = $x + s$
 
 $$\frac{d}{dt}(x + s) = \frac{dx}{dt} + \frac{ds}{dt} = 4 + \frac{8}{3} = \frac{20}{3} \approx 6.67 \text{ ft/sec}$$
 
+#### Diagram: Shadow Problem Similar Triangles
+
 <details markdown="1">
-<summary>#### Diagram: Shadow Problem Similar Triangles</summary>
+<summary>Shadow Problem Similar Triangles Infographic Specification</summary>
 
 Type: infographic
 
@@ -419,8 +431,12 @@ $$\frac{dh}{dt} = \frac{-3}{4\pi} \approx -0.239 \text{ ft/min}$$
 
 The water level drops at about 0.24 ft/min.
 
+#### Diagram: Conical Tank Draining
+
+<iframe src="../../sims/conical-tank-draining/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### MicroSim: Conical Tank Draining</summary>
+<summary>Conical Tank Draining MicroSim Specification</summary>
 
 Type: microsim
 
@@ -501,8 +517,12 @@ The distance between the cars increases at 100 mph.
 !!! note "The 3-4-5 Triangle"
     Notice that 60, 80, and 100 form a 3-4-5 right triangle (scaled by 20). This isn't a coincidence—the rate of distance change depends on the same triangle as the positions!
 
+#### Diagram: Two Moving Objects Distance
+
+<iframe src="../../sims/two-moving-objects-distance/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### MicroSim: Two Moving Objects Distance</summary>
+<summary>Two Moving Objects Distance MicroSim Specification</summary>
 
 Type: microsim
 
@@ -553,8 +573,12 @@ Near any point where a function is differentiable, the tangent line provides an 
 
 Here's why it works: If you zoom in close enough on a smooth curve at a point, the curve looks almost like a straight line—and that line is the tangent line!
 
+#### Diagram: Zoom to Linear
+
+<iframe src="../../sims/zoom-to-linear/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### MicroSim: Zoom to Linear</summary>
+<summary>Zoom to Linear MicroSim Specification</summary>
 
 Type: microsim
 
@@ -647,8 +671,12 @@ For small $|x - a|$, the error is approximately proportional to $(x - a)^2$. Thi
 | Farther from $a$ | Larger error |
 | More curved (large $|f''|$) | Larger error |
 
+#### Diagram: Linear Approximation Error Visualizer
+
+<iframe src="../../sims/linear-approx-error/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### MicroSim: Linear Approximation Error Visualizer</summary>
+<summary>Linear Approximation Error Visualizer MicroSim Specification</summary>
 
 Type: microsim
 
@@ -722,8 +750,10 @@ For small $dx$, these are nearly equal: $\Delta y \approx dy$
 
 This is exactly what linear approximation tells us, just in different notation!
 
+#### Diagram: dy vs Delta y Comparison
+
 <details markdown="1">
-<summary>#### Diagram: dy vs Delta y Comparison</summary>
+<summary>dy vs Delta y Comparison Infographic Specification</summary>
 
 Type: infographic
 
@@ -830,8 +860,12 @@ Let's verify:
 
 Our marginal cost estimate of $12 was excellent!
 
+#### Diagram: Marginal Cost Analyzer
+
+<iframe src="../../sims/marginal-cost-analyzer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### MicroSim: Marginal Cost Analyzer</summary>
+<summary>Marginal Cost Analyzer MicroSim Specification</summary>
 
 Type: microsim
 

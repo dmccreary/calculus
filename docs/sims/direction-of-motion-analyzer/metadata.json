@@ -1,0 +1,51 @@
+{
+  "title": "Direction of Motion Analyzer",
+  "description": "Interactive visualization analyzing when an object moves in the positive vs negative direction based on the sign of velocity, with animated particle motion on a number line and velocity graph showing direction change points where v(t) = 0.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Velocity",
+    "Motion Analysis",
+    "Direction of Motion"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/direction-of-motion-analyzer/",
+  "publisher": "MicroSims Educational Platform",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "bloomVerb": [
+    "analyze",
+    "determine",
+    "interpret"
+  ],
+  "concepts": [
+    "Velocity",
+    "Direction of Motion",
+    "Sign of Derivative",
+    "Position Function",
+    "Velocity Function",
+    "Direction Change",
+    "Zeros of Velocity"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives as rates of change",
+    "Concept of velocity as derivative of position",
+    "Familiarity with function graphs"
+  ],
+  "library": "p5.js",
+  "learningObjective": "Students will determine direction of motion from velocity function",
+  "duration": "15-20 minutes"
+}

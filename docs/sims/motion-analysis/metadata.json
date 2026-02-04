@@ -1,0 +1,78 @@
+{
+  "title": "Motion Analysis",
+  "description": "Interactive visualization showing the relationship between position, velocity, and acceleration for a moving object. Features four synchronized panels displaying position vs time, velocity vs time, acceleration vs time, and an animated particle on a number line. Students can observe how derivatives connect these quantities in real motion scenarios.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-04",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Kinematics",
+    "Motion",
+    "Rate of Change"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/motion-analysis/",
+  "publisher": "AP Calculus Intelligent Textbook",
+  "educationalLevel": "High School, AP Calculus",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Analyze"
+  ],
+  "concepts": [
+    "Position Function",
+    "Velocity as Derivative of Position",
+    "Acceleration as Derivative of Velocity",
+    "Second Derivative",
+    "Motion Graphs",
+    "Rate of Change"
+  ],
+  "prerequisites": [
+    "Derivative concept",
+    "Function notation",
+    "Graph interpretation",
+    "Basic kinematics vocabulary"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "button",
+      "name": "play-pause",
+      "description": "Starts or pauses the animation"
+    },
+    {
+      "type": "slider",
+      "name": "time-slider",
+      "description": "Manually controls the current time position",
+      "min": 0,
+      "max": 10,
+      "default": 0
+    },
+    {
+      "type": "button-group",
+      "name": "scenario-selector",
+      "description": "Selects the motion scenario",
+      "options": ["Polynomial", "Sinusoidal", "Quadratic", "Exponential Decay"]
+    },
+    {
+      "type": "slider",
+      "name": "speed-slider",
+      "description": "Controls the animation playback speed",
+      "min": 0.1,
+      "max": 3.0,
+      "default": 1.0
+    },
+    {
+      "type": "button",
+      "name": "reset",
+      "description": "Resets the animation to the beginning"
+    }
+  ]
+}

@@ -93,8 +93,10 @@ The first derivative $f'(x) = 4x^3 - 6x + 5$ tells us the slope at any point. Th
 
 #### Diagram: Second Derivative Explorer
 
+<iframe src="../../sims/second-derivative-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>Second Derivative Explorer MicroSim</summary>
+<summary>Second Derivative Explorer MicroSim Specification</summary>
 Type: microsim
 
 Purpose: Visualize the relationship between a function, its first derivative, and its second derivative.
@@ -284,8 +286,10 @@ The jerk is constant (6 m/s³) for this motion, meaning the acceleration increas
 
 #### Diagram: Position-Velocity-Acceleration Relationship
 
+<iframe src="../../sims/motion-analysis/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>Motion Analysis MicroSim</summary>
+<summary>Motion Analysis MicroSim Specification</summary>
 Type: microsim
 
 Purpose: Show the relationship between position, velocity, and acceleration for a moving object.
@@ -379,8 +383,10 @@ The object changes direction at $t = 1$ (from positive to negative) and again at
 
 #### Diagram: Direction and Speed Analyzer
 
+<iframe src="../../sims/direction-of-motion-analyzer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>Direction of Motion Analyzer MicroSim</summary>
+<summary>Direction of Motion Analyzer MicroSim Specification</summary>
 Type: microsim
 
 Purpose: Analyze when an object is moving in the positive vs negative direction and when it changes direction.
@@ -466,8 +472,10 @@ The particle is speeding up on the intervals $(2, 3)$ and $(4, \infty)$.
 
 #### Diagram: Speeding Up/Slowing Down Analyzer
 
+<iframe src="../../sims/speed-change-analyzer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>Speed Change Analyzer MicroSim</summary>
+<summary>Speed Change Analyzer MicroSim Specification</summary>
 Type: microsim
 
 Purpose: Visualize when an object is speeding up vs slowing down based on velocity and acceleration signs.

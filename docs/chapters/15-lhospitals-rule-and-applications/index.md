@@ -122,8 +122,12 @@ $$\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = \lim_{x \to 2} \frac{2x}{1} = 4$$
 
 Compare this to factoring: $\frac{x^2 - 4}{x - 2} = \frac{(x+2)(x-2)}{x-2} = x + 2 \to 4$. Same answer, different route!
 
+#### Diagram: L'Hospital's Rule Visualizer
+
+<iframe src="../../sims/lhospitals-rule-visualizer/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### Diagram: L'Hospital's Rule Visualizer</summary>
+<summary>L'Hospital's Rule Visualizer MicroSim Specification</summary>
 
 Type: microsim
 
@@ -257,8 +261,10 @@ $$\lim_{x \to 0^+} \frac{\ln x}{1/x} = \lim_{x \to 0^+} \frac{1/x}{-1/x^2} = \li
 
 So $\lim_{x \to 0^+} x \ln x = 0$. The zero "wins" against the infinity!
 
+#### Diagram: Zero Times Infinity Converter
+
 <details markdown="1">
-<summary>#### Diagram: Zero Times Infinity Converter</summary>
+<summary>Zero Times Infinity Converter Infographic Specification</summary>
 
 Type: infographic
 
@@ -387,8 +393,12 @@ Understanding the *sign* and *magnitude* of a derivative tells you about behavio
 - The rate of decrease is 3 degrees per minute
 - In the next minute (approximately), temperature will drop by about 3°C
 
+#### Diagram: Rate Interpretation Dashboard
+
+<iframe src="../../sims/rate-interpretation-dashboard/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### Diagram: Rate Interpretation Dashboard</summary>
+<summary>Rate Interpretation Dashboard MicroSim Specification</summary>
 
 Type: microsim
 
@@ -567,8 +577,12 @@ $$x = \frac{80}{0.12} \approx 667 \text{ units}$$
 
 **Interpretation:** Profit is maximized at approximately 667 units, where marginal revenue equals marginal cost.
 
+#### Diagram: Marginal Analysis Calculator
+
+<iframe src="../../sims/marginal-analysis-calculator/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
 <details markdown="1">
-<summary>#### Diagram: Marginal Analysis Calculator</summary>
+<summary>Marginal Analysis Calculator MicroSim Specification</summary>
 
 Type: microsim
 

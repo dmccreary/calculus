@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit Curves Explorer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        #canvas-container {
+            max-width: 700px;
+            width: 95%;
+            touch-action: none;
+        }
+        canvas {
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .description {
+            max-width: 650px;
+            margin-top: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        }
+        .description h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .description p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .math {
+            font-style: italic;
+            color: #643296;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div class="description">
+        <h3>Exploring Implicit Curves</h3>
+        <p>
+            Many important curves in mathematics cannot be written as
+            <span class="math">y = f(x)</span>. Instead, they are defined
+            <strong>implicitly</strong> by equations like
+            <span class="math">x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></span> (a circle).
+        </p>
+        <p>
+            The remarkable thing is that <strong>tangent lines still exist</strong> at every
+            smooth point on these curves! We use <strong>implicit differentiation</strong> to
+            find <span class="math">dy/dx</span> without ever solving for
+            <span class="math">y</span>.
+        </p>
+        <p>
+            <strong>Try it:</strong> Drag the point around different curves. Notice how the
+            tangent line and <span class="math">dy/dx</span> value update continuously,
+            even when the point is on a part of the curve where
+            <span class="math">y</span> is not a function of <span class="math">x</span>.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

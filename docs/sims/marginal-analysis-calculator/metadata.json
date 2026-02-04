@@ -1,0 +1,85 @@
+{
+  "$schema": "https://dmccreary.github.io/microsims/schemas/microsim-schema.json",
+  "title": "Marginal Analysis Calculator",
+  "description": "Interactive visualization for calculating and interpreting marginal cost, marginal revenue, and marginal profit for economic decision-making. Demonstrates how derivatives connect graphical tangent lines with numerical marginal values in business contexts.",
+  "creator": "Dan McCreary",
+  "subject": ["Calculus", "Derivatives", "Economics", "Marginal Analysis", "Optimization"],
+  "date": "2026-02-04",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY 4.0",
+  "gradeLevel": "High School (9-12), AP Calculus",
+  "topic": "Economic Applications of Derivatives",
+  "learningObjectives": [
+    "Calculate marginal cost, revenue, and profit from given functions",
+    "Interpret marginal values as slopes of tangent lines",
+    "Apply the MC = MR rule to find optimal production",
+    "Explain why profit maximization occurs when marginal profit equals zero"
+  ],
+  "bloomsLevel": ["Apply"],
+  "bloomsVerb": ["calculate", "interpret", "apply"],
+  "duration": "15-20 minutes",
+  "prerequisites": [
+    "Understanding of derivatives as rates of change",
+    "Ability to find derivatives of polynomial functions",
+    "Basic cost, revenue, and profit concepts"
+  ],
+  "framework": "p5.js",
+  "canvasDimensions": "responsive x 620",
+  "responsive": "Width-responsive",
+  "dependencies": ["p5.js 1.11.10"],
+  "controls": [
+    {
+      "type": "slider",
+      "name": "productionSlider",
+      "label": "Production level",
+      "description": "Production quantity from 0 to 1000 units",
+      "min": 0,
+      "max": 1000,
+      "default": 500,
+      "step": 1
+    },
+    {
+      "type": "button",
+      "name": "modeButton",
+      "label": "Display Mode",
+      "description": "Toggle between showing marginals, totals, or both"
+    },
+    {
+      "type": "button",
+      "name": "findOptimalButton",
+      "label": "Find Optimal",
+      "description": "Animate to the profit-maximizing production level"
+    }
+  ],
+  "modelType": "Mathematical Visualization",
+  "variables": [
+    "x - production level (units)",
+    "C(x) - total cost function",
+    "R(x) - total revenue function",
+    "P(x) - profit function",
+    "MC - marginal cost (derivative of cost)",
+    "MR - marginal revenue (derivative of revenue)",
+    "MP - marginal profit (derivative of profit)"
+  ],
+  "equations": [
+    "C(x) = ax^2 + bx + c",
+    "R(x) = px - qx^2",
+    "P(x) = R(x) - C(x)",
+    "MC = C'(x) = 2ax + b",
+    "MR = R'(x) = p - 2qx",
+    "MP = P'(x) = MR - MC"
+  ],
+  "assumptions": [
+    "Quadratic cost function with positive leading coefficient",
+    "Revenue function reflects diminishing marginal revenue",
+    "Continuous production levels",
+    "Single product model"
+  ],
+  "limitations": [
+    "Fixed function forms (quadratic)",
+    "Does not model discrete production constraints",
+    "Simplified economic model without market dynamics"
+  ]
+}

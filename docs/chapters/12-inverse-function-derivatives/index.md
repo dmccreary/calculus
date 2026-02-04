@@ -77,10 +77,12 @@ Consider $f(x) = x^3$ and its inverse $f^{-1}(x) = \sqrt[3]{x}$.
 
 Let's verify: $(f^{-1})'(x) = \frac{1}{3}x^{-2/3}$, so $(f^{-1})'(8) = \frac{1}{3} \cdot \frac{1}{4} = \frac{1}{12}$ ✓
 
-<details markdown="1">
-<summary>Inverse Function Derivatives MicroSim</summary>
-
 #### Diagram: Graphical Inverse Derivatives
+
+<iframe src="../../sims/graphical-inverse-derivatives/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Graphical Inverse Derivatives MicroSim Specification</summary>
 
 Type: interactive visualization
 
@@ -142,10 +144,12 @@ To create a proper inverse function, mathematicians chose **principal value rang
 !!! warning "Notation Alert"
     $\arcsin(x)$ and $\sin^{-1}(x)$ mean the same thing: the inverse sine function. But $\sin^{-1}(x) \neq \frac{1}{\sin(x)}$! The notation $(\sin x)^{-1} = \csc x$ is for the reciprocal. Context matters!
 
-<details markdown="1">
-<summary>Inverse Trig Domains MicroSim</summary>
-
 #### Diagram: Inverse Trig Domain Visualization
+
+<iframe src="../../sims/inverse-trig-domains/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Inverse Trig Domains MicroSim Specification</summary>
 
 Type: interactive diagram
 
@@ -317,10 +321,12 @@ Here's your reference table for all six inverse trig derivatives:
 - Arcsecant and arccosecant use $|x|\sqrt{x^2-1}$ (their domains require $|x| \geq 1$)
 - "Co-functions" have negative derivatives (arccos, arccot, arccsc)
 
-<details markdown="1">
-<summary>Inverse Trig Derivatives Quiz MicroSim</summary>
-
 #### Diagram: Inverse Trig Derivatives Practice
+
+<iframe src="../../sims/inverse-trig-derivatives-quiz/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Inverse Trig Derivatives Quiz MicroSim Specification</summary>
 
 Type: interactive quiz
 
@@ -493,10 +499,12 @@ $$\frac{1}{y} \cdot \frac{dy}{dx} = \cos(x) \cdot \ln(x) + \sin(x) \cdot \frac{1
 
 $$\frac{dy}{dx} = x^{\sin x} \left[\cos(x) \ln(x) + \frac{\sin(x)}{x}\right]$$
 
-<details markdown="1">
-<summary>Logarithmic Differentiation MicroSim</summary>
-
 #### Diagram: Logarithmic Differentiation Step-by-Step
+
+<iframe src="../../sims/logarithmic-differentiation/main.html" width="100%" height="550px" scrolling="no"></iframe>
+
+<details markdown="1">
+<summary>Logarithmic Differentiation MicroSim Specification</summary>
 
 Type: interactive tutorial
 
