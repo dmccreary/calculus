@@ -361,6 +361,10 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/derivative-from-graph/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/derivative-interpretation/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
@@ -382,6 +386,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/calculus/sims/exp-log-relationship/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/exp-self-derivative/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
@@ -429,6 +437,22 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/local-linearity/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/multi-rule-builder/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/non-differentiable-gallery/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/one-sided-derivatives/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/one-sided-limits/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
@@ -442,6 +466,18 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/calculus/sims/polynomial-explorer/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/power-rule-explorer/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/product-rule-viz/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/rule-selector/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
@@ -461,11 +497,23 @@
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/calculus/sims/term-by-term-diff/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/calculus/sims/timeline/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/calculus/sims/transformation-playground/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/trig-derivative-cycle/</loc>
+         <lastmod>2026-02-04</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/calculus/sims/trig-derivatives-card/</loc>
          <lastmod>2026-02-04</lastmod>
     </url>
     <url>

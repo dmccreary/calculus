@@ -1,0 +1,74 @@
+{
+  "title": "e^x is Its Own Derivative",
+  "description": "Interactive simulation demonstrating that the exponential function e^x is unique because its derivative equals the function itself. At every point on the curve, the slope of the tangent line equals the function value e^x.",
+  "creator": "Dan McCreary",
+  "date": "2026-02-03",
+  "subject": [
+    "Calculus",
+    "Derivatives",
+    "Exponential Functions",
+    "Differential Calculus"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": [
+    "Claude Code"
+  ],
+  "identifier": "https://dmccreary.github.io/calculus/sims/exp-self-derivative/",
+  "publisher": "Intelligent Textbooks",
+  "educationalLevel": "High School AP, Undergraduate",
+  "learningResourceType": "simulation",
+  "audience": "Students, Educators",
+  "version": "1.0.0",
+  "bloomLevel": [
+    "Understand"
+  ],
+  "bloomVerb": [
+    "explain",
+    "interpret",
+    "demonstrate"
+  ],
+  "concepts": [
+    "Exponential Function",
+    "Derivative",
+    "Tangent Line",
+    "Slope",
+    "Natural Exponential",
+    "e (Euler's number)"
+  ],
+  "prerequisites": [
+    "Understanding of derivatives as slopes",
+    "Familiarity with exponential functions",
+    "Knowledge of the number e"
+  ],
+  "library": "p5.js",
+  "controls": [
+    {
+      "type": "slider",
+      "label": "x-value",
+      "min": -3,
+      "max": 3,
+      "default": 0,
+      "step": 0.01,
+      "description": "Move the point along the x-axis to observe how y-value and slope change"
+    },
+    {
+      "type": "checkbox",
+      "label": "Show Tangent",
+      "default": true,
+      "description": "Toggle visibility of the tangent line at the current point"
+    },
+    {
+      "type": "button",
+      "label": "Compare y and slope",
+      "description": "Highlights the equality between the function value and slope with a visual pulse effect"
+    }
+  ],
+  "canvasDimensions": {
+    "drawHeight": 400,
+    "controlHeight": 80,
+    "totalHeight": 480
+  }
+}
