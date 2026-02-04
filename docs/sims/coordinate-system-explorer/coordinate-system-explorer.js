@@ -1,10 +1,11 @@
+/// <reference types="p5/global" />
 // Coordinate System Explorer MicroSim
 // Learning Objective: Students will identify points in the coordinate plane
 // and name the quadrant where each point lies.
 // Bloom Level: Remember (L1)
 
 let canvasWidth = 500;
-let drawHeight = 400;
+let drawHeight = 410;
 let controlHeight = 50;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
@@ -20,6 +21,7 @@ let yRange = 4;
 let pointX = 0;
 let pointY = 0;
 let showPoint = true;
+let isDraggingPoint = false;
 
 // Quiz mode
 let quizMode = false;
@@ -41,7 +43,7 @@ function setup() {
 
   updateButtonPositions();
 
-  describe('Coordinate System Explorer: Click anywhere on the coordinate plane to place a point and see its coordinates and quadrant.', LABEL);
+  describe('Coordinate System Explorer: Click to place a point or drag to move it. See coordinates and quadrant.', LABEL);
 }
 
 function updateButtonPositions() {
@@ -66,6 +68,9 @@ function draw() {
   stroke('silver');
   rect(0, drawHeight, canvasWidth, controlHeight);
 
+  // Draw the items in the center of the drawing area
+  push();
+  translate(0, 15);
   // Draw grid and axes
   drawGrid();
   drawAxes();
@@ -77,6 +82,7 @@ function draw() {
   if (showPoint && !quizMode) {
     drawPoint(pointX, pointY, color(255, 100, 100));
   }
+  pop();
 
   // Quiz mode
   if (quizMode) {
@@ -298,7 +304,7 @@ function drawControls() {
   if (quizMode) {
     text('Click where you think the point is!', 10, drawHeight + 27);
   } else {
-    text('Click to place a point', 10, drawHeight + 27);
+    text('Click to place or drag to move point', 10, drawHeight + 27);
   }
 }
 
@@ -310,14 +316,15 @@ function mousePressed() {
     return;
   }
 
-  // Check if click is in drawing area
-  if (mouseY >= margin && mouseY <= drawHeight - margin &&
+  // Check if click is in drawing area (account for translate offset of 10)
+  let adjustedMouseY = mouseY - 10;
+  if (adjustedMouseY >= margin && adjustedMouseY <= drawHeight - margin &&
       mouseX >= margin && mouseX <= canvasWidth - margin) {
 
     if (quizMode) {
       // Check answer
       let clickX = Math.round((mouseX - originX) / gridSize);
-      let clickY = Math.round((originY - mouseY) / gridSize);
+      let clickY = Math.round((originY - adjustedMouseY) / gridSize);
 
       quizCorrect = (clickX === quizPoint.x && clickY === quizPoint.y);
       showQuizFeedback = true;
@@ -328,9 +335,19 @@ function mousePressed() {
         showQuizFeedback = false;
       }, 1500);
     } else {
-      // Place point
+      // Check if clicking on existing point (for dragging)
+      if (showPoint) {
+        let pointScreenX = originX + pointX * gridSize;
+        let pointScreenY = originY - pointY * gridSize + 10;  // +10 for translate offset
+        if (dist(mouseX, mouseY, pointScreenX, pointScreenY) < 15) {
+          isDraggingPoint = true;
+          return;
+        }
+      }
+
+      // Place new point
       pointX = Math.round((mouseX - originX) / gridSize);
-      pointY = Math.round((originY - mouseY) / gridSize);
+      pointY = Math.round((originY - adjustedMouseY) / gridSize);
 
       // Constrain to visible range
       pointX = constrain(pointX, -xRange, xRange);
@@ -338,6 +355,23 @@ function mousePressed() {
       showPoint = true;
     }
   }
+}
+
+function mouseDragged() {
+  if (isDraggingPoint && !quizMode) {
+    // Update point position while dragging (account for translate offset)
+    let adjustedMouseY = mouseY - 10;
+    pointX = Math.round((mouseX - originX) / gridSize);
+    pointY = Math.round((originY - adjustedMouseY) / gridSize);
+
+    // Constrain to visible range
+    pointX = constrain(pointX, -xRange, xRange);
+    pointY = constrain(pointY, -yRange, yRange);
+  }
+}
+
+function mouseReleased() {
+  isDraggingPoint = false;
 }
 
 function toggleQuizMode() {
