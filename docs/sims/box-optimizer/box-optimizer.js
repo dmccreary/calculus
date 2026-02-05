@@ -31,7 +31,8 @@ let maxVolume;
 
 // Animation state
 let isAnimating = false;
-let animationProgress = 0;
+let animationProgress = 1; // 1 = fully folded (default), 0 = flat
+let animationDirection = 0; // -1 = unfolding, 1 = folding
 let animationSpeed = 0.02;
 
 // View mode: 'flat', '3d', or 'both'
@@ -46,8 +47,8 @@ let lengthInput = {value: '18', active: false, x: 0, y: 0, width: 50, height: 24
 let widthInput = {value: '12', active: false, x: 0, y: 0, width: 50, height: 24};
 
 // 3D rotation
-let rotationX = -0.4;
-let rotationY = 0.3;
+let rotationX = -0.55;
+let rotationY = 0.35;
 
 // Font for WEBGL text rendering
 let myFont;
@@ -75,7 +76,7 @@ function setupControls() {
     let btnWidth = 100;
 
     buttons = [
-        {label: 'Animate Fold', x: margin, y: btnY, width: btnWidth, height: btnHeight, action: 'animate'},
+        {label: 'Fold/Unfold', x: margin, y: btnY, width: btnWidth, height: btnHeight, action: 'animate'},
         {label: 'Show Optimal', x: margin + btnWidth + 10, y: btnY, width: btnWidth, height: btnHeight, action: 'optimal'},
         {label: 'Reset', x: margin + 2*(btnWidth + 10), y: btnY, width: 70, height: btnHeight, action: 'reset'}
     ];
@@ -116,8 +117,11 @@ function draw() {
 
     // Update animation
     if (isAnimating) {
-        animationProgress += animationSpeed;
-        if (animationProgress >= 1) {
+        animationProgress += animationSpeed * animationDirection;
+        if (animationProgress <= 0) {
+            animationProgress = 0;
+            isAnimating = false;
+        } else if (animationProgress >= 1) {
             animationProgress = 1;
             isAnimating = false;
         }
@@ -250,17 +254,22 @@ function draw3DBox() {
     let centerY = -canvasHeight/2 + 40 + topRowHeight/2 + 20;
 
     push();
-    translate(centerX, centerY, 0);
+    // Translate forward in z to prevent depth-clipping against the 2D panel background
+    translate(centerX, centerY, 100);
 
     // Apply rotation
     rotateX(rotationX);
     rotateY(rotationY);
 
-    // Scale factor for 3D box
-    let scale3D = min(boxViewWidth * 0.4 / max(boxLength, boxWidth), 80 / max(boxLength, boxWidth, boxHeight));
+    // Scale factor for 3D box - fit within panel with padding
+    let scale3D = min(
+        (boxViewWidth - 40) * 0.55 / max(boxLength, boxWidth),
+        (topRowHeight - 80) * 0.45 / max(boxLength, boxWidth, boxHeight)
+    );
 
-    // Animation: fold up the sides
-    let foldAngle = isAnimating || animationProgress > 0 ? animationProgress * PI/2 : PI/2;
+    // Fold angle: 0 = sides standing up (folded), PI/2 = sides lying flat (unfolded)
+    // animationProgress: 1 = folded (default), 0 = flat
+    let foldAngle = (1 - animationProgress) * PI/2;
 
     // Draw the box
     stroke(100);
@@ -775,12 +784,13 @@ function updateSliderFromMouse(mx) {
 function handleButtonClick(action) {
     if (action === 'animate') {
         isAnimating = true;
-        animationProgress = 0;
+        // Toggle: if mostly folded, unfold; if mostly unfolded, fold back
+        animationDirection = animationProgress > 0.5 ? -1 : 1;
     } else if (action === 'optimal') {
         cutSize = optimalCut;
     } else if (action === 'reset') {
         cutSize = 2;
-        animationProgress = 1;
+        animationProgress = 1; // Reset to fully folded
         isAnimating = false;
     }
 }
