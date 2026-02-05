@@ -6,7 +6,7 @@
 
 // Canvas dimensions
 let canvasWidth = 600;
-let drawHeight = 400;
+let drawHeight = 350;
 let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
