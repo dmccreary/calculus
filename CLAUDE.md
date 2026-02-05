@@ -218,6 +218,7 @@ When creating p5.js MicroSims:
 - Use canvas-based controls (draw buttons/sliders with `rect()`, `text()`, handle with `mousePressed()`/`mouseDragged()`)
 - Do NOT use p5.js DOM functions like `createButton()`, `createSlider()` as they have positioning issues in iframes
 - Always add an "Edit with the p5.js Editor" link in the index.md
+- Do NOT use p5.js constants (e.g., `TWO_PI`, `HALF_PI`, `PI`, `QUARTER_PI`) in top-level variable declarations. These constants are only available after p5.js creates its instance (after DOM load), so they are `undefined` at script parse time. Use `Math.PI` equivalents instead (e.g., `2 * Math.PI` instead of `TWO_PI`). Inside `setup()`, `draw()`, and other p5 callbacks, p5 constants are safe to use.
 
 ### Chart Layout: Preventing Title/Subtitle Overlap
 

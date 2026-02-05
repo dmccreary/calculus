@@ -10,7 +10,7 @@ social:
 ---
 # Can Optimizer
 
-<iframe src="main.html" height="552px" scrolling="no"></iframe>
+<iframe src="main.html" height="510px" scrolling="no"></iframe>
 
 [Run the Can Optimizer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
