@@ -68,7 +68,7 @@ This chapter builds on concepts from:
 
 - [Chapter 16: Mean Value Theorem and Extrema](../16-mean-value-theorem-and-extrema/index.md)
 - [Chapter 17: Derivative Tests and Concavity](../17-derivative-tests-and-concavity/index.md)
-- [Chapter 18: Curve Sketching](../18-curve-sketching-and-graphing/index.md)
+- [Chapter 18: Curve Sketching](../18-curve-sketching/index.md)
 
 ---
 

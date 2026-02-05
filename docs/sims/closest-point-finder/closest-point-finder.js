@@ -299,27 +299,30 @@ function drawPerpendicularCheck(curvePoint, cpx, cpy) {
   // Get tangent slope at current point
   let tangentSlope = getTangentSlope(curveParam);
 
-  // Draw tangent line
-  let tangentLength = 40;
-  let dx, dy;
-
-  if (!isFinite(tangentSlope) || Math.abs(tangentSlope) > 100) {
-    // Vertical tangent
-    dx = 0;
-    dy = tangentLength;
-  } else {
-    let angle = atan(tangentSlope);
-    dx = tangentLength * cos(angle);
-    dy = tangentLength * sin(angle);
-  }
-
-  // Scale for visual display
+  // Scale factors: pixels per math unit
   let scaleX = graphWidth / (xMax - xMin);
   let scaleY = graphHeight / (yMax - yMin);
 
+  // Compute tangent direction in pixel space
+  let tangentLength = 60;
+  let tdx, tdy;
+
+  if (!isFinite(tangentSlope) || Math.abs(tangentSlope) > 100) {
+    // Vertical tangent
+    tdx = 0;
+    tdy = -tangentLength;
+  } else {
+    // Math-space direction (1, slope) -> pixel-space direction (scaleX, -slope * scaleY)
+    let pxDx = scaleX;
+    let pxDy = -tangentSlope * scaleY;
+    let len = sqrt(pxDx * pxDx + pxDy * pxDy);
+    tdx = tangentLength * pxDx / len;
+    tdy = tangentLength * pxDy / len;
+  }
+
   stroke(150, 100, 200);
-  strokeWeight(2);
-  line(cpx - dx, cpy + dy * scaleY / scaleX, cpx + dx, cpy - dy * scaleY / scaleX);
+  strokeWeight(4);
+  line(cpx - tdx, cpy - tdy, cpx + tdx, cpy + tdy);
 
   // Calculate angle between connecting line and tangent
   let connectSlope = (targetY - curvePoint.y) / (targetX - curvePoint.x);
@@ -739,8 +742,7 @@ function mouseDragged() {
   if (isDraggingTarget) {
     targetX = constrain(unmapX(mouseX), xMin + 0.5, xMax - 0.5);
     targetY = constrain(unmapY(mouseY), yMin + 0.5, yMax - 0.5);
-    minDistance = null;
-    minParam = null;
+    findMinimumDistance();
     computeDistanceHistory();
   }
 

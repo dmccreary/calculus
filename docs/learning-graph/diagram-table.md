@@ -67,7 +67,7 @@ hide:
 | 9 | [Multi-Rule Derivative Builder](../chapters/09-product-quotient-transcendental-derivatives/index.md#diagram-multi-rule-derivative-builder) |  | Microsim | Not specified | 8 | Medium |  |
 | 9 | [Trig Derivative Cycle](../chapters/09-product-quotient-transcendental-derivatives/index.md#diagram-trig-derivative-cycle) |  | Microsim | Not specified | 5 | Hard |  |
 | 9 | [Trig Derivatives Reference Card](../chapters/09-product-quotient-transcendental-derivatives/index.md#diagram-trig-derivatives-reference-card) |  | Microsim | Not specified | 4 | Hard |  |
-| 9 | [e^x Self-Derivative Visualizer](../chapters/09-product-quotient-transcendental-derivatives/index.md#diagram-e^x-self-derivative-visualizer) |  | Microsim | Not specified | 6 | Hard |  |
+| 9 | [e^x Self-Derivative Visualizer](../chapters/09-product-quotient-transcendental-derivatives/index.md) |  | Microsim | Not specified | 6 | Hard |  |
 | 10 | [Chain Rule Step-Through](../chapters/10-chain-rule/index.md#diagram-chain-rule-step-through) |  | Microsim | Not specified | 7 | Medium |  |
 | 10 | [Composite Function Identifier](../chapters/10-chain-rule/index.md#diagram-composite-function-identifier) |  | Microsim | Not specified | 7 | Medium |  |
 | 10 | [Nested Chain Rule Unwrapper](../chapters/10-chain-rule/index.md#diagram-nested-chain-rule-unwrapper) |  | Microsim | Not specified | 5 | Medium |  |
@@ -82,7 +82,7 @@ hide:
 | 13 | [Direction and Speed Analyzer](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-direction-and-speed-analyzer) |  | Microsim | Not specified | 4 | Hard |  |
 | 13 | [Position-Velocity-Acceleration Relationship](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-position-velocity-acceleration-relationship) |  | Microsim | Not specified | 8 | Hard |  |
 | 13 | [Second Derivative Explorer](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-second-derivative-explorer) |  | Microsim | Not specified | 9 | Hard |  |
-| 13 | [Speeding Up/Slowing Down Analyzer](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-speeding-up-slowing-down-analyzer) |  | Microsim | Not specified | 6 | Hard |  |
+| 13 | [Speeding Up/Slowing Down Analyzer](../chapters/13-higher-order-derivatives-and-motion/index.md) |  | Microsim | Not specified | 6 | Hard |  |
 | 14 | [Balloon Inflation Simulator](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-balloon-inflation-simulator) |  | Microsim | Not specified | 5 | Hard |  |
 | 14 | [Conical Tank Draining](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-conical-tank-draining) |  | Microsim | Not specified | 5 | Hard |  |
 | 14 | [Ladder Problem Explorer](../chapters/14-related-rates-and-linear-approximation/index.md#diagram-ladder-problem-explorer) |  | Microsim | Not specified | 10 | Hard |  |

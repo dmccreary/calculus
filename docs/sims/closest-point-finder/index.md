@@ -10,7 +10,7 @@ social:
 ---
 # Closest Point Finder
 
-<iframe src="main.html" height="502px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="520px" width="100%" scrolling="no"></iframe>
 
 [Run the Closest Point Finder MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -31,7 +31,7 @@ This interactive visualization helps students explore **optimization problems** 
 1. **Drag the red target point** anywhere on the coordinate plane
 2. **Use the slider** to move a point along the selected curve
 3. **Click "Find Minimum"** to automatically locate the closest point
-4. **Toggle "Show Perp"** to see the perpendicularity verification (purple tangent line + slope calculations)
+4. **Toggle "Show Tangent & Perpendicular"** to see the perpendicularity verification (purple tangent line + slope calculations)
 5. **Select different curves** to explore various optimization scenarios
 
 ### Available Curves
@@ -74,7 +74,7 @@ By the end of this activity, students will be able to:
 2. Use the parabola y = x^2
 3. Manually slide along the curve and observe the distance values
 4. Predict where the minimum will be, then click "Find Minimum"
-5. Enable "Show Perp" and verify the perpendicularity
+5. Enable "Show Tangent & Perpendicular" and verify the perpendicularity
 
 #### Activity 2: Circle Investigation (5 minutes)
 1. Switch to the circle x^2 + y^2 = 4

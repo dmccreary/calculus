@@ -30,3 +30,13 @@
 - Reason: Original label was cryptic abbreviation; new label clearly describes both features the toggle controls (tangent line drawing and perpendicularity check)
 - Button width increased from 120px to 210px to accommodate the longer label
 - Updated in both `drawControls()` (rendering) and `mousePressed()` (hit detection)
+
+## Tangent Line Fix: 2026-02-05
+
+- Time: 2026-02-05 09:41:39
+- Issues fixed:
+  1. **Tangent line angle incorrect on wide canvases**: The old code computed the tangent direction in math-space using `atan(slope)` then mixed pixel and math offsets. Fixed by properly converting the math-space tangent direction `(1, slope)` to pixel-space `(scaleX, -slope * scaleY)`, normalizing, then scaling to desired pixel length.
+  2. **Tangent line not updating on target drag**: Dragging the red target point did not recompute the closest curve point. Fixed by calling `findMinimumDistance()` in the `mouseDragged` handler when dragging the target, so the closest point, tangent line, and perpendicular check update live.
+  3. **Tangent line strokeWeight**: Increased from 2 to 4 for better visibility.
+  4. **Tangent line length**: Increased from 40 to 60 pixels for better visibility on wide canvases.
+- Screenshot recaptured after fixes

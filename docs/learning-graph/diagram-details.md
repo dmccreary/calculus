@@ -322,7 +322,7 @@
 - **UI Elements:** 4
 - **Difficulty:** Hard
 
-### [e^x Self-Derivative Visualizer](../chapters/09-product-quotient-transcendental-derivatives/index.md#diagram-e^x-self-derivative-visualizer)
+### [e^x Self-Derivative Visualizer](../chapters/09-product-quotient-transcendental-derivatives/index.md)
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 6
@@ -428,7 +428,7 @@
 - **UI Elements:** 9
 - **Difficulty:** Hard
 
-### [Speeding Up/Slowing Down Analyzer](../chapters/13-higher-order-derivatives-and-motion/index.md#diagram-speeding-up-slowing-down-analyzer)
+### [Speeding Up/Slowing Down Analyzer](../chapters/13-higher-order-derivatives-and-motion/index.md)
 - **Type:** Microsim
 - **Bloom's Taxonomy:** Not specified
 - **UI Elements:** 6
