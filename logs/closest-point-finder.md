@@ -22,3 +22,11 @@
 - Root cause: `TWO_PI` is a p5.js global constant only available after p5 instance creation. At script parse time it is `undefined`, making `paramMax` for the circle curve `NaN`, which cascades through all `map()` and `constrain()` calls.
 - Fix: Replaced `TWO_PI` with `2 * Math.PI` (always available at parse time)
 - Screenshot recaptured after fix
+
+## UI Label Update: 2026-02-05
+
+- Time: 2026-02-05 08:58:45
+- Change: Renamed toggle button from "Show Perp: ON/OFF" to "Show Tangent & Perpendicular: ON/OFF"
+- Reason: Original label was cryptic abbreviation; new label clearly describes both features the toggle controls (tangent line drawing and perpendicularity check)
+- Button width increased from 120px to 210px to accommodate the longer label
+- Updated in both `drawControls()` (rendering) and `mousePressed()` (hit detection)

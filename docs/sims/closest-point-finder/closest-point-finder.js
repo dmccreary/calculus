@@ -556,8 +556,8 @@ function drawControls() {
     text(curves[i].name, bx + curveBtnW/2, curveBtnY + 12);
   }
 
-  // Show Perpendicular toggle
-  let toggleW = 120;
+  // Show Tangent & Perpendicular Check toggle
+  let toggleW = 210;
   let toggleH = 24;
 
   fill(showPerpendicular ? '#4CAF50' : '#e0e0e0');
@@ -569,7 +569,7 @@ function drawControls() {
   noStroke();
   textAlign(CENTER, CENTER);
   textSize(11);
-  text('Show Perp: ' + (showPerpendicular ? 'ON' : 'OFF'), toggleX + toggleW/2, toggleY + toggleH/2);
+  text('Show Tangent & Perpendicular: ' + (showPerpendicular ? 'ON' : 'OFF'), toggleX + toggleW/2, toggleY + toggleH/2);
 }
 
 // Curve functions
@@ -726,7 +726,7 @@ function mousePressed() {
   }
 
   // Check perpendicular toggle
-  let toggleW = 120;
+  let toggleW = 210;
   let toggleH = 24;
   if (mouseX >= toggleX && mouseX <= toggleX + toggleW &&
       mouseY >= toggleY && mouseY <= toggleY + toggleH) {
