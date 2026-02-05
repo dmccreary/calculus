@@ -31,7 +31,8 @@ let maxVolume;
 
 // Animation state
 let isAnimating = false;
-let animationProgress = 0;
+let animationProgress = 1; // 1 = fully folded (default), 0 = flat
+let animationDirection = 0; // -1 = unfolding, 1 = folding
 let animationSpeed = 0.02;
 
 // View mode: 'flat', '3d', or 'both'
@@ -46,13 +47,21 @@ let lengthInput = {value: '18', active: false, x: 0, y: 0, width: 50, height: 24
 let widthInput = {value: '12', active: false, x: 0, y: 0, width: 50, height: 24};
 
 // 3D rotation
-let rotationX = -0.4;
-let rotationY = 0.3;
+let rotationX = -0.55;
+let rotationY = 0.35;
+
+// Font for WEBGL text rendering
+let myFont;
+
+function preload() {
+    myFont = loadFont('https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/font/SourceSansPro-Regular.otf');
+}
 
 function setup() {
     updateCanvasSize();
     const canvas = createCanvas(canvasWidth, canvasHeight, WEBGL);
     canvas.parent(document.querySelector('main'));
+    textFont(myFont);
 
     calculateOptimal();
     setupControls();
@@ -67,7 +76,7 @@ function setupControls() {
     let btnWidth = 100;
 
     buttons = [
-        {label: 'Animate Fold', x: margin, y: btnY, width: btnWidth, height: btnHeight, action: 'animate'},
+        {label: 'Fold/Unfold', x: margin, y: btnY, width: btnWidth, height: btnHeight, action: 'animate'},
         {label: 'Show Optimal', x: margin + btnWidth + 10, y: btnY, width: btnWidth, height: btnHeight, action: 'optimal'},
         {label: 'Reset', x: margin + 2*(btnWidth + 10), y: btnY, width: 70, height: btnHeight, action: 'reset'}
     ];
@@ -108,8 +117,11 @@ function draw() {
 
     // Update animation
     if (isAnimating) {
-        animationProgress += animationSpeed;
-        if (animationProgress >= 1) {
+        animationProgress += animationSpeed * animationDirection;
+        if (animationProgress <= 0) {
+            animationProgress = 0;
+            isAnimating = false;
+        } else if (animationProgress >= 1) {
             animationProgress = 1;
             isAnimating = false;
         }
@@ -195,17 +207,14 @@ function drawFlatView() {
     // Draw dashed fold lines
     stroke(50, 50, 200);
     strokeWeight(1);
-    drawingContext.setLineDash([5, 5]);
 
     // Vertical fold lines
-    line(xs, xs, xs, (cardboardWidth - x) * scale);
-    line((cardboardLength - x) * scale, xs, (cardboardLength - x) * scale, (cardboardWidth - x) * scale);
+    dashedLine(xs, xs, xs, (cardboardWidth - x) * scale, 5, 5);
+    dashedLine((cardboardLength - x) * scale, xs, (cardboardLength - x) * scale, (cardboardWidth - x) * scale, 5, 5);
 
     // Horizontal fold lines
-    line(xs, xs, (cardboardLength - x) * scale, xs);
-    line(xs, (cardboardWidth - x) * scale, (cardboardLength - x) * scale, (cardboardWidth - x) * scale);
-
-    drawingContext.setLineDash([]);
+    dashedLine(xs, xs, (cardboardLength - x) * scale, xs, 5, 5);
+    dashedLine(xs, (cardboardWidth - x) * scale, (cardboardLength - x) * scale, (cardboardWidth - x) * scale, 5, 5);
 
     // Dimension labels
     fill(0);
@@ -245,17 +254,22 @@ function draw3DBox() {
     let centerY = -canvasHeight/2 + 40 + topRowHeight/2 + 20;
 
     push();
-    translate(centerX, centerY, 0);
+    // Translate forward in z to prevent depth-clipping against the 2D panel background
+    translate(centerX, centerY, 100);
 
     // Apply rotation
     rotateX(rotationX);
     rotateY(rotationY);
 
-    // Scale factor for 3D box
-    let scale3D = min(boxViewWidth * 0.4 / max(boxLength, boxWidth), 80 / max(boxLength, boxWidth, boxHeight));
+    // Scale factor for 3D box - fit within panel with padding
+    let scale3D = min(
+        (boxViewWidth - 40) * 0.55 / max(boxLength, boxWidth),
+        (topRowHeight - 80) * 0.45 / max(boxLength, boxWidth, boxHeight)
+    );
 
-    // Animation: fold up the sides
-    let foldAngle = isAnimating || animationProgress > 0 ? animationProgress * PI/2 : PI/2;
+    // Fold angle: 0 = sides standing up (folded), PI/2 = sides lying flat (unfolded)
+    // animationProgress: 1 = folded (default), 0 = flat
+    let foldAngle = (1 - animationProgress) * PI/2;
 
     // Draw the box
     stroke(100);
@@ -268,8 +282,8 @@ function draw3DBox() {
     box(boxLength * scale3D, 2, boxWidth * scale3D);
     pop();
 
-    // Sides (fold animation)
-    if (foldAngle > 0) {
+    // Sides (always drawn; foldAngle=0 means standing up, PI/2 means lying flat)
+    {
         // Front side
         push();
         translate(0, boxHeight * scale3D / 2, boxWidth * scale3D / 2);
@@ -425,9 +439,7 @@ function drawVolumeGraph() {
     // Vertical line to current point
     stroke(200, 0, 0);
     strokeWeight(1);
-    drawingContext.setLineDash([3, 3]);
-    line(curX, gY + gHeight, curX, curY);
-    drawingContext.setLineDash([]);
+    dashedLine(curX, gY + gHeight, curX, curY, 3, 3);
 
     // Current point marker
     fill(200, 0, 0);
@@ -672,6 +684,19 @@ function drawDimensionInputs() {
     text('inches', widthInput.x + widthInput.width + 8, inputY + 10);
 }
 
+function dashedLine(x1, y1, x2, y2, dashLen, gapLen) {
+    let d = dist(x1, y1, x2, y2);
+    if (d === 0) return;
+    let dx = (x2 - x1) / d;
+    let dy = (y2 - y1) / d;
+    let pos = 0;
+    while (pos < d) {
+        let endPos = min(pos + dashLen, d);
+        line(x1 + dx * pos, y1 + dy * pos, x1 + dx * endPos, y1 + dy * endPos);
+        pos = endPos + gapLen;
+    }
+}
+
 function calculateVolume(x) {
     let l = cardboardLength - 2*x;
     let w = cardboardWidth - 2*x;
@@ -705,15 +730,10 @@ function calculateOptimal() {
 }
 
 function isMouseOverButton(btn) {
-    let mx = mouseX + canvasWidth/2;
-    let my = mouseY + canvasHeight/2;
-    return mx > btn.x && mx < btn.x + btn.width && my > btn.y && my < btn.y + btn.height;
+    return mouseX > btn.x && mouseX < btn.x + btn.width && mouseY > btn.y && mouseY < btn.y + btn.height;
 }
 
 function mousePressed() {
-    let mx = mouseX + canvasWidth/2;
-    let my = mouseY + canvasHeight/2;
-
     // Check buttons
     for (let btn of buttons) {
         if (isMouseOverButton(btn)) {
@@ -724,19 +744,19 @@ function mousePressed() {
 
     // Check slider
     let sliderY = drawHeight + 55;
-    if (mx > slider.x && mx < slider.x + slider.width &&
-        my > sliderY && my < sliderY + 24) {
+    if (mouseX > slider.x && mouseX < slider.x + slider.width &&
+        mouseY > sliderY && mouseY < sliderY + 24) {
         slider.dragging = true;
-        updateSliderFromMouse(mx);
+        updateSliderFromMouse(mouseX);
     }
 
     // Check dimension inputs
-    if (mx > lengthInput.x && mx < lengthInput.x + lengthInput.width &&
-        my > lengthInput.y && my < lengthInput.y + lengthInput.height) {
+    if (mouseX > lengthInput.x && mouseX < lengthInput.x + lengthInput.width &&
+        mouseY > lengthInput.y && mouseY < lengthInput.y + lengthInput.height) {
         lengthInput.active = true;
         widthInput.active = false;
-    } else if (mx > widthInput.x && mx < widthInput.x + widthInput.width &&
-               my > widthInput.y && my < widthInput.y + widthInput.height) {
+    } else if (mouseX > widthInput.x && mouseX < widthInput.x + widthInput.width &&
+               mouseY > widthInput.y && mouseY < widthInput.y + widthInput.height) {
         widthInput.active = true;
         lengthInput.active = false;
     } else {
@@ -747,8 +767,7 @@ function mousePressed() {
 
 function mouseDragged() {
     if (slider.dragging) {
-        let mx = mouseX + canvasWidth/2;
-        updateSliderFromMouse(mx);
+        updateSliderFromMouse(mouseX);
     }
 }
 
@@ -765,12 +784,13 @@ function updateSliderFromMouse(mx) {
 function handleButtonClick(action) {
     if (action === 'animate') {
         isAnimating = true;
-        animationProgress = 0;
+        // Toggle: if mostly folded, unfold; if mostly unfolded, fold back
+        animationDirection = animationProgress > 0.5 ? -1 : 1;
     } else if (action === 'optimal') {
         cutSize = optimalCut;
     } else if (action === 'reset') {
         cutSize = 2;
-        animationProgress = 1;
+        animationProgress = 1; // Reset to fully folded
         isAnimating = false;
     }
 }
