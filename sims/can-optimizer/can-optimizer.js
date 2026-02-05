@@ -17,7 +17,7 @@ let defaultTextSize = 14;
 
 // 3D View area (left side)
 let view3DWidth = 280;
-let view3DHeight = 300;
+let view3DHeight = 250;
 let view3DLeft = 20;
 let view3DTop = 55;
 
@@ -40,7 +40,6 @@ let minSurfaceArea = 0;
 
 // UI State
 let showBreakdown = true;
-let compareMode = false;
 
 // Control buttons
 let buttons = [];
@@ -50,15 +49,22 @@ let volumeInput = { x: 0, y: 0, w: 80, h: 24, value: "1000", active: false };
 // Rotation for 3D view
 let rotationY = 0;
 
+// Font for WEBGL mode
+let myFont;
+
+function preload() {
+  myFont = loadFont('https://cdnjs.cloudflare.com/ajax/libs/topcoat/0.8.0/font/SourceSansPro-Regular.otf');
+}
+
 function setup() {
   updateCanvasSize();
-  createCanvas(canvasWidth, canvasHeight, WEBGL);
+  var cnv = createCanvas(canvasWidth, canvasHeight, WEBGL);
   var mainElement = document.querySelector('main');
   if (mainElement) {
-    canvas.parent(mainElement);
+    cnv.parent(mainElement);
   }
 
-  textFont('Arial');
+  textFont(myFont);
 
   // Initialize calculations
   calculateOptimal();
@@ -159,8 +165,8 @@ function draw3DView() {
   // Push matrix for 3D cylinder
   push();
 
-  // Move to center of 3D view area
-  translate(view3DLeft + view3DWidth/2, view3DTop + view3DHeight/2 + 20, 0);
+  // Move to center of 3D view area (z=100 to prevent depth-clipping against 2D panels)
+  translate(view3DLeft + view3DWidth/2, view3DTop + view3DHeight/2 + 20, 100);
 
   // Apply rotation
   rotateX(0.4);
@@ -365,9 +371,7 @@ function drawGraph() {
 
   stroke(220, 50, 50);
   strokeWeight(1);
-  setLineDash([5, 5]);
-  line(currX, graphTop, currX, graphBottom);
-  setLineDash([]);
+  dashedLine(currX, graphTop, currX, graphBottom, 5);
 
   // Current point
   fill(220, 50, 50);
@@ -381,8 +385,17 @@ function drawGraph() {
   text('Current', currX, graphTop - 2);
 }
 
-function setLineDash(pattern) {
-  drawingContext.setLineDash(pattern);
+function dashedLine(x1, y1, x2, y2, dashLen) {
+  let d = dist(x1, y1, x2, y2);
+  let steps = floor(d / dashLen);
+  for (let i = 0; i < steps; i += 2) {
+    let t1 = i / steps;
+    let t2 = min((i + 1) / steps, 1);
+    line(
+      lerp(x1, x2, t1), lerp(y1, y2, t1),
+      lerp(x1, x2, t2), lerp(y1, y2, t2)
+    );
+  }
 }
 
 function drawDataPanel() {
@@ -518,13 +531,6 @@ function drawControls() {
     highlight: true
   });
 
-  // Compare button
-  buttons.push({
-    x: 280, y: row2Y, w: 90, h: 28,
-    label: compareMode ? 'Hide Compare' : 'Compare',
-    action: () => { compareMode = !compareMode; }
-  });
-
   // Draw buttons
   for (let btn of buttons) {
     // Button background
@@ -545,66 +551,11 @@ function drawControls() {
     text(btn.label, btn.x + btn.w/2, btn.y + btn.h/2);
   }
 
-  // Row 3: Compare mode visualization
-  if (compareMode) {
-    let row3Y = row2Y + 40;
-    drawComparisonCans(row3Y);
-  }
-
   // Help text
   textSize(11);
   fill(100);
   textAlign(LEFT, CENTER);
-  let helpY = row2Y + (compareMode ? 78 : 45);
-  text('Drag the slider to explore how radius affects surface area. The optimal radius minimizes material used.', 20, helpY);
-}
-
-function drawComparisonCans(y) {
-  // Draw three small cans: tall/thin, optimal, short/wide
-  let canY = y + 20;
-  let canHeight = 50;
-
-  // Positions
-  let positions = [
-    { x: 420, r: optimalRadius * 0.5, label: 'Tall & Thin' },
-    { x: 530, r: optimalRadius, label: 'Optimal' },
-    { x: 640, r: optimalRadius * 1.5, label: 'Short & Wide' }
-  ];
-
-  textAlign(CENTER, TOP);
-  textSize(10);
-
-  for (let pos of positions) {
-    let h = volume / (PI * pos.r * pos.r);
-    let sa = surfaceArea(pos.r);
-
-    // Scale for display
-    let displayR = map(pos.r, 0, maxRadius, 10, 40);
-    let displayH = map(h, 0, 100, 20, 60);
-    displayR = constrain(displayR, 10, 40);
-    displayH = constrain(displayH, 15, 60);
-
-    // Draw simplified can (2D representation)
-    let isOptimal = Math.abs(pos.r - optimalRadius) < 0.1;
-    fill(isOptimal ? 150 : 200, isOptimal ? 220 : 200, isOptimal ? 150 : 200);
-    stroke(isOptimal ? 80 : 150, isOptimal ? 160 : 150, isOptimal ? 80 : 150);
-    strokeWeight(2);
-
-    // Body
-    rect(pos.x - displayR, canY - displayH/2, displayR * 2, displayH, 3);
-
-    // Top ellipse
-    ellipse(pos.x, canY - displayH/2, displayR * 2, displayR * 0.5);
-
-    // Label
-    fill(0);
-    noStroke();
-    text(pos.label, pos.x, canY + displayH/2 + 5);
-    textSize(9);
-    fill(80);
-    text('S=' + sa.toFixed(0), pos.x, canY + displayH/2 + 18);
-    textSize(10);
-  }
+  text('Drag the slider to explore how radius affects surface area. The optimal radius minimizes material used.', 20, row2Y + 45);
 }
 
 function mousePressed() {

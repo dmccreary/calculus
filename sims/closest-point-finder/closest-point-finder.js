@@ -42,7 +42,7 @@ let maxHistoryPoints = 200;
 const curves = [
   { name: 'y = x\u00B2', paramMin: -2.5, paramMax: 2.5 },
   { name: 'y = x\u00B3', paramMin: -1.8, paramMax: 1.8 },
-  { name: 'x\u00B2+y\u00B2=4', paramMin: 0, paramMax: TWO_PI },
+  { name: 'x\u00B2+y\u00B2=4', paramMin: 0, paramMax: 2 * Math.PI },
   { name: 'y = sin(x)', paramMin: -3.5, paramMax: 3.5 }
 ];
 
