@@ -134,7 +134,7 @@ Think of this chapter as gathering your gear before a hiking trip. You wouldn't 
 
 A **function** is a rule that assigns exactly one output to each input. If you think of it as a machine, you feed in a number, the machine does something to it, and out pops exactly one result.
 
-#### The Function Machine
+#### Diagram: The Function Machine
 
 <iframe src="../../sims/function-machine/main.html" width="100%" height="450px" scrolling="no" style="border: none;"></iframe>
 
