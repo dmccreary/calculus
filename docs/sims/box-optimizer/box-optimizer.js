@@ -282,8 +282,8 @@ function draw3DBox() {
     box(boxLength * scale3D, 2, boxWidth * scale3D);
     pop();
 
-    // Sides (fold animation)
-    if (foldAngle > 0) {
+    // Sides (always drawn; foldAngle=0 means standing up, PI/2 means lying flat)
+    {
         // Front side
         push();
         translate(0, boxHeight * scale3D / 2, boxWidth * scale3D / 2);

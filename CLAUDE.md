@@ -264,6 +264,29 @@ graphTop = 70;  // Must be >= 70 when y-axis label is at graphTop - 10
 - `chartTop >= subtitle_y + subtitle_textSize + 8` (8px minimum clearance)
 - If y-axis label is at `chartTop - offset`, then `chartTop >= subtitle_bottom + offset + 8`
 
+### WEBGL Mode: 3D Folding Box Animations
+
+When creating p5.js MicroSims that mix 2D panels with 3D WEBGL rendering (e.g., folding box optimizers):
+
+**Font and drawing context:**
+- WEBGL mode requires `loadFont()` in `preload()` and `textFont()` in `setup()` before any `text()` calls
+- `drawingContext.setLineDash()` does not exist in WEBGL — use a custom `dashedLine()` helper that draws segments with `line()`
+
+**Mouse coordinates:**
+- `mouseX`/`mouseY` are always relative to the canvas top-left (0 to width) regardless of renderer mode — do NOT add `canvasWidth/2` or `canvasHeight/2` offsets for hit detection
+
+**Mixed 2D/3D depth:**
+- Translate 3D objects forward in z (e.g., `translate(x, y, 100)`) to prevent depth-buffer clipping against 2D panel backgrounds drawn at z=0
+
+**Fold animation geometry:**
+- Side walls positioned via `translate()` without rotation stand upright (folded) by default
+- `rotateX()`/`rotateZ()` with increasing angle lays sides flat (unfolded)
+- Therefore `foldAngle=0` is the **folded** state and `foldAngle=PI/2` is the **flat** state
+- Never guard side drawing with `if (foldAngle > 0)` — this hides all sides in the folded state
+- Default to folded on startup: `animationProgress = 1` with `foldAngle = (1 - animationProgress) * PI/2`
+
+See `logs/box-optimizer.md` (Debug Session: 2026-02-05) for the full debugging session log.
+
 ## vis-network Notes
 
 There's a rendering bug with edge labels on perfectly horizontal edges. Use a slight y-offset (e.g., from 480 to 490) to give edges enough angle for labels to render on initial load.
