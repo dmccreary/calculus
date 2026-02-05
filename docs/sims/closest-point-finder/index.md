@@ -14,7 +14,7 @@ social:
 
 [Run the Closest Point Finder MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
-[Edit the Closest Point Finder MicroSim with the p5.js editor](https://editor.p5js.org/)
+[Edit the Closest Point Finder MicroSim with the p5.js editor](https://editor.p5js.org/dmccreary/sketches/8IhmoSVkf)
 
 ## About This MicroSim
 
