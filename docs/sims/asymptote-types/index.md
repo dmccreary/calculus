@@ -37,7 +37,9 @@ This visualization helps you differentiate between the three types of asymptotes
 Place the following line in your website to include this simulation:
 
 ```html
-<iframe src="https://dmccreary.github.io/calculus/sims/asymptote-types/main.html" height="482px" scrolling="no"></iframe>
+<iframe src="https://dmccreary.github.io/calculus/sims/asymptote-types/main.html"
+   width ="100%" height="482px" scrolling="no">
+</iframe>
 ```
 
 ## Lesson Plan
