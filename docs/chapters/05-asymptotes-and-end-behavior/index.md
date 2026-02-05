@@ -644,3 +644,5 @@ You now understand how functions behave at their extremes. In Chapter 6, we'll f
     2. This is polynomial (degree 3) divided by exponential. Exponential dominates, so $\lim_{x \to \infty} \frac{5x^3 + 2x}{e^x} = 0$.
 
     3. Leading term is $-3x^4$. The coefficient is negative and the degree is even, so both ends go down: as $x \to \pm\infty$, $g(x) \to -\infty$. End behavior: $\downarrow \downarrow$.
+
+[See Annotated References](./references.md)

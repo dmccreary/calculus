@@ -1220,3 +1220,5 @@ Before moving on, make sure you can:
     This is exactly the kind of question that limits will help us answer precisely!
     The function isn't defined at $x = 2$, but it "wants" to equal 4 there.
 
+
+[See Annotated References](./references.md)

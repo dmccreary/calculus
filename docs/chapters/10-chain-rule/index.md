@@ -613,3 +613,5 @@ $$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
     $$= -2x\tan(x^2)$$
 
     **Answer:** $-2x\tan(x^2)$
+
+[See Annotated References](./references.md)

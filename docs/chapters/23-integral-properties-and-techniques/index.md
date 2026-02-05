@@ -1004,3 +1004,5 @@ $$\int \left(x + 1 + \frac{2}{x - 1}\right) dx = \frac{x^2}{2} + x + 2\ln|x - 1|
     **Find c where $f(c) = 7$:** $c^2 = 7 \implies c = \sqrt{7} \approx 2.65$
 
     Since $\sqrt{7}$ is in $(1, 4)$, the MVT for Integrals is verified.
+
+[See Annotated References](./references.md)

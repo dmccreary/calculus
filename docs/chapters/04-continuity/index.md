@@ -635,3 +635,5 @@ You now understand what it means for a function to be continuous and how to prov
     2. No, $f$ is not continuous at 3 because $\lim_{x \to 3} f(x) = 5 \neq 7 = f(3)$. This is a **removable discontinuity** because the limit exists; the function value just doesn't match.
 
     3. Let $g(x) = \cos x - x$. This is continuous (difference of continuous functions). We have $g(0) = \cos(0) - 0 = 1 > 0$ and $g(1) = \cos(1) - 1 \approx 0.54 - 1 = -0.46 < 0$. Since $g$ is continuous and $g(0) > 0 > g(1)$, by the IVT there exists $c \in (0, 1)$ with $g(c) = 0$, meaning $\cos c = c$.
+
+[See Annotated References](./references.md)

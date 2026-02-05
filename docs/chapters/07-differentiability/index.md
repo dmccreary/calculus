@@ -659,3 +659,5 @@ Let's put together what we've learned about when functions are differentiable:
     By similar reasoning, the function is not differentiable at $x = -2$.
 
     **Answer:** $f$ is not differentiable at $x = -2$ and $x = 2$.
+
+[See Annotated References](./references.md)

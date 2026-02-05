@@ -794,3 +794,5 @@ These theorems form the theoretical backbone for optimization—finding the best
 
     **Global minimum:** $f(3) = -27$ (achieved at interior critical point)
 
+
+[See Annotated References](./references.md)

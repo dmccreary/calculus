@@ -590,3 +590,5 @@ You now have a solid toolkit for evaluating limits. In Chapter 4, we'll use thes
     2. Factor: $\frac{x^2 - 16}{x - 4} = \frac{(x+4)(x-4)}{x-4} = x + 4$ for $x \neq 4$. So $\lim_{x \to 4} \frac{x^2 - 16}{x - 4} = 4 + 4 = 8$.
 
     3. The limit $\lim_{x \to 0} \frac{\sin x}{x} = 1$ relies on the relationship between arc length and the sine function on the unit circle. This geometric relationship only works when angles are measured in radians. In degrees, the limit would be $\frac{\pi}{180}$.
+
+[See Annotated References](./references.md)

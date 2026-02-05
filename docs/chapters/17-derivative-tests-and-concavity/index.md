@@ -924,3 +924,5 @@ For absolute extrema on $[a, b]$:
 ## Looking Ahead
 
 In the next chapter, you'll apply these analysis skills to **optimization problems** - finding the absolute best values in real-world situations. You'll see how derivatives help us minimize costs, maximize profits, and find the most efficient designs. The tools you've built here are exactly what you need!
+
+[See Annotated References](./references.md)

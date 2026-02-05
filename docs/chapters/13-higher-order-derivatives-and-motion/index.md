@@ -705,3 +705,5 @@ Let's visualize the complete picture:
     **Answer:** The ball is speeding up for $t > 1.5$ seconds (after it reaches the peak and starts falling back down).
 
     This makes physical sense: on the way up, gravity slows the ball. After the peak, gravity speeds the ball up as it falls.
+
+[See Annotated References](./references.md)

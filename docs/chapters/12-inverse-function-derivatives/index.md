@@ -632,3 +632,5 @@ With these tools, you can now differentiate virtually any combination of functio
 
 In the next chapter, we'll apply all our derivative techniques to solve **related rates problems**—situations where multiple quantities change together, and we need to find how fast one is changing based on another. Delta will be measuring shadows, filling tanks, and chasing moving objects!
 
+
+[See Annotated References](./references.md)

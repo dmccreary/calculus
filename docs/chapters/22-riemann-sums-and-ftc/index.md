@@ -1140,3 +1140,5 @@ This chapter covered the essential bridge between differential and integral calc
     $= (100 - 25) - 0 = 75$ gallons
 
     **Answer: 75 gallons**
+
+[See Annotated References](./references.md)

@@ -829,3 +829,5 @@ $(f^{-1})'(3) = \frac{1}{f'(1)} = \frac{1}{5}$
     $$\frac{dy}{dx} = \frac{1 - ye^{xy}}{xe^{xy} - 1}$$
 
     **Answer:** $\frac{dy}{dx} = \frac{1 - ye^{xy}}{xe^{xy} - 1}$
+
+[See Annotated References](./references.md)

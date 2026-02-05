@@ -1223,3 +1223,5 @@ Before moving on, make sure you can:
 
     Note: Because the side material costs less than the top/bottom material,
     the optimal can is taller and narrower than the equal-cost case!
+
+[See Annotated References](./references.md)

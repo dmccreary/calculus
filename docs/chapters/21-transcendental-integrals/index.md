@@ -837,3 +837,5 @@ $$= \frac{1}{9} \cdot \frac{1}{\frac{9+x^2}{9}} = \frac{1}{9} \cdot \frac{9}{9+x
 With your transcendental integration toolkit complete, you're ready for the next major milestone: **Riemann sums and the Fundamental Theorem of Calculus**. This theorem reveals the profound connection between derivatives and integrals—and shows why the area under a curve is computed by antiderivatives.
 
 Delta will discover that all her slope measurements (derivatives) and distance tracking (integrals) are two sides of the same mathematical coin!
+
+[See Annotated References](./references.md)

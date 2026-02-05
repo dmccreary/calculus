@@ -699,3 +699,5 @@ Here's your integration toolkit from this chapter:
     $$f(x) = 2x^2 + \cos x + 1$$
 
     **Verify:** $f'(x) = 4x - \sin x$ ✓ and $f(0) = 0 + 1 + 1 = 2$ ✓
+
+[See Annotated References](./references.md)

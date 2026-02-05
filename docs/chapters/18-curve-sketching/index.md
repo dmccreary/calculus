@@ -1036,3 +1036,5 @@ Let's summarize the essential ideas from this chapter.
 
 Now that you can analyze and sketch curves completely, you're ready to apply these skills to solve real-world problems. In the next chapter, we'll tackle **optimization**—finding the absolute best solutions by combining curve analysis with practical constraints. Get ready to find maximum profit, minimum cost, and optimal dimensions!
 
+
+[See Annotated References](./references.md)

@@ -658,3 +658,5 @@ Here's your complete toolkit:
     $$= \frac{e^x[(x-1)\sin x + x\cos x]}{x^2}$$
 
     **Answer:** $\frac{e^x[(x-1)\sin x + x\cos x]}{x^2}$
+
+[See Annotated References](./references.md)

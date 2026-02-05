@@ -640,3 +640,5 @@ Here's your complete toolkit from this chapter:
     **Answer:** $2x + 2$
 
     Alternatively, using the quotient rule directly would give the same answer, but with much more algebra!
+
+[See Annotated References](./references.md)

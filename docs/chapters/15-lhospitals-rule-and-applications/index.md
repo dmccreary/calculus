@@ -709,3 +709,5 @@ With L'Hospital's Rule mastered, you now have powerful tools for evaluating comp
     3. $C'(x) = 15 + 0.04x$. At $x = 200$: $C'(200) = 15 + 0.04(200) = 23$ dollars/unit. Interpretation: When producing 200 units, the 201st unit costs approximately $23 to produce.
 
     4. This is a $0^0$ form. Let $y = x^x$, so $\ln y = x \ln x$. As $x \to 0^+$, this is $0 \cdot (-\infty)$, which can be rewritten as $\ln y = \frac{\ln x}{1/x}$, giving $\frac{-\infty}{\infty}$. Now L'Hospital's Rule can be applied to find $\lim_{x \to 0^+} \ln y$, and then $\lim_{x \to 0^+} x^x = e^{\lim \ln y}$.
+
+[See Annotated References](./references.md)

@@ -567,3 +567,5 @@ You've built a solid foundation for understanding limits. But what happens when 
     1. $f(2)$ is the actual value of the function at $x = 2$, while $\lim_{x \to 2} f(x)$ is the value the function *approaches* as $x$ gets close to 2. These can be different (or $f(2)$ might not even exist).
     2. The limit does not exist because the one-sided limits are different.
     3. True! When direct substitution produces a real number, that is the limit value.
+
+[See Annotated References](./references.md)

@@ -596,3 +596,5 @@ The derivative transforms the intuitive idea of "rate of change" into a precise 
     $f'(2) = 2(2) - 4 = 0$
 
     The derivative is 0 at $x = 2$, which means the tangent line is horizontal there. This point is a critical point of the function!
+
+[See Annotated References](./references.md)
