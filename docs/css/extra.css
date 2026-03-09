@@ -130,8 +130,10 @@
 /* ---- Delta mascot image floated left of admonition body text ---- */
 .delta-admonition-img {
   float: left;
+  /* here you can set the size of all the mascot images - adjust as needed */
   width: 90px;
   height: 90px;
+  /* the order is top, right, bottom, left - we only need a margin on the right */
   margin: 0 0.5em 0 0;
   object-fit: contain;
 }
