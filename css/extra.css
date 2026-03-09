@@ -48,35 +48,90 @@
   background-color: #0041a4; /* Darker blue on hover */
 }
 
-/* Delta Moment admonitions - triangular robot mascot icon */
-.admonition.delta-moment {
-  position: relative;
-  border-left-color: #009688 !important; /* Teal accent for Delta */
+/* ============================================
+   Delta Mascot Admonitions
+   Pose-specific accent colors for quote admonitions
+   ============================================ */
+
+/* ---- Shared base for all Delta admonitions ---- */
+.md-typeset .admonition.delta-welcome,
+.md-typeset .admonition.delta-thinking,
+.md-typeset .admonition.delta-tip,
+.md-typeset .admonition.delta-warning,
+.md-typeset .admonition.delta-celebration,
+.md-typeset .admonition.delta-encouraging,
+.md-typeset .admonition.delta-neutral {
+  font-size: inherit;
 }
 
-.admonition.delta-moment > .admonition-title {
+/* ---- Welcome (chapter openings) — forest green ---- */
+.admonition.delta-welcome {
+  border-left-color: #2e7d32 !important;
+  background-color: #e8f5e9 !important;
+}
+.admonition.delta-welcome > .admonition-title {
+  background-color: rgba(46, 125, 50, 0.1) !important;
+}
+
+/* ---- Thinking (key concepts, Delta Moments) — warm orange ---- */
+.admonition.delta-thinking {
+  border-left-color: #f57c00 !important;
+  background-color: #fff3e0 !important;
+}
+.admonition.delta-thinking > .admonition-title {
+  background-color: rgba(245, 124, 0, 0.1) !important;
+}
+
+/* ---- Tip (hints, sidequests) — teal ---- */
+.admonition.delta-tip {
+  border-left-color: #009688 !important;
+  background-color: #e0f2f1 !important;
+}
+.admonition.delta-tip > .admonition-title {
   background-color: rgba(0, 150, 136, 0.1) !important;
 }
 
-.admonition.delta-moment::after {
-  content: "";
-  position: absolute;
-  top: 3px;
-  right: 12px;
-  width: 32px;
-  height: 32px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3C!-- Delta: Triangular slope-walking robot --%3E%3C!-- Main triangle body - tilted to show slope --%3E%3Cpolygon points='32,8 52,52 12,52' fill='%23009688' stroke='%23006064' stroke-width='2' transform='rotate(5 32 36)'/%3E%3C!-- Face plate --%3E%3Crect x='22' y='28' width='20' height='12' rx='2' fill='%23fff' transform='rotate(5 32 34)'/%3E%3C!-- Eyes - curious expression --%3E%3Ccircle cx='27' cy='33' r='2.5' fill='%23ff5722'/%3E%3Ccircle cx='37' cy='34' r='2.5' fill='%23ff5722'/%3E%3C!-- Small wheels at base vertices --%3E%3Ccircle cx='14' cy='54' r='4' fill='%23555' stroke='%23333' stroke-width='1.5'/%3E%3Ccircle cx='50' cy='54' r='4' fill='%23555' stroke='%23333' stroke-width='1.5'/%3E%3C!-- Antenna --%3E%3Cline x1='33' y1='10' x2='38' y2='4' stroke='%23333' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='39' cy='3' r='2.5' fill='%23ff5722'/%3E%3C!-- Slope indicator on left edge - glowing --%3E%3Cline x1='14' y1='50' x2='31' y2='12' stroke='%2300e676' stroke-width='3' stroke-linecap='round' opacity='0.8'/%3E%3C/svg%3E");
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.85;
+/* ---- Warning (common mistakes) — red ---- */
+.admonition.delta-warning {
+  border-left-color: #c62828 !important;
+  background-color: #ffebee !important;
+}
+.admonition.delta-warning > .admonition-title {
+  background-color: rgba(198, 40, 40, 0.1) !important;
 }
 
-/* Adjust icon position for smaller screens */
-@media (max-width: 600px) {
-  .admonition.delta-moment::after {
-    width: 24px;
-    height: 24px;
-    top: 1px;
-    right: 8px;
-  }
+/* ---- Celebration (achievements, pun corner) — purple ---- */
+.admonition.delta-celebration {
+  border-left-color: #6a1b9a !important;
+  background-color: #f3e5f5 !important;
+}
+.admonition.delta-celebration > .admonition-title {
+  background-color: rgba(106, 27, 154, 0.1) !important;
+}
+
+/* ---- Encouraging (difficult content) — blue ---- */
+.admonition.delta-encouraging {
+  border-left-color: #0277bd !important;
+  background-color: #e1f5fe !important;
+}
+.admonition.delta-encouraging > .admonition-title {
+  background-color: rgba(2, 119, 189, 0.1) !important;
+}
+
+/* ---- Neutral (general purpose) — slate gray ---- */
+.admonition.delta-neutral {
+  border-left-color: #546e7a !important;
+  background-color: #eceff1 !important;
+}
+.admonition.delta-neutral > .admonition-title {
+  background-color: rgba(84, 110, 122, 0.1) !important;
+}
+
+/* ---- Delta mascot image floated left of admonition body text ---- */
+.delta-admonition-img {
+  float: left;
+  width: 90px;
+  height: 90px;
+  margin: 0 0.5em 0 0;
+  object-fit: contain;
 }
