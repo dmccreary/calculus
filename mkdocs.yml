@@ -248,6 +248,7 @@ nav:
     - Quiz Generation Report: learning-graph/quiz-generation-report.md
     - Parallel Execution Report: learning-graph/parallel-execution-report.md
     - Generate MicroSims in Parallel: learning-graph/generate-microsims-in-parallel.md
+    - Mascot Test: learning-graph/mascot-test.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
