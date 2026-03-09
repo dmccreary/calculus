@@ -41,6 +41,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 21 — Transcendental Integrals! My integration backpack is about to get a serious upgrade. We're going beyond polynomials to tackle exponentials, logarithms, and those sneaky inverse trig integrals. By the end, you'll have the complete antiderivative toolkit. Let's roll!"
+
 ## Introduction: Beyond Polynomials
 
 In Chapter 20, you learned to integrate polynomials using the power rule. But polynomials are just the beginning! The real world is full of waves, spirals, exponential growth, and decay—phenomena described by trigonometric, exponential, and logarithmic functions.
@@ -837,5 +840,8 @@ $$= \frac{1}{9} \cdot \frac{1}{\frac{9+x^2}{9}} = \frac{1}{9} \cdot \frac{9}{9+x
 With your transcendental integration toolkit complete, you're ready for the next major milestone: **Riemann sums and the Fundamental Theorem of Calculus**. This theorem reveals the profound connection between derivatives and integrals—and shows why the area under a curve is computed by antiderivatives.
 
 Delta will discover that all her slope measurements (derivatives) and distance tracking (integrals) are two sides of the same mathematical coin!
+
+!!! quote "Delta's Celebration"
+    "You made it through Transcendental Integrals! Your integration toolkit is now complete — trig, exponentials, logarithms, and inverse trig functions are all in your backpack. You're over 90% of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

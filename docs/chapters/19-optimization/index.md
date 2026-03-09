@@ -72,6 +72,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 19 — Optimization! This is where calculus becomes a real-world superpower. We're going to find THE best answer — maximum area, minimum cost, largest volume — not just *a* good answer. All that derivative detective work? It was training for this moment. Let's roll!"
+
 ## What Is Optimization?
 
 **Optimization** is the process of finding the best possible value of a function—either its maximum or minimum—within a given set of constraints. An **optimization problem** asks you to find the input that produces the largest or smallest output.
@@ -1223,5 +1226,8 @@ Before moving on, make sure you can:
 
     Note: Because the side material costs less than the top/bottom material,
     the optimal can is taller and narrower than the equal-cost case!
+
+!!! quote "Delta's Celebration"
+    "You made it through Optimization! You can now find the absolute best answer to real-world problems — biggest area, least material, maximum profit. You're over 80% of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

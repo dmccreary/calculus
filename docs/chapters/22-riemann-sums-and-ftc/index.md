@@ -52,6 +52,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 22 — Riemann Sums and the Fundamental Theorem of Calculus! This is the big one. We'll discover that my tilt and my travel journal are TWO SIDES OF THE SAME COIN. Differentiation and integration aren't just related — they're inverse operations. Prepare for the most beautiful result in all of calculus. Let's roll!"
+
 ## Introduction: The Grand Connection
 
 Welcome to what many mathematicians consider the most beautiful result in all of calculus. You're about to discover something remarkable: the process of finding slopes (differentiation) and the process of finding areas (integration) are not just related—they're **inverse operations**.
@@ -1140,5 +1143,8 @@ This chapter covered the essential bridge between differential and integral calc
     $= (100 - 25) - 0 = 75$ gallons
 
     **Answer: 75 gallons**
+
+!!! quote "Delta's Celebration"
+    "You made it through Riemann Sums and the Fundamental Theorem! You've unlocked the deepest secret of calculus — derivatives and integrals are inverse operations. That's the mathematical cheat code that connects everything. You're nearly there — keep that momentum going!"
 
 [See Annotated References](./references.md)

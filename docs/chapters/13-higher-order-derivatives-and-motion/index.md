@@ -42,6 +42,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 13 — higher-order derivatives and motion! My tilt tells you my slope, but *how my tilt is changing* tells you about curvature and acceleration. We're taking derivatives of derivatives, and it's going to unlock the physics of how things move. Let's roll!"
+
 ## Introduction: Beyond the First Derivative
 
 You've mastered finding derivatives, which tell you how fast a function is changing at any instant. But here's a question: what if that rate of change is itself changing? When you accelerate in a car, your speed (a rate of change) is increasing. How do we measure that mathematically?
@@ -705,5 +708,8 @@ Let's visualize the complete picture:
     **Answer:** The ball is speeding up for $t > 1.5$ seconds (after it reaches the peak and starts falling back down).
 
     This makes physical sense: on the way up, gravity slows the ball. After the peak, gravity speeds the ball up as it falls.
+
+!!! quote "Delta's Celebration"
+    "You made it through higher-order derivatives and motion analysis! You now understand position, velocity, acceleration, and jerk — the complete physics of how things move. You're past the midpoint of AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

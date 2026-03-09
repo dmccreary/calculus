@@ -40,6 +40,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 9 — where we unlock the full derivative toolkit! We're going beyond polynomials to tackle trig functions, exponentials, and logarithms. By the end, you'll be able to differentiate practically *anything*. Let's roll!"
+
 ## Introduction: Beyond Polynomials
 
 In Chapter 8, we mastered derivatives of polynomial functions using the power rule and linearity. But the mathematical world is much richer than polynomials. Think about the waves of sound, the oscillation of a pendulum, population growth, or radioactive decay—these phenomena are described by trigonometric, exponential, and logarithmic functions.
@@ -658,5 +661,8 @@ Here's your complete toolkit:
     $$= \frac{e^x[(x-1)\sin x + x\cos x]}{x^2}$$
 
     **Answer:** $\frac{e^x[(x-1)\sin x + x\cos x]}{x^2}$
+
+!!! quote "Delta's Celebration"
+    "You made it through the full derivative toolkit — quotient rule, all six trig derivatives, exponentials, AND logarithms! You can now differentiate any elementary function thrown your way. You're almost 2/5 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

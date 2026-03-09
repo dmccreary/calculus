@@ -43,6 +43,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 10 — the chain rule! This is where we learn to handle slopes within slopes — Inception style! Once you master peeling apart composite functions, you'll be unstoppable. Let's roll!"
+
 ## Introduction: Functions Within Functions
 
 Consider the function $f(x) = (x^2 + 1)^5$. How would you find its derivative?
@@ -613,5 +616,8 @@ $$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
     $$= -2x\tan(x^2)$$
 
     **Answer:** $-2x\tan(x^2)$
+
+!!! quote "Delta's Celebration"
+    "You made it through the chain rule! You can now peel apart any composite function, layer by layer, and find its derivative like a pro. You're almost halfway through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

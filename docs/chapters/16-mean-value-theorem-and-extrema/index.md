@@ -44,6 +44,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 16 — the Mean Value Theorem and Extrema! We're about to discover that somewhere on every smooth journey, your instantaneous tilt *exactly* matches your average tilt. Plus, we'll learn how to hunt for the highest peaks and lowest valleys on any curve. Let's roll!"
+
 ## Introduction: Connecting Average and Instantaneous
 
 Here's a puzzle: if you drive 120 miles in exactly 2 hours, you know your average speed was 60 mph. But did you ever *actually* travel at exactly 60 mph during the trip? Common sense says yes—at some point, you must have been going exactly 60 mph. But can we prove it mathematically?
@@ -794,5 +797,8 @@ These theorems form the theoretical backbone for optimization—finding the best
 
     **Global minimum:** $f(3) = -27$ (achieved at interior critical point)
 
+
+!!! quote "Delta's Celebration"
+    "You made it through the Mean Value Theorem and Extrema! You now know that every smooth journey has a moment of exact average tilt, and you can find the highest peaks and lowest valleys on any closed interval. You're about 70% of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

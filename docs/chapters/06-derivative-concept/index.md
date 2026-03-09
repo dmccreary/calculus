@@ -42,6 +42,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 6 — The Derivative Concept! This is THE chapter I've been waiting for. My tilt, my slope, my reason for being — it all comes down to this. We're going from secant lines to tangent lines, from average speed to *right now* speed. Let's roll!"
+
 ## Introduction: The Heart of Calculus
 
 Imagine you're watching a car's speedometer as you drive. The number you see—let's say 65 mph—tells you *exactly how fast* you're going at that precise moment. But how does the speedometer know? After all, speed is distance divided by time, and a single instant has no duration. This puzzle—how to measure change at an instant—is exactly what the derivative solves.
@@ -596,5 +599,8 @@ The derivative transforms the intuitive idea of "rate of change" into a precise 
     $f'(2) = 2(2) - 4 = 0$
 
     The derivative is 0 at $x = 2$, which means the tangent line is horizontal there. This point is a critical point of the function!
+
+!!! quote "Delta's Celebration"
+    "You made it through The Derivative Concept! You now understand instantaneous rate of change, the limit definition, and two notations for derivatives. You're over 1/4 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

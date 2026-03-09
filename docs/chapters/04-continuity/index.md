@@ -47,6 +47,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 4 — Continuity! This is where I find out if I can roll smoothly along a curve or if there are gaps that would make me teleport. Spoiler: I *hate* teleporting. We'll classify the troublemakers (holes, jumps, and blowups) and meet the powerful Intermediate Value Theorem. Let's roll!"
+
 ## What Does Continuity Mean?
 
 You've mastered limits. Now it's time to connect limits to one of the most intuitive ideas in mathematics: **continuity**.
@@ -635,5 +638,8 @@ You now understand what it means for a function to be continuous and how to prov
     2. No, $f$ is not continuous at 3 because $\lim_{x \to 3} f(x) = 5 \neq 7 = f(3)$. This is a **removable discontinuity** because the limit exists; the function value just doesn't match.
 
     3. Let $g(x) = \cos x - x$. This is continuous (difference of continuous functions). We have $g(0) = \cos(0) - 0 = 1 > 0$ and $g(1) = \cos(1) - 1 \approx 0.54 - 1 = -0.46 < 0$. Since $g$ is continuous and $g(0) > 0 > g(1)$, by the IVT there exists $c \in (0, 1)$ with $g(c) = 0$, meaning $\cos c = c$.
+
+!!! quote "Delta's Celebration"
+    "You made it through Continuity! You can now check the three conditions, classify discontinuities, and wield the Intermediate Value Theorem to prove roots exist. You're almost 1/5 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

@@ -40,6 +40,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 2 — Understanding Limits! This is where we learn the language of *sneaking up on values*. I'll be rolling closer and closer to points on curves, asking 'What are you approaching?' It's like mathematical detective work. Let's roll!"
+
 ## What Is a Limit?
 
 Welcome to the heart of calculus! If Chapter 1 introduced you to the *idea* of change, this chapter gives you the precise language to describe it. That language is called **limits**, and once you master it, you'll have the key that unlocks everything else in calculus.
@@ -567,5 +570,8 @@ You've built a solid foundation for understanding limits. But what happens when 
     1. $f(2)$ is the actual value of the function at $x = 2$, while $\lim_{x \to 2} f(x)$ is the value the function *approaches* as $x$ gets close to 2. These can be different (or $f(2)$ might not even exist).
     2. The limit does not exist because the one-sided limits are different.
     3. True! When direct substitution produces a real number, that is the limit value.
+
+!!! quote "Delta's Celebration"
+    "You made it through Understanding Limits! You now know how to describe what functions approach, from both sides, using proper notation and limit laws. You're nearly 1/10 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

@@ -39,6 +39,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 12 — inverse function derivatives! We're going to retrace our steps and learn how to differentiate arcsin, arctan, and all their inverse trig friends. Plus, logarithmic differentiation will let us tame wild expressions like $x^x$. Let's roll!"
+
 ## Introduction: Retracing Your Steps
 
 Imagine you've climbed a mountain trail. You know exactly how your altitude changed as you walked forward. But what if you wanted to describe your horizontal progress based on your altitude? That's essentially what inverse functions do—they swap the roles of input and output.
@@ -632,5 +635,8 @@ With these tools, you can now differentiate virtually any combination of functio
 
 In the next chapter, we'll apply all our derivative techniques to solve **related rates problems**—situations where multiple quantities change together, and we need to find how fast one is changing based on another. Delta will be measuring shadows, filling tanks, and chasing moving objects!
 
+
+!!! quote "Delta's Celebration"
+    "You made it through inverse function derivatives and logarithmic differentiation! You can now differentiate virtually any function in the AP Calculus universe. You're over halfway through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

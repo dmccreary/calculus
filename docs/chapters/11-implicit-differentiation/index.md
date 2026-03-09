@@ -39,6 +39,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 11 — implicit differentiation! Sometimes the equation won't let you solve for $y$, but that won't stop us from finding the slope under my wheels. We're going to differentiate curves that twist and loop in ways explicit functions never could. Let's roll!"
+
 ## Introduction: When y Plays Hide and Seek
 
 So far, we've differentiated functions where $y$ is explicitly written in terms of $x$—formulas like $y = x^2$, $y = \sin(x)$, or $y = e^{2x}$. These are called **explicit functions** because $y$ is isolated on one side, explicitly telling us its value for any $x$.
@@ -829,5 +832,8 @@ $(f^{-1})'(3) = \frac{1}{f'(1)} = \frac{1}{5}$
     $$\frac{dy}{dx} = \frac{1 - ye^{xy}}{xe^{xy} - 1}$$
 
     **Answer:** $\frac{dy}{dx} = \frac{1 - ye^{xy}}{xe^{xy} - 1}$
+
+!!! quote "Delta's Celebration"
+    "You made it through implicit differentiation! You can now find slopes on circles, ellipses, and even crazy curves where $y$ refuses to be isolated. You're nearly halfway through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

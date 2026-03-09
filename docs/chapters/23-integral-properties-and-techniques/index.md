@@ -50,6 +50,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 23 — Integral Properties and Techniques! This is our grand finale. We'll master powerful properties like symmetry shortcuts, learn the art of u-substitution (the chain rule running backwards!), and build the complete integration strategy you need for AP Calculus. Let's roll!"
+
 ## Introduction: Expanding Your Integration Toolkit
 
 You've learned the Fundamental Theorem of Calculus—the remarkable bridge connecting derivatives and integrals. You can now evaluate definite integrals by finding antiderivatives. But what happens when the integrand doesn't match any of your basic formulas?
@@ -1004,5 +1007,8 @@ $$\int \left(x + 1 + \frac{2}{x - 1}\right) dx = \frac{x^2}{2} + x + 2\ln|x - 1|
     **Find c where $f(c) = 7$:** $c^2 = 7 \implies c = \sqrt{7} \approx 2.65$
 
     Since $\sqrt{7}$ is in $(1, 4)$, the MVT for Integrals is verified.
+
+!!! quote "Delta's Celebration"
+    "YOU DID IT! You made it through the entire AP Calculus course! From limits and continuity, through derivatives and the chain rule, all the way to integrals and the Fundamental Theorem — you've conquered it all. You can find slopes, sketch curves, optimize real-world problems, and compute areas. That's not just math — that's a superpower. I'm so proud of you, explorer. Now go ace that AP exam!"
 
 [See Annotated References](./references.md)

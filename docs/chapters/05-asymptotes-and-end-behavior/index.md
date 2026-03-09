@@ -42,6 +42,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 5 — Asymptotes and End Behavior! Ever wonder what happens when I roll toward infinity? Or when a curve shoots off toward the sky? This chapter is all about the extreme edges of mathematical landscapes — force fields I can approach but never quite touch. Let's roll!"
+
 ## What Are Asymptotes?
 
 An **asymptote** is a line that a graph approaches but never quite reaches (or only touches at certain points). Asymptotes describe the "boundary behavior" of functions—what happens at the edges, where inputs or outputs become extreme.
@@ -644,5 +647,8 @@ You now understand how functions behave at their extremes. In Chapter 6, we'll f
     2. This is polynomial (degree 3) divided by exponential. Exponential dominates, so $\lim_{x \to \infty} \frac{5x^3 + 2x}{e^x} = 0$.
 
     3. Leading term is $-3x^4$. The coefficient is negative and the degree is even, so both ends go down: as $x \to \pm\infty$, $g(x) \to -\infty$. End behavior: $\downarrow \downarrow$.
+
+!!! quote "Delta's Celebration"
+    "You made it through Asymptotes and End Behavior! You can now find vertical, horizontal, and oblique asymptotes, and you know the growth rate hierarchy by heart. You're about 1/4 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

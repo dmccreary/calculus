@@ -41,6 +41,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 3 — Evaluating Limits! Last chapter we learned what limits *mean*. Now we're building a toolbox to actually *find* them, even when direct substitution throws a tantrum. Factoring, rationalizing, squeezing — I've got tricks up my measuring arms! Let's roll!"
+
 ## When Direct Substitution Fails
 
 In Chapter 2, you learned that direct substitution works beautifully for many limits. But sometimes when you plug in the value, you get something weird—like $\frac{0}{0}$. What then?
@@ -590,5 +593,8 @@ You now have a solid toolkit for evaluating limits. In Chapter 4, we'll use thes
     2. Factor: $\frac{x^2 - 16}{x - 4} = \frac{(x+4)(x-4)}{x-4} = x + 4$ for $x \neq 4$. So $\lim_{x \to 4} \frac{x^2 - 16}{x - 4} = 4 + 4 = 8$.
 
     3. The limit $\lim_{x \to 0} \frac{\sin x}{x} = 1$ relies on the relationship between arc length and the sine function on the unit circle. This geometric relationship only works when angles are measured in radians. In degrees, the limit would be $\frac{\pi}{180}$.
+
+!!! quote "Delta's Celebration"
+    "You made it through Evaluating Limits! You can now handle indeterminate forms, apply the Squeeze Theorem, and use special trig limits like a pro. You're 3/23 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

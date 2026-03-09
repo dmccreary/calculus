@@ -41,6 +41,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 7 — Differentiability! Not every curve lets me roll smoothly. Corners, cusps, and vertical tangents are the potholes of the mathematical world. This chapter is about figuring out where derivatives exist and where they don't — and why continuity alone isn't enough. Let's roll!"
+
 ## Introduction: Where Calculus Breaks Down
 
 In the previous chapter, we defined the derivative and saw how it captures instantaneous rate of change. But here's a crucial question: Does every function have a derivative at every point?
@@ -659,5 +662,8 @@ Let's put together what we've learned about when functions are differentiable:
     By similar reasoning, the function is not differentiable at $x = -2$.
 
     **Answer:** $f$ is not differentiable at $x = -2$ and $x = 2$.
+
+!!! quote "Delta's Celebration"
+    "You made it through Differentiability! You can now spot corners, cusps, and vertical tangents, and you know that differentiability implies continuity but not the other way around. You're nearly 1/3 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

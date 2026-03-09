@@ -40,6 +40,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 20 — Basic Antiderivatives! We're about to run the derivative machine *backwards*. Instead of asking 'what's my tilt?', we'll ask 'what curve gives me this tilt?' It's like detective work — tracing my path from the clues I left behind. Let's roll!"
+
 ## Introduction: Running the Derivative Machine Backwards
 
 Throughout the first half of this course, you've become an expert at finding derivatives. Given a function $f(x)$, you can compute $f'(x)$ using the power rule, product rule, chain rule, and all the other tools in your toolkit.
@@ -699,5 +702,8 @@ Here's your integration toolkit from this chapter:
     $$f(x) = 2x^2 + \cos x + 1$$
 
     **Verify:** $f'(x) = 4x - \sin x$ ✓ and $f(0) = 0 + 1 + 1 = 2$ ✓
+
+!!! quote "Delta's Celebration"
+    "You made it through Basic Antiderivatives! You can now reverse the derivative machine for polynomials and trig functions, and you know why that +C is so important — it's my starting altitude! You're almost 7/8 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

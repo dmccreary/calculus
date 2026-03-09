@@ -45,6 +45,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 14 — related rates and linear approximation! When one thing changes, everything connected to it changes too. We'll tackle sliding ladders, inflating balloons, and draining tanks. Plus, we'll learn how tangent lines make great crystal balls for predicting nearby values. Let's roll!"
+
 ## Introduction: When Variables Change Together
 
 In the real world, quantities rarely change in isolation. When you blow up a balloon, its radius, surface area, and volume all increase simultaneously. When a ladder slides down a wall, the height on the wall decreases while the distance from the base increases. These quantities are *related*—and their rates of change are related too.
@@ -1020,5 +1023,8 @@ Before moving on, make sure you can:
     $C'(200) = 15 + 0.01(200) = 15 + 2 = 17$ dollars per unit
 
     The 201st unit costs approximately $17 to produce.
+
+!!! quote "Delta's Celebration"
+    "You made it through related rates and linear approximation! You can now solve real-world rate problems and use tangent lines to predict function values — those are serious calculus superpowers. You're over 3/5 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

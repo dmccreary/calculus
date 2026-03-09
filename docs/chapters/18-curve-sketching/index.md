@@ -41,6 +41,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 18 — Curve Sketching! This is where we conduct the whole orchestra. Every tool you've learned — domain, asymptotes, the slope under my wheels, vibe shifts — all comes together to paint a complete picture of any function. Let's roll!"
+
 ## Introduction: Seeing the Whole Picture
 
 You've spent the last several chapters learning powerful individual tools: finding where functions increase and decrease, locating critical points, testing for local extrema, analyzing concavity, and identifying inflection points. Now it's time to combine all these skills into a unified process that lets you sketch the graph of almost any function—without relying on a graphing calculator.
@@ -1036,5 +1039,8 @@ Let's summarize the essential ideas from this chapter.
 
 Now that you can analyze and sketch curves completely, you're ready to apply these skills to solve real-world problems. In the next chapter, we'll tackle **optimization**—finding the absolute best solutions by combining curve analysis with practical constraints. Get ready to find maximum profit, minimum cost, and optimal dimensions!
 
+
+!!! quote "Delta's Celebration"
+    "You made it through Curve Sketching! You can now map out an entire function's landscape — every hill, valley, asymptote, and vibe shift — before taking a single step. You're over 3/4 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

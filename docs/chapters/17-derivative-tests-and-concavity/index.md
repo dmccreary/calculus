@@ -43,6 +43,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 17 — Derivative Tests and Concavity! Now that we can find critical points, it's time to figure out what's actually *happening* there. Am I on a peak? In a valley? Or just passing through a flat spot? We'll also learn about the vibe shift — where concavity changes. Let's roll!"
+
 ## Introduction: Reading the Landscape
 
 You've already discovered that critical points are the "interesting spots" on a function's graph - places where the derivative equals zero or doesn't exist. But finding critical points is only half the battle. The real question is: **what kind of critical point is it?**
@@ -924,5 +927,8 @@ For absolute extrema on $[a, b]$:
 ## Looking Ahead
 
 In the next chapter, you'll apply these analysis skills to **optimization problems** - finding the absolute best values in real-world situations. You'll see how derivatives help us minimize costs, maximize profits, and find the most efficient designs. The tools you've built here are exactly what you need!
+
+!!! quote "Delta's Celebration"
+    "You made it through Derivative Tests and Concavity! You can now classify every critical point, read the shape of any curve, and spot every vibe shift where concavity changes. You're nearly 3/4 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

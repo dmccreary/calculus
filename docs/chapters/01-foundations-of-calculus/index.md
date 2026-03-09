@@ -34,7 +34,7 @@ an educational textbook. Clean, professional, and appealing to high school stude
 
 </details>
 
-!!! quote "Welcome"
+!!! quote "Delta Welcome"
     "Hey there! I'm Delta—a curious little triangular robot who *lives* for exploring
     mathematical landscapes. See this shape I'm rocking? It's not just for looks.
     The Greek letter delta (Δ) means *change*, and that's basically my whole personality.
@@ -1220,5 +1220,8 @@ Before moving on, make sure you can:
     This is exactly the kind of question that limits will help us answer precisely!
     The function isn't defined at $x = 2$, but it "wants" to equal 4 there.
 
+
+!!! quote "Delta's Celebration"
+    "You made it through the foundations! You've reviewed functions, transformations, and all the precalculus tools we'll need for the road ahead. You're 1/23 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

@@ -46,6 +46,9 @@ This chapter builds on concepts from:
 
 ---
 
+!!! quote "Delta Welcome"
+    "Hey explorer! Welcome to Chapter 15 — L'Hospital's Rule and contextual applications! When limits give you $\\frac{0}{0}$ or $\\frac{\\infty}{\\infty}$, most folks panic. Not us — we've got derivatives as our secret weapon! Plus, we'll learn what derivatives actually *mean* in economics, biology, and physics. Let's roll!"
+
 ## Introduction: When Math Gets Weird
 
 You've learned plenty of techniques for evaluating limits—factoring, rationalizing, using the Squeeze Theorem. But sometimes you encounter limits that seem to defy all your tricks. You plug in the value and get $\frac{0}{0}$ or $\frac{\infty}{\infty}$, and no amount of algebraic manipulation seems to help.
@@ -709,5 +712,8 @@ With L'Hospital's Rule mastered, you now have powerful tools for evaluating comp
     3. $C'(x) = 15 + 0.04x$. At $x = 200$: $C'(200) = 15 + 0.04(200) = 23$ dollars/unit. Interpretation: When producing 200 units, the 201st unit costs approximately $23 to produce.
 
     4. This is a $0^0$ form. Let $y = x^x$, so $\ln y = x \ln x$. As $x \to 0^+$, this is $0 \cdot (-\infty)$, which can be rewritten as $\ln y = \frac{\ln x}{1/x}$, giving $\frac{-\infty}{\infty}$. Now L'Hospital's Rule can be applied to find $\lim_{x \to 0^+} \ln y$, and then $\lim_{x \to 0^+} x^x = e^{\lim \ln y}$.
+
+!!! quote "Delta's Celebration"
+    "You made it through L'Hospital's Rule and contextual applications! You can now conquer indeterminate forms and interpret derivatives in real-world settings like a true mathematician. You're about 2/3 of the way through AP Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)
