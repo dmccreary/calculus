@@ -1,7 +1,7 @@
 # Foundations of Calculus
 
 ## Meet Your Guide
-![](../../img/delta-v1.png)
+
 <details>
 <summary>Image Description</summary>
 Please generate a high resolution wide-landscape, professional textbook illustration with a 16:9 width:height ratio
@@ -34,7 +34,7 @@ an educational textbook. Clean, professional, and appealing to high school stude
 
 </details>
 
-!!! quote "Delta Says"
+!!! quote "Welcome"
     "Hey there! I'm Delta—a curious little triangular robot who *lives* for exploring
     mathematical landscapes. See this shape I'm rocking? It's not just for looks.
     The Greek letter delta (Δ) means *change*, and that's basically my whole personality.

@@ -9,6 +9,9 @@ Format: **PNG with transparent background**.
 
 ## Base Character Description
 
+!!! Note
+    We have removed the backpack from all the prompts.  It was distracting.
+
 Copy this base into every prompt below:
 
 ```
@@ -39,8 +42,6 @@ each side — thin metallic appendages with small grabber claws. At the very
 top of the apex, a thin flexible antenna with a small glowing orange ball
 at the tip wobbles playfully.
 
-Next to Delta is a small backpack labeled "integral journal" where she stores
-accumulated data.
 ```
 
 ---
@@ -82,8 +83,7 @@ Delta stands upright on a flat surface in a relaxed, neutral pose,
 facing the viewer directly with a calm, friendly expression — her orange LED
 eyes glow softly with a gentle look. Her measuring arms are folded neatly
 against her sides, and her slope indicator strip glows a steady green. The
-antenna wobbles slightly. Her wheels are still. The integral journal backpack
-sits beside her. The pose is balanced and unassuming, suitable as a
+antenna wobbles slightly. Her wheels are still. The pose is balanced and unassuming, suitable as a
 general-purpose illustration.
 ```
 
@@ -94,13 +94,17 @@ general-purpose illustration.
 For chapter openings and introductions.
 
 ```
-[BASE] Delta waves one measuring arm cheerfully at the viewer with a big,
+Please generate a new image called "Welcome".
+The format is a 512x512 fully transparent png image.
+Do not use a white checkered background.
+Delta waves one measuring arm cheerfully at the viewer with a big,
 warm expression — her orange LED eyes are wide and bright with excitement.
-Her other arm holds the integral journal backpack. The slope indicator strip
+The slope indicator strip
 pulses a bright welcoming green. Her antenna tip glows brightly and bounces
 with enthusiasm. She is slightly tilted forward (about 5 degrees) as if
 rolling toward the viewer to greet them. The pose radiates "welcome, let's
 explore this curve together!" energy.
+Do not place any text in this image.
 ```
 
 ---
@@ -205,7 +209,6 @@ After generating all seven images, verify:
 - [ ] Consistent art style across all seven poses
 - [ ] Delta looks like the same character in each pose
 - [ ] Teal body, orange LED eyes, and green slope indicator are visible in each
-- [ ] The integral journal backpack is present in each
 - [ ] File names match exactly: `neutral.png`, `welcome.png`, `thinking.png`,
       `tip.png`, `warning.png`, `celebration.png`, `encouraging.png`
 - [ ] Each file is **under 100KB** (resize/compress if needed)
