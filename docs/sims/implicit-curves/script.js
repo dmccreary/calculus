@@ -678,7 +678,7 @@ function mouseReleased() {
 function updateSlider() {
     sliderValue = constrain((mouseX - sliderX) / sliderWidth, 0, 1);
 
-    // Map slider to parameter range
+    // Mcollege placement slider to parameter range
     let minParam = 0.5;
     let maxParam = 4;
     param1 = minParam + sliderValue * (maxParam - minParam);
@@ -746,7 +746,7 @@ function findInitialPoint() {
             break;
     }
 
-    // Snap to curve
+    // Sncollege placement to curve
     findPointOnCurve(pointX, pointY);
 }
 

@@ -1,7 +1,7 @@
-site_name: AP Calculus
+site_name: Calculus
 repo_url: https://github.com/dmccreary/calculus
 site_url: https://dmccreary.github.io/calculus/
-site_description: An interactive intelligent textbook for AP calculus designed for college credit.
+site_description: An interactive intelligent textbook for calculus designed for college credit.
 site_author: Dan McCreary
 
 nav:

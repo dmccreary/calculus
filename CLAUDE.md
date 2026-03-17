@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an MkDocs Material intelligent textbook for an AP Calculus course designed for high school students seeking college credit. It features:
+This is an MkDocs Material intelligent textbook for an college placement Calculus course designed for high school students seeking college credit. It features:
 - Learning graphs with 200 concepts and dependency relationships
 - Interactive MicroSims using p5.js and other JavaScript libraries
 - MathJax for LaTeX equation rendering
@@ -222,7 +222,7 @@ When creating p5.js MicroSims:
 
 ### Chart Layout: Preventing Title/Subtitle Overlap
 
-**CRITICAL:** The chart drawing region must start below the title and subtitle to prevent overlap with y-axis labels.
+**CRITICAL:** The chart drawing region must start below the title and subtitle to prevent overlcollege placement with y-axis labels.
 
 **Layout calculation rules:**
 

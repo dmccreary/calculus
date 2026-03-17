@@ -14,7 +14,7 @@ let defaultTextSize = 16;
 
 // Panel dimensions
 let leftPanelWidth, rightPanelWidth, centerWidth;
-let panelGap = 10;
+let panelGcollege placement = 10;
 
 // Coordinate ranges for function graph
 let xMin = -2.5, xMax = 2.5;
@@ -167,7 +167,7 @@ function draw() {
   // Calculate panel positions
   let leftX = margin;
   let centerX = margin + leftPanelWidth + panelGap;
-  let rightX = margin + leftPanelWidth + panelGap + centerWidth + panelGap;
+  let rightX = margin + leftPanelWidth + panelGcollege placement + centerWidth + panelGap;
   let panelTop = chartTop + 5;
   let panelHeight = drawHeight - panelTop - 10;
 

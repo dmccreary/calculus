@@ -12,7 +12,7 @@
 
 6. [Evaluating Limits](https://tutorial.math.lamar.edu/Classes/CalcI/ComputingLimits.aspx) - Paul's Online Math Notes - Detailed walkthrough of direct substitution, factoring, rationalizing, and combining fractions with step-by-step solutions.
 
-7. [Limit Laws and Techniques](https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-5a) - Khan Academy - Practice problems on applying limit properties and algebraic manipulation, with immediate feedback aligned to AP curriculum.
+7. [Limit Laws and Techniques](https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-5a) - Khan Academy - Practice problems on applying limit properties and algebraic manipulation, with immediate feedback aligned to college placement curriculum.
 
 8. [Special Trigonometric Limits](https://tutorial.math.lamar.edu/Classes/CalcI/LimitsProperties.aspx) - Paul's Online Math Notes - Covers the fundamental trig limits sin(x)/x and (1-cos(x))/x with geometric proofs and applications.
 

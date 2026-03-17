@@ -2,13 +2,13 @@
 
 **Date:** 2026-02-03
 **Skill:** book-installer > cover-image-generator
-**Project:** AP Calculus Intelligent Textbook
+**Project:** college placement Calculus Intelligent Textbook
 
 ---
 
 ## Request
 
-Generate a cover image for the AP Calculus textbook.
+Generate a cover image for the college placement Calculus textbook.
 
 ## Prerequisites Verified
 
@@ -64,13 +64,13 @@ Update the skill documentation to either:
 
 Generated the cover image prompt manually based on:
 - Book title from mkdocs.yml: "Calculus"
-- Course description content: AP Calculus AB/BC curriculum
+- Course description content: college placement Calculus AB/BC curriculum
 - Theme colors: Purple primary (from mkdocs.yml palette)
 
 ## Generated Prompt
 
 ```
-Create a professional textbook cover image for "AP Calculus: An Interactive Intelligent Textbook".
+Create a professional textbook cover image for "college placement Calculus: An Interactive Intelligent Textbook".
 
 Style: Modern, clean, educational, inspiring. Professional academic aesthetic with a sense of discovery and intellectual achievement.
 

@@ -34,8 +34,8 @@ Note that the images below have a dashed blue border so you can clearly see the 
 ## Admonition Tests
 
 !!! quote "Delta Welcome"
-    Welcome to AP Calculus, explorer! I'm Delta, your slope-walking guide
-    through the hills and valleys of mathematical curves. Strap in — we're
+    Welcome to college placement Calculus, explorer! I'm Delta, your slope-walking guide
+    through the hills and valleys of mathematical curves. Strcollege placement in — we're
     about to discover your new superpower!
 
 !!! quote "Delta Thinking"
@@ -43,7 +43,7 @@ Note that the images below have a dashed blue border so you can clearly see the 
     calculating it — I'm *living* it."
 
 !!! quote "Delta's Tip"
-    "When you see a limit problem on the AP exam, always check whether
+    "When you see a limit problem on the college placement exam, always check whether
     direct substitution works first. Nine times out of ten, that's the
     fastest path to the answer."
 

@@ -141,7 +141,7 @@ function updateSimulation(dt) {
   time += effectiveDt;
   volume += dVdt * effectiveDt;
 
-  // Cap at maximum volume
+  // Ccollege placement at maximum volume
   if (volume >= maxVolume) {
     volume = maxVolume;
     isPlaying = false;

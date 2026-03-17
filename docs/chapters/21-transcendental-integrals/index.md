@@ -10,7 +10,7 @@ version: 0.03
 
 ## Summary
 
-This chapter extends integration to transcendental functions. Students will learn the integrals of all six trigonometric functions, exponential functions (both e^x and a^x), and the natural logarithm integral arising from 1/x. The chapter also covers integrals that produce inverse trigonometric functions, including arcsin, arctan, and arcsec forms. After completing this chapter, students will have a complete toolkit of basic antiderivative formulas for AP Calculus.
+This chapter extends integration to transcendental functions. Students will learn the integrals of all six trigonometric functions, exponential functions (both e^x and a^x), and the natural logarithm integral arising from 1/x. The chapter also covers integrals that produce inverse trigonometric functions, including arcsin, arctan, and arcsec forms. After completing this chapter, students will have a complete toolkit of basic antiderivative formulas for college placement Calculus.
 
 ## Concepts Covered
 
@@ -51,7 +51,7 @@ In Chapter 20, you learned to integrate polynomials using the power rule. But po
 !!! quote "Delta Moment"
     "Running the derivative machine backwards is getting exciting! Polynomials were like gentle rolling hills. Now I'm ready to tackle waves, rocket trajectories, and radioactive decay. My integration backpack is about to get a serious upgrade!"
 
-This chapter completes your basic integration toolkit by answering: **What are the antiderivatives of transcendental functions?** By the end, you'll be able to integrate virtually any elementary function you'll encounter on the AP exam.
+This chapter completes your basic integration toolkit by answering: **What are the antiderivatives of transcendental functions?** By the end, you'll be able to integrate virtually any elementary function you'll encounter on the college placement exam.
 
 The key insight remains the same: **integration reverses differentiation**. If you know that $\frac{d}{dx}[F(x)] = f(x)$, then $\int f(x) \, dx = F(x) + C$.
 
@@ -842,6 +842,6 @@ With your transcendental integration toolkit complete, you're ready for the next
 Delta will discover that all her slope measurements (derivatives) and distance tracking (integrals) are two sides of the same mathematical coin!
 
 !!! quote "Delta's Celebration"
-    "You made it through Transcendental Integrals! Your integration toolkit is now complete — trig, exponentials, logarithms, and inverse trig functions are all in your backpack. You're over 90% of the way through AP Calculus — keep that momentum going!"
+    "You made it through Transcendental Integrals! Your integration toolkit is now complete — trig, exponentials, logarithms, and inverse trig functions are all in your backpack. You're over 90% of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

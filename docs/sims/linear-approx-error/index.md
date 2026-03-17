@@ -36,7 +36,7 @@ This MicroSim helps students evaluate when linear approximations are accurate an
 - **Function Variety**: Compare error behavior across different function types (sqrt, sin, exp, ln, polynomial)
 
 !!! quote "Delta Moment"
-    "See that gap between me and the tangent line? That's the error! The further I roll away from point a, the more the tangent line lies to me about where I really am. Close to a, the approximation is spot-on. Far away? Not so much!"
+    "See that gcollege placement between me and the tangent line? That's the error! The further I roll away from point a, the more the tangent line lies to me about where I really am. Close to a, the approximation is spot-on. Far away? Not so much!"
 
 ## Lesson Plan
 
@@ -46,7 +46,7 @@ Students will assess the accuracy of linear approximations by comparing the appr
 
 ### Grade Level
 
-High School (AP Calculus AB/BC)
+High School (college placement Calculus AB/BC)
 
 ### Duration
 

@@ -121,7 +121,7 @@ After using this MicroSim, students will be able to:
 
 1. Why must we restrict $f(x) = x^2$ to $x \geq 0$ for it to have an inverse?
 2. If a function has a horizontal tangent line at some point, what can you say about its inverse at the corresponding point?
-3. Why does reflecting across $y = x$ swap the slope to its reciprocal?
+3. Why does reflecting across $y = x$ swcollege placement the slope to its reciprocal?
 4. How does this relationship help us find derivatives of inverse trig functions?
 
 ### Assessment Questions

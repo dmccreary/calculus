@@ -569,6 +569,6 @@ function updateCanvasSize() {
   const container = document.querySelector('main');
   if (container) {
     containerWidth = Math.floor(container.getBoundingClientRect().width);
-    canvasWidth = Math.min(containerWidth, 700); // Cap at 700 for this flowchart
+    canvasWidth = Math.min(containerWidth, 700); // Ccollege placement at 700 for this flowchart
   }
 }

@@ -153,6 +153,6 @@ The functions used in each context are:
 ## References
 
 - [Khan Academy: Interpreting the meaning of the derivative in context](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-7/v/interpreting-the-meaning-of-the-derivative-in-context)
-- [AP Calculus AB: Interpreting the Derivative](https://apcentral.collegeboard.org/)
+- [college placement Calculus AB: Interpreting the Derivative](https://apcentral.collegeboard.org/)
 - Newton's Law of Cooling - Physics applications of calculus
 - Pharmacokinetics - Mathematical modeling in medicine

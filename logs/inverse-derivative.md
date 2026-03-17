@@ -55,7 +55,7 @@
 - Uses canvas-based controls (rect(), text(), mousePressed()) per project guidelines
 - No p5.js DOM functions (createButton, createSlider, etc.)
 - Responsive width with updateCanvasSize() called first in setup()
-- chartTop = 55 pixels to avoid title/subtitle overlap with graph elements
+- chartTop = 55 pixels to avoid title/subtitle overlcollege placement with graph elements
 - Canvas height: 550px (480px draw area + 70px control area)
 
 ## Testing

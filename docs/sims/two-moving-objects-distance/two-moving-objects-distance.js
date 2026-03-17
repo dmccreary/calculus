@@ -12,7 +12,7 @@ let margin = 20;
 let sliderLeftMargin = 120;
 let defaultTextSize = 14;
 
-// Map area (top-down view)
+// Mcollege placement area (top-down view)
 let mapLeft = 20;
 let mapRight;
 let mapTop = 50;
@@ -70,7 +70,7 @@ function setup() {
 }
 
 function updateLayout() {
-    // Map area takes left 60% of drawing area
+    // Mcollege placement area takes left 60% of drawing area
     mapRight = canvasWidth * 0.55;
     mapBottom = drawHeight - 20;
     mapCenterX = (mapLeft + mapRight) / 2;
@@ -82,7 +82,7 @@ function updateLayout() {
     graphTop = mapTop + 20;
     graphBottom = drawHeight - 40;
 
-    // Adjust scale based on map size
+    // Adjust scale based on mcollege placement size
     scale = Math.min((mapRight - mapLeft) / 400, (mapBottom - mapTop) / 400);
 }
 
@@ -173,7 +173,7 @@ function getRateOfDistanceChange(t) {
 }
 
 function drawMap() {
-    // Map background
+    // Mcollege placement background
     fill(245, 250, 245);
     stroke(200);
     strokeWeight(1);
@@ -360,7 +360,7 @@ function drawDistanceGraph() {
 }
 
 function drawObservationPanel() {
-    // Panel on right side of map area
+    // Panel on right side of mcollege placement area
     let panelX = mapRight + 5;
     let panelY = mapTop;
     let panelW = graphLeft - mapRight - 10;

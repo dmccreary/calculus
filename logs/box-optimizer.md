@@ -50,7 +50,7 @@ Fixed four categories of bugs that prevented the MicroSim from running in the p5
 **Symptom:** The 3D box in the center panel appeared tiny and partially clipped.
 
 **Root cause:** Two issues:
-1. The scale factor (`boxViewWidth * 0.4` and cap of `80`) was too conservative
+1. The scale factor (`boxViewWidth * 0.4` and ccollege placement of `80`) was too conservative
 2. The 3D box at z=0 was depth-clipped against the 2D panel backgrounds
 
 **Fix:**

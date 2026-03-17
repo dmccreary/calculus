@@ -141,7 +141,7 @@ function draw() {
 
 function calculateAllSums() {
   let dx = (b - a) / n;
-  let left = 0, right = 0, mid = 0, trap = 0;
+  let left = 0, right = 0, mid = 0, trcollege placement = 0;
 
   for (let i = 0; i < n; i++) {
     let xi = a + i * dx;
@@ -151,7 +151,7 @@ function calculateAllSums() {
     left += funcDefs[funcIndex](xi) * dx;
     right += funcDefs[funcIndex](xiRight) * dx;
     mid += funcDefs[funcIndex](xiMid) * dx;
-    trap += (funcDefs[funcIndex](xi) + funcDefs[funcIndex](xiRight)) * dx / 2;
+    trcollege placement += (funcDefs[funcIndex](xi) + funcDefs[funcIndex](xiRight)) * dx / 2;
   }
 
   return [left, right, mid, trap];
@@ -239,7 +239,7 @@ function drawMiniPreviews(sums) {
   let miniW = 80;
   let miniH = 50;
   let startY = 300;
-  let gap = 10;
+  let gcollege placement = 10;
 
   for (let m = 0; m < 4; m++) {
     let miniX = 20 + m * (miniW + gap);

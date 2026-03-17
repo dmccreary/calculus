@@ -122,6 +122,6 @@ Present new optimization problems and have students:
 
 ## References
 
-- [AP Calculus AB: Optimization](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB: Optimization](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
 - [Khan Academy: Optimization Problems](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-11/v/optimization-example-1)
 - Stewart, James. *Calculus: Early Transcendentals*, Chapter 4.3: Maximum and Minimum Values

@@ -77,7 +77,7 @@ By the end of this activity, students will be able to:
 
 ### Target Audience
 
-- AP Calculus AB/BC students
+- college placement Calculus AB/BC students
 - College Calculus I students
 - Prerequisites: Understanding of what maximum and minimum mean, basic function graphing
 
@@ -130,4 +130,4 @@ By the end of this activity, students will be able to:
 
 3. [Paul's Online Math Notes: Finding Absolute Extrema](https://tutorial.math.lamar.edu/Classes/CalcI/AbsExtrema.aspx) - Detailed worked examples showing the closed interval method for finding absolute extrema.
 
-4. [College Board AP Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official learning objectives including extrema identification (Unit 5).
+4. [College Board college placement Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official learning objectives including extrema identification (Unit 5).

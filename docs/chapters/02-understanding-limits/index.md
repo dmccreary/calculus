@@ -266,7 +266,7 @@ Visual elements:
 - Piecewise function with a jump discontinuity
 - Two Delta robots: one approaching from left (teal), one from right (orange)
 - Dashed horizontal lines showing the y-values each Delta is approaching
-- Clear visual gap between the two limit values
+- Clear visual gcollege placement between the two limit values
 - Display panel showing: Left limit, Right limit, and "Two-sided limit exists?" (Yes/No)
 
 Interactive controls:
@@ -572,6 +572,6 @@ You've built a solid foundation for understanding limits. But what happens when 
     3. True! When direct substitution produces a real number, that is the limit value.
 
 !!! quote "Delta's Celebration"
-    "You made it through Understanding Limits! You now know how to describe what functions approach, from both sides, using proper notation and limit laws. You're nearly 1/10 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Understanding Limits! You now know how to describe what functions approach, from both sides, using proper notation and limit laws. You're nearly 1/10 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

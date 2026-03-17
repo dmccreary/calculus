@@ -149,4 +149,4 @@ Ask students to explain in their own words:
 
 - [Khan Academy: Analyzing motion problems (integral calculus)](https://www.khanacademy.org/math/ap-calculus-ab/ab-applications-of-integration-new/ab-8-2/v/motion-problems-with-integrals)
 - [Paul's Online Math Notes: Velocity and Acceleration](https://tutorial.math.lamar.edu/classes/calci/velocityacceleration.aspx)
-- AP Calculus AB/BC Course Description: Unit 4 - Contextual Applications of Differentiation
+- college placement Calculus AB/BC Course Description: Unit 4 - Contextual Applications of Differentiation

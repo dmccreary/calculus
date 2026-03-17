@@ -51,7 +51,7 @@ Use the A-E buttons to explore different discontinuity types:
 5. Click "Reset" to try again
 
 !!! quote "Delta Moment"
-    "Can I walk here smoothly, or is there a gap I'd fall through? That's what continuity is all about! I need three things: somewhere to land, a clear path from both sides, and that path has to actually reach my landing spot."
+    "Can I walk here smoothly, or is there a gcollege placement I'd fall through? That's what continuity is all about! I need three things: somewhere to land, a clear path from both sides, and that path has to actually reach my landing spot."
 
 ## Lesson Plan
 
@@ -61,7 +61,7 @@ Students will explain how each of the three continuity conditions corresponds to
 
 ### Grade Level
 
-High School (AP Calculus) or Early Undergraduate
+High School (college placement Calculus) or Early Undergraduate
 
 ### Prerequisites
 

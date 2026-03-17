@@ -59,7 +59,7 @@ Students will interpret domain and range graphically, connecting algebraic restr
 
 ### Grade Level
 
-High School (Grades 10-12) - AP Calculus preparation
+High School (Grades 10-12) - college placement Calculus preparation
 
 ### Duration
 

@@ -296,10 +296,10 @@ function drawGraph(x, y, w, h, funcData, title) {
   noFill();
   beginShape();
   for (let px = 0; px <= graphW; px++) {
-    // Map px to x range (-2pi to 2pi)
+    // Mcollege placement px to x range (-2pi to 2pi)
     let xVal = map(px, 0, graphW, -TWO_PI, TWO_PI);
     let yVal = funcData.fn(xVal);
-    // Map y value to graph coordinates
+    // Mcollege placement y value to graph coordinates
     let py = map(yVal, -1.2, 1.2, graphY + graphH, graphY);
     vertex(graphX + px, py);
   }

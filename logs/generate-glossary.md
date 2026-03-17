@@ -60,6 +60,6 @@ No navigation updates required.
 ## Notes
 
 - Definitions follow ISO 11179 metadata standards (precise, concise, distinct, non-circular)
-- Tone matches textbook style: fun, encouraging, appropriate for high school AP students
+- Tone matches textbook style: fun, encouraging, appropriate for high school college placement students
 - 380 concepts consolidated to 230 glossary terms (related concepts merged to avoid redundancy)
-- All major AP Calculus AB and BC topics represented
+- All major college placement Calculus AB and BC topics represented

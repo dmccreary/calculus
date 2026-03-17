@@ -124,4 +124,4 @@ Present students with a new function not in the MicroSim and have them:
 
 - [Extreme Value Theorem - Wikipedia](https://en.wikipedia.org/wiki/Extreme_value_theorem)
 - [Finding Absolute Extrema - Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/CalcI/AbsExtrema.aspx)
-- [AP Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)

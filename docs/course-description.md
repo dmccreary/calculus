@@ -1,16 +1,16 @@
 # Course Description
 
-## AP Calculus: An Interactive Intelligent Textbook
+## college placement Calculus: An Interactive Intelligent Textbook
 
 ### Course Overview
 
-This course provides comprehensive coverage of differential and integral calculus, aligned with the College Board's Advanced Placement (AP) Calculus curriculum. The course is designed to prepare students for both the AP Calculus AB and AP Calculus BC examinations while building deep conceptual understanding through interactive MicroSimulations and real-world applications.
+This course provides comprehensive coverage of differential and integral calculus, aligned with the College Board's Advanced Placement (AP) Calculus curriculum. The course is designed to prepare students for both the college placement Calculus AB and college placement Calculus BC examinations while building deep conceptual understanding through interactive MicroSimulations and real-world applications.
 
 Calculus represents one of humanity's greatest intellectual achievements—a mathematical framework that describes change, motion, and accumulation. From predicting planetary orbits to optimizing machine learning algorithms, calculus provides the foundational language for understanding our dynamic world.
 
 ### Target Audience
 
-- High school students preparing for AP Calculus AB or BC examinations
+- High school students preparing for college placement Calculus AB or BC examinations
 - College students seeking supplementary resources for Calculus I and II
 - Self-learners interested in building strong calculus foundations
 - Educators seeking interactive teaching resources
@@ -892,15 +892,15 @@ Upon successful completion of this course, students will be able to:
 
 ## Assessment Alignment
 
-### AP Calculus AB Coverage
+### College placement Calculus AB Coverage
 
-This course fully addresses all topics and skills tested on the AP Calculus AB examination:
+This course fully addresses all topics and skills tested on the college placement Calculus AB examination:
 
 - Units 1-8 provide comprehensive coverage of AB content
-- Learning objectives at all Bloom's levels align with AP mathematical practices
-- MicroSimulations reinforce conceptual understanding emphasized on the AP exam
+- Learning objectives at all Bloom's levels align with college placement mathematical practices
+- MicroSimulations reinforce conceptual understanding emphasized on the college placement exam
 
-### AP Calculus BC Coverage
+### college placement Calculus BC Coverage
 
 Students pursuing BC credit will additionally complete:
 
@@ -910,8 +910,8 @@ Students pursuing BC credit will additionally complete:
 
 ### College Credit Equivalency
 
-- **AP Calculus AB**: Equivalent to Calculus I (typically 3-4 semester hours)
-- **AP Calculus BC**: Equivalent to Calculus I and II (typically 6-8 semester hours)
+- **college placement Calculus AB**: Equivalent to Calculus I (typically 3-4 semester hours)
+- **college placement Calculus BC**: Equivalent to Calculus I and II (typically 6-8 semester hours)
 
 ---
 
@@ -951,6 +951,6 @@ Connections to authentic applications include:
 
 ## Conclusion
 
-This AP Calculus course combines rigorous mathematical content with innovative interactive pedagogy. By engaging with concepts at all levels of Bloom's Taxonomy—from foundational recall to creative synthesis—students develop both the procedural fluency and conceptual understanding necessary for success on AP examinations and in future STEM coursework.
+This college placement Calculus course combines rigorous mathematical content with innovative interactive pedagogy. By engaging with concepts at all levels of Bloom's Taxonomy—from foundational recall to creative synthesis—students develop both the procedural fluency and conceptual understanding necessary for success on college placement examinations and in future STEM coursework.
 
 The integration of MicroSimulations transforms abstract calculus concepts into tangible, explorable ideas. Students don't just learn calculus; they experience it as a living, dynamic discipline that describes the patterns of change in our world.

@@ -65,7 +65,7 @@ Students will examine how leading term characteristics (coefficient sign and deg
 
 ### Grade Level
 
-High School (AP Calculus, Pre-Calculus)
+High School (college placement Calculus, Pre-Calculus)
 
 ### Duration
 
@@ -130,6 +130,6 @@ High School (AP Calculus, Pre-Calculus)
 
 ## References
 
-- [AP Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
 - [Khan Academy: End Behavior of Polynomials](https://www.khanacademy.org/math/algebra2/polynomial-functions/end-behavior-of-polynomials/v/polynomial-end-behavior)
 - [Paul's Online Math Notes: Polynomials](https://tutorial.math.lamar.edu/Classes/Alg/Polynomials.aspx)

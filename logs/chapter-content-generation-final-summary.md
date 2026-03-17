@@ -78,7 +78,7 @@ Note: Actual token usage varies based on chapter complexity and caching efficien
 
 3. **Content quality maintained:** Despite parallel execution, each chapter maintains consistent:
    - Delta mascot integration
-   - Appropriate reading level (Senior High/AP Calculus)
+   - Appropriate reading level (Senior High/college placement Calculus)
    - MicroSim specifications with Bloom's Taxonomy alignment
    - Practice problems with solutions
 

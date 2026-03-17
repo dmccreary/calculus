@@ -137,7 +137,7 @@ Organization Score: 20/20
 
 ### Low Priority
 1. Consider adding a "Troubleshooting" subsection for common errors
-2. Add questions about calculator usage on AP exam
+2. Add questions about calculator usage on college placement exam
 3. Include questions about free-response problem strategies
 
 ## Suggested Additional Questions

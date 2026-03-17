@@ -12,7 +12,7 @@
 
 6. [Differentiability and Continuity](https://tutorial.math.lamar.edu/Classes/CalcI/DerivativeInterp.aspx) - Paul's Online Math Notes - Explains the relationship between differentiability and continuity with examples of functions that are continuous but not differentiable.
 
-7. [Differentiability at a Point](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-4) - Khan Academy - Interactive lessons on identifying where functions fail to be differentiable, with practice problems aligned to AP curriculum.
+7. [Differentiability at a Point](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-4) - Khan Academy - Interactive lessons on identifying where functions fail to be differentiable, with practice problems aligned to college placement curriculum.
 
 8. [Non-Differentiable Functions](https://www.youtube.com/watch?v=BnPeyR4T0YA) - Professor Leonard - Detailed lecture on corners, cusps, vertical tangents, and discontinuities as sources of non-differentiability.
 

@@ -8,7 +8,7 @@ let drawHeight = 450;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 50;
-let chartTop = 50;  // Top of drawing region - must be >= 50 to prevent overlap with title/subtitle
+let chartTop = 50;  // Top of drawing region - must be >= 50 to prevent overlcollege placement with title/subtitle
 let defaultTextSize = 16;
 
 // Coordinate system
@@ -56,13 +56,13 @@ function initSliders() {
   let sliderY2 = drawHeight + 55;
   let labelW = 60;
   let sliderW = 120;
-  let gap = 30;
+  let gcollege placement = 30;
 
   sliders = [
     { label: 'a', value: 1, min: -3, max: 3, step: 0.1, x: labelW, y: sliderY1, w: sliderW },
-    { label: 'b', value: 1, min: -3, max: 3, step: 0.1, x: labelW + sliderW + gap + labelW, y: sliderY1, w: sliderW },
+    { label: 'b', value: 1, min: -3, max: 3, step: 0.1, x: labelW + sliderW + gcollege placement + labelW, y: sliderY1, w: sliderW },
     { label: 'h', value: 0, min: -5, max: 5, step: 0.5, x: labelW, y: sliderY2, w: sliderW },
-    { label: 'k', value: 0, min: -5, max: 5, step: 0.5, x: labelW + sliderW + gap + labelW, y: sliderY2, w: sliderW }
+    { label: 'k', value: 0, min: -5, max: 5, step: 0.5, x: labelW + sliderW + gcollege placement + labelW, y: sliderY2, w: sliderW }
   ];
 }
 

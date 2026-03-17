@@ -167,4 +167,4 @@ The approximation improves as the "unit" becomes small relative to total product
 
 - [Khan Academy: Marginal Cost and Derivatives](https://www.khanacademy.org/economics-finance-domain/microeconomics)
 - [Paul's Online Math Notes: Business Applications](https://tutorial.math.lamar.edu/classes/calci/businessapps.aspx)
-- AP Calculus AB/BC Course Description: Applications of Derivatives
+- college placement Calculus AB/BC Course Description: Applications of Derivatives

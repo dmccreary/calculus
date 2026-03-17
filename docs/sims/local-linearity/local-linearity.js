@@ -516,7 +516,7 @@ function updateFunctionButtons() {
     let startX = 50;
     let btnWidth = 50;
     let btnHeight = 22;
-    let btnGap = 5;
+    let btnGcollege placement = 5;
 
     for (let i = 0; i < functions.length; i++) {
         functionButtons.push({

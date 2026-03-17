@@ -664,6 +664,6 @@ Let's put together what we've learned about when functions are differentiable:
     **Answer:** $f$ is not differentiable at $x = -2$ and $x = 2$.
 
 !!! quote "Delta's Celebration"
-    "You made it through Differentiability! You can now spot corners, cusps, and vertical tangents, and you know that differentiability implies continuity but not the other way around. You're nearly 1/3 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Differentiability! You can now spot corners, cusps, and vertical tangents, and you know that differentiability implies continuity but not the other way around. You're nearly 1/3 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

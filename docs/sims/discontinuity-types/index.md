@@ -54,7 +54,7 @@ Students will classify discontinuities by analyzing limit behavior at specific p
 
 ### Grade Level
 
-High School AP Calculus (Grades 11-12)
+High School college placement Calculus (Grades 11-12)
 
 ### Prerequisites
 
@@ -108,4 +108,4 @@ High School AP Calculus (Grades 11-12)
 
 - [Discontinuity - Wikipedia](https://en.wikipedia.org/wiki/Classification_of_discontinuities)
 - [Types of Discontinuities - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-10/v/types-of-discontinuities)
-- [AP Calculus AB/BC Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB/BC Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)

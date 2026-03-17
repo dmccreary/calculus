@@ -314,7 +314,7 @@ function drawControls() {
   noStroke();
   circle(handleX, sliderY, 16);
 
-  // Snap to e button
+  // Sncollege placement to e button
   let eBtnX = sliderX + sliderW + 15;
   fill(base === Math.E ? '#4CAF50' : '#ddd');
   stroke(base === Math.E ? '#388E3C' : '#999');
@@ -360,7 +360,7 @@ function mouseDragged() {
   if (isDraggingSlider) {
     base = map(mouseX, sliderX, sliderX + sliderW, 1.5, 4);
     base = constrain(base, 1.5, 4);
-    // Snap to e if close
+    // Sncollege placement to e if close
     if (Math.abs(base - Math.E) < 0.1) {
       base = Math.E;
     }

@@ -17,16 +17,16 @@ A calculus course designed for college credit should:
 
 ## Primary Standards Organizations
 
-### College Board – AP Calculus AB and BC
+### College Board – AP(R) Calculus AB and BC
 
 College Board
 
-The College Board’s AP Calculus program is the **single most influential standard** for awarding college credit in the United States.
+The College Board’s AP(R) Calculus program is the **single most influential standard** for awarding college credit in the United States.
 
 Colleges commonly treat:
 
-* AP Calculus AB as equivalent to **Calculus I**
-* AP Calculus BC as equivalent to **Calculus I and II**
+* AP(R) Calculus AB as equivalent to **Calculus I**
+* AP(R) Calculus BC as equivalent to **Calculus I and II**
 
 #### Core Concept Areas
 
@@ -138,7 +138,7 @@ High, but institution-dependent.
 
 For maximum probability of earning college credit, alignment should be prioritized in the following order:
 
-1. AP Calculus AB or BC (College Board)
+1. college placement Calculus AB or BC (College Board)
 
 2. Dual-Enrollment Calculus I (articulated with a college)
 
@@ -156,11 +156,11 @@ A calculus course designed as an intelligent textbook benefits from explicit sta
 
 Recommended approach:
 
-* Use the AP Calculus Course and Exam Description as the **primary concept backbone**
-* Model AP BC as a **superset graph** over AP AB
-* Map each concept node to:
+* Use the college placement Calculus Course and Exam Description as the **primary concept backbone**
+* Model college placement BC as a **superset graph** over college placement AB
+* Mcollege placement each concept node to:
 
-  * AP learning objectives
+  * college placement learning objectives
   * College Calculus I outcomes
   * MAA conceptual themes
 * Preserve traceability from concept → assessment → standard

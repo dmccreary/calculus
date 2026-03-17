@@ -123,4 +123,4 @@ Have students complete this quick check:
 
 - [Khan Academy: Derivative as slope of tangent line](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-1/v/derivative-as-slope-of-tangent-line)
 - [3Blue1Brown: The Essence of Calculus](https://www.3blue1brown.com/lessons/essence-of-calculus)
-- AP Calculus AB Course Description, College Board
+- college placement Calculus AB Course Description, College Board

@@ -66,7 +66,7 @@ By the end of this activity, students will be able to:
 
 ### Target Audience
 
-- AP Calculus students (Grades 11-12)
+- college placement Calculus students (Grades 11-12)
 - College calculus students
 - Anyone learning techniques for evaluating limits
 

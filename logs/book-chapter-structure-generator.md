@@ -2,13 +2,13 @@
 
 **Date:** 2026-02-03
 **Skill Used:** book-chapter-generator
-**Project:** AP Calculus Intelligent Textbook
+**Project:** college placement Calculus Intelligent Textbook
 
 ---
 
 ## Session Overview
 
-This log documents the complete session for generating the chapter structure for the AP Calculus intelligent textbook. The process involved analyzing the learning graph with 380 concepts, designing an optimal chapter structure, iterating based on user feedback, and generating all chapter files.
+This log documents the complete session for generating the chapter structure for the college placement Calculus intelligent textbook. The process involved analyzing the learning graph with 380 concepts, designing an optimal chapter structure, iterating based on user feedback, and generating all chapter files.
 
 ---
 
@@ -26,8 +26,8 @@ run the /book-chapter-generator skill
 ### 2.1 Course Description Analysis
 
 Read `/docs/course-description.md` which contained:
-- **Course Title:** AP Calculus: An Interactive Intelligent Textbook
-- **Target Audience:** High school students preparing for AP Calculus AB or BC examinations
+- **Course Title:** college placement Calculus: An Interactive Intelligent Textbook
+- **Target Audience:** High school students preparing for college placement Calculus AB or BC examinations
 - **Prerequisites:** Algebra II, Precalculus/Trigonometry, Functions and Graphs
 - **Structure:** 10 units covering limits, derivatives, integrals, differential equations, and series
 - **Learning Objectives:** Organized by Bloom's Taxonomy levels (Remember through Create)

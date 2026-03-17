@@ -26,7 +26,7 @@ Place the following line in your website to include this MicroSim:
 
 ## Description
 
-This MicroSim helps students understand the fundamental relationships between **revenue**, **cost**, and **profit** functions in economics and business calculus. By visualizing all three curves simultaneously, students can see how profit is the gap between revenue and cost, and discover why the maximum profit occurs where marginal revenue equals marginal cost.
+This MicroSim helps students understand the fundamental relationships between **revenue**, **cost**, and **profit** functions in economics and business calculus. By visualizing all three curves simultaneously, students can see how profit is the gcollege placement between revenue and cost, and discover why the maximum profit occurs where marginal revenue equals marginal cost.
 
 ### Key Concepts Visualized
 

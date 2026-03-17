@@ -12,7 +12,7 @@
 
 6. [Substitution Rule](https://tutorial.math.lamar.edu/Classes/CalcI/SubstitutionRuleIndefinite.aspx) - Paul's Online Math Notes - Comprehensive u-substitution examples for both indefinite and definite integrals with guidance on choosing the right substitution.
 
-7. [U-Substitution](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-9) - Khan Academy - Interactive practice on u-substitution including changing bounds in definite integrals, aligned to AP Calculus expectations.
+7. [U-Substitution](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-9) - Khan Academy - Interactive practice on u-substitution including changing bounds in definite integrals, aligned to college placement Calculus expectations.
 
 8. [Properties of Definite Integrals](https://tutorial.math.lamar.edu/Classes/CalcI/ProofIntProp.aspx) - Paul's Online Math Notes - Statements and proofs of integral properties including additivity, comparison, and the mean value theorem for integrals.
 

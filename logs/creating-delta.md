@@ -1,7 +1,7 @@
 # Creating Delta: The Calculus Course Mascot
 
 **Date:** 2026-02-03
-**Purpose:** Design a course mascot for the AP Calculus intelligent textbook, similar to Gyra in the control systems course.
+**Purpose:** Design a course mascot for the college placement Calculus intelligent textbook, similar to Gyra in the control systems course.
 
 ---
 
@@ -36,7 +36,7 @@ Asked clarifying questions about target audience, character type, and tone.
 
 ### User Prompt 2
 
-> Answer 1: Definatly high school students taking AP Calc. Answer 2: How about a triangular robot that loves to explore the hills and valleys of curved mountains. 3: Tone is fun-loving, optomistic, positive energy, curious, sometimes skeptical (in a good way), a jokester that loves puns and mini-games, loves sidequests, encouraging and someone that can relate to the challenges of learning calculus but positive that calculus is a superpower that will help students become better critical thinkers and understand the world around them.
+> Answer 1: Definatly high school students taking college placement Calc. Answer 2: How about a triangular robot that loves to explore the hills and valleys of curved mountains. 3: Tone is fun-loving, optomistic, positive energy, curious, sometimes skeptical (in a good way), a jokester that loves puns and mini-games, loves sidequests, encouraging and someone that can relate to the challenges of learning calculus but positive that calculus is a superpower that will help students become better critical thinkers and understand the world around them.
 
 ### Claude Response 2
 

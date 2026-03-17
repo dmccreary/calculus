@@ -52,7 +52,7 @@
 
 - Canvas-based controls following project guidelines (no p5.js DOM functions)
 - Responsive width with `updateCanvasSize()` called first in setup()
-- `chartTop = 55` to prevent title/subtitle overlap with graph content
+- `chartTop = 55` to prevent title/subtitle overlcollege placement with graph content
 - Handles discontinuities in sec/csc inverse functions with separate curve segments
 - All six inverse trig functions with their conventional domain restrictions
 

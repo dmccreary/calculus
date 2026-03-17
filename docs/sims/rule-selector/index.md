@@ -74,7 +74,7 @@ By the end of this activity, students will be able to:
 
 ### Grade Level
 
-High School (AP Calculus AB/BC) and Undergraduate Calculus I
+High School (college placement Calculus AB/BC) and Undergraduate Calculus I
 
 ### Duration
 
@@ -139,6 +139,6 @@ Given f(x) = x^2 e^{3x}, trace through the decision tree and explain each choice
 
 ## References
 
-- [AP Calculus AB/BC Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB/BC Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
 - [Paul's Online Math Notes - Differentiation Formulas](https://tutorial.math.lamar.edu/classes/calci/diffformulas.aspx)
 - [Khan Academy - Derivative Rules](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new)

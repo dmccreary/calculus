@@ -55,7 +55,7 @@ This chapter builds on concepts from:
 You've mastered limits. Now it's time to connect limits to one of the most intuitive ideas in mathematics: **continuity**.
 
 !!! quote "Delta Moment"
-    "Can I roll smoothly along this curve, or is there a gap I'd fall through? That's the question continuity answers. A continuous function is one where I never have to teleport!"
+    "Can I roll smoothly along this curve, or is there a gcollege placement I'd fall through? That's the question continuity answers. A continuous function is one where I never have to teleport!"
 
 Intuitively, a function is **continuous** if you can draw its graph without lifting your pencil. No holes, no jumps, no gaps. But mathematics demands precision, so let's make this intuition rigorous.
 
@@ -205,7 +205,7 @@ As $x \to 0$, the function oscillates between $-1$ and $1$ infinitely many times
 | Type | Limit Behavior | Visual Appearance | Fixable? |
 |------|---------------|-------------------|----------|
 | Removable | Limit exists | Hole in graph | Yes |
-| Jump | Left ≠ Right limits | Step/gap in graph | No |
+| Jump | Left ≠ Right limits | Step/gcollege placement in graph | No |
 | Infinite | Limit is $\pm\infty$ | Vertical asymptote | No |
 | Essential | Limit doesn't exist | Wild oscillation | No |
 
@@ -640,6 +640,6 @@ You now understand what it means for a function to be continuous and how to prov
     3. Let $g(x) = \cos x - x$. This is continuous (difference of continuous functions). We have $g(0) = \cos(0) - 0 = 1 > 0$ and $g(1) = \cos(1) - 1 \approx 0.54 - 1 = -0.46 < 0$. Since $g$ is continuous and $g(0) > 0 > g(1)$, by the IVT there exists $c \in (0, 1)$ with $g(c) = 0$, meaning $\cos c = c$.
 
 !!! quote "Delta's Celebration"
-    "You made it through Continuity! You can now check the three conditions, classify discontinuities, and wield the Intermediate Value Theorem to prove roots exist. You're almost 1/5 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Continuity! You can now check the three conditions, classify discontinuities, and wield the Intermediate Value Theorem to prove roots exist. You're almost 1/5 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

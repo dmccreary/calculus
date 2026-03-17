@@ -77,7 +77,7 @@ By the end of this activity, students will be able to:
 
 ### Grade Level
 
-High School (AP Calculus AB/BC) and Undergraduate Calculus I/II
+High School (college placement Calculus AB/BC) and Undergraduate Calculus I/II
 
 ### Duration
 

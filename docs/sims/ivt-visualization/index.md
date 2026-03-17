@@ -124,4 +124,4 @@ By the end of this lesson, students will be able to:
 
 - [IVT on Wikipedia](https://en.wikipedia.org/wiki/Intermediate_value_theorem)
 - [Paul's Online Math Notes - IVT](https://tutorial.math.lamar.edu/Classes/CalcI/Continuity.aspx)
-- AP Calculus AB/BC Curriculum Framework - Limits and Continuity
+- college placement Calculus AB/BC Curriculum Framework - Limits and Continuity

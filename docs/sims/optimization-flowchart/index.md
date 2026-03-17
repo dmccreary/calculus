@@ -109,5 +109,5 @@ After using this MicroSim, students will be able to:
 
 ## References
 
-- [AP Calculus AB: Optimization Problems](https://apstudents.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB: Optimization Problems](https://apstudents.collegeboard.org/courses/ap-calculus-ab)
 - Stewart, J. (2015). *Calculus: Early Transcendentals* (8th ed.). Cengage Learning. Chapter 4.7.

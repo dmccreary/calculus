@@ -106,6 +106,6 @@ Have students complete the following:
 
 ## References
 
-- [AP Calculus: Limits at Infinity and Infinite Limits](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus: Limits at Infinity and Infinite Limits](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
 - [Khan Academy: Vertical Asymptotes](https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new/ab-1-5/a/limits-at-infinity-and-graphs)
 - [Paul's Online Math Notes: Infinite Limits](https://tutorial.math.lamar.edu/Classes/CalcI/InfiniteLimits.aspx)

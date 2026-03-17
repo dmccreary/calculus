@@ -61,7 +61,7 @@ Students will analyze one-sided derivatives to determine differentiability at a 
 
 ### Grade Level
 
-High School AP Calculus (Grades 11-12)
+High School college placement Calculus (Grades 11-12)
 
 ### Duration
 
@@ -119,7 +119,7 @@ High School AP Calculus (Grades 11-12)
 
 - [Differentiability - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-4/a/differentiability-at-a-point-algebraic)
 - [One-Sided Derivatives - Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/CalcI/Continuity.aspx)
-- [AP Calculus AB/BC Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB/BC Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
 
 ---
 *Reminder: Please capture a screenshot for social media previews using `~/.local/bin/bk-capture-screenshot`*

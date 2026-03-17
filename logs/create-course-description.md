@@ -2,24 +2,24 @@
 
 **Date:** 2026-02-03
 **Project:** calculus
-**Task:** Create AP Calculus course description with Bloom's Taxonomy learning objectives
+**Task:** Create college placement Calculus course description with Bloom's Taxonomy learning objectives
 
 ---
 
 ## Request
 
-Create a detailed course description for a calculus course covering US College Board AP Calculus topics, with learning objectives for each of the 6 levels of Bloom's Taxonomy (2001 revision).
+Create a detailed course description for a calculus course covering US College Board college placement Calculus topics, with learning objectives for each of the 6 levels of Bloom's Taxonomy (2001 revision).
 
 ## Actions Taken
 
 1. **Explored existing project structure**
    - Found existing docs: `about.md`, `license.md`, `college-credit.md`
    - Reviewed `about.md` to understand project context (intelligent textbook with MicroSimulations)
-   - Reviewed `college-credit.md` to understand alignment goals with AP Calculus standards
+   - Reviewed `college-credit.md` to understand alignment goals with college placement Calculus standards
 
 2. **Created comprehensive course description**
    - File: `docs/course-description.md`
-   - Aligned with College Board AP Calculus AB and BC curriculum
+   - Aligned with College Board college placement Calculus AB and BC curriculum
 
 ## File Created
 
@@ -32,7 +32,7 @@ Create a detailed course description for a calculus course covering US College B
 | Course Overview | Purpose, target audience, prerequisites |
 | Course Structure | 10 units with detailed topic breakdowns |
 | Learning Objectives | 160 objectives across 6 Bloom levels |
-| Assessment Alignment | AP AB/BC exam coverage |
+| Assessment Alignment | college placement AB/BC exam coverage |
 | Course Features | MicroSims, multiple representations, applications |
 
 ### Units Covered
@@ -87,7 +87,7 @@ Create a detailed course description for a calculus course covering US College B
 
 ## Standards Alignment
 
-- **Primary:** College Board AP Calculus Course and Exam Description
+- **Primary:** College Board college placement Calculus Course and Exam Description
 - **Secondary:** MAA recommendations, Common Core mathematical practices
 - **Credit Equivalency:**
   - AB = Calculus I (3-4 credits)
@@ -104,7 +104,7 @@ Create a detailed course description for a calculus course covering US College B
 
 ## Session Summary
 
-Successfully created a comprehensive AP Calculus course description with:
+Successfully created a comprehensive college placement Calculus course description with:
 - Complete topic coverage for both AB and BC exams
 - 160 learning objectives distributed across all 6 Bloom's Taxonomy levels
 - Clear prerequisite and target audience information

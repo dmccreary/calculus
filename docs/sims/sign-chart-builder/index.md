@@ -22,7 +22,7 @@ social:
 Sign charts are one of the most powerful tools in calculus for understanding function behavior. This interactive MicroSim lets you practice building sign charts for derivatives, helping you identify where functions increase and decrease.
 
 !!! quote "Delta Moment"
-    "Building a sign chart is like making a map of my journey! First I find the
+    "Building a sign chart is like making a mcollege placement of my journey! First I find the
     spots where I'm perfectly level (critical points), then I figure out which
     direction I'm tilted in each section. Plus signs mean I'm climbing, minus
     signs mean I'm descending. With this map, I know exactly what the landscape
@@ -152,7 +152,7 @@ High School (Grades 11-12) or Early College (Calculus I)
 2. **Conceptual**: Draw a function whose sign chart looks like: + | - | - | +
 3. **Extension**: Explain why f(x) = x^3 has a critical point at x = 0 but neither a max nor min there
 
-## Connection to AP Calculus
+## Connection to college placement Calculus
 
 Sign charts are essential for:
 - **Finding local extrema** (First Derivative Test)
@@ -160,7 +160,7 @@ Sign charts are essential for:
 - **Justifying answers** on free-response questions
 - **Understanding the relationship** between f, f', and f''
 
-On the AP Exam, you must often justify your answers by citing the sign of the derivative on specific intervals.
+On the college placement Exam, you must often justify your answers by citing the sign of the derivative on specific intervals.
 
 ## Tips for Success
 
@@ -174,5 +174,5 @@ On the AP Exam, you must often justify your answers by citing the sign of the de
 
 1. [First Derivative Test - Wikipedia](https://en.wikipedia.org/wiki/Derivative_test) - Overview of using derivatives to find extrema
 2. [Increasing and Decreasing Functions - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-3/v/increasing-decreasing-intervals) - Video explanation of interval analysis
-3. [AP Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official AP Calculus curriculum
+3. [college placement Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official college placement Calculus curriculum
 4. [Sign Charts - Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/CalcI/ShapeofGraphPtI.aspx) - Detailed explanation with examples

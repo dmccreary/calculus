@@ -64,7 +64,7 @@ Students will explain why e^x is its own derivative by observing that the tangen
 
 ### Grade Level
 
-High School (AP Calculus) or early undergraduate
+High School (college placement Calculus) or early undergraduate
 
 ### Duration
 

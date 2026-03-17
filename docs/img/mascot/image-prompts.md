@@ -128,7 +128,7 @@ paused mid-roll to contemplate something.  Do not place any text in the image.
 
 ## Pose 3 — Tip (tip.png)
 
-For helpful hints, study strategies, and AP exam tips.
+For helpful hints, study strategies, and college placement exam tips.
 
 ```
 Please create a new version of the base neutral image called "Delta Gives a Useful Tip".

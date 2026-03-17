@@ -12,7 +12,7 @@
 
 6. [Related Rates](https://tutorial.math.lamar.edu/Classes/CalcI/RelatedRates.aspx) - Paul's Online Math Notes - Step-by-step related rates strategy with worked examples including cones, ladders, and expanding circles.
 
-7. [Related Rates Problems](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-applications-new/ab-4-4) - Khan Academy - Interactive practice problems on related rates with video solutions covering the AP Calculus required problem types.
+7. [Related Rates Problems](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-contextual-applications-new/ab-4-4) - Khan Academy - Interactive practice problems on related rates with video solutions covering the college placement Calculus required problem types.
 
 8. [Linear Approximation and Differentials](https://tutorial.math.lamar.edu/Classes/CalcI/LinearApproximations.aspx) - Paul's Online Math Notes - Clear examples of tangent line approximation with error analysis and differential notation.
 

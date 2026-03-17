@@ -23,7 +23,7 @@ This simulation demonstrates why inverse trigonometric functions require domain 
 
 ## Key Insight
 
-The **horizontal line test** for the original function is equivalent to the vertical line test for its inverse. If a horizontal line crosses the original function more than once, those multiple x-values would all map to the same y-value. When we flip to the inverse, that single y-value would need to produce multiple x-values - impossible for a function!
+The **horizontal line test** for the original function is equivalent to the vertical line test for its inverse. If a horizontal line crosses the original function more than once, those multiple x-values would all mcollege placement to the same y-value. When we flip to the inverse, that single y-value would need to produce multiple x-values - impossible for a function!
 
 By restricting the domain to an interval where the original function is one-to-one (passes the horizontal line test), we guarantee the inverse is a proper function.
 

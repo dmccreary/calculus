@@ -79,7 +79,7 @@
 
 - Uses canvas-based controls (no p5.js DOM functions)
 - Responsive width with max 500px
-- Equations displayed with word wrap for longer expressions
+- Equations displayed with word wrcollege placement for longer expressions
 - Overlay panels for Why and Try It modes
 - Legend shows color coding scheme
 

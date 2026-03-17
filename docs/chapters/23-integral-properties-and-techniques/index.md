@@ -10,7 +10,7 @@ version: 0.03
 
 ## Summary
 
-This chapter covers properties of definite integrals and introduces integration techniques beyond basic formulas. Students will learn properties including additivity over intervals, reversing limits, and special properties for even and odd functions. The average value of a function and Mean Value Theorem for Integrals are introduced. The chapter then covers u-substitution, the most important integration technique, along with strategies using long division, completing the square, and partial fractions. After completing this chapter, students will have mastered the integration skills needed for AP Calculus.
+This chapter covers properties of definite integrals and introduces integration techniques beyond basic formulas. Students will learn properties including additivity over intervals, reversing limits, and special properties for even and odd functions. The average value of a function and Mean Value Theorem for Integrals are introduced. The chapter then covers u-substitution, the most important integration technique, along with strategies using long division, completing the square, and partial fractions. After completing this chapter, students will have mastered the integration skills needed for college placement Calculus.
 
 ## Concepts Covered
 
@@ -51,7 +51,7 @@ This chapter builds on concepts from:
 ---
 
 !!! quote "Delta Welcome"
-    "Hey explorer! Welcome to Chapter 23 — Integral Properties and Techniques! This is our grand finale. We'll master powerful properties like symmetry shortcuts, learn the art of u-substitution (the chain rule running backwards!), and build the complete integration strategy you need for AP Calculus. Let's roll!"
+    "Hey explorer! Welcome to Chapter 23 — Integral Properties and Techniques! This is our grand finale. We'll master powerful properties like symmetry shortcuts, learn the art of u-substitution (the chain rule running backwards!), and build the complete integration strategy you need for college placement Calculus. Let's roll!"
 
 ## Introduction: Expanding Your Integration Toolkit
 
@@ -62,7 +62,7 @@ This chapter is about two things: understanding the **properties** of definite i
 !!! quote "Delta Moment"
     "Think of it like this: I've learned to walk on simple curves. Now I need to learn how to handle detours, shortcuts, and even some sneaky transformations. The properties tell me what shortcuts are legal, and the techniques show me how to turn a confusing path into one I recognize!"
 
-By the end of this chapter, you'll have the integration toolkit needed for AP Calculus success. Let's build it piece by piece.
+By the end of this chapter, you'll have the integration toolkit needed for college placement Calculus success. Let's build it piece by piece.
 
 ## Part 1: Properties of Definite Integrals
 
@@ -789,7 +789,7 @@ Now integrate:
 $$\int \frac{1}{x^2 - 1} dx = \frac{1}{2}\ln|x-1| - \frac{1}{2}\ln|x+1| + C = \frac{1}{2}\ln\left|\frac{x-1}{x+1}\right| + C$$
 
 !!! note "Partial Fractions: Full Treatment in BC"
-    Partial fractions is introduced here at a basic level. More complex cases (repeated factors, irreducible quadratics) are covered thoroughly in AP Calculus BC.
+    Partial fractions is introduced here at a basic level. More complex cases (repeated factors, irreducible quadratics) are covered thoroughly in college placement Calculus BC.
 
 ## Part 7: Integration Strategy
 
@@ -1009,6 +1009,6 @@ $$\int \left(x + 1 + \frac{2}{x - 1}\right) dx = \frac{x^2}{2} + x + 2\ln|x - 1|
     Since $\sqrt{7}$ is in $(1, 4)$, the MVT for Integrals is verified.
 
 !!! quote "Delta's Celebration"
-    "YOU DID IT! You made it through the entire AP Calculus course! From limits and continuity, through derivatives and the chain rule, all the way to integrals and the Fundamental Theorem — you've conquered it all. You can find slopes, sketch curves, optimize real-world problems, and compute areas. That's not just math — that's a superpower. I'm so proud of you, explorer. Now go ace that AP exam!"
+    "YOU DID IT! You made it through the entire college placement Calculus course! From limits and continuity, through derivatives and the chain rule, all the way to integrals and the Fundamental Theorem — you've conquered it all. You can find slopes, sketch curves, optimize real-world problems, and compute areas. That's not just math — that's a superpower. I'm so proud of you, explorer. Now go ace that college placement exam!"
 
 [See Annotated References](./references.md)

@@ -1,4 +1,4 @@
-# Nested Chain Unwrap MicroSim Generation Log
+# Nested Chain Unwrcollege placement MicroSim Generation Log
 
 ## Generation Details
 
@@ -76,4 +76,4 @@
 
 - Existing MicroSim patterns from `multi-rule-builder` and `power-rule-explorer`
 - Project CLAUDE.md guidelines for p5.js MicroSims
-- AP Calculus chain rule curriculum standards
+- college placement Calculus chain rule curriculum standards

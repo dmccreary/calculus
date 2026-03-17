@@ -82,7 +82,7 @@
 | Evaluate | 0 | 0% | 4% | Below target |
 | Create | 0 | 0% | 1% | Below target |
 
-**Note:** Evaluate and Create levels are appropriately low for AP Calculus quiz format, which focuses on concept recall and application rather than open-ended evaluation or creative synthesis.
+**Note:** Evaluate and Create levels are appropriately low for college placement Calculus quiz format, which focuses on concept recall and application rather than open-ended evaluation or creative synthesis.
 
 ### Answer Distribution
 
@@ -217,7 +217,7 @@ All quizzes follow the mkdocs-material admonition format:
 
 Successfully generated 230 quiz questions across 23 chapters with:
 - Consistent formatting using mkdocs-material question admonitions
-- Balanced Bloom's Taxonomy distribution appropriate for AP Calculus
+- Balanced Bloom's Taxonomy distribution appropriate for college placement Calculus
 - Comprehensive explanations for each answer
 - Concept tags linking questions to learning graph
 - Updated site navigation for easy access to quizzes

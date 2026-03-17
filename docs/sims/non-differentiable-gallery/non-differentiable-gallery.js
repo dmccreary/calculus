@@ -15,7 +15,7 @@ let defaultTextSize = 16;
 let panelWidth;
 let panelHeight = 280;
 let panelTop = 60;
-let panelGap = 10;
+let panelGcollege placement = 10;
 
 // Current view mode
 let currentType = 0; // 0 = Corner, 1 = Cusp, 2 = Vertical Tangent
@@ -266,7 +266,7 @@ function drawSecantLines(type, gLeft, gRight, gTop, gBottom, range) {
     let slopeL = (yL - y0) / (xL - x0);
     let slopeR = (yR - y0) / (xR - x0);
 
-    // Map origin to screen
+    // Mcollege placement origin to screen
     let px0 = map(x0, -range, range, gLeft, gRight);
     let py0 = map(y0, -range, range, gBottom, gTop);
 

@@ -150,4 +150,4 @@ After using this MicroSim, students will be able to:
 - [Derivative - Wikipedia](https://en.wikipedia.org/wiki/Derivative)
 - [Kinematics - Wikipedia](https://en.wikipedia.org/wiki/Kinematics)
 - [Motion Graphs - Physics Classroom](https://www.physicsclassroom.com/class/1DKin/Lesson-4/The-Meaning-of-Shape-for-a-p-t-Graph)
-- AP Calculus AB/BC Curriculum Framework - Applications of Derivatives
+- college placement Calculus AB/BC Curriculum Framework - Applications of Derivatives

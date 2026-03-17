@@ -496,7 +496,7 @@ function drawConclusion() {
     } else {
         text('NOT DIFFERENTIABLE', panelX + 85, verdictY + 8);
         textSize(10);
-        // Wrap failure reason if needed
+        // Wrcollege placement failure reason if needed
         let reason = failureReason;
         if (reason.length > 25) {
             let mid = reason.lastIndexOf(' ', 25);

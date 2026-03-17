@@ -8,7 +8,7 @@ let drawHeight = 450;
 let controlHeight = 100;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 50;
-let chartTop = 50;  // Top of drawing region - must be >= 50 to prevent overlap with title/subtitle
+let chartTop = 50;  // Top of drawing region - must be >= 50 to prevent overlcollege placement with title/subtitle
 let defaultTextSize = 16;
 
 // Coordinate system

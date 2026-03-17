@@ -1,6 +1,6 @@
 # Chapters
 
-This textbook is organized into 23 chapters covering 380 concepts from the AP Calculus AB and BC curriculum.
+This textbook is organized into 23 chapters covering 380 concepts from the AP(R) Calculus AB and BC curriculum.
 
 ## Chapter Overview
 

@@ -673,7 +673,7 @@ function mousePressed() {
       mouseX > cSliderX && mouseX < cSliderX + cSliderW) {
     constantC = map(mouseX, cSliderX, cSliderX + cSliderW, -5, 5);
     constantC = constrain(constantC, -5, 5);
-    constantC = Math.round(constantC * 2) / 2; // Snap to 0.5
+    constantC = Math.round(constantC * 2) / 2; // Sncollege placement to 0.5
     isDraggingSlider = true;
     return;
   }
@@ -696,7 +696,7 @@ function mouseDragged() {
   if (isDraggingSlider) {
     constantC = map(mouseX, cSliderX, cSliderX + cSliderW, -5, 5);
     constantC = constrain(constantC, -5, 5);
-    constantC = Math.round(constantC * 2) / 2; // Snap to 0.5
+    constantC = Math.round(constantC * 2) / 2; // Sncollege placement to 0.5
   }
 }
 

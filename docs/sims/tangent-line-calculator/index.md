@@ -48,7 +48,7 @@ Students will apply the derivative to write tangent line equations (Bloom Level 
 
 ### Grade Level
 
-High School (AP Calculus AB/BC)
+High School (college placement Calculus AB/BC)
 
 ### Duration
 

@@ -1,6 +1,6 @@
 # Learning Graph Viewer
 
-This interactive viewer allows you to explore the learning graph for the AP Calculus course.
+This interactive viewer allows you to explore the learning graph for the college placement Calculus course.
 
 ## Features
 

@@ -110,4 +110,4 @@ Ask students to explain in their own words:
 
 - [Khan Academy: Derivative as slope of tangent line](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-1/v/derivative-as-slope-of-tangent-line)
 - [Paul's Online Math Notes: Interpretation of the Derivative](https://tutorial.math.lamar.edu/classes/calci/derivativeinterp.aspx)
-- AP Calculus AB/BC Course Description: Unit 2 - Differentiation: Definition and Fundamental Properties
+- college placement Calculus AB/BC Course Description: Unit 2 - Differentiation: Definition and Fundamental Properties

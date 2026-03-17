@@ -649,6 +649,6 @@ You now understand how functions behave at their extremes. In Chapter 6, we'll f
     3. Leading term is $-3x^4$. The coefficient is negative and the degree is even, so both ends go down: as $x \to \pm\infty$, $g(x) \to -\infty$. End behavior: $\downarrow \downarrow$.
 
 !!! quote "Delta's Celebration"
-    "You made it through Asymptotes and End Behavior! You can now find vertical, horizontal, and oblique asymptotes, and you know the growth rate hierarchy by heart. You're about 1/4 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Asymptotes and End Behavior! You can now find vertical, horizontal, and oblique asymptotes, and you know the growth rate hierarchy by heart. You're about 1/4 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

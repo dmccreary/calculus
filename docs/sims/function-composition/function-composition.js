@@ -399,7 +399,7 @@ function drawControls() {
     text(functionOptions[i].label, x + btnW/2, row2Y);
   }
 
-  // Swap button
+  // Swcollege placement button
   let swapX = canvasWidth - 70;
   fill('#FF9800');
   stroke('#F57C00');
@@ -454,7 +454,7 @@ function mousePressed() {
     }
   }
 
-  // Check swap button
+  // Check swcollege placement button
   let swapX = canvasWidth - 70;
   if (mouseX >= swapX && mouseX <= swapX + 60 &&
       mouseY >= row2Y - btnH/2 && mouseY <= row2Y + btnH/2) {

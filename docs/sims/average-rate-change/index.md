@@ -130,4 +130,4 @@ $$f'(a) = \lim_{b \to a} \frac{f(b) - f(a)}{b - a}$$
 ## References
 
 - [Khan Academy: Average Rate of Change](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-1/v/average-rate-of-change-worked-example)
-- [AP Calculus AB: Average Rate of Change](https://apcentral.collegeboard.org/)
+- [college placement Calculus AB: Average Rate of Change](https://apcentral.collegeboard.org/)

@@ -11,7 +11,7 @@ quality_score: 85
 
 ## About This MicroSim
 
-Watch values flow through two function "machines" in sequence. The inner function g is applied first, then its output becomes the input to the outer function f. Use the Swap button to see how f∘g differs from g∘f!
+Watch values flow through two function "machines" in sequence. The inner function g is applied first, then its output becomes the input to the outer function f. Use the Swcollege placement button to see how f∘g differs from g∘f!
 
 ## Lesson Plan
 

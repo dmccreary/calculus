@@ -40,7 +40,7 @@
 - Used canvas-based controls (no DOM elements) per project guidelines
 - chartTop = 60 to prevent title/subtitle overlap
 - Minimum canvas width of 650px for proper control layout
-- Interval constrained so a < b with minimum gap of 0.5
+- Interval constrained so a < b with minimum gcollege placement of 0.5
 - Changing interval endpoints resets to Stage 1
 - Antiderivatives computed analytically for accuracy (not numerical)
 - Y-axis range dynamically adjusts based on function and interval

@@ -8,7 +8,7 @@ Calculus is one of the most widely studied subjects in mathematics education wor
 
 - Approximately **800,000 high school students** take calculus each year[^1]
 - About **700,000 college students** enroll in calculus courses annually[^2]
-- Over **446,000 students** take AP Calculus AB and BC exams each year[^3]
+- Over **446,000 students** take AP® Calculus AB and BC exams each year[^3]
 - Only 48% of U.S. high schools offer calculus, creating significant access disparities[^1]
 
 **Worldwide:**
@@ -50,12 +50,15 @@ Our tools have also matured since January 2025 when we first started using AI to
 
 — Dan McCreary, February 3rd 2025
 
+!!! note
+    AP® is a registered trademark of the College Board, which is not affiliated with, and does not endorse, this product.
+
 ## References
 
 [^1]: Mathematical Association of America. [The decline in high school calculus](https://maa.org/math-values/the-decline-in-high-school-calculus/). MAA Math Values.
 
 [^2]: Duke University Mathematics Department. [Who Studies Calculus and Why](https://sites.math.duke.edu/~das/essays/renewal/students.html).
 
-[^3]: College Board. [2025 AP Score Distributions](https://apstudents.collegeboard.org/about-ap-scores/score-distributions). AP Students.
+[^3]: College Board. [2025 college placement Score Distributions](https://apstudents.collegeboard.org/about-ap-scores/score-distributions). college placement Students.
 
 [^4]: Active Calculus. [The cost of calculus texts](https://activecalculus.org/2012/08/20/the-cost-of-calculus-texts/). Notes that *Calculus: Early Transcendentals* (8th ed.) has a list price of $299.95, with discounted new copies around $250.

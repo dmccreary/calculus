@@ -63,7 +63,7 @@ Students will be able to apply the Closed Interval Method to find absolute extre
 
 ### Grade Level
 
-AP Calculus AB/BC, College Calculus I (Grades 11-12, Undergraduate)
+college placement Calculus AB/BC, College Calculus I (Grades 11-12, Undergraduate)
 
 ### Prerequisites
 

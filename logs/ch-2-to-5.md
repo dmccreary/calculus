@@ -6,11 +6,11 @@
 
 ## Session Overview
 
-Generated comprehensive educational content for four chapters of the AP Calculus intelligent textbook, covering the foundational topics of limits, continuity, and asymptotic behavior. All content follows the tone guide from CLAUDE.md with Delta (the mascot) integrated throughout.
+Generated comprehensive educational content for four chapters of the college placement Calculus intelligent textbook, covering the foundational topics of limits, continuity, and asymptotic behavior. All content follows the tone guide from CLAUDE.md with Delta (the mascot) integrated throughout.
 
 ## Reading Level
 
-**Senior High (Grades 10-12)** - Identified from course description targeting "High school students preparing for AP Calculus AB or BC examinations"
+**Senior High (Grades 10-12)** - Identified from course description targeting "High school students preparing for college placement Calculus AB or BC examinations"
 
 ## Chapters Generated
 

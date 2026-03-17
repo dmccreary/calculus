@@ -12,7 +12,7 @@
 
 6. [Implicit Differentiation](https://tutorial.math.lamar.edu/Classes/CalcI/ImplicitDiff.aspx) - Paul's Online Math Notes - Step-by-step examples showing the mechanics of implicit differentiation with clear treatment of the dy/dx chain rule application.
 
-7. [Implicit Differentiation](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2) - Khan Academy - Interactive practice on implicit differentiation including finding tangent lines, with video explanations aligned to AP curriculum.
+7. [Implicit Differentiation](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-2) - Khan Academy - Interactive practice on implicit differentiation including finding tangent lines, with video explanations aligned to college placement curriculum.
 
 8. [Implicit Differentiation Explained](https://www.youtube.com/watch?v=qb40J4N1fa4) - Organic Chemistry Tutor - Comprehensive video tutorial with examples covering circles, ellipses, and more complex implicit equations.
 

@@ -97,4 +97,4 @@ By the end of this activity, students will be able to:
 ## References
 
 - [Khan Academy: Asymptotes](https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:rational-functions/x9e81a4f98389efdf:end-behavior-of-rational-functions/a/end-behavior-of-rational-functions)
-- [AP Calculus: Limits at Infinity](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus: Limits at Infinity](https://apcentral.collegeboard.org/courses/ap-calculus-ab)

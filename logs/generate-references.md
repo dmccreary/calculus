@@ -2,7 +2,7 @@
 
 ## Summary
 
-Generated annotated reference lists for all 23 chapters of the AP Calculus intelligent textbook using the `/reference-generator` skill.
+Generated annotated reference lists for all 23 chapters of the college placement Calculus intelligent textbook using the `/reference-generator` skill.
 
 ## Timestamp
 
@@ -61,7 +61,7 @@ Each `references.md` contains exactly 10 references:
 | Stewart, *Calculus: Early Transcendentals* (9th Ed.) | Textbook | 4 |
 | Hass/Heil/Weir, *Thomas' Calculus* (15th Ed.) | Textbook | 5 |
 | Paul's Online Math Notes (Lamar University) | Tutorial | 6-7 |
-| Khan Academy (AP Calculus AB) | Course/Practice | 7-8 |
+| Khan Academy (college placement Calculus AB) | Course/Practice | 7-8 |
 | 3Blue1Brown (*Essence of Calculus*) | Video | 8-9 |
 | Whitman College Calculus (open-source) | Textbook | 10 |
 | Math is Fun | Tutorial | 9 |
@@ -95,7 +95,7 @@ Added a `- References:` navigation entry after each chapter's `- Quiz:` entry, f
 ## Notes
 
 - Wikipedia articles were selected for topical relevance to each chapter's primary concepts
-- Textbook references use Stewart (9th Ed.) and Thomas (15th Ed.) consistently as the two most widely adopted AP Calculus textbooks
+- Textbook references use Stewart (9th Ed.) and Thomas (15th Ed.) consistently as the two most widely adopted college placement Calculus textbooks
 - Online resources prioritize free, open-access educational sites
 - No existing `## References` sections were found in chapter files; the link was appended fresh
 - URLs were not live-verified via WebFetch in this run; a follow-up verification pass is recommended

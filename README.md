@@ -1,4 +1,4 @@
-# AP Calculus Intelligent Textbook
+# college placement Calculus Intelligent Textbook
 
 [![MkDocs](https://img.shields.io/badge/Made%20with-MkDocs-526CFE?logo=materialformkdocs)](https://www.mkdocs.org/)
 [![Material for MkDocs](https://img.shields.io/badge/Material%20for%20MkDocs-526CFE?logo=materialformkdocs)](https://squidfunk.github.io/mkdocs-material/)
@@ -15,11 +15,11 @@ Visit the interactive textbook at: [https://dmccreary.github.io/calculus/](https
 
 ## Overview
 
-This is an interactive, AI-generated intelligent textbook for **AP Calculus** designed for high school students seeking college credit. Built using MkDocs with the Material theme, it incorporates learning graphs, concept dependencies, and over 100 interactive MicroSims (p5.js simulations) that make calculus come alive.
+This is an interactive, AI-generated intelligent textbook for **college placement Calculus** designed for high school students seeking college credit. Built using MkDocs with the Material theme, it incorporates learning graphs, concept dependencies, and over 100 interactive MicroSims (p5.js simulations) that make calculus come alive.
 
-The textbook covers both AP Calculus AB and BC curricula with 23 comprehensive chapters spanning limits, derivatives, integrals, and their applications. The fun, encouraging tone—featuring **Delta**, a curious triangular robot mascot who explores the hills and valleys of mathematical curves—makes even challenging topics accessible and engaging.
+The textbook covers both college placement Calculus AB and BC curricula with 23 comprehensive chapters spanning limits, derivatives, integrals, and their applications. The fun, encouraging tone—featuring **Delta**, a curious triangular robot mascot who explores the hills and valleys of mathematical curves—makes even challenging topics accessible and engaging.
 
-Whether you're a student preparing for AP exams, an educator looking for interactive teaching resources, or a self-learner building calculus foundations, this textbook provides hands-on exploration with immediate visual feedback. All MicroSims use open-source JavaScript libraries and run directly in your browser—no special software required.
+Whether you're a student preparing for college placement exams, an educator looking for interactive teaching resources, or a self-learner building calculus foundations, this textbook provides hands-on exploration with immediate visual feedback. All MicroSims use open-source JavaScript libraries and run directly in your browser—no special software required.
 
 ## Site Metrics
 
@@ -39,7 +39,7 @@ Whether you're a student preparing for AP exams, an educator looking for interac
 - **Interactive MicroSims**: 100 p5.js simulations covering everything from limits to optimization
 - **Delta the Robot**: A friendly mascot who makes abstract concepts tangible by "experiencing" calculus physically
 - **Bloom's Taxonomy Alignment**: Content designed for higher-order thinking (Analyze, Evaluate, Create)
-- **AP Exam Preparation**: Covers all topics for both AP Calculus AB and BC examinations
+- **college placement Exam Preparation**: Covers all topics for both college placement Calculus AB and BC examinations
 - **Open Source Tools Only**: Ensuring every student can participate regardless of economic situation
 
 ## Getting Started

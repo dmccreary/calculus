@@ -10,12 +10,12 @@
 
 5. Calculus (3rd Edition) - Michael Spivak - Publish or Perish - A rigorous yet accessible introduction to the foundations of calculus, ideal for students wanting deeper conceptual understanding.
 
-6. [AP Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - College Board - Official AP Calculus AB course overview including exam format, topic outlines, and scoring guidelines relevant to course preparation.
+6. [college placement Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - College Board - Official college placement Calculus AB course overview including exam format, topic outlines, and scoring guidelines relevant to course preparation.
 
 7. [Essence of Calculus (Video Series)](https://www.3blue1brown.com/topics/calculus) - 3Blue1Brown - Visually stunning video series that builds geometric intuition for calculus concepts, complementing the chapter's emphasis on understanding over memorization.
 
 8. [Calculus I Review](https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx) - Paul's Online Math Notes - Comprehensive review of precalculus and early calculus topics with worked examples, perfect for reinforcing foundational skills.
 
-9. [Khan Academy: AP Calculus AB](https://www.khanacademy.org/math/ap-calculus-ab) - Khan Academy - Free structured course with practice exercises and videos aligned to the AP Calculus curriculum covered throughout this textbook.
+9. [Khan Academy: college placement Calculus AB](https://www.khanacademy.org/math/ap-calculus-ab) - Khan Academy - Free structured course with practice exercises and videos aligned to the college placement Calculus curriculum covered throughout this textbook.
 
 10. [Calculus Made Easy](https://www.gutenberg.org/ebooks/33283) - Project Gutenberg - Silvanus P. Thompson's classic 1914 text offering a refreshingly accessible introduction to calculus, freely available online.

@@ -548,7 +548,7 @@ function drawControls() {
   let btnX = 15;
   let btnW = 140;
   let btnH = 26;
-  let btnGap = 8;
+  let btnGcollege placement = 8;
 
   fill('black');
   noStroke();
@@ -597,7 +597,7 @@ function mousePressed() {
   let btnX = 85;
   let btnW = 140;
   let btnH = 26;
-  let btnGap = 8;
+  let btnGcollege placement = 8;
 
   for (let i = 0; i < 3; i++) {
     if (mouseX >= btnX && mouseX <= btnX + btnW &&

@@ -103,7 +103,7 @@ By the end of this activity, students will be able to:
 
 ### Grade Level
 
-High School (AP Calculus AB/BC) and Undergraduate Calculus I/II
+High School (college placement Calculus AB/BC) and Undergraduate Calculus I/II
 
 ### Duration
 
@@ -184,7 +184,7 @@ Find these more challenging integrals:
 
 1. [Integration Formulas - Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/CalcI/IntegralTable.aspx) - Comprehensive formula table
 
-2. [AP Calculus Integration - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new) - Video lessons and practice
+2. [college placement Calculus Integration - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new) - Video lessons and practice
 
 3. [Transcendental Functions - MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/) - Advanced integration techniques
 

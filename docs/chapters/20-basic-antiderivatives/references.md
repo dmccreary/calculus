@@ -12,7 +12,7 @@
 
 6. [Computing Indefinite Integrals](https://tutorial.math.lamar.edu/Classes/CalcI/ComputingIndefiniteIntegrals.aspx) - Paul's Online Math Notes - Comprehensive list of basic antiderivative formulas with worked examples for power, trig, and exponential functions.
 
-7. [Antiderivatives and Indefinite Integrals](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7) - Khan Academy - Interactive practice on finding antiderivatives using reverse power rule and basic formulas, aligned to AP curriculum.
+7. [Antiderivatives and Indefinite Integrals](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-7) - Khan Academy - Interactive practice on finding antiderivatives using reverse power rule and basic formulas, aligned to college placement curriculum.
 
 8. [Basic Integration Rules](https://www.youtube.com/watch?v=rfG8ce4nNh0) - Organic Chemistry Tutor - Video tutorial covering all basic antiderivative formulas with extensive worked examples.
 

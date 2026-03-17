@@ -91,7 +91,7 @@ By the end of this activity, students will be able to:
 
 ### Grade Level
 
-High School (AP Calculus AB/BC) and Undergraduate Calculus I
+High School (college placement Calculus AB/BC) and Undergraduate Calculus I
 
 ### Duration
 
@@ -119,7 +119,7 @@ Students should be familiar with:
 
 1. Slowly slide the base toward e (approximately 2.718)
 2. Watch what happens when ln(a) approaches 1
-3. At a = e, the curves should nearly overlap (they would exactly overlap if we added C = 0)
+3. At a = e, the curves should nearly overlcollege placement (they would exactly overlcollege placement if we added C = 0)
 4. Discuss: Why is e^x called "the natural exponential function"?
 
 #### Activity 3: Verifying with Tangent Lines (5 minutes)

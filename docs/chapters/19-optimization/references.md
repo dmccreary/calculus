@@ -12,7 +12,7 @@
 
 6. [Optimization Problems](https://tutorial.math.lamar.edu/Classes/CalcI/Optimization.aspx) - Paul's Online Math Notes - Step-by-step optimization strategy with worked examples covering fencing, boxes, cans, and distance minimization problems.
 
-7. [Optimization Problems](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-11) - Khan Academy - Interactive practice on setting up and solving applied optimization problems aligned to AP Calculus expectations.
+7. [Optimization Problems](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-11) - Khan Academy - Interactive practice on setting up and solving applied optimization problems aligned to college placement Calculus expectations.
 
 8. [Optimization](https://www.youtube.com/watch?v=lx0sQMhxpsY) - Professor Leonard - Detailed lecture on the optimization problem-solving framework with multiple worked examples and strategies for modeling.
 

@@ -10,7 +10,7 @@ social:
 ---
 # Additivity Property Visualization
 
-<iframe src="main.html" height="502px" scrolling="no" style="width: 100%;"></iframe>
+<iframe src="main.html" height="502px" scrolling="no" width="100%"></iframe>
 
 [Run the Additivity Property Visualization Fullscreen](./main.html){ .md-button .md-button--primary }
 

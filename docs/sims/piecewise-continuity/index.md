@@ -53,7 +53,7 @@ This MicroSim helps students determine whether piecewise functions are continuou
 - **Approach slider**: Manually adjust how close the approach points are to the boundary
 
 !!! quote "Delta Moment"
-    "Can I walk here smoothly, or is there a gap I'd fall through? That's what continuity is all about. If the left side and right side meet up perfectly AND the function actually touches that meeting point... I can roll right through!"
+    "Can I walk here smoothly, or is there a gcollege placement I'd fall through? That's what continuity is all about. If the left side and right side meet up perfectly AND the function actually touches that meeting point... I can roll right through!"
 
 ## Lesson Plan
 

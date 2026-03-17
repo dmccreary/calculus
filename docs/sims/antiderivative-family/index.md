@@ -10,7 +10,7 @@ social:
 ---
 # Family of Antiderivatives
 
-<iframe src="main.html" height="590px" scrolling="no"></iframe>
+<iframe src="main.html" height="590px" scrolling="no" width="100%"></iframe>
 
 [Run the Family of Antiderivatives Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -145,4 +145,4 @@ Have students complete this quick check:
 
 - [Khan Academy: The constant of integration](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-8/v/constant-of-integration)
 - [3Blue1Brown: Integration and the fundamental theorem of calculus](https://www.3blue1brown.com/lessons/integration)
-- AP Calculus AB/BC Course Description: Unit 6 - Integration and Accumulation of Change
+- college placement Calculus AB/BC Course Description: Unit 6 - Integration and Accumulation of Change

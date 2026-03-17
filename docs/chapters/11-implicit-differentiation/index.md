@@ -834,6 +834,6 @@ $(f^{-1})'(3) = \frac{1}{f'(1)} = \frac{1}{5}$
     **Answer:** $\frac{dy}{dx} = \frac{1 - ye^{xy}}{xe^{xy} - 1}$
 
 !!! quote "Delta's Celebration"
-    "You made it through implicit differentiation! You can now find slopes on circles, ellipses, and even crazy curves where $y$ refuses to be isolated. You're nearly halfway through AP Calculus — keep that momentum going!"
+    "You made it through implicit differentiation! You can now find slopes on circles, ellipses, and even crazy curves where $y$ refuses to be isolated. You're nearly halfway through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

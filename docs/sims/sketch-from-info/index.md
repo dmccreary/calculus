@@ -64,7 +64,7 @@ Students will construct function graphs given only derivative information, devel
 
 ### Grade Level
 
-High School (AP Calculus) / Undergraduate
+High School (college placement Calculus) / Undergraduate
 
 ### Prerequisites
 
@@ -137,4 +137,4 @@ Have students write their own set of derivative conditions on paper, then trade 
 
 - [Curve Sketching Using Derivatives - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-6a/v/curve-sketching-with-calculus-first-derivative)
 - [First and Second Derivative Tests - Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/CalcI/ShapeofGraphPtII.aspx)
-- AP Calculus AB Course and Exam Description, Unit 5: Analytical Applications of Differentiation
+- college placement Calculus AB Course and Exam Description, Unit 5: Analytical Applications of Differentiation

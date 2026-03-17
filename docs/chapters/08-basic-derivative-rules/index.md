@@ -645,6 +645,6 @@ Here's your complete toolkit from this chapter:
     Alternatively, using the quotient rule directly would give the same answer, but with much more algebra!
 
 !!! quote "Delta's Celebration"
-    "You made it through Basic Derivative Rules! You can now differentiate polynomials in seconds and handle products and quotients with confidence. You're over 1/3 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Basic Derivative Rules! You can now differentiate polynomials in seconds and handle products and quotients with confidence. You're over 1/3 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

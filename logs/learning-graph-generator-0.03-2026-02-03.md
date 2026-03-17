@@ -2,13 +2,13 @@
 
 **Date:** 2026-02-03
 **Skill Version:** Learning Graph Generator v0.03
-**Project:** AP Calculus Intelligent Textbook
+**Project:** college placement Calculus Intelligent Textbook
 
 ---
 
 ## Session Summary
 
-Successfully generated a comprehensive learning graph with 380 concepts covering AP Calculus AB and BC curriculum.
+Successfully generated a comprehensive learning graph with 380 concepts covering college placement Calculus AB and BC curriculum.
 
 ## Steps Completed
 
@@ -55,7 +55,7 @@ Successfully generated a comprehensive learning graph with 380 concepts covering
 
 ### Step 7: Create Metadata
 - Created `metadata.json` with Dublin Core fields
-- Title: "AP Calculus Learning Graph"
+- Title: "college placement Calculus Learning Graph"
 - Creator: Dan McCreary
 - License: CC BY-NC-SA 4.0 DEED
 
@@ -82,7 +82,7 @@ Successfully generated a comprehensive learning graph with 380 concepts covering
 
 ### Step 11: Create Index
 - Created `index.md` from template
-- Customized for AP Calculus textbook
+- Customized for college placement Calculus textbook
 
 ## Files Created
 

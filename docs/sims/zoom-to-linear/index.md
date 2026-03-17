@@ -85,7 +85,7 @@ Students will demonstrate that sufficiently zoomed-in views of differentiable fu
 
 ### Grade Level
 
-High School (Grades 11-12) - AP Calculus AB/BC
+High School (Grades 11-12) - college placement Calculus AB/BC
 
 ### Duration
 

@@ -71,7 +71,7 @@ Students will recall the integrals of the six basic trigonometric forms (Bloom L
 
 ### Grade Level
 
-High School AP Calculus, College Calculus II
+High School college placement Calculus, College Calculus II
 
 ### Duration
 
@@ -150,4 +150,4 @@ This MicroSim pairs naturally with the [Trig Derivatives Flashcards](../trig-der
 
 - [Integrals of Trigonometric Functions - Khan Academy](https://www.khanacademy.org/math/integral-calculus/ic-integration/ic-integral-trig/v/antiderivatives-and-indefinite-integrals)
 - [Trig Integration Formulas - Math is Fun](https://www.mathsisfun.com/calculus/integration-rules.html)
-- [AP Calculus Curriculum Framework](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus Curriculum Framework](https://apcentral.collegeboard.org/courses/ap-calculus-ab)

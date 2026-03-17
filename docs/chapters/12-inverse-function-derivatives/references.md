@@ -12,7 +12,7 @@
 
 6. [Derivatives of Inverse Trig Functions](https://tutorial.math.lamar.edu/Classes/CalcI/DiffInvTrigFcns.aspx) - Paul's Online Math Notes - All six inverse trig derivative formulas with proofs and examples showing how to apply them with the chain rule.
 
-7. [Inverse Trig Derivatives](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-4) - Khan Academy - Practice problems on derivatives of arcsin, arccos, and arctan with step-by-step video solutions aligned to AP curriculum.
+7. [Inverse Trig Derivatives](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-4) - Khan Academy - Practice problems on derivatives of arcsin, arccos, and arctan with step-by-step video solutions aligned to college placement curriculum.
 
 8. [Derivatives of Inverse Functions](https://www.youtube.com/watch?v=GNsBqY-l0Qg) - Professor Leonard - Thorough lecture covering the reciprocal slope property geometrically before deriving inverse trig formulas algebraically.
 

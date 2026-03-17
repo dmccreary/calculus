@@ -78,7 +78,7 @@ Students will apply the inverse trigonometric derivative formulas to compute der
 
 ### Grade Level
 
-High School (AP Calculus AB/BC)
+High School (college placement Calculus AB/BC)
 
 ### Duration
 

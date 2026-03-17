@@ -595,6 +595,6 @@ You now have a solid toolkit for evaluating limits. In Chapter 4, we'll use thes
     3. The limit $\lim_{x \to 0} \frac{\sin x}{x} = 1$ relies on the relationship between arc length and the sine function on the unit circle. This geometric relationship only works when angles are measured in radians. In degrees, the limit would be $\frac{\pi}{180}$.
 
 !!! quote "Delta's Celebration"
-    "You made it through Evaluating Limits! You can now handle indeterminate forms, apply the Squeeze Theorem, and use special trig limits like a pro. You're 3/23 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Evaluating Limits! You can now handle indeterminate forms, apply the Squeeze Theorem, and use special trig limits like a pro. You're 3/23 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

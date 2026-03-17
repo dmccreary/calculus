@@ -714,6 +714,6 @@ With L'Hospital's Rule mastered, you now have powerful tools for evaluating comp
     4. This is a $0^0$ form. Let $y = x^x$, so $\ln y = x \ln x$. As $x \to 0^+$, this is $0 \cdot (-\infty)$, which can be rewritten as $\ln y = \frac{\ln x}{1/x}$, giving $\frac{-\infty}{\infty}$. Now L'Hospital's Rule can be applied to find $\lim_{x \to 0^+} \ln y$, and then $\lim_{x \to 0^+} x^x = e^{\lim \ln y}$.
 
 !!! quote "Delta's Celebration"
-    "You made it through L'Hospital's Rule and contextual applications! You can now conquer indeterminate forms and interpret derivatives in real-world settings like a true mathematician. You're about 2/3 of the way through AP Calculus — keep that momentum going!"
+    "You made it through L'Hospital's Rule and contextual applications! You can now conquer indeterminate forms and interpret derivatives in real-world settings like a true mathematician. You're about 2/3 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

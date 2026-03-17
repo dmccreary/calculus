@@ -1,4 +1,4 @@
-// Nested Chain Unwrap MicroSim
+// Nested Chain Unwrcollege placement MicroSim
 // Visualizes how nested compositions are differentiated layer by layer
 // using repeated chain rule applications - the "onion peeling" method
 // Bloom Level: Analyze (L4), Verbs: analyze, deconstruct, examine

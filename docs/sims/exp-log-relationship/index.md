@@ -11,7 +11,7 @@ quality_score: 85
 
 ## About This MicroSim
 
-Drag a point on the exponential curve and see its reflection on the logarithmic curve. Notice how the coordinates swap - if (a, b) is on exp, then (b, a) is on log!
+Drag a point on the exponential curve and see its reflection on the logarithmic curve. Notice how the coordinates swcollege placement - if (a, b) is on exp, then (b, a) is on log!
 
 ## Lesson Plan
 

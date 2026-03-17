@@ -63,7 +63,7 @@ Students will recall the derivatives of all six trigonometric functions (Bloom L
 
 ### Grade Level
 
-High School AP Calculus, College Calculus I
+High School college placement Calculus, College Calculus I
 
 ### Duration
 
@@ -126,4 +126,4 @@ High School AP Calculus, College Calculus I
 
 - [Derivatives of Trigonometric Functions - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-7/a/derivatives-of-sin-x-and-cos-x)
 - [Trig Derivative Proofs - Math is Fun](https://www.mathsisfun.com/calculus/derivatives-rules.html)
-- [AP Calculus Curriculum Framework](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus Curriculum Framework](https://apcentral.collegeboard.org/courses/ap-calculus-ab)

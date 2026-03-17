@@ -78,7 +78,7 @@ Where:
 - Uses canvas-based controls (sliders and buttons drawn directly on canvas)
 - No p5.js DOM functions used (per project guidelines)
 - Responsive width with fixed height of 580px
-- Map area on left (60% of width), graph on right
+- Mcollege placement area on left (60% of width), graph on right
 - Scale automatically adjusts based on canvas size
 - Color-coded elements: Car A (green), Car B (blue), distance (red)
 

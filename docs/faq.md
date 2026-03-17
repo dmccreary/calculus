@@ -1,18 +1,18 @@
-# AP Calculus FAQ
+# college placement Calculus FAQ
 
-Welcome to the Frequently Asked Questions page for the AP Calculus intelligent textbook. This FAQ covers common questions about the course, key concepts, and how to succeed in your calculus journey.
+Welcome to the Frequently Asked Questions page for the college placement Calculus intelligent textbook. This FAQ covers common questions about the course, key concepts, and how to succeed in your calculus journey.
 
 ## Getting Started Questions
 
 ### What is this course about?
 
-This course provides comprehensive coverage of differential and integral calculus, aligned with the College Board's AP Calculus curriculum. You'll learn about limits, derivatives, integrals, and their applications. The course prepares students for both the AP Calculus AB and AP Calculus BC examinations while building deep conceptual understanding through interactive MicroSimulations.
+This course provides comprehensive coverage of differential and integral calculus, aligned with the College Board's college placement Calculus curriculum. You'll learn about limits, derivatives, integrals, and their applications. The course prepares students for both the college placement Calculus AB and college placement Calculus BC examinations while building deep conceptual understanding through interactive MicroSimulations.
 
 See the [Course Description](course-description.md) for complete details on course content and objectives.
 
 ### Who is this course for?
 
-This course is designed for high school students preparing for AP Calculus AB or BC examinations, college students seeking supplementary resources for Calculus I and II, self-learners interested in building strong calculus foundations, and educators seeking interactive teaching resources. The content is written at a high school reading level with a fun, encouraging tone.
+This course is designed for high school students preparing for college placement Calculus AB or BC examinations, college students seeking supplementary resources for Calculus I and II, self-learners interested in building strong calculus foundations, and educators seeking interactive teaching resources. The content is written at a high school reading level with a fun, encouraging tone.
 
 ### What prerequisites do I need?
 
@@ -20,9 +20,9 @@ You should have successfully completed Algebra II (polynomial, rational, exponen
 
 Review the [Foundations of Calculus](chapters/01-foundations-of-calculus/index.md) chapter to assess your readiness.
 
-### What's the difference between AP Calculus AB and BC?
+### What's the difference between AP(R) Calculus AB and BC?
 
-AP Calculus AB covers Units 1-8 and is equivalent to Calculus I (typically 3-4 semester hours of college credit). AP Calculus BC includes everything in AB plus Unit 9 (Parametric, Polar, and Vector Functions) and Unit 10 (Infinite Sequences and Series), equivalent to Calculus I and II (typically 6-8 semester hours).
+College placement Calculus AB covers Units 1-8 and is equivalent to Calculus I (typically 3-4 semester hours of college credit). college placement Calculus BC includes everything in AB plus Unit 9 (Parametric, Polar, and Vector Functions) and Unit 10 (Infinite Sequences and Series), equivalent to Calculus I and II (typically 6-8 semester hours).
 
 ### How should I use this textbook?
 
@@ -40,9 +40,9 @@ MicroSimulations (MicroSims) are interactive visualizations that let you explore
 
 No special software is required. All MicroSimulations run in your web browser using open-source JavaScript libraries. This ensures that every student can fully participate regardless of their economic situation or institutional affiliation.
 
-### How does this course relate to the AP exam?
+### How does this course relate to the college placement exam?
 
-This course fully addresses all topics and skills tested on the AP Calculus AB and BC examinations. Learning objectives at all Bloom's Taxonomy levels align with AP mathematical practices. The course emphasizes conceptual understanding alongside procedural fluency, as required by the AP exam.
+This course fully addresses all topics and skills tested on the college placement Calculus AB and BC examinations. Learning objectives at all Bloom's Taxonomy levels align with college placement mathematical practices. The course emphasizes conceptual understanding alongside procedural fluency, as required by the college placement exam.
 
 ### What makes this textbook "intelligent"?
 

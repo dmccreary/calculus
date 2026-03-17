@@ -51,7 +51,7 @@ You've spent the last several chapters learning powerful individual tools: findi
 Think of it like this: each derivative tool is an instrument in an orchestra. Playing them one at a time gives you isolated sounds, but playing them together creates a symphony. Curve sketching is your chance to conduct the whole orchestra.
 
 !!! quote "Delta Moment"
-    "I've been exploring curves piece by piece—checking my tilt here, my acceleration there. But now? Now I get to see the ENTIRE landscape before I even set foot on it. It's like having a map of every hill, valley, and flat spot before the adventure begins!"
+    "I've been exploring curves piece by piece—checking my tilt here, my acceleration there. But now? Now I get to see the ENTIRE landscape before I even set foot on it. It's like having a mcollege placement of every hill, valley, and flat spot before the adventure begins!"
 
 This chapter teaches you a systematic checklist that professional mathematicians use. By following these steps, you'll be able to take any function and reveal its complete shape: where it lives, where it crosses axes, whether it's symmetric, where it shoots off to infinity, where it rises and falls, where it peaks and dips, and where it changes its curvature.
 
@@ -565,7 +565,7 @@ Implementation: p5.js with three linked coordinate systems, responsive design
 
 ## Derivative from Graph
 
-A common AP Calculus question gives you the graph of $f$ and asks you to sketch $f'$ or $f''$, or vice versa. Here's how to approach these problems systematically.
+A common college placement Calculus question gives you the graph of $f$ and asks you to sketch $f'$ or $f''$, or vice versa. Here's how to approach these problems systematically.
 
 ### Given f, Sketch f'
 
@@ -803,7 +803,7 @@ Implementation: p5.js with step-based animation, responsive canvas
 
 ## Connecting f, f', and f'' Visually
 
-Understanding the relationships between a function and its derivatives is crucial for the AP exam. Let's explore the key visual connections.
+Understanding the relationships between a function and its derivatives is crucial for the college placement exam. Let's explore the key visual connections.
 
 ### From f to f': The Slope Reader
 
@@ -897,7 +897,7 @@ Implementation: HTML/CSS/JavaScript with SVG diagram
 
 ## Practice: Reading Derivative Graphs
 
-One of the most important AP skills is extracting information from derivative graphs. Let's practice the systematic approach.
+One of the most important college placement skills is extracting information from derivative graphs. Let's practice the systematic approach.
 
 ### Given the Graph of f'
 
@@ -1031,7 +1031,7 @@ Let's summarize the essential ideas from this chapter.
 - **Concave down**: $f'' < 0$; curve opens downward
 
 !!! quote "Delta's Final Word"
-    "Curve sketching is where everything clicks together. Domain tells me where I can go. Asymptotes warn me of cliffs. The first derivative shows me uphill versus downhill. The second derivative tells me if I'm working harder or easier. Critical points are my rest stops, and inflection points are my vibe shifts. Put it all together, and I've got a complete map of the entire journey before I take a single step!"
+    "Curve sketching is where everything clicks together. Domain tells me where I can go. Asymptotes warn me of cliffs. The first derivative shows me uphill versus downhill. The second derivative tells me if I'm working harder or easier. Critical points are my rest stops, and inflection points are my vibe shifts. Put it all together, and I've got a complete mcollege placement of the entire journey before I take a single step!"
 
 ---
 
@@ -1041,6 +1041,6 @@ Now that you can analyze and sketch curves completely, you're ready to apply the
 
 
 !!! quote "Delta's Celebration"
-    "You made it through Curve Sketching! You can now map out an entire function's landscape — every hill, valley, asymptote, and vibe shift — before taking a single step. You're over 3/4 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Curve Sketching! You can now mcollege placement out an entire function's landscape — every hill, valley, asymptote, and vibe shift — before taking a single step. You're over 3/4 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

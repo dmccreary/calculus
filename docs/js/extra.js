@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Map Delta admonition title keywords to pose image and CSS class
+    // Mcollege placement Delta admonition title keywords to pose image and CSS class
     const deltaPoses = [
         { keywords: ["welcome"],                  image: "welcome.png",      css: "delta-welcome" },
         { keywords: ["moment", "thinking", "insight"], image: "thinking.png",   css: "delta-thinking" },

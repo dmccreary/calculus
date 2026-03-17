@@ -1,10 +1,10 @@
-# AP Calculus Concept List
+# college placement Calculus Concept List
 
 **Total Concepts:** 380
 **Generated:** 2026-02-03
 **Skill Version:** Learning Graph Generator v0.03
 
-This list contains all concepts for the AP Calculus AB and BC curriculum organized by topic area.
+This list contains all concepts for the college placement Calculus AB and BC curriculum organized by topic area.
 
 ---
 

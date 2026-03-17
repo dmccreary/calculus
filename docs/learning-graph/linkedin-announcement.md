@@ -1,6 +1,6 @@
-Excited to share a new open educational resource: an interactive AP Calculus textbook designed for high school students seeking college credit!
+Excited to share a new open educational resource: an interactive college placement Calculus textbook designed for high school students seeking college credit!
 
-This intelligent textbook covers both AP Calculus AB and BC curricula, built using
+This intelligent textbook covers both college placement Calculus AB and BC curricula, built using
 my state-of-the art Claude Code Skills. It features a learning graph showing concept dependencies, interactive MicroSims, and a fun mascot named Delta — a curious triangular robot who explores the hills and valleys of mathematical curves.
 
 This is the most ambitious textbook I have generated!

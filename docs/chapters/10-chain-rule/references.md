@@ -12,7 +12,7 @@
 
 6. [Chain Rule](https://tutorial.math.lamar.edu/Classes/CalcI/ChainRule.aspx) - Paul's Online Math Notes - Comprehensive examples organized by complexity, from simple compositions to deeply nested functions with multiple rule applications.
 
-7. [Chain Rule Practice](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a) - Khan Academy - Progressive practice problems on identifying inside and outside functions and applying the chain rule, aligned to AP curriculum.
+7. [Chain Rule Practice](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-2-new/ab-3-1a) - Khan Academy - Progressive practice problems on identifying inside and outside functions and applying the chain rule, aligned to college placement curriculum.
 
 8. [Essence of Calculus: Chain Rule](https://www.youtube.com/watch?v=YG15m2VwSjA) - 3Blue1Brown - Visual explanation of why the chain rule works using the idea of composing small changes, building geometric understanding.
 

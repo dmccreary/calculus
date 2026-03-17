@@ -11,7 +11,7 @@ The course description is **excellent** and well-suited for generating a compreh
 
 | Element | Points | Max | Assessment |
 |---------|--------|-----|------------|
-| Title | 5 | 5 | "AP Calculus: An Interactive Intelligent Textbook" - Clear and descriptive |
+| Title | 5 | 5 | "college placement Calculus: An Interactive Intelligent Textbook" - Clear and descriptive |
 | Target Audience | 5 | 5 | Specific: HS students, college students, self-learners, educators |
 | Prerequisites | 5 | 5 | Detailed: Algebra II, Precalculus/Trig, Functions and Graphs |
 | Main Topics Covered | 10 | 10 | 10 comprehensive units with detailed subtopics |
@@ -28,7 +28,7 @@ The course description is **excellent** and well-suited for generating a compreh
 
 ## Strengths
 
-1. **Comprehensive Topic Coverage**: 10 units covering all AP Calculus AB and BC content
+1. **Comprehensive Topic Coverage**: 10 units covering all college placement Calculus AB and BC content
 2. **Exceptional Bloom's Taxonomy Integration**: 160 learning objectives across all 6 levels
 3. **Clear Prerequisites**: Well-defined mathematical background requirements
 4. **Multiple Target Audiences**: Addresses diverse learner needs
@@ -54,7 +54,7 @@ Based on this course description, I can derive approximately **350-400 concepts*
 - ~30 concepts for Parametric/Polar/Vectors (BC)
 - ~45 concepts for Infinite Series (BC)
 
-This exceeds typical AP Calculus courses due to the comprehensive nature of the description and detailed learning objectives.
+This exceeds typical college placement Calculus courses due to the comprehensive nature of the description and detailed learning objectives.
 
 ## Recommendation
 

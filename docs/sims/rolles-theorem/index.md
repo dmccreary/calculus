@@ -70,7 +70,7 @@ By the end of this activity, students will be able to:
 
 ### Target Audience
 
-- AP Calculus AB/BC students
+- college placement Calculus AB/BC students
 - First-year college calculus students
 - Grades 11-12
 
@@ -117,6 +117,6 @@ By the end of this activity, students will be able to:
 
 1. [Rolle's Theorem - Wikipedia](https://en.wikipedia.org/wiki/Rolle%27s_theorem) - Comprehensive article on the theorem's history, proof, and applications
 
-2. [AP Calculus Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official AP Calculus curriculum including Mean Value Theorem unit
+2. [college placement Calculus Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official college placement Calculus curriculum including Mean Value Theorem unit
 
 3. [p5.js Reference](https://p5js.org/reference/) - Documentation for the p5.js library used in this visualization

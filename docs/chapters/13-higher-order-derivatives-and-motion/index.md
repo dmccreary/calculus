@@ -710,6 +710,6 @@ Let's visualize the complete picture:
     This makes physical sense: on the way up, gravity slows the ball. After the peak, gravity speeds the ball up as it falls.
 
 !!! quote "Delta's Celebration"
-    "You made it through higher-order derivatives and motion analysis! You now understand position, velocity, acceleration, and jerk — the complete physics of how things move. You're past the midpoint of AP Calculus — keep that momentum going!"
+    "You made it through higher-order derivatives and motion analysis! You now understand position, velocity, acceleration, and jerk — the complete physics of how things move. You're past the midpoint of college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

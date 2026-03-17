@@ -2,7 +2,7 @@
   "title": "Average Rate of Change Explorer",
   "description": "An interactive MicroSim that allows students to explore average rate of change by dragging two points along a curve and observing the secant line and slope calculation update in real-time.",
   "creator": "Dan McCreary",
-  "subject": ["Mathematics", "Calculus", "AP Calculus"],
+  "subject": ["Mathematics", "Calculus", "college placement Calculus"],
   "created": "2026-02-03",
   "type": "Interactive Simulation",
   "format": "text/html",

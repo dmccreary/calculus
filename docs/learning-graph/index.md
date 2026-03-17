@@ -1,4 +1,4 @@
-# Learning Graph for AP Calculus
+# Learning Graph for college placement Calculus
 
 This section contains the learning graph for this textbook. A learning graph is
 a graph of concepts used in this textbook. Each concept is represented by a
@@ -6,7 +6,7 @@ node in a network graph. Concepts are connected by directed edges that indicate
 what concepts each node depends on before that concept is understood by the student.
 
 A learning graph is the foundational data structure for intelligent textbooks that can recommend learning paths.
-A learning graph is like a roadmap of concepts to help students arrive at their learning goals.
+A learning graph is like a roadmcollege placement of concepts to help students arrive at their learning goals.
 
 At the left of the learning graph are prerequisite or foundational concepts. They
 have no outbound edges. They only have inbound edges for other concepts that depend on

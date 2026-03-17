@@ -142,4 +142,4 @@ Geometrically, this limit represents the **slope of the tangent line** to the cu
 1. [Tangent Line - Wikipedia](https://en.wikipedia.org/wiki/Tangent) - Comprehensive overview of tangent lines in mathematics
 2. [Derivative - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-differentiation-1-new/ab-2-2/v/calculus-derivatives-1) - Video introduction to derivatives
 3. [Visual Calculus - David Tall](https://www.researchgate.net/publication/255611528_Visual_Calculus) - Research on visual approaches to teaching calculus
-4. [AP Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official AP Calculus curriculum guidelines
+4. [college placement Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official college placement Calculus curriculum guidelines

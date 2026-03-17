@@ -20,7 +20,7 @@ Note: Requires `@types/p5` to be installed via npm, or a `jsconfig.json` with ty
 
 ### 2. Vertical Position Adjustment Using push/translate/pop
 
-Added a coordinate transformation to shift the drawing content down, preventing overlap with the title:
+Added a coordinate transformation to shift the drawing content down, preventing overlcollege placement with the title:
 
 ```javascript
 // Draw the items in the center of the drawing area
@@ -182,7 +182,7 @@ function drawQuizScore() {
 
 1. **Coordinate transformations simplify layout adjustments** - The push/translate/pop pattern is powerful for moving groups of elements without modifying each function individually.
 
-2. **Account for transforms in mouse handling** - When using translate(), mouse coordinates need adjustment (e.g., `mouseY - verticalTranslate`) to correctly map screen positions to logical coordinates.
+2. **Account for transforms in mouse handling** - When using translate(), mouse coordinates need adjustment (e.g., `mouseY - verticalTranslate`) to correctly mcollege placement screen positions to logical coordinates.
 
 3. **Hit detection radius matters** - Using `dist()` with a 15px radius for point clicking provides a good balance between precision and ease of use.
 

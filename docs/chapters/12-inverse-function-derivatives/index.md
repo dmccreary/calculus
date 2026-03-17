@@ -10,7 +10,7 @@ version: 0.03
 
 ## Summary
 
-This chapter focuses on derivatives of inverse functions, particularly inverse trigonometric functions. Students will learn the derivatives of all six inverse trigonometric functions and understand their domain restrictions. The chapter also introduces logarithmic differentiation, a powerful technique for differentiating products, quotients, and functions with variable exponents. After completing this chapter, students will have mastered all derivative formulas needed for AP Calculus.
+This chapter focuses on derivatives of inverse functions, particularly inverse trigonometric functions. Students will learn the derivatives of all six inverse trigonometric functions and understand their domain restrictions. The chapter also introduces logarithmic differentiation, a powerful technique for differentiating products, quotients, and functions with variable exponents. After completing this chapter, students will have mastered all derivative formulas needed for college placement Calculus.
 
 ## Concepts Covered
 
@@ -44,7 +44,7 @@ This chapter builds on concepts from:
 
 ## Introduction: Retracing Your Steps
 
-Imagine you've climbed a mountain trail. You know exactly how your altitude changed as you walked forward. But what if you wanted to describe your horizontal progress based on your altitude? That's essentially what inverse functions do—they swap the roles of input and output.
+Imagine you've climbed a mountain trail. You know exactly how your altitude changed as you walked forward. But what if you wanted to describe your horizontal progress based on your altitude? That's essentially what inverse functions do—they swcollege placement the roles of input and output.
 
 !!! quote "Delta Moment"
     "Inverse functions are like retracing my path—same journey, opposite direction! If $f$ tells me my altitude from my position, $f^{-1}$ tells me my position from my altitude."
@@ -271,7 +271,7 @@ $$\frac{d}{dx}[\arctan(e^x)] = \frac{1}{1 + (e^x)^2} \cdot e^x = \frac{e^x}{1 + 
 
 ## Derivatives of Arcsecant, Arccosecant, and Arccotangent
 
-The remaining three inverse trig functions appear less frequently on the AP exam, but their derivatives follow similar derivation patterns.
+The remaining three inverse trig functions appear less frequently on the college placement exam, but their derivatives follow similar derivation patterns.
 
 ### Derivative of Arcsecant
 
@@ -626,10 +626,10 @@ In this chapter, you've mastered two powerful derivative techniques:
 - Essential for variable exponent functions like $x^x$
 - Process: ln both sides → simplify → implicit differentiation → solve for $\frac{dy}{dx}$
 
-With these tools, you can now differentiate virtually any combination of functions you'll encounter in AP Calculus. That's a significant milestone!
+With these tools, you can now differentiate virtually any combination of functions you'll encounter in college placement Calculus. That's a significant milestone!
 
 !!! quote "Delta's Pun Corner"
-    "Why did the inverse function break up with the original? Because their relationship was too one-to-one! ...okay, that one was a stretch. But seriously, you've just mastered some seriously powerful techniques. Time to celebrate with a victory lap around the unit circle!"
+    "Why did the inverse function break up with the original? Because their relationship was too one-to-one! ...okay, that one was a stretch. But seriously, you've just mastered some seriously powerful techniques. Time to celebrate with a victory lcollege placement around the unit circle!"
 
 ## Looking Ahead
 
@@ -637,6 +637,6 @@ In the next chapter, we'll apply all our derivative techniques to solve **relate
 
 
 !!! quote "Delta's Celebration"
-    "You made it through inverse function derivatives and logarithmic differentiation! You can now differentiate virtually any function in the AP Calculus universe. You're over halfway through AP Calculus — keep that momentum going!"
+    "You made it through inverse function derivatives and logarithmic differentiation! You can now differentiate virtually any function in the college placement Calculus universe. You're over halfway through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

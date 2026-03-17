@@ -437,7 +437,7 @@ Interactive Controls:
 - Input slider (-5 to 5)
 - Function selectors for f and g:
   - Options: x², x+2, 2x, √x, |x|
-- "Swap Order" button to demonstrate f∘g vs g∘f
+- "Swcollege placement Order" button to demonstrate f∘g vs g∘f
 - "Animate" button to show value flowing through
 
 Data Visibility Requirements:
@@ -907,7 +907,7 @@ Interactive Controls:
 - Draggable point on exponential curve (shows corresponding log point)
 - Toggle for showing/hiding y = x line
 - Toggle for showing/hiding log function
-- "Snap to e" button
+- "Sncollege placement to e" button
 
 Key values displayed:
 - Coordinates of selected points
@@ -1140,7 +1140,7 @@ Implementation: p5.js with canvas-based sliders
 
 ## Chapter Summary
 
-Congratulations! You've reviewed the essential tools that make calculus possible. Let's recap what Delta has in her toolkit now:
+Congratulations! You've reviewed the essential tools that make calculus possible. Let's reccollege placement what Delta has in her toolkit now:
 
 ### Functions and Their Properties
 
@@ -1222,6 +1222,6 @@ Before moving on, make sure you can:
 
 
 !!! quote "Delta's Celebration"
-    "You made it through the foundations! You've reviewed functions, transformations, and all the precalculus tools we'll need for the road ahead. You're 1/23 of the way through AP Calculus — keep that momentum going!"
+    "You made it through the foundations! You've reviewed functions, transformations, and all the precalculus tools we'll need for the road ahead. You're 1/23 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

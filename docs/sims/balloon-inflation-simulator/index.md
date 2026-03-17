@@ -69,7 +69,7 @@ Students will compare how the rate of radius change varies with different radii 
 
 ### Grade Level
 
-High School (Grades 11-12) - AP Calculus AB/BC
+High School (Grades 11-12) - college placement Calculus AB/BC
 
 ### Duration
 

@@ -81,7 +81,7 @@ By the end of this activity, students will be able to:
 
 ### Target Audience
 
-- AP Calculus AB/BC students
+- college placement Calculus AB/BC students
 - College Calculus I students
 - Prerequisites: Understanding of derivatives as rates of change and slopes of tangent lines
 

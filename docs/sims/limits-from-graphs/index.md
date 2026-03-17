@@ -12,7 +12,7 @@ image: /sims/limits-from-graphs/limits-from-graphs.png
 
 ## About This MicroSim
 
-Practice the essential skill of reading limits directly from graphs. This skill is critical for understanding limits conceptually and appears frequently on AP Calculus exams.
+Practice the essential skill of reading limits directly from graphs. This skill is critical for understanding limits conceptually and appears frequently on college placement Calculus exams.
 
 ### What You'll Practice
 

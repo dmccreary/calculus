@@ -80,7 +80,7 @@ After completing this activity, students will be able to:
 
 ### Target Audience
 
-- AP Calculus AB/BC students
+- college placement Calculus AB/BC students
 - College Calculus I students
 - Students reviewing for calculus exams
 
@@ -122,7 +122,7 @@ Before clicking "Next Step," have students predict:
 
 ## References
 
-1. [AP Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - College Board's official curriculum guide including curve sketching objectives
+1. [college placement Calculus Course Description](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - College Board's official curriculum guide including curve sketching objectives
 
 2. [Curve Sketching - Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/CalcI/CurveSketch.aspx) - Comprehensive tutorial on the curve sketching process with worked examples
 

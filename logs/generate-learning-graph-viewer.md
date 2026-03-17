@@ -2,13 +2,13 @@
 
 **Date:** 2026-02-03
 **Skill:** book-installer > learning-graph-viewer
-**Project:** AP Calculus Intelligent Textbook
+**Project:** college placement Calculus Intelligent Textbook
 
 ---
 
 ## Request
 
-Install an interactive learning graph viewer for the AP Calculus textbook.
+Install an interactive learning graph viewer for the college placement Calculus textbook.
 
 ## Prerequisites Verified
 

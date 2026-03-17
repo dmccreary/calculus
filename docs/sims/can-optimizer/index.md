@@ -63,7 +63,7 @@ By the end of this activity, students will be able to:
 
 ### Grade Level
 
-High School (Grades 11-12) and AP Calculus
+High School (Grades 11-12) and college placement Calculus
 
 ### Prerequisites
 
@@ -110,7 +110,7 @@ High School (Grades 11-12) and AP Calculus
 - Ask students to explain in writing why the "square profile" minimizes surface area
 - Calculate the material savings (percentage) compared to a poorly designed can
 
-### Connection to AP Calculus
+### Connection to college placement Calculus
 
 This activity directly addresses:
 
@@ -121,6 +121,6 @@ This activity directly addresses:
 
 ## References
 
-- [Optimization Problems - AP Calculus](https://apcentral.collegeboard.org/)
+- [Optimization Problems - college placement Calculus](https://apcentral.collegeboard.org/)
 - [Calculus: Early Transcendentals by Stewart - Chapter 4.7](https://www.stewartcalculus.com/)
 - [The Can Problem - Classic Optimization](https://mathworld.wolfram.com/)

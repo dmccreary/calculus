@@ -188,4 +188,4 @@ By the **Extreme Value Theorem** and **Fermat's Theorem**, if f has a local maxi
 1. [Critical Point - Wikipedia](https://en.wikipedia.org/wiki/Critical_point_(mathematics)) - Mathematical definition and theory
 2. [Critical Numbers - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-2/v/minima-maxima-and-critical-points) - Video explanation with examples
 3. [Fermat's Theorem - MathWorld](https://mathworld.wolfram.com/FermatsTheorem.html) - The theorem connecting extrema to critical points
-4. [AP Calculus AB: Applications of Derivatives](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official College Board curriculum guidelines
+4. [college placement Calculus AB: Applications of Derivatives](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official College Board curriculum guidelines

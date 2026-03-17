@@ -704,6 +704,6 @@ Here's your integration toolkit from this chapter:
     **Verify:** $f'(x) = 4x - \sin x$ ✓ and $f(0) = 0 + 1 + 1 = 2$ ✓
 
 !!! quote "Delta's Celebration"
-    "You made it through Basic Antiderivatives! You can now reverse the derivative machine for polynomials and trig functions, and you know why that +C is so important — it's my starting altitude! You're almost 7/8 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Basic Antiderivatives! You can now reverse the derivative machine for polynomials and trig functions, and you know why that +C is so important — it's my starting altitude! You're almost 7/8 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

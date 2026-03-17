@@ -10,7 +10,7 @@
 
 5. Thomas' Calculus (15th Edition) - Joel Hass, Christopher Heil, Maurice Weir - Pearson - Chapters 2.1-2.4 provide an accessible graphical and numerical approach to understanding limits with strong visual examples.
 
-6. [Limits Introduction](https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new) - Khan Academy - Video lessons and interactive practice on limit concepts, notation, and estimation from graphs and tables aligned to AP curriculum.
+6. [Limits Introduction](https://www.khanacademy.org/math/ap-calculus-ab/ab-limits-new) - Khan Academy - Video lessons and interactive practice on limit concepts, notation, and estimation from graphs and tables aligned to college placement curriculum.
 
 7. [Intuitive Definition of a Limit](https://tutorial.math.lamar.edu/Classes/CalcI/TheLimit.aspx) - Paul's Online Math Notes - Clear worked examples showing how to estimate limits from tables and graphs, with common pitfalls highlighted.
 

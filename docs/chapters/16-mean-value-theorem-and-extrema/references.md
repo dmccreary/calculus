@@ -12,7 +12,7 @@
 
 6. [Mean Value Theorem](https://tutorial.math.lamar.edu/Classes/CalcI/MeanValueTheorem.aspx) - Paul's Online Math Notes - Worked examples finding the value of c guaranteed by the MVT, with geometric explanations and applications.
 
-7. [Extreme Value Theorem and Critical Points](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-2) - Khan Academy - Interactive lessons on finding absolute extrema using the closed interval method, aligned to AP curriculum.
+7. [Extreme Value Theorem and Critical Points](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-2) - Khan Academy - Interactive lessons on finding absolute extrema using the closed interval method, aligned to college placement curriculum.
 
 8. [Mean Value Theorem Explained](https://www.youtube.com/watch?v=JCJM0rI7jwU) - Professor Leonard - Detailed lecture covering Rolle's theorem and MVT with geometric motivation and worked examples.
 

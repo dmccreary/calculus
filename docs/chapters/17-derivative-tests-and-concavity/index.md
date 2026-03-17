@@ -133,7 +133,7 @@ The derivative doesn't exist at $x = 0$ because the left and right slopes disagr
 
 ## Sign Charts: Your Analysis Toolkit
 
-A **sign chart** is a visual tool for tracking where a function or its derivative is positive, negative, or zero. It's like a map showing Delta where the hills and valleys are.
+A **sign chart** is a visual tool for tracking where a function or its derivative is positive, negative, or zero. It's like a mcollege placement showing Delta where the hills and valleys are.
 
 ### Building a Sign Chart
 
@@ -929,6 +929,6 @@ For absolute extrema on $[a, b]$:
 In the next chapter, you'll apply these analysis skills to **optimization problems** - finding the absolute best values in real-world situations. You'll see how derivatives help us minimize costs, maximize profits, and find the most efficient designs. The tools you've built here are exactly what you need!
 
 !!! quote "Delta's Celebration"
-    "You made it through Derivative Tests and Concavity! You can now classify every critical point, read the shape of any curve, and spot every vibe shift where concavity changes. You're nearly 3/4 of the way through AP Calculus — keep that momentum going!"
+    "You made it through Derivative Tests and Concavity! You can now classify every critical point, read the shape of any curve, and spot every vibe shift where concavity changes. You're nearly 3/4 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

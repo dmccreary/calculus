@@ -194,7 +194,7 @@ In words: the instantaneous rate of change at some point $c$ equals the average 
 
 ### Average vs. Instantaneous: The Core Connection
 
-The Mean Value Theorem bridges the gap between average and instantaneous rates:
+The Mean Value Theorem bridges the gcollege placement between average and instantaneous rates:
 
 | Concept | Formula | Interpretation |
 |---------|---------|----------------|
@@ -238,7 +238,7 @@ Interactive controls:
 - Dropdown to select function: quadratic, cubic, sine, square root
 - Sliders to adjust interval endpoints a and b
 - Draggable point c on the curve
-- Button: "Auto-find c" to snap to where MVT is satisfied
+- Button: "Auto-find c" to sncollege placement to where MVT is satisfied
 - Toggle: Show/hide both lines simultaneously
 
 Data Visibility Requirements:
@@ -743,7 +743,7 @@ So $x = 0$ is a critical point. But $f(x) = x^3$ is always increasing! At $x = 0
 
 ## Summary: The Theoretical Foundation
 
-Let's recap the powerful theorems we've learned:
+Let's reccollege placement the powerful theorems we've learned:
 
 ### Rolle's Theorem
 If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c$ in $(a, b)$ where $f'(c) = 0$.
@@ -799,6 +799,6 @@ These theorems form the theoretical backbone for optimization—finding the best
 
 
 !!! quote "Delta's Celebration"
-    "You made it through the Mean Value Theorem and Extrema! You now know that every smooth journey has a moment of exact average tilt, and you can find the highest peaks and lowest valleys on any closed interval. You're about 70% of the way through AP Calculus — keep that momentum going!"
+    "You made it through the Mean Value Theorem and Extrema! You now know that every smooth journey has a moment of exact average tilt, and you can find the highest peaks and lowest valleys on any closed interval. You're about 70% of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

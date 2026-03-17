@@ -10,7 +10,7 @@ social:
 ---
 # Accumulation Function Explorer
 
-<iframe src="main.html" height="552px" scrolling="no" style="width: 100%;"></iframe>
+<iframe src="main.html" height="552px" scrolling="no" width="100%"></iframe>
 
 [Run the Accumulation Function Explorer Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -55,4 +55,4 @@ Students will be able to:
 
 ## References
 
-- [Accumulation Functions - AP Calculus](https://apcentral.collegeboard.org/courses/ap-calculus-ab/classroom-resources)
+- [Accumulation Functions - college placement Calculus](https://apcentral.collegeboard.org/courses/ap-calculus-ab/classroom-resources)

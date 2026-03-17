@@ -51,7 +51,7 @@ Students will find tangent lines to curves defined by implicit equations (Bloom 
 
 ### Grade Level
 
-High School (AP Calculus AB/BC)
+High School (college placement Calculus AB/BC)
 
 ### Duration
 

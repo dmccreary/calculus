@@ -46,7 +46,7 @@ This means the natural logarithm of any positive number a equals the area under 
 2. **Watch the shaded area** change as a moves
 3. **Toggle the ln(x) overlay** to see how the area corresponds to the logarithm curve
 4. **Click Animate** to see a sweep through all values
-5. **Use Quick Jump buttons** to snap to special values like 1, e, or 10
+5. **Use Quick Jump buttons** to sncollege placement to special values like 1, e, or 10
 
 ### Special Points to Explore
 
@@ -91,7 +91,7 @@ By the end of this activity, students will be able to:
 
 ### Grade Level
 
-High School (AP Calculus AB/BC) and Undergraduate Calculus I
+High School (college placement Calculus AB/BC) and Undergraduate Calculus I
 
 ### Duration
 

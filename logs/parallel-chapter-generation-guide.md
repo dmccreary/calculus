@@ -127,7 +127,7 @@ Each agent's prompt should include:
 
 ### 1. Role and Task
 ```
-You are generating educational content for an AP Calculus textbook chapter.
+You are generating educational content for an college placement Calculus textbook chapter.
 Your task: Generate comprehensive content for Chapter N: [Title]
 ```
 

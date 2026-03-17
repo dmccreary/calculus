@@ -179,4 +179,4 @@ For a position function s(t):
 
 - [Khan Academy: Interpreting direction of motion](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-6/v/interpreting-direction-of-motion)
 - [Paul's Online Math Notes: Velocity and Acceleration](https://tutorial.math.lamar.edu/classes/calci/velocity_acceleration.aspx)
-- AP Calculus AB/BC Course Description: Unit 4 - Contextual Applications of Differentiation
+- college placement Calculus AB/BC Course Description: Unit 4 - Contextual Applications of Differentiation

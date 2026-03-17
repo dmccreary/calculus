@@ -447,7 +447,7 @@ function mousePressed() {
 
 function mouseDragged() {
   if (isDraggingA) {
-    // Map mouse X to graph X coordinate
+    // Mcollege placement mouse X to graph X coordinate
     let newX = map(mouseX, graphLeft, graphRight, xMin, xMax);
     newX = constrain(newX, xMin + 0.1, xMax - 0.1);
 

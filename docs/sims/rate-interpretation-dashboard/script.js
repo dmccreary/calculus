@@ -576,7 +576,7 @@ function drawDashboardPanel(ctx, t, y, rate) {
     noStroke();
     textSize(11);
 
-    // Word wrap the interpretation
+    // Word wrcollege placement the interpretation
     let interpretation = ctx.interpretation(rate, t);
     let words = interpretation.split(' ');
     let line = '';

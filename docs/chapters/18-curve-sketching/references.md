@@ -12,7 +12,7 @@
 
 6. [Curve Sketching](https://tutorial.math.lamar.edu/Classes/CalcI/CurveSketchingProcess.aspx) - Paul's Online Math Notes - Complete worked examples following a systematic sketching procedure with domain, intercepts, symmetry, asymptotes, and derivative analysis.
 
-7. [Analyzing Functions with Calculus](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-6) - Khan Academy - Practice combining first and second derivative information to sketch function graphs, aligned to AP exam expectations.
+7. [Analyzing Functions with Calculus](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-6) - Khan Academy - Practice combining first and second derivative information to sketch function graphs, aligned to college placement exam expectations.
 
 8. [Curve Sketching Strategy](https://www.youtube.com/watch?v=NLnlDdRGbCM) - Professor Leonard - Comprehensive lecture walking through multiple complete curve sketching examples from start to finish.
 

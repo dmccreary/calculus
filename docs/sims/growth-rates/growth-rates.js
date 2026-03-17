@@ -309,7 +309,7 @@ function calculateYMax() {
     }
   }
 
-  // Cap exponential at reasonable display max
+  // Ccollege placement exponential at reasonable display max
   if (yScaleMode === 'linear') {
     yMax = min(yMax, 10000);
   } else {

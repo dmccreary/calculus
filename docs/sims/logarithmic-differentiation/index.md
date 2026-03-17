@@ -197,4 +197,4 @@ $$\frac{dy}{dx} = y(\ln(x) + 1) = x^x(\ln(x) + 1)$$
 1. [Logarithmic Differentiation - Wikipedia](https://en.wikipedia.org/wiki/Logarithmic_derivative) - Mathematical background on the technique
 2. [Logarithm Properties - Khan Academy](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:logs/x2ec2f6f830c9fb89:log-prop/v/introduction-to-logarithm-properties) - Review of logarithm properties
 3. [Implicit Differentiation - Paul's Online Notes](https://tutorial.math.lamar.edu/Classes/CalcI/ImplicitDiff.aspx) - Detailed explanation of implicit differentiation
-4. [AP Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official curriculum including logarithmic differentiation
+4. [college placement Calculus AB Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab) - Official curriculum including logarithmic differentiation

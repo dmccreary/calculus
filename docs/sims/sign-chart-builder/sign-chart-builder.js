@@ -718,7 +718,7 @@ function mouseDragged() {
         let nlRight = canvasWidth - 60;
         let newX = map(mouseX, nlLeft, nlRight, xMin, xMax);
         newX = constrain(newX, xMin + 0.5, xMax - 0.5);
-        newX = Math.round(newX * 2) / 2; // Snap to 0.5 increments
+        newX = Math.round(newX * 2) / 2; // Sncollege placement to 0.5 increments
         userCriticalPoints[draggedPointIndex] = newX;
 
         // Reset signs when points move
@@ -735,7 +735,7 @@ function doubleClicked() {
 
     if (mouseY >= nlY - 20 && mouseY <= nlY + 20 && mouseX >= nlLeft && mouseX <= nlRight) {
         let newX = map(mouseX, nlLeft, nlRight, xMin, xMax);
-        newX = Math.round(newX * 2) / 2; // Snap to 0.5 increments
+        newX = Math.round(newX * 2) / 2; // Sncollege placement to 0.5 increments
 
         // Don't add if too close to existing point
         if (!userCriticalPoints.some(cp => Math.abs(cp - newX) < 0.4)) {

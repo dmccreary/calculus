@@ -12,7 +12,7 @@
 
 6. [Computing Indefinite Integrals](https://tutorial.math.lamar.edu/Classes/CalcII/IntTechIntro.aspx) - Paul's Online Math Notes - Overview of integration techniques for transcendental functions with guidance on selecting the right approach.
 
-7. [Integrals of Trig Functions](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-9) - Khan Academy - Practice integrating trigonometric functions with video explanations and step-by-step solutions aligned to AP curriculum.
+7. [Integrals of Trig Functions](https://www.khanacademy.org/math/ap-calculus-ab/ab-integration-new/ab-6-9) - Khan Academy - Practice integrating trigonometric functions with video explanations and step-by-step solutions aligned to college placement curriculum.
 
 8. [Integrals Involving Exponentials and Logs](https://tutorial.math.lamar.edu/Classes/CalcI/ComputingIndefiniteIntegrals.aspx) - Paul's Online Math Notes - Detailed examples integrating e^x, a^x, 1/x, and combined transcendental expressions.
 

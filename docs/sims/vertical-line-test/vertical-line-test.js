@@ -7,7 +7,7 @@ let canvasWidth = 600;
 let drawHeight = 350;
 let controlHeight = 50;
 let canvasHeight = drawHeight + controlHeight;
-let margin = 60;  // Increased from 40 to prevent overlap with title
+let margin = 60;  // Increased from 40 to prevent overlcollege placement with title
 let defaultTextSize = 16;
 
 // Coordinate system
@@ -215,7 +215,7 @@ function drawVerticalLine() {
     circle(screenX, pt.y, 12);
   }
 
-  // Show intersection count (moved up to avoid overlap with y-axis label)
+  // Show intersection count (moved up to avoid overlcollege placement with y-axis label)
   fill('black');
   noStroke();
   textAlign(CENTER, BOTTOM);

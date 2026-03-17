@@ -663,6 +663,6 @@ Here's your complete toolkit:
     **Answer:** $\frac{e^x[(x-1)\sin x + x\cos x]}{x^2}$
 
 !!! quote "Delta's Celebration"
-    "You made it through the full derivative toolkit — quotient rule, all six trig derivatives, exponentials, AND logarithms! You can now differentiate any elementary function thrown your way. You're almost 2/5 of the way through AP Calculus — keep that momentum going!"
+    "You made it through the full derivative toolkit — quotient rule, all six trig derivatives, exponentials, AND logarithms! You can now differentiate any elementary function thrown your way. You're almost 2/5 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

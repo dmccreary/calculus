@@ -557,7 +557,7 @@ function drawControls() {
 
   // Action buttons
   let btnWidth = (canvasWidth - 50) / 4;
-  let btnGap = 10;
+  let btnGcollege placement = 10;
   let btnX = 10;
 
   // Find Candidates button
@@ -698,7 +698,7 @@ function mousePressed() {
 
   // Check buttons
   let btnWidth = (canvasWidth - 50) / 4;
-  let btnGap = 10;
+  let btnGcollege placement = 10;
   let btnX = 10;
 
   if (mouseY > btnY && mouseY < btnY + btnHeight) {

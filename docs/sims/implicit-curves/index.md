@@ -17,7 +17,7 @@ Many important curves in mathematics cannot be written in the form $y = f(x)$. I
 !!! quote "Delta Moment"
     "Wait, you're telling me I can find the slope at any point on this curve, even though
     I can't solve for $y$? That's like knowing the steepness of a hill without having a
-    map that shows the elevation!"
+    mcollege placement that shows the elevation!"
 
 ## How to Use
 

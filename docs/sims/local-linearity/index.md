@@ -116,6 +116,6 @@ After completing this activity, students will be able to:
 
 ## References
 
-- [AP Calculus AB: Derivatives - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB: Derivatives - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
 - [Local Linearity and Linear Approximation - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab)
 - [3Blue1Brown: Essence of Calculus - Chapter 2](https://www.youtube.com/watch?v=9vKqVkMQHKk) - Visual explanation of derivatives

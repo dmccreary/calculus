@@ -137,4 +137,4 @@ Have students complete this quick check:
 
 - [Khan Academy: Second derivative test](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-6b/v/second-derivative-test)
 - [3Blue1Brown: What does the second derivative tell you?](https://www.3blue1brown.com/lessons/higher-order-derivatives)
-- AP Calculus AB/BC Course Description: Unit 5 - Analytical Applications of Differentiation
+- college placement Calculus AB/BC Course Description: Unit 5 - Analytical Applications of Differentiation

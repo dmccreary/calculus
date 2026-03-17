@@ -71,7 +71,7 @@ Students will identify composite functions and decompose them into inside and ou
 
 ### Grade Level
 
-High School AP Calculus (Grades 11-12)
+High School college placement Calculus (Grades 11-12)
 
 ### Prerequisites
 
@@ -149,4 +149,4 @@ This MicroSim addresses the prerequisite skill that is often assumed but rarely 
 
 - [Chain Rule - Wikipedia](https://en.wikipedia.org/wiki/Chain_rule)
 - [Function Composition - Khan Academy](https://www.khanacademy.org/math/algebra2/x2ec2f6f830c9fb89:functions/x2ec2f6f830c9fb89:composing-functions/v/function-composition)
-- [AP Calculus AB/BC Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)
+- [college placement Calculus AB/BC Course Description - College Board](https://apcentral.collegeboard.org/courses/ap-calculus-ab)

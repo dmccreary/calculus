@@ -59,7 +59,7 @@ Students will be able to **recall** the cyclic pattern of trigonometric derivati
 
 ### Grade Level
 
-High School (Grades 11-12), AP Calculus
+High School (Grades 11-12), college placement Calculus
 
 ### Duration
 

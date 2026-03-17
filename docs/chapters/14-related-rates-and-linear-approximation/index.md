@@ -158,7 +158,7 @@ Implementation: Static infographic (SVG or PNG)
 
 ## Classic Related Rates Problems
 
-Now let's work through the classic related rates scenarios you'll encounter on the AP exam. Each one has its own geometric relationship to master.
+Now let's work through the classic related rates scenarios you'll encounter on the college placement exam. Each one has its own geometric relationship to master.
 
 ### The Ladder Problem
 
@@ -1025,6 +1025,6 @@ Before moving on, make sure you can:
     The 201st unit costs approximately $17 to produce.
 
 !!! quote "Delta's Celebration"
-    "You made it through related rates and linear approximation! You can now solve real-world rate problems and use tangent lines to predict function values — those are serious calculus superpowers. You're over 3/5 of the way through AP Calculus — keep that momentum going!"
+    "You made it through related rates and linear approximation! You can now solve real-world rate problems and use tangent lines to predict function values — those are serious calculus superpowers. You're over 3/5 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

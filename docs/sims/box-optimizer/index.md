@@ -103,5 +103,5 @@ By the end of this activity, students will be able to:
 ## References
 
 - [Box Optimization Problem - Khan Academy](https://www.khanacademy.org/math/ap-calculus-ab/ab-diff-analytical-applications-new/ab-5-11/v/optimization-box-volume-graphically)
-- [AP Calculus AB: Optimization Problems](https://apcentral.collegeboard.org/)
+- [college placement Calculus AB: Optimization Problems](https://apcentral.collegeboard.org/)
 - [Interactive Calculus Visualizations](https://www.geogebra.org/m/calculus)

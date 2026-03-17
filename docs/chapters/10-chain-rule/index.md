@@ -618,6 +618,6 @@ $$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
     **Answer:** $-2x\tan(x^2)$
 
 !!! quote "Delta's Celebration"
-    "You made it through the chain rule! You can now peel apart any composite function, layer by layer, and find its derivative like a pro. You're almost halfway through AP Calculus — keep that momentum going!"
+    "You made it through the chain rule! You can now peel apart any composite function, layer by layer, and find its derivative like a pro. You're almost halfway through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

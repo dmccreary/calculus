@@ -601,6 +601,6 @@ The derivative transforms the intuitive idea of "rate of change" into a precise 
     The derivative is 0 at $x = 2$, which means the tangent line is horizontal there. This point is a critical point of the function!
 
 !!! quote "Delta's Celebration"
-    "You made it through The Derivative Concept! You now understand instantaneous rate of change, the limit definition, and two notations for derivatives. You're over 1/4 of the way through AP Calculus — keep that momentum going!"
+    "You made it through The Derivative Concept! You now understand instantaneous rate of change, the limit definition, and two notations for derivatives. You're over 1/4 of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)

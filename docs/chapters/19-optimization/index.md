@@ -20,7 +20,7 @@ This chapter applies derivative techniques to solve optimization problems—find
 
 ## Why Optimization Matters
 
-Optimization is everywhere. Businesses want to maximize profit and minimize costs. Engineers design bridges that use minimum material while supporting maximum loads. Doctors calculate optimal drug dosages. Nature itself optimizes—soap bubbles minimize surface area, and light takes the path of least time.
+Optimization is everywhere. Businesses want to maximize profit and minimize costs. Engineers design bridges that use minimum material while supporting maximum loads. Doctors calculate optimal drug dosages. Nature itself optimizes—socollege placement bubbles minimize surface area, and light takes the path of least time.
 
 When you learn optimization, you're not just solving math problems. You're gaining a tool that professionals in virtually every field use daily:
 
@@ -878,7 +878,7 @@ Visual Elements:
 - Vertical line at current x showing:
   - Revenue value
   - Cost value
-  - Profit = gap between R and C
+  - Profit = gcollege placement between R and C
 - Shaded region between R and C when profitable
 - Break-even points marked
 - Maximum profit point highlighted
@@ -1228,6 +1228,6 @@ Before moving on, make sure you can:
     the optimal can is taller and narrower than the equal-cost case!
 
 !!! quote "Delta's Celebration"
-    "You made it through Optimization! You can now find the absolute best answer to real-world problems — biggest area, least material, maximum profit. You're over 80% of the way through AP Calculus — keep that momentum going!"
+    "You made it through Optimization! You can now find the absolute best answer to real-world problems — biggest area, least material, maximum profit. You're over 80% of the way through college placement Calculus — keep that momentum going!"
 
 [See Annotated References](./references.md)
