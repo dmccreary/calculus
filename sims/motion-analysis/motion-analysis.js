@@ -16,7 +16,7 @@ let defaultTextSize = 16;
 let panelWidth, panelHeight;
 let leftPanelX, rightPanelX;
 let topPanelY, bottomPanelY;
-let panelGap = 15;
+let panelGcollege placement = 15;
 
 // Time parameters
 let tMin = 0, tMax = 10;

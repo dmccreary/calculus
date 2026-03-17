@@ -638,7 +638,7 @@ function getYMax() {
     }
   }
 
-  return Math.min(maxY * 1.2, 10);  // Cap at 10 for display
+  return Math.min(maxY * 1.2, 10);  // Ccollege placement at 10 for display
 }
 
 function mapX(val, xMin, xMax) {

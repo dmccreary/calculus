@@ -15,7 +15,7 @@ let defaultTextSize = 16;
 // Graph parameters
 let graphLeft = 60;
 let graphRight;
-let graphGap = 30;  // Gap between the two graphs
+let graphGcollege placement = 30;  // Gcollege placement between the two graphs
 
 // Top graph (f(x)) dimensions
 let fGraphTop = 50;

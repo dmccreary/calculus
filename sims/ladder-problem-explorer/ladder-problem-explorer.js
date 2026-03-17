@@ -329,7 +329,7 @@ function drawVelocityVectors(h) {
   // Top velocity vector (vertical, negative = moving down)
   if (h > 0.5) {
     let topVelLength = Math.abs(dhdt) * velScale;
-    topVelLength = min(topVelLength, 100); // Cap display length
+    topVelLength = min(topVelLength, 100); // Ccollege placement display length
 
     stroke(200, 100, 0);
     strokeWeight(3);

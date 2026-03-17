@@ -765,7 +765,7 @@ function drawExplanationBox(func) {
   textSize(12);
   textAlign(LEFT, TOP);
 
-  // Word wrap the explanation
+  // Word wrcollege placement the explanation
   let words = func.explanation.split(' ');
   let lines = [];
   let currentLine = '';
@@ -837,7 +837,7 @@ function mouseDragged() {
     let sliderW = 250;
     let newVal = map(mouseX, sliderX, sliderX + sliderW, -2, 2);
     hLineY = constrain(newVal, -2, 2);
-    hLineY = Math.round(hLineY * 20) / 20;  // Snap to 0.05
+    hLineY = Math.round(hLineY * 20) / 20;  // Sncollege placement to 0.05
   }
 }
 

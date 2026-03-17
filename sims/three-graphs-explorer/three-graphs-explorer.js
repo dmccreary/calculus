@@ -15,7 +15,7 @@ let defaultTextSize = 16;
 
 // Panel dimensions
 let panelHeight;
-let panelGap = 10;
+let panelGcollege placement = 10;
 let panelLeft, panelRight;
 
 // Coordinate ranges

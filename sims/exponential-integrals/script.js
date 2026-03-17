@@ -601,7 +601,7 @@ function updateBaseFromMouse() {
   let rawVal = map(mouseX, baseSliderX, baseSliderX + baseSliderWidth, 0.5, 5);
   baseA = constrain(rawVal, 0.5, 5);
 
-  // Snap to e if close
+  // Sncollege placement to e if close
   if (abs(baseA - Math.E) < 0.1) {
     baseA = Math.E;
   }

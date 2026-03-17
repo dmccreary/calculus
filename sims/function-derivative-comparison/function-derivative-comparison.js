@@ -15,7 +15,7 @@ let defaultTextSize = 16;
 // Graph regions
 let leftGraphLeft, leftGraphRight, rightGraphLeft, rightGraphRight;
 let graphTop, graphBottom;
-let midGap = 40; // Gap between the two graphs
+let midGcollege placement = 40; // Gcollege placement between the two graphs
 
 // Coordinate ranges
 let xMin = -3, xMax = 3;
@@ -55,8 +55,8 @@ function setup() {
 function updateLayoutPositions() {
   // Graph regions (two side-by-side panels)
   leftGraphLeft = margin + 30;
-  leftGraphRight = canvasWidth / 2 - midGap / 2;
-  rightGraphLeft = canvasWidth / 2 + midGap / 2;
+  leftGraphRight = canvasWidth / 2 - midGcollege placement / 2;
+  rightGraphLeft = canvasWidth / 2 + midGcollege placement / 2;
   rightGraphRight = canvasWidth - margin - 10;
   graphTop = chartTop;
   graphBottom = drawHeight - 30;

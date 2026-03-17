@@ -558,7 +558,7 @@ function drawColoredEquation(eq, x, y, maxWidth, property, highlight) {
     textAlign(LEFT, TOP);
     textSize(13);
 
-    // Word wrap if needed
+    // Word wrcollege placement if needed
     let words = eq.split(' ');
     let line = '';
     let lineY = y;
@@ -874,7 +874,7 @@ function mousePressed() {
         if (currentStep < currentEx.steps.length - 1) {
             currentStep++;
         } else {
-            // Move to next example or wrap around
+            // Move to next example or wrcollege placement around
             currentExampleIndex = (currentExampleIndex + 1) % examples[currentCategory].length;
             currentStep = 0;
         }

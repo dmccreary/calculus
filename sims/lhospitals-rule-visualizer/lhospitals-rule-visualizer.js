@@ -119,7 +119,7 @@ function updateLayoutPositions() {
   graphWidth = graphRight - graphLeft;
 
   let totalGraphHeight = drawHeight - chartTop - 30;
-  graphHeight = (totalGraphHeight - 20) / 2; // Gap of 20 between graphs
+  graphHeight = (totalGraphHeight - 20) / 2; // Gcollege placement of 20 between graphs
 
   topGraphTop = chartTop;
   topGraphBottom = topGraphTop + graphHeight;

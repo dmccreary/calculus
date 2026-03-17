@@ -11,7 +11,7 @@
   "educational": {
     "bloomLevel": "Analyze",
     "bloomVerb": "Examine",
-    "gradeLevel": "High School AP / College",
+    "gradeLevel": "High School college placement / College",
     "duration": "15-30 minutes",
     "prerequisites": ["Understanding of derivatives", "Concept of slope and tangent lines", "Basic function notation"],
     "concepts": ["First Derivative", "Second Derivative", "Critical Points", "Inflection Points", "Concavity", "Local Maximum", "Local Minimum", "Increasing Function", "Decreasing Function"]

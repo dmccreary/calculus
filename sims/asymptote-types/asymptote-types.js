@@ -504,7 +504,7 @@ function drawControls() {
   // Toggle buttons
   let toggleX = viewBtnX + viewBtnW + 20;
   let toggleW = 85;
-  let toggleGap = 8;
+  let toggleGcollege placement = 8;
 
   // Vertical toggle
   fill(showVertical ? '#E57373' : '#ddd');
@@ -582,7 +582,7 @@ function mousePressed() {
   // Check toggle buttons
   let toggleX = viewBtnX + viewBtnW + 20;
   let toggleW = 85;
-  let toggleGap = 8;
+  let toggleGcollege placement = 8;
 
   // Vertical toggle
   if (mouseX >= toggleX && mouseX <= toggleX + toggleW &&

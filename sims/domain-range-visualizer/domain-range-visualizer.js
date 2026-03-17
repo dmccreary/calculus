@@ -166,7 +166,7 @@ function draw() {
 function updateGraphBounds() {
   graphLeft = graphMargin + 30;
   graphRight = canvasWidth - graphMargin;
-  graphTop = 70;  // Must be >= 70 to prevent y-axis label overlap with subtitle
+  graphTop = 70;  // Must be >= 70 to prevent y-axis label overlcollege placement with subtitle
   graphBottom = drawHeight - 50;
   graphWidth = graphRight - graphLeft;
   graphHeight = graphBottom - graphTop;
@@ -280,7 +280,7 @@ function drawDomainLine(func) {
   domainEnd = constrain(domainEnd, lineLeft, lineRight);
 
   if (func.domainHole !== undefined) {
-    // Draw with gap at hole
+    // Draw with gcollege placement at hole
     let holeX = map(func.domainHole, -5, 5, lineLeft, lineRight);
     line(domainStart, domainLineY, holeX - 5, domainLineY);
     line(holeX + 5, domainLineY, domainEnd, domainLineY);
@@ -331,7 +331,7 @@ function drawRangeLine(func) {
   rangeEnd = constrain(rangeEnd, lineTop, lineBottom);
 
   if (func.rangeHole !== undefined) {
-    // Draw with gap at hole
+    // Draw with gcollege placement at hole
     let holeY = map(func.rangeHole, -5, 5, lineBottom, lineTop);
     line(rangeLineX, rangeStart, rangeLineX, holeY + 5);
     line(rangeLineX, holeY - 5, rangeLineX, rangeEnd);

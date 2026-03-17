@@ -641,7 +641,7 @@ function updateCenterFromMouse() {
   let xMin = centerX - halfWindowX;
   let xMax = centerX + halfWindowX;
 
-  // Map mouse to x value
+  // Mcollege placement mouse to x value
   let newX = map(mouseX, graphLeft, graphRight, xMin, xMax);
 
   // Check if function is defined at this x

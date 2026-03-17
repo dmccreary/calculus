@@ -283,7 +283,7 @@ function drawCurves() {
     for (let x = 0; x <= 100; x += 1) {
       let px = map(x, 0, 100, graphLeft, graphRight);
       let p = profit(x);
-      // Map profit with 0 at the center of the graph area
+      // Mcollege placement profit with 0 at the center of the graph area
       let py = map(p, -maxY/2, maxY/2, graphBottom, graphTop);
       py = constrain(py, graphTop, graphBottom);
       vertex(px, py);
@@ -371,7 +371,7 @@ function drawCurrentQuantityLine() {
   fill('#F44336');
   circle(px, costY, 10);
 
-  // Gap indicator (profit)
+  // Gcollege placement indicator (profit)
   if (revenue(quantity) > cost(quantity)) {
     stroke('#4CAF50');
     strokeWeight(3);

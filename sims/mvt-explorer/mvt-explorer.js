@@ -754,7 +754,7 @@ function mousePressed() {
 
 function mouseDragged() {
   if (isDraggingC) {
-    // Map mouse x to graph x, constrain to (a, b)
+    // Mcollege placement mouse x to graph x, constrain to (a, b)
     let newC = unmapX(mouseX);
     c = constrain(newC, a + 0.1, b - 0.1);
     c = Math.round(c * 100) / 100;

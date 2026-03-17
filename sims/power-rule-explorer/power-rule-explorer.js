@@ -15,7 +15,7 @@ let defaultTextSize = 16;
 // Graph regions
 let leftGraphLeft, leftGraphRight, rightGraphLeft, rightGraphRight;
 let graphTop, graphBottom;
-let midGap = 50; // Gap between the two graphs
+let midGcollege placement = 50; // Gcollege placement between the two graphs
 
 // Coordinate ranges
 let xMin = -3, xMax = 3;
@@ -48,8 +48,8 @@ function setup() {
 function updateLayoutPositions() {
   // Graph regions (two side-by-side panels)
   leftGraphLeft = margin + 35;
-  leftGraphRight = canvasWidth / 2 - midGap / 2;
-  rightGraphLeft = canvasWidth / 2 + midGap / 2;
+  leftGraphRight = canvasWidth / 2 - midGcollege placement / 2;
+  rightGraphLeft = canvasWidth / 2 + midGcollege placement / 2;
   rightGraphRight = canvasWidth - margin - 10;
   graphTop = chartTop;
   graphBottom = drawHeight - 25;
@@ -561,7 +561,7 @@ function mousePressed() {
       mouseX > nSliderX && mouseX < nSliderX + nSliderW) {
     exponentN = map(mouseX, nSliderX, nSliderX + nSliderW, -3, 5);
     exponentN = constrain(exponentN, -3, 5);
-    exponentN = Math.round(exponentN * 2) / 2; // Snap to 0.5 increments
+    exponentN = Math.round(exponentN * 2) / 2; // Sncollege placement to 0.5 increments
     isDraggingNSlider = true;
     return;
   }
@@ -578,7 +578,7 @@ function mousePressed() {
       mouseX > xSliderX && mouseX < xSliderX + xSliderW) {
     currentX = map(mouseX, xSliderX, xSliderX + xSliderW, -2.5, 2.5);
     currentX = constrain(currentX, -2.5, 2.5);
-    currentX = Math.round(currentX * 20) / 20; // Snap to 0.05 increments
+    currentX = Math.round(currentX * 20) / 20; // Sncollege placement to 0.05 increments
     isDraggingXSlider = true;
     return;
   }
@@ -595,12 +595,12 @@ function mouseDragged() {
   if (isDraggingNSlider) {
     exponentN = map(mouseX, nSliderX, nSliderX + nSliderW, -3, 5);
     exponentN = constrain(exponentN, -3, 5);
-    exponentN = Math.round(exponentN * 2) / 2; // Snap to 0.5 increments
+    exponentN = Math.round(exponentN * 2) / 2; // Sncollege placement to 0.5 increments
   }
   if (isDraggingXSlider) {
     currentX = map(mouseX, xSliderX, xSliderX + xSliderW, -2.5, 2.5);
     currentX = constrain(currentX, -2.5, 2.5);
-    currentX = Math.round(currentX * 20) / 20; // Snap to 0.05 increments
+    currentX = Math.round(currentX * 20) / 20; // Sncollege placement to 0.05 increments
   }
 }
 

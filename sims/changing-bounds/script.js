@@ -23,7 +23,7 @@ const ACCENT_BG = [255, 255, 240];            // Light yellow for info panels
 // Coordinate ranges for graphs
 let xGraphLeft, xGraphRight, xGraphTop, xGraphBottom;
 let uGraphLeft, uGraphRight, uGraphTop, uGraphBottom;
-let graphGap = 30;
+let graphGcollege placement = 30;
 
 // State
 let selectedExample = 0;
@@ -157,7 +157,7 @@ function updateLayoutPositions() {
   xGraphBottom = drawHeight - 40;
 
   // Right graph (u-domain)
-  uGraphLeft = xGraphRight + graphGap + 40;
+  uGraphLeft = xGraphRight + graphGcollege placement + 40;
   uGraphRight = uGraphLeft + graphWidth - 20;
   uGraphTop = chartTop + 15;
   uGraphBottom = drawHeight - 40;

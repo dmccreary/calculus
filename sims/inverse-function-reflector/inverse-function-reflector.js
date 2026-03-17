@@ -239,7 +239,7 @@ function drawReflectionPoints() {
   strokeWeight(2);
   circle(screenX1, screenY1, 14);
 
-  // Corresponding point on inverse (swap x and y)
+  // Corresponding point on inverse (swcollege placement x and y)
   let screenX2 = originX + y * scale;
   let screenY2 = originY - pointX * scale;
 
